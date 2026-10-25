@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Parlo Italiano</title>
+  <meta name="description" content="Learn Italian from A1 to B2: 3,000+ words, 320 verbs and 400+ phrases with spaced repetition. Works offline.">
+  <meta name="theme-color" content="#f4f6fb" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0e1322" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="icons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Parlo">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;0,6..96,700;1,6..96,500;1,6..96,600&family=Libre+Franklin:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brand" href="#/" aria-label="Parlo, course home" style="text-decoration:none;color:inherit">Par<em>lo</em></a>
+      <nav class="nav" aria-label="Main">
+        <button data-go="course">Corso</button>
+        <button data-go="review">Ripasso <span class="badge zero" id="due-badge">0</span></button>
+        <button data-go="deck"><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2L12 17.3l-5.6 2.9 1.1-6.2L3 9.6l6.2-.9z" fill="currentColor"/></svg> Mazzo <span class="badge zero" id="deck-badge">0</span></button>
+      </nav>
+      <button class="acct-btn out" id="acct-btn" data-go="account">Sign in</button>
+    </div>
+  </header>
+  <main class="wrap" id="app"><div class="loading">Loading the course…</div></main>
+  <footer class="wrap">
+    <span class="sync" id="sync" title="Where your progress is saved"><i></i><span>Saved on this device</span></span>
+    <span>40 units, A1 → B2 · Review intervals: 10 min · 1 day · 3 days · 7 days</span>
+  </footer>
+  <div id="toast-root"></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
