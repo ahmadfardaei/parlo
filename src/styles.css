@@ -254,6 +254,9 @@ footer.wrap { padding-block: 0 40px; font-size: 13px; color: var(--muted); displ
 .link-btn:hover { color: var(--bad); }
 
 @media (max-width: 680px) {
+  .topbar .wrap { row-gap: 8px; }
+  .nav { order: 3; width: 100%; overflow-x: auto; scrollbar-width: none; }
+  .nav::-webkit-scrollbar { display: none; }
   .verbs { grid-template-columns: 1fr; }
   .verb-list { display: flex; flex-wrap: wrap; gap: 6px; }
   .verb-pick { border: 1px solid var(--line); background: var(--surface); padding: 5px 10px; }
@@ -303,3 +306,42 @@ footer.wrap { padding-block: 0 40px; font-size: 13px; color: var(--muted); displ
 .toast button { border: 0; border-radius: 8px; padding: 6px 12px; background: var(--accent); color: var(--accent-ink); font-weight: 600; white-space: nowrap; }
 .toast .x { background: none; color: inherit; opacity: .7; padding: 6px 8px; }
 .banner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; padding: 12px 14px; margin-top: 20px; font-size: 14px; }
+
+/* ---------- Grammar ---------- */
+.g-sum { font-size: 13px; color: var(--muted); margin-top: 6px; line-height: 1.45; }
+.g-cta { flex: 0 1 300px; min-width: 240px; align-content: start; }
+a.btn { text-decoration: none; color: inherit; display: inline-grid; place-items: center; }
+a.btn.primary { color: var(--accent-ink); }
+a.back { text-decoration: none; display: inline-block; }
+.g-sec { margin-top: 32px; }
+.g-sec > h2 { font-family: var(--display); font-size: 26px; font-weight: 700; margin: 0 0 12px; }
+.g-p { color: var(--ink) !important; font-size: 16px; max-width: 70ch; }
+.g-uses { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 290px), 1fr)); gap: 10px; }
+.g-uses .card { gap: 8px; align-content: start; }
+.g-uses h3 { margin: 0; font-size: 16px; }
+.g-uses p { font-size: 14px; }
+.g-tables { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 210px), 1fr)); gap: 10px; margin-top: 12px; }
+.g-table { padding: 12px 14px; }
+.g-table-h { font-family: var(--mono); font-size: 12px; color: var(--accent); margin-bottom: 4px; }
+.g-table .conj td { padding: 5px 4px; }
+.g-table .conj td.form { font-size: 18px; }
+.g-table .conj td.form b { color: var(--accent); font-weight: 700; }
+.g-compare { width: 100%; border-collapse: collapse; font-size: 14px; }
+.g-compare th, .g-compare td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.g-compare th { font-family: var(--display); font-size: 18px; }
+.g-compare tr:last-child td { border-bottom: 0; }
+.g-notes { margin: 12px 0 0; padding-left: 20px; display: grid; gap: 6px; font-size: 14px; max-width: 75ch; }
+.g-irr { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); }
+.g-irr > div { display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 12px; padding: 9px 14px; border-bottom: 1px solid var(--line); font-size: 14px; align-items: baseline; }
+.g-irr .it { font-size: 17px; font-style: italic; }
+.g-mistake { padding: 14px 16px; border-bottom: 1px solid var(--line); display: grid; gap: 3px; }
+.g-mistake:last-child { border-bottom: 0; }
+.g-mistake s { color: var(--muted); }
+.g-no { color: var(--bad); font-weight: 700; } .g-yes { color: var(--ok); font-weight: 700; }
+.g-hint { font-size: 15px; color: var(--muted); font-family: var(--body); font-style: normal; }
+.g-form { display: flex; gap: 8px; flex-wrap: wrap; }
+.g-input { flex: 1 1 200px; font-size: 20px; }
+.g-input.right { border-color: var(--ok); background: var(--ok-soft); }
+.g-input.wrong { border-color: var(--bad); background: var(--bad-soft); }
+.g-accents { display: flex; gap: 6px; margin-top: 10px; flex-wrap: wrap; }
+.g-accents .chip { font-family: var(--display); font-size: 17px; min-width: 40px; }

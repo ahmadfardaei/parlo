@@ -1,6 +1,7 @@
 import "./styles.css";
 import { registerSW } from "virtual:pwa-register";
 import { supabase, appUrl } from "./supabase.js";
+import { GRAMMAR } from "./data/grammar.js";
 
 /* ================= Constants ================= */
 const IV = { "10m": 6e5, "1d": 864e5, "3d": 2592e5, "7d": 6048e5 };
@@ -74,7 +75,9 @@ function indexCourse(course) {
     u.verbs.forEach(v => add("v:" + v.inf, "v", v));
     u.phrases.forEach(p => add("p:" + pkey(p.it), "p", p));
   }
+  UNIT_IDS[GRAMMAR_UNIT] = GRAMMAR.map(g => { const id = "g:" + g.id; ITEMS[id] = { id, type: "g", u: GRAMMAR_UNIT, d: g }; return id; });
 }
+const GRAMMAR_UNIT = 101; // grammar scores sync as their own progress row
 const unitOf = id => ITEMS[id]?.u;
 const unitByN = n => UNITS.find(u => u.n === n);
 const say = id => { const it = ITEMS[id]; return it.type === "w" ? full(it.d) : it.type === "v" ? it.d.inf : it.d.it; };
@@ -287,7 +290,7 @@ function rowHTML(id, ctx) {
   return `<div class="row ${cls}" data-row="${esc(id)}" data-ctx="${ctx}"><span class="stripe"></span><div class="body">${body}</div><div class="actions">${actionsHTML(id)}</div>${menuHTML(id)}</div>`;
 }
 function refreshItem(id) {
-  if (!id || !ITEMS[id]) return;
+  if (!id || !ITEMS[id] || ITEMS[id].type === "g") return;
   const sel = CSS.escape(id);
   document.querySelectorAll(`[data-row="${sel}"]`).forEach(el => { el.outerHTML = rowHTML(id, el.dataset.ctx); });
   document.querySelectorAll(`[data-vhead="${sel}"]`).forEach(el => { el.innerHTML = vheadHTML(id); });
@@ -327,6 +330,7 @@ function parseHash() {
   if (p[0] === "review") return { name: "review", src: ["due", "unit", "deck"].includes(p[1]) ? p[1] : "due", u: p[2] ? +p[2] : undefined };
   if (p[0] === "deck") return { name: "deck" };
   if (p[0] === "account") return { name: "account" };
+  if (p[0] === "grammar") { const g = GRAMMAR.find(x => x.id === p[1]); return g ? { name: "grammar", g: g.id, mode: ["practice", "drill"].includes(p[2]) ? p[2] : "learn" } : { name: "grammar" }; }
   return { name: "course" };
 }
 function hashFor(v) {
@@ -334,6 +338,7 @@ function hashFor(v) {
   if (v.name === "review") return `#/review/${v.src || "due"}${v.src === "unit" && v.u ? "/" + v.u : ""}`;
   if (v.name === "deck") return "#/deck";
   if (v.name === "account") return "#/account";
+  if (v.name === "grammar") return "#/grammar" + (v.g ? "/" + v.g + (v.mode && v.mode !== "learn" ? "/" + v.mode : "") : "");
   return "#/";
 }
 function go(name, params = {}) {
@@ -349,8 +354,8 @@ function render() {
     if (b.dataset.go === view.name || (view.name === "unit" && b.dataset.go === "course")) b.setAttribute("aria-current", "page");
     else b.removeAttribute("aria-current");
   });
-  ({ course: viewCourse, unit: viewUnit, review: viewPractice, deck: viewDeck, account: viewAccount })[view.name]();
-  const sameUnit = prevView && prevView.name === "unit" && view.name === "unit" && prevView.u === view.u;
+  ({ course: viewCourse, unit: viewUnit, review: viewPractice, deck: viewDeck, account: viewAccount, grammar: viewGrammar })[view.name]();
+  const sameUnit = prevView && ((prevView.name === "unit" && view.name === "unit" && prevView.u === view.u));
   if (!sameUnit) window.scrollTo(0, 0);
   setSync();
 }
@@ -804,6 +809,182 @@ async function importData(file) {
   } catch (e) { showToast("That file isn't a Parlo backup."); }
 }
 
+/* ================= Grammar ================= */
+const ACCENTS = ["à", "è", "é", "ì", "ò", "ù"];
+const gById = id => GRAMMAR.find(g => g.id === id);
+const gScore = id => st["g:" + id] || null;
+let drillLevel = lsGet("parlo.drillLevel", "A2");
+function viewGrammar() {
+  if (!view.g) return viewGrammarIndex();
+  if (view.mode === "practice") return startGPractice();
+  if (view.mode === "drill") return startDrill();
+  return viewLesson(gById(view.g));
+}
+function scoreText(id) {
+  const s = gScore(id);
+  return s && s.best != null ? `Best score ${s.best} / ${s.total}` : "Not practised yet";
+}
+function viewGrammarIndex() {
+  app.innerHTML = `<section class="hero"><div>
+      <div class="eyebrow">Grammatica · i tempi verbali</div>
+      <h1>Grammatica</h1>
+      <p class="lede">The main verb tenses, one lesson each: what the tense means, when to use it, how to build it, and exercises to practise. Separate from the units, so you can come back whenever a tense confuses you.</p>
+    </div></section>
+    <div class="units g-index" style="margin-top:28px">${GRAMMAR.map((g, i) => `<a class="unit-card" href="#/grammar/${g.id}" style="text-decoration:none;color:inherit">
+      <span class="num"><span>Lezione ${i + 1} · ${g.level}</span><span>${gScore(g.id)?.best != null ? gScore(g.id).best + "/" + gScore(g.id).total : ""}</span></span>
+      <span class="t">${esc(g.title)}</span><span class="e">${esc(g.en)}</span>
+      <span class="g-sum">${esc(g.summary)}</span></a>`).join("")}</div>`;
+}
+function endingTable(t) {
+  const pron = t.che ? PRON.map(p => "che " + p) : PRON;
+  const rows = t.rows ? t.rows.map((r, i) => [pron[i], esc(r)]) : t.end.map((e, i) => [pron[i], `${esc(t.stem)}<b>${esc(e)}</b>`]);
+  return `<div class="sheet g-table"><div class="g-table-h">${esc(t.h)}</div><table class="conj"><tbody>${rows.map(([p, f]) => `<tr><td>${p}</td><td class="form">${f}</td></tr>`).join("")}</tbody></table></div>`;
+}
+function viewLesson(g) {
+  const idx = GRAMMAR.indexOf(g);
+  app.innerHTML = `<a class="back" href="#/grammar">← Grammatica</a>
+    <div class="unit-head"><div>
+      <div class="eyebrow">Lezione ${idx + 1} · ${g.level}</div>
+      <h1>${esc(g.title)}</h1>
+      <p class="lede">${esc(g.en)}. ${esc(g.summary)}</p></div>
+      <div class="sheet card g-cta">
+        <span class="eyebrow">Practice</span>
+        <span style="font-size:14px;color:var(--muted)">${scoreText(g.id)}</span>
+        <div class="btn-row"><a class="btn primary inline" href="#/grammar/${g.id}/practice">${g.ex.length} exercises</a>${g.tense ? `<a class="btn inline" href="#/grammar/${g.id}/drill">Verb drill</a>` : ""}</div>
+      </div>
+    </div>
+    <section class="g-sec"><h2>What it means</h2><div class="sheet card"><p class="g-p">${g.meaning}</p></div></section>
+    <section class="g-sec"><h2>When to use it</h2><div class="g-uses">${g.uses.map(u => `<div class="sheet card">
+      <h3>${esc(u.h)}</h3><p>${u.t}</p><div class="ex"><span class="it">${esc(u.ex[0])}</span><br>${esc(u.ex[1])}</div>
+      ${canSpeak ? `<button class="icon-btn" data-say-text="${esc(u.ex[0])}" aria-label="Listen to the example" style="justify-self:start">${ICON.speak}</button>` : ""}</div>`).join("")}</div></section>
+    <section class="g-sec"><h2>How to form it</h2>
+      <div class="sheet card"><p class="g-p">${g.form.intro}</p></div>
+      ${g.form.tables ? `<div class="g-tables">${g.form.tables.map(endingTable).join("")}</div>` : ""}
+      ${g.form.compare ? `<div class="sheet" style="overflow-x:auto;margin-top:12px"><table class="g-compare"><thead><tr><th>${g.form.compare[0][0]}</th><th>${g.form.compare[0][1]}</th></tr></thead><tbody>${g.form.compare.slice(1).map(r => `<tr><td>${esc(r[0])}</td><td>${esc(r[1])}</td></tr>`).join("")}</tbody></table></div>` : ""}
+      ${g.form.notes ? `<ul class="g-notes">${g.form.notes.map(n => `<li>${n}</li>`).join("")}</ul>` : ""}
+    </section>
+    ${g.irregular ? `<section class="g-sec"><h2>${g.id === "pp" ? "Irregular past participles" : "Irregular verbs"}</h2><div class="sheet g-irr">${g.irregular.map(([v, f]) => `<div><span class="it">${esc(v)}</span><span>${esc(f)}</span></div>`).join("")}</div></section>` : ""}
+    <section class="g-sec"><h2>Signal words</h2><div class="toolbar">${g.signals.map(w => `<span class="chip" style="cursor:default">${esc(w)}</span>`).join("")}</div></section>
+    <section class="g-sec"><h2>Common mistakes</h2><div class="sheet">${g.mistakes.map(m => `<div class="g-mistake">
+      <div><span class="g-no" aria-label="Wrong">✗</span> <s>${esc(m.wrong)}</s></div><div><span class="g-yes" aria-label="Right">✓</span> <b class="it">${esc(m.right)}</b></div><div class="note">${m.why}</div></div>`).join("")}</div></section>
+    <section class="g-sec sheet card g-cta" style="margin-top:28px"><h2 style="margin:0">Practise ${esc(g.title.toLowerCase())}</h2>
+      <p>${g.ex.length} exercises written for this lesson${g.tense ? ", plus an endless drill with verbs from the course" : ""}.</p>
+      <div class="btn-row"><a class="btn primary inline" href="#/grammar/${g.id}/practice">Start the exercises</a>${g.tense ? `<a class="btn inline" href="#/grammar/${g.id}/drill">Verb drill</a>` : ""}</div></section>
+    <div style="display:flex;justify-content:space-between;margin-top:28px;gap:10px;flex-wrap:wrap">
+      ${GRAMMAR[idx - 1] ? `<a class="back" href="#/grammar/${GRAMMAR[idx - 1].id}">← ${esc(GRAMMAR[idx - 1].title)}</a>` : "<span></span>"}
+      ${GRAMMAR[idx + 1] ? `<a class="back" href="#/grammar/${GRAMMAR[idx + 1].id}">${esc(GRAMMAR[idx + 1].title)} →</a>` : ""}
+    </div>`;
+}
+
+// --- Exercises: answer checking ---
+const gNorm = s => String(s).toLowerCase().replace(/[’‘`´]/g, "'").replace(/\s+/g, " ").trim().replace(/[.!?,]+$/, "");
+const noAccents = s => s.normalize("NFD").replace(/[̀-ͯ]/g, "");
+function expandForms(f) {
+  if (!/[oi]\/[ae]\b/.test(f)) return [f];
+  return [f.replace(/([oi])\/([ae])\b/, "$1"), f.replace(/([oi])\/([ae])\b/, "$2")];
+}
+function gJudge(input, answers) {
+  const n = gNorm(input), all = answers.flatMap(expandForms).map(gNorm);
+  if (!n) return "empty";
+  if (all.includes(n)) return "ok";
+  if (all.some(a => noAccents(a) === noAccents(n))) return "accent";
+  return "no";
+}
+
+// --- Exercise session (lesson practice or drill) ---
+let gs = null; // { title, items: [...], i, score, answered, kind: "practice"|"drill" }
+function startGPractice() {
+  const g = gById(view.g);
+  gs = { kind: "practice", g, title: g.title, items: shuffle(g.ex), i: 0, score: 0, answered: false, log: [] };
+  drawG();
+}
+function drillPool(g) {
+  const levels = { A1: ["A1"], A2: ["A1", "A2"], B1: ["A1", "A2", "B1"], ALL: ["A1", "A2", "B1", "B2"] }[drillLevel] || ["A1", "A2"];
+  return UNITS.filter(u => levels.includes(u.level)).flatMap(u => u.verbs).filter(v => v.t[g.tense] && v.t[g.tense].some(f => f !== "—"));
+}
+function startDrill() {
+  const g = gById(view.g);
+  const pool = drillPool(g);
+  const items = shuffle(pool).slice(0, 10).map(v => {
+    const persons = [0, 1, 2, 3, 4, 5].filter(i => v.t[g.tense][i] !== "—");
+    const p = pick(persons);
+    return { k: "type", drill: true, q: `${g.tense === "cong" ? "che " : ""}${PRON[p]} ___`, v: v.inf, en: v.en, a: [v.t[g.tense][p]], forms: v.t[g.tense], why: "" };
+  });
+  gs = { kind: "drill", g, title: g.title, items, i: 0, score: 0, answered: false, log: [] };
+  drawG();
+}
+function drawG() {
+  const g = gs.g, it = gs.items[gs.i];
+  const head = `<a class="back" href="#/grammar/${g.id}">← ${esc(g.title)}</a>
+    <div class="unit-head" style="margin-bottom:18px"><div><div class="eyebrow">${gs.kind === "drill" ? "Verb drill" : "Exercises"} · ${esc(g.title)}</div>
+    <h1 style="font-size:clamp(30px,6vw,44px)">${gs.kind === "drill" ? "Drill" : "Pratica"}</h1></div>
+    ${gs.kind === "drill" ? `<div class="p-opts" style="font-size:13px;color:var(--muted);gap:8px">Verbs from
+      <div class="seg" role="group" aria-label="Verb level">${[["A1", "A1"], ["A2", "A1–A2"], ["B1", "A1–B1"], ["ALL", "All"]].map(([k, l]) => `<button data-drill-level="${k}" aria-pressed="${drillLevel === k}">${l}</button>`).join("")}</div></div>` : ""}</div>`;
+  if (!it) {
+    const total = gs.items.length;
+    if (gs.kind === "practice") {
+      const prev = gScore(g.id);
+      if (!prev || prev.best == null || gs.score > prev.best) setEntry("g:" + g.id, { best: gs.score, total });
+    }
+    const msg = gs.score === total ? "Perfetto!" : gs.score >= total * 0.75 ? "Molto bene!" : gs.score >= total / 2 ? "Bene, keep going." : "Re-read the lesson, then try again.";
+    app.innerHTML = `${head}<div class="quiz"><div class="sheet result"><div class="eyebrow">Your score</div><div class="score">${gs.score}<span> / ${total}</span></div><p>${msg}</p>
+      <div class="btn-row" style="justify-content:center"><button class="btn primary inline" data-gretry>${gs.kind === "drill" ? "Another 10 verbs" : "Try again"}</button><a class="btn inline" href="#/grammar/${g.id}">Back to the lesson</a></div></div></div>`;
+    return;
+  }
+  const dots = gs.items.map((_, i) => `<i class="${i < gs.log.length ? (gs.log[i] ? "ok" : "no") : i === gs.i ? "cur" : ""}"></i>`).join("");
+  const blank = `<span class="blank"></span>`;
+  const prompt = esc(it.q).replace("___", blank);
+  const hint = it.drill ? `<span class="g-hint"><b class="it">${esc(it.v)}</b> · ${esc(it.en)} · ${esc(TENSES.find(t => t.k === g.tense).it)}</span>`
+    : it.v ? `<span class="g-hint">(${esc(it.v)}${it.p ? " · " + esc(it.p) : ""})</span>` : "";
+  app.innerHTML = `${head}<div class="quiz">
+    <div class="qhead"><span>${gs.i + 1} of ${gs.items.length}</span><span class="dots">${dots}</span></div>
+    <div class="sheet qcard"><div class="qkind">${it.k === "mc" ? "Choose the right option" : "Write the verb"}</div>
+      <div class="qprompt"><span class="it">${prompt}</span> ${hint}</div>
+      ${it.k === "mc"
+        ? `<div class="opts">${it.o.map((o, i) => `<button class="opt itf" data-gopt="${i}">${esc(o)}</button>`).join("")}</div>`
+        : `<form id="g-form" class="g-form" autocomplete="off"><input class="input it g-input" id="g-input" autocapitalize="off" autocorrect="off" spellcheck="false" aria-label="Your answer" placeholder="Type the verb">
+            <button class="btn primary inline" data-gcheck type="submit">Check</button></form>
+           <div class="g-accents" aria-label="Accented letters">${ACCENTS.map(a => `<button type="button" class="chip" data-accent="${a}">${a}</button>`).join("")}</div>`}
+      <div class="feedback" id="fb"></div></div></div>`;
+  gs.answered = false;
+  const form = $("#g-form");
+  if (form) { form.addEventListener("submit", e => { e.preventDefault(); gs.answered ? gNext() : gCheck(); }); $("#g-input").focus({ preventScroll: true }); }
+}
+function gFeedback(ok, extra) {
+  const it = gs.items[gs.i];
+  const why = it.drill ? `${esc(TENSES.find(t => t.k === gs.g.tense).it)} of <b>${esc(it.v)}</b>: ${it.forms.filter(f => f !== "—").map(esc).join(", ")}` : it.why;
+  $("#fb").innerHTML = `<div style="color:var(${ok ? "--ok" : "--bad"});font-weight:600">${ok ? "Giusto!" : "Not quite."}${extra ? ` <span style="color:var(--mark-ink);font-weight:500">${extra}</span>` : ""}</div>
+    ${!ok || extra ? `<div style="margin-top:4px">Answer: <b class="it" style="font-size:17px">${esc(it.k === "mc" ? it.a : it.a[0])}</b></div>` : ""}
+    ${why ? `<div style="margin-top:4px">${why}</div>` : ""}
+    <div style="margin-top:14px"><button class="btn primary inline" data-gnext>${gs.i + 1 < gs.items.length ? "Next" : "See score"}</button></div>`;
+}
+function gCheck() {
+  if (!gs || gs.answered) return;
+  const inp = $("#g-input"), it = gs.items[gs.i];
+  const r = gJudge(inp.value, it.a);
+  if (r === "empty") { inp.focus(); return; }
+  gs.answered = true; inp.disabled = true;
+  const ok = r !== "no";
+  if (ok) gs.score++;
+  gs.log.push(ok);
+  inp.classList.add(ok ? "right" : "wrong");
+  document.querySelectorAll("[data-gcheck], .g-accents button").forEach(b => b.disabled = true);
+  gFeedback(ok, r === "accent" ? "Watch the accent." : "");
+  if (ok) speak(it.a[0].replace(/\/[aie]+/g, ""));
+  $("[data-gnext]").focus();
+}
+function gAnswerMc(btn) {
+  if (gs.answered) return;
+  gs.answered = true;
+  const it = gs.items[gs.i], ok = it.o[+btn.dataset.gopt] === it.a;
+  if (ok) gs.score++;
+  gs.log.push(ok);
+  document.querySelectorAll(".opt").forEach(b => { b.disabled = true; if (it.o[+b.dataset.gopt] === it.a) b.classList.add("right"); else if (b === btn) b.classList.add("wrong"); });
+  gFeedback(ok);
+  $("[data-gnext]").focus();
+}
+function gNext() { if (!gs || !gs.answered) return; gs.i++; drawG(); window.scrollTo(0, 0); }
+
 /* ================= Install (PWA) ================= */
 let deferredPrompt = null;
 const isStandalone = () => matchMedia("(display-mode: standalone)").matches || navigator.standalone === true;
@@ -890,6 +1071,12 @@ document.addEventListener("click", async e => {
     for (const id of Object.keys(st)) { st[id] = { t: now }; dirty.add(unitOf(id)); }
     lsSet(dirtyKey(), [...dirty]); saveLocal(); pushSoon(); refreshCounts(); showToast("All progress has been reset."); render(); return;
   }
+  if (ds.gcheck !== undefined) { gCheck(); return; }
+  if (ds.gnext !== undefined) { gNext(); return; }
+  if (ds.gopt !== undefined) { gAnswerMc(t); return; }
+  if (ds.accent) { const inp = $("#g-input"); if (inp && !inp.disabled) { const a = inp.selectionStart ?? inp.value.length, b = inp.selectionEnd ?? a; inp.value = inp.value.slice(0, a) + ds.accent + inp.value.slice(b); inp.focus(); inp.setSelectionRange(a + 1, a + 1); } return; }
+  if (ds.drillLevel) { drillLevel = ds.drillLevel; lsSet("parlo.drillLevel", drillLevel); startDrill(); return; }
+  if (ds.gretry !== undefined) { view.mode === "drill" ? startDrill() : startGPractice(); return; }
   if (t.id === "card") flip();
 });
 document.addEventListener("change", e => { if (e.target.id === "import-file" && e.target.files[0]) importData(e.target.files[0]); });
