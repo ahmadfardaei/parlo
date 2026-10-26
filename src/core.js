@@ -14,11 +14,13 @@ export const lsGet = (k, d) => { try { const v = localStorage.getItem(k); return
 export const lsSet = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} };
 export const lsDel = k => { try { localStorage.removeItem(k); } catch (e) {} };
 export const debounce = (fn, ms) => { let t; const f = (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); }; f.flush = () => { clearTimeout(t); fn(); }; return f; };
-export function fmtIn(ms) {
+// Short form for chips ("3 d"); long form for sentences ("3 days").
+export function fmtIn(ms, long = true) {
   const m = Math.max(1, Math.round(ms / 6e4));
-  if (m < 60) return m + " min";
-  const h = Math.round(m / 60); if (h < 24) return h + " h";
-  return Math.round(h / 24) + " d";
+  const u = (n, s, l) => long ? `${n} ${l}${n === 1 ? "" : "s"}` : `${n} ${s}`;
+  if (m < 60) return u(m, "min", "minute");
+  const h = Math.round(m / 60); if (h < 24) return u(h, "h", "hour");
+  return u(Math.round(h / 24), "d", "day");
 }
 export function hash(s) { let h = 5381; for (let i = 0; i < s.length; i++) h = ((h << 5) + h + s.charCodeAt(i)) >>> 0; return h.toString(36); }
 export const LEVELS = ["A1", "A2", "B1", "B2"];
@@ -198,7 +200,7 @@ export function applyChanged(changed) {
 /* ---------- Generic live updates for item controls ---------- */
 export function statusLabel(id) {
   const s = statusOf(id);
-  return s === "new" ? "New" : s === "due" ? "Due" : s === "known" ? "Known" : "In " + fmtIn(S.st[id].d - Date.now());
+  return s === "new" ? "New" : s === "due" ? "Due" : s === "known" ? "Known" : "In " + fmtIn(S.st[id].d - Date.now(), false);
 }
 export function refreshItem(id) {
   if (!id) return;

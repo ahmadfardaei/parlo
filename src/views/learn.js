@@ -10,7 +10,7 @@ function groupsHTML(items, keyOf, labelOf, rowOf, summaryOf, openKey) {
   return keys.map(k => {
     const list = items.filter(x => keyOf(x) === k);
     return `<details class="group" ${k === openKey ? "open" : ""}><summary><span class="group-title">${esc(labelOf(k))}</span><span class="group-meta">${summaryOf(list)}</span></summary>
-      <div class="link-list">${list.map(rowOf).join("")}</div></details>`;
+      <div class="link-list cols">${list.map(rowOf).join("")}</div></details>`;
   }).join("");
 }
 const byLevel = () => S.pref.groupBy !== "topic";
@@ -43,7 +43,7 @@ export async function viewLearn(app, v, alive) {
       if (q.length < 2) return draw();
       const hits = D.order.filter(id => sayOf(id).toLowerCase().includes(q) || D.items[id].d.en.toLowerCase().includes(q));
       hits.sort((a, b) => (sayOf(a).toLowerCase().startsWith(q) ? 0 : 1) - (sayOf(b).toLowerCase().startsWith(q) ? 0 : 1));
-      body.innerHTML = hits.length ? `<p class="muted small">${hits.length} result${hits.length === 1 ? "" : "s"}${hits.length > 50 ? " · showing 50" : ""}</p><div class="link-list panel flush">${hits.slice(0, 50).map(id => {
+      body.innerHTML = hits.length ? `<p class="muted small">${hits.length} result${hits.length === 1 ? "" : "s"}${hits.length > 50 ? " · showing 50" : ""}</p><div class="link-list panel flush cols">${hits.slice(0, 50).map(id => {
         const it = D.items[id];
         return `<a class="row-link" href="#/unit/${it.u}/${it.type === "w" ? "words" : it.type === "v" ? "verbs" : "phrases"}"><span><span class="row-title it">${esc(sayOf(id))}</span><span class="muted small">${esc(it.d.en)}</span></span><span class="row-meta"><span class="status ${statusOf(id)}">${statusLabel(id)}</span> U${it.u}</span>${ICON.chev}</a>`;
       }).join("")}</div>` : `<p class="empty-line">Nothing matches “${esc(search.value)}”.</p>`;
@@ -68,7 +68,7 @@ export async function viewLearn(app, v, alive) {
       byLevel() ? S.pref.level : null);
   } else {
     const base = sec === "writing" ? "write" : "speak", pre = sec === "writing" ? "wr:" : "sp:";
-    body.innerHTML = `<div class="link-list panel flush">${data.map(x => {
+    body.innerHTML = `<div class="link-list panel flush cols">${data.map(x => {
       const st = S.st[pre + x.id];
       const started = sec === "writing" ? st?.text?.trim() : st?.done;
       return `<a class="row-link tall" href="#/${base}/${x.id}"><span><span class="row-title it">${esc(x.title)}</span><span class="muted small">${esc(x.en)} · ${esc(TOPICS[x.topic] || "")}</span></span><span class="row-meta">${started ? `<span class="pill ok">${sec === "writing" ? "Draft saved" : "Practised"}</span>` : ""}</span>${ICON.chev}</a>`;

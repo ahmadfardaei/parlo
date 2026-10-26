@@ -41,7 +41,8 @@ export function onAuthEvent(event, session) {
 export function viewAccount(app) {
   const settings = `<section class="panel"><h2>Settings</h2>
       <div class="setting"><span>Your level</span><div class="seg small" role="group" aria-label="Your level">${LEVELS.map(l => `<button data-level="${l}" aria-pressed="${S.pref.level === l}">${l}</button>`).join("")}</div></div>
-      <div class="setting"><span>New cards per session</span><div class="seg small" role="group" aria-label="New cards">${[0, 10, 20, 30].map(n => `<button data-newn="${n}" aria-pressed="${S.pref.newN === n}">${n}</button>`).join("")}</div></div>
+      <div class="setting"><span>New words per session</span><div class="seg small" role="group" aria-label="New cards">${[0, 10, 20, 30].map(n => `<button data-newn="${n}" aria-pressed="${S.pref.newN === n}">${n}</button>`).join("")}</div></div>
+      <div class="setting"><span>Card front</span><div class="seg small" role="group" aria-label="Card front">${[["it", "Italian"], ["en", "English"]].map(([k, l]) => `<button data-dir="${k}" aria-pressed="${S.pref.dir === k}">${l}</button>`).join("")}</div></div>
       <div class="setting"><span>Speech speed</span><div class="seg small" role="group" aria-label="Speech speed">${[["0.75", "Slow"], ["0.92", "Normal"]].map(([r, l]) => `<button data-rate="${r}" aria-pressed="${String(S.pref.rate || 0.92) === r}">${l}</button>`).join("")}</div></div>
       <div class="setting"><span>Install</span><div>${installHTML()}</div></div>
     </section>`;
@@ -83,7 +84,7 @@ export function viewAccount(app) {
   const danger = S.user ? `<section class="panel"><h2>Sign out</h2><p class="muted small">Your progress stays safe in your account.</p>
       <div class="btn-row"><button class="btn" data-signout>Sign out</button>
       ${armed === "delete" ? `<input class="input short" id="del-confirm" placeholder="Type DELETE" aria-label="Type DELETE to confirm"><button class="btn danger" data-del-confirm>Delete account</button><button class="btn quiet" data-del-cancel>Cancel</button>` : `<button class="btn quiet danger-text" data-del>Delete account…</button>`}</div></section>` : "";
-  app.innerHTML = `<header class="page-head"><h1>${S.user ? "Ciao, " + esc(displayName().split(" ")[0] || "") : mode === "signup" ? "Create your account" : "Profilo"}</h1></header>${main}${settings}${data}${danger}`;
+  app.innerHTML = `<header class="page-head"><h1>${S.user ? "Ciao, " + esc(displayName().split(" ")[0] || "") : mode === "signup" ? "Create your account" : "Profilo"}</h1></header><div class="grid-2"><div>${main}${danger}</div><div>${settings}${data}</div></div>`;
   wire(app);
 }
 
@@ -92,6 +93,7 @@ function wire(app) {
   app.querySelectorAll("[data-level]").forEach(b => b.onclick = () => { savePref({ level: b.dataset.level }); viewAccount(app); });
   app.querySelectorAll("[data-newn]").forEach(b => b.onclick = () => { savePref({ newN: +b.dataset.newn }); viewAccount(app); });
   app.querySelectorAll("[data-rate]").forEach(b => b.onclick = () => { savePref({ rate: +b.dataset.rate }); viewAccount(app); });
+  app.querySelectorAll("[data-dir]").forEach(b => b.onclick = () => { savePref({ dir: b.dataset.dir }); viewAccount(app); });
   app.querySelectorAll("[data-mode]").forEach(b => b.onclick = () => { mode = b.dataset.mode; msg = null; viewAccount(app); });
   $("[data-install]")?.addEventListener("click", async () => { if (!deferred) return; deferred.prompt(); await deferred.userChoice.catch(() => {}); deferred = null; viewAccount(app); });
   $("[data-google]")?.addEventListener("click", async () => { const { error } = await supabase.auth.signInWithOAuth({ provider: "google", options: { redirectTo: appUrl() } }); if (error) setMsg(friendly(error)); });

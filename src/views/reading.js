@@ -1,14 +1,14 @@
-import { S, esc, ICON, canSpeak, setEntry, savePref, remember, speakAll, lsGet, lsSet, TOPICS, shuffle } from "../core.js";
+import { S, esc, ICON, canSpeak, setEntry, savePref, remember, speakAll, lsGet, lsSet, TOPICS, shuffle, openSheet } from "../core.js";
 import { ensure } from "../data.js";
 import { blocksHTML, plainLines, sentHTML, sizeControlHTML } from "./texts.js";
 
 export function readerTools(showEn) {
   return `<div class="reader-tools">
-    <div class="seg small" role="group" aria-label="Translation"><button data-en="0" aria-pressed="${!showEn}">Italian only</button><button data-en="1" aria-pressed="${showEn}">With English</button></div>
-    ${sizeControlHTML()}
-    ${canSpeak ? `<button class="btn quiet small" data-playall>${ICON.play}<span>Listen</span></button>` : ""}
+    <div class="seg small" role="group" aria-label="Translation"><button data-en="0" aria-pressed="${!showEn}">Italiano</button><button data-en="1" aria-pressed="${showEn}">+ English</button></div>
+    <button class="icon-btn" data-textsize aria-label="Text size" title="Text size"><span class="aa">Aa</span></button>
+    ${canSpeak ? `<button class="icon-btn" data-playall aria-label="Listen to the whole text" title="Listen">${ICON.play}</button>` : ""}
   </div>
-  ${lsGet("parlo.hint.reader", true) ? `<p class="hint-line">Tap a sentence for its translation, or select words to save them to your deck. <button class="text-btn" data-hide-hint>Got it</button></p>` : ""}`;
+  ${lsGet("parlo.hint.reader", true) ? `<p class="hint-line">Tap a sentence for its translation, or select words to save them. <button class="text-btn" data-hide-hint>OK</button></p>` : ""}`;
 }
 // Wires the tools above for a text whose sentences are `lines`; `redraw` re-renders with the new translation setting.
 export function wireReader(root, lines, redraw) {
@@ -16,16 +16,18 @@ export function wireReader(root, lines, redraw) {
   apply();
   root.querySelectorAll("[data-en]").forEach(b => b.onclick = () => { savePref({ showEn: b.dataset.en === "1" }); apply(); });
   root.querySelector("[data-hide-hint]")?.addEventListener("click", e => { lsSet("parlo.hint.reader", false); e.target.closest(".hint-line").remove(); });
+  root.querySelector("[data-textsize]")?.addEventListener("click", () => openSheet(`<div class="sheet-body"><h2>Text size</h2>
+    <p class="it size-sample">Ogni mattina bevo un caffè al bar sotto casa.</p>${sizeControlHTML()}</div>`));
   const play = root.querySelector("[data-playall]");
   if (!play) return;
   let stop = null;
   play.onclick = () => {
     if (stop) { stop(); return; }
     const sents = [...root.querySelectorAll(".reader .sent")];
-    play.innerHTML = `${ICON.stop}<span>Stop</span>`;
+    play.innerHTML = ICON.stop; play.setAttribute("aria-label", "Stop listening");
     stop = speakAll(lines,
       i => { sents.forEach(s => s.classList.remove("speaking")); sents[i]?.classList.add("speaking"); sents[i]?.scrollIntoView({ block: "center", behavior: "smooth" }); },
-      () => { stop = null; sents.forEach(s => s.classList.remove("speaking")); play.innerHTML = `${ICON.play}<span>Listen</span>`; });
+      () => { stop = null; sents.forEach(s => s.classList.remove("speaking")); play.innerHTML = ICON.play; play.setAttribute("aria-label", "Listen to the whole text"); });
   };
 }
 
@@ -39,18 +41,24 @@ export async function viewReading(app, v, alive) {
   const draw = () => {
     const showEn = !!S.pref.showEn;
     const qs = r.questions.map(q => ({ ...q, o: shuffle(q.o) }));
-    app.innerHTML = `<a class="back-link" href="#/learn/reading">${ICON.back} Lettura</a>
-      <header class="page-head"><p class="eyebrow">${r.level} · ${esc(r.genre)} · ${r.minutes} min · ${esc(TOPICS[r.topic] || "")}</p>
-        <h1 class="it">${esc(r.title)}</h1><p class="muted">${esc(r.blurb)}</p></header>
-      ${readerTools(showEn)}
-      <article class="reader">${blocksHTML(r.body, `#/read/${r.id}`, r.title, showEn)}</article>
-      <details class="group"><summary><span class="group-title">Glossary</span><span class="group-meta">${r.glossary.length} words</span></summary>
-        <div class="panel flush reader">${r.glossary.map(g => `<div class="gloss">${sentHTML({ it: g.it, en: g.en }, `#/read/${r.id}`, r.title)}<span class="muted">${esc(g.en)}</span></div>`).join("")}</div></details>
-      <section class="g-sec"><h2>Did you get it?</h2>
-        <div class="panel flush" id="qs">${qs.map((q, i) => `<div class="rq" data-q="${i}"><p class="it strong">${i + 1}. ${esc(q.q)}</p><div class="opts">${q.o.map((o, j) => `<button class="opt it" data-qo="${j}">${esc(o)}</button>`).join("")}</div></div>`).join("")}</div>
-        <div class="panel finish" id="finish">${st.done ? `<p class="ok-text">${ICON.check} You've read this${st.score != null ? ` · ${st.score}/${r.questions.length} correct` : ""}.</p>` : `<p class="muted small">Answer the questions, or simply mark it as read.</p>`}
-          <div class="btn-row">${st.done ? "" : `<button class="btn primary" data-done>Mark as read</button>`}<a class="btn" href="#/learn/reading">More texts</a></div></div>
-      </section>`;
+    const wide = matchMedia("(min-width: 1024px)").matches;
+    app.innerHTML = `<div class="layout">
+      <div class="l-head"><a class="back-link" href="#/learn/reading">${ICON.back} Lettura</a>
+        <header class="page-head"><p class="eyebrow">${r.level} · ${esc(r.genre)} · ${r.minutes} min · ${esc(TOPICS[r.topic] || "")}</p>
+        <h1 class="it">${esc(r.title)}</h1><p class="muted">${esc(r.blurb)}</p></header></div>
+      <div class="l-main">
+        <article class="reader">${blocksHTML(r.body, `#/read/${r.id}`, r.title, showEn)}</article>
+        <section class="g-sec"><h2>Did you get it?</h2>
+          <div class="panel flush" id="qs">${qs.map((q, i) => `<div class="rq" data-q="${i}"><p class="it strong">${i + 1}. ${esc(q.q)}</p><div class="opts">${q.o.map((o, j) => `<button class="opt it" data-qo="${j}">${esc(o)}</button>`).join("")}</div></div>`).join("")}</div>
+          <div class="panel finish" id="finish">${st.done ? `<p class="ok-text">${ICON.check} You've read this${st.score != null ? ` · ${st.score}/${r.questions.length} correct` : ""}.</p>` : `<p class="muted small">Answer the questions, or simply mark it as read.</p>`}
+            <div class="btn-row">${st.done ? "" : `<button class="btn primary" data-done>Mark as read</button>`}<a class="btn" href="#/learn/reading">More texts</a></div></div>
+        </section>
+      </div>
+      <aside class="l-aside">
+        <div class="l-side">${readerTools(showEn)}</div>
+        <div class="l-side2"><details class="group" ${wide ? "open" : ""}><summary><span class="group-title">Glossary</span><span class="group-meta">${r.glossary.length} words</span></summary>
+          <div class="panel flush reader">${r.glossary.map(g => `<div class="gloss">${sentHTML({ it: g.it, en: g.en }, `#/read/${r.id}`, r.title)}<span class="muted">${esc(g.en)}</span></div>`).join("")}</div></details></div>
+      </aside></div>`;
     wireReader(app, plainLines(r.body), draw);
     let answered = 0, correct = 0;
     app.querySelectorAll(".rq").forEach(div => {

@@ -92,7 +92,7 @@ on("leave", () => { hideSelBar(); resetSentences(); });
 
 /* ---------- Reader text size ---------- */
 export function sizeControlHTML() {
-  return `<div class="seg small" role="group" aria-label="Text size"><button data-size="-1" aria-label="Smaller text">A−</button><button data-size="1" aria-label="Larger text">A+</button></div>`;
+  return `<div class="seg" role="group" aria-label="Text size"><button data-size="-1" aria-label="Smaller text">A−</button><button data-size="1" aria-label="Larger text">A+</button></div>`;
 }
 export function applySize() { document.documentElement.style.setProperty("--reader-size", (S.pref.size || 19) + "px"); }
 applySize();

@@ -1,6 +1,6 @@
-import { S, D, esc, ICON, canSpeak, say, full, unitByN, statusOf, statusLabel, inDeck, setEntry, schedule, dueIds, deckIds, allReviewable, counts, fmtIn, savePref, on, schedHTML } from "../core.js";
+import { S, D, esc, ICON, canSpeak, say, full, statusOf, statusLabel, setEntry, schedule, dueIds, deckIds, allReviewable, fmtIn, on, schedHTML, lsGet } from "../core.js";
 import { highlight } from "./unit.js";
-import { newAvailable } from "./home.js";
+import { nextUnit } from "./home.js";
 
 /* ---------- What a card shows ---------- */
 function boldIn(ctx, part) {
@@ -20,60 +20,34 @@ export function cardData(id) {
   return { kind: "Phrase", from: unit, fromHref: `#/unit/${it.u}/phrases`, target: d.it, sentIt: highlight(d.ex, d.it.split(" ")[0]), sentEn: d.exEn, meaning: d.en, say: d.ex };
 }
 
-/* ---------- Review hub ---------- */
-export function viewReview(app) {
-  const due = dueIds().length, newN = Math.min(S.pref.newN, newAvailable());
-  const deck = deckIds(), deckDue = dueIds(deck).length;
-  const all = counts(allReviewable());
-  app.innerHTML = `<header class="page-head"><h1>Ripasso</h1><p class="muted">Short daily reviews. Each card comes back when you're about to forget it.</p></header>
-    <section class="panel hero-card">
-      <div class="hero-main"><p class="eyebrow">Today</p>
-        ${due ? `<p class="big-num">${due}</p><p class="muted">due${newN ? ` · ${newN} new` : ""}</p>` : `<p class="big-line">${newN ? "Nothing due." : "All done."}</p><p class="muted">${newN ? `${newN} new cards ready.` : "Come back later."}</p>`}</div>
-      ${due || newN ? `<a class="btn primary large" href="#/session/due">${due ? "Start review" : "Learn new cards"}</a>` : ""}
-    </section>
-    <section class="panel">
-      <div class="panel-head"><h2>★ My deck</h2><a class="text-btn" href="#/deck">See all</a></div>
-      <p class="muted small">${deck.length ? `${deck.length} sentence${deck.length === 1 ? "" : "s"} you saved${deckDue ? ` · ${deckDue} due` : ""}.` : "Save sentences from units, texts and examples with ★. They'll appear here."}</p>
-      ${deck.length ? `<a class="btn" href="#/session/deck">Practise my deck</a>` : ""}
-    </section>
-    <section class="panel">
-      <h2>Settings</h2>
-      <div class="setting"><span>New cards per session</span><div class="seg small" role="group" aria-label="New cards per session">${[0, 10, 20, 30].map(n => `<button data-newn="${n}" aria-pressed="${S.pref.newN === n}">${n}</button>`).join("")}</div></div>
-      <div class="setting"><span>Card front</span><div class="seg small" role="group" aria-label="Card direction"><button data-dir="it" aria-pressed="${S.pref.dir === "it"}">Italian</button><button data-dir="en" aria-pressed="${S.pref.dir === "en"}">English</button></div></div>
-      <p class="muted small">${all.known} known · ${all.learning} learning across the course.</p>
-    </section>`;
-  app.querySelectorAll("[data-newn]").forEach(b => b.onclick = () => { savePref({ newN: +b.dataset.newn }); viewReview(app); });
-  app.querySelectorAll("[data-dir]").forEach(b => b.onclick = () => { savePref({ dir: b.dataset.dir }); viewReview(app); });
-}
-
-/* ---------- Deck list ---------- */
+/* ---------- Mazzo (my deck) ---------- */
 let deckFilter = "all";
 export function viewDeck(app) {
   const ids = deckIds();
   const shown = ids.filter(id => deckFilter === "all" || (deckFilter === "texts" ? id.startsWith("s:") : !id.startsWith("s:")));
-  app.innerHTML = `<a class="back-link" href="#/review">${ICON.back} Ripasso</a>
-    <header class="page-head"><h1>★ My deck</h1><p class="muted">Sentences you saved, with the words in context.</p></header>
-    ${ids.length ? `<div class="list-tools"><div class="seg small" role="group" aria-label="Show">${[["all", "All"], ["units", "From units"], ["texts", "From texts"]].map(([k, l]) => `<button data-df="${k}" aria-pressed="${deckFilter === k}">${l}</button>`).join("")}</div>
-      <a class="btn primary" href="#/session/deck">Practise</a></div>` : ""}
-    ${shown.length ? `<div class="panel flush">${shown.map(id => { const c = cardData(id); return `<div class="deck-item">
+  const ready = dueIds(ids).length + ids.filter(id => statusOf(id) === "new").length;
+  app.innerHTML = `<header class="page-head"><h1>Mazzo</h1><p class="muted">Sentences you saved, with the words in context. Tap ★ on any word, or tap a sentence in a text, to add it here.</p></header>
+    ${ids.length ? `<section class="panel deck-head">
+        <div><p class="big-line">${ids.length} sentence${ids.length === 1 ? "" : "s"}</p><p class="muted small">${ready ? `${ready} ready to practise` : "Nothing due. You can still go through them."}</p></div>
+        <a class="btn primary" href="#/session/deck">Practise my deck</a></section>
+      <div class="list-tools"><div class="seg small" role="group" aria-label="Show">${[["all", "All"], ["units", "From units"], ["texts", "From texts"]].map(([k, l]) => `<button data-df="${k}" aria-pressed="${deckFilter === k}">${l}</button>`).join("")}</div></div>` : ""}
+    ${shown.length ? `<div class="deck-grid">${shown.map(id => { const c = cardData(id); return `<div class="panel deck-item">
         <p class="ex-it">${c.sentIt}</p><p class="ex-en">${esc(c.sentEn)}</p>
         <p class="muted small">${c.target ? `<span class="it">${esc(c.target)}</span> = ${esc(c.meaning)} · ` : ""}${c.fromHref ? `<a href="${esc(c.fromHref)}">${esc(c.from)}</a>` : esc(c.from)}</p>
         <div class="item-actions">${canSpeak ? `<button class="btn quiet small" data-say-text="${esc(c.say)}">${ICON.speak}<span>Listen</span></button>` : ""}
           <button class="status ${statusOf(id)}" data-status="${esc(id)}" data-toggle-sched>${statusLabel(id)}</button>
           <button class="btn quiet small" data-remove="${esc(id)}">Remove</button></div>
         <div class="sched-wrap" hidden>${schedHTML(id)}</div></div>`; }).join("")}</div>`
-      : `<div class="empty-state"><h2>${ids.length ? "Nothing here" : "Your deck is empty"}</h2><p>Tap ★ Save on any word or phrase, or tap a sentence in a text and choose “Save to deck”.</p><a class="btn" href="#/learn/reading">Find something to read</a></div>`}`;
+      : `<div class="empty-state"><h2>${ids.length ? "Nothing here" : "Your deck is empty"}</h2><p class="muted">Save sentences while you read, or tap ★ Save on any word or phrase.</p><a class="btn" href="#/learn/reading">Find something to read</a></div>`}`;
   app.querySelectorAll("[data-df]").forEach(b => b.onclick = () => { deckFilter = b.dataset.df; viewDeck(app); });
-  app.querySelectorAll("[data-remove]").forEach(b => b.onclick = () => {
-    const id = b.dataset.remove; setEntry(id, { s: 0 }); viewDeck(app);
-  });
+  app.querySelectorAll("[data-remove]").forEach(b => b.onclick = () => { setEntry(b.dataset.remove, { s: 0 }); viewDeck(app); });
 }
 
 /* ---------- Session (focus mode) ---------- */
 let ses = null;
 on("leave", () => { ses = null; });
 function build(v) {
-  let pool, newPool, cap = 60;
+  let pool, newPool;
   if (v.src === "unit") { pool = D.unitIds[v.u] || []; newPool = pool; }
   else if (v.src === "deck") { pool = deckIds(); newPool = pool; }
   else {
@@ -84,45 +58,40 @@ function build(v) {
   const due = dueIds(pool);
   const nNew = v.src === "due" ? S.pref.newN : Math.max(S.pref.newN, 10);
   let fresh = newPool.filter(id => statusOf(id) === "new").slice(0, nNew);
-  // Sentences the learner saved themselves are introduced first in the daily review.
+  // Sentences the learner saved themselves are introduced first in the daily session.
   if (v.src === "due") fresh = [...deckIds().filter(id => id.startsWith("s:") && statusOf(id) === "new").slice(0, 20), ...fresh];
   let queue = [...due, ...fresh], cram = false;
   if (!queue.length && v.src !== "due") { queue = pool.filter(id => statusOf(id) === "later").slice(0, 30); cram = queue.length > 0; }
-  return { queue: queue.slice(0, cap), done: 0, total: Math.min(cap, queue.length), flipped: false, history: [], cram, deckMode: v.src === "deck" };
+  queue = queue.slice(0, 60);
+  return { queue, done: 0, flipped: false, intro: false, history: [], cram, deckMode: v.src === "deck", stats: { learned: 0, again: 0, known: 0 } };
 }
 const nextIndex = () => ses.queue.findIndex(id => ses.cram || ["new", "due"].includes(statusOf(id)));
-const exitHref = v => v.src === "unit" ? `#/unit/${v.u}/words` : v.src === "deck" ? "#/deck" : "#/review";
+const exitHref = v => v.src === "unit" ? `#/unit/${v.u}/words` : v.src === "deck" ? "#/deck" : "#/";
 
-export function viewSession(app, v) {
-  ses = build(v);
-  draw(app, v);
-}
+export function viewSession(app, v) { ses = build(v); draw(app, v); }
+
 function draw(app, v) {
   if (!ses) return;
   const total = ses.done + ses.queue.length;
   const top = `<div class="focus-top">
       <a class="icon-btn" href="${exitHref(v)}" aria-label="End session">${ICON.close}</a>
       <div class="progress-track" aria-hidden="true"><span style="width:${total ? (ses.done / total) * 100 : 100}%"></span></div>
+      <span class="count small" aria-live="polite">${ses.queue.length ? `${ses.done + 1} / ${total}` : ""}</span>
       <button class="icon-btn" data-undo ${ses.history.length ? "" : "disabled"} aria-label="Back to the previous card" title="Back">${ICON.back}</button>
     </div>`;
-  if (!ses.queue.length) {
-    const later = allReviewable().filter(id => statusOf(id) === "later");
-    const next = later.length ? Math.min(...later.map(id => S.st[id].d)) : 0;
-    app.innerHTML = `${top}<div class="card-stage"><div class="flash done-card"><p class="big-line it">${ses.done ? "Bravo!" : "Tutto fatto"}</p>
-      <p class="muted">${ses.done ? `${ses.done} card${ses.done === 1 ? "" : "s"} reviewed.` : v.src === "deck" ? "Your deck has nothing to practise yet." : "Nothing to review right now."}${next ? ` Next card due in ${fmtIn(next - Date.now())}.` : ""}</p>
-      <div class="btn-row center"><a class="btn primary" href="${exitHref(v)}">Done</a></div></div></div>`;
-    wire(app, v); return;
-  }
+  if (!ses.queue.length) return drawEnd(app, v, top);
   const i = nextIndex();
   if (i < 0) {
     const next = Math.min(...ses.queue.map(id => S.st[id]?.d || Infinity));
     app.innerHTML = `${top}<div class="card-stage"><div class="flash done-card"><p class="big-line it">Una pausa</p>
-      <p class="muted">${ses.queue.length} card${ses.queue.length === 1 ? "" : "s"} will come back in ${fmtIn(next - Date.now())}.</p>
-      <div class="btn-row center"><button class="btn primary" data-now>Review them now</button><a class="btn" href="${exitHref(v)}">Finish</a></div></div></div>`;
-    wire(app, v); return;
+      <p class="muted">${ses.queue.length} card${ses.queue.length === 1 ? "" : "s"} will come back in ${fmtIn(next - Date.now())}.</p></div>
+      <div class="card-actions"><button class="btn primary large wide" data-now>Review them now</button><button class="btn wide" data-finish>Finish</button></div></div>`;
+    return wire(app, v);
   }
   if (i > 0) { const [id] = ses.queue.splice(i, 1); ses.queue.unshift(id); }
   const id = ses.queue[0], c = cardData(id), en = S.pref.dir === "en";
+  // A card you've never seen is introduced in full, not tested.
+  if (statusOf(id) === "new" && !ses.flipped) { ses.flipped = true; ses.intro = true; setTimeout(() => { if (ses && ses.queue[0] === id) say(c.say); }, 150); }
   const sentenceFirst = ses.deckMode || !c.target;
   const front = en
     ? `${c.meaning ? `<p class="card-target en">${esc(c.meaning)}</p>` : ""}<p class="card-sent en">${esc(c.sentEn)}</p>`
@@ -133,22 +102,37 @@ function draw(app, v) {
     : `${c.meaning ? `<p class="card-answer">${esc(c.meaning)}</p>` : ""}<p class="card-sent en">${esc(c.sentEn)}</p>${sentenceFirst && c.target ? `<p class="muted small it">${esc(c.target)}</p>` : ""}${c.extra ? `<p class="muted small it">${esc(c.extra)}</p>` : ""}`;
   app.innerHTML = `${top}<div class="card-stage">
     <div class="flash" id="card" ${ses.flipped ? "" : 'role="button" tabindex="0" aria-label="Show the answer"'}>
-      <p class="card-meta">${esc(c.kind)} · ${esc(c.from)}${statusOf(id) === "new" ? " · new" : ""}</p>
+      <p class="card-meta">${ses.intro ? `<span class="pill new">New</span> ` : ""}${esc(c.kind)} · ${esc(c.from)}</p>
       ${front}
-      ${ses.flipped ? `<hr class="card-rule">${back}` : `<p class="tap-hint">Tap to see the answer</p>`}
+      ${ses.flipped ? `<hr class="card-rule">${back}` : `<p class="tap-hint">Try to remember, then tap</p>`}
       ${ses.flipped && canSpeak ? `<button class="icon-btn listen" data-say-text="${esc(c.say)}" aria-label="Listen">${ICON.speak}</button>` : ""}
     </div>
-    ${ses.flipped ? `<p class="muted small center">When should you see this again?</p><div class="rate">
+    <div class="card-actions">
+    ${ses.flipped ? `<p class="muted small center">${ses.intro ? "Read it and listen. When should you see it again?" : "When should you see this again?"}</p><div class="rate">
       <button class="btn rate-again" data-rate="10m">10 min</button><button class="btn" data-rate="1d">1 day</button><button class="btn" data-rate="3d">3 days</button><button class="btn" data-rate="7d">7 days</button>
-      <button class="btn rate-know" data-rate="known">I know it</button></div>`
+      <button class="btn rate-know" data-rate="known">I already know it</button></div>`
       : `<button class="btn primary large wide" data-flip>Show answer</button>`}
-    <p class="muted small center keys">Space: show · 1–5: rate · ←: back</p>
+    <p class="muted small center keys">Space: show · 1–5: choose · ←: back</p></div>
   </div>`;
+  wire(app, v);
+}
+function drawEnd(app, v, top) {
+  const s = ses.stats;
+  const later = allReviewable().filter(id => statusOf(id) === "later");
+  const next = later.length ? Math.min(...later.map(id => S.st[id].d)) : 0;
+  const last = lsGet("parlo.last", null), nu = nextUnit();
+  const keep = v.src !== "due" ? null : last ? { href: last.href, label: `Continue: ${last.title}` } : nu ? { href: `#/unit/${nu.n}/words`, label: `Explore Unità ${nu.n}` } : null;
+  app.innerHTML = `${top}<div class="card-stage"><div class="flash done-card">
+      <p class="big-line it">${ses.done ? "Bravo!" : "Tutto fatto"}</p>
+      ${ses.done ? `<div class="end-stats">${s.learned ? `<span><b>${s.learned}</b> new ${s.learned === 1 ? "word" : "words"}</span>` : ""}${ses.done - s.learned > 0 ? `<span><b>${ses.done - s.learned}</b> reviewed</span>` : ""}${s.known ? `<span><b>${s.known}</b> already known</span>` : ""}</div>` : ""}
+      <p class="muted">${ses.done ? "" : v.src === "deck" ? "Your deck has nothing to practise yet. " : "Nothing to review right now. "}${next ? `Next review in ${fmtIn(next - Date.now())}.` : ""}</p></div>
+    <div class="card-actions">${keep ? `<a class="btn primary large wide" href="${esc(keep.href)}">${esc(keep.label)}</a><a class="btn wide" href="${exitHref(v)}">Done</a>` : `<a class="btn primary large wide" href="${exitHref(v)}">Done</a>`}</div></div>`;
   wire(app, v);
 }
 function wire(app, v) {
   app.querySelector("[data-undo]")?.addEventListener("click", () => undo(app, v));
   app.querySelector("[data-now]")?.addEventListener("click", () => { ses.cram = true; draw(app, v); });
+  app.querySelector("[data-finish]")?.addEventListener("click", () => { ses.queue = []; draw(app, v); });
   app.querySelector("#card")?.addEventListener("click", e => { if (!e.target.closest("button")) flip(app, v); });
   app.querySelector("[data-flip]")?.addEventListener("click", () => flip(app, v));
   app.querySelectorAll("[data-rate]").forEach(b => b.onclick = () => rate(app, v, b.dataset.rate));
@@ -161,17 +145,19 @@ function flip(app, v) {
 function rate(app, v, key) {
   if (!ses || !ses.flipped) return;
   const id = ses.queue[0];
-  ses.history.push({ id, prev: S.st[id] ? { ...S.st[id] } : null, queue: [...ses.queue], done: ses.done });
+  ses.history.push({ id, prev: S.st[id] ? { ...S.st[id] } : null, queue: [...ses.queue], done: ses.done, stats: { ...ses.stats } });
   if (ses.history.length > 30) ses.history.shift();
+  if (statusOf(id) === "new") ses.stats.learned++;
   ses.queue.shift();
   schedule(id, key);
-  if (key === "10m") ses.queue.push(id); else ses.done++;
-  ses.flipped = false; draw(app, v);
+  if (key === "known") ses.stats.known++;
+  if (key === "10m") { ses.queue.push(id); ses.stats.again++; } else ses.done++;
+  ses.flipped = false; ses.intro = false; draw(app, v);
 }
 function undo(app, v) {
   const h = ses?.history.pop(); if (!h) return;
   setEntry(h.id, h.prev ? Object.fromEntries(Object.entries(h.prev).filter(([k]) => k !== "t")) : { d: 0, k: 0, iv: "" }, true);
-  ses.queue = h.queue; ses.done = h.done; ses.flipped = true;
+  ses.queue = h.queue; ses.done = h.done; ses.stats = h.stats; ses.flipped = true; ses.intro = !h.prev;
   draw(app, v);
 }
 document.addEventListener("keydown", e => {

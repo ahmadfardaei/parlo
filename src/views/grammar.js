@@ -2,6 +2,7 @@ import { S, D, esc, rich, ICON, canSpeak, setEntry, shuffle, pick, say, lsGet, l
 import { ensure } from "../data.js";
 import { PRON, TENSES } from "./unit.js";
 import { GTOPICS } from "./learn.js";
+import { sentHTML } from "./texts.js";
 
 const ACCENTS = ["à", "è", "é", "ì", "ò", "ù"];
 const score = id => S.st["g:" + id] || null;
@@ -20,15 +21,16 @@ export async function viewGrammar(app, v, alive) {
     const rows = t.rows ? t.rows : t.end.map((e, i) => [(t.che ? "che " : "") + PRON[i], `${esc(t.stem)}<b>${esc(e)}</b>`, true]);
     return `<div class="panel g-table"><p class="g-table-h">${esc(t.h)}</p><table class="conj"><tbody>${rows.map(r => `<tr><td>${r[2] ? r[0] : rich(r[0])}</td><td class="it">${r[2] ? r[1] : rich(r[1])}</td></tr>`).join("")}</tbody></table></div>`;
   };
-  const cta = `<div class="btn-row"><a class="btn primary" href="#/grammar/${g.id}/practice">Practise · ${g.ex.length} exercises</a>${g.tense ? `<a class="btn" href="#/grammar/${g.id}/drill">Verb drill</a>` : ""}</div>`;
-  app.innerHTML = `<a class="back-link" href="#/learn/grammar">${ICON.back} Grammatica</a>
-    <header class="page-head"><p class="eyebrow">${g.level} · ${esc(GTOPICS[g.topic] || "")}</p><h1 class="it">${esc(g.title)}</h1><p class="muted">${esc(g.en)}. ${esc(g.summary)}</p></header>
-    <section class="panel">${sc && sc.best != null ? `<p class="muted small">Best score ${sc.best}/${sc.total}</p>` : ""}${cta}</section>
+  const cta = `<div class="btn-row"><a class="btn primary" href="#/grammar/${g.id}/practice">Practise (${g.ex.length})</a>${g.tense ? `<a class="btn" href="#/grammar/${g.id}/drill">Verb drill</a>` : ""}</div>`;
+  app.innerHTML = `<div class="layout"><div class="l-head"><a class="back-link" href="#/learn/grammar">${ICON.back} Grammatica</a>
+    <header class="page-head"><p class="eyebrow">${g.level} · ${esc(GTOPICS[g.topic] || "")}</p><h1 class="it">${esc(g.title)}</h1><p class="muted">${esc(g.en)}. ${esc(g.summary)}</p></header></div>
+    <div class="l-main">
 
     <section class="g-sec"><h2>The idea</h2><div class="panel prose"><p>${g.meaning}</p></div></section>
     <section class="g-sec"><h2>When to use it</h2><div class="panel flush">${g.uses.map(u => `<div class="use">
       <p class="use-h">${esc(u.h)}</p><p class="small">${u.t}</p>
-      <p class="ex-it">${esc(u.ex[0])} ${canSpeak ? `<button class="icon-btn small" data-say-text="${esc(u.ex[0])}" aria-label="Listen">${ICON.speak}</button>` : ""}</p><p class="ex-en">${esc(u.ex[1])}</p></div>`).join("")}</div></section>
+      <p class="ex-it">${sentHTML({ it: u.ex[0], en: u.ex[1] }, `#/grammar/${g.id}`, g.title)}</p><p class="ex-en">${esc(u.ex[1])}</p></div>`).join("")}</div>
+      <p class="muted small">Tap any example to hear it or save it to your deck.</p></section>
     <section class="g-sec"><h2>How it works</h2>
       <div class="panel prose"><p>${g.form.intro}</p></div>
       ${g.form.tables ? `<div class="g-tables">${g.form.tables.map(table).join("")}</div>` : ""}
@@ -37,10 +39,12 @@ export async function viewGrammar(app, v, alive) {
     </section>
     ${g.irregular ? `<details class="g-sec group"><summary><span class="group-title">${esc(g.irregularTitle || (g.id === "pp" ? "Irregular past participles" : "Irregular forms"))}</span><span class="group-meta">${g.irregular.length}</span></summary>
       <div class="panel flush">${g.irregular.map(([a, b]) => `<div class="irr"><span class="it">${rich(a)}</span><span>${rich(b)}</span></div>`).join("")}</div></details>` : ""}
-    ${g.signals ? `<section class="g-sec"><h2>Clues to look for</h2><div class="chips">${g.signals.map(s => `<span class="chip it">${esc(s)}</span>`).join("")}</div></section>` : ""}
     <section class="g-sec"><h2>Common mistakes</h2><div class="panel flush">${g.mistakes.map(m => `<div class="mistake">
       <p><span class="bad-text" aria-label="Wrong">✗</span> <s class="it">${esc(m.wrong)}</s></p><p><span class="ok-text" aria-label="Right">✓</span> <span class="it strong">${esc(m.right)}</span></p><p class="muted small">${rich(m.why)}</p></div>`).join("")}</div></section>
-    <section class="panel g-end"><h2>Your turn</h2><p class="muted small">${g.ex.length} exercises${g.tense ? ", and a drill with verbs from the course" : ""}.</p>${cta}</section>
+    <section class="panel g-end"><h2>Your turn</h2>${cta}</section>
+    </div>
+    <aside class="l-aside"><div class="l-side"><section class="panel">${sc && sc.best != null ? `<p class="muted small">Your best: ${sc.best} of ${sc.total}</p>` : ""}${cta}</section>
+      ${g.signals ? `<section class="panel"><h2>Clues to look for</h2><div class="chips">${g.signals.map(s => `<span class="chip it">${esc(s)}</span>`).join("")}</div></section>` : ""}</div></aside></div>
     <nav class="pager">${sorted[idx - 1] ? `<a href="#/grammar/${sorted[idx - 1].id}">${ICON.back} ${esc(sorted[idx - 1].title)}</a>` : "<span></span>"}${sorted[idx + 1] ? `<a href="#/grammar/${sorted[idx + 1].id}">${esc(sorted[idx + 1].title)} ${ICON.chev}</a>` : ""}</nav>`;
 }
 

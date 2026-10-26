@@ -27,25 +27,29 @@ export async function viewSpeaking(app, v, alive) {
   const draw = () => {
     const showEn = !!S.pref.showEn;
     const done = S.st["sp:" + t.id]?.done;
-    app.innerHTML = `<a class="back-link" href="#/learn/speaking">${ICON.back} Parlato</a>
-      <header class="page-head"><p class="eyebrow">${esc(TOPICS[t.topic] || "")}</p><h1 class="it">${esc(t.title)}</h1><p class="muted">${esc(t.en)}</p></header>
-      <section class="panel prose"><p>${esc(t.task)}</p></section>
-      <section class="g-sec"><h2>Talk about…</h2><div class="panel flush reader">${t.questions.map(q => `<div class="gloss">${sentHTML(q, `#/speak/${t.id}`, t.title)}<span class="muted">${esc(q.en)}</span></div>`).join("")}</div></section>
-      <details class="group"><summary><span class="group-title">Useful phrases</span><span class="group-meta">${t.phrases.length}</span></summary>
-        <div class="panel flush reader">${t.phrases.map(p => `<div class="gloss">${sentHTML(p, `#/speak/${t.id}`, t.title)}<span class="muted">${esc(p.en)}</span></div>`).join("")}</div></details>
-      <section class="g-sec"><h2>Practise out loud</h2><div class="panel speak-box">
-        <div class="seg small" role="group" aria-label="How long"><button data-min="5" aria-pressed="${minutes === 5}">5 min</button><button data-min="10" aria-pressed="${minutes === 10}">10 min</button></div>
-        <p class="timer" id="timer" aria-live="off">${mmss(left || minutes * 60)}</p>
-        <div class="btn-row center">
+    const wide = matchMedia("(min-width: 1024px)").matches;
+    app.innerHTML = `<div class="layout side-after">
+      <div class="l-head"><a class="back-link" href="#/learn/speaking">${ICON.back} Parlato</a>
+        <header class="page-head"><p class="eyebrow">${esc(TOPICS[t.topic] || "")}</p><h1 class="it">${esc(t.title)}</h1><p class="muted">${esc(t.en)}</p></header></div>
+      <div class="l-main">
+        <section class="panel prose"><p>${esc(t.task)}</p></section>
+        <section class="g-sec"><h2>Talk about…</h2><div class="panel flush reader">${t.questions.map(q => `<div class="gloss">${sentHTML(q, `#/speak/${t.id}`, t.title)}<span class="muted">${esc(q.en)}</span></div>`).join("")}</div></section>
+        <section class="g-sec">
+          ${showModels ? `<h2>Example talks</h2>${readerTools(showEn)}${modelsHTML(t, level, showEn, `#/speak/${t.id}`)}`
+            : `<div class="panel note-card"><p>Try it yourself first. Then listen to how someone at each level talks about it.</p><button class="btn primary" data-show-models>Show example talks</button></div>`}
+        </section>
+      </div>
+      <aside class="l-aside">
+        <div class="l-side"><section class="panel speak-box"><h2>Practise out loud</h2>
+          <div class="seg small" role="group" aria-label="How long"><button data-min="5" aria-pressed="${minutes === 5}">5 min</button><button data-min="10" aria-pressed="${minutes === 10}">10 min</button></div>
+          <p class="timer" id="timer" aria-live="off">${mmss(left || minutes * 60)}</p>
           <button class="btn primary" data-start>${timer ? `${ICON.stop} Stop` : canRecord ? `${ICON.mic} Start and record` : `${ICON.play} Start timer`}</button>
-        </div>
-        ${audioUrl ? `<p class="muted small">Listen back to yourself:</p><audio controls src="${audioUrl}"></audio>` : canRecord ? `<p class="muted small">Your recording stays on this device and isn't uploaded.</p>` : ""}
-        ${done ? `<p class="ok-text">${ICON.check} Practised</p>` : `<button class="btn quiet" data-sp-done>Mark as practised</button>`}
-      </div></section>
-      <section class="g-sec">
-        ${showModels ? `<h2>Example talks</h2>${readerTools(showEn)}${modelsHTML(t, level, showEn, `#/speak/${t.id}`)}`
-          : `<div class="panel note-card"><p>Try it yourself first. Then listen to how someone at each level talks about it.</p><button class="btn primary" data-show-models>Show example talks</button></div>`}
-      </section>`;
+          ${audioUrl ? `<p class="muted small">Listen back to yourself:</p><audio controls src="${audioUrl}"></audio>` : canRecord ? `<p class="muted small">Your recording stays on this device.</p>` : ""}
+          ${done ? `<p class="ok-text">${ICON.check} Practised</p>` : `<button class="btn quiet small" data-sp-done>Mark as practised</button>`}
+        </section></div>
+        <div class="l-side2"><details class="group" ${wide ? "open" : ""}><summary><span class="group-title">Useful phrases</span><span class="group-meta">${t.phrases.length}</span></summary>
+          <div class="panel flush reader">${t.phrases.map(p => `<div class="gloss">${sentHTML(p, `#/speak/${t.id}`, t.title)}<span class="muted">${esc(p.en)}</span></div>`).join("")}</div></details></div>
+      </aside></div>`;
     app.querySelectorAll("[data-min]").forEach(b => b.onclick = () => { if (timer) return; minutes = +b.dataset.min; left = 0; draw(); });
     app.querySelector("[data-start]").onclick = start;
     app.querySelector("[data-sp-done]")?.addEventListener("click", () => { setEntry("sp:" + t.id, { done: 1 }); draw(); });

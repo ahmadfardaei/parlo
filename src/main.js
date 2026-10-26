@@ -9,7 +9,7 @@ import { viewGrammar } from "./views/grammar.js";
 import { viewReading } from "./views/reading.js";
 import { viewWriting } from "./views/writing.js";
 import { viewSpeaking } from "./views/speaking.js";
-import { viewReview, viewDeck, viewSession } from "./views/review.js";
+import { viewDeck, viewSession } from "./views/review.js";
 import { viewAccount, onAuthEvent } from "./views/account.js";
 import { ensure } from "./data.js";
 
@@ -25,15 +25,15 @@ export function parseHash() {
     case "read": return { name: "reading", id: p[1] };
     case "write": return { name: "writing", id: p[1] };
     case "speak": return { name: "speaking", id: p[1] };
-    case "review": return { name: "review" };
+    case "review": return { name: "home" }; // the review hub now lives on the home screen
     case "deck": return { name: "deck" };
     case "session": return { name: "session", src: p[1] || "due", u: p[2] ? +p[2] : undefined, focus: true };
     case "account": return { name: "account" };
     default: return { name: "home" };
   }
 }
-const TAB_OF = { home: "home", learn: "learn", unit: "learn", grammar: "learn", reading: "learn", writing: "learn", speaking: "learn", review: "review", deck: "review", session: "review", account: "account" };
-const VIEWS = { home: viewHome, learn: viewLearn, unit: viewUnit, grammar: viewGrammar, reading: viewReading, writing: viewWriting, speaking: viewSpeaking, review: viewReview, deck: viewDeck, session: viewSession, account: viewAccount };
+const TAB_OF = { home: "home", learn: "learn", unit: "learn", grammar: "learn", reading: "learn", writing: "learn", speaking: "learn", review: "home", deck: "deck", session: "home", account: "account" };
+const VIEWS = { home: viewHome, learn: viewLearn, unit: viewUnit, grammar: viewGrammar, reading: viewReading, writing: viewWriting, speaking: viewSpeaking, deck: viewDeck, session: viewSession, account: viewAccount };
 let renderToken = 0, prevPath = "";
 export async function render() {
   if (!D.units.length) return;
@@ -44,7 +44,8 @@ export async function render() {
   S.view = v;
   stopSpeaking(); closeSheet(true); emit("leave");
   document.body.classList.toggle("focus", !!v.focus);
-  $$(".tabbar [data-tab]").forEach(b => { if (b.dataset.tab === TAB_OF[v.name]) b.setAttribute("aria-current", "page"); else b.removeAttribute("aria-current"); });
+  const tab = v.name === "session" && v.src === "deck" ? "deck" : TAB_OF[v.name];
+  $$(".tabbar [data-tab]").forEach(b => { if (b.dataset.tab === tab) b.setAttribute("aria-current", "page"); else b.removeAttribute("aria-current"); });
   try {
     await VIEWS[v.name](app, v, () => token === renderToken);
   } catch (e) {
@@ -69,6 +70,8 @@ function updateBadges() {
   if (acct) acct.textContent = S.user ? (displayName().split(" ")[0] || "Profilo") : "Profilo";
 }
 on("change", () => updateBadges());
+const offline = () => { $("#offline").hidden = navigator.onLine; };
+window.addEventListener("online", offline); window.addEventListener("offline", offline); offline();
 on("account", () => { updateBadges(); if (["account", "home"].includes(S.view.name)) render(); });
 setInterval(updateBadges, 60000);
 

@@ -1,4 +1,4 @@
-import { S, D, esc, rich, ICON, full, unitByN, counts, barHTML, statusOf, statusLabel, inDeck, schedHTML, canSpeak, TOPICS, remember, shuffle, pick, say } from "../core.js";
+import { S, D, esc, rich, ICON, full, unitByN, counts, barHTML, statusOf, statusLabel, inDeck, schedHTML, canSpeak, TOPICS, remember, shuffle, pick, say, openSheet } from "../core.js";
 
 export const PRON = ["io", "tu", "lui / lei", "noi", "voi", "loro"];
 export const TENSES = [
@@ -44,7 +44,7 @@ function itemHTML(id) {
     more = `<p class="muted small">Literally: “${esc(d.lit)}”</p><p class="ex-it">${esc(d.ex)}</p><p class="ex-en">${esc(d.exEn)}</p>${d.note ? `<p class="note">${rich(d.note)}</p>` : ""}`;
   }
   return `<div class="item">
-    <button class="item-main" aria-expanded="false" data-expand>
+    <button class="item-main" data-expand aria-haspopup="dialog">
       <span class="dot ${statusOf(id)}" data-dot="${esc(id)}"></span>
       <span class="item-term it">${term}</span><span class="item-en">${esc(d.en)}</span>${ICON.chev}
     </button>
@@ -53,7 +53,7 @@ function itemHTML(id) {
 function verbHTML(id) {
   const v = D.items[id].d;
   return `<div class="item" data-verb="${esc(id)}">
-    <button class="item-main" aria-expanded="false" data-expand>
+    <button class="item-main" data-expand aria-haspopup="dialog">
       <span class="dot ${statusOf(id)}" data-dot="${esc(id)}"></span>
       <span class="item-term it">${esc(v.inf)}</span><span class="item-en">${esc(v.en)}</span>${ICON.chev}
     </button>
@@ -86,9 +86,8 @@ export function viewUnit(app, v) {
       <p class="muted">${esc(u.en)}. ${esc(u.intro || "")}</p>
     </header>
     <section class="panel unit-cta">
-      <div><div class="level-prog">${barHTML(c)}<span class="small">${c.known} of ${c.total} known</span></div>
-        <p class="muted small">${c.due ? `${c.due} due · ` : ""}${fresh} new</p></div>
-      <a class="btn primary" href="#/session/unit/${u.n}">Practise this unit</a>
+      <div class="level-prog">${barHTML(c)}<span class="small">${Math.round(c.known / Math.max(1, c.total) * 100)}% known</span></div>
+      <a class="btn primary" href="#/session/unit/${u.n}">${c.due ? `Review ${c.due} due` : fresh ? `Learn ${Math.min(fresh, Math.max(S.pref.newN, 10))} new` : "Practise again"}</a>
     </section>
     <nav class="seg tabs-seg" aria-label="Unit sections">
       ${[["words", "Parole", n.words], ["verbs", "Verbi", n.verbs], ["phrases", "Frasi", n.phrases], ["quiz", "Quiz", ""]].map(([k, l, x]) => `<a href="#/unit/${u.n}/${k}" ${k === v.tab ? 'aria-current="page"' : ""}>${l}${x ? ` <span class="n">${x}</span>` : ""}</a>`).join("")}
@@ -102,21 +101,29 @@ export function viewUnit(app, v) {
   if (v.tab === "words") {
     const words = ids.filter(id => D.items[id].type === "w");
     const cats = Object.keys(u.cats).filter(k => words.some(id => D.items[id].d.c === k));
-    body.innerHTML = cats.map(k => `<section class="item-group"><h2 class="group-label">${esc(u.cats[k])}</h2><div class="panel flush">${words.filter(id => D.items[id].d.c === k).map(itemHTML).join("")}</div></section>`).join("");
+    body.innerHTML = cats.map(k => `<section class="item-group"><h2 class="group-label">${esc(u.cats[k])}</h2><div class="panel flush cols">${words.filter(id => D.items[id].d.c === k).map(itemHTML).join("")}</div></section>`).join("");
   } else if (v.tab === "verbs") {
-    body.innerHTML = `<div class="panel flush">${ids.filter(id => D.items[id].type === "v").map(verbHTML).join("")}</div>`;
+    body.innerHTML = `<div class="panel flush cols">${ids.filter(id => D.items[id].type === "v").map(verbHTML).join("")}</div>`;
   } else if (v.tab === "phrases") {
     const ph = ids.filter(id => D.items[id].type === "p");
     const groups = [...new Set(ph.map(id => D.items[id].d.fn))];
-    body.innerHTML = groups.map(g => `<section class="item-group"><h2 class="group-label">${esc(g)}</h2><div class="panel flush">${ph.filter(id => D.items[id].d.fn === g).map(itemHTML).join("")}</div></section>`).join("");
+    body.innerHTML = groups.map(g => `<section class="item-group"><h2 class="group-label">${esc(g)}</h2><div class="panel flush cols">${ph.filter(id => D.items[id].d.fn === g).map(itemHTML).join("")}</div></section>`).join("");
   } else startQuiz(body, u);
+  // Tapping an item opens its details in a sheet, so the list itself never jumps around.
   body.addEventListener("click", e => {
-    const ex = e.target.closest("[data-expand]");
-    if (ex) { const more = ex.nextElementSibling, open = ex.getAttribute("aria-expanded") !== "true"; ex.setAttribute("aria-expanded", open); more.hidden = !open; return; }
-    const tb = e.target.closest("[data-tense]");
-    if (tb) { const item = tb.closest("[data-verb]"); item.querySelectorAll("[data-tense]").forEach(b => b.setAttribute("aria-pressed", b === tb)); item.querySelector(".conj-wrap").innerHTML = conjHTML(D.items[item.dataset.verb].d, tb.dataset.tense); return; }
+    const ex = e.target.closest("[data-expand]"); if (!ex) return;
+    const item = ex.closest(".item"), more = item.querySelector(".item-more");
+    const term = ex.querySelector(".item-term").innerHTML, en = ex.querySelector(".item-en").textContent;
+    openSheet(`<div class="sheet-body item-sheet ${item.dataset.verb ? "" : ""}" ${item.dataset.verb ? `data-verb="${esc(item.dataset.verb)}"` : ""}>
+      <p class="s-it item-term it">${term}</p><p class="s-en">${esc(en)}</p><div class="item-more">${more.innerHTML}</div></div>`);
   });
 }
+document.addEventListener("click", e => {
+  const tb = e.target.closest("[data-tense]"); if (!tb) return;
+  const item = tb.closest("[data-verb]"); if (!item) return;
+  item.querySelectorAll("[data-tense]").forEach(b => b.setAttribute("aria-pressed", b === tb));
+  item.querySelector(".conj-wrap").innerHTML = conjHTML(D.items[item.dataset.verb].d, tb.dataset.tense);
+});
 // Schedule picker toggle (shared by every item list).
 document.addEventListener("click", e => {
   const b = e.target.closest("[data-toggle-sched]");
