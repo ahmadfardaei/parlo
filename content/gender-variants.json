@@ -1,0 +1,1262 @@
+[
+  {
+    "unit": 1,
+    "kind": "word",
+    "key": "ieri",
+    "field": "ex",
+    "base": "m",
+    "it": "Ieri sono rimasto a casa.",
+    "other": "Ieri sono rimasta a casa."
+  },
+  {
+    "unit": 1,
+    "kind": "word",
+    "key": "stanco",
+    "field": "ex",
+    "base": "m",
+    "it": "Sono stanco morto.",
+    "other": "Sono stanca morta."
+  },
+  {
+    "unit": 1,
+    "kind": "word",
+    "key": "contento",
+    "field": "ex",
+    "base": "m",
+    "it": "Sono contento di vederti.",
+    "other": "Sono contenta di vederti."
+  },
+  {
+    "unit": 1,
+    "kind": "phrase",
+    "key": "Non ce la faccio",
+    "field": "ex",
+    "base": "m",
+    "it": "Sono troppo stanco, non ce la faccio più.",
+    "other": "Sono troppo stanca, non ce la faccio più."
+  },
+  {
+    "unit": 2,
+    "kind": "word",
+    "key": "studente",
+    "field": "ex",
+    "base": "m",
+    "it": "Sono uno studente di medicina.",
+    "other": "Sono una studentessa di medicina."
+  },
+  {
+    "unit": 2,
+    "kind": "word",
+    "key": "impiegato",
+    "field": "ex",
+    "base": "f",
+    "it": "Sono impiegata in banca.",
+    "other": "Sono impiegato in banca."
+  },
+  {
+    "unit": 2,
+    "kind": "word",
+    "key": "disoccupato",
+    "field": "ex",
+    "base": "m",
+    "it": "Adesso sono disoccupato, purtroppo.",
+    "other": "Adesso sono disoccupata, purtroppo."
+  },
+  {
+    "unit": 2,
+    "kind": "word",
+    "key": "programmatore",
+    "field": "ex",
+    "base": "m",
+    "it": "Faccio il programmatore da casa.",
+    "other": "Faccio la programmatrice da casa."
+  },
+  {
+    "unit": 2,
+    "kind": "verb",
+    "key": "lavorare",
+    "field": "ex0",
+    "base": "f",
+    "it": "Lavoro come infermiera in ospedale.",
+    "other": "Lavoro come infermiere in ospedale."
+  },
+  {
+    "unit": 3,
+    "kind": "word",
+    "key": "pieno",
+    "field": "ex",
+    "base": "m",
+    "it": "Basta così, sono pieno!",
+    "other": "Basta così, sono piena!"
+  },
+  {
+    "unit": 4,
+    "kind": "word",
+    "key": "anticipo",
+    "field": "ex",
+    "base": "m",
+    "it": "Sono arrivato in anticipo.",
+    "other": "Sono arrivata in anticipo."
+  },
+  {
+    "unit": 4,
+    "kind": "word",
+    "key": "occupato",
+    "field": "ex",
+    "base": "f",
+    "it": "Oggi sono molto occupata.",
+    "other": "Oggi sono molto occupato."
+  },
+  {
+    "unit": 4,
+    "kind": "word",
+    "key": "pigro",
+    "field": "ex",
+    "base": "m",
+    "it": "La domenica sono un po' pigro.",
+    "other": "La domenica sono un po' pigra."
+  },
+  {
+    "unit": 4,
+    "kind": "phrase",
+    "key": "Che giornata!",
+    "field": "ex",
+    "base": "m",
+    "it": "Che giornata! Sono distrutto.",
+    "other": "Che giornata! Sono distrutta."
+  },
+  {
+    "unit": 4,
+    "kind": "verb",
+    "key": "tornare",
+    "field": "ex1",
+    "base": "f",
+    "it": "Sono tornata a casa tardi.",
+    "other": "Sono tornato a casa tardi."
+  },
+  {
+    "unit": 5,
+    "kind": "verb",
+    "key": "vivere",
+    "field": "ex0",
+    "base": "f",
+    "it": "Vivo da sola in un piccolo appartamento.",
+    "other": "Vivo da solo in un piccolo appartamento."
+  },
+  {
+    "unit": 6,
+    "kind": "phrase",
+    "key": "Mi sono perso / Mi sono persa",
+    "field": "ex",
+    "base": "f",
+    "it": "Scusi, mi sono persa. Dove siamo? — In via Dante.",
+    "other": "Scusi, mi sono perso. Dove siamo? — In via Dante."
+  },
+  {
+    "unit": 6,
+    "kind": "verb",
+    "key": "partire",
+    "field": "ex1",
+    "base": "f",
+    "it": "Sono partita per Londra a giugno.",
+    "other": "Sono partito per Londra a giugno."
+  },
+  {
+    "unit": 8,
+    "kind": "word",
+    "key": "riccio",
+    "field": "ex",
+    "base": "f",
+    "it": "Da piccola avevo i capelli ricci.",
+    "other": "Da piccolo avevo i capelli ricci."
+  },
+  {
+    "unit": 8,
+    "kind": "word",
+    "key": "basso",
+    "field": "ex",
+    "base": "f",
+    "it": "Sono bassa come mia madre.",
+    "other": "Sono basso come mia madre."
+  },
+  {
+    "unit": 8,
+    "kind": "word",
+    "key": "sincero",
+    "field": "ex",
+    "base": "m",
+    "it": "Voglio essere sincero con te.",
+    "other": "Voglio essere sincera con te."
+  },
+  {
+    "unit": 8,
+    "kind": "word",
+    "key": "timido",
+    "field": "ex",
+    "base": "m",
+    "it": "Da bambino ero molto timido.",
+    "other": "Da bambina ero molto timida."
+  },
+  {
+    "unit": 8,
+    "kind": "word",
+    "key": "un po'",
+    "field": "ex",
+    "base": "f",
+    "it": "Sono un po' stanca oggi.",
+    "other": "Sono un po' stanco oggi."
+  },
+  {
+    "unit": 9,
+    "kind": "word",
+    "key": "fumetto",
+    "field": "ex",
+    "base": "m",
+    "it": "Da piccolo leggevo solo fumetti.",
+    "other": "Da piccola leggevo solo fumetti."
+  },
+  {
+    "unit": 9,
+    "kind": "word",
+    "key": "corso",
+    "field": "ex",
+    "base": "f",
+    "it": "Mi sono iscritta a un corso di yoga.",
+    "other": "Mi sono iscritto a un corso di yoga."
+  },
+  {
+    "unit": 9,
+    "kind": "word",
+    "key": "appassionato",
+    "field": "ex",
+    "base": "m",
+    "it": "Sono appassionato di jazz.",
+    "other": "Sono appassionata di jazz."
+  },
+  {
+    "unit": 9,
+    "kind": "phrase",
+    "key": "Sono negato per…",
+    "field": "ex",
+    "base": "m",
+    "it": "Giochi a tennis? — No, sono negato per lo sport.",
+    "other": "Giochi a tennis? — No, sono negata per lo sport."
+  },
+  {
+    "unit": 10,
+    "kind": "word",
+    "key": "dito",
+    "field": "ex",
+    "base": "m",
+    "it": "Mi sono tagliato un dito.",
+    "other": "Mi sono tagliata un dito."
+  },
+  {
+    "unit": 10,
+    "kind": "word",
+    "key": "ginocchio",
+    "field": "ex",
+    "base": "m",
+    "it": "Sono caduto e mi fa male il ginocchio.",
+    "other": "Sono caduta e mi fa male il ginocchio."
+  },
+  {
+    "unit": 10,
+    "kind": "word",
+    "key": "cerotto",
+    "field": "ex",
+    "base": "m",
+    "it": "Hai un cerotto? Mi sono tagliato.",
+    "other": "Hai un cerotto? Mi sono tagliata."
+  },
+  {
+    "unit": 10,
+    "kind": "word",
+    "key": "malato",
+    "field": "ex",
+    "base": "m",
+    "it": "Oggi non vado al lavoro, sono malato.",
+    "other": "Oggi non vado al lavoro, sono malata."
+  },
+  {
+    "unit": 10,
+    "kind": "word",
+    "key": "allergico",
+    "field": "ex",
+    "base": "m",
+    "it": "Sono allergico alla penicillina.",
+    "other": "Sono allergica alla penicillina."
+  },
+  {
+    "unit": 10,
+    "kind": "word",
+    "key": "sfinito",
+    "field": "ex",
+    "base": "m",
+    "it": "Dopo la febbre sono sfinito.",
+    "other": "Dopo la febbre sono sfinita."
+  },
+  {
+    "unit": 10,
+    "kind": "verb",
+    "key": "riposarsi",
+    "field": "ex1",
+    "base": "m",
+    "it": "Mi sono riposato tutto il weekend.",
+    "other": "Mi sono riposata tutto il weekend."
+  },
+  {
+    "unit": 10,
+    "kind": "verb",
+    "key": "migliorare",
+    "field": "ex1",
+    "base": "m",
+    "it": "Dopo la cura sono migliorato molto.",
+    "other": "Dopo la cura sono migliorata molto."
+  },
+  {
+    "unit": 11,
+    "kind": "word",
+    "key": "laurea",
+    "field": "ex",
+    "base": "f",
+    "it": "Dopo la laurea sono andata a Londra.",
+    "other": "Dopo la laurea sono andato a Londra."
+  },
+  {
+    "unit": 11,
+    "kind": "word",
+    "key": "elementari",
+    "field": "ex",
+    "base": "m",
+    "it": "Alle elementari ero bravo in matematica.",
+    "other": "Alle elementari ero brava in matematica."
+  },
+  {
+    "unit": 11,
+    "kind": "word",
+    "key": "adolescente",
+    "field": "ex",
+    "base": "m",
+    "it": "Da adolescente ero molto timido.",
+    "other": "Da adolescente ero molto timida."
+  },
+  {
+    "unit": 11,
+    "kind": "word",
+    "key": "da piccolo",
+    "field": "ex",
+    "base": "m",
+    "it": "Da piccolo avevo paura del buio.",
+    "other": "Da piccola avevo paura del buio."
+  },
+  {
+    "unit": 11,
+    "kind": "word",
+    "key": "appena",
+    "field": "ex",
+    "base": "f",
+    "it": "Sono appena tornata dal viaggio.",
+    "other": "Sono appena tornato dal viaggio."
+  },
+  {
+    "unit": 11,
+    "kind": "word",
+    "key": "scorso",
+    "field": "ex",
+    "base": "m",
+    "it": "L'anno scorso sono andato in Giappone.",
+    "other": "L'anno scorso sono andata in Giappone."
+  },
+  {
+    "unit": 11,
+    "kind": "word",
+    "key": "perciò",
+    "field": "ex",
+    "base": "m",
+    "it": "Ero stanco, perciò sono andato a letto presto.",
+    "other": "Ero stanca, perciò sono andata a letto presto."
+  },
+  {
+    "unit": 11,
+    "kind": "word",
+    "key": "invece",
+    "field": "ex",
+    "base": "m",
+    "it": "Volevo studiare, invece sono uscito.",
+    "other": "Volevo studiare, invece sono uscita."
+  },
+  {
+    "unit": 11,
+    "kind": "word",
+    "key": "così",
+    "field": "ex",
+    "base": "m",
+    "it": "Ho perso il treno e così sono arrivato tardi.",
+    "other": "Ho perso il treno e così sono arrivata tardi."
+  },
+  {
+    "unit": 11,
+    "kind": "verb",
+    "key": "nascere",
+    "field": "ex0",
+    "base": "f",
+    "it": "Sono nata a Palermo nel 1990.",
+    "other": "Sono nato a Palermo nel 1990."
+  },
+  {
+    "unit": 11,
+    "kind": "verb",
+    "key": "crescere",
+    "field": "ex0",
+    "base": "m",
+    "it": "Sono cresciuto in campagna.",
+    "other": "Sono cresciuta in campagna."
+  },
+  {
+    "unit": 12,
+    "kind": "word",
+    "key": "viaggiatore",
+    "field": "ex",
+    "base": "f",
+    "it": "Sono una viaggiatrice curiosa.",
+    "other": "Sono un viaggiatore curioso."
+  },
+  {
+    "unit": 12,
+    "kind": "word",
+    "key": "fuso orario",
+    "field": "ex",
+    "base": "m",
+    "it": "Con il fuso orario sono distrutto.",
+    "other": "Con il fuso orario sono distrutta."
+  },
+  {
+    "unit": 12,
+    "kind": "phrase",
+    "key": "Mi sono perso/a",
+    "field": "ex",
+    "base": "f",
+    "it": "Scusi, mi sono persa. Dov'è il Duomo?",
+    "other": "Scusi, mi sono perso. Dov'è il Duomo?"
+  },
+  {
+    "unit": 12,
+    "kind": "verb",
+    "key": "rimanere",
+    "field": "ex1",
+    "base": "f",
+    "it": "Sono rimasta in albergo perché pioveva.",
+    "other": "Sono rimasto in albergo perché pioveva."
+  },
+  {
+    "unit": 13,
+    "kind": "word",
+    "key": "impegnato",
+    "field": "ex",
+    "base": "m",
+    "it": "Oggi sono impegnatissimo.",
+    "other": "Oggi sono impegnatissima."
+  },
+  {
+    "unit": 13,
+    "kind": "word",
+    "key": "pendolare",
+    "field": "ex",
+    "base": "f",
+    "it": "Faccio la pendolare tra Pavia e Milano.",
+    "other": "Faccio il pendolare tra Pavia e Milano."
+  },
+  {
+    "unit": 13,
+    "kind": "phrase",
+    "key": "Sono pieno/a di lavoro",
+    "field": "ex",
+    "base": "f",
+    "it": "Stasera non esco, sono piena di lavoro.",
+    "other": "Stasera non esco, sono pieno di lavoro."
+  },
+  {
+    "unit": 14,
+    "kind": "phrase",
+    "key": "Sono fradicio/a",
+    "field": "ex",
+    "base": "f",
+    "it": "Ho dimenticato l'ombrello e sono fradicia.",
+    "other": "Ho dimenticato l'ombrello e sono fradicio."
+  },
+  {
+    "unit": 15,
+    "kind": "word",
+    "key": "emozionato",
+    "field": "ex",
+    "base": "f",
+    "it": "Domani mi sposo e sono emozionatissima.",
+    "other": "Domani mi sposo e sono emozionatissimo."
+  },
+  {
+    "unit": 15,
+    "kind": "word",
+    "key": "rilassato",
+    "field": "ex",
+    "base": "m",
+    "it": "Dopo le vacanze sono più rilassato.",
+    "other": "Dopo le vacanze sono più rilassata."
+  },
+  {
+    "unit": 15,
+    "kind": "word",
+    "key": "commosso",
+    "field": "ex",
+    "base": "m",
+    "it": "Ero commosso alla fine del film.",
+    "other": "Ero commossa alla fine del film."
+  },
+  {
+    "unit": 15,
+    "kind": "word",
+    "key": "grato",
+    "field": "ex",
+    "base": "f",
+    "it": "Ti sono molto grata per l'aiuto.",
+    "other": "Ti sono molto grato per l'aiuto."
+  },
+  {
+    "unit": 15,
+    "kind": "word",
+    "key": "sollevato",
+    "field": "ex",
+    "base": "m",
+    "it": "Mi sento sollevato dopo l'esame.",
+    "other": "Mi sento sollevata dopo l'esame."
+  },
+  {
+    "unit": 15,
+    "kind": "word",
+    "key": "sorpreso",
+    "field": "ex",
+    "base": "f",
+    "it": "Sono rimasta sorpresa dalla notizia.",
+    "other": "Sono rimasto sorpreso dalla notizia."
+  },
+  {
+    "unit": 15,
+    "kind": "word",
+    "key": "preoccupato",
+    "field": "ex",
+    "base": "f",
+    "it": "Sono preoccupata per mia madre.",
+    "other": "Sono preoccupato per mia madre."
+  },
+  {
+    "unit": 15,
+    "kind": "word",
+    "key": "deluso",
+    "field": "ex",
+    "base": "m",
+    "it": "Sono deluso dal finale.",
+    "other": "Sono delusa dal finale."
+  },
+  {
+    "unit": 15,
+    "kind": "word",
+    "key": "depresso",
+    "field": "ex",
+    "base": "m",
+    "it": "Con questo tempo mi sento un po' depresso.",
+    "other": "Con questo tempo mi sento un po' depressa."
+  },
+  {
+    "unit": 15,
+    "kind": "word",
+    "key": "agitato",
+    "field": "ex",
+    "base": "f",
+    "it": "Prima di un colloquio sono sempre agitata.",
+    "other": "Prima di un colloquio sono sempre agitato."
+  },
+  {
+    "unit": 15,
+    "kind": "word",
+    "key": "stufo",
+    "field": "ex",
+    "base": "f",
+    "it": "Sono stufa di aspettare.",
+    "other": "Sono stufo di aspettare."
+  },
+  {
+    "unit": 15,
+    "kind": "word",
+    "key": "imbarazzato",
+    "field": "ex",
+    "base": "f",
+    "it": "Ero imbarazzatissima davanti a tutti.",
+    "other": "Ero imbarazzatissimo davanti a tutti."
+  },
+  {
+    "unit": 15,
+    "kind": "word",
+    "key": "confuso",
+    "field": "ex",
+    "base": "m",
+    "it": "Scusa, sono un po' confuso.",
+    "other": "Scusa, sono un po' confusa."
+  },
+  {
+    "unit": 15,
+    "kind": "word",
+    "key": "panico",
+    "field": "ex",
+    "base": "m",
+    "it": "Prima dell'esame sono andato nel panico.",
+    "other": "Prima dell'esame sono andata nel panico."
+  },
+  {
+    "unit": 15,
+    "kind": "word",
+    "key": "scocciato",
+    "field": "ex",
+    "base": "m",
+    "it": "Sono scocciato, il treno è di nuovo in ritardo.",
+    "other": "Sono scocciata, il treno è di nuovo in ritardo."
+  },
+  {
+    "unit": 15,
+    "kind": "phrase",
+    "key": "Sono al settimo cielo",
+    "field": "ex",
+    "base": "f",
+    "it": "Mi hanno presa all'università, sono al settimo cielo!",
+    "other": "Mi hanno preso all'università, sono al settimo cielo!"
+  },
+  {
+    "unit": 15,
+    "kind": "verb",
+    "key": "odiare",
+    "field": "ex1",
+    "base": "f",
+    "it": "Da piccola odiavo gli spinaci.",
+    "other": "Da piccolo odiavo gli spinaci."
+  },
+  {
+    "unit": 19,
+    "kind": "word",
+    "key": "indaffarato",
+    "field": "ex",
+    "base": "f",
+    "it": "Questa settimana sono indaffaratissima.",
+    "other": "Questa settimana sono indaffaratissimo."
+  },
+  {
+    "unit": 20,
+    "kind": "verb",
+    "key": "lamentarsi",
+    "field": "ex0",
+    "base": "f",
+    "it": "Mi sono lamentata con il direttore.",
+    "other": "Mi sono lamentato con il direttore."
+  },
+  {
+    "unit": 21,
+    "kind": "word",
+    "key": "convinto",
+    "field": "ex",
+    "base": "m",
+    "it": "Non sono convinto che funzioni.",
+    "other": "Non sono convinta che funzioni."
+  },
+  {
+    "unit": 21,
+    "kind": "word",
+    "key": "contrario",
+    "field": "ex",
+    "base": "m",
+    "it": "Sono contrario a questa legge.",
+    "other": "Sono contraria a questa legge."
+  },
+  {
+    "unit": 21,
+    "kind": "word",
+    "key": "premessa",
+    "field": "ex",
+    "base": "m",
+    "it": "Faccio una premessa: non sono un esperto.",
+    "other": "Faccio una premessa: non sono un'esperta."
+  },
+  {
+    "unit": 22,
+    "kind": "word",
+    "key": "fiducioso",
+    "field": "ex",
+    "base": "m",
+    "it": "Sono fiducioso: faremo pace.",
+    "other": "Sono fiduciosa: faremo pace."
+  },
+  {
+    "unit": 22,
+    "kind": "word",
+    "key": "tradito",
+    "field": "ex",
+    "base": "m",
+    "it": "Mi sono sentito tradito dal mio migliore amico.",
+    "other": "Mi sono sentita tradita dal mio migliore amico."
+  },
+  {
+    "unit": 22,
+    "kind": "verb",
+    "key": "innamorarsi",
+    "field": "ex0",
+    "base": "f",
+    "it": "Mi sono innamorata di lui a prima vista.",
+    "other": "Mi sono innamorato di lui a prima vista."
+  },
+  {
+    "unit": 23,
+    "kind": "word",
+    "key": "facoltà",
+    "field": "ex",
+    "base": "m",
+    "it": "Sono iscritto alla facoltà di Lettere.",
+    "other": "Sono iscritta alla facoltà di Lettere."
+  },
+  {
+    "unit": 23,
+    "kind": "word",
+    "key": "preparato",
+    "field": "ex",
+    "base": "f",
+    "it": "Sono arrivata all'esame molto preparata.",
+    "other": "Sono arrivato all'esame molto preparato."
+  },
+  {
+    "unit": 23,
+    "kind": "word",
+    "key": "promosso",
+    "field": "ex",
+    "base": "m",
+    "it": "Sono stato promosso con tutti sette.",
+    "other": "Sono stata promossa con tutti sette."
+  },
+  {
+    "unit": 23,
+    "kind": "word",
+    "key": "bocciato",
+    "field": "ex",
+    "base": "f",
+    "it": "All'esame di guida sono stata bocciata.",
+    "other": "All'esame di guida sono stato bocciato."
+  },
+  {
+    "unit": 23,
+    "kind": "phrase",
+    "key": "Ho saltato la lezione.",
+    "field": "ex",
+    "base": "m",
+    "it": "Dov'eri stamattina? — Ho saltato la lezione, ero stanco.",
+    "other": "Dov'eri stamattina? — Ho saltato la lezione, ero stanca."
+  },
+  {
+    "unit": 23,
+    "kind": "phrase",
+    "key": "Ce l'ho fatta!",
+    "field": "ex",
+    "base": "f",
+    "it": "Ce l'ho fatta, sono laureata! — Complimenti!",
+    "other": "Ce l'ho fatta, sono laureato! — Complimenti!"
+  },
+  {
+    "unit": 23,
+    "kind": "phrase",
+    "key": "Studio come un matto.",
+    "field": "ex",
+    "base": "f",
+    "it": "Come va? — Studio come una matta per la sessione.",
+    "other": "Come va? — Studio come un matto per la sessione."
+  },
+  {
+    "unit": 23,
+    "kind": "verb",
+    "key": "iscriversi",
+    "field": "ex0",
+    "base": "f",
+    "it": "Mi sono iscritta a un corso di tedesco.",
+    "other": "Mi sono iscritto a un corso di tedesco."
+  },
+  {
+    "unit": 23,
+    "kind": "verb",
+    "key": "laurearsi",
+    "field": "ex0",
+    "base": "m",
+    "it": "Mi sono laureato in architettura nel 2015.",
+    "other": "Mi sono laureata in architettura nel 2015."
+  },
+  {
+    "unit": 26,
+    "kind": "word",
+    "key": "sudore",
+    "field": "ex",
+    "base": "m",
+    "it": "Ero bagnato di sudore.",
+    "other": "Ero bagnata di sudore."
+  },
+  {
+    "unit": 26,
+    "kind": "word",
+    "key": "incubo",
+    "field": "ex",
+    "base": "m",
+    "it": "Da piccolo avevo spesso gli incubi.",
+    "other": "Da piccola avevo spesso gli incubi."
+  },
+  {
+    "unit": 26,
+    "kind": "word",
+    "key": "stressato",
+    "field": "ex",
+    "base": "f",
+    "it": "Sono troppo stressata per dormire.",
+    "other": "Sono troppo stressato per dormire."
+  },
+  {
+    "unit": 26,
+    "kind": "word",
+    "key": "riposato",
+    "field": "ex",
+    "base": "f",
+    "it": "Stamattina mi sento finalmente riposata.",
+    "other": "Stamattina mi sento finalmente riposato."
+  },
+  {
+    "unit": 26,
+    "kind": "word",
+    "key": "nottambulo",
+    "field": "ex",
+    "base": "m",
+    "it": "Sono un nottambulo: lavoro meglio di notte.",
+    "other": "Sono una nottambula: lavoro meglio di notte."
+  },
+  {
+    "unit": 26,
+    "kind": "word",
+    "key": "energico",
+    "field": "ex",
+    "base": "m",
+    "it": "Dopo la corsa mi sento più energico.",
+    "other": "Dopo la corsa mi sento più energica."
+  },
+  {
+    "unit": 26,
+    "kind": "word",
+    "key": "esausto",
+    "field": "ex",
+    "base": "f",
+    "it": "Dopo la palestra sono esausta.",
+    "other": "Dopo la palestra sono esausto."
+  },
+  {
+    "unit": 26,
+    "kind": "word",
+    "key": "goloso",
+    "field": "ex",
+    "base": "m",
+    "it": "Sono goloso di cioccolato.",
+    "other": "Sono golosa di cioccolato."
+  },
+  {
+    "unit": 26,
+    "kind": "verb",
+    "key": "ingrassare",
+    "field": "ex0",
+    "base": "m",
+    "it": "Durante le feste sono ingrassato.",
+    "other": "Durante le feste sono ingrassata."
+  },
+  {
+    "unit": 27,
+    "kind": "word",
+    "key": "motivato",
+    "field": "ex",
+    "base": "m",
+    "it": "Sono molto motivato a imparare.",
+    "other": "Sono molto motivata a imparare."
+  },
+  {
+    "unit": 27,
+    "kind": "word",
+    "key": "libero professionista",
+    "field": "ex",
+    "base": "m",
+    "it": "Lavoro come libero professionista da cinque anni.",
+    "other": "Lavoro come libera professionista da cinque anni."
+  },
+  {
+    "unit": 27,
+    "kind": "word",
+    "key": "agenzia per il lavoro",
+    "field": "ex",
+    "base": "f",
+    "it": "Mi sono iscritta a un'agenzia per il lavoro.",
+    "other": "Mi sono iscritto a un'agenzia per il lavoro."
+  },
+  {
+    "unit": 27,
+    "kind": "phrase",
+    "key": "Mi hanno assunto!",
+    "field": "ex",
+    "base": "f",
+    "it": "Indovina? Mi hanno assunta! — Fantastico!",
+    "other": "Indovina? Mi hanno assunto! — Fantastico!"
+  },
+  {
+    "unit": 27,
+    "kind": "phrase",
+    "key": "Mettersi in proprio",
+    "field": "ex",
+    "base": "m",
+    "it": "Dopo dieci anni mi sono messo in proprio.",
+    "other": "Dopo dieci anni mi sono messa in proprio."
+  },
+  {
+    "unit": 27,
+    "kind": "verb",
+    "key": "candidarsi",
+    "field": "ex0",
+    "base": "f",
+    "it": "Mi sono candidata per un posto a Bologna.",
+    "other": "Mi sono candidato per un posto a Bologna."
+  },
+  {
+    "unit": 28,
+    "kind": "word",
+    "key": "cittadino",
+    "field": "ex",
+    "base": "f",
+    "it": "Sono cittadina italiana dal 2019.",
+    "other": "Sono cittadino italiano dal 2019."
+  },
+  {
+    "unit": 28,
+    "kind": "word",
+    "key": "praticante",
+    "field": "ex",
+    "base": "m",
+    "it": "Sono cattolico, ma non praticante.",
+    "other": "Sono cattolica, ma non praticante."
+  },
+  {
+    "unit": 30,
+    "kind": "word",
+    "key": "superstizioso",
+    "field": "ex",
+    "base": "m",
+    "it": "Non sono superstizioso, ma non si sa mai.",
+    "other": "Non sono superstiziosa, ma non si sa mai."
+  },
+  {
+    "unit": 30,
+    "kind": "word",
+    "key": "stupito",
+    "field": "ex",
+    "base": "m",
+    "it": "Sono rimasto stupito dalla notizia.",
+    "other": "Sono rimasta stupita dalla notizia."
+  },
+  {
+    "unit": 30,
+    "kind": "word",
+    "key": "indiscreto",
+    "field": "ex",
+    "base": "m",
+    "it": "Scusa se sono indiscreto, quanti anni hai?",
+    "other": "Scusa se sono indiscreta, quanti anni hai?"
+  },
+  {
+    "unit": 30,
+    "kind": "verb",
+    "key": "accorgersi",
+    "field": "ex0",
+    "base": "f",
+    "it": "Non mi sono accorta dell'errore.",
+    "other": "Non mi sono accorto dell'errore."
+  },
+  {
+    "unit": 33,
+    "kind": "word",
+    "key": "commissariato",
+    "field": "ex",
+    "base": "f",
+    "it": "Sono andata al commissariato a fare denuncia.",
+    "other": "Sono andato al commissariato a fare denuncia."
+  },
+  {
+    "unit": 36,
+    "kind": "word",
+    "key": "ingenuo",
+    "field": "ex",
+    "base": "m",
+    "it": "Sono stato ingenuo a fidarmi.",
+    "other": "Sono stata ingenua a fidarmi."
+  },
+  {
+    "unit": 36,
+    "kind": "word",
+    "key": "arrabbiatura",
+    "field": "ex",
+    "base": "m",
+    "it": "Mi sono preso un'arrabbiatura per niente.",
+    "other": "Mi sono presa un'arrabbiatura per niente."
+  },
+  {
+    "unit": 36,
+    "kind": "word",
+    "key": "distrutto",
+    "field": "ex",
+    "base": "m",
+    "it": "Dopo il turno di notte sono distrutto.",
+    "other": "Dopo il turno di notte sono distrutta."
+  },
+  {
+    "unit": 36,
+    "kind": "phrase",
+    "key": "Ci sono rimasto male",
+    "field": "ex",
+    "base": "f",
+    "it": "Non mi ha invitata alla festa e ci sono rimasta male.",
+    "other": "Non mi ha invitato alla festa e ci sono rimasto male."
+  },
+  {
+    "unit": 38,
+    "kind": "word",
+    "key": "spaesato",
+    "field": "ex",
+    "base": "m",
+    "it": "Il primo giorno mi sentivo spaesato.",
+    "other": "Il primo giorno mi sentivo spaesata."
+  },
+  {
+    "unit": 38,
+    "kind": "word",
+    "key": "estraneo",
+    "field": "ex",
+    "base": "m",
+    "it": "Mi sentivo estraneo nel mio paese.",
+    "other": "Mi sentivo estranea nel mio paese."
+  },
+  {
+    "unit": 38,
+    "kind": "word",
+    "key": "disorientato",
+    "field": "ex",
+    "base": "f",
+    "it": "All'inizio ero disorientata dalla lingua.",
+    "other": "All'inizio ero disorientato dalla lingua."
+  },
+  {
+    "unit": 38,
+    "kind": "word",
+    "key": "nostalgico",
+    "field": "ex",
+    "base": "f",
+    "it": "La domenica divento un po' nostalgica.",
+    "other": "La domenica divento un po' nostalgico."
+  },
+  {
+    "unit": 38,
+    "kind": "phrase",
+    "key": "Mi sono trasferito/a per lavoro",
+    "field": "ex",
+    "base": "f",
+    "it": "Perché vivi a Torino? — Mi sono trasferita per lavoro.",
+    "other": "Perché vivi a Torino? — Mi sono trasferito per lavoro."
+  },
+  {
+    "unit": 38,
+    "kind": "verb",
+    "key": "adattarsi",
+    "field": "ex0",
+    "base": "m",
+    "it": "Mi sono adattato subito al nuovo ritmo.",
+    "other": "Mi sono adattata subito al nuovo ritmo."
+  },
+  {
+    "unit": 38,
+    "kind": "verb",
+    "key": "trasferirsi",
+    "field": "ex0",
+    "base": "f",
+    "it": "Mi sono trasferita a Lisbona nel 2020.",
+    "other": "Mi sono trasferito a Lisbona nel 2020."
+  },
+  {
+    "unit": 39,
+    "kind": "word",
+    "key": "dispiaciuto",
+    "field": "ex",
+    "base": "m",
+    "it": "Sono davvero dispiaciuto per l'errore.",
+    "other": "Sono davvero dispiaciuta per l'errore."
+  },
+  {
+    "unit": 39,
+    "kind": "word",
+    "key": "goffo",
+    "field": "ex",
+    "base": "m",
+    "it": "Mi sento goffo quando ballo.",
+    "other": "Mi sento goffa quando ballo."
+  },
+  {
+    "unit": 39,
+    "kind": "word",
+    "key": "invidioso",
+    "field": "ex",
+    "base": "f",
+    "it": "Sono un po' invidiosa del tuo viaggio.",
+    "other": "Sono un po' invidioso del tuo viaggio."
+  },
+  {
+    "unit": 39,
+    "kind": "word",
+    "key": "leggermente",
+    "field": "ex",
+    "base": "m",
+    "it": "Sono leggermente deluso.",
+    "other": "Sono leggermente delusa."
+  },
+  {
+    "unit": 39,
+    "kind": "word",
+    "key": "abbastanza",
+    "field": "ex",
+    "base": "m",
+    "it": "Sono abbastanza soddisfatto.",
+    "other": "Sono abbastanza soddisfatta."
+  },
+  {
+    "unit": 39,
+    "kind": "word",
+    "key": "affatto",
+    "field": "ex",
+    "base": "m",
+    "it": "Non sono affatto arrabbiato.",
+    "other": "Non sono affatto arrabbiata."
+  },
+  {
+    "unit": 39,
+    "kind": "word",
+    "key": "malinconico",
+    "field": "ex",
+    "base": "m",
+    "it": "Questa canzone mi rende malinconico.",
+    "other": "Questa canzone mi rende malinconica."
+  },
+  {
+    "unit": 39,
+    "kind": "word",
+    "key": "ferito",
+    "field": "ex",
+    "base": "f",
+    "it": "Mi sono sentita ferita dalle sue parole.",
+    "other": "Mi sono sentito ferito dalle sue parole."
+  },
+  {
+    "unit": 39,
+    "kind": "word",
+    "key": "mortificato",
+    "field": "ex",
+    "base": "m",
+    "it": "Sono mortificato per il ritardo.",
+    "other": "Sono mortificata per il ritardo."
+  },
+  {
+    "unit": 39,
+    "kind": "word",
+    "key": "appagato",
+    "field": "ex",
+    "base": "f",
+    "it": "Mi sento appagata dal mio lavoro.",
+    "other": "Mi sento appagato dal mio lavoro."
+  },
+  {
+    "unit": 39,
+    "kind": "word",
+    "key": "sbalordito",
+    "field": "ex",
+    "base": "m",
+    "it": "Sono rimasto sbalordito dalla notizia.",
+    "other": "Sono rimasta sbalordita dalla notizia."
+  },
+  {
+    "unit": 39,
+    "kind": "word",
+    "key": "estremamente",
+    "field": "ex",
+    "base": "f",
+    "it": "Sono estremamente grata per il vostro aiuto.",
+    "other": "Sono estremamente grato per il vostro aiuto."
+  },
+  {
+    "unit": 39,
+    "kind": "phrase",
+    "key": "Ci sono rimasto/a male",
+    "field": "ex",
+    "base": "f",
+    "it": "Non mi ha invitato e ci sono rimasta male.",
+    "other": "Non mi ha invitato e ci sono rimasto male."
+  },
+  {
+    "unit": 39,
+    "kind": "phrase",
+    "key": "Sono fiero/a di te",
+    "field": "ex",
+    "base": "f",
+    "it": "Ho passato l'esame! — Brava, sono fiera di te!",
+    "other": "Ho passato l'esame! — Brava, sono fiero di te!"
+  },
+  {
+    "unit": 39,
+    "kind": "verb",
+    "key": "illudersi",
+    "field": "ex0",
+    "base": "m",
+    "it": "Mi ero illuso che fosse facile.",
+    "other": "Mi ero illusa che fosse facile."
+  },
+  {
+    "unit": 39,
+    "kind": "verb",
+    "key": "rassegnarsi",
+    "field": "ex0",
+    "base": "m",
+    "it": "Mi sono rassegnato a lavorare il sabato.",
+    "other": "Mi sono rassegnata a lavorare il sabato."
+  },
+  {
+    "unit": 40,
+    "kind": "word",
+    "key": "sfigato",
+    "field": "ex",
+    "base": "m",
+    "it": "Oggi mi sento proprio sfigato.",
+    "other": "Oggi mi sento proprio sfigata."
+  },
+  {
+    "unit": 40,
+    "kind": "word",
+    "key": "imbranato",
+    "field": "ex",
+    "base": "m",
+    "it": "Sono imbranato in cucina.",
+    "other": "Sono imbranata in cucina."
+  },
+  {
+    "unit": 40,
+    "kind": "verb",
+    "key": "sbrigarsi",
+    "field": "ex1",
+    "base": "f",
+    "it": "Mi sono sbrigata per non fare tardi.",
+    "other": "Mi sono sbrigato per non fare tardi."
+  }
+]

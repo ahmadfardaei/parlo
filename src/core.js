@@ -131,12 +131,12 @@ export function indexCourse(course) {
 }
 export const unitByN = n => D.units.find(u => u.n === n);
 // Non-vocabulary progress is stored in its own sync rows, identified by id prefix.
-const PREFIX_UNIT = { "g:": 101, "s:": 102, "r:": 103, "wr:": 104, "sp:": 105 };
+const PREFIX_UNIT = { "g:": 101, "s:": 102, "r:": 103, "wr:": 104, "sp:": 105, "t:": 106 };
 export function unitOf(id) {
   for (const [p, n] of Object.entries(PREFIX_UNIT)) if (id.startsWith(p)) return n;
   return D.items[id]?.u;
 }
-const known = id => !!(D.items[id] || /^(g|s|r|wr|sp):/.test(id));
+const known = id => !!(D.items[id] || /^(g|s|r|wr|sp|t):/.test(id));
 export const sayOf = id => { const it = D.items[id]; if (!it) return S.st[id]?.it || ""; return it.type === "w" ? full(it.d) : it.type === "v" ? it.d.inf : it.d.it; };
 export const meaningOf = id => D.items[id]?.d.en ?? S.st[id]?.en ?? "";
 
@@ -347,3 +347,62 @@ export function resetAll() {
 export function go(h) { if (location.hash !== h) location.hash = h; else emit("rerender"); }
 // Remember what the learner opened last, for "Continue" on the home screen.
 export function remember(kind, title, href, sub) { lsSet("parlo.last", { kind, title, href, sub, t: Date.now() }); }
+
+/* ---------- Gendered forms about the learner ---------- */
+// pref.gender: "m" | "f" | "x" (show both). Only forms about the learner ("io") change: "sono andato/a" → "sono andata".
+export function gf(text, isIo = true) {
+  const g = S.pref.gender;
+  if (!text || !isIo || (g !== "m" && g !== "f")) return text;
+  return String(text).replace(/(\p{L}+?)([oi])\/([ae])(?!\p{L})/gu, (_, stem, m, f) => stem + (g === "m" ? m : f));
+}
+// Example sentences said by "io" may have a version for the other gender: alt = { base: "m"|"f", other: "…" }.
+export function pickEx(text, alt) {
+  const g = S.pref.gender;
+  if (alt && (g === "m" || g === "f") && alt.base !== g) return alt.other;
+  return text;
+}
+
+/* ---------- Study time ---------- */
+// Time is counted in 15-second ticks, only while the app is visible and the learner has interacted in the last 90 s.
+// Each device writes its own record per day ("t:2026-10-26:abc123"), so devices never overwrite each other.
+export const ACT_CATS = { vocab: "Vocabulary", grammar: "Grammar", reading: "Reading", writing: "Writing", speaking: "Speaking", review: "Review & deck" };
+const DEVICE = lsGet("parlo.device", null) || (() => { const d = Math.random().toString(36).slice(2, 8); lsSet("parlo.device", d); return d; })();
+let lastInput = Date.now(), lastTimeSync = 0;
+["pointerdown", "keydown", "wheel", "touchstart", "input"].forEach(ev => addEventListener(ev, () => { lastInput = Date.now(); }, { passive: true, capture: true }));
+export const dayKey = (d = new Date()) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+function activityCat(v) {
+  switch (v.name) {
+    case "unit": return "vocab";
+    case "learn": return { vocab: "vocab", grammar: "grammar", reading: "reading", writing: "writing", speaking: "speaking" }[v.section];
+    case "grammar": return "grammar";
+    case "reading": return "reading";
+    case "writing": return "writing";
+    case "speaking": return "speaking";
+    case "session": case "deck": return "review";
+    default: return null;
+  }
+}
+setInterval(() => {
+  if (document.visibilityState !== "visible" || Date.now() - lastInput > 90000) return;
+  const cat = activityCat(S.view || {}); if (!cat) return;
+  const id = `t:${dayKey()}:${DEVICE}`;
+  const v = Object.assign({}, S.st[id]?.v || {}); v[cat] = (v[cat] || 0) + 15;
+  S.st[id] = { v, t: Date.now() }; saveLocal();
+  if (Date.now() - lastTimeSync > 120000) { lastTimeSync = Date.now(); markDirty(106); }
+}, 15000);
+// { "2026-10-26": { vocab: 300, reading: 120, … } } summed across devices.
+export function activityByDay() {
+  const out = {};
+  for (const [id, e] of Object.entries(S.st)) {
+    if (!id.startsWith("t:") || !e || !e.v) continue;
+    const day = id.split(":")[1], o = out[day] = out[day] || {};
+    for (const [k, sec] of Object.entries(e.v)) o[k] = (o[k] || 0) + sec;
+  }
+  return out;
+}
+export function fmtDur(sec) {
+  const m = Math.round(sec / 60);
+  if (m < 60) return `${m} min`;
+  const h = Math.floor(m / 60), r = m % 60;
+  return r ? `${h} h ${r} min` : `${h} h`;
+}

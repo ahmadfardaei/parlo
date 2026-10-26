@@ -472,3 +472,29 @@ body.focus .toast { bottom: calc(16px + env(safe-area-inset-bottom, 0px)); }
 .deck-grid .deck-item { margin: 0; padding: 18px; }
 .deck-grid .deck-item + .deck-item { border-top: 1px solid var(--line); }
 @media (min-width: 1024px) { .cols > :last-child:nth-child(odd) { grid-column: 1 / -1; border-right: 0; } }
+
+/* Profile: statistics */
+.kpis { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 14px; }
+.kpis .panel { margin: 0; }
+.kpi { display: grid; gap: 4px; padding: 14px 16px; }
+.kpi-num { font-family: var(--read); font-size: 24px; font-weight: 600; }
+@media (min-width: 1024px) { .kpis { grid-template-columns: repeat(4, 1fr); } }
+.breakdown { display: grid; gap: 10px; margin: 6px 0 10px; }
+.bd-row { display: grid; grid-template-columns: 120px 1fr auto; gap: 12px; align-items: center; font-size: 15px; }
+.bd-bar { height: 10px; border-radius: 99px; background: var(--sunk); overflow: hidden; }
+.bd-bar span { display: block; height: 100%; background: var(--accent); border-radius: 99px; }
+.bd-val { color: var(--muted); font-variant-numeric: tabular-nums; font-size: 14px; min-width: 64px; text-align: right; }
+.heatmap-wrap { overflow-x: auto; padding-bottom: 4px; display: grid; grid-template-columns: auto 1fr; gap: 4px 6px; }
+.hm-months, .heatmap { display: grid; grid-template-columns: repeat(var(--cols), minmax(10px, 1fr)); gap: 3px; min-width: calc(var(--cols) * 13px); }
+.hm-months { font-size: 11px; color: var(--muted); height: 16px; }
+.hm-months span { white-space: nowrap; }
+.heatmap { grid-template-rows: repeat(7, auto); }
+.hm-days { display: grid; grid-template-rows: repeat(7, 1fr); gap: 3px; font-size: 10px; color: var(--muted); align-items: center; }
+.heatmap i { aspect-ratio: 1; width: 100%; border-radius: 3px; background: var(--sunk); outline: 1px solid color-mix(in srgb, var(--line) 60%, transparent); outline-offset: -1px; }
+.hm-legend i { width: 12px; height: 12px; border-radius: 3px; background: var(--sunk); outline: 1px solid color-mix(in srgb, var(--line) 60%, transparent); outline-offset: -1px; }
+.hm-legend { display: flex; align-items: center; gap: 4px; justify-content: flex-end; font-size: 12px; color: var(--muted); margin-top: 8px; }
+.hm-legend span { margin: 0 4px; }
+.hm-1 { background: color-mix(in srgb, var(--accent) 25%, var(--sunk)) !important; }
+.hm-2 { background: color-mix(in srgb, var(--accent) 50%, var(--sunk)) !important; }
+.hm-3 { background: color-mix(in srgb, var(--accent) 75%, var(--sunk)) !important; }
+.hm-4 { background: var(--accent) !important; }

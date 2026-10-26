@@ -1,4 +1,4 @@
-import { S, D, esc, rich, ICON, canSpeak, setEntry, shuffle, pick, say, lsGet, lsSet, remember } from "../core.js";
+import { S, D, esc, rich, ICON, canSpeak, setEntry, shuffle, pick, say, lsGet, lsSet, remember, gf } from "../core.js";
 import { ensure } from "../data.js";
 import { PRON, TENSES } from "./unit.js";
 import { GTOPICS } from "./learn.js";
@@ -18,7 +18,9 @@ export async function viewGrammar(app, v, alive) {
   const idx = sorted.indexOf(g);
   const sc = score(g.id);
   const table = t => {
-    const rows = t.rows ? t.rows : t.end.map((e, i) => [(t.che ? "che " : "") + PRON[i], `${esc(t.stem)}<b>${esc(e)}</b>`, true]);
+    // rows: [left, right] pairs, or plain strings (one per person: io, tu, …); stem+end: endings in bold.
+    const rows = t.rows ? t.rows.map((r, i) => typeof r === "string" ? [(t.che ? "che " : "") + PRON[i], esc(gf(r, i === 0)), true] : r)
+      : t.end.map((e, i) => [(t.che ? "che " : "") + PRON[i], `${esc(t.stem)}<b>${esc(e)}</b>`, true]);
     return `<div class="panel g-table"><p class="g-table-h">${esc(t.h)}</p><table class="conj"><tbody>${rows.map(r => `<tr><td>${r[2] ? r[0] : rich(r[0])}</td><td class="it">${r[2] ? r[1] : rich(r[1])}</td></tr>`).join("")}</tbody></table></div>`;
   };
   const cta = `<div class="btn-row"><a class="btn primary" href="#/grammar/${g.id}/practice">Practise (${g.ex.length})</a>${g.tense ? `<a class="btn" href="#/grammar/${g.id}/drill">Verb drill</a>` : ""}</div>`;
@@ -70,9 +72,9 @@ function practice(app, g, mode) {
     const tname = TENSES.find(t => t.k === g.tense).it;
     items = shuffle(pool).slice(0, 10).map(vb => {
       const p = pick([0, 1, 2, 3, 4, 5].filter(i => vb.t[g.tense][i] !== "—"));
-      return { k: "type", q: `${g.tense === "cong" ? "che " : ""}${PRON[p]} ___`, hint: `${vb.inf} · ${vb.en.split(";")[0]} · ${tname}`, a: [vb.t[g.tense][p]], why: `${tname} of <b>${esc(vb.inf)}</b>: ${vb.t[g.tense].filter(f => f !== "—").map(esc).join(", ")}` };
+      return { k: "type", io: p === 0, q: `${g.tense === "cong" ? "che " : ""}${PRON[p]} ___`, hint: `${vb.inf} · ${vb.en.split(";")[0]} · ${tname}`, a: [vb.t[g.tense][p]], why: `${tname} of <b>${esc(vb.inf)}</b>: ${vb.t[g.tense].filter(f => f !== "—").map(esc).join(", ")}` };
     });
-  } else items = shuffle(g.ex).map(x => ({ ...x, hint: x.h || (x.v ? x.v + (x.p ? " · " + x.p : "") : "") }));
+  } else items = shuffle(g.ex).map(x => ({ ...x, io: x.p === "io", hint: x.h || (x.v ? x.v + (x.p ? " · " + x.p : "") : "") }));
   let i = 0, right = 0, answered = false;
   const log = [];
   const shell = inner => `<div class="focus-top"><a class="icon-btn" href="#/grammar/${g.id}" aria-label="Exit">${ICON.close}</a>
@@ -102,7 +104,7 @@ function practice(app, g, mode) {
     const finish = (ok, note) => {
       answered = true; log.push(ok); if (ok) right++;
       fb.innerHTML = `<p class="${ok ? "ok-text" : "bad-text"}">${ok ? "Giusto!" : "Not quite."}${note ? ` <span class="warn-text">${note}</span>` : ""}</p>
-        ${!ok || note ? `<p>Answer: <span class="it strong">${esc(it.k === "mc" ? it.a : it.a[0])}</span></p>` : ""}<p class="muted small">${rich(it.why)}</p>
+        ${!ok || note ? `<p>Answer: <span class="it strong">${esc(it.k === "mc" ? it.a : gf(it.a[0], it.io))}</span></p>` : ""}<p class="muted small">${rich(it.why)}</p>
         <button class="btn primary" data-next>${i + 1 < items.length ? "Next" : "See score"}</button>`;
       const nx = fb.querySelector("[data-next]"); nx.onclick = () => { i++; draw(); }; nx.focus();
     };

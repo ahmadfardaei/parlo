@@ -78,12 +78,14 @@
       "tables": [
         { "h": "The three types", "rows": [["1 · reale", "se + presente → presente / futuro / imperativo"], ["2 · possibile", "se + congiuntivo imperfetto → condizionale presente"], ["3 · irreale", "se + congiuntivo trapassato → condizionale passato"], ["3 · spoken", "se + imperfetto → imperfetto"]] },
         { "h": "Congiuntivo trapassato", "rows": [["with avere", "avessi, avessi, avesse… + participle: avessi saputo"], ["with essere", "fossi, fossi, fosse… + participle: fosse arrivata"]] },
-        { "h": "Examples side by side", "rows": [["1", "Se ho tempo, ti chiamo."], ["2", "Se avessi tempo, ti chiamerei."], ["3", "Se avessi avuto tempo, ti avrei chiamato."]] }
+        { "h": "Examples side by side", "rows": [["1", "Se ho tempo, ti chiamo."], ["2", "Se avessi tempo, ti chiamerei."], ["3", "Se avessi avuto tempo, ti avrei chiamato."]] },
+        { "h": "Alternatives to se", "rows": [["nel caso in cui / nel caso che + congiuntivo", "Nel caso in cui piova, la cena si fa in cantina."], ["qualora + congiuntivo (formal)", "Qualora il prodotto fosse difettoso, contatti l'assistenza."], ["a patto che / a condizione che + congiuntivo", "Ti presto la Vespa a patto che tu me la riporti piena."], ["gerund (same subject)", "Volendo, potremmo partire stasera. (= se volessimo)"], ["gerund (same subject)", "Potendo, mi trasferirei a Lecce. (= se potessi)"]] }
       ],
       "notes": [
         "The condizionale never goes directly after <b>se</b> in an if-clause. “Se avrei” is wrong.",
         "In type 1 you can use the futuro in both halves when talking about the future: <i>Se verrai, ti divertirai.</i>",
-        "With essere verbs the participle agrees: <i>se Giulia fosse venut<b>a</b></i>."
+        "With essere verbs the participle agrees: <i>se Giulia fosse venut<b>a</b></i>.",
+        "Alternatives to <b>se</b>: <b>nel caso in cui</b>, <b>qualora</b> and <b>a patto che</b> are followed by the congiuntivo (presente for a real case, imperfetto for a less likely one), never the condizionale. A gerund like <b>volendo</b> or <b>potendo</b> replaces the whole se-clause, but only when its subject is the same as the main verb's."
       ]
     },
     "signals": ["se", "se fossi in te", "nel caso in cui", "magari"],
@@ -105,7 +107,9 @@
       { "k": "type", "q": "Se vedi Carla, ___ di richiamarmi.", "h": "dire · imperativo tu + le", "a": ["dille"], "why": "Type 1 can end with an imperativo: di' + le → dille." },
       { "k": "mc", "q": "Se ___ tempo, verrei con voi a Cagliari.", "o": ["ho", "avrei", "avessi"], "a": "avessi", "why": "The result is condizionale (verrei) → type 2 → avessi." },
       { "k": "mc", "q": "“If you had told me, I would have come.”", "o": ["Se me l'avessi detto, sarei venuto.", "Se me l'avresti detto, sarei venuto.", "Se me lo dicessi, sarei venuto."], "a": "Se me l'avessi detto, sarei venuto.", "why": "Type 3: congiuntivo trapassato + condizionale passato." },
-      { "k": "mc", "q": "Se finisco presto, ___ al cinema.", "o": ["vado", "andrei", "sarei andato"], "a": "vado", "why": "se + presente → type 1: presente in the result too." }
+      { "k": "mc", "q": "Se finisco presto, ___ al cinema.", "o": ["vado", "andrei", "sarei andato"], "a": "vado", "why": "se + presente → type 1: presente in the result too." },
+      { "k": "type", "q": "___, potremmo fermarci a dormire a Matera e ripartire domattina.", "h": "volere · gerund", "a": ["volendo"], "why": "<b>Volendo</b> = se volessimo: the gerund replaces the se-clause when the subject is the same." },
+      { "k": "mc", "q": "Qualora ___ problemi con la prenotazione, contatti la reception.", "o": ["ci fossero", "ci sarebbero", "ci saranno"], "a": "ci fossero", "why": "<b>qualora</b> works like se: congiuntivo, never condizionale." }
     ]
   },
   {

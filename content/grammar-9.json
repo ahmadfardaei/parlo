@@ -1,0 +1,668 @@
+[
+  {
+    "id": "g-gerundio",
+    "level": "B1",
+    "topic": "tenses",
+    "title": "Il gerundio come frase",
+    "en": "The gerund as a clause",
+    "summary": "How the -ando/-endo form replaces a whole clause to say when, how, why or on what condition something happens.",
+    "meaning": "The gerund (<i>parlando, leggendo, essendo</i>) is a verb form with no person and no tense of its own. On its own it can do the work of a full clause: <i>Tornando a casa, ho visto un incidente</i> = while I was going home. The listener works out the link (time, manner, cause, condition) from context. The key rule: the gerund normally has the <b>same subject</b> as the main verb.",
+    "uses": [
+      {
+        "h": "Time: while, when",
+        "t": "Two things happening at the same time, done by the same person. It replaces <i>mentre</i> + verb.",
+        "ex": [
+          "Tornando dal lavoro, ho incontrato la mia vecchia maestra delle elementari.",
+          "On my way back from work, I ran into my old primary school teacher."
+        ]
+      },
+      {
+        "h": "Manner and means: by doing",
+        "t": "How something is done or what you do to get a result. English “by + -ing”.",
+        "ex": [
+          "Si è pagato l'università facendo il cameriere in un hotel di Rimini.",
+          "He paid for university by working as a waiter in a hotel in Rimini."
+        ]
+      },
+      {
+        "h": "Cause: since, because",
+        "t": "The gerund gives the reason for the main action. Very common with <b>essendo</b> and <b>avendo</b>.",
+        "ex": [
+          "Essendo domenica, il forno sotto casa era chiuso.",
+          "Since it was Sunday, the bakery downstairs was closed."
+        ]
+      },
+      {
+        "h": "Condition: if",
+        "t": "The gerund can mean “if you do this”. Often with a future or conditional in the main clause.",
+        "ex": [
+          "Prendendo il regionale delle 7, arrivi a Bergamo prima delle nove.",
+          "If you take the 7 o'clock regional train, you'll get to Bergamo before nine."
+        ]
+      },
+      {
+        "h": "Concession: pur + gerundio",
+        "t": "<b>pur</b> + gerund = “although, even though”. It's the short, slightly formal version of <i>anche se</i>.",
+        "ex": [
+          "Pur abitando a Napoli da vent'anni, Greta non ha mai visto il Vesuvio da vicino.",
+          "Although she's lived in Naples for twenty years, Greta has never seen Vesuvius up close."
+        ]
+      },
+      {
+        "h": "Before the main action: gerundio passato",
+        "t": "<b>avendo / essendo</b> + past participle shows that one action was already finished. It usually means “having done” or “since I had done”.",
+        "ex": [
+          "Avendo già visto il film, sono andato a dormire.",
+          "Having already seen the film, I went to bed."
+        ]
+      }
+    ],
+    "form": {
+      "intro": "Take the infinitive stem: <b>-are → -ando</b>, <b>-ere</b> and <b>-ire → -endo</b>. The gerund never changes for person, gender or number. For the past gerund, use <b>avendo</b> or <b>essendo</b> + past participle, choosing the auxiliary as in the passato prossimo.",
+      "tables": [
+        {
+          "h": "Gerundio presente",
+          "rows": [
+            ["parlare", "parlando"],
+            ["leggere", "leggendo"],
+            ["partire", "partendo"],
+            ["finire", "finendo (no -isc-)"],
+            ["essere / avere", "essendo / avendo"]
+          ]
+        },
+        {
+          "h": "Gerundio passato",
+          "rows": [
+            ["avendo + participle", "avendo finito, avendo letto, avendo detto"],
+            ["essendo + participle", "essendo arrivato/a, essendo arrivati/e (agrees with the subject)"],
+            ["reflexive verbs", "essendomi alzato, essendosi sposati"]
+          ]
+        },
+        {
+          "h": "Pronouns go on the end",
+          "rows": [
+            ["vedendo + lo", "vedendolo (seeing him / it)"],
+            ["parlando + ne", "parlandone (talking about it)"],
+            ["parlando + gli + ne", "parlandogliene (talking to him about it)"],
+            ["avendo + lo + detto", "avendolo detto (only the auxiliary takes the pronoun)"]
+          ]
+        }
+      ],
+      "notes": [
+        "Same subject: <i>Uscendo dal bar, ho visto Paolo</i> means <b>I</b> was leaving the bar. If Paolo was leaving, say <i>Ho visto Paolo mentre usciva dal bar</i>.",
+        "The gerund doesn't carry tense: the main verb sets it. <i>Camminando, parlavamo / parliamo / parleremo</i> all work.",
+        "Pronouns are always attached to the gerund, in one word: <i>vedendolo</i>, never <i>lo vedendo</i>. Reflexive verbs too: <i>alzandomi, vestendosi</i>.",
+        "English “-ing” is often <b>not</b> a gerund in Italian. After prepositions and as a subject use the infinitive: <i>prima di uscire</i>, <i>Nuotare mi rilassa</i>.",
+        "<b>stare + gerundio</b> (<i>sto mangiando</i>) is a separate structure for actions in progress; see that lesson."
+      ]
+    },
+    "irregularTitle": "Gerunds built on an old stem",
+    "irregular": [
+      ["fare", "facendo"],
+      ["dire", "dicendo"],
+      ["bere", "bevendo"],
+      ["tradurre (and produrre, condurre…)", "traducendo, producendo, conducendo"],
+      ["porre (and proporre, comporre…)", "ponendo, proponendo, componendo"],
+      ["trarre (and attrarre, distrarre…)", "traendo, attraendo"]
+    ],
+    "signals": ["-ando / -endo", "pur + gerundio", "avendo + participle", "essendo + participle", "vedendolo, parlandone"],
+    "mistakes": [
+      {
+        "wrong": "Uscendo dall'ufficio, il capo mi ha fermato.",
+        "right": "Mentre uscivo dall'ufficio, il capo mi ha fermato.",
+        "why": "The gerund takes the subject of the main verb, so the first sentence says the <b>boss</b> was leaving. If the subjects are different, use a full clause with <i>mentre</i>."
+      },
+      {
+        "wrong": "Avendo arrivato tardi, abbiamo perso il traghetto.",
+        "right": "Essendo arrivati tardi, abbiamo perso il traghetto.",
+        "why": "<i>arrivare</i> takes <b>essere</b> in compound tenses, so its past gerund is <b>essendo arrivati</b>, with agreement."
+      },
+      {
+        "wrong": "Lo vedendo così stanco, gli ho offerto un caffè.",
+        "right": "Vedendolo così stanco, gli ho offerto un caffè.",
+        "why": "Pronouns are attached to the end of the gerund: <b>vedendolo</b>."
+      },
+      {
+        "wrong": "Anche essendo stanca, è andata alla festa.",
+        "right": "Pur essendo stanca, è andata alla festa.",
+        "why": "“Although” + gerund is <b>pur</b> + gerund. With <i>anche se</i> you need a full verb: <i>Anche se era stanca…</i>"
+      }
+    ],
+    "ex": [
+      {
+        "k": "type",
+        "q": "Ho conosciuto mia moglie ___ in fila alla posta di Lecce.",
+        "h": "aspettare",
+        "a": ["aspettando"],
+        "why": "-are verbs: <b>aspettando</b>. Same subject (I was waiting, I met her): the gerund replaces <i>mentre aspettavo</i>."
+      },
+      {
+        "k": "type",
+        "q": "___ quattro caffè al giorno, Tommaso non riesce a dormire.",
+        "h": "bere",
+        "a": ["bevendo"],
+        "why": "<i>bere</i> builds the gerund on the old stem <i>bev-</i>: <b>bevendo</b>. Here it gives the cause."
+      },
+      {
+        "k": "type",
+        "q": "___ così, non convincerai mai il direttore.",
+        "h": "fare",
+        "a": ["facendo"],
+        "why": "<b>facendo</b>, from the stem <i>fac-</i>. The gerund here means “if you behave like this”."
+      },
+      {
+        "k": "type",
+        "q": "___ tardi, abbiamo perso l'ultimo traghetto per Procida.",
+        "h": "arrivare · past gerund",
+        "a": ["essendo arrivati", "essendo arrivate"],
+        "why": "<i>arrivare</i> takes essere, so the past gerund is <b>essendo arrivati</b>, agreeing with “we”."
+      },
+      {
+        "k": "type",
+        "q": "___ la cena, siamo andati a fare due passi sul molo Audace.",
+        "h": "finire · past gerund",
+        "a": ["avendo finito"],
+        "why": "The dinner was over before the walk: <b>avendo finito</b> (finire takes avere)."
+      },
+      {
+        "k": "type",
+        "q": "Pur ___ poco tempo, Ivo ha scritto la tesi in un mese.",
+        "h": "avere",
+        "a": ["avendo"],
+        "why": "<b>pur avendo</b> = although he had. Concession."
+      },
+      {
+        "k": "type",
+        "q": "La lettera di mio nonno? Mi sono commossa ___.",
+        "h": "leggere + la",
+        "a": ["leggendola"],
+        "why": "The pronoun is glued to the end of the gerund: <b>leggendola</b>."
+      },
+      {
+        "k": "type",
+        "q": "Il problema si risolve solo ___ apertamente.",
+        "h": "parlare + ne",
+        "a": ["parlandone"],
+        "why": "<i>parlare di qualcosa</i> → <i>parlarne</i> → <b>parlandone</b>, pronoun attached."
+      },
+      {
+        "k": "type",
+        "q": "Ti scrivo ___ in treno, scusa gli errori.",
+        "h": "viaggiare",
+        "a": ["viaggiando"],
+        "why": "Two things at once, same subject: <b>viaggiando</b> = while I'm travelling."
+      },
+      {
+        "k": "mc",
+        "q": "You saw Paolo, and <b>he</b> was the one leaving the bar. Which sentence says that?",
+        "o": ["Ho visto Paolo mentre usciva dal bar.", "Uscendo dal bar, ho visto Paolo.", "Ho visto Paolo uscendo dal bar."],
+        "a": "Ho visto Paolo mentre usciva dal bar.",
+        "why": "A gerund refers to the subject of the main verb, here “I”. To say that Paolo was leaving, use a full clause: <b>mentre usciva</b>."
+      },
+      {
+        "k": "mc",
+        "q": "«Pur sapendo la verità, Elena non ha detto niente.» What does this mean?",
+        "o": ["Although she knew the truth, Elena said nothing.", "Because she knew the truth, Elena said nothing.", "When she found out the truth, Elena said nothing."],
+        "a": "Although she knew the truth, Elena said nothing.",
+        "why": "<b>pur</b> + gerund always means “although”."
+      },
+      {
+        "k": "mc",
+        "q": "___ a casa, Marta si è accorta di aver lasciato le chiavi in ufficio.",
+        "o": ["Essendo arrivata", "Avendo arrivato", "Essendo arrivato"],
+        "a": "Essendo arrivata",
+        "why": "essere for <i>arrivare</i>, and the participle agrees with Marta: <b>essendo arrivata</b>."
+      },
+      {
+        "k": "mc",
+        "q": "Il professore di Matera ci ha spiegato il congiuntivo ___ esempi presi dalle canzoni di Battisti.",
+        "o": ["facendo", "fando", "fatto"],
+        "a": "facendo",
+        "why": "Manner: how he explained it. The gerund of <i>fare</i> is <b>facendo</b>; <i>fando</i> doesn't exist."
+      },
+      {
+        "k": "mc",
+        "q": "Which sentence is correct?",
+        "o": ["Nuotare la mattina mi mette di buon umore.", "Nuotando la mattina mi mette di buon umore.", "Il nuotando la mattina mi mette di buon umore."],
+        "a": "Nuotare la mattina mi mette di buon umore.",
+        "why": "When the English -ing is the <b>subject</b> (“swimming cheers me up”), Italian uses the infinitive, not the gerund."
+      }
+    ]
+  },
+  {
+    "id": "g-fare-lasciare",
+    "level": "B1",
+    "topic": "verbtypes",
+    "title": "Fare e lasciare + infinito",
+    "en": "Getting things done and letting",
+    "summary": "fare + infinitive to have something done or make someone do it, lasciare + infinitive to let someone do it, and verbs like vedere and sentire + infinitive.",
+    "meaning": "<b>fare</b> + infinitive means you cause an action that someone else carries out: <i>Ho fatto riparare la macchina</i> = I had the car repaired (the mechanic did it). <b>lasciare</b> + infinitive means you allow it: <i>Lasciami parlare</i> = let me speak. Verbs of perception work the same way: <i>Ti ho visto arrivare</i> = I saw you arrive. In all three, the infinitive comes straight after the verb, with no preposition.",
+    "uses": [
+      {
+        "h": "Having something done",
+        "t": "<b>fare</b> + infinitive for services: someone else does the job for you. English “have / get something done”.",
+        "ex": [
+          "Ho fatto riparare la macchina da un meccanico di Bergamo che chiede pochissimo.",
+          "I had the car repaired by a mechanic in Bergamo who charges very little."
+        ]
+      },
+      {
+        "h": "Making someone do or feel something",
+        "t": "<b>fare</b> + infinitive also means “make” someone do something, or cause a reaction: <i>far ridere, far piangere, far arrabbiare</i>.",
+        "ex": [
+          "Mio fratello mi fa ridere anche quando sono di pessimo umore.",
+          "My brother makes me laugh even when I'm in a terrible mood."
+        ]
+      },
+      {
+        "h": "Things done to you: farsi + infinitive",
+        "t": "Use the reflexive <b>farsi</b> when the action is done to you or for you. Compound tenses take <b>essere</b>.",
+        "ex": [
+          "Prima del matrimonio mi sono fatto tagliare i capelli da un barbiere di Trastevere.",
+          "Before the wedding I had my hair cut by a barber in Trastevere."
+        ]
+      },
+      {
+        "h": "Letting: lasciare + infinitive",
+        "t": "<b>lasciare</b> + infinitive = let, allow. Very common in the imperative: <i>lasciami parlare, lascialo dormire</i>.",
+        "ex": [
+          "Lasciami parlare, poi dimmi quello che vuoi.",
+          "Let me speak, then tell me whatever you want."
+        ]
+      },
+      {
+        "h": "Seeing and hearing someone do something",
+        "t": "<b>vedere, sentire, guardare, ascoltare</b> + infinitive describe an action you witnessed. English “see / hear someone do”.",
+        "ex": [
+          "L'ho sentito cantare sotto la doccia alle sei di mattina.",
+          "I heard him singing in the shower at six in the morning."
+        ]
+      }
+    ],
+    "form": {
+      "intro": "Conjugate <b>fare / lasciare / vedere / sentire</b> and put the plain infinitive right after it: <i>faccio riparare, lascio uscire, vedo arrivare</i>. Object pronouns go <b>before the conjugated verb</b>, not on the infinitive: <i>la faccio riparare</i>. Where pronouns normally attach (imperative tu/voi, infinitive, gerund), they attach to <b>fare / lasciare</b>: <i>fammi vedere, farlo riparare, lasciandola uscire</i>.",
+      "tables": [
+        {
+          "h": "Who does the action?",
+          "rows": [
+            ["infinitive with no object", "the doer is a direct object: <i>Faccio entrare <b>Luca</b> → <b>Lo</b> faccio entrare.</i>"],
+            ["infinitive with its own object", "the doer is indirect (a / gli / le): <i>Faccio leggere la lettera <b>a Luca</b> → <b>Gli</b> faccio leggere la lettera.</i>"],
+            ["doer not important", "no doer, or <b>da</b> + person: <i>Ho fatto riparare la macchina (dal meccanico).</i>"]
+          ]
+        },
+        {
+          "h": "Pronoun placement",
+          "rows": [
+            ["La macchina? La faccio lavare.", "pronoun before fare"],
+            ["L'ho fatta lavare.", "the participle agrees with lo / la / li / le"],
+            ["Gliel'ho fatto vedere.", "I showed it to him (made him see it)"],
+            ["Fammi sapere! Lasciala stare!", "imperative: pronoun on fare / lasciare"],
+            ["Devo farla riparare.", "after a modal: on fare (or <i>la devo far riparare</i>)"]
+          ]
+        },
+        {
+          "h": "Useful fixed phrases",
+          "rows": [
+            ["far sapere", "to let (someone) know: <i>Ti faccio sapere.</i>"],
+            ["far vedere", "to show: <i>Fammi vedere le foto.</i>"],
+            ["farsi sentire / farsi vivo", "to get in touch"],
+            ["lasciar perdere", "to drop it, forget it"],
+            ["lasciar stare", "to leave alone: <i>Lascia stare il gatto!</i>"]
+          ]
+        }
+      ],
+      "notes": [
+        "<b>fare</b> often drops its final -e before the infinitive: <i>far riparare, far ridere, far sapere</i>. Both forms are correct.",
+        "<b>farsi</b> + infinitive takes <b>essere</b> and agrees with the subject: <i>Chiara si è fatta prestare la bici.</i>",
+        "<i>lasciare che</i> + congiuntivo is the longer alternative: <i>Lascia che ti spieghi.</i>",
+        "Perception verbs also take <b>che</b> / a relative: <i>L'ho visto che usciva.</i> The infinitive is shorter and more common."
+      ]
+    },
+    "signals": ["fare + infinito", "farsi + infinito", "lasciare + infinito", "vedere / sentire + infinito", "fammi, lasciami"],
+    "mistakes": [
+      {
+        "wrong": "La macchina? Faccio ripararla domani.",
+        "right": "La macchina? La faccio riparare domani.",
+        "why": "With fare + infinitive the pronoun goes before <b>fare</b>, not on the infinitive."
+      },
+      {
+        "wrong": "Mi ho fatto tagliare i capelli.",
+        "right": "Mi sono fatto tagliare i capelli.",
+        "why": "<b>farsi</b> is reflexive, so its compound tenses use <b>essere</b>."
+      },
+      {
+        "wrong": "Lasciami a parlare!",
+        "right": "Lasciami parlare!",
+        "why": "No preposition: the infinitive follows <b>lasciare</b> (and fare, vedere, sentire) directly."
+      },
+      {
+        "wrong": "Lo faccio lavare la macchina.",
+        "right": "Gli faccio lavare la macchina.",
+        "why": "When the infinitive already has an object (<i>la macchina</i>), the person who does the job becomes an <b>indirect</b> object: <i>gli / le</i>."
+      }
+    ],
+    "ex": [
+      {
+        "k": "type",
+        "q": "La lavatrice perde acqua: domani la ___ riparare.",
+        "h": "fare · io",
+        "a": ["faccio"],
+        "why": "<b>faccio riparare</b> = I'll have it repaired. The pronoun <i>la</i> goes before fare."
+      },
+      {
+        "k": "type",
+        "q": "Quella scena con il cane e il prete mi ___ sempre ridere.",
+        "h": "fare · lei",
+        "a": ["fa"],
+        "why": "<b>far ridere</b> = to make someone laugh. The subject is <i>quella scena</i>: <b>fa</b>."
+      },
+      {
+        "k": "type",
+        "q": "Rosaria si è ___ tagliare i capelli cortissimi.",
+        "h": "fare · participle",
+        "a": ["fatta"],
+        "why": "<b>farsi</b> + infinitive takes essere, so the participle agrees with Rosaria: <b>fatta</b>."
+      },
+      {
+        "k": "type",
+        "q": "Non interrompermi sempre! ___ finire la frase.",
+        "h": "lasciare · tu + mi",
+        "a": ["lasciami"],
+        "why": "Imperative <i>lascia</i> + <i>mi</i>, written as one word: <b>lasciami</b>."
+      },
+      {
+        "k": "type",
+        "q": "«Hai visto le foto di Carloforte?» «Sì, Nicola ___ ha fatte vedere ieri.»",
+        "h": "to me + them",
+        "a": ["me le"],
+        "why": "mi + le = <b>me le</b>, placed before the conjugated verb. <i>fatte</i> agrees with <i>le</i> (the photos)."
+      },
+      {
+        "k": "type",
+        "q": "Ieri sera ho sentito i vicini ___ fino all'una.",
+        "h": "litigare",
+        "a": ["litigare"],
+        "why": "Perception verb + plain infinitive: <b>sentire qualcuno litigare</b>."
+      },
+      {
+        "k": "type",
+        "q": "Il capo non ci ___ mai uscire prima delle sei.",
+        "h": "lasciare · lui",
+        "a": ["lascia"],
+        "why": "<b>lasciare</b> + infinitive = to let. The pronoun <i>ci</i> goes before the verb."
+      },
+      {
+        "k": "type",
+        "q": "Ho fatto leggere la lettera all'avvocato: ___ fatta leggere ieri mattina.",
+        "h": "to him + it + avere",
+        "a": ["gliel'ho", "gliel’ho"],
+        "why": "<i>gli</i> + <i>la</i> = <i>gliela</i>, which elides before <i>ho</i>: <b>gliel'ho</b>. <i>fatta</i> agrees with <i>la lettera</i>."
+      },
+      {
+        "k": "type",
+        "q": "Che profumo! ___ assaggiare il sugo, nonna.",
+        "h": "fare · tu + mi",
+        "a": ["fammi"],
+        "why": "<i>fa'</i> + <i>mi</i> doubles the consonant: <b>fammi</b> (as in <i>dimmi, dammi</i>)."
+      },
+      {
+        "k": "type",
+        "q": "Mio padre non ___ mai lasciato guidare la sua Alfa.",
+        "h": "to me + avere",
+        "a": ["mi ha"],
+        "why": "Pronoun before the auxiliary: <b>mi ha lasciato</b> guidare."
+      },
+      {
+        "k": "mc",
+        "q": "You took your car to a garage in Cagliari to have the brakes checked. You say:",
+        "o": ["Ho fatto controllare i freni.", "Ho controllato i freni.", "Mi sono controllato i freni."],
+        "a": "Ho fatto controllare i freni.",
+        "why": "Someone else did the job: <b>fare</b> + infinitive. <i>Ho controllato i freni</i> means you did it yourself."
+      },
+      {
+        "k": "mc",
+        "q": "La giacca? ___ in tintoria domani.",
+        "o": ["La faccio pulire", "Faccio pulirla", "Faccio la pulire"],
+        "a": "La faccio pulire",
+        "why": "The pronoun goes before the conjugated <b>fare</b>, never between fare and the infinitive."
+      },
+      {
+        "k": "mc",
+        "q": "Ti ho visto ___ dal bar con una signora in pelliccia.",
+        "o": ["uscire", "di uscire", "a uscire"],
+        "a": "uscire",
+        "why": "<b>vedere</b> + plain infinitive, no preposition."
+      },
+      {
+        "k": "mc",
+        "q": "L'ultima scena del film ___ piangere tutto il cinema.",
+        "o": ["ha fatto", "ha lasciato", "si è fatta"],
+        "a": "ha fatto",
+        "why": "Causing a reaction: <b>far piangere</b>. <i>lasciare</i> would mean the scene allowed people to cry."
+      }
+    ]
+  },
+  {
+    "id": "g-participio",
+    "level": "B2",
+    "topic": "tenses",
+    "title": "Il participio e le frasi implicite",
+    "en": "Participles and implicit clauses",
+    "summary": "The present participle (-ante/-ente) as adjective and noun, and the past participle used on its own to replace a whole clause.",
+    "meaning": "Italian has two participles. The <b>present participle</b> (<i>interessante, cantante</i>) today works almost only as an adjective or a noun. The <b>past participle</b> can stand alone at the start of a sentence and replace a whole clause: <i>Finita la riunione, siamo usciti</i> = when the meeting was over, we went out. These short “implicit” clauses are typical of written Italian, news and formal speech. Being able to turn a full clause into a short one, and back, is a core B2 skill.",
+    "uses": [
+      {
+        "h": "Present participle as adjective",
+        "t": "Many common adjectives are present participles: <i>interessante, divertente, sorprendente, imbarazzante, pesante</i>. They describe what something does or causes.",
+        "ex": [
+          "È stata una serata imbarazzante: nessuno sapeva che si erano lasciati.",
+          "It was an awkward evening: nobody knew they had split up."
+        ]
+      },
+      {
+        "h": "Present participle as noun",
+        "t": "Many nouns for people are present participles: <i>il cantante, l'insegnante, il presidente, il conducente, il richiedente, i partecipanti</i>. Same form for men and women (<i>la cantante</i>).",
+        "ex": [
+          "Il richiedente deve presentarsi allo sportello con un documento valido.",
+          "The applicant must come to the counter with valid ID."
+        ]
+      },
+      {
+        "h": "Present participle instead of che + verb",
+        "t": "In bureaucratic and technical writing, -ante/-ente replaces a relative clause: <i>i documenti riguardanti il contratto</i> = che riguardano. Recognise it; you rarely need it in speech.",
+        "ex": [
+          "Si prega di allegare un certificato attestante la residenza.",
+          "Please attach a certificate confirming your place of residence."
+        ]
+      },
+      {
+        "h": "Past participle as a time clause",
+        "t": "A past participle at the start means “once / after this was done”. It always describes an action finished before the main one.",
+        "ex": [
+          "Finita la riunione, siamo scesi tutti al bar sotto l'ufficio.",
+          "Once the meeting was over, we all went down to the bar under the office."
+        ]
+      },
+      {
+        "h": "Past participle with essere verbs",
+        "t": "With verbs like <i>arrivare, partire, uscire</i>, the participle agrees with the subject of the main verb: <i>Arrivati a Roma, abbiamo…</i>",
+        "ex": [
+          "Arrivate a Cagliari, le mie zie hanno subito cercato una friggitoria.",
+          "As soon as they arrived in Cagliari, my aunts went looking for a fried-fish shop."
+        ]
+      },
+      {
+        "h": "Past participle for cause",
+        "t": "Fixed formulas like <b>visto</b>, <b>dato</b>, <b>considerato</b> + noun give a reason: “given, in view of”.",
+        "ex": [
+          "Vista la pioggia, la sagra del tartufo è rinviata a domenica.",
+          "Given the rain, the truffle fair has been postponed to Sunday."
+        ]
+      }
+    ],
+    "form": {
+      "intro": "Present participle: <b>-are → -ante</b>, <b>-ere / -ire → -ente</b> (plural <i>-anti / -enti</i>). Absolute past participle: put the participle first, then its noun. With transitive verbs it agrees with the <b>object</b> (<i>finita la riunione, lette le email</i>); with essere verbs it agrees with the <b>subject</b> (<i>arrivati a Roma</i>).",
+      "tables": [
+        {
+          "h": "Participio presente",
+          "rows": [
+            ["cantare", "cantante (singer)"],
+            ["interessare", "interessante (interesting)"],
+            ["richiedere", "richiedente (applicant)"],
+            ["partecipare", "partecipante (participant)"],
+            ["provenire", "proveniente (coming from), some -ire verbs take -iente"]
+          ]
+        },
+        {
+          "h": "Agreement of the absolute past participle",
+          "rows": [
+            ["transitive: agrees with the object", "Finit<b>a</b> la cena… / Fatt<b>e</b> le valigie… / Pagat<b>o</b> il conto…"],
+            ["essere verbs: agrees with the subject", "Arrivat<b>i</b> a Roma, (noi) abbiamo… / Uscit<b>a</b> dal cinema, Marta…"],
+            ["its own subject (different from the main one)", "Partit<b>i</b> gli ospiti, abbiamo lavato i piatti."],
+            ["with a pronoun: attached", "Lett<b>a</b>la, l'ha strappata. / Salutat<b>i</b>li, è uscita."]
+          ]
+        },
+        {
+          "h": "From explicit to implicit",
+          "rows": [
+            ["Dopo che ho finito il lavoro, esco.", "explicit: full clause with a conjugated verb"],
+            ["Dopo aver finito il lavoro, esco.", "dopo + past infinitive (neutral, very common)"],
+            ["Avendo finito il lavoro, esco.", "past gerund (adds a hint of cause)"],
+            ["Finito il lavoro, esco.", "absolute participle (shortest, more written)"],
+            ["Siccome era stanca, è rimasta a casa.", "→ Essendo stanca, è rimasta a casa."],
+            ["Le persone che partecipano al corso…", "→ I partecipanti al corso…"]
+          ]
+        }
+      ],
+      "notes": [
+        "Implicit clauses (infinitive, gerund, <i>dopo aver</i> + participle) need the <b>same subject</b> as the main clause. If the subjects differ, keep the explicit clause: <i>Dopo che ho finito, il capo mi ha chiamato.</i>",
+        "The absolute past participle is the one exception: it can have its own subject, placed after it: <i>Partiti gli ospiti, …</i>",
+        "<i>Una volta</i> + participle is a common, more spoken version: <i>Una volta finito il lavoro, ti chiamo.</i>",
+        "Not every verb has a usable present participle. Don't invent one (<i>mangiante</i>); use <i>che</i> + verb instead."
+      ]
+    },
+    "signals": ["-ante / -ente", "Finito/a/i/e …,", "Arrivati …,", "visto / dato / considerato", "dopo aver + participle", "una volta + participle"],
+    "mistakes": [
+      {
+        "wrong": "Finito la riunione, siamo usciti.",
+        "right": "Finita la riunione, siamo usciti.",
+        "why": "With a transitive verb the absolute participle agrees with its noun: <i>la riunione</i> → <b>finita</b>."
+      },
+      {
+        "wrong": "Arrivato a Lecce, abbiamo cercato l'albergo.",
+        "right": "Arrivati a Lecce, abbiamo cercato l'albergo.",
+        "why": "<i>arrivare</i> takes essere, so the participle agrees with the subject, “we”: <b>arrivati</b>."
+      },
+      {
+        "wrong": "Dopo aver finito il turno, il capo mi ha chiamato.",
+        "right": "Dopo che ho finito il turno, il capo mi ha chiamato.",
+        "why": "The implicit clause would mean the boss finished the shift. Different subjects need an explicit clause."
+      },
+      {
+        "wrong": "È un libro molto interessando.",
+        "right": "È un libro molto interessante.",
+        "why": "The adjective is the present participle <b>interessante</b>. <i>Interessando</i> is the gerund."
+      }
+    ],
+    "ex": [
+      {
+        "k": "type",
+        "q": "Il documentario sui lupi della Majella è davvero ___.",
+        "h": "interessare · adjective",
+        "a": ["interessante"],
+        "why": "-are → <b>-ante</b>: <i>interessante</i>."
+      },
+      {
+        "k": "type",
+        "q": "Tutti i ___ al corso di ceramica riceveranno un attestato.",
+        "h": "partecipare · noun",
+        "a": ["partecipanti"],
+        "why": "The present participle used as a noun, plural: <b>i partecipanti</b>."
+      },
+      {
+        "k": "type",
+        "q": "Il ___ deve allegare una copia del codice fiscale.",
+        "h": "richiedere · noun",
+        "a": ["richiedente"],
+        "why": "-ere → <b>-ente</b>: <i>il richiedente</i>, the applicant."
+      },
+      {
+        "k": "type",
+        "q": "___ la cena, gli ospiti si sono spostati in terrazza.",
+        "h": "finire · participle",
+        "a": ["finita"],
+        "why": "Absolute participle agreeing with <i>la cena</i>: <b>finita</b>."
+      },
+      {
+        "k": "type",
+        "q": "___ a Matera, abbiamo lasciato la macchina fuori dai Sassi.",
+        "h": "arrivare · participle (noi)",
+        "a": ["arrivati", "arrivate"],
+        "why": "Essere verb: the participle agrees with the subject “we”: <b>arrivati</b> (or <i>arrivate</i> for a group of women)."
+      },
+      {
+        "k": "type",
+        "q": "___ le valigie, Nadia ha chiamato un taxi per la stazione.",
+        "h": "fare · participle",
+        "a": ["fatte"],
+        "why": "Transitive verb: agreement with the object <i>le valigie</i>, feminine plural: <b>fatte</b>."
+      },
+      {
+        "k": "type",
+        "q": "___ la situazione, preferiamo rimandare l'escursione in Val Ferret.",
+        "h": "vedere · participle",
+        "a": ["vista"],
+        "why": "<b>vista</b> + noun = given, in view of. It agrees with <i>la situazione</i>."
+      },
+      {
+        "k": "type",
+        "q": "___ gli ospiti, ci siamo messi a lavare i piatti.",
+        "h": "partire · participle",
+        "a": ["partiti"],
+        "why": "The absolute participle can have its own subject: <b>partiti gli ospiti</b> = once the guests had left."
+      },
+      {
+        "k": "type",
+        "q": "Dopo ___ il modulo, consegnatelo allo sportello 3.",
+        "h": "compilare · past infinitive",
+        "a": ["aver compilato", "avere compilato"],
+        "why": "<b>dopo aver</b> + past participle: the neutral implicit form of <i>dopo che avete compilato</i>."
+      },
+      {
+        "k": "type",
+        "q": "La lettera dell'ex? ___, l'ha strappata e buttata nel camino.",
+        "h": "leggere · participle + la",
+        "a": ["lettala"],
+        "why": "Pronouns attach to the absolute participle, which agrees with them: <b>lettala</b> = once she'd read it."
+      },
+      {
+        "k": "mc",
+        "q": "Dopo che avevamo pagato il conto, siamo usciti. Which implicit version keeps the meaning?",
+        "o": ["Pagato il conto, siamo usciti.", "Pagando il conto, siamo usciti.", "Pagata il conto, siamo usciti."],
+        "a": "Pagato il conto, siamo usciti.",
+        "why": "The absolute participle shows the action was finished first, agreeing with <i>il conto</i>. <i>Pagando</i> would mean “while paying”."
+      },
+      {
+        "k": "mc",
+        "q": "“When I'd finished, my boss called me.” Which is correct?",
+        "o": ["Dopo che avevo finito, il capo mi ha chiamato.", "Dopo aver finito, il capo mi ha chiamato.", "Avendo finito, il capo mi ha chiamato."],
+        "a": "Dopo che avevo finito, il capo mi ha chiamato.",
+        "why": "Two different subjects (I / the boss), so the clause must be explicit. The other two say the boss had finished."
+      },
+      {
+        "k": "mc",
+        "q": "Il ___ dell'autobus per Ivrea ci ha aspettati due minuti in più.",
+        "o": ["conducente", "conducendo", "condotto"],
+        "a": "conducente",
+        "why": "The noun is the present participle <b>conducente</b>, the driver. <i>Conducendo</i> is the gerund."
+      },
+      {
+        "k": "mc",
+        "q": "Siccome era molto stanca, Bianca è rimasta in albergo. Which is the implicit version?",
+        "o": ["Essendo molto stanca, Bianca è rimasta in albergo.", "Stancata molto, Bianca è rimasta in albergo.", "Essendo stanchi, Bianca è rimasta in albergo."],
+        "a": "Essendo molto stanca, Bianca è rimasta in albergo.",
+        "why": "For a cause with <i>essere</i> + adjective, use the gerund <b>essendo</b>, with the adjective agreeing with Bianca."
+      }
+    ]
+  }
+]

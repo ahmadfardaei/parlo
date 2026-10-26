@@ -136,7 +136,8 @@
       { "h": "Saying and asking", "t": "dire, chiedere, rispondere, spiegare all take <b>a</b> + person.", "ex": ["Cosa ti ha detto il medico?", "What did the doctor tell you?"] },
       { "h": "Phoning and writing", "t": "<b>telefonare a</b>, <b>scrivere a</b>, <b>mandare a</b>.", "ex": ["Gli telefono stasera, adesso è in riunione.", "I'll ring him tonight, he's in a meeting now."] },
       { "h": "Piacere and similar verbs", "t": "The person who likes, needs or misses is indirect.", "ex": ["Le piace il mare? — No, preferisce la montagna.", "Does she like the seaside? — No, she prefers the mountains."] },
-      { "h": "Formal Le", "t": "<b>Le</b> also means “to you” when you use Lei.", "ex": ["Le mando il preventivo entro domani.", "I'll send you the quote by tomorrow."] }
+      { "h": "Formal Le", "t": "<b>Le</b> also means “to you” when you use Lei.", "ex": ["Le mando il preventivo entro domani.", "I'll send you the quote by tomorrow."] },
+      { "h": "Stressed forms for emphasis", "t": "<b>a me, a te, a lui…</b> put the person in the spotlight, usually to contrast two people.", "ex": ["A me piace la montagna, a lei il mare: ogni estate è una trattativa.", "I like the mountains, she likes the sea: every summer is a negotiation."] }
     ],
     "form": {
       "intro": "Like direct pronouns, they go before the conjugated verb or attach to an infinitive (<i>devo scriverle</i>). <b>loro</b> is the exception: it always follows the verb and sounds formal. In everyday Italian, <b>gli</b> means “to them” too.",
@@ -158,13 +159,31 @@
           ["telefonare", "phone: Ti telefono domani."],
           ["spiegare, insegnare, mostrare", "explain, teach, show"],
           ["piacere, servire, sembrare", "please, be needed, seem: Ci serve una mano."]
+        ] },
+        { "h": "Stressed pronouns", "rows": [
+          ["a me", "to me (= mi) · con me, per me, da me (at my place)"],
+          ["a te", "to you (= ti) · con te, per te, secondo te"],
+          ["a lui / a lei", "to him / to her (= gli / le) · con lui, per lei, da lei"],
+          ["a Lei", "to you, formal (= Le) · per Lei, con Lei"],
+          ["a noi", "to us (= ci) · da noi, tra noi"],
+          ["a voi", "to you all (= vi) · con voi, per voi"],
+          ["a loro", "to them (= gli) · con loro, da loro"]
+        ] },
+        { "h": "Unstressed or stressed?", "rows": [
+          ["Ti scrivo domani.", "neutral: the normal choice"],
+          ["Scrivo a te, non a Paolo.", "contrast: the stressed form goes after the verb"],
+          ["A me piace, a te no.", "contrast, very common with piacere"],
+          ["Anche a me. / Neanche a me.", "short answers with no verb: only the stressed form works"],
+          ["Vieni con me?", "after any preposition: only the stressed form"]
         ] }
       ],
       "notes": [
         "No agreement in the passato prossimo with indirect pronouns: <i>Le ho scritto</i>, never scritta.",
         "<b>gli</b> and <b>le</b> are not shortened before a vowel: <i>gli ho detto, le ho detto</i>.",
         "<b>telefonare a</b> takes an indirect pronoun (<i>gli telefono</i>), but <b>chiamare</b> takes a direct one (<i>lo chiamo</i>). Same meaning, different pronoun.",
-        "For contrast use the stressed forms after the verb: <i>Lo dico a te, non a lui.</i>"
+        "For contrast use the stressed forms after the verb: <i>Lo dico a te, non a lui.</i>",
+        "After a preposition, “I” and “you” become <b>me</b> and <b>te</b>: <i>con me, per te</i>, never con io.",
+        "Use one form, not both: <i>A me mi piace</i> is everywhere in speech, but in writing it counts as a mistake. Say <i>A me piace</i> or <i>Mi piace</i>."
       ]
     },
     "signals": ["a + person", "dare, dire, chiedere, rispondere", "telefonare, scrivere, mandare", "piacere, servire"],
@@ -187,7 +206,9 @@
       { "k": "type", "q": "Questa città ___ piace molto: torniamo anche l'anno prossimo.", "h": "pronoun · to us", "a": ["ci"], "why": "Piacere takes an indirect pronoun; torniamo shows it's us → ci." },
       { "k": "mc", "q": "Hai sentito Marta?", "o": ["Sì, le ho telefonato.", "Sì, la ho telefonato.", "Sì, l'ho telefonata."], "a": "Sì, le ho telefonato.", "why": "Telefonare a → indirect le, and no agreement." },
       { "k": "mc", "q": "Hai risposto ai clienti di Bergamo?", "o": ["Sì, gli ho risposto stamattina.", "Sì, li ho risposto stamattina.", "Sì, le ho risposto stamattina."], "a": "Sì, gli ho risposto stamattina.", "why": "Rispondere a + them → gli. Li is direct." },
-      { "k": "mc", "q": "Hai detto a Lucia della festa a sorpresa?", "o": ["Sì, le ho detto tutto.", "Sì, l'ho detto tutto.", "Sì, gli ho detta tutto."], "a": "Sì, le ho detto tutto.", "why": "Dire a Lucia → le ho detto. Tutto is the direct object." }
+      { "k": "mc", "q": "Hai detto a Lucia della festa a sorpresa?", "o": ["Sì, le ho detto tutto.", "Sì, l'ho detto tutto.", "Sì, gli ho detta tutto."], "a": "Sì, le ho detto tutto.", "why": "Dire a Lucia → le ho detto. Tutto is the direct object." },
+      { "k": "type", "q": "Sabato salgo a Bergamo Alta a piedi. Vuoi venire con ___?", "h": "stressed pronoun · me", "a": ["me"], "why": "After a preposition use the stressed form: con <b>me</b>, never con io or con mi." },
+      { "k": "mc", "q": "Ai miei figli piace il sushi, ma ___", "o": ["a me no.", "mi no.", "io no."], "a": "a me no.", "why": "There's no verb to attach mi to, and piacere needs “to me”: <b>a me no</b>, like <i>anche a me</i>." }
     ]
   },
   {
@@ -337,12 +358,20 @@
           ["il cui, la cui, i cui, le cui", "whose: la ragazza il cui padre…, lo scrittore i cui libri…"],
           ["il quale, la quale…", "formal or for clarity; replaces che or cui: al quale, della quale"],
           ["quello che / ciò che", "what (the thing that): Dimmi quello che pensi."]
+        ] },
+        { "h": "chi and quanto: no noun before them", "rows": [
+          ["chi", "the one who, whoever, people who (= la persona che): Chi trova un amico trova un tesoro."],
+          ["chi… chi…", "some… others: Alla festa chi ballava, chi mangiava."],
+          ["quanto", "what, all that (= tutto quello che): Ho fatto quanto potevo."],
+          ["quanto basta (q.b.)", "as much as needed, in recipes: sale q.b."],
+          ["per quanto ne so", "as far as I know"]
         ] }
       ],
       "notes": [
         "<b>a cui</b> can drop the a (<i>la persona cui ho scritto</i>), but that sounds formal. In speech keep it.",
         "<b>chi</b> means “whoever, the person who”, with no noun before it: <i>Chi arriva tardi paga il caffè.</i>",
-        "After <b>tutto</b> use <b>quello che</b>: <i>tutto quello che vuoi</i> = everything you want."
+        "After <b>tutto</b> use <b>quello che</b>: <i>tutto quello che vuoi</i> = everything you want.",
+        "<b>chi</b> always takes a singular verb, even when it means “people who”: <i>Chi vuole il caffè alzi la mano.</i> Proverbs love it: <i>Chi dorme non piglia pesci.</i>"
       ]
     },
     "mistakes": [
@@ -365,7 +394,9 @@
       { "k": "mc", "q": "“The book I'm reading is set in Matera.”", "o": ["Il libro sto leggendo è ambientato a Matera.", "Il libro che sto leggendo è ambientato a Matera.", "Il libro cui sto leggendo è ambientato a Matera."], "a": "Il libro che sto leggendo è ambientato a Matera.", "why": "Direct object, no preposition → che, and it can't be dropped." },
       { "k": "mc", "q": "Il quartiere ___ sono cresciuto non esiste più.", "o": ["in cui", "che", "cui"], "a": "in cui", "why": "Crescere in un posto → in cui." },
       { "k": "mc", "q": "___ trova il mio portafoglio riceverà una ricompensa.", "o": ["Chi", "Che", "Cui"], "a": "Chi", "why": "No noun before it: whoever → chi." },
-      { "k": "mc", "q": "Ho scritto alla sorella di Paolo, ___ però non mi ha ancora risposto. (She hasn't answered.)", "o": ["la quale", "il quale", "cui"], "a": "la quale", "why": "La quale makes clear it's the sister, not Paolo." }
+      { "k": "mc", "q": "Ho scritto alla sorella di Paolo, ___ però non mi ha ancora risposto. (She hasn't answered.)", "o": ["la quale", "il quale", "cui"], "a": "la quale", "why": "La quale makes clear it's the sister, not Paolo." },
+      { "k": "type", "q": "Al museo l'ingresso è gratuito per ___ ha meno di sei anni.", "h": "whoever", "a": ["chi"], "why": "No noun before it: the people who → <b>chi</b>, always with a singular verb (ha)." },
+      { "k": "mc", "q": "Per il pesto: basilico, pinoli, aglio, pecorino e olio ___ basta.", "o": ["quanto", "che", "chi"], "a": "quanto", "why": "<b>quanto</b> = as much as: <i>quanto basta</i> (q.b.) is the fixed recipe phrase for “as needed”." }
     ]
   },
   {

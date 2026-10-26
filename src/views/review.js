@@ -1,4 +1,4 @@
-import { S, D, esc, ICON, canSpeak, say, full, statusOf, statusLabel, setEntry, schedule, dueIds, deckIds, allReviewable, fmtIn, on, schedHTML, lsGet } from "../core.js";
+import { S, D, esc, ICON, gf, pickEx, canSpeak, say, full, statusOf, statusLabel, setEntry, schedule, dueIds, deckIds, allReviewable, fmtIn, on, schedHTML, lsGet } from "../core.js";
 import { highlight } from "./unit.js";
 import { nextUnit } from "./home.js";
 
@@ -15,9 +15,10 @@ export function cardData(id) {
     return { kind: "Saved sentence", from: e.st || "", fromHref: e.src || "", target: "", sentIt: e.ctx ? boldIn(e.ctx, e.it) : esc(e.it), sentEn: e.en || "", meaning: "", say: e.ctx || e.it };
   }
   const d = it.d, unit = `Unità ${it.u}`;
-  if (it.type === "w") return { kind: "Word", from: unit, fromHref: `#/unit/${it.u}/words`, target: full(d), sentIt: highlight(d.ex, d.it), sentEn: d.exEn, meaning: d.en, say: d.ex };
-  if (it.type === "v") return { kind: "Verb", from: unit, fromHref: `#/unit/${it.u}/verbs`, target: d.inf, sentIt: esc(d.ex[0][0]), sentEn: d.ex[0][1], meaning: d.en, extra: d.t.pres.join(" · "), say: d.ex[0][0] };
-  return { kind: "Phrase", from: unit, fromHref: `#/unit/${it.u}/phrases`, target: d.it, sentIt: highlight(d.ex, d.it.split(" ")[0]), sentEn: d.exEn, meaning: d.en, say: d.ex };
+  if (it.type === "w") { const ex = pickEx(d.ex, d.exAlt); return { kind: "Word", from: unit, fromHref: `#/unit/${it.u}/words`, target: full(d), sentIt: highlight(ex, d.it), sentEn: d.exEn, meaning: d.en, say: ex }; }
+  if (it.type === "v") { const ex = pickEx(d.ex[0][0], d.exAlt?.[0]); return { kind: "Verb", from: unit, fromHref: `#/unit/${it.u}/verbs`, target: d.inf, sentIt: esc(ex), sentEn: d.ex[0][1], meaning: d.en, extra: d.t.pres.join(" · "), say: ex }; }
+  const ex = pickEx(d.ex, d.exAlt);
+  return { kind: "Phrase", from: unit, fromHref: `#/unit/${it.u}/phrases`, target: d.it, sentIt: highlight(ex, d.it.split(" ")[0]), sentEn: d.exEn, meaning: d.en, say: ex };
 }
 
 /* ---------- Mazzo (my deck) ---------- */

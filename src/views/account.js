@@ -1,4 +1,4 @@
-import { S, esc, ICON, LEVELS, LEVEL_NAMES, savePref, showToast, switchUser, displayName, sync, pull, push, resetAll, mergeEntries, applyChanged, markDirty, unitOf, lsDel, emit, go } from "../core.js";
+import { S, esc, ICON, LEVELS, LEVEL_NAMES, savePref, showToast, switchUser, displayName, sync, pull, push, resetAll, mergeEntries, applyChanged, markDirty, unitOf, lsDel, emit, go, syncText, activityByDay, ACT_CATS, fmtDur, dayKey } from "../core.js";
 import { supabase, appUrl } from "../supabase.js";
 
 let mode = "signin", recovery = false, msg = null, armed = null;
@@ -34,31 +34,29 @@ export function onAuthEvent(event, session) {
   if (event === "PASSWORD_RECOVERY") recovery = true;
   const was = !S.user;
   switchUser(session?.user || null);
-  if (event === "PASSWORD_RECOVERY") go("#/account");
+  if (event === "PASSWORD_RECOVERY") go("#/account/settings");
   else if (event === "SIGNED_IN" && was && S.view.name === "account") { msg = null; showToast("Signed in. Your progress now syncs."); go("#/"); }
 }
 
-export function viewAccount(app) {
-  const settings = `<section class="panel"><h2>Settings</h2>
+export function viewAccount(app, v = S.view) {
+  const tab = v.tab || "stats";
+  const prefs = `<section class="panel"><h2>Learning</h2>
       <div class="setting"><span>Your level</span><div class="seg small" role="group" aria-label="Your level">${LEVELS.map(l => `<button data-level="${l}" aria-pressed="${S.pref.level === l}">${l}</button>`).join("")}</div></div>
-      <div class="setting"><span>New words per session</span><div class="seg small" role="group" aria-label="New cards">${[0, 10, 20, 30].map(n => `<button data-newn="${n}" aria-pressed="${S.pref.newN === n}">${n}</button>`).join("")}</div></div>
+      <div class="setting"><span>Forms about you</span><div class="seg small" role="group" aria-label="Gendered forms about you">${[["m", "stanco"], ["f", "stanca"], ["x", "stanco/a"]].map(([k, l]) => `<button class="it" data-gender="${k}" aria-pressed="${(S.pref.gender || "x") === k}">${l}</button>`).join("")}</div></div>
+      <div class="setting"><span>New words per session</span><div class="seg small" role="group" aria-label="New words per session">${[0, 10, 20, 30].map(n => `<button data-newn="${n}" aria-pressed="${S.pref.newN === n}">${n}</button>`).join("")}</div></div>
       <div class="setting"><span>Card front</span><div class="seg small" role="group" aria-label="Card front">${[["it", "Italian"], ["en", "English"]].map(([k, l]) => `<button data-dir="${k}" aria-pressed="${S.pref.dir === k}">${l}</button>`).join("")}</div></div>
       <div class="setting"><span>Speech speed</span><div class="seg small" role="group" aria-label="Speech speed">${[["0.75", "Slow"], ["0.92", "Normal"]].map(([r, l]) => `<button data-rate="${r}" aria-pressed="${String(S.pref.rate || 0.92) === r}">${l}</button>`).join("")}</div></div>
-      <div class="setting"><span>Install</span><div>${installHTML()}</div></div>
+      <div class="setting"><span>Install the app</span><div>${installHTML()}</div></div>
     </section>`;
-  const data = `<section class="panel"><h2>Your data</h2>
-      <div class="btn-row"><button class="btn" data-export>Download a backup</button><label class="btn">Restore a backup<input type="file" id="import-file" accept="application/json,.json" hidden></label></div>
-      <button class="text-btn danger" data-reset>${armed === "reset" ? "Tap again to erase all progress, drafts and your deck" : "Reset all progress"}</button>
-      <p class="muted small"><a href="privacy.html">Privacy</a></p></section>`;
-  let main;
-  if (!supabase) main = `<section class="panel"><p class="muted">Accounts aren't set up for this copy of Parlo. Progress is saved on this device.</p></section>`;
-  else if (recovery) main = `<form class="panel form" id="recovery-form"><h2>Choose a new password</h2>
+  let account;
+  if (!supabase) account = `<section class="panel"><h2>Account</h2><p class="muted">Accounts aren't set up for this copy of Parlo. Progress is saved on this device.</p></section>`;
+  else if (recovery) account = `<form class="panel form" id="recovery-form"><h2>Choose a new password</h2>
       <label class="field">New password<input class="input" id="new-pass" type="password" autocomplete="new-password" minlength="8" required></label>
       <div id="auth-msg">${msgHTML()}</div><button class="btn primary wide">Save password</button></form>`;
   else if (!S.user) {
     const up = mode === "signup";
-    main = `<section class="panel form">
-      <p class="muted small">An account keeps your progress, deck and drafts in sync on every device.</p>
+    account = `<section class="panel form"><h2>${up ? "Create an account" : "Sign in"}</h2>
+      <p class="muted small">An account keeps your progress, deck, drafts and statistics in sync on every device.</p>
       <button class="btn wide google" data-google>${G} Continue with Google</button>
       <p class="divider">or with email</p>
       <form id="auth-form" class="form">
@@ -73,25 +71,91 @@ export function viewAccount(app) {
     </section>`;
   } else {
     const google = S.user.app_metadata?.provider === "google";
-    main = `<section class="panel form"><h2>Profile</h2>
+    account = `<section class="panel form"><h2>Account</h2>
       <form id="profile-form" class="form"><label class="field">Name<input class="input" id="p-name" value="${esc(displayName())}" autocomplete="name" required></label>
-        <p class="muted small">${esc(S.user.email || "")} · ${google ? "Google" : "Email"} · <span data-sync class="sync"><i></i><span></span></span></p>
+        <p class="muted small">${esc(S.user.email || "")} · signed in with ${google ? "Google" : "email"}</p>
         <div id="auth-msg">${msgHTML()}</div>
-        <div class="btn-row"><button class="btn primary">Save</button><button type="button" class="btn" data-sync-now>Sync now</button></div></form>
+        <div class="btn-row"><button class="btn primary">Save name</button></div></form>
       ${google ? "" : `<form id="pass-form" class="form"><label class="field">Change password<input class="input" id="p-pass" type="password" autocomplete="new-password" minlength="8" placeholder="New password" required></label><button class="btn">Update password</button></form>`}
+      <div class="btn-row"><button class="btn" data-signout>Sign out</button>
+      ${armed === "delete" ? `<input class="input short" id="del-confirm" placeholder="Type DELETE" aria-label="Type DELETE to confirm"><button class="btn danger" data-del-confirm>Delete account</button><button class="btn quiet" data-del-cancel>Cancel</button>` : `<button class="btn quiet danger-text" data-del>Delete account…</button>`}</div>
     </section>`;
   }
-  const danger = S.user ? `<section class="panel"><h2>Sign out</h2><p class="muted small">Your progress stays safe in your account.</p>
-      <div class="btn-row"><button class="btn" data-signout>Sign out</button>
-      ${armed === "delete" ? `<input class="input short" id="del-confirm" placeholder="Type DELETE" aria-label="Type DELETE to confirm"><button class="btn danger" data-del-confirm>Delete account</button><button class="btn quiet" data-del-cancel>Cancel</button>` : `<button class="btn quiet danger-text" data-del>Delete account…</button>`}</div></section>` : "";
-  app.innerHTML = `<header class="page-head"><h1>${S.user ? "Ciao, " + esc(displayName().split(" ")[0] || "") : mode === "signup" ? "Create your account" : "Profilo"}</h1></header><div class="grid-2"><div>${main}${danger}</div><div>${settings}${data}</div></div>`;
+  const [syncCls, syncTxt] = syncText();
+  const data = `<section class="panel"><h2>Sync</h2>
+      <p class="sync ${syncCls}" data-sync><i></i><span>${syncTxt}</span></p>
+      <p class="muted small">${S.user ? `Last synced ${sync.last ? new Date(sync.last).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }) : "—"}.` : `Sign in under <a href="#/account/settings">Settings</a> to sync across devices.`}</p>
+      ${S.user ? `<button class="btn" data-sync-now>Sync now</button>` : ""}</section>
+    <section class="panel"><h2>Backup</h2>
+      <p class="muted small">A file with all your progress, deck, drafts and statistics.</p>
+      <div class="btn-row"><button class="btn" data-export>Download a backup</button><label class="btn">Restore a backup<input type="file" id="import-file" accept="application/json,.json" hidden></label></div></section>
+    <section class="panel"><h2>Start over</h2>
+      <p class="muted small">Erases your progress, deck and drafts on every device.</p>
+      <button class="btn quiet danger-text" data-reset>${armed === "reset" ? "Tap again to erase everything" : "Reset all progress"}</button>
+      <p class="muted small"><a href="privacy.html">Privacy</a></p></section>`;
+  const tabs = `<nav class="seg tabs-seg" aria-label="Profile sections">${[["stats", "Statistiche"], ["settings", "Impostazioni"], ["data", "I miei dati"]].map(([k, l]) => `<a href="#/account/${k}" ${k === tab ? 'aria-current="page"' : ""}>${l}</a>`).join("")}</nav>`;
+  const body = tab === "settings" ? `<div class="grid-2"><div>${account}</div><div>${prefs}</div></div>` : tab === "data" ? `<div class="grid-2"><div>${data}</div></div>` : statsHTML();
+  app.innerHTML = `<header class="page-head"><h1>${S.user ? "Ciao, " + esc(displayName().split(" ")[0] || "") : "Profilo"}</h1></header>${tabs}${body}`;
   wire(app);
+}
+
+/* ---------- Statistics ---------- */
+let period = "7";
+function statsHTML() {
+  const days = activityByDay();
+  const today = dayKey(), sum = o => Object.values(o || {}).reduce((a, b) => a + b, 0);
+  const lastN = n => { const out = []; for (let i = 0; i < n; i++) { const d = new Date(); d.setDate(d.getDate() - i); out.push(dayKey(d)); } return out; };
+  const total = Object.values(days).reduce((a, o) => a + sum(o), 0);
+  const week = lastN(7).reduce((a, d) => a + sum(days[d]), 0);
+  let streak = 0; for (let i = sum(days[today]) ? 0 : 1; ; i++) { const d = new Date(); d.setDate(d.getDate() - i); if (sum(days[dayKey(d)]) >= 60) streak++; else break; }
+  const range = period === "all" ? Object.keys(days) : lastN(+period);
+  const by = {}; for (const d of range) for (const [k, s] of Object.entries(days[d] || {})) by[k] = (by[k] || 0) + s;
+  const rangeTotal = sum(by), max = Math.max(1, ...Object.values(by));
+  if (!total) return `<div class="empty-state"><h2>Nothing to show yet</h2><p class="muted">Your study time and activity appear here as you learn. Time is counted only while you're actively using Parlo.</p><a class="btn primary" href="#/">Start today's session</a></div>`;
+  return `<div class="kpis">
+      <div class="panel kpi"><span class="eyebrow">Today</span><span class="kpi-num">${fmtDur(sum(days[today]))}</span></div>
+      <div class="panel kpi"><span class="eyebrow">Last 7 days</span><span class="kpi-num">${fmtDur(week)}</span></div>
+      <div class="panel kpi"><span class="eyebrow">Streak</span><span class="kpi-num">${streak} ${streak === 1 ? "day" : "days"}</span></div>
+      <div class="panel kpi"><span class="eyebrow">All time</span><span class="kpi-num">${fmtDur(total)}</span></div>
+    </div>
+    <section class="panel"><div class="panel-head"><h2>Where your time goes</h2>
+      <div class="seg small" role="group" aria-label="Period">${[["7", "7 days"], ["30", "30 days"], ["all", "All time"]].map(([k, l]) => `<button data-period="${k}" aria-pressed="${period === k}">${l}</button>`).join("")}</div></div>
+      ${rangeTotal ? `<div class="breakdown">${Object.keys(ACT_CATS).filter(k => by[k]).sort((a, b) => by[b] - by[a]).map(k => `<div class="bd-row"><span class="bd-label">${ACT_CATS[k]}</span><span class="bd-bar"><span style="width:${by[k] / max * 100}%"></span></span><span class="bd-val">${fmtDur(by[k])}</span></div>`).join("")}</div>
+        <p class="muted small">${fmtDur(rangeTotal)} in total.</p>` : `<p class="muted small">No study time in this period.</p>`}
+    </section>
+    <section class="panel"><h2>Activity</h2>${heatmapHTML(days)}</section>`;
+}
+function heatmapHTML(days) {
+  // As many weeks as fit on screen (a full year on laptops), so today is always visible without scrolling.
+  const w = Math.min(window.innerWidth, 1180);
+  const weeks = w >= 1024 ? 53 : Math.max(13, Math.floor((w - 100) / 15));
+  const end = new Date(); end.setHours(0, 0, 0, 0);
+  // Columns are weeks starting on Monday; the last column holds the current week.
+  const start = new Date(end); start.setDate(end.getDate() - (weeks - 1) * 7);
+  start.setDate(start.getDate() - ((start.getDay() + 6) % 7));
+  const cells = [], months = [];
+  let lastMonth = -1, lastCol = -9;
+  for (let d = new Date(start), i = 0; d <= end; d.setDate(d.getDate() + 1), i++) {
+    const sec = Object.values(days[dayKey(d)] || {}).reduce((a, b) => a + b, 0), m = sec / 60;
+    const lvl = !m ? 0 : m < 5 ? 1 : m < 15 ? 2 : m < 30 ? 3 : 4;
+    const col = Math.floor(i / 7) + 1, row = (i % 7) + 1;
+    // Label a month at its first full week, and never closer than 3 columns to the previous label.
+    if (row === 1 && d.getMonth() !== lastMonth) { if (col - lastCol >= 3 || lastCol < 0) { months.push(`<span style="grid-column:${col} / span 3">${d.toLocaleDateString("en", { month: "short" })}</span>`); lastCol = col; } lastMonth = d.getMonth(); }
+    cells.push(`<i class="hm-${lvl}" style="grid-column:${col};grid-row:${row}" title="${d.toLocaleDateString("en", { day: "numeric", month: "short" })}: ${m ? fmtDur(sec) : "no study"}"></i>`);
+  }
+  const cols = Math.ceil(cells.length / 7);
+  return `<div class="heatmap-wrap"><span></span><div class="hm-months" style="--cols:${cols}">${months.join("")}</div>
+    <div class="hm-days" aria-hidden="true"><span>Mon</span><span></span><span>Wed</span><span></span><span>Fri</span><span></span><span></span></div>
+    <div class="heatmap" style="--cols:${cols}" role="img" aria-label="Study activity per day over the last ${weeks} weeks">${cells.join("")}</div></div>
+    <div class="hm-legend"><span>Less</span>${[0, 1, 2, 3, 4].map(l => `<i class="hm-${l}"></i>`).join("")}<span>More</span></div>`;
 }
 
 function wire(app) {
   const $ = s => app.querySelector(s);
+  app.querySelectorAll("[data-period]").forEach(b => b.onclick = () => { period = b.dataset.period; viewAccount(app); });
   app.querySelectorAll("[data-level]").forEach(b => b.onclick = () => { savePref({ level: b.dataset.level }); viewAccount(app); });
   app.querySelectorAll("[data-newn]").forEach(b => b.onclick = () => { savePref({ newN: +b.dataset.newn }); viewAccount(app); });
+  app.querySelectorAll("[data-gender]").forEach(b => b.onclick = () => { savePref({ gender: b.dataset.gender }); viewAccount(app); });
   app.querySelectorAll("[data-rate]").forEach(b => b.onclick = () => { savePref({ rate: +b.dataset.rate }); viewAccount(app); });
   app.querySelectorAll("[data-dir]").forEach(b => b.onclick = () => { savePref({ dir: b.dataset.dir }); viewAccount(app); });
   app.querySelectorAll("[data-mode]").forEach(b => b.onclick = () => { mode = b.dataset.mode; msg = null; viewAccount(app); });

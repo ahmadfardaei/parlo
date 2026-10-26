@@ -1646,6 +1646,43 @@
               "A presto · Un saluto · Un abbraccio"
             ]
           ]
+        },
+        {
+          "h": "Nominal style · verb → noun",
+          "rows": [
+            [
+              "dopo aver deciso",
+              "dopo la decisione"
+            ],
+            [
+              "per migliorare il servizio",
+              "per il miglioramento del servizio"
+            ],
+            [
+              "prima di partire",
+              "prima della partenza"
+            ],
+            [
+              "perché hanno chiuso la strada",
+              "a causa della chiusura della strada"
+            ],
+            [
+              "dopo che abbiamo verificato i dati",
+              "dopo la verifica dei dati"
+            ],
+            [
+              "quando arriverete",
+              "al vostro arrivo"
+            ],
+            [
+              "se paga in ritardo",
+              "in caso di ritardo nel pagamento"
+            ],
+            [
+              "common endings",
+              "-zione / -sione (iscrizione, decisione), -mento (pagamento), -ura (chiusura), -enza (partenza), bare stem (verifica, firma)"
+            ]
+          ]
         }
       ],
       "notes": [
@@ -1653,7 +1690,8 @@
         "<b>Gentile</b> is the default formal opening. <b>Egregio</b> is very formal and old-fashioned; <b>Caro</b> is for people you know.",
         "Formal Italian uses the colon and semicolon more than English emails: <i>Il problema è chiaro: mancano i dati.</i>",
         "Don't overdo it. <i>Le sarei grato se potesse inviarmi il documento</i> is right; adding <i>infinitamente</i>, <i>cortesemente</i> and <i>con la Sua consueta gentilezza</i> turns it into parody.",
-        "Alternate active, si and passive forms: a chain of passives (<i>è stato fatto… è stato deciso… è stato inviato</i>) reads like a translation."
+        "Alternate active, si and passive forms: a chain of passives (<i>è stato fatto… è stato deciso… è stato inviato</i>) reads like a translation.",
+        "<b>Nominalisation</b>: formal writing often turns a verb into a noun (<i>dopo aver deciso → dopo la decisione</i>, <i>per migliorare → per il miglioramento</i>). The verb's object follows with <b>di</b>: <i>migliorare il servizio → il miglioramento del servizio</i>. One or two per sentence; a paragraph made only of nouns becomes bureaucratese."
       ]
     },
     "signals": [
@@ -1829,6 +1867,27 @@
         ],
         "a": "abbiamo modificato la data",
         "why": "<b>modificare</b> is the formal counterpart of cambiare."
+      },
+      {
+        "k": "type",
+        "q": "Dopo la ___ del contratto, riceverà una copia via email.",
+        "h": "firmare · noun",
+        "a": [
+          "firma",
+          "sottoscrizione"
+        ],
+        "why": "Nominal style: <i>dopo aver firmato il contratto</i> → <b>dopo la firma del contratto</b>; the object follows with di."
+      },
+      {
+        "k": "mc",
+        "q": "Which is the nominal version of <i>Prima di partire, controlli i documenti</i>?",
+        "o": [
+          "Prima della partenza, controlli i documenti.",
+          "Prima di partenza, controlli i documenti.",
+          "Prima che parta, controlli i documenti."
+        ],
+        "a": "Prima della partenza, controlli i documenti.",
+        "why": "partire → <b>la partenza</b>; prima di + article → <b>prima della</b>. Prima che parta is a clause, not a noun."
       }
     ]
   },

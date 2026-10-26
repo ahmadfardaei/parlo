@@ -1,4 +1,4 @@
-import { S, D, esc, rich, ICON, full, unitByN, counts, barHTML, statusOf, statusLabel, inDeck, schedHTML, canSpeak, TOPICS, remember, shuffle, pick, say, openSheet } from "../core.js";
+import { S, D, esc, rich, ICON, full, unitByN, counts, barHTML, statusOf, statusLabel, inDeck, schedHTML, canSpeak, TOPICS, remember, shuffle, pick, say, openSheet, gf, pickEx } from "../core.js";
 
 export const PRON = ["io", "tu", "lui / lei", "noi", "voi", "loro"];
 export const TENSES = [
@@ -37,11 +37,11 @@ function itemHTML(id) {
   if (it.type === "w") {
     term = d.art ? `<span class="art ${d.g}">${esc(d.art)}</span>${d.art.endsWith("'") ? "" : " "}${esc(d.it)}` : esc(d.it);
     sub = d.g ? `<span class="tag ${d.g}">${d.g === "m" ? "masculine" : "feminine"}${d.pl ? " · plural " + esc(d.pl) : ""}</span>` : `<span class="tag">${POS[d.pos] || esc(d.pos)}</span>`;
-    more = `<p class="ex-it">${highlight(d.ex, d.it)}</p><p class="ex-en">${esc(d.exEn)}</p>${d.note ? `<p class="note">${rich(d.note)}</p>` : ""}`;
+    more = `<p class="ex-it">${highlight(pickEx(d.ex, d.exAlt), d.it)}</p><p class="ex-en">${esc(d.exEn)}</p>${d.note ? `<p class="note">${rich(d.note)}</p>` : ""}`;
   } else {
     term = esc(d.it);
     sub = `<span class="tag">${esc(d.reg)}</span>`;
-    more = `<p class="muted small">Literally: “${esc(d.lit)}”</p><p class="ex-it">${esc(d.ex)}</p><p class="ex-en">${esc(d.exEn)}</p>${d.note ? `<p class="note">${rich(d.note)}</p>` : ""}`;
+    more = `<p class="muted small">Literally: “${esc(d.lit)}”</p><p class="ex-it">${esc(pickEx(d.ex, d.exAlt))}</p><p class="ex-en">${esc(d.exEn)}</p>${d.note ? `<p class="note">${rich(d.note)}</p>` : ""}`;
   }
   return `<div class="item">
     <button class="item-main" data-expand aria-haspopup="dialog">
@@ -61,7 +61,7 @@ function verbHTML(id) {
       <div class="item-tags"><span class="tag">${esc(v.kind)}</span><span class="tag">past with ${esc(v.aux)}</span></div>
       <div class="seg small scroll" role="group" aria-label="Tense">${TENSES.map((t, i) => `<button data-tense="${t.k}" aria-pressed="${i === 0}">${t.it}</button>`).join("")}</div>
       <div class="conj-wrap">${conjHTML(v, "pres")}</div>
-      ${v.ex.map(([a, b]) => `<p class="ex-it">${esc(a)}</p><p class="ex-en">${esc(b)}</p>`).join("")}
+      ${v.ex.map(([a, b], i) => `<p class="ex-it">${esc(pickEx(a, v.exAlt?.[i]))}</p><p class="ex-en">${esc(b)}</p>`).join("")}
       <p class="note">${rich(v.note)}</p>
       ${actionsHTML(id)}
     </div></div>`;
@@ -69,7 +69,7 @@ function verbHTML(id) {
 export function conjHTML(v, k) {
   const t = TENSES.find(x => x.k === k);
   const pron = k === "cong" ? PRON.map(p => "che " + p) : PRON;
-  return `<p class="muted small">${t.en}</p><table class="conj"><tbody>${v.t[k].map((f, i) => `<tr><td>${pron[i]}</td><td class="it">${esc(f)}</td><td>${canSpeak && f !== "—" ? `<button class="icon-btn small" data-say-text="${esc(f)}" aria-label="Listen to ${esc(f)}">${ICON.speak}</button>` : ""}</td></tr>`).join("")}</tbody></table>`;
+  return `<p class="muted small">${t.en}</p><table class="conj"><tbody>${v.t[k].map((f, i) => `<tr><td>${pron[i]}</td><td class="it">${esc(gf(f, i === 0))}</td><td>${canSpeak && f !== "—" ? `<button class="icon-btn small" data-say-text="${esc(gf(f, i === 0))}" aria-label="Listen to ${esc(gf(f, i === 0))}">${ICON.speak}</button>` : ""}</td></tr>`).join("")}</tbody></table>`;
 }
 
 export function viewUnit(app, v) {

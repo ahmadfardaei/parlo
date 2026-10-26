@@ -28,7 +28,7 @@ export function parseHash() {
     case "review": return { name: "home" }; // the review hub now lives on the home screen
     case "deck": return { name: "deck" };
     case "session": return { name: "session", src: p[1] || "due", u: p[2] ? +p[2] : undefined, focus: true };
-    case "account": return { name: "account" };
+    case "account": return { name: "account", tab: ["stats", "settings", "data"].includes(p[1]) ? p[1] : "stats" };
     default: return { name: "home" };
   }
 }

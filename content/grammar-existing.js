@@ -78,7 +78,8 @@ export const GRAMMAR = [
       notes: [
         "<b>avere</b>: most verbs, and every verb with a direct object (<i>ho mangiato una pizza</i>).",
         "<b>essere</b>: movement and change verbs without an object (andare, venire, arrivare, partire, uscire, entrare, tornare, salire, scendere, nascere, morire, diventare, rimanere, succedere), essere and stare, piacere, and <b>every reflexive verb</b> (mi sono alzato).",
-        "With <b>essere</b> the participle agrees with the subject like an adjective: Marco è andat<b>o</b>, Anna è andat<b>a</b>, siamo andat<b>i</b>, le ragazze sono andat<b>e</b>."
+        "With <b>essere</b> the participle agrees with the subject like an adjective: Marco è andat<b>o</b>, Anna è andat<b>a</b>, siamo andat<b>i</b>, le ragazze sono andat<b>e</b>.",
+        "Some verbs take <b>avere</b> with a direct object and <b>essere</b> without one: <i>ho finito il lavoro</i> / <i>il film è finito</i>, <i>ho cominciato il corso</i> / <i>il corso è cominciato</i>, <i>ho passato l'esame</i> / <i>sono passato da te</i>, <i>ho salito le scale</i> / <i>sono salita</i>, <i>ho sceso le valigie</i> / <i>siamo scesi</i>, <i>ho cambiato casa</i> / <i>Luca è cambiato</i>, <i>hanno aumentato i prezzi</i> / <i>i prezzi sono aumentati</i>. <b>correre</b>: avere for the activity (<i>ho corso un'ora</i>), essere with a destination (<i>sono corso a casa</i>). Weather verbs take either: <i>ha piovuto</i> or <i>è piovuto</i>."
       ]
     },
     irregular: [

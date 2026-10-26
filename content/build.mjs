@@ -8,7 +8,7 @@ const TOPIC_ORDER = ["nouns", "adjectives", "prepositions", "pronouns", "verbtyp
 
 const { GRAMMAR } = await import(new URL("./grammar-existing.js", import.meta.url));
 let grammar = GRAMMAR.map(g => ({ ...g, topic: "tenses" }));
-for (let i = 1; i <= 9; i++) if (has(`grammar-${i}.json`)) grammar.push(...C(`grammar-${i}.json`));
+for (let i = 1; i <= 12; i++) if (has(`grammar-${i}.json`)) grammar.push(...C(`grammar-${i}.json`));
 const ids = new Set(); grammar = grammar.filter(g => !ids.has(g.id) && ids.add(g.id));
 grammar.sort((a, b) => TOPIC_ORDER.indexOf(a.topic) - TOPIC_ORDER.indexOf(b.topic) || LV.indexOf(a.level) - LV.indexOf(b.level));
 out("grammar", grammar);

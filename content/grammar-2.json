@@ -342,12 +342,37 @@
           ["l'otto agosto, l'undici", "il becomes l' before otto and undici"],
           ["nel 2019", "in 2019 (in + il)"],
           ["gli anni Ottanta", "the eighties"]
+        ] },
+        { "h": "Ordinals", "rows": [
+          ["1st–5th", "primo, secondo, terzo, quarto, quinto"],
+          ["6th–10th", "sesto, settimo, ottavo, nono, decimo"],
+          ["11th and up", "drop the last vowel + <b>-esimo</b>: undicesimo, ventesimo, centesimo, millesimo"],
+          ["…tré, …sei", "keep the vowel (and lose the accent): ventitreesimo, trentaseiesimo"],
+          ["agreement", "like any -o adjective: il terzo piano, la prima volta, le prime settimane"],
+          ["written", "1° (primo), 1ª (prima). Kings and popes: Roman numerals, no article: Vittorio Emanuele II (secondo), Papa Giovanni XXIII (ventitreesimo)"]
+        ] },
+        { "h": "Centuries", "rows": [
+          ["il Novecento", "the 1900s = il XX secolo (ventesimo)"],
+          ["l'Ottocento", "the 1800s = il XIX secolo (diciannovesimo)"],
+          ["il Trecento", "the 1300s = il XIV secolo: the century of Dante and Giotto"],
+          ["nel Seicento", "in the 1600s (in + il)"],
+          ["il XXI secolo", "the 21st century (ventunesimo)"]
+        ] },
+        { "h": "Fractions, percentages, approximations", "rows": [
+          ["un mezzo / la metà", "a half. Before a noun use mezzo: mezzo chilo, mezz'ora. Half of something: la metà della torta"],
+          ["un terzo, due terzi, tre quarti", "number + ordinal, as in English: two thirds, three quarters"],
+          ["il 30 per cento (il 30%)", "percentages take the article: il 30 per cento degli italiani"],
+          ["una decina, una ventina, una trentina…", "about 10, 20, 30, + di before a noun: una ventina di persone"],
+          ["un centinaio → centinaia", "about a hundred → hundreds (feminine plural): centinaia di euro"],
+          ["un migliaio → migliaia", "about a thousand → thousands: migliaia di turisti"],
+          ["una dozzina", "a dozen: una dozzina di uova"]
         ] }
       ],
       "notes": [
         "Timetables and offices use the 24-hour clock: <i>il treno parte alle 17:40</i> (diciassette e quaranta).",
         "Days and months are lower case: lunedì, gennaio.",
-        "Decimals use a comma: 3,50 € is <i>tre euro e cinquanta</i>, or just <i>tre e cinquanta</i>."
+        "Decimals use a comma: 3,50 € is <i>tre euro e cinquanta</i>, or just <i>tre e cinquanta</i>.",
+        "Centuries from the 1200s on are often named by their hundreds, with a capital letter: <i>il Duecento</i> … <i>il Novecento</i>. The century number is one more than the hundreds, as in English: the 1900s are <i>il Novecento</i> = <i>il XX secolo</i>."
       ]
     },
     "mistakes": [
@@ -369,7 +394,10 @@
       { "k": "type", "q": "Mio nonno è nato ___ anni Trenta.", "h": "in + article", "a": ["negli"], "why": "gli anni Trenta → <b>negli</b> anni Trenta." },
       { "k": "mc", "q": "“It's half past four.”", "o": ["Sono le quattro e mezza.", "È le quattro e mezza.", "Sono quattro e mezza."], "a": "Sono le quattro e mezza.", "why": "Plural verb and article: <b>sono le</b>." },
       { "k": "mc", "q": "How do you write 23?", "o": ["ventitré", "ventitre", "ventetré"], "a": "ventitré", "why": "A final tre takes an accent: <b>ventitré</b>." },
-      { "k": "mc", "q": "“Quando è il tuo compleanno?” “___ marzo.”", "o": ["L'otto", "Il otto", "L'ottavo"], "a": "L'otto", "why": "Otto starts with a vowel → <b>l'otto</b>, and dates use plain numbers." }
+      { "k": "mc", "q": "“Quando è il tuo compleanno?” “___ marzo.”", "o": ["L'otto", "Il otto", "L'ottavo"], "a": "L'otto", "why": "Otto starts with a vowel → <b>l'otto</b>, and dates use plain numbers." },
+      { "k": "type", "q": "Abitiamo al ___ piano e l'ascensore è rotto da martedì.", "h": "ordinal · 5th", "a": ["quinto"], "why": "Floors use ordinals, which agree like adjectives: il <b>quinto</b> piano." },
+      { "k": "type", "q": "Alla festa del paese, a Monforte d'Alba, c'era un ___ di persone: tutto il paese più qualche turista.", "h": "about 100", "a": ["centinaio"], "why": "<b>un centinaio di</b> = about a hundred. Its plural is feminine: centinaia di persone." },
+      { "k": "mc", "q": "Giotto dipinge la Cappella degli Scrovegni a Padova intorno al 1305, cioè all'inizio del ___.", "o": ["Trecento", "Duecento", "XIII secolo"], "a": "Trecento", "why": "The 1300s are the <b>Trecento</b>, which is the XIV secolo: the century number is one more than the hundreds." }
     ]
   },
   {
