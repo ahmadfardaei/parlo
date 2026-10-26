@@ -1,0 +1,16 @@
+[
+ {
+  "inf": "licenziare",
+  "field": "note",
+  "from": "<b>licenziarsi</b> = to quit, resign: <i>mi sono licenziato</i> = I quit. Not related to “licence”.",
+  "to": "<b>licenziarsi</b> = to quit, resign: <i>mi sono licenziato</i> = I quit. <i>Essere licenziato</i> = to be fired.",
+  "why": "'Not related to licence' is false: licenziare comes from licenza (permission/leave), same root as English 'licence'."
+ },
+ {
+  "inf": "visitare",
+  "field": "note",
+  "from": "For places, not people: to visit a friend is <b>andare a trovare</b> un amico. Stress on the first syllable: <i>VI-si-to</i>.",
+  "to": "For places (and a doctor examining a patient), not for visiting friends: to visit a friend is <b>andare a trovare</b> un amico. Stress on the first syllable: <i>VI-si-to</i>.",
+  "why": "'For places, not people' contradicts the meaning 'to examine (a patient)'."
+ }
+]

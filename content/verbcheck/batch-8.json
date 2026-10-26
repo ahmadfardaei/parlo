@@ -1,0 +1,2362 @@
+[
+ {
+  "unit": 36,
+  "level": "B2",
+  "inf": "arrangiarsi",
+  "en": "to manage; to get by; to make do",
+  "aux": "essere",
+  "kind": "regular -are · reflexive",
+  "note": "The Italian art of making do with what you have. <b>Arrangiati!</b> = Sort it out yourself! Spelling: <i>mi arrangerò</i> (no <i>i</i> before <i>e</i>).",
+  "t": {
+   "pres": [
+    "mi arrangio",
+    "ti arrangi",
+    "si arrangia",
+    "ci arrangiamo",
+    "vi arrangiate",
+    "si arrangiano"
+   ],
+   "pp": [
+    "mi sono arrangiato/a",
+    "ti sei arrangiato/a",
+    "si è arrangiato/a",
+    "ci siamo arrangiati/e",
+    "vi siete arrangiati/e",
+    "si sono arrangiati/e"
+   ],
+   "imp": [
+    "mi arrangiavo",
+    "ti arrangiavi",
+    "si arrangiava",
+    "ci arrangiavamo",
+    "vi arrangiavate",
+    "si arrangiavano"
+   ],
+   "fut": [
+    "mi arrangerò",
+    "ti arrangerai",
+    "si arrangerà",
+    "ci arrangeremo",
+    "vi arrangerete",
+    "si arrangeranno"
+   ],
+   "cond": [
+    "mi arrangerei",
+    "ti arrangeresti",
+    "si arrangerebbe",
+    "ci arrangeremmo",
+    "vi arrangereste",
+    "si arrangerebbero"
+   ],
+   "cong": [
+    "mi arrangi",
+    "ti arrangi",
+    "si arrangi",
+    "ci arrangiamo",
+    "vi arrangiate",
+    "si arrangino"
+   ]
+  }
+ },
+ {
+  "unit": 36,
+  "level": "B2",
+  "inf": "cavarsela",
+  "en": "to get by; to manage; to pull through",
+  "aux": "essere",
+  "kind": "regular -are · pronominal",
+  "note": "<b>Cavarsela</b> = to cope, often with a skill: <i>me la cavo in inglese</i>. The participle always agrees with <b>la</b>: <i>ce la siamo cavata</i>.",
+  "t": {
+   "pres": [
+    "me la cavo",
+    "te la cavi",
+    "se la cava",
+    "ce la caviamo",
+    "ve la cavate",
+    "se la cavano"
+   ],
+   "pp": [
+    "me la sono cavata",
+    "te la sei cavata",
+    "se l'è cavata",
+    "ce la siamo cavata",
+    "ve la siete cavata",
+    "se la sono cavata"
+   ],
+   "imp": [
+    "me la cavavo",
+    "te la cavavi",
+    "se la cavava",
+    "ce la cavavamo",
+    "ve la cavavate",
+    "se la cavavano"
+   ],
+   "fut": [
+    "me la caverò",
+    "te la caverai",
+    "se la caverà",
+    "ce la caveremo",
+    "ve la caverete",
+    "se la caveranno"
+   ],
+   "cond": [
+    "me la caverei",
+    "te la caveresti",
+    "se la caverebbe",
+    "ce la caveremmo",
+    "ve la cavereste",
+    "se la caverebbero"
+   ],
+   "cong": [
+    "me la cavi",
+    "te la cavi",
+    "se la cavi",
+    "ce la caviamo",
+    "ve la caviate",
+    "se la cavino"
+   ]
+  }
+ },
+ {
+  "unit": 36,
+  "level": "B2",
+  "inf": "farcela",
+  "en": "to make it; to manage; to cope",
+  "aux": "avere",
+  "kind": "irregular · pronominal",
+  "note": "Built on <b>fare</b>; <i>ce</i> and <i>la</i> never change: <b>ce la faccio</b>, <b>ce l'ho fatta</b>. <b>Non ce la faccio più</b> = I can't take any more.",
+  "t": {
+   "pres": [
+    "ce la faccio",
+    "ce la fai",
+    "ce la fa",
+    "ce la facciamo",
+    "ce la fate",
+    "ce la fanno"
+   ],
+   "pp": [
+    "ce l'ho fatta",
+    "ce l'hai fatta",
+    "ce l'ha fatta",
+    "ce l'abbiamo fatta",
+    "ce l'avete fatta",
+    "ce l'hanno fatta"
+   ],
+   "imp": [
+    "ce la facevo",
+    "ce la facevi",
+    "ce la faceva",
+    "ce la facevamo",
+    "ce la facevate",
+    "ce la facevano"
+   ],
+   "fut": [
+    "ce la farò",
+    "ce la farai",
+    "ce la farà",
+    "ce la faremo",
+    "ce la farete",
+    "ce la faranno"
+   ],
+   "cond": [
+    "ce la farei",
+    "ce la faresti",
+    "ce la farebbe",
+    "ce la faremmo",
+    "ce la fareste",
+    "ce la farebbero"
+   ],
+   "cong": [
+    "ce la faccia",
+    "ce la faccia",
+    "ce la faccia",
+    "ce la facciamo",
+    "ce la facciate",
+    "ce la facciano"
+   ]
+  }
+ },
+ {
+  "unit": 36,
+  "level": "B2",
+  "inf": "metterci",
+  "en": "to take (time) — the person takes it",
+  "aux": "avere",
+  "kind": "irregular · pronominal",
+  "note": "Personal: the subject is whoever takes the time — <b>ci metto dieci minuti</b> = it takes me ten minutes. Compare impersonal <b>volerci</b>: <i>ci vogliono dieci minuti</i>.",
+  "t": {
+   "pres": [
+    "ci metto",
+    "ci metti",
+    "ci mette",
+    "ci mettiamo",
+    "ci mettete",
+    "ci mettono"
+   ],
+   "pp": [
+    "ci ho messo",
+    "ci hai messo",
+    "ci ha messo",
+    "ci abbiamo messo",
+    "ci avete messo",
+    "ci hanno messo"
+   ],
+   "imp": [
+    "ci mettevo",
+    "ci mettevi",
+    "ci metteva",
+    "ci mettevamo",
+    "ci mettevate",
+    "ci mettevano"
+   ],
+   "fut": [
+    "ci metterò",
+    "ci metterai",
+    "ci metterà",
+    "ci metteremo",
+    "ci metterete",
+    "ci metteranno"
+   ],
+   "cond": [
+    "ci metterei",
+    "ci metteresti",
+    "ci metterebbe",
+    "ci metteremmo",
+    "ci mettereste",
+    "ci metterebbero"
+   ],
+   "cong": [
+    "ci metta",
+    "ci metta",
+    "ci metta",
+    "ci mettiamo",
+    "ci mettiate",
+    "ci mettano"
+   ]
+  }
+ },
+ {
+  "unit": 36,
+  "level": "B2",
+  "inf": "volerci",
+  "en": "to take; to be needed (impersonal)",
+  "aux": "essere",
+  "kind": "irregular · impersonal",
+  "note": "Mostly used in the 3rd person: <b>ci vuole</b> + singular, <b>ci vogliono</b> + plural — <i>ci vuole un'ora</i>, <i>ci vogliono due ore</i>. Past: <b>ci è voluto / ci sono voluti</b> (often <i>c'è voluto</i>).",
+  "t": {
+   "pres": [
+    "—",
+    "—",
+    "ci vuole",
+    "—",
+    "—",
+    "ci vogliono"
+   ],
+   "pp": [
+    "—",
+    "—",
+    "ci è voluto/a",
+    "—",
+    "—",
+    "ci sono voluti/e"
+   ],
+   "imp": [
+    "—",
+    "—",
+    "ci voleva",
+    "—",
+    "—",
+    "ci volevano"
+   ],
+   "fut": [
+    "—",
+    "—",
+    "ci vorrà",
+    "—",
+    "—",
+    "ci vorranno"
+   ],
+   "cond": [
+    "—",
+    "—",
+    "ci vorrebbe",
+    "—",
+    "—",
+    "ci vorrebbero"
+   ],
+   "cong": [
+    "—",
+    "—",
+    "ci voglia",
+    "—",
+    "—",
+    "ci vogliano"
+   ]
+  }
+ },
+ {
+  "unit": 36,
+  "level": "B2",
+  "inf": "prendersela",
+  "en": "to take offence; to get upset; to take it out on",
+  "aux": "essere",
+  "kind": "irregular · pronominal",
+  "note": "<b>Prendersela per</b> = to get upset about; <b>prendersela con</b> = to take it out on, to blame. <i>Non prendertela!</i> = Don't take it personally! Participle <b>presa</b> agrees with <i>la</i>.",
+  "t": {
+   "pres": [
+    "me la prendo",
+    "te la prendi",
+    "se la prende",
+    "ce la prendiamo",
+    "ve la prendete",
+    "se la prendono"
+   ],
+   "pp": [
+    "me la sono presa",
+    "te la sei presa",
+    "se l'è presa",
+    "ce la siamo presa",
+    "ve la siete presa",
+    "se la sono presa"
+   ],
+   "imp": [
+    "me la prendevo",
+    "te la prendevi",
+    "se la prendeva",
+    "ce la prendevamo",
+    "ve la prendevate",
+    "se la prendevano"
+   ],
+   "fut": [
+    "me la prenderò",
+    "te la prenderai",
+    "se la prenderà",
+    "ce la prenderemo",
+    "ve la prenderete",
+    "se la prenderanno"
+   ],
+   "cond": [
+    "me la prenderei",
+    "te la prenderesti",
+    "se la prenderebbe",
+    "ce la prenderemmo",
+    "ve la prendereste",
+    "se la prenderebbero"
+   ],
+   "cong": [
+    "me la prenda",
+    "te la prenda",
+    "se la prenda",
+    "ce la prendiamo",
+    "ve la prendiate",
+    "se la prendano"
+   ]
+  }
+ },
+ {
+  "unit": 36,
+  "level": "B2",
+  "inf": "andarsene",
+  "en": "to go away; to leave",
+  "aux": "essere",
+  "kind": "irregular · pronominal",
+  "note": "<b>Me ne vado</b> = I'm off. <b>Vattene!</b> = Go away! The participle agrees with the subject: <i>se n'è andata</i>.",
+  "t": {
+   "pres": [
+    "me ne vado",
+    "te ne vai",
+    "se ne va",
+    "ce ne andiamo",
+    "ve ne andate",
+    "se ne vanno"
+   ],
+   "pp": [
+    "me ne sono andato/a",
+    "te ne sei andato/a",
+    "se n'è andato/a",
+    "ce ne siamo andati/e",
+    "ve ne siete andati/e",
+    "se ne sono andati/e"
+   ],
+   "imp": [
+    "me ne andavo",
+    "te ne andavi",
+    "se ne andava",
+    "ce ne andavamo",
+    "ve ne andavate",
+    "se ne andavano"
+   ],
+   "fut": [
+    "me ne andrò",
+    "te ne andrai",
+    "se ne andrà",
+    "ce ne andremo",
+    "ve ne andrete",
+    "se ne andranno"
+   ],
+   "cond": [
+    "me ne andrei",
+    "te ne andresti",
+    "se ne andrebbe",
+    "ce ne andremmo",
+    "ve ne andreste",
+    "se ne andrebbero"
+   ],
+   "cong": [
+    "me ne vada",
+    "te ne vada",
+    "se ne vada",
+    "ce ne andiamo",
+    "ve ne andiate",
+    "se ne vadano"
+   ]
+  }
+ },
+ {
+  "unit": 36,
+  "level": "B2",
+  "inf": "fregarsene",
+  "en": "not to care; not to give a damn",
+  "aux": "essere",
+  "kind": "regular -are · pronominal",
+  "note": "Informal and a bit rude: <b>me ne frego</b> = I couldn't care less. <b>Fregarsene di</b> + noun. Softer: <i>non me ne importa</i>. Without <i>ne</i>, <b>fregare</b> = to cheat, rip off.",
+  "t": {
+   "pres": [
+    "me ne frego",
+    "te ne freghi",
+    "se ne frega",
+    "ce ne freghiamo",
+    "ve ne fregate",
+    "se ne fregano"
+   ],
+   "pp": [
+    "me ne sono fregato/a",
+    "te ne sei fregato/a",
+    "se n'è fregato/a",
+    "ce ne siamo fregati/e",
+    "ve ne siete fregati/e",
+    "se ne sono fregati/e"
+   ],
+   "imp": [
+    "me ne fregavo",
+    "te ne fregavi",
+    "se ne fregava",
+    "ce ne fregavamo",
+    "ve ne fregavate",
+    "se ne fregavano"
+   ],
+   "fut": [
+    "me ne fregherò",
+    "te ne fregherai",
+    "se ne fregherà",
+    "ce ne fregheremo",
+    "ve ne fregherete",
+    "se ne fregheranno"
+   ],
+   "cond": [
+    "me ne fregherei",
+    "te ne fregheresti",
+    "se ne fregherebbe",
+    "ce ne fregheremmo",
+    "ve ne freghereste",
+    "se ne fregherebbero"
+   ],
+   "cong": [
+    "me ne freghi",
+    "te ne freghi",
+    "se ne freghi",
+    "ce ne freghiamo",
+    "ve ne freghiate",
+    "se ne freghino"
+   ]
+  }
+ },
+ {
+  "unit": 37,
+  "level": "B2",
+  "inf": "affermare",
+  "en": "to state, to assert; to affirm",
+  "aux": "avere",
+  "kind": "regular -are",
+  "note": "Common in reports: <b>affermare che</b> + indicative. <b>affermarsi</b> = to become established, to succeed.",
+  "t": {
+   "pres": [
+    "affermo",
+    "affermi",
+    "afferma",
+    "affermiamo",
+    "affermate",
+    "affermano"
+   ],
+   "pp": [
+    "ho affermato",
+    "hai affermato",
+    "ha affermato",
+    "abbiamo affermato",
+    "avete affermato",
+    "hanno affermato"
+   ],
+   "imp": [
+    "affermavo",
+    "affermavi",
+    "affermava",
+    "affermavamo",
+    "affermavate",
+    "affermavano"
+   ],
+   "fut": [
+    "affermerò",
+    "affermerai",
+    "affermerà",
+    "affermeremo",
+    "affermerete",
+    "affermeranno"
+   ],
+   "cond": [
+    "affermerei",
+    "affermeresti",
+    "affermerebbe",
+    "affermeremmo",
+    "affermereste",
+    "affermerebbero"
+   ],
+   "cong": [
+    "affermi",
+    "affermi",
+    "affermi",
+    "affermiamo",
+    "affermiate",
+    "affermino"
+   ]
+  }
+ },
+ {
+  "unit": 37,
+  "level": "B2",
+  "inf": "sottolineare",
+  "en": "to underline; to stress, to emphasise",
+  "aux": "avere",
+  "kind": "regular -are",
+  "note": "Very frequent in presentations: <b>vorrei sottolineare che…</b> Keep the double <i>e</i> in the future: <b>sottolineerò</b>.",
+  "t": {
+   "pres": [
+    "sottolineo",
+    "sottolinei",
+    "sottolinea",
+    "sottolineiamo",
+    "sottolineate",
+    "sottolineano"
+   ],
+   "pp": [
+    "ho sottolineato",
+    "hai sottolineato",
+    "ha sottolineato",
+    "abbiamo sottolineato",
+    "avete sottolineato",
+    "hanno sottolineato"
+   ],
+   "imp": [
+    "sottolineavo",
+    "sottolineavi",
+    "sottolineava",
+    "sottolineavamo",
+    "sottolineavate",
+    "sottolineavano"
+   ],
+   "fut": [
+    "sottolineerò",
+    "sottolineerai",
+    "sottolineerà",
+    "sottolineeremo",
+    "sottolineerete",
+    "sottolineeranno"
+   ],
+   "cond": [
+    "sottolineerei",
+    "sottolineeresti",
+    "sottolineerebbe",
+    "sottolineeremmo",
+    "sottolineereste",
+    "sottolineerebbero"
+   ],
+   "cong": [
+    "sottolinei",
+    "sottolinei",
+    "sottolinei",
+    "sottolineiamo",
+    "sottolineiate",
+    "sottolineino"
+   ]
+  }
+ },
+ {
+  "unit": 37,
+  "level": "B2",
+  "inf": "evidenziare",
+  "en": "to highlight, to point out",
+  "aux": "avere",
+  "kind": "regular -are",
+  "note": "Used for data and documents: <b>i dati evidenziano un calo</b>. The <i>i</i> of the stem merges: <b>tu evidenzi</b>, <b>noi evidenziamo</b>.",
+  "t": {
+   "pres": [
+    "evidenzio",
+    "evidenzi",
+    "evidenzia",
+    "evidenziamo",
+    "evidenziate",
+    "evidenziano"
+   ],
+   "pp": [
+    "ho evidenziato",
+    "hai evidenziato",
+    "ha evidenziato",
+    "abbiamo evidenziato",
+    "avete evidenziato",
+    "hanno evidenziato"
+   ],
+   "imp": [
+    "evidenziavo",
+    "evidenziavi",
+    "evidenziava",
+    "evidenziavamo",
+    "evidenziavate",
+    "evidenziavano"
+   ],
+   "fut": [
+    "evidenzierò",
+    "evidenzierai",
+    "evidenzierà",
+    "evidenzieremo",
+    "evidenzierete",
+    "evidenzieranno"
+   ],
+   "cond": [
+    "evidenzierei",
+    "evidenzieresti",
+    "evidenzierebbe",
+    "evidenzieremmo",
+    "evidenziereste",
+    "evidenzierebbero"
+   ],
+   "cong": [
+    "evidenzi",
+    "evidenzi",
+    "evidenzi",
+    "evidenziamo",
+    "evidenziate",
+    "evidenzino"
+   ]
+  }
+ },
+ {
+  "unit": 37,
+  "level": "B2",
+  "inf": "considerare",
+  "en": "to consider; to regard as",
+  "aux": "avere",
+  "kind": "regular -are",
+  "note": "<b>considerare qualcuno/qualcosa + adjective</b> = to regard as: <i>lo considero affidabile</i>. Stress on the second syllable: <b>consìdero</b>.",
+  "t": {
+   "pres": [
+    "considero",
+    "consideri",
+    "considera",
+    "consideriamo",
+    "considerate",
+    "considerano"
+   ],
+   "pp": [
+    "ho considerato",
+    "hai considerato",
+    "ha considerato",
+    "abbiamo considerato",
+    "avete considerato",
+    "hanno considerato"
+   ],
+   "imp": [
+    "consideravo",
+    "consideravi",
+    "considerava",
+    "consideravamo",
+    "consideravate",
+    "consideravano"
+   ],
+   "fut": [
+    "considererò",
+    "considererai",
+    "considererà",
+    "considereremo",
+    "considererete",
+    "considereranno"
+   ],
+   "cond": [
+    "considererei",
+    "considereresti",
+    "considererebbe",
+    "considereremmo",
+    "considerereste",
+    "considererebbero"
+   ],
+   "cong": [
+    "consideri",
+    "consideri",
+    "consideri",
+    "consideriamo",
+    "consideriate",
+    "considerino"
+   ]
+  }
+ },
+ {
+  "unit": 37,
+  "level": "B2",
+  "inf": "ritenere",
+  "en": "to believe, to consider, to deem",
+  "aux": "avere",
+  "kind": "irregular",
+  "note": "Conjugated like <b>tenere</b>. A formal <i>pensare</i>: <b>ritengo che</b> + congiuntivo; <b>ritenere opportuno</b> = to see fit.",
+  "t": {
+   "pres": [
+    "ritengo",
+    "ritieni",
+    "ritiene",
+    "riteniamo",
+    "ritenete",
+    "ritengono"
+   ],
+   "pp": [
+    "ho ritenuto",
+    "hai ritenuto",
+    "ha ritenuto",
+    "abbiamo ritenuto",
+    "avete ritenuto",
+    "hanno ritenuto"
+   ],
+   "imp": [
+    "ritenevo",
+    "ritenevi",
+    "riteneva",
+    "ritenevamo",
+    "ritenevate",
+    "ritenevano"
+   ],
+   "fut": [
+    "riterrò",
+    "riterrai",
+    "riterrà",
+    "riterremo",
+    "riterrete",
+    "riterranno"
+   ],
+   "cond": [
+    "riterrei",
+    "riterresti",
+    "riterrebbe",
+    "riterremmo",
+    "riterreste",
+    "riterrebbero"
+   ],
+   "cong": [
+    "ritenga",
+    "ritenga",
+    "ritenga",
+    "riteniamo",
+    "riteniate",
+    "ritengano"
+   ]
+  }
+ },
+ {
+  "unit": 37,
+  "level": "B2",
+  "inf": "concludere",
+  "en": "to conclude, to finish; to close (a deal)",
+  "aux": "avere",
+  "kind": "irregular",
+  "note": "Irregular participle: <b>concluso</b>. <b>Per concludere…</b> = To conclude… <b>concludere un affare</b> = to close a deal.",
+  "t": {
+   "pres": [
+    "concludo",
+    "concludi",
+    "conclude",
+    "concludiamo",
+    "concludete",
+    "concludono"
+   ],
+   "pp": [
+    "ho concluso",
+    "hai concluso",
+    "ha concluso",
+    "abbiamo concluso",
+    "avete concluso",
+    "hanno concluso"
+   ],
+   "imp": [
+    "concludevo",
+    "concludevi",
+    "concludeva",
+    "concludevamo",
+    "concludevate",
+    "concludevano"
+   ],
+   "fut": [
+    "concluderò",
+    "concluderai",
+    "concluderà",
+    "concluderemo",
+    "concluderete",
+    "concluderanno"
+   ],
+   "cond": [
+    "concluderei",
+    "concluderesti",
+    "concluderebbe",
+    "concluderemmo",
+    "concludereste",
+    "concluderebbero"
+   ],
+   "cong": [
+    "concluda",
+    "concluda",
+    "concluda",
+    "concludiamo",
+    "concludiate",
+    "concludano"
+   ]
+  }
+ },
+ {
+  "unit": 37,
+  "level": "B2",
+  "inf": "riassumere",
+  "en": "to summarise; to re-hire",
+  "aux": "avere",
+  "kind": "irregular",
+  "note": "Participle <b>riassunto</b>, which is also the noun <i>summary</i>: <b>un riassunto</b>.",
+  "t": {
+   "pres": [
+    "riassumo",
+    "riassumi",
+    "riassume",
+    "riassumiamo",
+    "riassumete",
+    "riassumono"
+   ],
+   "pp": [
+    "ho riassunto",
+    "hai riassunto",
+    "ha riassunto",
+    "abbiamo riassunto",
+    "avete riassunto",
+    "hanno riassunto"
+   ],
+   "imp": [
+    "riassumevo",
+    "riassumevi",
+    "riassumeva",
+    "riassumevamo",
+    "riassumevate",
+    "riassumevano"
+   ],
+   "fut": [
+    "riassumerò",
+    "riassumerai",
+    "riassumerà",
+    "riassumeremo",
+    "riassumerete",
+    "riassumeranno"
+   ],
+   "cond": [
+    "riassumerei",
+    "riassumeresti",
+    "riassumerebbe",
+    "riassumeremmo",
+    "riassumereste",
+    "riassumerebbero"
+   ],
+   "cong": [
+    "riassuma",
+    "riassuma",
+    "riassuma",
+    "riassumiamo",
+    "riassumiate",
+    "riassumano"
+   ]
+  }
+ },
+ {
+  "unit": 37,
+  "level": "B2",
+  "inf": "specificare",
+  "en": "to specify",
+  "aux": "avere",
+  "kind": "regular -are",
+  "note": "Add <i>h</i> before <i>e/i</i>: <b>specifichi</b>, <b>specificherò</b>. <b>Specifichi</b> is also the formal command: <i>Please specify</i>.",
+  "t": {
+   "pres": [
+    "specifico",
+    "specifichi",
+    "specifica",
+    "specifichiamo",
+    "specificate",
+    "specificano"
+   ],
+   "pp": [
+    "ho specificato",
+    "hai specificato",
+    "ha specificato",
+    "abbiamo specificato",
+    "avete specificato",
+    "hanno specificato"
+   ],
+   "imp": [
+    "specificavo",
+    "specificavi",
+    "specificava",
+    "specificavamo",
+    "specificavate",
+    "specificavano"
+   ],
+   "fut": [
+    "specificherò",
+    "specificherai",
+    "specificherà",
+    "specificheremo",
+    "specificherete",
+    "specificheranno"
+   ],
+   "cond": [
+    "specificherei",
+    "specificheresti",
+    "specificherebbe",
+    "specificheremmo",
+    "specifichereste",
+    "specificherebbero"
+   ],
+   "cong": [
+    "specifichi",
+    "specifichi",
+    "specifichi",
+    "specifichiamo",
+    "specifichiate",
+    "specifichino"
+   ]
+  }
+ },
+ {
+  "unit": 38,
+  "level": "B2",
+  "inf": "adattarsi",
+  "en": "to adapt (oneself), to adjust",
+  "aux": "essere",
+  "kind": "reflexive",
+  "note": "<b>adattarsi a</b> + noun/infinitive: <i>mi adatto al clima</i>. Non-reflexive <b>adattare</b> = to adapt something.",
+  "t": {
+   "pres": [
+    "mi adatto",
+    "ti adatti",
+    "si adatta",
+    "ci adattiamo",
+    "vi adattate",
+    "si adattano"
+   ],
+   "pp": [
+    "mi sono adattato/a",
+    "ti sei adattato/a",
+    "si è adattato/a",
+    "ci siamo adattati/e",
+    "vi siete adattati/e",
+    "si sono adattati/e"
+   ],
+   "imp": [
+    "mi adattavo",
+    "ti adattavi",
+    "si adattava",
+    "ci adattavamo",
+    "vi adattavate",
+    "si adattavano"
+   ],
+   "fut": [
+    "mi adatterò",
+    "ti adatterai",
+    "si adatterà",
+    "ci adatteremo",
+    "vi adatterete",
+    "si adatteranno"
+   ],
+   "cond": [
+    "mi adatterei",
+    "ti adatteresti",
+    "si adatterebbe",
+    "ci adatteremmo",
+    "vi adattereste",
+    "si adatterebbero"
+   ],
+   "cong": [
+    "mi adatti",
+    "ti adatti",
+    "si adatti",
+    "ci adattiamo",
+    "vi adattiate",
+    "si adattino"
+   ]
+  }
+ },
+ {
+  "unit": 38,
+  "level": "B2",
+  "inf": "integrarsi",
+  "en": "to integrate, to fit in",
+  "aux": "essere",
+  "kind": "reflexive",
+  "note": "<b>integrarsi in/con</b>: <i>integrarsi nella società</i>. Stress on the first syllable: <b>mi ìntegro</b>.",
+  "t": {
+   "pres": [
+    "mi integro",
+    "ti integri",
+    "si integra",
+    "ci integriamo",
+    "vi integrate",
+    "si integrano"
+   ],
+   "pp": [
+    "mi sono integrato/a",
+    "ti sei integrato/a",
+    "si è integrato/a",
+    "ci siamo integrati/e",
+    "vi siete integrati/e",
+    "si sono integrati/e"
+   ],
+   "imp": [
+    "mi integravo",
+    "ti integravi",
+    "si integrava",
+    "ci integravamo",
+    "vi integravate",
+    "si integravano"
+   ],
+   "fut": [
+    "mi integrerò",
+    "ti integrerai",
+    "si integrerà",
+    "ci integreremo",
+    "vi integrerete",
+    "si integreranno"
+   ],
+   "cond": [
+    "mi integrerei",
+    "ti integreresti",
+    "si integrerebbe",
+    "ci integreremmo",
+    "vi integrereste",
+    "si integrerebbero"
+   ],
+   "cong": [
+    "mi integri",
+    "ti integri",
+    "si integri",
+    "ci integriamo",
+    "vi integriate",
+    "si integrino"
+   ]
+  }
+ },
+ {
+  "unit": 38,
+  "level": "B2",
+  "inf": "emigrare",
+  "en": "to emigrate",
+  "aux": "essere",
+  "kind": "regular -are",
+  "note": "Takes <b>essere</b>. <b>emigrare in</b> + country, <b>a</b> + city. The opposite is <b>immigrare</b>.",
+  "t": {
+   "pres": [
+    "emigro",
+    "emigri",
+    "emigra",
+    "emigriamo",
+    "emigrate",
+    "emigrano"
+   ],
+   "pp": [
+    "sono emigrato/a",
+    "sei emigrato/a",
+    "è emigrato/a",
+    "siamo emigrati/e",
+    "siete emigrati/e",
+    "sono emigrati/e"
+   ],
+   "imp": [
+    "emigravo",
+    "emigravi",
+    "emigrava",
+    "emigravamo",
+    "emigravate",
+    "emigravano"
+   ],
+   "fut": [
+    "emigrerò",
+    "emigrerai",
+    "emigrerà",
+    "emigreremo",
+    "emigrerete",
+    "emigreranno"
+   ],
+   "cond": [
+    "emigrerei",
+    "emigreresti",
+    "emigrerebbe",
+    "emigreremmo",
+    "emigrereste",
+    "emigrerebbero"
+   ],
+   "cong": [
+    "emigri",
+    "emigri",
+    "emigri",
+    "emigriamo",
+    "emigriate",
+    "emigrino"
+   ]
+  }
+ },
+ {
+  "unit": 38,
+  "level": "B2",
+  "inf": "trasferirsi",
+  "en": "to move (house, city), to relocate",
+  "aux": "essere",
+  "kind": "reflexive · -ire (-isc-)",
+  "note": "The everyday verb for moving: <b>trasferirsi a Roma / in Germania</b>. Not for moving objects (<i>spostare</i>).",
+  "t": {
+   "pres": [
+    "mi trasferisco",
+    "ti trasferisci",
+    "si trasferisce",
+    "ci trasferiamo",
+    "vi trasferite",
+    "si trasferiscono"
+   ],
+   "pp": [
+    "mi sono trasferito/a",
+    "ti sei trasferito/a",
+    "si è trasferito/a",
+    "ci siamo trasferiti/e",
+    "vi siete trasferiti/e",
+    "si sono trasferiti/e"
+   ],
+   "imp": [
+    "mi trasferivo",
+    "ti trasferivi",
+    "si trasferiva",
+    "ci trasferivamo",
+    "vi trasferivate",
+    "si trasferivano"
+   ],
+   "fut": [
+    "mi trasferirò",
+    "ti trasferirai",
+    "si trasferirà",
+    "ci trasferiremo",
+    "vi trasferirete",
+    "si trasferiranno"
+   ],
+   "cond": [
+    "mi trasferirei",
+    "ti trasferiresti",
+    "si trasferirebbe",
+    "ci trasferiremmo",
+    "vi trasferireste",
+    "si trasferirebbero"
+   ],
+   "cong": [
+    "mi trasferisca",
+    "ti trasferisca",
+    "si trasferisca",
+    "ci trasferiamo",
+    "vi trasferiate",
+    "si trasferiscano"
+   ]
+  }
+ },
+ {
+  "unit": 38,
+  "level": "B2",
+  "inf": "abituarsi",
+  "en": "to get used to",
+  "aux": "essere",
+  "kind": "reflexive",
+  "note": "<b>abituarsi a</b> + noun or infinitive: <i>mi sono abituato a cenare tardi</i>. <b>essere abituato a</b> = to be used to.",
+  "t": {
+   "pres": [
+    "mi abituo",
+    "ti abitui",
+    "si abitua",
+    "ci abituiamo",
+    "vi abituate",
+    "si abituano"
+   ],
+   "pp": [
+    "mi sono abituato/a",
+    "ti sei abituato/a",
+    "si è abituato/a",
+    "ci siamo abituati/e",
+    "vi siete abituati/e",
+    "si sono abituati/e"
+   ],
+   "imp": [
+    "mi abituavo",
+    "ti abituavi",
+    "si abituava",
+    "ci abituavamo",
+    "vi abituavate",
+    "si abituavano"
+   ],
+   "fut": [
+    "mi abituerò",
+    "ti abituerai",
+    "si abituerà",
+    "ci abitueremo",
+    "vi abituerete",
+    "si abitueranno"
+   ],
+   "cond": [
+    "mi abituerei",
+    "ti abitueresti",
+    "si abituerebbe",
+    "ci abitueremmo",
+    "vi abituereste",
+    "si abituerebbero"
+   ],
+   "cong": [
+    "mi abitui",
+    "ti abitui",
+    "si abitui",
+    "ci abituiamo",
+    "vi abituiate",
+    "si abituino"
+   ]
+  }
+ },
+ {
+  "unit": 38,
+  "level": "B2",
+  "inf": "ambientarsi",
+  "en": "to settle in, to find one's feet",
+  "aux": "essere",
+  "kind": "reflexive",
+  "note": "Used for new places, schools, jobs: <b>ambientarsi bene/male</b>. No direct English equivalent.",
+  "t": {
+   "pres": [
+    "mi ambiento",
+    "ti ambienti",
+    "si ambienta",
+    "ci ambientiamo",
+    "vi ambientate",
+    "si ambientano"
+   ],
+   "pp": [
+    "mi sono ambientato/a",
+    "ti sei ambientato/a",
+    "si è ambientato/a",
+    "ci siamo ambientati/e",
+    "vi siete ambientati/e",
+    "si sono ambientati/e"
+   ],
+   "imp": [
+    "mi ambientavo",
+    "ti ambientavi",
+    "si ambientava",
+    "ci ambientavamo",
+    "vi ambientavate",
+    "si ambientavano"
+   ],
+   "fut": [
+    "mi ambienterò",
+    "ti ambienterai",
+    "si ambienterà",
+    "ci ambienteremo",
+    "vi ambienterete",
+    "si ambienteranno"
+   ],
+   "cond": [
+    "mi ambienterei",
+    "ti ambienteresti",
+    "si ambienterebbe",
+    "ci ambienteremmo",
+    "vi ambientereste",
+    "si ambienterebbero"
+   ],
+   "cong": [
+    "mi ambienti",
+    "ti ambienti",
+    "si ambienti",
+    "ci ambientiamo",
+    "vi ambientiate",
+    "si ambientino"
+   ]
+  }
+ },
+ {
+  "unit": 38,
+  "level": "B2",
+  "inf": "stabilirsi",
+  "en": "to settle (permanently)",
+  "aux": "essere",
+  "kind": "reflexive · -ire (-isc-)",
+  "note": "<b>stabilirsi a/in</b> = to settle down somewhere for good. Non-reflexive <b>stabilire</b> = to establish, to set.",
+  "t": {
+   "pres": [
+    "mi stabilisco",
+    "ti stabilisci",
+    "si stabilisce",
+    "ci stabiliamo",
+    "vi stabilite",
+    "si stabiliscono"
+   ],
+   "pp": [
+    "mi sono stabilito/a",
+    "ti sei stabilito/a",
+    "si è stabilito/a",
+    "ci siamo stabiliti/e",
+    "vi siete stabiliti/e",
+    "si sono stabiliti/e"
+   ],
+   "imp": [
+    "mi stabilivo",
+    "ti stabilivi",
+    "si stabiliva",
+    "ci stabilivamo",
+    "vi stabilivate",
+    "si stabilivano"
+   ],
+   "fut": [
+    "mi stabilirò",
+    "ti stabilirai",
+    "si stabilirà",
+    "ci stabiliremo",
+    "vi stabilirete",
+    "si stabiliranno"
+   ],
+   "cond": [
+    "mi stabilirei",
+    "ti stabiliresti",
+    "si stabilirebbe",
+    "ci stabiliremmo",
+    "vi stabilireste",
+    "si stabilirebbero"
+   ],
+   "cong": [
+    "mi stabilisca",
+    "ti stabilisca",
+    "si stabilisca",
+    "ci stabiliamo",
+    "vi stabiliate",
+    "si stabiliscano"
+   ]
+  }
+ },
+ {
+  "unit": 38,
+  "level": "B2",
+  "inf": "accogliere",
+  "en": "to welcome, to receive; to accept (a request)",
+  "aux": "avere",
+  "kind": "irregular",
+  "note": "Like <b>cogliere</b>: <i>-lg-</i> in <b>accolgo/accolgono</b>, participle <b>accolto</b>. <b>accogliere una richiesta</b> = to grant a request.",
+  "t": {
+   "pres": [
+    "accolgo",
+    "accogli",
+    "accoglie",
+    "accogliamo",
+    "accogliete",
+    "accolgono"
+   ],
+   "pp": [
+    "ho accolto",
+    "hai accolto",
+    "ha accolto",
+    "abbiamo accolto",
+    "avete accolto",
+    "hanno accolto"
+   ],
+   "imp": [
+    "accoglievo",
+    "accoglievi",
+    "accoglieva",
+    "accoglievamo",
+    "accoglievate",
+    "accoglievano"
+   ],
+   "fut": [
+    "accoglierò",
+    "accoglierai",
+    "accoglierà",
+    "accoglieremo",
+    "accoglierete",
+    "accoglieranno"
+   ],
+   "cond": [
+    "accoglierei",
+    "accoglieresti",
+    "accoglierebbe",
+    "accoglieremmo",
+    "accogliereste",
+    "accoglierebbero"
+   ],
+   "cong": [
+    "accolga",
+    "accolga",
+    "accolga",
+    "accogliamo",
+    "accogliate",
+    "accolgano"
+   ]
+  }
+ },
+ {
+  "unit": 39,
+  "level": "B2",
+  "inf": "vergognarsi",
+  "en": "to be ashamed, to be embarrassed",
+  "aux": "essere",
+  "kind": "reflexive",
+  "note": "<b>vergognarsi di</b> + noun/infinitive: <i>mi vergogno di chiedere</i>. <b>Vergognati!</b> = Shame on you!",
+  "t": {
+   "pres": [
+    "mi vergogno",
+    "ti vergogni",
+    "si vergogna",
+    "ci vergogniamo",
+    "vi vergognate",
+    "si vergognano"
+   ],
+   "pp": [
+    "mi sono vergognato/a",
+    "ti sei vergognato/a",
+    "si è vergognato/a",
+    "ci siamo vergognati/e",
+    "vi siete vergognati/e",
+    "si sono vergognati/e"
+   ],
+   "imp": [
+    "mi vergognavo",
+    "ti vergognavi",
+    "si vergognava",
+    "ci vergognavamo",
+    "vi vergognavate",
+    "si vergognavano"
+   ],
+   "fut": [
+    "mi vergognerò",
+    "ti vergognerai",
+    "si vergognerà",
+    "ci vergogneremo",
+    "vi vergognerete",
+    "si vergogneranno"
+   ],
+   "cond": [
+    "mi vergognerei",
+    "ti vergogneresti",
+    "si vergognerebbe",
+    "ci vergogneremmo",
+    "vi vergognereste",
+    "si vergognerebbero"
+   ],
+   "cong": [
+    "mi vergogni",
+    "ti vergogni",
+    "si vergogni",
+    "ci vergogniamo",
+    "vi vergogniate",
+    "si vergognino"
+   ]
+  }
+ },
+ {
+  "unit": 39,
+  "level": "B2",
+  "inf": "pentirsi",
+  "en": "to regret, to repent",
+  "aux": "essere",
+  "kind": "reflexive · regular -ire",
+  "note": "<b>pentirsi di</b> + noun or past infinitive: <i>mi pento di averlo detto</i> = I regret saying it.",
+  "t": {
+   "pres": [
+    "mi pento",
+    "ti penti",
+    "si pente",
+    "ci pentiamo",
+    "vi pentite",
+    "si pentono"
+   ],
+   "pp": [
+    "mi sono pentito/a",
+    "ti sei pentito/a",
+    "si è pentito/a",
+    "ci siamo pentiti/e",
+    "vi siete pentiti/e",
+    "si sono pentiti/e"
+   ],
+   "imp": [
+    "mi pentivo",
+    "ti pentivi",
+    "si pentiva",
+    "ci pentivamo",
+    "vi pentivate",
+    "si pentivano"
+   ],
+   "fut": [
+    "mi pentirò",
+    "ti pentirai",
+    "si pentirà",
+    "ci pentiremo",
+    "vi pentirete",
+    "si pentiranno"
+   ],
+   "cond": [
+    "mi pentirei",
+    "ti pentiresti",
+    "si pentirebbe",
+    "ci pentiremmo",
+    "vi pentireste",
+    "si pentirebbero"
+   ],
+   "cong": [
+    "mi penta",
+    "ti penta",
+    "si penta",
+    "ci pentiamo",
+    "vi pentiate",
+    "si pentano"
+   ]
+  }
+ },
+ {
+  "unit": 39,
+  "level": "B2",
+  "inf": "illudersi",
+  "en": "to fool oneself, to get one's hopes up",
+  "aux": "essere",
+  "kind": "reflexive · irregular",
+  "note": "Participle <b>illuso</b>. <b>illudersi che</b> + congiuntivo. <b>Non illuderti</b> = Don't kid yourself.",
+  "t": {
+   "pres": [
+    "mi illudo",
+    "ti illudi",
+    "si illude",
+    "ci illudiamo",
+    "vi illudete",
+    "si illudono"
+   ],
+   "pp": [
+    "mi sono illuso/a",
+    "ti sei illuso/a",
+    "si è illuso/a",
+    "ci siamo illusi/e",
+    "vi siete illusi/e",
+    "si sono illusi/e"
+   ],
+   "imp": [
+    "mi illudevo",
+    "ti illudevi",
+    "si illudeva",
+    "ci illudevamo",
+    "vi illudevate",
+    "si illudevano"
+   ],
+   "fut": [
+    "mi illuderò",
+    "ti illuderai",
+    "si illuderà",
+    "ci illuderemo",
+    "vi illuderete",
+    "si illuderanno"
+   ],
+   "cond": [
+    "mi illuderei",
+    "ti illuderesti",
+    "si illuderebbe",
+    "ci illuderemmo",
+    "vi illudereste",
+    "si illuderebbero"
+   ],
+   "cong": [
+    "mi illuda",
+    "ti illuda",
+    "si illuda",
+    "ci illudiamo",
+    "vi illudiate",
+    "si illudano"
+   ]
+  }
+ },
+ {
+  "unit": 39,
+  "level": "B2",
+  "inf": "deludere",
+  "en": "to disappoint, to let down",
+  "aux": "avere",
+  "kind": "irregular",
+  "note": "Participle <b>deluso</b>, also the adjective <i>disappointed</i>. <b>rimanere deluso</b> = to be disappointed.",
+  "t": {
+   "pres": [
+    "deludo",
+    "deludi",
+    "delude",
+    "deludiamo",
+    "deludete",
+    "deludono"
+   ],
+   "pp": [
+    "ho deluso",
+    "hai deluso",
+    "ha deluso",
+    "abbiamo deluso",
+    "avete deluso",
+    "hanno deluso"
+   ],
+   "imp": [
+    "deludevo",
+    "deludevi",
+    "deludeva",
+    "deludevamo",
+    "deludevate",
+    "deludevano"
+   ],
+   "fut": [
+    "deluderò",
+    "deluderai",
+    "deluderà",
+    "deluderemo",
+    "deluderete",
+    "deluderanno"
+   ],
+   "cond": [
+    "deluderei",
+    "deluderesti",
+    "deluderebbe",
+    "deluderemmo",
+    "deludereste",
+    "deluderebbero"
+   ],
+   "cong": [
+    "deluda",
+    "deluda",
+    "deluda",
+    "deludiamo",
+    "deludiate",
+    "deludano"
+   ]
+  }
+ },
+ {
+  "unit": 39,
+  "level": "B2",
+  "inf": "commuoversi",
+  "en": "to be moved, to be touched",
+  "aux": "essere",
+  "kind": "reflexive · irregular",
+  "note": "Participle <b>commosso</b>. Forms with <i>commov-</i> (<i>ci commoviamo</i>) also exist but the <i>-uo-</i> forms are now the norm.",
+  "t": {
+   "pres": [
+    "mi commuovo",
+    "ti commuovi",
+    "si commuove",
+    "ci commuoviamo",
+    "vi commuovete",
+    "si commuovono"
+   ],
+   "pp": [
+    "mi sono commosso/a",
+    "ti sei commosso/a",
+    "si è commosso/a",
+    "ci siamo commossi/e",
+    "vi siete commossi/e",
+    "si sono commossi/e"
+   ],
+   "imp": [
+    "mi commuovevo",
+    "ti commuovevi",
+    "si commuoveva",
+    "ci commuovevamo",
+    "vi commuovevate",
+    "si commuovevano"
+   ],
+   "fut": [
+    "mi commuoverò",
+    "ti commuoverai",
+    "si commuoverà",
+    "ci commuoveremo",
+    "vi commuoverete",
+    "si commuoveranno"
+   ],
+   "cond": [
+    "mi commuoverei",
+    "ti commuoveresti",
+    "si commuoverebbe",
+    "ci commuoveremmo",
+    "vi commuovereste",
+    "si commuoverebbero"
+   ],
+   "cong": [
+    "mi commuova",
+    "ti commuova",
+    "si commuova",
+    "ci commuoviamo",
+    "vi commuoviate",
+    "si commuovano"
+   ]
+  }
+ },
+ {
+  "unit": 39,
+  "level": "B2",
+  "inf": "stupirsi",
+  "en": "to be amazed, to be surprised",
+  "aux": "essere",
+  "kind": "reflexive · -ire (-isc-)",
+  "note": "<b>stupirsi di</b> + noun, <b>che</b> + congiuntivo: <i>mi stupisco che tu non lo sappia</i>.",
+  "t": {
+   "pres": [
+    "mi stupisco",
+    "ti stupisci",
+    "si stupisce",
+    "ci stupiamo",
+    "vi stupite",
+    "si stupiscono"
+   ],
+   "pp": [
+    "mi sono stupito/a",
+    "ti sei stupito/a",
+    "si è stupito/a",
+    "ci siamo stupiti/e",
+    "vi siete stupiti/e",
+    "si sono stupiti/e"
+   ],
+   "imp": [
+    "mi stupivo",
+    "ti stupivi",
+    "si stupiva",
+    "ci stupivamo",
+    "vi stupivate",
+    "si stupivano"
+   ],
+   "fut": [
+    "mi stupirò",
+    "ti stupirai",
+    "si stupirà",
+    "ci stupiremo",
+    "vi stupirete",
+    "si stupiranno"
+   ],
+   "cond": [
+    "mi stupirei",
+    "ti stupiresti",
+    "si stupirebbe",
+    "ci stupiremmo",
+    "vi stupireste",
+    "si stupirebbero"
+   ],
+   "cong": [
+    "mi stupisca",
+    "ti stupisca",
+    "si stupisca",
+    "ci stupiamo",
+    "vi stupiate",
+    "si stupiscano"
+   ]
+  }
+ },
+ {
+  "unit": 39,
+  "level": "B2",
+  "inf": "rassegnarsi",
+  "en": "to resign oneself, to accept",
+  "aux": "essere",
+  "kind": "reflexive",
+  "note": "<b>rassegnarsi a</b> + noun/infinitive. Not used for quitting a job (that's <b>dimettersi</b>).",
+  "t": {
+   "pres": [
+    "mi rassegno",
+    "ti rassegni",
+    "si rassegna",
+    "ci rassegniamo",
+    "vi rassegnate",
+    "si rassegnano"
+   ],
+   "pp": [
+    "mi sono rassegnato/a",
+    "ti sei rassegnato/a",
+    "si è rassegnato/a",
+    "ci siamo rassegnati/e",
+    "vi siete rassegnati/e",
+    "si sono rassegnati/e"
+   ],
+   "imp": [
+    "mi rassegnavo",
+    "ti rassegnavi",
+    "si rassegnava",
+    "ci rassegnavamo",
+    "vi rassegnavate",
+    "si rassegnavano"
+   ],
+   "fut": [
+    "mi rassegnerò",
+    "ti rassegnerai",
+    "si rassegnerà",
+    "ci rassegneremo",
+    "vi rassegnerete",
+    "si rassegneranno"
+   ],
+   "cond": [
+    "mi rassegnerei",
+    "ti rassegneresti",
+    "si rassegnerebbe",
+    "ci rassegneremmo",
+    "vi rassegnereste",
+    "si rassegnerebbero"
+   ],
+   "cong": [
+    "mi rassegni",
+    "ti rassegni",
+    "si rassegni",
+    "ci rassegniamo",
+    "vi rassegniate",
+    "si rassegnino"
+   ]
+  }
+ },
+ {
+  "unit": 39,
+  "level": "B2",
+  "inf": "sfogarsi",
+  "en": "to let off steam, to vent",
+  "aux": "essere",
+  "kind": "reflexive",
+  "note": "<b>sfogarsi con qualcuno</b> = to pour your heart out to someone. Add <i>h</i> before <i>e/i</i>: <b>ti sfoghi</b>, <b>mi sfogherò</b>.",
+  "t": {
+   "pres": [
+    "mi sfogo",
+    "ti sfoghi",
+    "si sfoga",
+    "ci sfoghiamo",
+    "vi sfogate",
+    "si sfogano"
+   ],
+   "pp": [
+    "mi sono sfogato/a",
+    "ti sei sfogato/a",
+    "si è sfogato/a",
+    "ci siamo sfogati/e",
+    "vi siete sfogati/e",
+    "si sono sfogati/e"
+   ],
+   "imp": [
+    "mi sfogavo",
+    "ti sfogavi",
+    "si sfogava",
+    "ci sfogavamo",
+    "vi sfogavate",
+    "si sfogavano"
+   ],
+   "fut": [
+    "mi sfogherò",
+    "ti sfogherai",
+    "si sfogherà",
+    "ci sfogheremo",
+    "vi sfogherete",
+    "si sfogheranno"
+   ],
+   "cond": [
+    "mi sfogherei",
+    "ti sfogheresti",
+    "si sfogherebbe",
+    "ci sfogheremmo",
+    "vi sfoghereste",
+    "si sfogherebbero"
+   ],
+   "cong": [
+    "mi sfoghi",
+    "ti sfoghi",
+    "si sfoghi",
+    "ci sfoghiamo",
+    "vi sfoghiate",
+    "si sfoghino"
+   ]
+  }
+ },
+ {
+  "unit": 40,
+  "level": "B2",
+  "inf": "sbrigarsi",
+  "en": "to hurry up",
+  "aux": "essere",
+  "kind": "reflexive",
+  "note": "Mostly imperative: <b>Sbrigati!</b> / <b>Sbrighiamoci!</b> Non-reflexive <b>sbrigare</b> = to deal with (<i>sbrigare una pratica</i>).",
+  "t": {
+   "pres": [
+    "mi sbrigo",
+    "ti sbrighi",
+    "si sbriga",
+    "ci sbrighiamo",
+    "vi sbrigate",
+    "si sbrigano"
+   ],
+   "pp": [
+    "mi sono sbrigato/a",
+    "ti sei sbrigato/a",
+    "si è sbrigato/a",
+    "ci siamo sbrigati/e",
+    "vi siete sbrigati/e",
+    "si sono sbrigati/e"
+   ],
+   "imp": [
+    "mi sbrigavo",
+    "ti sbrigavi",
+    "si sbrigava",
+    "ci sbrigavamo",
+    "vi sbrigavate",
+    "si sbrigavano"
+   ],
+   "fut": [
+    "mi sbrigherò",
+    "ti sbrigherai",
+    "si sbrigherà",
+    "ci sbrigheremo",
+    "vi sbrigherete",
+    "si sbrigheranno"
+   ],
+   "cond": [
+    "mi sbrigherei",
+    "ti sbrigheresti",
+    "si sbrigherebbe",
+    "ci sbrigheremmo",
+    "vi sbrighereste",
+    "si sbrigherebbero"
+   ],
+   "cong": [
+    "mi sbrighi",
+    "ti sbrighi",
+    "si sbrighi",
+    "ci sbrighiamo",
+    "vi sbrighiate",
+    "si sbrighino"
+   ]
+  }
+ },
+ {
+  "unit": 40,
+  "level": "B2",
+  "inf": "figurarsi",
+  "en": "to imagine, to picture",
+  "aux": "essere",
+  "kind": "reflexive",
+  "note": "Mostly in set reactions: <b>Figurati!</b> / <b>Si figuri!</b> = Don't mention it! / Not at all! <b>Figurati se…</b> = As if…!",
+  "t": {
+   "pres": [
+    "mi figuro",
+    "ti figuri",
+    "si figura",
+    "ci figuriamo",
+    "vi figurate",
+    "si figurano"
+   ],
+   "pp": [
+    "mi sono figurato/a",
+    "ti sei figurato/a",
+    "si è figurato/a",
+    "ci siamo figurati/e",
+    "vi siete figurati/e",
+    "si sono figurati/e"
+   ],
+   "imp": [
+    "mi figuravo",
+    "ti figuravi",
+    "si figurava",
+    "ci figuravamo",
+    "vi figuravate",
+    "si figuravano"
+   ],
+   "fut": [
+    "mi figurerò",
+    "ti figurerai",
+    "si figurerà",
+    "ci figureremo",
+    "vi figurerete",
+    "si figureranno"
+   ],
+   "cond": [
+    "mi figurerei",
+    "ti figureresti",
+    "si figurerebbe",
+    "ci figureremmo",
+    "vi figurereste",
+    "si figurerebbero"
+   ],
+   "cong": [
+    "mi figuri",
+    "ti figuri",
+    "si figuri",
+    "ci figuriamo",
+    "vi figuriate",
+    "si figurino"
+   ]
+  }
+ },
+ {
+  "unit": 40,
+  "level": "B2",
+  "inf": "beccare",
+  "en": "to catch; to peck; to get",
+  "aux": "avere",
+  "kind": "regular -are",
+  "note": "Colloquial for <i>catch</i> or <i>run into</i>: <b>ti ho beccato!</b> = caught you! <b>Ci becchiamo dopo</b> = see you later.",
+  "t": {
+   "pres": [
+    "becco",
+    "becchi",
+    "becca",
+    "becchiamo",
+    "beccate",
+    "beccano"
+   ],
+   "pp": [
+    "ho beccato",
+    "hai beccato",
+    "ha beccato",
+    "abbiamo beccato",
+    "avete beccato",
+    "hanno beccato"
+   ],
+   "imp": [
+    "beccavo",
+    "beccavi",
+    "beccava",
+    "beccavamo",
+    "beccavate",
+    "beccavano"
+   ],
+   "fut": [
+    "beccherò",
+    "beccherai",
+    "beccherà",
+    "beccheremo",
+    "beccherete",
+    "beccheranno"
+   ],
+   "cond": [
+    "beccherei",
+    "beccheresti",
+    "beccherebbe",
+    "beccheremmo",
+    "becchereste",
+    "beccherebbero"
+   ],
+   "cong": [
+    "becchi",
+    "becchi",
+    "becchi",
+    "becchiamo",
+    "becchiate",
+    "becchino"
+   ]
+  }
+ },
+ {
+  "unit": 40,
+  "level": "B2",
+  "inf": "mollare",
+  "en": "to let go; to dump; to give up",
+  "aux": "avere",
+  "kind": "regular -are",
+  "note": "<b>mollare qualcuno</b> = to dump someone; <b>Non mollare!</b> = Don't give up! <b>Molla!</b> = Let go!",
+  "t": {
+   "pres": [
+    "mollo",
+    "molli",
+    "molla",
+    "molliamo",
+    "mollate",
+    "mollano"
+   ],
+   "pp": [
+    "ho mollato",
+    "hai mollato",
+    "ha mollato",
+    "abbiamo mollato",
+    "avete mollato",
+    "hanno mollato"
+   ],
+   "imp": [
+    "mollavo",
+    "mollavi",
+    "mollava",
+    "mollavamo",
+    "mollavate",
+    "mollavano"
+   ],
+   "fut": [
+    "mollerò",
+    "mollerai",
+    "mollerà",
+    "molleremo",
+    "mollerete",
+    "molleranno"
+   ],
+   "cond": [
+    "mollerei",
+    "molleresti",
+    "mollerebbe",
+    "molleremmo",
+    "mollereste",
+    "mollerebbero"
+   ],
+   "cong": [
+    "molli",
+    "molli",
+    "molli",
+    "molliamo",
+    "molliate",
+    "mollino"
+   ]
+  }
+ },
+ {
+  "unit": 40,
+  "level": "B2",
+  "inf": "scocciare",
+  "en": "to annoy, to bother",
+  "aux": "avere",
+  "kind": "regular -are",
+  "note": "Often impersonal: <b>mi scoccia</b> + infinitive = I can't be bothered to / it annoys me to. <b>scocciarsi</b> = to get fed up.",
+  "t": {
+   "pres": [
+    "scoccio",
+    "scocci",
+    "scoccia",
+    "scocciamo",
+    "scocciate",
+    "scocciano"
+   ],
+   "pp": [
+    "ho scocciato",
+    "hai scocciato",
+    "ha scocciato",
+    "abbiamo scocciato",
+    "avete scocciato",
+    "hanno scocciato"
+   ],
+   "imp": [
+    "scocciavo",
+    "scocciavi",
+    "scocciava",
+    "scocciavamo",
+    "scocciavate",
+    "scocciavano"
+   ],
+   "fut": [
+    "scoccerò",
+    "scoccerai",
+    "scoccerà",
+    "scocceremo",
+    "scoccerete",
+    "scocceranno"
+   ],
+   "cond": [
+    "scoccerei",
+    "scocceresti",
+    "scoccerebbe",
+    "scocceremmo",
+    "scoccereste",
+    "scoccerebbero"
+   ],
+   "cong": [
+    "scocci",
+    "scocci",
+    "scocci",
+    "scocciamo",
+    "scocciate",
+    "scoccino"
+   ]
+  }
+ },
+ {
+  "unit": 40,
+  "level": "B2",
+  "inf": "combinare",
+  "en": "to get up to; to arrange; to combine",
+  "aux": "avere",
+  "kind": "regular -are",
+  "note": "Colloquial: <b>Che hai combinato?</b> = What have you done? <b>combinare un guaio</b> = to cause trouble.",
+  "t": {
+   "pres": [
+    "combino",
+    "combini",
+    "combina",
+    "combiniamo",
+    "combinate",
+    "combinano"
+   ],
+   "pp": [
+    "ho combinato",
+    "hai combinato",
+    "ha combinato",
+    "abbiamo combinato",
+    "avete combinato",
+    "hanno combinato"
+   ],
+   "imp": [
+    "combinavo",
+    "combinavi",
+    "combinava",
+    "combinavamo",
+    "combinavate",
+    "combinavano"
+   ],
+   "fut": [
+    "combinerò",
+    "combinerai",
+    "combinerà",
+    "combineremo",
+    "combinerete",
+    "combineranno"
+   ],
+   "cond": [
+    "combinerei",
+    "combineresti",
+    "combinerebbe",
+    "combineremmo",
+    "combinereste",
+    "combinerebbero"
+   ],
+   "cong": [
+    "combini",
+    "combini",
+    "combini",
+    "combiniamo",
+    "combiniate",
+    "combinino"
+   ]
+  }
+ },
+ {
+  "unit": 40,
+  "level": "B2",
+  "inf": "azzeccare",
+  "en": "to guess right, to hit on",
+  "aux": "avere",
+  "kind": "regular -are",
+  "note": "<b>azzeccarla</b> / <b>azzeccarci</b> = to get it right. <b>non ne azzecca una</b> = they can't get anything right.",
+  "t": {
+   "pres": [
+    "azzecco",
+    "azzecchi",
+    "azzecca",
+    "azzecchiamo",
+    "azzeccate",
+    "azzeccano"
+   ],
+   "pp": [
+    "ho azzeccato",
+    "hai azzeccato",
+    "ha azzeccato",
+    "abbiamo azzeccato",
+    "avete azzeccato",
+    "hanno azzeccato"
+   ],
+   "imp": [
+    "azzeccavo",
+    "azzeccavi",
+    "azzeccava",
+    "azzeccavamo",
+    "azzeccavate",
+    "azzeccavano"
+   ],
+   "fut": [
+    "azzeccherò",
+    "azzeccherai",
+    "azzeccherà",
+    "azzeccheremo",
+    "azzeccherete",
+    "azzeccheranno"
+   ],
+   "cond": [
+    "azzeccherei",
+    "azzeccheresti",
+    "azzeccherebbe",
+    "azzeccheremmo",
+    "azzecchereste",
+    "azzeccherebbero"
+   ],
+   "cong": [
+    "azzecchi",
+    "azzecchi",
+    "azzecchi",
+    "azzecchiamo",
+    "azzecchiate",
+    "azzecchino"
+   ]
+  }
+ },
+ {
+  "unit": 40,
+  "level": "B2",
+  "inf": "spettegolare",
+  "en": "to gossip",
+  "aux": "avere",
+  "kind": "regular -are",
+  "note": "<b>spettegolare su qualcuno</b> = to gossip about someone. Stress: <b>spettégolo</b>.",
+  "t": {
+   "pres": [
+    "spettegolo",
+    "spettegoli",
+    "spettegola",
+    "spettegoliamo",
+    "spettegolate",
+    "spettegolano"
+   ],
+   "pp": [
+    "ho spettegolato",
+    "hai spettegolato",
+    "ha spettegolato",
+    "abbiamo spettegolato",
+    "avete spettegolato",
+    "hanno spettegolato"
+   ],
+   "imp": [
+    "spettegolavo",
+    "spettegolavi",
+    "spettegolava",
+    "spettegolavamo",
+    "spettegolavate",
+    "spettegolavano"
+   ],
+   "fut": [
+    "spettegolerò",
+    "spettegolerai",
+    "spettegolerà",
+    "spettegoleremo",
+    "spettegolerete",
+    "spettegoleranno"
+   ],
+   "cond": [
+    "spettegolerei",
+    "spettegoleresti",
+    "spettegolerebbe",
+    "spettegoleremmo",
+    "spettegolereste",
+    "spettegolerebbero"
+   ],
+   "cong": [
+    "spettegoli",
+    "spettegoli",
+    "spettegoli",
+    "spettegoliamo",
+    "spettegoliate",
+    "spettegolino"
+   ]
+  }
+ }
+]

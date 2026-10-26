@@ -1,0 +1,2362 @@
+[
+ {
+  "unit": 1,
+  "level": "A1",
+  "inf": "essere",
+  "en": "to be",
+  "aux": "essere",
+  "kind": "irregular",
+  "note": "Also the helper verb for movement and change: <b>sono andato</b>, <b>è arrivata</b>. With essere, the past participle agrees with the subject (-o/-a/-i/-e).",
+  "t": {
+   "pres": [
+    "sono",
+    "sei",
+    "è",
+    "siamo",
+    "siete",
+    "sono"
+   ],
+   "pp": [
+    "sono stato/a",
+    "sei stato/a",
+    "è stato/a",
+    "siamo stati/e",
+    "siete stati/e",
+    "sono stati/e"
+   ],
+   "imp": [
+    "ero",
+    "eri",
+    "era",
+    "eravamo",
+    "eravate",
+    "erano"
+   ],
+   "fut": [
+    "sarò",
+    "sarai",
+    "sarà",
+    "saremo",
+    "sarete",
+    "saranno"
+   ],
+   "cond": [
+    "sarei",
+    "saresti",
+    "sarebbe",
+    "saremmo",
+    "sareste",
+    "sarebbero"
+   ],
+   "cong": [
+    "sia",
+    "sia",
+    "sia",
+    "siamo",
+    "siate",
+    "siano"
+   ]
+  }
+ },
+ {
+  "unit": 1,
+  "level": "A1",
+  "inf": "avere",
+  "en": "to have",
+  "aux": "avere",
+  "kind": "irregular",
+  "note": "Italians <i>have</i> age, hunger and feelings: <b>avere fame</b> (be hungry), <b>sete</b> (thirsty), <b>freddo</b> (cold), <b>sonno</b> (sleepy), <b>ragione</b> (be right).",
+  "t": {
+   "pres": [
+    "ho",
+    "hai",
+    "ha",
+    "abbiamo",
+    "avete",
+    "hanno"
+   ],
+   "pp": [
+    "ho avuto",
+    "hai avuto",
+    "ha avuto",
+    "abbiamo avuto",
+    "avete avuto",
+    "hanno avuto"
+   ],
+   "imp": [
+    "avevo",
+    "avevi",
+    "aveva",
+    "avevamo",
+    "avevate",
+    "avevano"
+   ],
+   "fut": [
+    "avrò",
+    "avrai",
+    "avrà",
+    "avremo",
+    "avrete",
+    "avranno"
+   ],
+   "cond": [
+    "avrei",
+    "avresti",
+    "avrebbe",
+    "avremmo",
+    "avreste",
+    "avrebbero"
+   ],
+   "cong": [
+    "abbia",
+    "abbia",
+    "abbia",
+    "abbiamo",
+    "abbiate",
+    "abbiano"
+   ]
+  }
+ },
+ {
+  "unit": 1,
+  "level": "A1",
+  "inf": "fare",
+  "en": "to do; to make",
+  "aux": "avere",
+  "kind": "irregular",
+  "note": "Used for weather and dozens of daily actions: <b>fa freddo</b> (it's cold), <b>fare colazione</b> (have breakfast), <b>fare la spesa</b> (do the shopping), <b>fare una domanda</b> (ask a question).",
+  "t": {
+   "pres": [
+    "faccio",
+    "fai",
+    "fa",
+    "facciamo",
+    "fate",
+    "fanno"
+   ],
+   "pp": [
+    "ho fatto",
+    "hai fatto",
+    "ha fatto",
+    "abbiamo fatto",
+    "avete fatto",
+    "hanno fatto"
+   ],
+   "imp": [
+    "facevo",
+    "facevi",
+    "faceva",
+    "facevamo",
+    "facevate",
+    "facevano"
+   ],
+   "fut": [
+    "farò",
+    "farai",
+    "farà",
+    "faremo",
+    "farete",
+    "faranno"
+   ],
+   "cond": [
+    "farei",
+    "faresti",
+    "farebbe",
+    "faremmo",
+    "fareste",
+    "farebbero"
+   ],
+   "cong": [
+    "faccia",
+    "faccia",
+    "faccia",
+    "facciamo",
+    "facciate",
+    "facciano"
+   ]
+  }
+ },
+ {
+  "unit": 1,
+  "level": "A1",
+  "inf": "andare",
+  "en": "to go",
+  "aux": "essere",
+  "kind": "irregular",
+  "note": "<b>andare a</b> + city (vado a Roma), <b>andare in</b> + country or region (vado in Italia), <b>andare da</b> + person (vado da Marco).",
+  "t": {
+   "pres": [
+    "vado",
+    "vai",
+    "va",
+    "andiamo",
+    "andate",
+    "vanno"
+   ],
+   "pp": [
+    "sono andato/a",
+    "sei andato/a",
+    "è andato/a",
+    "siamo andati/e",
+    "siete andati/e",
+    "sono andati/e"
+   ],
+   "imp": [
+    "andavo",
+    "andavi",
+    "andava",
+    "andavamo",
+    "andavate",
+    "andavano"
+   ],
+   "fut": [
+    "andrò",
+    "andrai",
+    "andrà",
+    "andremo",
+    "andrete",
+    "andranno"
+   ],
+   "cond": [
+    "andrei",
+    "andresti",
+    "andrebbe",
+    "andremmo",
+    "andreste",
+    "andrebbero"
+   ],
+   "cong": [
+    "vada",
+    "vada",
+    "vada",
+    "andiamo",
+    "andiate",
+    "vadano"
+   ]
+  }
+ },
+ {
+  "unit": 1,
+  "level": "A1",
+  "inf": "stare",
+  "en": "to stay; to be (feeling)",
+  "aux": "essere",
+  "kind": "irregular",
+  "note": "<b>Come stai? — Sto bene.</b> Also <b>stare</b> + gerund for “right now”: <b>sto mangiando</b> (I'm eating).",
+  "t": {
+   "pres": [
+    "sto",
+    "stai",
+    "sta",
+    "stiamo",
+    "state",
+    "stanno"
+   ],
+   "pp": [
+    "sono stato/a",
+    "sei stato/a",
+    "è stato/a",
+    "siamo stati/e",
+    "siete stati/e",
+    "sono stati/e"
+   ],
+   "imp": [
+    "stavo",
+    "stavi",
+    "stava",
+    "stavamo",
+    "stavate",
+    "stavano"
+   ],
+   "fut": [
+    "starò",
+    "starai",
+    "starà",
+    "staremo",
+    "starete",
+    "staranno"
+   ],
+   "cond": [
+    "starei",
+    "staresti",
+    "starebbe",
+    "staremmo",
+    "stareste",
+    "starebbero"
+   ],
+   "cong": [
+    "stia",
+    "stia",
+    "stia",
+    "stiamo",
+    "stiate",
+    "stiano"
+   ]
+  }
+ },
+ {
+  "unit": 1,
+  "level": "A1",
+  "inf": "volere",
+  "en": "to want",
+  "aux": "avere",
+  "kind": "irregular · modal",
+  "note": "<b>Vorrei</b> (I would like) is the polite way to order or ask. Followed directly by an infinitive: <b>voglio dormire</b>.",
+  "t": {
+   "pres": [
+    "voglio",
+    "vuoi",
+    "vuole",
+    "vogliamo",
+    "volete",
+    "vogliono"
+   ],
+   "pp": [
+    "ho voluto",
+    "hai voluto",
+    "ha voluto",
+    "abbiamo voluto",
+    "avete voluto",
+    "hanno voluto"
+   ],
+   "imp": [
+    "volevo",
+    "volevi",
+    "voleva",
+    "volevamo",
+    "volevate",
+    "volevano"
+   ],
+   "fut": [
+    "vorrò",
+    "vorrai",
+    "vorrà",
+    "vorremo",
+    "vorrete",
+    "vorranno"
+   ],
+   "cond": [
+    "vorrei",
+    "vorresti",
+    "vorrebbe",
+    "vorremmo",
+    "vorreste",
+    "vorrebbero"
+   ],
+   "cong": [
+    "voglia",
+    "voglia",
+    "voglia",
+    "vogliamo",
+    "vogliate",
+    "vogliano"
+   ]
+  }
+ },
+ {
+  "unit": 1,
+  "level": "A1",
+  "inf": "potere",
+  "en": "can; to be able to",
+  "aux": "avere",
+  "kind": "irregular · modal",
+  "note": "<b>Posso…?</b> is how you ask permission. <b>Potrebbe…?</b> is a very polite request.",
+  "t": {
+   "pres": [
+    "posso",
+    "puoi",
+    "può",
+    "possiamo",
+    "potete",
+    "possono"
+   ],
+   "pp": [
+    "ho potuto",
+    "hai potuto",
+    "ha potuto",
+    "abbiamo potuto",
+    "avete potuto",
+    "hanno potuto"
+   ],
+   "imp": [
+    "potevo",
+    "potevi",
+    "poteva",
+    "potevamo",
+    "potevate",
+    "potevano"
+   ],
+   "fut": [
+    "potrò",
+    "potrai",
+    "potrà",
+    "potremo",
+    "potrete",
+    "potranno"
+   ],
+   "cond": [
+    "potrei",
+    "potresti",
+    "potrebbe",
+    "potremmo",
+    "potreste",
+    "potrebbero"
+   ],
+   "cong": [
+    "possa",
+    "possa",
+    "possa",
+    "possiamo",
+    "possiate",
+    "possano"
+   ]
+  }
+ },
+ {
+  "unit": 1,
+  "level": "A1",
+  "inf": "parlare",
+  "en": "to speak; to talk",
+  "aux": "avere",
+  "kind": "regular -are",
+  "note": "Your model for every regular <b>-are</b> verb (abitare, lavorare, mangiare…). <b>parlare con</b> someone, <b>parlare di</b> something.",
+  "t": {
+   "pres": [
+    "parlo",
+    "parli",
+    "parla",
+    "parliamo",
+    "parlate",
+    "parlano"
+   ],
+   "pp": [
+    "ho parlato",
+    "hai parlato",
+    "ha parlato",
+    "abbiamo parlato",
+    "avete parlato",
+    "hanno parlato"
+   ],
+   "imp": [
+    "parlavo",
+    "parlavi",
+    "parlava",
+    "parlavamo",
+    "parlavate",
+    "parlavano"
+   ],
+   "fut": [
+    "parlerò",
+    "parlerai",
+    "parlerà",
+    "parleremo",
+    "parlerete",
+    "parleranno"
+   ],
+   "cond": [
+    "parlerei",
+    "parleresti",
+    "parlerebbe",
+    "parleremmo",
+    "parlereste",
+    "parlerebbero"
+   ],
+   "cong": [
+    "parli",
+    "parli",
+    "parli",
+    "parliamo",
+    "parliate",
+    "parlino"
+   ]
+  }
+ },
+ {
+  "unit": 2,
+  "level": "A1",
+  "inf": "chiamarsi",
+  "en": "to be called; to be named",
+  "aux": "essere",
+  "kind": "regular -are · reflexive",
+  "note": "Italians don't say “my name is” but “I call myself”: <b>mi chiamo Anna</b>. Without <i>si</i>, <b>chiamare</b> means to call (someone).",
+  "t": {
+   "pres": [
+    "mi chiamo",
+    "ti chiami",
+    "si chiama",
+    "ci chiamiamo",
+    "vi chiamate",
+    "si chiamano"
+   ],
+   "pp": [
+    "mi sono chiamato/a",
+    "ti sei chiamato/a",
+    "si è chiamato/a",
+    "ci siamo chiamati/e",
+    "vi siete chiamati/e",
+    "si sono chiamati/e"
+   ],
+   "imp": [
+    "mi chiamavo",
+    "ti chiamavi",
+    "si chiamava",
+    "ci chiamavamo",
+    "vi chiamavate",
+    "si chiamavano"
+   ],
+   "fut": [
+    "mi chiamerò",
+    "ti chiamerai",
+    "si chiamerà",
+    "ci chiameremo",
+    "vi chiamerete",
+    "si chiameranno"
+   ],
+   "cond": [
+    "mi chiamerei",
+    "ti chiameresti",
+    "si chiamerebbe",
+    "ci chiameremmo",
+    "vi chiamereste",
+    "si chiamerebbero"
+   ],
+   "cong": [
+    "mi chiami",
+    "ti chiami",
+    "si chiami",
+    "ci chiamiamo",
+    "vi chiamiate",
+    "si chiamino"
+   ]
+  }
+ },
+ {
+  "unit": 2,
+  "level": "A1",
+  "inf": "abitare",
+  "en": "to live (somewhere); to reside",
+  "aux": "avere",
+  "kind": "regular -are",
+  "note": "<b>abitare a</b> + city, <b>abitare in</b> + country or street (<i>abito in via Roma</i>). Stress falls on the first syllable: <b>àbito</b>.",
+  "t": {
+   "pres": [
+    "abito",
+    "abiti",
+    "abita",
+    "abitiamo",
+    "abitate",
+    "abitano"
+   ],
+   "pp": [
+    "ho abitato",
+    "hai abitato",
+    "ha abitato",
+    "abbiamo abitato",
+    "avete abitato",
+    "hanno abitato"
+   ],
+   "imp": [
+    "abitavo",
+    "abitavi",
+    "abitava",
+    "abitavamo",
+    "abitavate",
+    "abitavano"
+   ],
+   "fut": [
+    "abiterò",
+    "abiterai",
+    "abiterà",
+    "abiteremo",
+    "abiterete",
+    "abiteranno"
+   ],
+   "cond": [
+    "abiterei",
+    "abiteresti",
+    "abiterebbe",
+    "abiteremmo",
+    "abitereste",
+    "abiterebbero"
+   ],
+   "cong": [
+    "abiti",
+    "abiti",
+    "abiti",
+    "abitiamo",
+    "abitiate",
+    "abitino"
+   ]
+  }
+ },
+ {
+  "unit": 2,
+  "level": "A1",
+  "inf": "lavorare",
+  "en": "to work",
+  "aux": "avere",
+  "kind": "regular -are",
+  "note": "<b>lavorare in</b> + place or field (<i>in banca, in ufficio</i>), <b>lavorare come</b> + job, <b>lavorare per</b> + company.",
+  "t": {
+   "pres": [
+    "lavoro",
+    "lavori",
+    "lavora",
+    "lavoriamo",
+    "lavorate",
+    "lavorano"
+   ],
+   "pp": [
+    "ho lavorato",
+    "hai lavorato",
+    "ha lavorato",
+    "abbiamo lavorato",
+    "avete lavorato",
+    "hanno lavorato"
+   ],
+   "imp": [
+    "lavoravo",
+    "lavoravi",
+    "lavorava",
+    "lavoravamo",
+    "lavoravate",
+    "lavoravano"
+   ],
+   "fut": [
+    "lavorerò",
+    "lavorerai",
+    "lavorerà",
+    "lavoreremo",
+    "lavorerete",
+    "lavoreranno"
+   ],
+   "cond": [
+    "lavorerei",
+    "lavoreresti",
+    "lavorerebbe",
+    "lavoreremmo",
+    "lavorereste",
+    "lavorerebbero"
+   ],
+   "cong": [
+    "lavori",
+    "lavori",
+    "lavori",
+    "lavoriamo",
+    "lavoriate",
+    "lavorino"
+   ]
+  }
+ },
+ {
+  "unit": 2,
+  "level": "A1",
+  "inf": "studiare",
+  "en": "to study",
+  "aux": "avere",
+  "kind": "regular -are",
+  "note": "The <i>i</i> of the stem isn't doubled: <b>tu studi</b>, not <i>studii</i>. <b>Studiare</b> is also “to go to school/university”: <i>studio a Padova</i>.",
+  "t": {
+   "pres": [
+    "studio",
+    "studi",
+    "studia",
+    "studiamo",
+    "studiate",
+    "studiano"
+   ],
+   "pp": [
+    "ho studiato",
+    "hai studiato",
+    "ha studiato",
+    "abbiamo studiato",
+    "avete studiato",
+    "hanno studiato"
+   ],
+   "imp": [
+    "studiavo",
+    "studiavi",
+    "studiava",
+    "studiavamo",
+    "studiavate",
+    "studiavano"
+   ],
+   "fut": [
+    "studierò",
+    "studierai",
+    "studierà",
+    "studieremo",
+    "studierete",
+    "studieranno"
+   ],
+   "cond": [
+    "studierei",
+    "studieresti",
+    "studierebbe",
+    "studieremmo",
+    "studiereste",
+    "studierebbero"
+   ],
+   "cong": [
+    "studi",
+    "studi",
+    "studi",
+    "studiamo",
+    "studiate",
+    "studino"
+   ]
+  }
+ },
+ {
+  "unit": 2,
+  "level": "A1",
+  "inf": "venire",
+  "en": "to come",
+  "aux": "essere",
+  "kind": "irregular",
+  "note": "<b>venire da</b> = to come from: <b>vengo da Londra</b>. <b>Vieni con noi?</b> — are you coming with us?",
+  "t": {
+   "pres": [
+    "vengo",
+    "vieni",
+    "viene",
+    "veniamo",
+    "venite",
+    "vengono"
+   ],
+   "pp": [
+    "sono venuto/a",
+    "sei venuto/a",
+    "è venuto/a",
+    "siamo venuti/e",
+    "siete venuti/e",
+    "sono venuti/e"
+   ],
+   "imp": [
+    "venivo",
+    "venivi",
+    "veniva",
+    "venivamo",
+    "venivate",
+    "venivano"
+   ],
+   "fut": [
+    "verrò",
+    "verrai",
+    "verrà",
+    "verremo",
+    "verrete",
+    "verranno"
+   ],
+   "cond": [
+    "verrei",
+    "verresti",
+    "verrebbe",
+    "verremmo",
+    "verreste",
+    "verrebbero"
+   ],
+   "cong": [
+    "venga",
+    "venga",
+    "venga",
+    "veniamo",
+    "veniate",
+    "vengano"
+   ]
+  }
+ },
+ {
+  "unit": 2,
+  "level": "A1",
+  "inf": "dire",
+  "en": "to say; to tell",
+  "aux": "avere",
+  "kind": "irregular",
+  "note": "<b>dire a</b> qualcuno: to tell someone. <b>Come si dice…?</b> = how do you say…? Don't confuse with <b>parlare</b> (to speak).",
+  "t": {
+   "pres": [
+    "dico",
+    "dici",
+    "dice",
+    "diciamo",
+    "dite",
+    "dicono"
+   ],
+   "pp": [
+    "ho detto",
+    "hai detto",
+    "ha detto",
+    "abbiamo detto",
+    "avete detto",
+    "hanno detto"
+   ],
+   "imp": [
+    "dicevo",
+    "dicevi",
+    "diceva",
+    "dicevamo",
+    "dicevate",
+    "dicevano"
+   ],
+   "fut": [
+    "dirò",
+    "dirai",
+    "dirà",
+    "diremo",
+    "direte",
+    "diranno"
+   ],
+   "cond": [
+    "direi",
+    "diresti",
+    "direbbe",
+    "diremmo",
+    "direste",
+    "direbbero"
+   ],
+   "cong": [
+    "dica",
+    "dica",
+    "dica",
+    "diciamo",
+    "diciate",
+    "dicano"
+   ]
+  }
+ },
+ {
+  "unit": 2,
+  "level": "A1",
+  "inf": "sapere",
+  "en": "to know (a fact); to know how to",
+  "aux": "avere",
+  "kind": "irregular",
+  "note": "<b>sapere</b> = know facts or skills (<i>so nuotare</i>); <b>conoscere</b> = know people and places. <b>Non lo so</b> = I don't know.",
+  "t": {
+   "pres": [
+    "so",
+    "sai",
+    "sa",
+    "sappiamo",
+    "sapete",
+    "sanno"
+   ],
+   "pp": [
+    "ho saputo",
+    "hai saputo",
+    "ha saputo",
+    "abbiamo saputo",
+    "avete saputo",
+    "hanno saputo"
+   ],
+   "imp": [
+    "sapevo",
+    "sapevi",
+    "sapeva",
+    "sapevamo",
+    "sapevate",
+    "sapevano"
+   ],
+   "fut": [
+    "saprò",
+    "saprai",
+    "saprà",
+    "sapremo",
+    "saprete",
+    "sapranno"
+   ],
+   "cond": [
+    "saprei",
+    "sapresti",
+    "saprebbe",
+    "sapremmo",
+    "sapreste",
+    "saprebbero"
+   ],
+   "cong": [
+    "sappia",
+    "sappia",
+    "sappia",
+    "sappiamo",
+    "sappiate",
+    "sappiano"
+   ]
+  }
+ },
+ {
+  "unit": 2,
+  "level": "A1",
+  "inf": "conoscere",
+  "en": "to know (people, places); to meet (for the first time)",
+  "aux": "avere",
+  "kind": "regular -ere",
+  "note": "In the past it means “to meet”: <b>ho conosciuto Paolo a Roma</b> = I met Paolo in Rome. Mind the sound: <b>conosco</b> (hard), <b>conosci</b> (soft).",
+  "t": {
+   "pres": [
+    "conosco",
+    "conosci",
+    "conosce",
+    "conosciamo",
+    "conoscete",
+    "conoscono"
+   ],
+   "pp": [
+    "ho conosciuto",
+    "hai conosciuto",
+    "ha conosciuto",
+    "abbiamo conosciuto",
+    "avete conosciuto",
+    "hanno conosciuto"
+   ],
+   "imp": [
+    "conoscevo",
+    "conoscevi",
+    "conosceva",
+    "conoscevamo",
+    "conoscevate",
+    "conoscevano"
+   ],
+   "fut": [
+    "conoscerò",
+    "conoscerai",
+    "conoscerà",
+    "conosceremo",
+    "conoscerete",
+    "conosceranno"
+   ],
+   "cond": [
+    "conoscerei",
+    "conosceresti",
+    "conoscerebbe",
+    "conosceremmo",
+    "conoscereste",
+    "conoscerebbero"
+   ],
+   "cong": [
+    "conosca",
+    "conosca",
+    "conosca",
+    "conosciamo",
+    "conosciate",
+    "conoscano"
+   ]
+  }
+ },
+ {
+  "unit": 3,
+  "level": "A1",
+  "inf": "mangiare",
+  "en": "to eat",
+  "aux": "avere",
+  "kind": "regular -are",
+  "note": "The <i>i</i> only keeps the g soft, so it disappears before e/i: <b>mangi</b>, <b>mangerò</b>. <b>Mangiare fuori</b> = to eat out.",
+  "t": {
+   "pres": [
+    "mangio",
+    "mangi",
+    "mangia",
+    "mangiamo",
+    "mangiate",
+    "mangiano"
+   ],
+   "pp": [
+    "ho mangiato",
+    "hai mangiato",
+    "ha mangiato",
+    "abbiamo mangiato",
+    "avete mangiato",
+    "hanno mangiato"
+   ],
+   "imp": [
+    "mangiavo",
+    "mangiavi",
+    "mangiava",
+    "mangiavamo",
+    "mangiavate",
+    "mangiavano"
+   ],
+   "fut": [
+    "mangerò",
+    "mangerai",
+    "mangerà",
+    "mangeremo",
+    "mangerete",
+    "mangeranno"
+   ],
+   "cond": [
+    "mangerei",
+    "mangeresti",
+    "mangerebbe",
+    "mangeremmo",
+    "mangereste",
+    "mangerebbero"
+   ],
+   "cong": [
+    "mangi",
+    "mangi",
+    "mangi",
+    "mangiamo",
+    "mangiate",
+    "mangino"
+   ]
+  }
+ },
+ {
+  "unit": 3,
+  "level": "A1",
+  "inf": "bere",
+  "en": "to drink",
+  "aux": "avere",
+  "kind": "irregular",
+  "note": "Built on the old form <i>bevere</i>: <b>bevo</b>, <b>bevuto</b>. Future and conditional have <b>-rr-</b>: <b>berrò</b>, <b>berrei</b>.",
+  "t": {
+   "pres": [
+    "bevo",
+    "bevi",
+    "beve",
+    "beviamo",
+    "bevete",
+    "bevono"
+   ],
+   "pp": [
+    "ho bevuto",
+    "hai bevuto",
+    "ha bevuto",
+    "abbiamo bevuto",
+    "avete bevuto",
+    "hanno bevuto"
+   ],
+   "imp": [
+    "bevevo",
+    "bevevi",
+    "beveva",
+    "bevevamo",
+    "bevevate",
+    "bevevano"
+   ],
+   "fut": [
+    "berrò",
+    "berrai",
+    "berrà",
+    "berremo",
+    "berrete",
+    "berranno"
+   ],
+   "cond": [
+    "berrei",
+    "berresti",
+    "berrebbe",
+    "berremmo",
+    "berreste",
+    "berrebbero"
+   ],
+   "cong": [
+    "beva",
+    "beva",
+    "beva",
+    "beviamo",
+    "beviate",
+    "bevano"
+   ]
+  }
+ },
+ {
+  "unit": 3,
+  "level": "A1",
+  "inf": "prendere",
+  "en": "to take; to have (food/drink); to catch (transport)",
+  "aux": "avere",
+  "kind": "irregular",
+  "note": "The everyday way to order: <b>prendo un cappuccino</b> = I'll have a cappuccino. Irregular participle: <b>preso</b>.",
+  "t": {
+   "pres": [
+    "prendo",
+    "prendi",
+    "prende",
+    "prendiamo",
+    "prendete",
+    "prendono"
+   ],
+   "pp": [
+    "ho preso",
+    "hai preso",
+    "ha preso",
+    "abbiamo preso",
+    "avete preso",
+    "hanno preso"
+   ],
+   "imp": [
+    "prendevo",
+    "prendevi",
+    "prendeva",
+    "prendevamo",
+    "prendevate",
+    "prendevano"
+   ],
+   "fut": [
+    "prenderò",
+    "prenderai",
+    "prenderà",
+    "prenderemo",
+    "prenderete",
+    "prenderanno"
+   ],
+   "cond": [
+    "prenderei",
+    "prenderesti",
+    "prenderebbe",
+    "prenderemmo",
+    "prendereste",
+    "prenderebbero"
+   ],
+   "cong": [
+    "prenda",
+    "prenda",
+    "prenda",
+    "prendiamo",
+    "prendiate",
+    "prendano"
+   ]
+  }
+ },
+ {
+  "unit": 3,
+  "level": "A1",
+  "inf": "ordinare",
+  "en": "to order; to tidy up",
+  "aux": "avere",
+  "kind": "regular -are",
+  "note": "Stress on the first syllable in the present: <b>òrdino</b>, <b>òrdinano</b>. Waiters ask: <b>Avete già ordinato?</b>",
+  "t": {
+   "pres": [
+    "ordino",
+    "ordini",
+    "ordina",
+    "ordiniamo",
+    "ordinate",
+    "ordinano"
+   ],
+   "pp": [
+    "ho ordinato",
+    "hai ordinato",
+    "ha ordinato",
+    "abbiamo ordinato",
+    "avete ordinato",
+    "hanno ordinato"
+   ],
+   "imp": [
+    "ordinavo",
+    "ordinavi",
+    "ordinava",
+    "ordinavamo",
+    "ordinavate",
+    "ordinavano"
+   ],
+   "fut": [
+    "ordinerò",
+    "ordinerai",
+    "ordinerà",
+    "ordineremo",
+    "ordinerete",
+    "ordineranno"
+   ],
+   "cond": [
+    "ordinerei",
+    "ordineresti",
+    "ordinerebbe",
+    "ordineremmo",
+    "ordinereste",
+    "ordinerebbero"
+   ],
+   "cong": [
+    "ordini",
+    "ordini",
+    "ordini",
+    "ordiniamo",
+    "ordiniate",
+    "ordinino"
+   ]
+  }
+ },
+ {
+  "unit": 3,
+  "level": "A1",
+  "inf": "pagare",
+  "en": "to pay; to pay for",
+  "aux": "avere",
+  "kind": "regular -are",
+  "note": "No “for” needed: <b>pago il caffè</b> = I pay for the coffee. An <b>h</b> keeps the g hard: <b>paghi</b>, <b>pagherò</b>.",
+  "t": {
+   "pres": [
+    "pago",
+    "paghi",
+    "paga",
+    "paghiamo",
+    "pagate",
+    "pagano"
+   ],
+   "pp": [
+    "ho pagato",
+    "hai pagato",
+    "ha pagato",
+    "abbiamo pagato",
+    "avete pagato",
+    "hanno pagato"
+   ],
+   "imp": [
+    "pagavo",
+    "pagavi",
+    "pagava",
+    "pagavamo",
+    "pagavate",
+    "pagavano"
+   ],
+   "fut": [
+    "pagherò",
+    "pagherai",
+    "pagherà",
+    "pagheremo",
+    "pagherete",
+    "pagheranno"
+   ],
+   "cond": [
+    "pagherei",
+    "pagheresti",
+    "pagherebbe",
+    "pagheremmo",
+    "paghereste",
+    "pagherebbero"
+   ],
+   "cong": [
+    "paghi",
+    "paghi",
+    "paghi",
+    "paghiamo",
+    "paghiate",
+    "paghino"
+   ]
+  }
+ },
+ {
+  "unit": 3,
+  "level": "A1",
+  "inf": "costare",
+  "en": "to cost",
+  "aux": "essere",
+  "kind": "regular -are",
+  "note": "Mostly used in the 3rd person: <b>quanto costa?</b> (one thing), <b>quanto costano?</b> (several). Takes <b>essere</b>, so the participle agrees: <i>la pizza è costata poco</i>.",
+  "t": {
+   "pres": [
+    "costo",
+    "costi",
+    "costa",
+    "costiamo",
+    "costate",
+    "costano"
+   ],
+   "pp": [
+    "sono costato/a",
+    "sei costato/a",
+    "è costato/a",
+    "siamo costati/e",
+    "siete costati/e",
+    "sono costati/e"
+   ],
+   "imp": [
+    "costavo",
+    "costavi",
+    "costava",
+    "costavamo",
+    "costavate",
+    "costavano"
+   ],
+   "fut": [
+    "costerò",
+    "costerai",
+    "costerà",
+    "costeremo",
+    "costerete",
+    "costeranno"
+   ],
+   "cond": [
+    "costerei",
+    "costeresti",
+    "costerebbe",
+    "costeremmo",
+    "costereste",
+    "costerebbero"
+   ],
+   "cong": [
+    "costi",
+    "costi",
+    "costi",
+    "costiamo",
+    "costiate",
+    "costino"
+   ]
+  }
+ },
+ {
+  "unit": 3,
+  "level": "A1",
+  "inf": "piacere",
+  "en": "to like (lit. to be pleasing)",
+  "aux": "essere",
+  "kind": "irregular",
+  "note": "Works backwards: the thing liked is the subject. <b>Mi piace</b> il gelato, <b>mi piacciono</b> gli spaghetti. Past: <b>mi è piaciuta</b> la pizza.",
+  "t": {
+   "pres": [
+    "piaccio",
+    "piaci",
+    "piace",
+    "piacciamo",
+    "piacete",
+    "piacciono"
+   ],
+   "pp": [
+    "sono piaciuto/a",
+    "sei piaciuto/a",
+    "è piaciuto/a",
+    "siamo piaciuti/e",
+    "siete piaciuti/e",
+    "sono piaciuti/e"
+   ],
+   "imp": [
+    "piacevo",
+    "piacevi",
+    "piaceva",
+    "piacevamo",
+    "piacevate",
+    "piacevano"
+   ],
+   "fut": [
+    "piacerò",
+    "piacerai",
+    "piacerà",
+    "piaceremo",
+    "piacerete",
+    "piaceranno"
+   ],
+   "cond": [
+    "piacerei",
+    "piaceresti",
+    "piacerebbe",
+    "piaceremmo",
+    "piacereste",
+    "piacerebbero"
+   ],
+   "cong": [
+    "piaccia",
+    "piaccia",
+    "piaccia",
+    "piacciamo",
+    "piacciate",
+    "piacciano"
+   ]
+  }
+ },
+ {
+  "unit": 3,
+  "level": "A1",
+  "inf": "preferire",
+  "en": "to prefer",
+  "aux": "avere",
+  "kind": "-ire (-isc-)",
+  "note": "Adds <b>-isc-</b> in the present, except for noi and voi: <b>preferisco</b>, but <b>preferiamo</b>. <b>Preferire A a B</b> = to prefer A to B.",
+  "t": {
+   "pres": [
+    "preferisco",
+    "preferisci",
+    "preferisce",
+    "preferiamo",
+    "preferite",
+    "preferiscono"
+   ],
+   "pp": [
+    "ho preferito",
+    "hai preferito",
+    "ha preferito",
+    "abbiamo preferito",
+    "avete preferito",
+    "hanno preferito"
+   ],
+   "imp": [
+    "preferivo",
+    "preferivi",
+    "preferiva",
+    "preferivamo",
+    "preferivate",
+    "preferivano"
+   ],
+   "fut": [
+    "preferirò",
+    "preferirai",
+    "preferirà",
+    "preferiremo",
+    "preferirete",
+    "preferiranno"
+   ],
+   "cond": [
+    "preferirei",
+    "preferiresti",
+    "preferirebbe",
+    "preferiremmo",
+    "preferireste",
+    "preferirebbero"
+   ],
+   "cong": [
+    "preferisca",
+    "preferisca",
+    "preferisca",
+    "preferiamo",
+    "preferiate",
+    "preferiscano"
+   ]
+  }
+ },
+ {
+  "unit": 4,
+  "level": "A1",
+  "inf": "svegliarsi",
+  "en": "to wake up",
+  "aux": "essere",
+  "kind": "regular -are · reflexive",
+  "note": "Reflexive when you wake up yourself; <b>svegliare</b> (non-reflexive) = to wake someone else: <i>mi svegli alle sette?</i>",
+  "t": {
+   "pres": [
+    "mi sveglio",
+    "ti svegli",
+    "si sveglia",
+    "ci svegliamo",
+    "vi svegliate",
+    "si svegliano"
+   ],
+   "pp": [
+    "mi sono svegliato/a",
+    "ti sei svegliato/a",
+    "si è svegliato/a",
+    "ci siamo svegliati/e",
+    "vi siete svegliati/e",
+    "si sono svegliati/e"
+   ],
+   "imp": [
+    "mi svegliavo",
+    "ti svegliavi",
+    "si svegliava",
+    "ci svegliavamo",
+    "vi svegliavate",
+    "si svegliavano"
+   ],
+   "fut": [
+    "mi sveglierò",
+    "ti sveglierai",
+    "si sveglierà",
+    "ci sveglieremo",
+    "vi sveglierete",
+    "si sveglieranno"
+   ],
+   "cond": [
+    "mi sveglierei",
+    "ti sveglieresti",
+    "si sveglierebbe",
+    "ci sveglieremmo",
+    "vi svegliereste",
+    "si sveglierebbero"
+   ],
+   "cong": [
+    "mi svegli",
+    "ti svegli",
+    "si svegli",
+    "ci svegliamo",
+    "vi svegliate",
+    "si sveglino"
+   ]
+  }
+ },
+ {
+  "unit": 4,
+  "level": "A1",
+  "inf": "alzarsi",
+  "en": "to get up; to stand up",
+  "aux": "essere",
+  "kind": "regular -are · reflexive",
+  "note": "<b>svegliarsi</b> is opening your eyes, <b>alzarsi</b> is getting out of bed. Non-reflexive <b>alzare</b> = to raise, lift: <i>alzare la mano</i>.",
+  "t": {
+   "pres": [
+    "mi alzo",
+    "ti alzi",
+    "si alza",
+    "ci alziamo",
+    "vi alzate",
+    "si alzano"
+   ],
+   "pp": [
+    "mi sono alzato/a",
+    "ti sei alzato/a",
+    "si è alzato/a",
+    "ci siamo alzati/e",
+    "vi siete alzati/e",
+    "si sono alzati/e"
+   ],
+   "imp": [
+    "mi alzavo",
+    "ti alzavi",
+    "si alzava",
+    "ci alzavamo",
+    "vi alzavate",
+    "si alzavano"
+   ],
+   "fut": [
+    "mi alzerò",
+    "ti alzerai",
+    "si alzerà",
+    "ci alzeremo",
+    "vi alzerete",
+    "si alzeranno"
+   ],
+   "cond": [
+    "mi alzerei",
+    "ti alzeresti",
+    "si alzerebbe",
+    "ci alzeremmo",
+    "vi alzereste",
+    "si alzerebbero"
+   ],
+   "cong": [
+    "mi alzi",
+    "ti alzi",
+    "si alzi",
+    "ci alziamo",
+    "vi alziate",
+    "si alzino"
+   ]
+  }
+ },
+ {
+  "unit": 4,
+  "level": "A1",
+  "inf": "vestirsi",
+  "en": "to get dressed; to dress",
+  "aux": "essere",
+  "kind": "regular -ire · reflexive",
+  "note": "<b>vestirsi bene</b> = to dress well; <b>vestirsi da</b> = to dress up as. Non-reflexive <b>vestire</b> = to dress someone: <i>vesto i bambini</i>.",
+  "t": {
+   "pres": [
+    "mi vesto",
+    "ti vesti",
+    "si veste",
+    "ci vestiamo",
+    "vi vestite",
+    "si vestono"
+   ],
+   "pp": [
+    "mi sono vestito/a",
+    "ti sei vestito/a",
+    "si è vestito/a",
+    "ci siamo vestiti/e",
+    "vi siete vestiti/e",
+    "si sono vestiti/e"
+   ],
+   "imp": [
+    "mi vestivo",
+    "ti vestivi",
+    "si vestiva",
+    "ci vestivamo",
+    "vi vestivate",
+    "si vestivano"
+   ],
+   "fut": [
+    "mi vestirò",
+    "ti vestirai",
+    "si vestirà",
+    "ci vestiremo",
+    "vi vestirete",
+    "si vestiranno"
+   ],
+   "cond": [
+    "mi vestirei",
+    "ti vestiresti",
+    "si vestirebbe",
+    "ci vestiremmo",
+    "vi vestireste",
+    "si vestirebbero"
+   ],
+   "cong": [
+    "mi vesta",
+    "ti vesta",
+    "si vesta",
+    "ci vestiamo",
+    "vi vestiate",
+    "si vestano"
+   ]
+  }
+ },
+ {
+  "unit": 4,
+  "level": "A1",
+  "inf": "uscire",
+  "en": "to go out; to leave; to come out",
+  "aux": "essere",
+  "kind": "irregular",
+  "note": "<b>uscire di casa</b> = to leave the house; <b>uscire con</b> qualcuno = to go out with someone. Stem changes to <b>esc-</b> when stressed: <b>esco</b>, but <b>usciamo</b>.",
+  "t": {
+   "pres": [
+    "esco",
+    "esci",
+    "esce",
+    "usciamo",
+    "uscite",
+    "escono"
+   ],
+   "pp": [
+    "sono uscito/a",
+    "sei uscito/a",
+    "è uscito/a",
+    "siamo usciti/e",
+    "siete usciti/e",
+    "sono usciti/e"
+   ],
+   "imp": [
+    "uscivo",
+    "uscivi",
+    "usciva",
+    "uscivamo",
+    "uscivate",
+    "uscivano"
+   ],
+   "fut": [
+    "uscirò",
+    "uscirai",
+    "uscirà",
+    "usciremo",
+    "uscirete",
+    "usciranno"
+   ],
+   "cond": [
+    "uscirei",
+    "usciresti",
+    "uscirebbe",
+    "usciremmo",
+    "uscireste",
+    "uscirebbero"
+   ],
+   "cong": [
+    "esca",
+    "esca",
+    "esca",
+    "usciamo",
+    "usciate",
+    "escano"
+   ]
+  }
+ },
+ {
+  "unit": 4,
+  "level": "A1",
+  "inf": "tornare",
+  "en": "to come back; to return; to go back",
+  "aux": "essere",
+  "kind": "regular -are",
+  "note": "<b>tornare a casa</b> = to go/come home. Also used for “again”: <b>torno a lavorare</b> = I go back to work.",
+  "t": {
+   "pres": [
+    "torno",
+    "torni",
+    "torna",
+    "torniamo",
+    "tornate",
+    "tornano"
+   ],
+   "pp": [
+    "sono tornato/a",
+    "sei tornato/a",
+    "è tornato/a",
+    "siamo tornati/e",
+    "siete tornati/e",
+    "sono tornati/e"
+   ],
+   "imp": [
+    "tornavo",
+    "tornavi",
+    "tornava",
+    "tornavamo",
+    "tornavate",
+    "tornavano"
+   ],
+   "fut": [
+    "tornerò",
+    "tornerai",
+    "tornerà",
+    "torneremo",
+    "tornerete",
+    "torneranno"
+   ],
+   "cond": [
+    "tornerei",
+    "torneresti",
+    "tornerebbe",
+    "torneremmo",
+    "tornereste",
+    "tornerebbero"
+   ],
+   "cong": [
+    "torni",
+    "torni",
+    "torni",
+    "torniamo",
+    "torniate",
+    "tornino"
+   ]
+  }
+ },
+ {
+  "unit": 4,
+  "level": "A1",
+  "inf": "dormire",
+  "en": "to sleep",
+  "aux": "avere",
+  "kind": "regular -ire",
+  "note": "<b>andare a dormire</b> = to go to bed. <b>Dormire fino a tardi</b> = to sleep in. A model for regular <b>-ire</b> verbs without -isc-.",
+  "t": {
+   "pres": [
+    "dormo",
+    "dormi",
+    "dorme",
+    "dormiamo",
+    "dormite",
+    "dormono"
+   ],
+   "pp": [
+    "ho dormito",
+    "hai dormito",
+    "ha dormito",
+    "abbiamo dormito",
+    "avete dormito",
+    "hanno dormito"
+   ],
+   "imp": [
+    "dormivo",
+    "dormivi",
+    "dormiva",
+    "dormivamo",
+    "dormivate",
+    "dormivano"
+   ],
+   "fut": [
+    "dormirò",
+    "dormirai",
+    "dormirà",
+    "dormiremo",
+    "dormirete",
+    "dormiranno"
+   ],
+   "cond": [
+    "dormirei",
+    "dormiresti",
+    "dormirebbe",
+    "dormiremmo",
+    "dormireste",
+    "dormirebbero"
+   ],
+   "cong": [
+    "dorma",
+    "dorma",
+    "dorma",
+    "dormiamo",
+    "dormiate",
+    "dormano"
+   ]
+  }
+ },
+ {
+  "unit": 4,
+  "level": "A1",
+  "inf": "cominciare",
+  "en": "to start; to begin",
+  "aux": "avere",
+  "kind": "regular -are",
+  "note": "<b>cominciare a</b> + infinitive: <i>comincio a lavorare</i>. When the subject is the event itself, it takes <b>essere</b>: <i>il film è cominciato</i>.",
+  "t": {
+   "pres": [
+    "comincio",
+    "cominci",
+    "comincia",
+    "cominciamo",
+    "cominciate",
+    "cominciano"
+   ],
+   "pp": [
+    "ho cominciato",
+    "hai cominciato",
+    "ha cominciato",
+    "abbiamo cominciato",
+    "avete cominciato",
+    "hanno cominciato"
+   ],
+   "imp": [
+    "cominciavo",
+    "cominciavi",
+    "cominciava",
+    "cominciavamo",
+    "cominciavate",
+    "cominciavano"
+   ],
+   "fut": [
+    "comincerò",
+    "comincerai",
+    "comincerà",
+    "cominceremo",
+    "comincerete",
+    "cominceranno"
+   ],
+   "cond": [
+    "comincerei",
+    "cominceresti",
+    "comincerebbe",
+    "cominceremmo",
+    "comincereste",
+    "comincerebbero"
+   ],
+   "cong": [
+    "cominci",
+    "cominci",
+    "cominci",
+    "cominciamo",
+    "cominciate",
+    "comincino"
+   ]
+  }
+ },
+ {
+  "unit": 4,
+  "level": "A1",
+  "inf": "dovere",
+  "en": "to have to; must; to owe",
+  "aux": "avere",
+  "kind": "irregular · modal",
+  "note": "Followed directly by an infinitive: <b>devo andare</b>. <b>Dovrei</b> = I should. With a noun it means “to owe”: <i>ti devo dieci euro</i>.",
+  "t": {
+   "pres": [
+    "devo",
+    "devi",
+    "deve",
+    "dobbiamo",
+    "dovete",
+    "devono"
+   ],
+   "pp": [
+    "ho dovuto",
+    "hai dovuto",
+    "ha dovuto",
+    "abbiamo dovuto",
+    "avete dovuto",
+    "hanno dovuto"
+   ],
+   "imp": [
+    "dovevo",
+    "dovevi",
+    "doveva",
+    "dovevamo",
+    "dovevate",
+    "dovevano"
+   ],
+   "fut": [
+    "dovrò",
+    "dovrai",
+    "dovrà",
+    "dovremo",
+    "dovrete",
+    "dovranno"
+   ],
+   "cond": [
+    "dovrei",
+    "dovresti",
+    "dovrebbe",
+    "dovremmo",
+    "dovreste",
+    "dovrebbero"
+   ],
+   "cong": [
+    "debba",
+    "debba",
+    "debba",
+    "dobbiamo",
+    "dobbiate",
+    "debbano"
+   ]
+  }
+ },
+ {
+  "unit": 5,
+  "level": "A1",
+  "inf": "vivere",
+  "en": "to live; to be alive",
+  "aux": "avere",
+  "kind": "irregular",
+  "note": "Also takes <b>essere</b> (<i>sono vissuto a Roma</i>); both are correct. <b>vivere</b> is about life in general; <b>abitare</b> is only about where you live.",
+  "t": {
+   "pres": [
+    "vivo",
+    "vivi",
+    "vive",
+    "viviamo",
+    "vivete",
+    "vivono"
+   ],
+   "pp": [
+    "ho vissuto",
+    "hai vissuto",
+    "ha vissuto",
+    "abbiamo vissuto",
+    "avete vissuto",
+    "hanno vissuto"
+   ],
+   "imp": [
+    "vivevo",
+    "vivevi",
+    "viveva",
+    "vivevamo",
+    "vivevate",
+    "vivevano"
+   ],
+   "fut": [
+    "vivrò",
+    "vivrai",
+    "vivrà",
+    "vivremo",
+    "vivrete",
+    "vivranno"
+   ],
+   "cond": [
+    "vivrei",
+    "vivresti",
+    "vivrebbe",
+    "vivremmo",
+    "vivreste",
+    "vivrebbero"
+   ],
+   "cong": [
+    "viva",
+    "viva",
+    "viva",
+    "viviamo",
+    "viviate",
+    "vivano"
+   ]
+  }
+ },
+ {
+  "unit": 5,
+  "level": "A1",
+  "inf": "mettere",
+  "en": "to put; to place; to put on (clothes)",
+  "aux": "avere",
+  "kind": "irregular",
+  "note": "Irregular participle <b>messo</b>. <b>mettere in ordine</b> = to tidy up; <b>mettersi</b> = to put on (clothes).",
+  "t": {
+   "pres": [
+    "metto",
+    "metti",
+    "mette",
+    "mettiamo",
+    "mettete",
+    "mettono"
+   ],
+   "pp": [
+    "ho messo",
+    "hai messo",
+    "ha messo",
+    "abbiamo messo",
+    "avete messo",
+    "hanno messo"
+   ],
+   "imp": [
+    "mettevo",
+    "mettevi",
+    "metteva",
+    "mettevamo",
+    "mettevate",
+    "mettevano"
+   ],
+   "fut": [
+    "metterò",
+    "metterai",
+    "metterà",
+    "metteremo",
+    "metterete",
+    "metteranno"
+   ],
+   "cond": [
+    "metterei",
+    "metteresti",
+    "metterebbe",
+    "metteremmo",
+    "mettereste",
+    "metterebbero"
+   ],
+   "cong": [
+    "metta",
+    "metta",
+    "metta",
+    "mettiamo",
+    "mettiate",
+    "mettano"
+   ]
+  }
+ },
+ {
+  "unit": 5,
+  "level": "A1",
+  "inf": "aprire",
+  "en": "to open",
+  "aux": "avere",
+  "kind": "irregular",
+  "note": "Regular in the present, but the participle is <b>aperto</b>. <b>aperto</b> is also the adjective “open”: <i>il negozio è aperto</i>.",
+  "t": {
+   "pres": [
+    "apro",
+    "apri",
+    "apre",
+    "apriamo",
+    "aprite",
+    "aprono"
+   ],
+   "pp": [
+    "ho aperto",
+    "hai aperto",
+    "ha aperto",
+    "abbiamo aperto",
+    "avete aperto",
+    "hanno aperto"
+   ],
+   "imp": [
+    "aprivo",
+    "aprivi",
+    "apriva",
+    "aprivamo",
+    "aprivate",
+    "aprivano"
+   ],
+   "fut": [
+    "aprirò",
+    "aprirai",
+    "aprirà",
+    "apriremo",
+    "aprirete",
+    "apriranno"
+   ],
+   "cond": [
+    "aprirei",
+    "apriresti",
+    "aprirebbe",
+    "apriremmo",
+    "aprireste",
+    "aprirebbero"
+   ],
+   "cong": [
+    "apra",
+    "apra",
+    "apra",
+    "apriamo",
+    "apriate",
+    "aprano"
+   ]
+  }
+ },
+ {
+  "unit": 5,
+  "level": "A1",
+  "inf": "chiudere",
+  "en": "to close; to shut; to lock",
+  "aux": "avere",
+  "kind": "irregular",
+  "note": "Irregular participle <b>chiuso</b>, also the adjective “closed”. <b>chiudere a chiave</b> = to lock.",
+  "t": {
+   "pres": [
+    "chiudo",
+    "chiudi",
+    "chiude",
+    "chiudiamo",
+    "chiudete",
+    "chiudono"
+   ],
+   "pp": [
+    "ho chiuso",
+    "hai chiuso",
+    "ha chiuso",
+    "abbiamo chiuso",
+    "avete chiuso",
+    "hanno chiuso"
+   ],
+   "imp": [
+    "chiudevo",
+    "chiudevi",
+    "chiudeva",
+    "chiudevamo",
+    "chiudevate",
+    "chiudevano"
+   ],
+   "fut": [
+    "chiuderò",
+    "chiuderai",
+    "chiuderà",
+    "chiuderemo",
+    "chiuderete",
+    "chiuderanno"
+   ],
+   "cond": [
+    "chiuderei",
+    "chiuderesti",
+    "chiuderebbe",
+    "chiuderemmo",
+    "chiudereste",
+    "chiuderebbero"
+   ],
+   "cong": [
+    "chiuda",
+    "chiuda",
+    "chiuda",
+    "chiudiamo",
+    "chiudiate",
+    "chiudano"
+   ]
+  }
+ },
+ {
+  "unit": 5,
+  "level": "A1",
+  "inf": "entrare",
+  "en": "to enter; to go in; to come in",
+  "aux": "essere",
+  "kind": "regular -are",
+  "note": "Always <b>entrare in</b> + place (never a direct object): <b>entro in casa</b>. <b>Posso entrare?</b> = May I come in?",
+  "t": {
+   "pres": [
+    "entro",
+    "entri",
+    "entra",
+    "entriamo",
+    "entrate",
+    "entrano"
+   ],
+   "pp": [
+    "sono entrato/a",
+    "sei entrato/a",
+    "è entrato/a",
+    "siamo entrati/e",
+    "siete entrati/e",
+    "sono entrati/e"
+   ],
+   "imp": [
+    "entravo",
+    "entravi",
+    "entrava",
+    "entravamo",
+    "entravate",
+    "entravano"
+   ],
+   "fut": [
+    "entrerò",
+    "entrerai",
+    "entrerà",
+    "entreremo",
+    "entrerete",
+    "entreranno"
+   ],
+   "cond": [
+    "entrerei",
+    "entreresti",
+    "entrerebbe",
+    "entreremmo",
+    "entrereste",
+    "entrerebbero"
+   ],
+   "cong": [
+    "entri",
+    "entri",
+    "entri",
+    "entriamo",
+    "entriate",
+    "entrino"
+   ]
+  }
+ },
+ {
+  "unit": 5,
+  "level": "A1",
+  "inf": "cucinare",
+  "en": "to cook",
+  "aux": "avere",
+  "kind": "regular -are",
+  "note": "<b>cucinare</b> = to cook (a meal); for the cooking process itself Italians also use <b>cuocere</b>. <b>Chi cucina stasera?</b>",
+  "t": {
+   "pres": [
+    "cucino",
+    "cucini",
+    "cucina",
+    "cuciniamo",
+    "cucinate",
+    "cucinano"
+   ],
+   "pp": [
+    "ho cucinato",
+    "hai cucinato",
+    "ha cucinato",
+    "abbiamo cucinato",
+    "avete cucinato",
+    "hanno cucinato"
+   ],
+   "imp": [
+    "cucinavo",
+    "cucinavi",
+    "cucinava",
+    "cucinavamo",
+    "cucinavate",
+    "cucinavano"
+   ],
+   "fut": [
+    "cucinerò",
+    "cucinerai",
+    "cucinerà",
+    "cucineremo",
+    "cucinerete",
+    "cucineranno"
+   ],
+   "cond": [
+    "cucinerei",
+    "cucineresti",
+    "cucinerebbe",
+    "cucineremmo",
+    "cucinereste",
+    "cucinerebbero"
+   ],
+   "cong": [
+    "cucini",
+    "cucini",
+    "cucini",
+    "cuciniamo",
+    "cuciniate",
+    "cucinino"
+   ]
+  }
+ },
+ {
+  "unit": 5,
+  "level": "A1",
+  "inf": "lasciare",
+  "en": "to leave (something/someone); to let",
+  "aux": "avere",
+  "kind": "regular -are",
+  "note": "To leave something behind, not to depart (that's <b>partire</b> or <b>uscire</b>). <b>lasciare</b> + infinitive = to let: <i>lasciami dormire</i>.",
+  "t": {
+   "pres": [
+    "lascio",
+    "lasci",
+    "lascia",
+    "lasciamo",
+    "lasciate",
+    "lasciano"
+   ],
+   "pp": [
+    "ho lasciato",
+    "hai lasciato",
+    "ha lasciato",
+    "abbiamo lasciato",
+    "avete lasciato",
+    "hanno lasciato"
+   ],
+   "imp": [
+    "lasciavo",
+    "lasciavi",
+    "lasciava",
+    "lasciavamo",
+    "lasciavate",
+    "lasciavano"
+   ],
+   "fut": [
+    "lascerò",
+    "lascerai",
+    "lascerà",
+    "lasceremo",
+    "lascerete",
+    "lasceranno"
+   ],
+   "cond": [
+    "lascerei",
+    "lasceresti",
+    "lascerebbe",
+    "lasceremmo",
+    "lascereste",
+    "lascerebbero"
+   ],
+   "cong": [
+    "lasci",
+    "lasci",
+    "lasci",
+    "lasciamo",
+    "lasciate",
+    "lascino"
+   ]
+  }
+ },
+ {
+  "unit": 5,
+  "level": "A1",
+  "inf": "trovare",
+  "en": "to find",
+  "aux": "avere",
+  "kind": "regular -are",
+  "note": "<b>trovare</b> also means “to think, find (an opinion)”: <i>trovo che sia bello</i>. <b>andare a trovare</b> = to visit a person.",
+  "t": {
+   "pres": [
+    "trovo",
+    "trovi",
+    "trova",
+    "troviamo",
+    "trovate",
+    "trovano"
+   ],
+   "pp": [
+    "ho trovato",
+    "hai trovato",
+    "ha trovato",
+    "abbiamo trovato",
+    "avete trovato",
+    "hanno trovato"
+   ],
+   "imp": [
+    "trovavo",
+    "trovavi",
+    "trovava",
+    "trovavamo",
+    "trovavate",
+    "trovavano"
+   ],
+   "fut": [
+    "troverò",
+    "troverai",
+    "troverà",
+    "troveremo",
+    "troverete",
+    "troveranno"
+   ],
+   "cond": [
+    "troverei",
+    "troveresti",
+    "troverebbe",
+    "troveremmo",
+    "trovereste",
+    "troverebbero"
+   ],
+   "cong": [
+    "trovi",
+    "trovi",
+    "trovi",
+    "troviamo",
+    "troviate",
+    "trovino"
+   ]
+  }
+ }
+]

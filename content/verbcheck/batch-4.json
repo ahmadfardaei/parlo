@@ -1,0 +1,2362 @@
+[
+ {
+  "unit": 16,
+  "level": "A2",
+  "inf": "lavare",
+  "en": "to wash",
+  "aux": "avere",
+  "kind": "regular -are",
+  "note": "<b>Lavare i piatti</b> = to do the dishes. <b>Lavarsi</b> = to wash yourself: <i>mi lavo le mani</i> (not “le mie mani”).",
+  "t": {
+   "pres": [
+    "lavo",
+    "lavi",
+    "lava",
+    "laviamo",
+    "lavate",
+    "lavano"
+   ],
+   "pp": [
+    "ho lavato",
+    "hai lavato",
+    "ha lavato",
+    "abbiamo lavato",
+    "avete lavato",
+    "hanno lavato"
+   ],
+   "imp": [
+    "lavavo",
+    "lavavi",
+    "lavava",
+    "lavavamo",
+    "lavavate",
+    "lavavano"
+   ],
+   "fut": [
+    "laverò",
+    "laverai",
+    "laverà",
+    "laveremo",
+    "laverete",
+    "laveranno"
+   ],
+   "cond": [
+    "laverei",
+    "laveresti",
+    "laverebbe",
+    "laveremmo",
+    "lavereste",
+    "laverebbero"
+   ],
+   "cong": [
+    "lavi",
+    "lavi",
+    "lavi",
+    "laviamo",
+    "laviate",
+    "lavino"
+   ]
+  }
+ },
+ {
+  "unit": 16,
+  "level": "A2",
+  "inf": "pulire",
+  "en": "to clean",
+  "aux": "avere",
+  "kind": "-ire (-isc-)",
+  "note": "Adds -isc- in most present forms: <b>pulisco, pulisci, puliscono</b>, but <i>puliamo, pulite</i>.",
+  "t": {
+   "pres": [
+    "pulisco",
+    "pulisci",
+    "pulisce",
+    "puliamo",
+    "pulite",
+    "puliscono"
+   ],
+   "pp": [
+    "ho pulito",
+    "hai pulito",
+    "ha pulito",
+    "abbiamo pulito",
+    "avete pulito",
+    "hanno pulito"
+   ],
+   "imp": [
+    "pulivo",
+    "pulivi",
+    "puliva",
+    "pulivamo",
+    "pulivate",
+    "pulivano"
+   ],
+   "fut": [
+    "pulirò",
+    "pulirai",
+    "pulirà",
+    "puliremo",
+    "pulirete",
+    "puliranno"
+   ],
+   "cond": [
+    "pulirei",
+    "puliresti",
+    "pulirebbe",
+    "puliremmo",
+    "pulireste",
+    "pulirebbero"
+   ],
+   "cong": [
+    "pulisca",
+    "pulisca",
+    "pulisca",
+    "puliamo",
+    "puliate",
+    "puliscano"
+   ]
+  }
+ },
+ {
+  "unit": 16,
+  "level": "A2",
+  "inf": "sistemare",
+  "en": "to tidy; to sort out; to fix; to put away",
+  "aux": "avere",
+  "kind": "regular -are",
+  "note": "Very versatile: tidy a room, put things away, sort out a problem. <b>Sistemarsi</b> = to settle in, get settled.",
+  "t": {
+   "pres": [
+    "sistemo",
+    "sistemi",
+    "sistema",
+    "sistemiamo",
+    "sistemate",
+    "sistemano"
+   ],
+   "pp": [
+    "ho sistemato",
+    "hai sistemato",
+    "ha sistemato",
+    "abbiamo sistemato",
+    "avete sistemato",
+    "hanno sistemato"
+   ],
+   "imp": [
+    "sistemavo",
+    "sistemavi",
+    "sistemava",
+    "sistemavamo",
+    "sistemavate",
+    "sistemavano"
+   ],
+   "fut": [
+    "sistemerò",
+    "sistemerai",
+    "sistemerà",
+    "sistemeremo",
+    "sistemerete",
+    "sistemeranno"
+   ],
+   "cond": [
+    "sistemerei",
+    "sistemeresti",
+    "sistemerebbe",
+    "sistemeremmo",
+    "sistemereste",
+    "sistemerebbero"
+   ],
+   "cong": [
+    "sistemi",
+    "sistemi",
+    "sistemi",
+    "sistemiamo",
+    "sistemiate",
+    "sistemino"
+   ]
+  }
+ },
+ {
+  "unit": 16,
+  "level": "A2",
+  "inf": "buttare",
+  "en": "to throw; to throw away",
+  "aux": "avere",
+  "kind": "regular -are",
+  "note": "<b>Buttare via</b> = to throw away; <b>buttare la pasta</b> = to put the pasta in the boiling water.",
+  "t": {
+   "pres": [
+    "butto",
+    "butti",
+    "butta",
+    "buttiamo",
+    "buttate",
+    "buttano"
+   ],
+   "pp": [
+    "ho buttato",
+    "hai buttato",
+    "ha buttato",
+    "abbiamo buttato",
+    "avete buttato",
+    "hanno buttato"
+   ],
+   "imp": [
+    "buttavo",
+    "buttavi",
+    "buttava",
+    "buttavamo",
+    "buttavate",
+    "buttavano"
+   ],
+   "fut": [
+    "butterò",
+    "butterai",
+    "butterà",
+    "butteremo",
+    "butterete",
+    "butteranno"
+   ],
+   "cond": [
+    "butterei",
+    "butteresti",
+    "butterebbe",
+    "butteremmo",
+    "buttereste",
+    "butterebbero"
+   ],
+   "cong": [
+    "butti",
+    "butti",
+    "butti",
+    "buttiamo",
+    "buttiate",
+    "buttino"
+   ]
+  }
+ },
+ {
+  "unit": 16,
+  "level": "A2",
+  "inf": "riempire",
+  "en": "to fill",
+  "aux": "avere",
+  "kind": "irregular",
+  "note": "<b>riempire di</b> + thing: <i>riempire il secchio d'acqua</i>. Present has an extra i: <b>riempio, riempiono</b>.",
+  "t": {
+   "pres": [
+    "riempio",
+    "riempi",
+    "riempie",
+    "riempiamo",
+    "riempite",
+    "riempiono"
+   ],
+   "pp": [
+    "ho riempito",
+    "hai riempito",
+    "ha riempito",
+    "abbiamo riempito",
+    "avete riempito",
+    "hanno riempito"
+   ],
+   "imp": [
+    "riempivo",
+    "riempivi",
+    "riempiva",
+    "riempivamo",
+    "riempivate",
+    "riempivano"
+   ],
+   "fut": [
+    "riempirò",
+    "riempirai",
+    "riempirà",
+    "riempiremo",
+    "riempirete",
+    "riempiranno"
+   ],
+   "cond": [
+    "riempirei",
+    "riempiresti",
+    "riempirebbe",
+    "riempiremmo",
+    "riempireste",
+    "riempirebbero"
+   ],
+   "cong": [
+    "riempia",
+    "riempia",
+    "riempia",
+    "riempiamo",
+    "riempiate",
+    "riempiano"
+   ]
+  }
+ },
+ {
+  "unit": 16,
+  "level": "A2",
+  "inf": "tenere",
+  "en": "to hold; to keep",
+  "aux": "avere",
+  "kind": "irregular",
+  "note": "Irregular: <b>tengo, tieni, tengono</b>; future <b>terrò</b>. <i>Tenere in ordine</i> = to keep tidy. <i>Tieni!</i> = Here, take this!",
+  "t": {
+   "pres": [
+    "tengo",
+    "tieni",
+    "tiene",
+    "teniamo",
+    "tenete",
+    "tengono"
+   ],
+   "pp": [
+    "ho tenuto",
+    "hai tenuto",
+    "ha tenuto",
+    "abbiamo tenuto",
+    "avete tenuto",
+    "hanno tenuto"
+   ],
+   "imp": [
+    "tenevo",
+    "tenevi",
+    "teneva",
+    "tenevamo",
+    "tenevate",
+    "tenevano"
+   ],
+   "fut": [
+    "terrò",
+    "terrai",
+    "terrà",
+    "terremo",
+    "terrete",
+    "terranno"
+   ],
+   "cond": [
+    "terrei",
+    "terresti",
+    "terrebbe",
+    "terremmo",
+    "terreste",
+    "terrebbero"
+   ],
+   "cong": [
+    "tenga",
+    "tenga",
+    "tenga",
+    "teniamo",
+    "teniate",
+    "tengano"
+   ]
+  }
+ },
+ {
+  "unit": 16,
+  "level": "A2",
+  "inf": "spostare",
+  "en": "to move (something); to shift; to postpone",
+  "aux": "avere",
+  "kind": "regular -are",
+  "note": "To move an object or an appointment: <i>spostare il divano</i>, <i>spostare la riunione</i>. To move house is <b>traslocare</b>.",
+  "t": {
+   "pres": [
+    "sposto",
+    "sposti",
+    "sposta",
+    "spostiamo",
+    "spostate",
+    "spostano"
+   ],
+   "pp": [
+    "ho spostato",
+    "hai spostato",
+    "ha spostato",
+    "abbiamo spostato",
+    "avete spostato",
+    "hanno spostato"
+   ],
+   "imp": [
+    "spostavo",
+    "spostavi",
+    "spostava",
+    "spostavamo",
+    "spostavate",
+    "spostavano"
+   ],
+   "fut": [
+    "sposterò",
+    "sposterai",
+    "sposterà",
+    "sposteremo",
+    "sposterete",
+    "sposteranno"
+   ],
+   "cond": [
+    "sposterei",
+    "sposteresti",
+    "sposterebbe",
+    "sposteremmo",
+    "spostereste",
+    "sposterebbero"
+   ],
+   "cong": [
+    "sposti",
+    "sposti",
+    "sposti",
+    "spostiamo",
+    "spostiate",
+    "spostino"
+   ]
+  }
+ },
+ {
+  "unit": 16,
+  "level": "A2",
+  "inf": "riparare",
+  "en": "to repair; to fix",
+  "aux": "avere",
+  "kind": "regular -are",
+  "note": "Also <b>aggiustare</b> (more everyday). <b>Ripararsi</b> = to take shelter: <i>ripararsi dalla pioggia</i>.",
+  "t": {
+   "pres": [
+    "riparo",
+    "ripari",
+    "ripara",
+    "ripariamo",
+    "riparate",
+    "riparano"
+   ],
+   "pp": [
+    "ho riparato",
+    "hai riparato",
+    "ha riparato",
+    "abbiamo riparato",
+    "avete riparato",
+    "hanno riparato"
+   ],
+   "imp": [
+    "riparavo",
+    "riparavi",
+    "riparava",
+    "riparavamo",
+    "riparavate",
+    "riparavano"
+   ],
+   "fut": [
+    "riparerò",
+    "riparerai",
+    "riparerà",
+    "ripareremo",
+    "riparerete",
+    "ripareranno"
+   ],
+   "cond": [
+    "riparerei",
+    "ripareresti",
+    "riparerebbe",
+    "ripareremmo",
+    "riparereste",
+    "riparerebbero"
+   ],
+   "cong": [
+    "ripari",
+    "ripari",
+    "ripari",
+    "ripariamo",
+    "ripariate",
+    "riparino"
+   ]
+  }
+ },
+ {
+  "unit": 17,
+  "level": "A2",
+  "inf": "cuocere",
+  "en": "to cook (with heat); to bake",
+  "aux": "avere",
+  "kind": "irregular",
+  "note": "Cooking with heat; cooking in general is <b>cucinare</b>. Irregular pp <b>cotto</b>: <i>la torta è cotta</i> = the cake is done.",
+  "t": {
+   "pres": [
+    "cuocio",
+    "cuoci",
+    "cuoce",
+    "cuociamo",
+    "cuocete",
+    "cuociono"
+   ],
+   "pp": [
+    "ho cotto",
+    "hai cotto",
+    "ha cotto",
+    "abbiamo cotto",
+    "avete cotto",
+    "hanno cotto"
+   ],
+   "imp": [
+    "cuocevo",
+    "cuocevi",
+    "cuoceva",
+    "cuocevamo",
+    "cuocevate",
+    "cuocevano"
+   ],
+   "fut": [
+    "cuocerò",
+    "cuocerai",
+    "cuocerà",
+    "cuoceremo",
+    "cuocerete",
+    "cuoceranno"
+   ],
+   "cond": [
+    "cuocerei",
+    "cuoceresti",
+    "cuocerebbe",
+    "cuoceremmo",
+    "cuocereste",
+    "cuocerebbero"
+   ],
+   "cong": [
+    "cuocia",
+    "cuocia",
+    "cuocia",
+    "cuociamo",
+    "cuociate",
+    "cuociano"
+   ]
+  }
+ },
+ {
+  "unit": 17,
+  "level": "A2",
+  "inf": "tagliare",
+  "en": "to cut; to chop; to slice",
+  "aux": "avere",
+  "kind": "regular -are",
+  "note": "<b>Tagliare a fette / a dadini</b> = to slice / to dice. <i>Tagliare corto</i> = to cut it short.",
+  "t": {
+   "pres": [
+    "taglio",
+    "tagli",
+    "taglia",
+    "tagliamo",
+    "tagliate",
+    "tagliano"
+   ],
+   "pp": [
+    "ho tagliato",
+    "hai tagliato",
+    "ha tagliato",
+    "abbiamo tagliato",
+    "avete tagliato",
+    "hanno tagliato"
+   ],
+   "imp": [
+    "tagliavo",
+    "tagliavi",
+    "tagliava",
+    "tagliavamo",
+    "tagliavate",
+    "tagliavano"
+   ],
+   "fut": [
+    "taglierò",
+    "taglierai",
+    "taglierà",
+    "taglieremo",
+    "taglierete",
+    "taglieranno"
+   ],
+   "cond": [
+    "taglierei",
+    "taglieresti",
+    "taglierebbe",
+    "taglieremmo",
+    "tagliereste",
+    "taglierebbero"
+   ],
+   "cong": [
+    "tagli",
+    "tagli",
+    "tagli",
+    "tagliamo",
+    "tagliate",
+    "taglino"
+   ]
+  }
+ },
+ {
+  "unit": 17,
+  "level": "A2",
+  "inf": "bollire",
+  "en": "to boil",
+  "aux": "avere",
+  "kind": "regular -ire",
+  "note": "Mostly about water or food: <i>l'acqua bolle</i>. <b>Far bollire</b> = to bring to the boil; <i>il bollito</i> is boiled meat.",
+  "t": {
+   "pres": [
+    "bollo",
+    "bolli",
+    "bolle",
+    "bolliamo",
+    "bollite",
+    "bollono"
+   ],
+   "pp": [
+    "ho bollito",
+    "hai bollito",
+    "ha bollito",
+    "abbiamo bollito",
+    "avete bollito",
+    "hanno bollito"
+   ],
+   "imp": [
+    "bollivo",
+    "bollivi",
+    "bolliva",
+    "bollivamo",
+    "bollivate",
+    "bollivano"
+   ],
+   "fut": [
+    "bollirò",
+    "bollirai",
+    "bollirà",
+    "bolliremo",
+    "bollirete",
+    "bolliranno"
+   ],
+   "cond": [
+    "bollirei",
+    "bolliresti",
+    "bollirebbe",
+    "bolliremmo",
+    "bollireste",
+    "bollirebbero"
+   ],
+   "cong": [
+    "bolla",
+    "bolla",
+    "bolla",
+    "bolliamo",
+    "bolliate",
+    "bollano"
+   ]
+  }
+ },
+ {
+  "unit": 17,
+  "level": "A2",
+  "inf": "friggere",
+  "en": "to fry",
+  "aux": "avere",
+  "kind": "irregular",
+  "note": "Irregular pp <b>fritto</b>; <i>il fritto misto</i> = mixed fried fish or vegetables. <i>Vai a farti friggere!</i> = get lost! (informal)",
+  "t": {
+   "pres": [
+    "friggo",
+    "friggi",
+    "frigge",
+    "friggiamo",
+    "friggete",
+    "friggono"
+   ],
+   "pp": [
+    "ho fritto",
+    "hai fritto",
+    "ha fritto",
+    "abbiamo fritto",
+    "avete fritto",
+    "hanno fritto"
+   ],
+   "imp": [
+    "friggevo",
+    "friggevi",
+    "friggeva",
+    "friggevamo",
+    "friggevate",
+    "friggevano"
+   ],
+   "fut": [
+    "friggerò",
+    "friggerai",
+    "friggerà",
+    "friggeremo",
+    "friggerete",
+    "friggeranno"
+   ],
+   "cond": [
+    "friggerei",
+    "friggeresti",
+    "friggerebbe",
+    "friggeremmo",
+    "friggereste",
+    "friggerebbero"
+   ],
+   "cong": [
+    "frigga",
+    "frigga",
+    "frigga",
+    "friggiamo",
+    "friggiate",
+    "friggano"
+   ]
+  }
+ },
+ {
+  "unit": 17,
+  "level": "A2",
+  "inf": "aggiungere",
+  "en": "to add",
+  "aux": "avere",
+  "kind": "irregular",
+  "note": "Irregular pp <b>aggiunto</b>. <b>Aggiungere a</b>: <i>aggiungi lo zucchero alle uova</i>. In conversation: <i>aggiungo una cosa</i> = let me add something.",
+  "t": {
+   "pres": [
+    "aggiungo",
+    "aggiungi",
+    "aggiunge",
+    "aggiungiamo",
+    "aggiungete",
+    "aggiungono"
+   ],
+   "pp": [
+    "ho aggiunto",
+    "hai aggiunto",
+    "ha aggiunto",
+    "abbiamo aggiunto",
+    "avete aggiunto",
+    "hanno aggiunto"
+   ],
+   "imp": [
+    "aggiungevo",
+    "aggiungevi",
+    "aggiungeva",
+    "aggiungevamo",
+    "aggiungevate",
+    "aggiungevano"
+   ],
+   "fut": [
+    "aggiungerò",
+    "aggiungerai",
+    "aggiungerà",
+    "aggiungeremo",
+    "aggiungerete",
+    "aggiungeranno"
+   ],
+   "cond": [
+    "aggiungerei",
+    "aggiungeresti",
+    "aggiungerebbe",
+    "aggiungeremmo",
+    "aggiungereste",
+    "aggiungerebbero"
+   ],
+   "cong": [
+    "aggiunga",
+    "aggiunga",
+    "aggiunga",
+    "aggiungiamo",
+    "aggiungiate",
+    "aggiungano"
+   ]
+  }
+ },
+ {
+  "unit": 17,
+  "level": "A2",
+  "inf": "mescolare",
+  "en": "to stir; to mix",
+  "aux": "avere",
+  "kind": "regular -are",
+  "note": "Stress on the first syllable: <b>mé</b>scolo. In recipes you'll also see <b>girare</b> (<i>gira il sugo</i>). <i>Mescolare le carte</i> = to shuffle cards.",
+  "t": {
+   "pres": [
+    "mescolo",
+    "mescoli",
+    "mescola",
+    "mescoliamo",
+    "mescolate",
+    "mescolano"
+   ],
+   "pp": [
+    "ho mescolato",
+    "hai mescolato",
+    "ha mescolato",
+    "abbiamo mescolato",
+    "avete mescolato",
+    "hanno mescolato"
+   ],
+   "imp": [
+    "mescolavo",
+    "mescolavi",
+    "mescolava",
+    "mescolavamo",
+    "mescolavate",
+    "mescolavano"
+   ],
+   "fut": [
+    "mescolerò",
+    "mescolerai",
+    "mescolerà",
+    "mescoleremo",
+    "mescolerete",
+    "mescoleranno"
+   ],
+   "cond": [
+    "mescolerei",
+    "mescoleresti",
+    "mescolerebbe",
+    "mescoleremmo",
+    "mescolereste",
+    "mescolerebbero"
+   ],
+   "cong": [
+    "mescoli",
+    "mescoli",
+    "mescoli",
+    "mescoliamo",
+    "mescoliate",
+    "mescolino"
+   ]
+  }
+ },
+ {
+  "unit": 17,
+  "level": "A2",
+  "inf": "assaggiare",
+  "en": "to taste; to try (food)",
+  "aux": "avere",
+  "kind": "regular -are",
+  "note": "You <b>assaggi</b> food; food that <i>tastes of</i> something uses <b>sapere di</b>: <i>sa di limone</i>.",
+  "t": {
+   "pres": [
+    "assaggio",
+    "assaggi",
+    "assaggia",
+    "assaggiamo",
+    "assaggiate",
+    "assaggiano"
+   ],
+   "pp": [
+    "ho assaggiato",
+    "hai assaggiato",
+    "ha assaggiato",
+    "abbiamo assaggiato",
+    "avete assaggiato",
+    "hanno assaggiato"
+   ],
+   "imp": [
+    "assaggiavo",
+    "assaggiavi",
+    "assaggiava",
+    "assaggiavamo",
+    "assaggiavate",
+    "assaggiavano"
+   ],
+   "fut": [
+    "assaggerò",
+    "assaggerai",
+    "assaggerà",
+    "assaggeremo",
+    "assaggerete",
+    "assaggeranno"
+   ],
+   "cond": [
+    "assaggerei",
+    "assaggeresti",
+    "assaggerebbe",
+    "assaggeremmo",
+    "assaggereste",
+    "assaggerebbero"
+   ],
+   "cong": [
+    "assaggi",
+    "assaggi",
+    "assaggi",
+    "assaggiamo",
+    "assaggiate",
+    "assaggino"
+   ]
+  }
+ },
+ {
+  "unit": 17,
+  "level": "A2",
+  "inf": "servire",
+  "en": "to serve; to be needed",
+  "aux": "avere",
+  "kind": "regular -ire",
+  "note": "Serving food takes avere: <i>ho servito la cena</i>. Meaning <i>to be needed</i> it takes essere and an indirect pronoun: <b>mi serve</b> un coltello, <b>mi è servito</b>.",
+  "t": {
+   "pres": [
+    "servo",
+    "servi",
+    "serve",
+    "serviamo",
+    "servite",
+    "servono"
+   ],
+   "pp": [
+    "ho servito",
+    "hai servito",
+    "ha servito",
+    "abbiamo servito",
+    "avete servito",
+    "hanno servito"
+   ],
+   "imp": [
+    "servivo",
+    "servivi",
+    "serviva",
+    "servivamo",
+    "servivate",
+    "servivano"
+   ],
+   "fut": [
+    "servirò",
+    "servirai",
+    "servirà",
+    "serviremo",
+    "servirete",
+    "serviranno"
+   ],
+   "cond": [
+    "servirei",
+    "serviresti",
+    "servirebbe",
+    "serviremmo",
+    "servireste",
+    "servirebbero"
+   ],
+   "cong": [
+    "serva",
+    "serva",
+    "serva",
+    "serviamo",
+    "serviate",
+    "servano"
+   ]
+  }
+ },
+ {
+  "unit": 18,
+  "level": "A2",
+  "inf": "rispondere",
+  "en": "to answer; to reply",
+  "aux": "avere",
+  "kind": "irregular",
+  "note": "Takes <b>a</b>: <i>rispondere a una domanda / al telefono / a Luca</i>. Irregular pp <b>risposto</b>.",
+  "t": {
+   "pres": [
+    "rispondo",
+    "rispondi",
+    "risponde",
+    "rispondiamo",
+    "rispondete",
+    "rispondono"
+   ],
+   "pp": [
+    "ho risposto",
+    "hai risposto",
+    "ha risposto",
+    "abbiamo risposto",
+    "avete risposto",
+    "hanno risposto"
+   ],
+   "imp": [
+    "rispondevo",
+    "rispondevi",
+    "rispondeva",
+    "rispondevamo",
+    "rispondevate",
+    "rispondevano"
+   ],
+   "fut": [
+    "risponderò",
+    "risponderai",
+    "risponderà",
+    "risponderemo",
+    "risponderete",
+    "risponderanno"
+   ],
+   "cond": [
+    "risponderei",
+    "risponderesti",
+    "risponderebbe",
+    "risponderemmo",
+    "rispondereste",
+    "risponderebbero"
+   ],
+   "cong": [
+    "risponda",
+    "risponda",
+    "risponda",
+    "rispondiamo",
+    "rispondiate",
+    "rispondano"
+   ]
+  }
+ },
+ {
+  "unit": 18,
+  "level": "A2",
+  "inf": "spiegare",
+  "en": "to explain",
+  "aux": "avere",
+  "kind": "regular -are",
+  "note": "Adds an <b>h</b> before -i and -e: <i>spieghi, spiegherò</i>. <b>Spiegare qualcosa a qualcuno</b>.",
+  "t": {
+   "pres": [
+    "spiego",
+    "spieghi",
+    "spiega",
+    "spieghiamo",
+    "spiegate",
+    "spiegano"
+   ],
+   "pp": [
+    "ho spiegato",
+    "hai spiegato",
+    "ha spiegato",
+    "abbiamo spiegato",
+    "avete spiegato",
+    "hanno spiegato"
+   ],
+   "imp": [
+    "spiegavo",
+    "spiegavi",
+    "spiegava",
+    "spiegavamo",
+    "spiegavate",
+    "spiegavano"
+   ],
+   "fut": [
+    "spiegherò",
+    "spiegherai",
+    "spiegherà",
+    "spiegheremo",
+    "spiegherete",
+    "spiegheranno"
+   ],
+   "cond": [
+    "spiegherei",
+    "spiegheresti",
+    "spiegherebbe",
+    "spiegheremmo",
+    "spieghereste",
+    "spiegherebbero"
+   ],
+   "cong": [
+    "spieghi",
+    "spieghi",
+    "spieghi",
+    "spieghiamo",
+    "spieghiate",
+    "spieghino"
+   ]
+  }
+ },
+ {
+  "unit": 18,
+  "level": "A2",
+  "inf": "capire",
+  "en": "to understand; to realise",
+  "aux": "avere",
+  "kind": "-ire (-isc-)",
+  "note": "<b>Ho capito</b> = I understand / got it (passato prossimo for <i>right now</i>). <i>Si capisce!</i> = of course!",
+  "t": {
+   "pres": [
+    "capisco",
+    "capisci",
+    "capisce",
+    "capiamo",
+    "capite",
+    "capiscono"
+   ],
+   "pp": [
+    "ho capito",
+    "hai capito",
+    "ha capito",
+    "abbiamo capito",
+    "avete capito",
+    "hanno capito"
+   ],
+   "imp": [
+    "capivo",
+    "capivi",
+    "capiva",
+    "capivamo",
+    "capivate",
+    "capivano"
+   ],
+   "fut": [
+    "capirò",
+    "capirai",
+    "capirà",
+    "capiremo",
+    "capirete",
+    "capiranno"
+   ],
+   "cond": [
+    "capirei",
+    "capiresti",
+    "capirebbe",
+    "capiremmo",
+    "capireste",
+    "capirebbero"
+   ],
+   "cong": [
+    "capisca",
+    "capisca",
+    "capisca",
+    "capiamo",
+    "capiate",
+    "capiscano"
+   ]
+  }
+ },
+ {
+  "unit": 18,
+  "level": "A2",
+  "inf": "ripetere",
+  "en": "to repeat; to revise",
+  "aux": "avere",
+  "kind": "regular -ere",
+  "note": "Also means <i>to revise</i> for a test. <b>Ripeto</b> stresses a point, like <i>I repeat</i>.",
+  "t": {
+   "pres": [
+    "ripeto",
+    "ripeti",
+    "ripete",
+    "ripetiamo",
+    "ripetete",
+    "ripetono"
+   ],
+   "pp": [
+    "ho ripetuto",
+    "hai ripetuto",
+    "ha ripetuto",
+    "abbiamo ripetuto",
+    "avete ripetuto",
+    "hanno ripetuto"
+   ],
+   "imp": [
+    "ripetevo",
+    "ripetevi",
+    "ripeteva",
+    "ripetevamo",
+    "ripetevate",
+    "ripetevano"
+   ],
+   "fut": [
+    "ripeterò",
+    "ripeterai",
+    "ripeterà",
+    "ripeteremo",
+    "ripeterete",
+    "ripeteranno"
+   ],
+   "cond": [
+    "ripeterei",
+    "ripeteresti",
+    "ripeterebbe",
+    "ripeteremmo",
+    "ripetereste",
+    "ripeterebbero"
+   ],
+   "cong": [
+    "ripeta",
+    "ripeta",
+    "ripeta",
+    "ripetiamo",
+    "ripetiate",
+    "ripetano"
+   ]
+  }
+ },
+ {
+  "unit": 18,
+  "level": "A2",
+  "inf": "mostrare",
+  "en": "to show",
+  "aux": "avere",
+  "kind": "regular -are",
+  "note": "<b>Mostrare qualcosa a qualcuno</b>. In speech Italians often say <b>far vedere</b>: <i>fammi vedere</i> = show me.",
+  "t": {
+   "pres": [
+    "mostro",
+    "mostri",
+    "mostra",
+    "mostriamo",
+    "mostrate",
+    "mostrano"
+   ],
+   "pp": [
+    "ho mostrato",
+    "hai mostrato",
+    "ha mostrato",
+    "abbiamo mostrato",
+    "avete mostrato",
+    "hanno mostrato"
+   ],
+   "imp": [
+    "mostravo",
+    "mostravi",
+    "mostrava",
+    "mostravamo",
+    "mostravate",
+    "mostravano"
+   ],
+   "fut": [
+    "mostrerò",
+    "mostrerai",
+    "mostrerà",
+    "mostreremo",
+    "mostrerete",
+    "mostreranno"
+   ],
+   "cond": [
+    "mostrerei",
+    "mostreresti",
+    "mostrerebbe",
+    "mostreremmo",
+    "mostrereste",
+    "mostrerebbero"
+   ],
+   "cong": [
+    "mostri",
+    "mostri",
+    "mostri",
+    "mostriamo",
+    "mostriate",
+    "mostrino"
+   ]
+  }
+ },
+ {
+  "unit": 18,
+  "level": "A2",
+  "inf": "inviare",
+  "en": "to send",
+  "aux": "avere",
+  "kind": "regular -are",
+  "note": "The word on the email button; in speech Italians mostly say <b>mandare</b>. The stressed <b>i</b> stays: <i>invii, inviino</i>.",
+  "t": {
+   "pres": [
+    "invio",
+    "invii",
+    "invia",
+    "inviamo",
+    "inviate",
+    "inviano"
+   ],
+   "pp": [
+    "ho inviato",
+    "hai inviato",
+    "ha inviato",
+    "abbiamo inviato",
+    "avete inviato",
+    "hanno inviato"
+   ],
+   "imp": [
+    "inviavo",
+    "inviavi",
+    "inviava",
+    "inviavamo",
+    "inviavate",
+    "inviavano"
+   ],
+   "fut": [
+    "invierò",
+    "invierai",
+    "invierà",
+    "invieremo",
+    "invierete",
+    "invieranno"
+   ],
+   "cond": [
+    "invierei",
+    "invieresti",
+    "invierebbe",
+    "invieremmo",
+    "inviereste",
+    "invierebbero"
+   ],
+   "cong": [
+    "invii",
+    "invii",
+    "invii",
+    "inviamo",
+    "inviate",
+    "inviino"
+   ]
+  }
+ },
+ {
+  "unit": 18,
+  "level": "A2",
+  "inf": "condividere",
+  "en": "to share",
+  "aux": "avere",
+  "kind": "irregular",
+  "note": "Irregular pp <b>condiviso</b>. For posts, files, flats and opinions: <i>condivido la tua opinione</i>.",
+  "t": {
+   "pres": [
+    "condivido",
+    "condividi",
+    "condivide",
+    "condividiamo",
+    "condividete",
+    "condividono"
+   ],
+   "pp": [
+    "ho condiviso",
+    "hai condiviso",
+    "ha condiviso",
+    "abbiamo condiviso",
+    "avete condiviso",
+    "hanno condiviso"
+   ],
+   "imp": [
+    "condividevo",
+    "condividevi",
+    "condivideva",
+    "condividevamo",
+    "condividevate",
+    "condividevano"
+   ],
+   "fut": [
+    "condividerò",
+    "condividerai",
+    "condividerà",
+    "condivideremo",
+    "condividerete",
+    "condivideranno"
+   ],
+   "cond": [
+    "condividerei",
+    "condivideresti",
+    "condividerebbe",
+    "condivideremmo",
+    "condividereste",
+    "condividerebbero"
+   ],
+   "cong": [
+    "condivida",
+    "condivida",
+    "condivida",
+    "condividiamo",
+    "condividiate",
+    "condividano"
+   ]
+  }
+ },
+ {
+  "unit": 18,
+  "level": "A2",
+  "inf": "scaricare",
+  "en": "to download; to unload",
+  "aux": "avere",
+  "kind": "regular -are",
+  "note": "Adds an <b>h</b>: <i>scarichi, scaricherò</i>. The opposite is <b>caricare</b> (to upload; to charge). <i>Il telefono è scarico</i> = the phone is dead.",
+  "t": {
+   "pres": [
+    "scarico",
+    "scarichi",
+    "scarica",
+    "scarichiamo",
+    "scaricate",
+    "scaricano"
+   ],
+   "pp": [
+    "ho scaricato",
+    "hai scaricato",
+    "ha scaricato",
+    "abbiamo scaricato",
+    "avete scaricato",
+    "hanno scaricato"
+   ],
+   "imp": [
+    "scaricavo",
+    "scaricavi",
+    "scaricava",
+    "scaricavamo",
+    "scaricavate",
+    "scaricavano"
+   ],
+   "fut": [
+    "scaricherò",
+    "scaricherai",
+    "scaricherà",
+    "scaricheremo",
+    "scaricherete",
+    "scaricheranno"
+   ],
+   "cond": [
+    "scaricherei",
+    "scaricheresti",
+    "scaricherebbe",
+    "scaricheremmo",
+    "scarichereste",
+    "scaricherebbero"
+   ],
+   "cong": [
+    "scarichi",
+    "scarichi",
+    "scarichi",
+    "scarichiamo",
+    "scarichiate",
+    "scarichino"
+   ]
+  }
+ },
+ {
+  "unit": 19,
+  "level": "A2",
+  "inf": "pensare",
+  "en": "to think",
+  "aux": "avere",
+  "kind": "regular -are",
+  "note": "<b>Pensare a</b> = to think about (<i>penso a te</i>); <b>pensare di</b> + inf. = to plan to (<i>penso di partire</i>); <b>penso che</b> + congiuntivo.",
+  "t": {
+   "pres": [
+    "penso",
+    "pensi",
+    "pensa",
+    "pensiamo",
+    "pensate",
+    "pensano"
+   ],
+   "pp": [
+    "ho pensato",
+    "hai pensato",
+    "ha pensato",
+    "abbiamo pensato",
+    "avete pensato",
+    "hanno pensato"
+   ],
+   "imp": [
+    "pensavo",
+    "pensavi",
+    "pensava",
+    "pensavamo",
+    "pensavate",
+    "pensavano"
+   ],
+   "fut": [
+    "penserò",
+    "penserai",
+    "penserà",
+    "penseremo",
+    "penserete",
+    "penseranno"
+   ],
+   "cond": [
+    "penserei",
+    "penseresti",
+    "penserebbe",
+    "penseremmo",
+    "pensereste",
+    "penserebbero"
+   ],
+   "cong": [
+    "pensi",
+    "pensi",
+    "pensi",
+    "pensiamo",
+    "pensiate",
+    "pensino"
+   ]
+  }
+ },
+ {
+  "unit": 19,
+  "level": "A2",
+  "inf": "credere",
+  "en": "to believe; to think",
+  "aux": "avere",
+  "kind": "regular -ere",
+  "note": "<b>Credere a</b> someone or a story (<i>ti credo</i>), <b>credere in</b> (<i>credo in te</i>). <b>Credo che</b> + congiuntivo; <i>credo di sì / di no</i> = I think so / I don't think so.",
+  "t": {
+   "pres": [
+    "credo",
+    "credi",
+    "crede",
+    "crediamo",
+    "credete",
+    "credono"
+   ],
+   "pp": [
+    "ho creduto",
+    "hai creduto",
+    "ha creduto",
+    "abbiamo creduto",
+    "avete creduto",
+    "hanno creduto"
+   ],
+   "imp": [
+    "credevo",
+    "credevi",
+    "credeva",
+    "credevamo",
+    "credevate",
+    "credevano"
+   ],
+   "fut": [
+    "crederò",
+    "crederai",
+    "crederà",
+    "crederemo",
+    "crederete",
+    "crederanno"
+   ],
+   "cond": [
+    "crederei",
+    "crederesti",
+    "crederebbe",
+    "crederemmo",
+    "credereste",
+    "crederebbero"
+   ],
+   "cong": [
+    "creda",
+    "creda",
+    "creda",
+    "crediamo",
+    "crediate",
+    "credano"
+   ]
+  }
+ },
+ {
+  "unit": 19,
+  "level": "A2",
+  "inf": "immaginare",
+  "en": "to imagine; to suppose",
+  "aux": "avere",
+  "kind": "regular -are",
+  "note": "<b>Immagino</b> = I suppose / I guess. Stress: im<b>mà</b>gino. Formal reply to thanks: <i>Si immagini!</i> = Not at all!",
+  "t": {
+   "pres": [
+    "immagino",
+    "immagini",
+    "immagina",
+    "immaginiamo",
+    "immaginate",
+    "immaginano"
+   ],
+   "pp": [
+    "ho immaginato",
+    "hai immaginato",
+    "ha immaginato",
+    "abbiamo immaginato",
+    "avete immaginato",
+    "hanno immaginato"
+   ],
+   "imp": [
+    "immaginavo",
+    "immaginavi",
+    "immaginava",
+    "immaginavamo",
+    "immaginavate",
+    "immaginavano"
+   ],
+   "fut": [
+    "immaginerò",
+    "immaginerai",
+    "immaginerà",
+    "immagineremo",
+    "immaginerete",
+    "immagineranno"
+   ],
+   "cond": [
+    "immaginerei",
+    "immagineresti",
+    "immaginerebbe",
+    "immagineremmo",
+    "immaginereste",
+    "immaginerebbero"
+   ],
+   "cong": [
+    "immagini",
+    "immagini",
+    "immagini",
+    "immaginiamo",
+    "immaginiate",
+    "immaginino"
+   ]
+  }
+ },
+ {
+  "unit": 19,
+  "level": "A2",
+  "inf": "sognare",
+  "en": "to dream; to dream of",
+  "aux": "avere",
+  "kind": "regular -are",
+  "note": "<b>Sognare di</b> + inf.: <i>sogno di vivere al mare</i>. <i>Neanche per sogno!</i> = not a chance!",
+  "t": {
+   "pres": [
+    "sogno",
+    "sogni",
+    "sogna",
+    "sogniamo",
+    "sognate",
+    "sognano"
+   ],
+   "pp": [
+    "ho sognato",
+    "hai sognato",
+    "ha sognato",
+    "abbiamo sognato",
+    "avete sognato",
+    "hanno sognato"
+   ],
+   "imp": [
+    "sognavo",
+    "sognavi",
+    "sognava",
+    "sognavamo",
+    "sognavate",
+    "sognavano"
+   ],
+   "fut": [
+    "sognerò",
+    "sognerai",
+    "sognerà",
+    "sogneremo",
+    "sognerete",
+    "sogneranno"
+   ],
+   "cond": [
+    "sognerei",
+    "sogneresti",
+    "sognerebbe",
+    "sogneremmo",
+    "sognereste",
+    "sognerebbero"
+   ],
+   "cong": [
+    "sogni",
+    "sogni",
+    "sogni",
+    "sogniamo",
+    "sogniate",
+    "sognino"
+   ]
+  }
+ },
+ {
+  "unit": 19,
+  "level": "A2",
+  "inf": "tentare",
+  "en": "to try; to attempt",
+  "aux": "avere",
+  "kind": "regular -are",
+  "note": "<b>Tentare di</b> + inf.; a little more formal than <i>provare a</i>. Proverb: <i>Tentar non nuoce</i> = there's no harm in trying.",
+  "t": {
+   "pres": [
+    "tento",
+    "tenti",
+    "tenta",
+    "tentiamo",
+    "tentate",
+    "tentano"
+   ],
+   "pp": [
+    "ho tentato",
+    "hai tentato",
+    "ha tentato",
+    "abbiamo tentato",
+    "avete tentato",
+    "hanno tentato"
+   ],
+   "imp": [
+    "tentavo",
+    "tentavi",
+    "tentava",
+    "tentavamo",
+    "tentavate",
+    "tentavano"
+   ],
+   "fut": [
+    "tenterò",
+    "tenterai",
+    "tenterà",
+    "tenteremo",
+    "tenterete",
+    "tenteranno"
+   ],
+   "cond": [
+    "tenterei",
+    "tenteresti",
+    "tenterebbe",
+    "tenteremmo",
+    "tentereste",
+    "tenterebbero"
+   ],
+   "cong": [
+    "tenti",
+    "tenti",
+    "tenti",
+    "tentiamo",
+    "tentiate",
+    "tentino"
+   ]
+  }
+ },
+ {
+  "unit": 19,
+  "level": "A2",
+  "inf": "prepararsi",
+  "en": "to get ready; to prepare oneself",
+  "aux": "essere",
+  "kind": "reflexive",
+  "note": "<b>Prepararsi per</b> + noun (<i>mi preparo per la festa</i>), <b>prepararsi a</b> + inf. Without -si it's transitive: <i>preparare la cena</i>.",
+  "t": {
+   "pres": [
+    "mi preparo",
+    "ti prepari",
+    "si prepara",
+    "ci prepariamo",
+    "vi preparate",
+    "si preparano"
+   ],
+   "pp": [
+    "mi sono preparato/a",
+    "ti sei preparato/a",
+    "si è preparato/a",
+    "ci siamo preparati/e",
+    "vi siete preparati/e",
+    "si sono preparati/e"
+   ],
+   "imp": [
+    "mi preparavo",
+    "ti preparavi",
+    "si preparava",
+    "ci preparavamo",
+    "vi preparavate",
+    "si preparavano"
+   ],
+   "fut": [
+    "mi preparerò",
+    "ti preparerai",
+    "si preparerà",
+    "ci prepareremo",
+    "vi preparerete",
+    "si prepareranno"
+   ],
+   "cond": [
+    "mi preparerei",
+    "ti prepareresti",
+    "si preparerebbe",
+    "ci prepareremmo",
+    "vi preparereste",
+    "si preparerebbero"
+   ],
+   "cong": [
+    "mi prepari",
+    "ti prepari",
+    "si prepari",
+    "ci prepariamo",
+    "vi prepariate",
+    "si preparino"
+   ]
+  }
+ },
+ {
+  "unit": 19,
+  "level": "A2",
+  "inf": "rimandare",
+  "en": "to postpone; to put off; to send back",
+  "aux": "avere",
+  "kind": "regular -are",
+  "note": "<b>Rimandare a</b> + date: <i>rimandiamo a lunedì</i>. Proverb: <i>Non rimandare a domani quello che puoi fare oggi.</i>",
+  "t": {
+   "pres": [
+    "rimando",
+    "rimandi",
+    "rimanda",
+    "rimandiamo",
+    "rimandate",
+    "rimandano"
+   ],
+   "pp": [
+    "ho rimandato",
+    "hai rimandato",
+    "ha rimandato",
+    "abbiamo rimandato",
+    "avete rimandato",
+    "hanno rimandato"
+   ],
+   "imp": [
+    "rimandavo",
+    "rimandavi",
+    "rimandava",
+    "rimandavamo",
+    "rimandavate",
+    "rimandavano"
+   ],
+   "fut": [
+    "rimanderò",
+    "rimanderai",
+    "rimanderà",
+    "rimanderemo",
+    "rimanderete",
+    "rimanderanno"
+   ],
+   "cond": [
+    "rimanderei",
+    "rimanderesti",
+    "rimanderebbe",
+    "rimanderemmo",
+    "rimandereste",
+    "rimanderebbero"
+   ],
+   "cong": [
+    "rimandi",
+    "rimandi",
+    "rimandi",
+    "rimandiamo",
+    "rimandiate",
+    "rimandino"
+   ]
+  }
+ },
+ {
+  "unit": 19,
+  "level": "A2",
+  "inf": "invitare",
+  "en": "to invite",
+  "aux": "avere",
+  "kind": "regular -are",
+  "note": "<b>Invitare a</b> + event or inf.: <i>mi ha invitato a cena</i>. <b>Ti invito io</b> can also mean <i>it's my treat</i>.",
+  "t": {
+   "pres": [
+    "invito",
+    "inviti",
+    "invita",
+    "invitiamo",
+    "invitate",
+    "invitano"
+   ],
+   "pp": [
+    "ho invitato",
+    "hai invitato",
+    "ha invitato",
+    "abbiamo invitato",
+    "avete invitato",
+    "hanno invitato"
+   ],
+   "imp": [
+    "invitavo",
+    "invitavi",
+    "invitava",
+    "invitavamo",
+    "invitavate",
+    "invitavano"
+   ],
+   "fut": [
+    "inviterò",
+    "inviterai",
+    "inviterà",
+    "inviteremo",
+    "inviterete",
+    "inviteranno"
+   ],
+   "cond": [
+    "inviterei",
+    "inviteresti",
+    "inviterebbe",
+    "inviteremmo",
+    "invitereste",
+    "inviterebbero"
+   ],
+   "cong": [
+    "inviti",
+    "inviti",
+    "inviti",
+    "invitiamo",
+    "invitiate",
+    "invitino"
+   ]
+  }
+ },
+ {
+  "unit": 20,
+  "level": "A2",
+  "inf": "spedire",
+  "en": "to send; to post; to ship",
+  "aux": "avere",
+  "kind": "-ire (-isc-)",
+  "note": "For letters and parcels: <i>spedire un pacco</i>. For emails and texts use <i>mandare</i> or <i>inviare</i>.",
+  "t": {
+   "pres": [
+    "spedisco",
+    "spedisci",
+    "spedisce",
+    "spediamo",
+    "spedite",
+    "spediscono"
+   ],
+   "pp": [
+    "ho spedito",
+    "hai spedito",
+    "ha spedito",
+    "abbiamo spedito",
+    "avete spedito",
+    "hanno spedito"
+   ],
+   "imp": [
+    "spedivo",
+    "spedivi",
+    "spediva",
+    "spedivamo",
+    "spedivate",
+    "spedivano"
+   ],
+   "fut": [
+    "spedirò",
+    "spedirai",
+    "spedirà",
+    "spediremo",
+    "spedirete",
+    "spediranno"
+   ],
+   "cond": [
+    "spedirei",
+    "spediresti",
+    "spedirebbe",
+    "spediremmo",
+    "spedireste",
+    "spedirebbero"
+   ],
+   "cong": [
+    "spedisca",
+    "spedisca",
+    "spedisca",
+    "spediamo",
+    "spediate",
+    "spediscano"
+   ]
+  }
+ },
+ {
+  "unit": 20,
+  "level": "A2",
+  "inf": "compilare",
+  "en": "to fill in (a form); to complete",
+  "aux": "avere",
+  "kind": "regular -are",
+  "note": "False friend: <b>compilare un modulo</b> = to fill in a form. In speech also <i>riempire un modulo</i>.",
+  "t": {
+   "pres": [
+    "compilo",
+    "compili",
+    "compila",
+    "compiliamo",
+    "compilate",
+    "compilano"
+   ],
+   "pp": [
+    "ho compilato",
+    "hai compilato",
+    "ha compilato",
+    "abbiamo compilato",
+    "avete compilato",
+    "hanno compilato"
+   ],
+   "imp": [
+    "compilavo",
+    "compilavi",
+    "compilava",
+    "compilavamo",
+    "compilavate",
+    "compilavano"
+   ],
+   "fut": [
+    "compilerò",
+    "compilerai",
+    "compilerà",
+    "compileremo",
+    "compilerete",
+    "compileranno"
+   ],
+   "cond": [
+    "compilerei",
+    "compileresti",
+    "compilerebbe",
+    "compileremmo",
+    "compilereste",
+    "compilerebbero"
+   ],
+   "cong": [
+    "compili",
+    "compili",
+    "compili",
+    "compiliamo",
+    "compiliate",
+    "compilino"
+   ]
+  }
+ },
+ {
+  "unit": 20,
+  "level": "A2",
+  "inf": "prestare",
+  "en": "to lend",
+  "aux": "avere",
+  "kind": "regular -are",
+  "note": "<b>Prestare</b> = to lend; to borrow is <b>farsi prestare</b> or <i>prendere in prestito</i>. <i>Prestare attenzione</i> = to pay attention.",
+  "t": {
+   "pres": [
+    "presto",
+    "presti",
+    "presta",
+    "prestiamo",
+    "prestate",
+    "prestano"
+   ],
+   "pp": [
+    "ho prestato",
+    "hai prestato",
+    "ha prestato",
+    "abbiamo prestato",
+    "avete prestato",
+    "hanno prestato"
+   ],
+   "imp": [
+    "prestavo",
+    "prestavi",
+    "prestava",
+    "prestavamo",
+    "prestavate",
+    "prestavano"
+   ],
+   "fut": [
+    "presterò",
+    "presterai",
+    "presterà",
+    "presteremo",
+    "presterete",
+    "presteranno"
+   ],
+   "cond": [
+    "presterei",
+    "presteresti",
+    "presterebbe",
+    "presteremmo",
+    "prestereste",
+    "presterebbero"
+   ],
+   "cong": [
+    "presti",
+    "presti",
+    "presti",
+    "prestiamo",
+    "prestiate",
+    "prestino"
+   ]
+  }
+ },
+ {
+  "unit": 20,
+  "level": "A2",
+  "inf": "restituire",
+  "en": "to give back; to return",
+  "aux": "avere",
+  "kind": "-ire (-isc-)",
+  "note": "<b>Restituire qualcosa a qualcuno</b>. In everyday speech also <i>ridare</i> or <i>rendere</i>.",
+  "t": {
+   "pres": [
+    "restituisco",
+    "restituisci",
+    "restituisce",
+    "restituiamo",
+    "restituite",
+    "restituiscono"
+   ],
+   "pp": [
+    "ho restituito",
+    "hai restituito",
+    "ha restituito",
+    "abbiamo restituito",
+    "avete restituito",
+    "hanno restituito"
+   ],
+   "imp": [
+    "restituivo",
+    "restituivi",
+    "restituiva",
+    "restituivamo",
+    "restituivate",
+    "restituivano"
+   ],
+   "fut": [
+    "restituirò",
+    "restituirai",
+    "restituirà",
+    "restituiremo",
+    "restituirete",
+    "restituiranno"
+   ],
+   "cond": [
+    "restituirei",
+    "restituiresti",
+    "restituirebbe",
+    "restituiremmo",
+    "restituireste",
+    "restituirebbero"
+   ],
+   "cong": [
+    "restituisca",
+    "restituisca",
+    "restituisca",
+    "restituiamo",
+    "restituiate",
+    "restituiscano"
+   ]
+  }
+ },
+ {
+  "unit": 20,
+  "level": "A2",
+  "inf": "funzionare",
+  "en": "to work (of things); to function",
+  "aux": "avere",
+  "kind": "regular -are",
+  "note": "For machines and plans, not people (they <i>lavorano</i>). Mostly 3rd person: <b>non funziona</b> = it doesn't work. Aux avere: <i>ha funzionato</i>.",
+  "t": {
+   "pres": [
+    "funziono",
+    "funzioni",
+    "funziona",
+    "funzioniamo",
+    "funzionate",
+    "funzionano"
+   ],
+   "pp": [
+    "ho funzionato",
+    "hai funzionato",
+    "ha funzionato",
+    "abbiamo funzionato",
+    "avete funzionato",
+    "hanno funzionato"
+   ],
+   "imp": [
+    "funzionavo",
+    "funzionavi",
+    "funzionava",
+    "funzionavamo",
+    "funzionavate",
+    "funzionavano"
+   ],
+   "fut": [
+    "funzionerò",
+    "funzionerai",
+    "funzionerà",
+    "funzioneremo",
+    "funzionerete",
+    "funzioneranno"
+   ],
+   "cond": [
+    "funzionerei",
+    "funzioneresti",
+    "funzionerebbe",
+    "funzioneremmo",
+    "funzionereste",
+    "funzionerebbero"
+   ],
+   "cong": [
+    "funzioni",
+    "funzioni",
+    "funzioni",
+    "funzioniamo",
+    "funzioniate",
+    "funzionino"
+   ]
+  }
+ },
+ {
+  "unit": 20,
+  "level": "A2",
+  "inf": "lamentarsi",
+  "en": "to complain",
+  "aux": "essere",
+  "kind": "reflexive",
+  "note": "<b>Lamentarsi di / per</b> something, <b>con</b> someone: <i>si lamenta del rumore</i>. Formally: <i>fare un reclamo</i>.",
+  "t": {
+   "pres": [
+    "mi lamento",
+    "ti lamenti",
+    "si lamenta",
+    "ci lamentiamo",
+    "vi lamentate",
+    "si lamentano"
+   ],
+   "pp": [
+    "mi sono lamentato/a",
+    "ti sei lamentato/a",
+    "si è lamentato/a",
+    "ci siamo lamentati/e",
+    "vi siete lamentati/e",
+    "si sono lamentati/e"
+   ],
+   "imp": [
+    "mi lamentavo",
+    "ti lamentavi",
+    "si lamentava",
+    "ci lamentavamo",
+    "vi lamentavate",
+    "si lamentavano"
+   ],
+   "fut": [
+    "mi lamenterò",
+    "ti lamenterai",
+    "si lamenterà",
+    "ci lamenteremo",
+    "vi lamenterete",
+    "si lamenteranno"
+   ],
+   "cond": [
+    "mi lamenterei",
+    "ti lamenteresti",
+    "si lamenterebbe",
+    "ci lamenteremmo",
+    "vi lamentereste",
+    "si lamenterebbero"
+   ],
+   "cong": [
+    "mi lamenti",
+    "ti lamenti",
+    "si lamenti",
+    "ci lamentiamo",
+    "vi lamentiate",
+    "si lamentino"
+   ]
+  }
+ },
+ {
+  "unit": 20,
+  "level": "A2",
+  "inf": "risolvere",
+  "en": "to solve; to resolve; to sort out",
+  "aux": "avere",
+  "kind": "irregular",
+  "note": "Irregular pp <b>risolto</b>. <b>Risolversi</b> = to sort itself out: <i>si è risolto tutto</i>.",
+  "t": {
+   "pres": [
+    "risolvo",
+    "risolvi",
+    "risolve",
+    "risolviamo",
+    "risolvete",
+    "risolvono"
+   ],
+   "pp": [
+    "ho risolto",
+    "hai risolto",
+    "ha risolto",
+    "abbiamo risolto",
+    "avete risolto",
+    "hanno risolto"
+   ],
+   "imp": [
+    "risolvevo",
+    "risolvevi",
+    "risolveva",
+    "risolvevamo",
+    "risolvevate",
+    "risolvevano"
+   ],
+   "fut": [
+    "risolverò",
+    "risolverai",
+    "risolverà",
+    "risolveremo",
+    "risolverete",
+    "risolveranno"
+   ],
+   "cond": [
+    "risolverei",
+    "risolveresti",
+    "risolverebbe",
+    "risolveremmo",
+    "risolvereste",
+    "risolverebbero"
+   ],
+   "cong": [
+    "risolva",
+    "risolva",
+    "risolva",
+    "risolviamo",
+    "risolviate",
+    "risolvano"
+   ]
+  }
+ },
+ {
+  "unit": 20,
+  "level": "A2",
+  "inf": "sbagliare",
+  "en": "to make a mistake; to get wrong",
+  "aux": "avere",
+  "kind": "regular -are",
+  "note": "<b>Sbagliare</b> + noun = to get the wrong… (<i>ho sbagliato strada / numero</i>). <b>Sbagliarsi</b> = to be mistaken: <i>mi sono sbagliato</i>.",
+  "t": {
+   "pres": [
+    "sbaglio",
+    "sbagli",
+    "sbaglia",
+    "sbagliamo",
+    "sbagliate",
+    "sbagliano"
+   ],
+   "pp": [
+    "ho sbagliato",
+    "hai sbagliato",
+    "ha sbagliato",
+    "abbiamo sbagliato",
+    "avete sbagliato",
+    "hanno sbagliato"
+   ],
+   "imp": [
+    "sbagliavo",
+    "sbagliavi",
+    "sbagliava",
+    "sbagliavamo",
+    "sbagliavate",
+    "sbagliavano"
+   ],
+   "fut": [
+    "sbaglierò",
+    "sbaglierai",
+    "sbaglierà",
+    "sbaglieremo",
+    "sbaglierete",
+    "sbaglieranno"
+   ],
+   "cond": [
+    "sbaglierei",
+    "sbaglieresti",
+    "sbaglierebbe",
+    "sbaglieremmo",
+    "sbagliereste",
+    "sbaglierebbero"
+   ],
+   "cong": [
+    "sbagli",
+    "sbagli",
+    "sbagli",
+    "sbagliamo",
+    "sbagliate",
+    "sbaglino"
+   ]
+  }
+ }
+]
