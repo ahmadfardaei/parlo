@@ -1,0 +1,340 @@
+[
+  {
+    "id": "g-nouns", "level": "A1", "topic": "nouns",
+    "title": "Nomi: genere e plurale", "en": "Nouns: gender and plural",
+    "summary": "Every Italian noun is masculine or feminine, and most change their last vowel in the plural.",
+    "meaning": "In Italian every noun has a gender, even a table or an idea: <i>il tavolo</i> is masculine, <i>l'idea</i> is feminine. The ending usually tells you which, and the same ending tells you how to make the plural. Learn each noun together with its article (<b>il</b> libro, <b>la</b> chiave) and the gender comes for free.",
+    "uses": [
+      { "h": "-o is masculine, -a is feminine", "t": "The big majority. In the plural <b>-o → -i</b> and <b>-a → -e</b>.", "ex": ["Il ragazzo compra una pizza; i ragazzi comprano due pizze.", "The boy buys a pizza; the boys buy two pizzas."] },
+      { "h": "-e can be either", "t": "Nouns in <b>-e</b> can be masculine or feminine, so learn them with the article. Both make the plural in <b>-i</b>.", "ex": ["Il fiore è sul tavolo, la chiave è nella borsa.", "The flower is on the table, the key is in the bag."] },
+      { "h": "Some nouns never change", "t": "Nouns ending in an <b>accented vowel</b> (città, caffè, virtù), <b>short words</b> (foto, moto, radio) and <b>foreign words</b> (bar, film, sport) stay the same. Only the article shows the plural.", "ex": ["In piazza ci sono tre bar e due edicole.", "There are three bars and two newsstands in the square."] },
+      { "h": "-ca / -ga and -co / -go", "t": "Feminine <b>-ca / -ga</b> add an h to keep the hard sound: amica → amiche. Masculine <b>-co / -go</b> usually do too (parco → parchi, lago → laghi), but some common words soften (amico → amici, medico → medici).", "ex": ["Le mie amiche di Trieste adorano i laghi del Friuli.", "My friends from Trieste love the lakes of Friuli."] },
+      { "h": "A few irregulars", "t": "Some very common nouns have their own plural. A handful of body parts and things that come in sets switch to feminine <b>-a</b> in the plural.", "ex": ["Mio nonno dice che gli uomini veri sanno fare le uova al tegamino.", "My grandfather says real men know how to fry eggs."] }
+    ],
+    "form": {
+      "intro": "Look at the last letter. It usually tells you the gender, and it tells you which plural ending to use.",
+      "tables": [
+        { "h": "Regular endings", "rows": [["-o (m.) → -i", "il libro → i libri"], ["-a (f.) → -e", "la casa → le case"], ["-e (m.) → -i", "il fiore → i fiori"], ["-e (f.) → -i", "la chiave → le chiavi"], ["-a (m.) → -i", "il problema → i problemi"]] },
+        { "h": "No change in the plural", "rows": [["accented vowel", "la città → le città, il caffè → i caffè, la virtù → le virtù"], ["short forms", "la foto → le foto, la moto → le moto, la bici → le bici"], ["foreign words", "il bar → i bar, il film → i film, lo sport → gli sport"], ["one-syllable words", "il re → i re"]] },
+        { "h": "Hard sounds", "rows": [["-ca / -ga → -che / -ghe", "l'amica → le amiche, la riga → le righe"], ["-co / -go → -chi / -ghi", "il parco → i parchi, il lago → i laghi"], ["but some -co → -ci", "l'amico → gli amici, il medico → i medici, il greco → i greci"]] }
+      ],
+      "notes": [
+        "Masculine nouns in <b>-a</b> are mostly Greek words in <b>-ma</b>: il problema, il programma, il sistema, il tema, il clima.",
+        "Nouns in <b>-ione</b> are feminine (la stazione, la lezione) and nouns in <b>-ore</b> are masculine (il colore, il dottore).",
+        "Nouns in <b>-ista</b> work for both sexes: il turista / la turista. In the plural: i turisti, le turiste.",
+        "<b>-cia / -gia</b>: keep the i if a vowel comes before it (la camicia → le camicie), drop it after a consonant (l'arancia → le arance)."
+      ]
+    },
+    "irregularTitle": "Common irregular plurals",
+    "irregular": [
+      ["l'uomo", "gli uomini"], ["la mano", "le mani (stays feminine)"], ["l'uovo", "le uova"], ["il dito", "le dita"], ["il braccio", "le braccia"],
+      ["il ginocchio", "le ginocchia"], ["il paio", "le paia"], ["il lenzuolo", "le lenzuola"], ["il dio", "gli dei"], ["la moglie", "le mogli"]
+    ],
+    "mistakes": [
+      { "wrong": "Ho visitato tre cittè.", "right": "Ho visitato tre città.", "why": "Nouns with an accent on the last vowel never change: una città, tre città." },
+      { "wrong": "La problema è il prezzo.", "right": "Il problema è il prezzo.", "why": "Problema ends in -a but is <b>masculine</b>, like most -ma words from Greek." },
+      { "wrong": "Ho comprato sei uovi.", "right": "Ho comprato sei uova.", "why": "Uovo has an irregular feminine plural: <b>le uova</b>." },
+      { "wrong": "Le mie amice abitano a Bergamo.", "right": "Le mie amiche abitano a Bergamo.", "why": "-ca → <b>-che</b>: the h keeps the hard k sound." }
+    ],
+    "ex": [
+      { "k": "type", "q": "Al mercato di Porta Palazzo ho comprato due ___ e un melone.", "h": "plural · limone", "a": ["limoni"], "why": "-e nouns make the plural in -i: limone → limoni." },
+      { "k": "type", "q": "Quest'estate abbiamo visitato tre ___ in Puglia: Lecce, Otranto e Gallipoli.", "h": "plural · città", "a": ["città"], "why": "Final accented vowel: the plural doesn't change." },
+      { "k": "type", "q": "Nel frigo ci sono solo sei ___ e un limone.", "h": "plural · uovo", "a": ["uova"], "why": "Irregular: l'uovo → le uova." },
+      { "k": "type", "q": "Dopo tre ore di sci ho le ___ gelate.", "h": "plural · mano", "a": ["mani"], "why": "La mano is feminine but makes its plural in -i: le mani." },
+      { "k": "type", "q": "Stasera arrivano i miei ___ da Bergamo.", "h": "plural · amico", "a": ["amici"], "why": "Amico is one of the -co nouns that soften: amici." },
+      { "k": "type", "q": "Le mie ___ di Trieste fanno il bagno anche a ottobre.", "h": "plural · amica", "a": ["amiche"], "why": "Feminine -ca always adds h: amiche." },
+      { "k": "type", "q": "In Trentino ci sono più di trecento ___.", "h": "plural · lago", "a": ["laghi"], "why": "-go → -ghi keeps the hard g sound." },
+      { "k": "type", "q": "In questa piazza ci sono quattro ___ e nessuna banca.", "h": "plural · bar", "a": ["bar"], "why": "Foreign words don't change in the plural." },
+      { "k": "type", "q": "Questa settimana ho visto tre ___ di Sorrentino.", "h": "plural · film", "a": ["film"], "why": "Film is a foreign word: un film, tre film." },
+      { "k": "type", "q": "Nella mia famiglia gli ___ non cucinano mai.", "h": "plural · uomo", "a": ["uomini"], "why": "Irregular: l'uomo → gli uomini." },
+      { "k": "type", "q": "Mi fanno male le ___ dopo la corsa.", "h": "plural · ginocchio", "a": ["ginocchia"], "why": "Body part with a feminine plural in -a: il ginocchio → le ginocchia." },
+      { "k": "mc", "q": "___ problema è che il treno per Matera non c'è.", "o": ["Il", "La"], "a": "Il", "why": "Problema is masculine, like most -ma nouns from Greek." },
+      { "k": "mc", "q": "___ stazione di Cagliari è vicina al porto.", "o": ["Il", "La"], "a": "La", "why": "Nouns in -ione are feminine." },
+      { "k": "mc", "q": "Which plural is correct?", "o": ["le foto", "le fote", "le foti"], "a": "le foto", "why": "Foto is short for fotografia, so it doesn't change." }
+    ]
+  },
+  {
+    "id": "g-articles", "level": "A1", "topic": "nouns",
+    "title": "Gli articoli", "en": "Articles",
+    "summary": "The Italian words for “the” and “a”, which change with the gender, number and first letter of the next word.",
+    "meaning": "English has one “the” and two forms of “a”. Italian has seven forms of “the” and four of “a”. You pick one by asking three questions: is the noun masculine or feminine, singular or plural, and what sound does the next word start with? Italian also uses <b>the</b> in many places where English uses nothing.",
+    "uses": [
+      { "h": "Things in general", "t": "When you talk about something in general (likes, opinions, categories), Italian uses the definite article.", "ex": ["Il caffè mi rende nervoso, ma il tè no.", "Coffee makes me nervous, but tea doesn't."] },
+      { "h": "Countries, regions, languages", "t": "Countries and regions take the article: <b>l'Italia</b>, <b>la Sardegna</b>. Languages too, except right after <b>parlare</b>, studiare and in.", "ex": ["La Sardegna è bellissima, ma il sardo è difficile.", "Sardinia is beautiful, but Sardinian is hard."] },
+      { "h": "Titles and people", "t": "Titles take the article when you talk <i>about</i> someone, not when you speak <i>to</i> them.", "ex": ["La dottoressa Ferri arriva alle nove. Buongiorno, dottoressa Ferri!", "Doctor Ferri arrives at nine. Good morning, Doctor Ferri!"] },
+      { "h": "Habits with days", "t": "<b>il sabato</b> means every Saturday; <b>sabato</b> without the article means this coming Saturday.", "ex": ["Il sabato vado al mercato, ma sabato sono a Lecce.", "On Saturdays I go to the market, but this Saturday I'm in Lecce."] },
+      { "h": "Body parts and clothes", "t": "Where English says “my”, Italian often just uses the article: the owner is obvious.", "ex": ["Mi lavo le mani e mi metto il cappotto.", "I wash my hands and put on my coat."] },
+      { "h": "Indefinite: un, uno, una", "t": "Like English “a / an”, for something not yet known or one of many. There is no plural form: use the partitive (dei, delle) or nothing.", "ex": ["Ho un fratello e una sorella.", "I have a brother and a sister."] }
+    ],
+    "form": {
+      "intro": "Choose by gender, number and the first sound of the <b>next word</b> (which may be an adjective, not the noun).",
+      "tables": [
+        { "h": "Definite · the", "rows": [["il / i", "masculine, most consonants: il libro → i libri"], ["lo / gli", "masculine before s + consonant, z, gn, ps, y: lo zaino → gli zaini, lo studente → gli studenti"], ["l' / gli", "masculine before a vowel: l'amico → gli amici"], ["la / le", "feminine before a consonant: la casa → le case"], ["l' / le", "feminine before a vowel: l'isola → le isole"]] },
+        { "h": "Indefinite · a, an", "rows": [["un", "masculine, most consonants and vowels: un libro, un amico"], ["uno", "masculine before s + consonant, z, gn, ps, y: uno zaino, uno studente"], ["una", "feminine before a consonant: una casa"], ["un'", "feminine before a vowel: un'amica"]] }
+      ],
+      "notes": [
+        "<b>un</b> never takes an apostrophe (un amico); <b>un'</b> with an apostrophe is only feminine (un'amica). That's how you can tell the gender in writing.",
+        "The article follows the word right after it: <b>lo</b> zio but <b>il</b> vecchio zio; <b>l'</b>amica but <b>la</b> mia amica.",
+        "Cities usually have no article: Vivo a Bari. Many fixed phrases drop it too: a casa, in ufficio, in macchina."
+      ]
+    },
+    "mistakes": [
+      { "wrong": "Mi piace pizza.", "right": "Mi piace la pizza.", "why": "Talking about pizza in general → definite article." },
+      { "wrong": "Il studente è francese.", "right": "Lo studente è francese.", "why": "s + consonant takes <b>lo</b> (plural <b>gli</b>)." },
+      { "wrong": "Ho un'amico a Ivrea.", "right": "Ho un amico a Ivrea.", "why": "The apostrophe is only for feminine <b>un'</b>. Masculine is always plain <b>un</b>." },
+      { "wrong": "Italia è lunga e stretta.", "right": "L'Italia è lunga e stretta.", "why": "Countries take the article." }
+    ],
+    "ex": [
+      { "k": "type", "q": "___ zaino di Pietro è sotto il tavolo.", "h": "definite article", "a": ["lo"], "why": "Masculine before z → lo." },
+      { "k": "type", "q": "A Carnevale ___ abitanti di Ivrea si tirano le arance.", "h": "definite article", "a": ["gli"], "why": "Masculine plural before a vowel → gli." },
+      { "k": "type", "q": "Mi piace molto ___ cioccolato fondente.", "h": "definite article", "a": ["il"], "why": "Something in general → il cioccolato." },
+      { "k": "type", "q": "___ uova sono nel frigo, vicino al latte.", "h": "definite article", "a": ["le"], "why": "Uova is a feminine plural → le." },
+      { "k": "type", "q": "___ Italia è lunga più di mille chilometri.", "h": "definite article", "a": ["l'", "l’"], "why": "Countries take the article; feminine before a vowel → l'." },
+      { "k": "type", "q": "Stasera mangiamo ___ gnocchi della nonna.", "h": "definite article", "a": ["gli"], "why": "Masculine plural before gn → gli." },
+      { "k": "type", "q": "___ domenica pranziamo sempre dai miei.", "h": "definite article", "a": ["la"], "why": "With a day, the article means every week." },
+      { "k": "type", "q": "Abbiamo ___ zio a Cagliari che fa il pescatore.", "h": "indefinite article", "a": ["uno"], "why": "Masculine before z → uno." },
+      { "k": "type", "q": "Ho comprato ___ orologio usato a Ginevra.", "h": "indefinite article", "a": ["un"], "why": "Masculine before a vowel → un, with no apostrophe." },
+      { "k": "type", "q": "Domani viene a cena ___ amica di Laura.", "h": "indefinite article", "a": ["un'", "un’"], "why": "Feminine before a vowel → un' with an apostrophe." },
+      { "k": "mc", "q": "You're telling a colleague: “Mrs Rinaldi is in a meeting.”", "o": ["La signora Rinaldi è in riunione.", "Signora Rinaldi è in riunione."], "a": "La signora Rinaldi è in riunione.", "why": "Talking about someone with a title → article. Only when you address her directly do you drop it." },
+      { "k": "mc", "q": "“I love Sicilian food.”", "o": ["Amo la cucina siciliana.", "Amo cucina siciliana.", "Amo una cucina siciliana."], "a": "Amo la cucina siciliana.", "why": "General likes always take the definite article." },
+      { "k": "mc", "q": "Mio fratello ha trovato ___ psicologo molto bravo.", "o": ["un", "uno", "una"], "a": "uno", "why": "Masculine before ps → uno (and lo, gli)." },
+      { "k": "mc", "q": "Which sounds natural?", "o": ["Mi lavo i denti.", "Lavo i miei denti."], "a": "Mi lavo i denti.", "why": "With body parts Italian uses a reflexive verb and the article, not a possessive." }
+    ]
+  },
+  {
+    "id": "g-partitive", "level": "A2", "topic": "nouns",
+    "title": "Il partitivo: del, della, dei", "en": "The partitive: some, any",
+    "summary": "How to say “some” in Italian: di + the article, or un po' di, alcuni and qualche.",
+    "meaning": "When you mean an unspecified amount of something, Italian often uses <b>di + the definite article</b>: <i>del pane</i> (some bread), <i>dei biscotti</i> (some biscuits). It's the plural of <i>un / una</i> and the “some” of uncountable things. In everyday speech there are also simpler options: <b>un po' di</b> for amounts, <b>alcuni / alcune</b> and <b>qualche</b> for a few things.",
+    "uses": [
+      { "h": "Some + uncountable", "t": "Bread, water, cheese, time: things you don't count. <b>del, dello, della, dell'</b>.", "ex": ["Passo dal forno a prendere del pane.", "I'm stopping by the bakery to get some bread."] },
+      { "h": "Some + plural", "t": "The plural of un / una: <b>dei, degli, delle</b>.", "ex": ["Ho conosciuto dei ragazzi di Matera in treno.", "I met some guys from Matera on the train."] },
+      { "h": "Un po' di", "t": "“A bit of”: very common with uncountable things, and friendlier in requests. No article after it.", "ex": ["Vuoi un po' di vino? È di mio zio.", "Do you want a bit of wine? It's my uncle's."] },
+      { "h": "Alcuni / alcune", "t": "“A few, some” with plural nouns. It agrees in gender.", "ex": ["Alcune colleghe lavorano da casa il venerdì.", "Some colleagues work from home on Fridays."] },
+      { "h": "Qualche + singular", "t": "Means “a few, some” but the noun stays <b>singular</b>, and so does the verb.", "ex": ["Ho ancora qualche dubbio sul contratto.", "I still have a few doubts about the contract."] },
+      { "h": "Questions and negatives", "t": "In questions and after non, Italian usually drops the partitive entirely.", "ex": ["Hai fratelli? No, non ho fratelli.", "Do you have any brothers or sisters? No, I don't."] }
+    ],
+    "form": {
+      "intro": "<b>di</b> + the definite article, joined into one word. The choice follows the same rules as il, lo, la, l', i, gli, le.",
+      "tables": [
+        { "h": "di + article", "rows": [["di + il = del", "del formaggio"], ["di + lo = dello", "dello zucchero"], ["di + l' = dell'", "dell'acqua, dell'olio"], ["di + la = della", "della frutta"], ["di + i = dei", "dei biscotti"], ["di + gli = degli", "degli amici, degli studenti"], ["di + le = delle", "delle zucchine"]] },
+        { "h": "Other ways to say some", "rows": [["un po' di + singular", "un po' di latte, un po' di pazienza"], ["alcuni / alcune + plural", "alcuni amici, alcune foto"], ["qualche + singular", "qualche amico, qualche foto"]] }
+      ],
+      "notes": [
+        "<b>qualche</b> never changes and always takes a singular noun: qualche giorno, qualche idea.",
+        "Don't stack articles: after <b>un po' di</b> there is no article (un po' di pane, not un po' del pane)."
+      ]
+    },
+    "mistakes": [
+      { "wrong": "Ho qualche amici a Torino.", "right": "Ho qualche amico a Torino. / Ho alcuni amici a Torino.", "why": "<b>qualche</b> takes a singular noun; for the plural use alcuni." },
+      { "wrong": "Vorrei un po' del latte.", "right": "Vorrei un po' di latte.", "why": "After un po' you need plain <b>di</b>, no article." },
+      { "wrong": "Ho comprato dei zucchini.", "right": "Ho comprato degli zucchini.", "why": "Before z, the article is gli, so di + gli = <b>degli</b>." }
+    ],
+    "ex": [
+      { "k": "type", "q": "Hai sete? Vuoi ___ acqua?", "h": "partitive", "a": ["dell'", "dell’"], "why": "Acqua is feminine and starts with a vowel: di + l' = dell'." },
+      { "k": "type", "q": "Ho comprato ___ biscotti per la colazione.", "h": "partitive", "a": ["dei"], "why": "Masculine plural, consonant: di + i = dei." },
+      { "k": "type", "q": "Al mercato di San Benedetto ho preso ___ zucchine.", "h": "partitive", "a": ["delle"], "why": "Feminine plural: di + le = delle." },
+      { "k": "type", "q": "Nella mia classe ci sono ___ studenti giapponesi.", "h": "partitive", "a": ["degli"], "why": "Before s + consonant: di + gli = degli." },
+      { "k": "type", "q": "Metti ___ zucchero nel caffè?", "h": "partitive", "a": ["dello"], "why": "Masculine before z: di + lo = dello." },
+      { "k": "type", "q": "Prendo ___ formaggio per stasera, magari un pecorino.", "h": "partitive", "a": ["del"], "why": "Masculine singular, consonant: di + il = del." },
+      { "k": "type", "q": "Posso avere un po' ___ latte nel tè?", "h": "preposition", "a": ["di"], "why": "Un po' di never takes an article." },
+      { "k": "type", "q": "Ieri sera al bar ho visto qualche ___ dell'università.", "h": "amico", "a": ["amico"], "why": "Qualche always takes a singular noun." },
+      { "k": "type", "q": "___ colleghe vengono in bici anche d'inverno.", "h": "alcuno · agree", "a": ["alcune"], "why": "Alcuni / alcune agree with the noun: colleghe is feminine plural." },
+      { "k": "mc", "q": "“I don't have any money with me.”", "o": ["Non ho soldi con me.", "Non ho qualche soldo con me.", "Non ho alcuni soldi con me."], "a": "Non ho soldi con me.", "why": "In negatives the partitive is usually dropped." },
+      { "k": "mc", "q": "Per la festa ho invitato ___ colleghi.", "o": ["qualche", "alcuni", "un po' di"], "a": "alcuni", "why": "Plural countable noun → alcuni. Qualche would need colleg<b>a</b>, and un po' di is for amounts." },
+      { "k": "mc", "q": "Aspetta, ho bisogno di ___ tempo per pensarci.", "o": ["qualche", "alcuni", "un po' di"], "a": "un po' di", "why": "Tempo here is an uncountable amount → un po' di." },
+      { "k": "mc", "q": "Ho letto ___ libro di Natalia Ginzburg.", "o": ["qualche", "alcuni", "dei"], "a": "qualche", "why": "Singular noun meaning a few → qualche." }
+    ]
+  },
+  {
+    "id": "g-adj", "level": "A1", "topic": "adjectives",
+    "title": "Aggettivi: accordo e posizione", "en": "Adjectives: agreement and position",
+    "summary": "Italian adjectives match the noun in gender and number, and they usually come after it.",
+    "meaning": "An Italian adjective changes its ending to match the noun: <i>un vino rosso</i>, <i>una macchina rossa</i>, <i>due vini rossi</i>. Most adjectives come <b>after</b> the noun, the opposite of English. A small group of very common ones (bello, buono, grande, piccolo…) often go before, and <b>bello</b> and <b>buono</b> then change shape like articles.",
+    "uses": [
+      { "h": "Agreement", "t": "The adjective takes the gender and number of the noun, even after <b>essere</b>.", "ex": ["Le ciliegie di Vignola sono dolci e la torta è buonissima.", "The cherries from Vignola are sweet and the cake is delicious."] },
+      { "h": "After the noun", "t": "The normal place, and the only place for colours, nationalities, shapes and most longer adjectives.", "ex": ["Abita in una casa gialla con un cane tedesco.", "She lives in a yellow house with a German dog."] },
+      { "h": "Before the noun", "t": "Short, common adjectives like <b>bello, buono, brutto, grande, piccolo, nuovo, vecchio, giovane</b> often go before. It sounds more natural and less emphatic.", "ex": ["Lecce è una bella città con un piccolo centro storico.", "Lecce is a beautiful city with a small old town."] },
+      { "h": "Mixed groups", "t": "If the nouns are masculine and feminine together, the adjective is masculine plural.", "ex": ["Paolo e Silvia sono stanchi ma contenti.", "Paolo and Silvia are tired but happy."] },
+      { "h": "Bello and buono before the noun", "t": "<b>bello</b> takes the endings of the definite article (bel, bello, bell', bei, begli). <b>buono</b> takes those of un (buon, buono, buona, buon').", "ex": ["Che bel panorama! E che begli occhi hai.", "What a beautiful view! And what beautiful eyes you have."] }
+    ],
+    "form": {
+      "intro": "Two main groups: adjectives in <b>-o</b> have four forms, adjectives in <b>-e</b> have only two.",
+      "tables": [
+        { "h": "-o adjectives · rosso", "rows": [["masculine singular", "un vino rosso"], ["feminine singular", "una mela rossa"], ["masculine plural", "due vini rossi"], ["feminine plural", "due mele rosse"]] },
+        { "h": "-e adjectives · verde", "rows": [["singular (m. and f.)", "un prato verde, una mela verde"], ["plural (m. and f.)", "due prati verdi, due mele verdi"]] },
+        { "h": "bello before a noun", "rows": [["bel / bei", "un bel ragazzo, dei bei ragazzi"], ["bello / begli", "un bello zaino, dei begli occhi"], ["bell' / begli", "un bell'albero, dei begli alberi"], ["bella / belle", "una bella giornata, delle belle giornate"], ["bell' (f.)", "una bell'idea"]] },
+        { "h": "buono before a noun", "rows": [["buon", "buon appetito, un buon vino"], ["buono", "un buono stipendio"], ["buona / buon'", "una buona pizza, una buon'amica"]] }
+      ],
+      "notes": [
+        "Like the article, <b>-co / -go</b> adjectives often add an h: bianco → bianchi, bianche; lungo → lunghi. Simpatico → simpatici is an exception.",
+        "Some colours never change: <b>blu, rosa, viola, beige</b>. Una giacca blu, due giacche blu.",
+        "In the plural, <b>buono</b> doesn't shorten: buoni amici, buone notizie.",
+        "After the noun, bello and buono are regular: un ragazzo bello, un vino buono."
+      ]
+    },
+    "mistakes": [
+      { "wrong": "Una casa bianco.", "right": "Una casa bianca.", "why": "Casa is feminine, so the adjective ends in <b>-a</b>." },
+      { "wrong": "Un bello albero.", "right": "Un bell'albero.", "why": "Before a vowel, bello becomes <b>bell'</b>, like l'." },
+      { "wrong": "Una rossa macchina.", "right": "Una macchina rossa.", "why": "Colours always go after the noun." },
+      { "wrong": "I miei amici sono simpatichi.", "right": "I miei amici sono simpatici.", "why": "Simpatico softens in the masculine plural: <b>simpatici</b>. The feminine keeps the h: simpatiche." }
+    ],
+    "ex": [
+      { "k": "type", "q": "Abitiamo in una casa ___ vicino alla stazione.", "h": "piccolo", "a": ["piccola"], "why": "Casa is feminine singular → piccola." },
+      { "k": "type", "q": "Le ciliegie di Vignola sono ___.", "h": "dolce", "a": ["dolci"], "why": "-e adjectives have one plural for both genders: dolci." },
+      { "k": "type", "q": "I miei vicini sono molto ___.", "h": "gentile", "a": ["gentili"], "why": "Masculine plural of an -e adjective → gentili." },
+      { "k": "type", "q": "Mia nonna ha due gatti ___.", "h": "nero", "a": ["neri"], "why": "Gatti is masculine plural → neri." },
+      { "k": "type", "q": "Dopo la gita, Marta e Luca sono ___.", "h": "stanco", "a": ["stanchi"], "why": "Mixed group → masculine plural; -co adds h: stanchi." },
+      { "k": "type", "q": "Mi sono comprata due magliette ___.", "h": "blu", "a": ["blu"], "why": "Blu never changes." },
+      { "k": "type", "q": "Dal castello di Bergamo Alta c'è un ___ panorama.", "h": "bello", "a": ["bel"], "why": "Before a normal consonant, bello → bel (like il)." },
+      { "k": "type", "q": "Che ___ occhi ha il tuo bambino!", "h": "bello", "a": ["begli"], "why": "Masculine plural before a vowel → begli (like gli)." },
+      { "k": "type", "q": "Il pranzo è pronto. ___ appetito!", "h": "buono", "a": ["buon"], "why": "Buono before a masculine noun → buon (like un)." },
+      { "k": "type", "q": "In via Garibaldi c'è una ___ pizzeria napoletana.", "h": "buono", "a": ["buona"], "why": "Feminine singular → buona." },
+      { "k": "mc", "q": "Which is natural?", "o": ["Ho una macchina rossa.", "Ho una rossa macchina."], "a": "Ho una macchina rossa.", "why": "Colours always follow the noun." },
+      { "k": "mc", "q": "Nel cortile c'è un ___ albero di fichi.", "o": ["bel", "bell'", "bello"], "a": "bell'", "why": "Before a vowel → bell' (like l')." },
+      { "k": "mc", "q": "Paolo e Silvia sono molto ___.", "o": ["simpatici", "simpatiche", "simpatichi"], "a": "simpatici", "why": "A mixed group takes the masculine plural, and simpatico softens: simpatici." }
+    ]
+  },
+  {
+    "id": "g-poss", "level": "A1", "topic": "adjectives",
+    "title": "I possessivi", "en": "Possessives",
+    "summary": "My, your, his, her, our, their: words that agree with the thing owned and usually come with an article.",
+    "meaning": "Italian possessives work like adjectives: they agree with the <b>thing owned</b>, not with the owner. So <i>la sua casa</i> can mean his house or her house: casa is feminine, that's all. They normally come with the article (<i>il mio libro</i>), with one big exception: singular family members (<i>mia madre</i>).",
+    "uses": [
+      { "h": "With the article", "t": "The normal pattern: article + possessive + noun.", "ex": ["Il mio treno parte da Verona alle otto.", "My train leaves from Verona at eight."] },
+      { "h": "Singular family, no article", "t": "With one family member (madre, padre, fratello, sorella, zio, nonna…) drop the article.", "ex": ["Mia sorella vive a Matera con suo marito.", "My sister lives in Matera with her husband."] },
+      { "h": "Family with the article", "t": "The article comes back in the plural, with <b>loro</b>, with mamma / papà, and when the noun has an extra adjective or a diminutive.", "ex": ["I miei cugini e il loro cane arrivano domani.", "My cousins and their dog arrive tomorrow."] },
+      { "h": "Suo: his, her, its", "t": "One word for all three. It agrees with the noun that follows. Add <i>di lui / di lei</i> only if there's real confusion.", "ex": ["Marco ha perso la sua borsa e Anna il suo telefono.", "Marco lost his bag and Anna lost her phone."] },
+      { "h": "Formal Suo", "t": "When you use <b>Lei</b> (formal you), “your” is <b>Suo</b>, sometimes written with a capital.", "ex": ["Signora, il Suo passaporto, per favore.", "Madam, your passport, please."] },
+      { "h": "Without a noun", "t": "After essere, or in fixed phrases, the possessive often stands alone.", "ex": ["Questo ombrello è tuo? Vieni a casa mia stasera.", "Is this umbrella yours? Come to my place tonight."] }
+    ],
+    "form": {
+      "intro": "Four forms each (except loro), chosen by the gender and number of the thing owned.",
+      "tables": [
+        { "h": "m. sing. · f. sing. · m. pl. · f. pl.", "rows": [["my", "il mio · la mia · i miei · le mie"], ["your (tu)", "il tuo · la tua · i tuoi · le tue"], ["his / her / its / your (Lei)", "il suo · la sua · i suoi · le sue"], ["our", "il nostro · la nostra · i nostri · le nostre"], ["your (voi)", "il vostro · la vostra · i vostri · le vostre"], ["their", "il loro · la loro · i loro · le loro"]] },
+        { "h": "Family members", "rows": [["mio padre, tua sorella", "singular → no article"], ["i miei fratelli, le tue zie", "plural → article"], ["il loro figlio", "loro → always article"], ["la mia mamma, il mio papà", "affectionate words → article"], ["la mia sorellina", "diminutive → article"]] }
+      ],
+      "notes": [
+        "<b>loro</b> never changes: il loro gatto, le loro gatte.",
+        "<b>i miei</b> on its own often means “my parents”: Vado dai miei a Natale."
+      ]
+    },
+    "mistakes": [
+      { "wrong": "La mia madre è di Lecce.", "right": "Mia madre è di Lecce.", "why": "Singular family members take no article." },
+      { "wrong": "Anna ama suo marito e sua lavoro.", "right": "Anna ama suo marito e il suo lavoro.", "why": "Lavoro is masculine → il suo, whoever the owner is. And it's not family, so it needs the article." },
+      { "wrong": "Loro padre è medico.", "right": "Il loro padre è medico.", "why": "<b>loro</b> always keeps the article, even with family." }
+    ],
+    "ex": [
+      { "k": "type", "q": "___ madre è di Lecce, ma vive a Torino da trent'anni.", "h": "my", "a": ["mia"], "why": "Singular family member → no article." },
+      { "k": "type", "q": "___ fratelli lavorano tutti e due in banca.", "h": "my", "a": ["i miei"], "why": "Family in the plural → article: i miei." },
+      { "k": "type", "q": "Dove sono ___ chiavi? Non le trovo più.", "h": "my", "a": ["le mie"], "why": "Chiavi is feminine plural → le mie." },
+      { "k": "type", "q": "Anna adora ___ lavoro in libreria.", "h": "her", "a": ["il suo"], "why": "Lavoro is masculine: il suo, even though Anna is a woman." },
+      { "k": "type", "q": "Marco ha dimenticato ___ borsa sul treno.", "h": "his", "a": ["la sua"], "why": "Borsa is feminine: la sua, even though Marco is a man." },
+      { "k": "type", "q": "Ragazzi, ___ treno parte dal binario tre.", "h": "your (voi)", "a": ["il vostro"], "why": "Voi + masculine singular → il vostro." },
+      { "k": "type", "q": "I Ferrero vendono ___ casa al mare.", "h": "their", "a": ["la loro"], "why": "Loro doesn't change, but needs the article: la loro." },
+      { "k": "type", "q": "___ cugino fa il vino in una cantina delle Langhe.", "h": "my", "a": ["mio"], "why": "Cugino is a singular family member → no article." },
+      { "k": "type", "q": "Buongiorno, signora. ___ documento, per favore.", "h": "your (formal)", "a": ["il suo", "il Suo"], "why": "Formal Lei → Suo; documento is masculine." },
+      { "k": "type", "q": "Paolo, è ___ questo ombrello verde?", "h": "your (tu)", "a": ["tuo"], "why": "After essere the possessive usually stands alone, without article." },
+      { "k": "mc", "q": "Luca vive con ___ sorella a Bologna.", "o": ["sua", "la sua", "suo"], "a": "sua", "why": "Sorella is feminine and a singular family member → sua, no article." },
+      { "k": "mc", "q": "“Their father is a fisherman.”", "o": ["Il loro padre fa il pescatore.", "Loro padre fa il pescatore.", "Suo padre fa il pescatore."], "a": "Il loro padre fa il pescatore.", "why": "Loro always keeps the article." },
+      { "k": "mc", "q": "Stasera venite a cena a casa ___?", "o": ["mia", "la mia", "mio"], "a": "mia", "why": "Fixed phrase: a casa mia, with no article and the possessive after." }
+    ]
+  },
+  {
+    "id": "g-demo", "level": "A1", "topic": "adjectives",
+    "title": "Questo e quello", "en": "This and that",
+    "summary": "Questo means this (near me), quello means that (over there), and quello changes shape like the article.",
+    "meaning": "<b>questo</b> points to something close to the speaker, <b>quello</b> to something further away. Both agree with the noun. Questo is easy: it works like a normal -o adjective. Quello is trickier before a noun: it takes the same endings as the definite article, so <i>il → quel</i>, <i>lo → quello</i>, <i>gli → quegli</i>.",
+    "uses": [
+      { "h": "This, these", "t": "Something near you, in your hand, or happening now.", "ex": ["Questo formaggio viene da un paese della Valtellina.", "This cheese comes from a village in Valtellina."] },
+      { "h": "That, those", "t": "Something over there, or further away in time.", "ex": ["Vedi quel ragazzo con il cappello? È mio cugino.", "See that guy with the hat? He's my cousin."] },
+      { "h": "Standing alone", "t": "Without a noun, they mean this one / that one. Quello then uses its full forms: quello, quella, quelli, quelle.", "ex": ["Quale borsa prendi? Quella rossa, non questa.", "Which bag are you taking? The red one, not this one."] },
+      { "h": "Time expressions", "t": "<b>questa</b> sera, <b>quest'</b>anno, <b>questa</b> settimana mean the current one. <b>stasera</b> and <b>stamattina</b> are short forms.", "ex": ["Quest'anno passiamo il Natale in Sardegna.", "This year we're spending Christmas in Sardinia."] }
+    ],
+    "form": {
+      "intro": "Questo is regular. Quello before a noun copies the definite article.",
+      "tables": [
+        { "h": "questo", "rows": [["questo / quest'", "questo libro, quest'albero"], ["questa / quest'", "questa casa, quest'isola"], ["questi", "questi libri, questi alberi"], ["queste", "queste case"]] },
+        { "h": "quello + noun (like the article)", "rows": [["il → quel", "quel libro"], ["lo → quello", "quello zaino, quello studente"], ["l' → quell'", "quell'albero, quell'amica"], ["la → quella", "quella casa"], ["i → quei", "quei libri"], ["gli → quegli", "quegli zaini, quegli alberi"], ["le → quelle", "quelle case"]] },
+        { "h": "quello alone (that one)", "rows": [["masculine", "quello · quelli"], ["feminine", "quella · quelle"]] }
+      ],
+      "notes": [
+        "To point more precisely, add <b>qui / qua</b> or <b>lì / là</b>: questo qui, quello lì.",
+        "Quello follows the word right after it, even an adjective: <b>quel</b> bel ragazzo, <b>quegli</b> strani ragazzi."
+      ]
+    },
+    "mistakes": [
+      { "wrong": "Quello ragazzo è simpatico.", "right": "Quel ragazzo è simpatico.", "why": "Before a normal consonant, quello → <b>quel</b> (like il)." },
+      { "wrong": "Quelli studenti sono di Bari.", "right": "Quegli studenti sono di Bari.", "why": "Before a noun, the plural follows gli → <b>quegli</b>. Quelli is only for standing alone." },
+      { "wrong": "Voglio quei.", "right": "Voglio quelli.", "why": "Without a noun, use the full form: quelli." }
+    ],
+    "ex": [
+      { "k": "type", "q": "___ libro è mio, quello sul tavolo è tuo.", "h": "this", "a": ["questo"], "why": "Masculine singular, near me → questo." },
+      { "k": "type", "q": "Ti piace ___ gonna? L'ho presa al mercato.", "h": "this", "a": ["questa"], "why": "Feminine singular → questa." },
+      { "k": "type", "q": "___ anno andiamo in vacanza a Ustica.", "h": "this", "a": ["quest'", "quest’", "questo"], "why": "Before a vowel questo is usually shortened to quest'." },
+      { "k": "type", "q": "Vedi ___ ragazzo con la bici? Lavora con me.", "h": "that", "a": ["quel"], "why": "Like il ragazzo → quel ragazzo." },
+      { "k": "type", "q": "Chi è ___ uomo vicino alla porta?", "h": "that", "a": ["quell'", "quell’"], "why": "Like l'uomo → quell'uomo." },
+      { "k": "type", "q": "Mi passi ___ zaino blu, per favore?", "h": "that", "a": ["quello"], "why": "Like lo zaino → quello zaino." },
+      { "k": "type", "q": "___ studenti sono arrivati ieri da Bari.", "h": "those", "a": ["quegli"], "why": "Like gli studenti → quegli studenti." },
+      { "k": "type", "q": "Hai assaggiato ___ biscotti alle mandorle?", "h": "those", "a": ["quei"], "why": "Like i biscotti → quei biscotti." },
+      { "k": "type", "q": "___ ragazze lavorano tutte al bar della stazione.", "h": "those", "a": ["quelle"], "why": "Like le ragazze → quelle ragazze." },
+      { "k": "type", "q": "Quale giacca preferisci? ___ verde, è più calda.", "h": "that one", "a": ["quella"], "why": "Standing alone, feminine singular → quella." },
+      { "k": "mc", "q": "Due cannoli, per favore. No, non questi: ___ in fondo.", "o": ["quelli", "quei", "quegli"], "a": "quelli", "why": "No noun follows → full form quelli." },
+      { "k": "mc", "q": "Ci sono ___ alberi davanti a casa mia.", "o": ["quei", "quegli", "quelli"], "a": "quegli", "why": "Masculine plural before a vowel → quegli (like gli alberi)." },
+      { "k": "mc", "q": "Ho comprato ___ zucchine al mercato stamattina.", "o": ["queste", "questi", "questo"], "a": "queste", "why": "Zucchine is feminine plural → queste." }
+    ]
+  },
+  {
+    "id": "g-comp", "level": "A2", "topic": "adjectives",
+    "title": "Comparativi e superlativi", "en": "Comparatives and superlatives",
+    "summary": "How to say more than, less than, as … as, the most, and very.",
+    "meaning": "Italian compares with <b>più</b> (more) and <b>meno</b> (less) before the adjective, then <b>di</b> or <b>che</b> for “than”. There is no -er ending like taller: it's always più alto. For “the most” you put the article in front: <b>il più</b> alto. And to say “very” you can add <b>-issimo</b> to almost any adjective.",
+    "uses": [
+      { "h": "Più / meno … di", "t": "Comparing two people or things: <b>di</b> before a noun, name or pronoun. Di joins with the article: del, della…", "ex": ["Trieste è più ventosa di Bologna, e il caffè costa meno del mio.", "Trieste is windier than Bologna, and coffee costs less than mine."] },
+      { "h": "Più / meno … che", "t": "Comparing two qualities, two actions or two quantities of the same thing, and before a preposition.", "ex": ["Mi piace più camminare che correre, e più in montagna che al mare.", "I like walking more than running, and in the mountains more than at the seaside."] },
+      { "h": "As … as", "t": "<b>(tanto) … quanto</b> or <b>(così) … come</b>. In speech the first word is usually dropped.", "ex": ["Mio figlio è alto quanto me.", "My son is as tall as me."] },
+      { "h": "The most", "t": "Article + più / meno + adjective, then <b>di</b> for the group.", "ex": ["È il ristorante più caro della città, e il meno buono.", "It's the most expensive restaurant in town, and the least good."] },
+      { "h": "Very: -issimo", "t": "Drop the final vowel and add <b>-issimo / -a / -i / -e</b>. It's stronger than molto.", "ex": ["Le spiagge di Villasimius sono bellissime ma affollatissime.", "The beaches of Villasimius are gorgeous but incredibly crowded."] },
+      { "h": "Better and worse", "t": "<b>migliore / peggiore</b> are adjectives (better thing). <b>meglio / peggio</b> are adverbs (better done, or after stare, andare).", "ex": ["Questo vino è migliore, ma oggi sto peggio di ieri.", "This wine is better, but today I feel worse than yesterday."] }
+    ],
+    "form": {
+      "intro": "più / meno + adjective + <b>di</b> or <b>che</b>. Superlative: il / la / i / le + più + adjective.",
+      "tables": [
+        { "h": "di or che?", "rows": [["di", "two nouns or pronouns: Luca è più alto di Marco / di me"], ["che", "two adjectives: più simpatica che bella"], ["che", "two verbs: meglio tardi che mai"], ["che", "two quantities: più ragazze che ragazzi"], ["che", "before a preposition: più a Milano che a Roma"]] },
+        { "h": "Superlatives", "rows": [["relative · the most", "il più alto della classe"], ["absolute · very", "altissimo, bellissima, lunghissimi"], ["-co / -go + -issimo", "ricco → ricchissimo, lungo → lunghissimo"]] }
+      ],
+      "notes": [
+        "Più buono and più cattivo are also correct, especially about food and character. Never say più migliore.",
+        "<b>maggiore / minore</b> mostly mean older / younger: mio fratello maggiore."
+      ]
+    },
+    "irregularTitle": "Irregular forms",
+    "irregular": [
+      ["buono", "migliore (better) · il migliore · ottimo"], ["cattivo", "peggiore (worse) · il peggiore · pessimo"],
+      ["grande", "maggiore (bigger, older) · il maggiore · massimo"], ["piccolo", "minore (smaller, younger) · il minore · minimo"],
+      ["bene (adverb)", "meglio · benissimo"], ["male (adverb)", "peggio · malissimo"]
+    ],
+    "signals": ["più", "meno", "di", "che", "quanto", "come", "-issimo", "migliore", "meglio"],
+    "mistakes": [
+      { "wrong": "Luca è più alto che Marco.", "right": "Luca è più alto di Marco.", "why": "Comparing two people → <b>di</b>." },
+      { "wrong": "Questa pizza è più migliore.", "right": "Questa pizza è migliore.", "why": "Migliore already means più buono." },
+      { "wrong": "Oggi sto migliore.", "right": "Oggi sto meglio.", "why": "After stare (an adverb job) use <b>meglio</b>, not migliore." },
+      { "wrong": "È la città più bella in Italia.", "right": "È la città più bella d'Italia.", "why": "After a superlative, the group takes <b>di</b>." }
+    ],
+    "ex": [
+      { "k": "type", "q": "Trieste è più ventosa ___ Bologna.", "h": "di / che", "a": ["di"], "why": "Two cities (nouns) → di." },
+      { "k": "type", "q": "Il Monte Bianco è più alto ___ Cervino.", "h": "di + article", "a": ["del"], "why": "di + il Cervino → del." },
+      { "k": "type", "q": "Il sabato preferisco leggere ___ uscire.", "h": "di / che", "a": ["che"], "why": "Two verbs → che." },
+      { "k": "type", "q": "Nel mio corso di ceramica ci sono più pensionati ___ studenti.", "h": "di / che", "a": ["che"], "why": "Two quantities of people → che." },
+      { "k": "type", "q": "È il bar più antico ___ città.", "h": "di + article", "a": ["della"], "why": "Superlative + di for the group: di + la → della." },
+      { "k": "type", "q": "Mio figlio ha quattordici anni ed è già alto ___ me.", "h": "as … as", "a": ["quanto", "come"], "why": "Equality: quanto or come." },
+      { "k": "type", "q": "Le spiagge di Villasimius sono ___.", "h": "bello + -issimo", "a": ["bellissime"], "why": "Drop the vowel, add -issime to agree with spiagge." },
+      { "k": "type", "q": "Grazie per la medicina, oggi sto ___ di ieri.", "h": "bene → more", "a": ["meglio"], "why": "After stare you need the adverb: meglio." },
+      { "k": "type", "q": "Secondo me, il vino di mio zio è ___ di questo.", "h": "buono → better", "a": ["migliore"], "why": "Adjective describing a noun → migliore." },
+      { "k": "type", "q": "Il tempo di oggi è ___ di quello di ieri: piove ancora di più.", "h": "cattivo → worse", "a": ["peggiore"], "why": "Adjective (il tempo è…) → peggiore, not peggio." },
+      { "k": "mc", "q": "Paola è più simpatica ___ intelligente.", "o": ["di", "che", "del"], "a": "che", "why": "Two qualities of the same person → che." },
+      { "k": "mc", "q": "Mia sorella canta molto ___ di me.", "o": ["meglio", "migliore", "più buona"], "a": "meglio", "why": "It describes how she sings (a verb) → meglio." },
+      { "k": "mc", "q": "“It's the cheapest hotel in Bergamo.”", "o": ["È l'albergo meno caro di Bergamo.", "È l'albergo più meno caro di Bergamo.", "È l'albergo meno caro che Bergamo."], "a": "È l'albergo meno caro di Bergamo.", "why": "Article + meno + adjective + di for the place." }
+    ]
+  }
+]

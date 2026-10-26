@@ -1,0 +1,1803 @@
+[
+  {
+    "id": "w-01",
+    "title": "Alla famiglia che ti ospita",
+    "en": "To your host family",
+    "topic": "people",
+    "format": "email",
+    "task": "You are going to spend some time in Siena and you will live with an Italian host family. Write them an email before you arrive: introduce yourself, tell them a little about your life and habits, and ask them something you want to know.",
+    "guide": [
+      "Greet the family in a suitable register (tu/voi or Lei)",
+      "Say who you are, where you are from and what you do",
+      "Mention your habits, likes and anything about food",
+      "Say when and how you will arrive",
+      "Ask them at least one question",
+      "Close in a warm but natural way"
+    ],
+    "phrases": [
+      {
+        "it": "Gentile famiglia Bindi,",
+        "en": "Dear Bindi family,"
+      },
+      {
+        "it": "Arrivo a Siena il 3 settembre.",
+        "en": "I arrive in Siena on 3 September."
+      },
+      {
+        "it": "Mangio tutto, tranne i funghi.",
+        "en": "I eat everything except mushrooms."
+      },
+      {
+        "it": "A che ora cenate di solito?",
+        "en": "What time do you usually have dinner?"
+      },
+      {
+        "it": "Sono una persona tranquilla.",
+        "en": "I'm a quiet person."
+      },
+      {
+        "it": "Arriverò in autobus da Firenze.",
+        "en": "I'll arrive by bus from Florence."
+      },
+      {
+        "it": "Se avete bisogno di qualcosa, scrivetemi.",
+        "en": "If you need anything, write to me."
+      },
+      {
+        "it": "Spero che non sia un problema.",
+        "en": "I hope it isn't a problem."
+      },
+      {
+        "it": "Non vedo l'ora di conoscervi.",
+        "en": "I can't wait to meet you."
+      },
+      {
+        "it": "Ve ne sarei molto grata.",
+        "en": "I would be very grateful (to you)."
+      },
+      {
+        "it": "Vi ringrazio fin d'ora per l'ospitalità.",
+        "en": "Thank you in advance for your hospitality."
+      }
+    ],
+    "models": {
+      "A1": {
+        "body": [
+          {
+            "s": [
+              {
+                "it": "Gentile famiglia Bindi,",
+                "en": "Dear Bindi family,"
+              },
+              {
+                "it": "sono Hannah, la ragazza inglese che arriva a Siena il 3 settembre.",
+                "en": "I'm Hannah, the English girl who is arriving in Siena on 3 September."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Abito a York con mia sorella e un gatto molto grasso.",
+                "en": "I live in York with my sister and a very fat cat."
+              },
+              {
+                "it": "Faccio l'infermiera, ma adesso ho tre mesi liberi.",
+                "en": "I'm a nurse, but now I have three months off."
+              },
+              {
+                "it": "Studio italiano da un anno, ma parlo ancora piano.",
+                "en": "I've been studying Italian for a year, but I still speak slowly."
+              },
+              {
+                "it": "Mangio tutto, tranne i funghi.",
+                "en": "I eat everything except mushrooms."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Ho una domanda: a che ora cenate di solito?",
+                "en": "I have a question: what time do you usually have dinner?"
+              },
+              {
+                "it": "In Inghilterra ceniamo alle sei!",
+                "en": "In England we have dinner at six!"
+              },
+              {
+                "it": "Ho già comprato un regalo per voi, ma è una sorpresa.",
+                "en": "I've already bought a present for you, but it's a surprise."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "A presto,",
+                "en": "See you soon,"
+              },
+              {
+                "it": "Hannah",
+                "en": "Hannah"
+              }
+            ]
+          }
+        ]
+      },
+      "A2": {
+        "body": [
+          {
+            "s": [
+              {
+                "it": "Cara signora Lucarelli,",
+                "en": "Dear Mrs Lucarelli,"
+              },
+              {
+                "it": "la scuola mi ha dato il Suo indirizzo e ho deciso di scriverLe prima del mio arrivo.",
+                "en": "The school gave me your address and I decided to write to you before I arrive."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Mi chiamo Douglas, ho sessantaquattro anni e vengo da Edimburgo.",
+                "en": "My name is Douglas, I'm sixty-four and I come from Edinburgh."
+              },
+              {
+                "it": "Per quarant'anni ho fatto il postino, e l'anno scorso sono andato in pensione.",
+                "en": "I was a postman for forty years, and last year I retired."
+              },
+              {
+                "it": "Mia moglie dice che adesso sono sempre in casa e che devo trovare un hobby.",
+                "en": "My wife says I'm always at home now and that I need to find a hobby."
+              },
+              {
+                "it": "Così ho scelto l'italiano.",
+                "en": "So I chose Italian."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Arriverò sabato 12 ottobre, verso le quattro, con l'autobus da Firenze.",
+                "en": "I'll arrive on Saturday 12 October, at about four, on the bus from Florence."
+              },
+              {
+                "it": "Da giovane suonavo la cornamusa, ma non si preoccupi: non la porto.",
+                "en": "When I was young I played the bagpipes, but don't worry: I'm not bringing them."
+              },
+              {
+                "it": "Sono una persona tranquilla e vado a letto presto.",
+                "en": "I'm a quiet person and I go to bed early."
+              },
+              {
+                "it": "La sera non mangio molto, però amo il pane e il formaggio.",
+                "en": "I don't eat much in the evening, but I love bread and cheese."
+              },
+              {
+                "it": "Ho letto che a Siena il pane è senza sale: è vero?",
+                "en": "I read that in Siena the bread has no salt: is that true?"
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Se ha bisogno di qualcosa dalla Scozia, me lo scriva.",
+                "en": "If you need anything from Scotland, just write and tell me."
+              },
+              {
+                "it": "Posso portare del whisky o dei biscotti al burro.",
+                "en": "I can bring some whisky or some shortbread."
+              },
+              {
+                "it": "Grazie per l'ospitalità.",
+                "en": "Thank you for your hospitality."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Cordiali saluti,",
+                "en": "Kind regards,"
+              },
+              {
+                "it": "Douglas Reid",
+                "en": "Douglas Reid"
+              }
+            ]
+          }
+        ]
+      },
+      "B1": {
+        "body": [
+          {
+            "s": [
+              {
+                "it": "Ciao a tutti,",
+                "en": "Hi everyone,"
+              },
+              {
+                "it": "sono Sam, lo studente di Bristol che passerà l'estate da voi, in via dei Rossi.",
+                "en": "I'm Sam, the student from Bristol who's going to spend the summer with you, on Via dei Rossi."
+              },
+              {
+                "it": "L'agenzia mi ha detto che avete due figli e un cane, e devo ammettere che è stato il cane a convincermi subito.",
+                "en": "The agency told me you have two children and a dog, and I have to admit it was the dog that won me over straight away."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Ho diciannove anni e studio architettura, quindi probabilmente mi vedrete spesso in piazza del Campo a disegnare la Torre del Mangia, anche quando piove.",
+                "en": "I'm nineteen and I study architecture, so you'll probably often see me in Piazza del Campo drawing the Torre del Mangia, even when it's raining."
+              },
+              {
+                "it": "A casa siamo in cinque e io sono il più grande, perciò sono abituato al rumore e alla fila per il bagno.",
+                "en": "There are five of us at home and I'm the eldest, so I'm used to noise and to queuing for the bathroom."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Vi scrivo anche per un paio di cose pratiche.",
+                "en": "I'm also writing about a couple of practical things."
+              },
+              {
+                "it": "Sono vegetariano da tre anni: spero che non sia un problema, e se lo fosse, mangerei volentieri la pasta tutti i giorni.",
+                "en": "I've been vegetarian for three years: I hope that's not a problem, and if it were, I'd happily eat pasta every day."
+              },
+              {
+                "it": "Suono anche la chitarra, ma solo con le cuffie, quindi non dovreste sentirmi.",
+                "en": "I also play the guitar, but only with headphones, so you shouldn't hear me."
+              },
+              {
+                "it": "Mia madre insiste perché vi porti un barattolo della sua marmellata, però non so se arriverebbe intero.",
+                "en": "My mum insists that I bring you a jar of her jam, but I don't know if it would arrive in one piece."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Un'ultima domanda: arrivo il 28 giugno, ma ho letto che il 2 luglio c'è il Palio.",
+                "en": "One last question: I arrive on 28 June, but I've read that the Palio is on 2 July."
+              },
+              {
+                "it": "È vero che in quei giorni la città impazzisce?",
+                "en": "Is it true that the city goes crazy in those days?"
+              },
+              {
+                "it": "Se aveste bisogno di una mano in casa, sono bravo a montare mobili e a lavare i piatti.",
+                "en": "If you ever needed a hand around the house, I'm good at putting furniture together and washing up."
+              },
+              {
+                "it": "Non vedo l'ora di conoscervi.",
+                "en": "I can't wait to meet you."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Un saluto,",
+                "en": "Best wishes,"
+              },
+              {
+                "it": "Sam",
+                "en": "Sam"
+              }
+            ]
+          }
+        ]
+      },
+      "B2": {
+        "body": [
+          {
+            "s": [
+              {
+                "it": "Gentili signori Marzocchi,",
+                "en": "Dear Mr and Mrs Marzocchi,"
+              },
+              {
+                "it": "vi scrivo con qualche settimana di anticipo, un po' per presentarmi e un po' perché, lo confesso, sono curiosa di sapere chi mi ospiterà.",
+                "en": "I'm writing a few weeks early, partly to introduce myself and partly because, I confess, I'm curious to know who will be hosting me."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Mi chiamo Ruth Callaghan, ho cinquantadue anni e faccio la traduttrice a Dublino, soprattutto di manuali tecnici.",
+                "en": "My name is Ruth Callaghan, I'm fifty-two and I work as a translator in Dublin, mostly of technical manuals."
+              },
+              {
+                "it": "Il che spiega perché il mio italiano sappia parlare di lavatrici meglio che di sentimenti.",
+                "en": "Which explains why my Italian can talk about washing machines better than about feelings."
+              },
+              {
+                "it": "Ho deciso di passare sei settimane a Siena per colmare questa lacuna, e anche per un motivo più personale.",
+                "en": "I've decided to spend six weeks in Siena to fill that gap, and also for a more personal reason."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Mia madre ci ha studiato nel 1974, ospite di una famiglia in via di Pantaneto, e per tutta la vita ne ha parlato come se fosse stata la sua seconda casa.",
+                "en": "My mother studied there in 1974, staying with a family on Via di Pantaneto, and all her life she talked about it as if it had been her second home."
+              },
+              {
+                "it": "È morta l'anno scorso, e tra le sue carte ho trovato la foto di una donna con il grembiule davanti a una porta verde.",
+                "en": "She died last year, and among her papers I found a photo of a woman in an apron in front of a green door."
+              },
+              {
+                "it": "Sul retro c'è scritto soltanto «Signora Elda, Pantaneto».",
+                "en": "On the back it just says \"Signora Elda, Pantaneto\"."
+              },
+              {
+                "it": "Non mi illudo di ritrovarla, ma se per caso il nome vi dicesse qualcosa, ve ne sarei grata.",
+                "en": "I'm not fooling myself that I'll find her, but if by any chance the name meant something to you, I'd be grateful."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Quanto a me, sono un'ospite facile: non fumo, mi alzo all'alba e ho l'abitudine, forse irritante, di chiedere il nome di ogni cosa.",
+                "en": "As for me, I'm an easy guest: I don't smoke, I get up at dawn and I have the habit, perhaps an irritating one, of asking the name of everything."
+              },
+              {
+                "it": "Il mio unico vero difetto è che non so cucinare, e immagino che in Toscana sia quasi un reato.",
+                "en": "My only real flaw is that I can't cook, and I imagine that in Tuscany that's almost a crime."
+              },
+              {
+                "it": "In compenso lavo i piatti con un entusiasmo sospetto.",
+                "en": "On the other hand, I wash the dishes with suspicious enthusiasm."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Arriverò il 4 aprile in treno; se vi fa comodo, prendo un taxi dalla stazione, così non dovete scomodarvi.",
+                "en": "I'll arrive by train on 4 April; if it suits you, I'll take a taxi from the station so you don't have to go out of your way."
+              },
+              {
+                "it": "Ditemi pure se ci sono regole di casa che dovrei conoscere, anche quelle che di solito nessuno dice ad alta voce.",
+                "en": "Do tell me if there are any house rules I should know, even the ones nobody usually says out loud."
+              },
+              {
+                "it": "Vi ringrazio fin d'ora e vi saluto con affetto, anche se non ci conosciamo ancora.",
+                "en": "Thank you in advance, and warm wishes, even though we haven't met yet."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Ruth Callaghan",
+                "en": "Ruth Callaghan"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "w-02",
+    "title": "La recensione di una trattoria",
+    "en": "A trattoria review",
+    "topic": "food",
+    "format": "review",
+    "task": "You recently ate at a trattoria in Italy. Write an online review of it: describe the place, what you ate and the service, and say honestly whether it was worth it. It can be good, bad or both.",
+    "guide": [
+      "Name the place and say when and with whom you went",
+      "Describe the atmosphere and the room",
+      "Say what you ordered and how it was",
+      "Comment on the service and the price",
+      "Give a verdict: would you go back, and who should go?"
+    ],
+    "phrases": [
+      {
+        "it": "Siamo andati a cena sabato sera.",
+        "en": "We went for dinner on Saturday evening."
+      },
+      {
+        "it": "Il posto è piccolo ma accogliente.",
+        "en": "The place is small but cosy."
+      },
+      {
+        "it": "Il cameriere è simpatico ma lento.",
+        "en": "The waiter is friendly but slow."
+      },
+      {
+        "it": "Abbiamo pagato 70 euro in due.",
+        "en": "We paid 70 euros for two."
+      },
+      {
+        "it": "Le porzioni erano enormi.",
+        "en": "The portions were huge."
+      },
+      {
+        "it": "Purtroppo la carne era fredda nel mezzo.",
+        "en": "Unfortunately the meat was cold in the middle."
+      },
+      {
+        "it": "Vi consiglio di prenotare.",
+        "en": "I recommend booking."
+      },
+      {
+        "it": "È quello che fa per voi.",
+        "en": "It's just the place for you."
+      },
+      {
+        "it": "Mi aspettavo di più, visto il prezzo.",
+        "en": "I expected more, given the price."
+      },
+      {
+        "it": "Vale da solo la visita.",
+        "en": "It's worth the trip on its own."
+      },
+      {
+        "it": "Sarebbe ingiusto liquidarlo come un locale per turisti.",
+        "en": "It would be unfair to dismiss it as a tourist place."
+      }
+    ],
+    "models": {
+      "A1": {
+        "body": [
+          {
+            "s": [
+              {
+                "it": "Trattoria Il Portico, Bergamo Alta. Tre stelle su cinque.",
+                "en": "Trattoria Il Portico, Bergamo Alta. Three stars out of five."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Sono andato qui sabato sera con mio fratello.",
+                "en": "I went here on Saturday evening with my brother."
+              },
+              {
+                "it": "Il posto è piccolo e caldo.",
+                "en": "The place is small and warm."
+              },
+              {
+                "it": "Il cameriere è simpatico, ma molto lento.",
+                "en": "The waiter is friendly, but very slow."
+              },
+              {
+                "it": "Abbiamo mangiato i casoncelli con burro e salvia: buonissimi!",
+                "en": "We had casoncelli with butter and sage: delicious!"
+              },
+              {
+                "it": "Poi ho preso la polenta con il formaggio.",
+                "en": "Then I had polenta with cheese."
+              },
+              {
+                "it": "È buona, ma è troppa e non posso finire.",
+                "en": "It's good, but it's too much and I can't finish it."
+              },
+              {
+                "it": "Mio fratello vuole la torta, ma la torta è finita.",
+                "en": "My brother wants cake, but the cake has run out."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Il conto è di 58 euro per due, con il vino.",
+                "en": "The bill is 58 euros for two, with wine."
+              },
+              {
+                "it": "Torno? Sì, ma a pranzo, e con più fame.",
+                "en": "Will I go back? Yes, but for lunch, and hungrier."
+              }
+            ]
+          }
+        ]
+      },
+      "A2": {
+        "body": [
+          {
+            "s": [
+              {
+                "it": "Trattoria Il Ritorno, Lecce. Due stelle, purtroppo.",
+                "en": "Trattoria Il Ritorno, Lecce. Two stars, unfortunately."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Siamo andati a cena martedì, perché un amico leccese ce l'ha consigliata.",
+                "en": "We went for dinner on Tuesday because a friend from Lecce recommended it to us."
+              },
+              {
+                "it": "Il locale era bellissimo: volte di pietra, luci basse e una nonna che faceva le orecchiette in un angolo.",
+                "en": "The place was beautiful: stone vaults, low lights and a grandmother making orecchiette in a corner."
+              },
+              {
+                "it": "Abbiamo ordinato i ciceri e tria e le polpette al sugo.",
+                "en": "We ordered ciceri e tria and meatballs in tomato sauce."
+              },
+              {
+                "it": "I ciceri e tria erano perfetti, con la pasta fritta croccante sopra.",
+                "en": "The ciceri e tria were perfect, with crunchy fried pasta on top."
+              },
+              {
+                "it": "Le polpette, invece, erano fredde nel mezzo.",
+                "en": "The meatballs, on the other hand, were cold in the middle."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Quando l'abbiamo detto al cameriere, ha alzato le spalle e ha risposto: «Sono fatte in casa».",
+                "en": "When we told the waiter, he shrugged and replied: \"They're homemade.\""
+              },
+              {
+                "it": "Va bene, ma anche a casa mia c'è un forno!",
+                "en": "Fine, but there's an oven at my house too!"
+              },
+              {
+                "it": "Poi abbiamo aspettato quaranta minuti per il conto.",
+                "en": "Then we waited forty minutes for the bill."
+              },
+              {
+                "it": "Alla fine abbiamo pagato 70 euro in due, che per Lecce non è poco.",
+                "en": "In the end we paid 70 euros for two, which isn't cheap for Lecce."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Ci tornerò? Forse, ma solo per le orecchiette della nonna, e mi siederò vicino a lei.",
+                "en": "Will I go back? Maybe, but only for the grandmother's orecchiette, and I'll sit next to her."
+              }
+            ]
+          }
+        ]
+      },
+      "B1": {
+        "body": [
+          {
+            "s": [
+              {
+                "it": "Se cercate un posto elegante, non andate da Beppe.",
+                "en": "If you're looking for somewhere elegant, don't go to Beppe's."
+              },
+              {
+                "it": "Se invece vi va di mangiare come a casa di una zia severa, questa trattoria di Monforte d'Alba è quello che fa per voi.",
+                "en": "But if you fancy eating as if you were at a strict aunt's house, this trattoria in Monforte d'Alba is just the place for you."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Il menù non esiste: vi sedete e la signora Franca vi annuncia cosa mangerete.",
+                "en": "There is no menu: you sit down and Signora Franca announces what you're going to eat."
+              },
+              {
+                "it": "Noi abbiamo avuto vitello tonnato, tajarin al ragù e un brasato al Barolo che sognerò per mesi.",
+                "en": "We had vitello tonnato, tajarin with meat sauce and a beef braised in Barolo that I'll be dreaming about for months."
+              },
+              {
+                "it": "Quando ho chiesto se fosse possibile avere i tajarin al tartufo, mi ha guardato come se avessi insultato sua madre.",
+                "en": "When I asked if it was possible to have the tajarin with truffle, she looked at me as if I'd insulted her mother."
+              },
+              {
+                "it": "«Il tartufo è a novembre», ha detto, ed è tornata in cucina.",
+                "en": "\"Truffle is in November,\" she said, and went back to the kitchen."
+              },
+              {
+                "it": "Era settembre.",
+                "en": "It was September."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Il vino della casa è un Dolcetto che fa suo cugino, e si sente: è un po' ruvido, ma va giù benissimo.",
+                "en": "The house wine is a Dolcetto her cousin makes, and you can tell: it's a bit rough, but it goes down very nicely."
+              },
+              {
+                "it": "Unico difetto: la sala è piccola e rumorosa, e se non prenotate con almeno una settimana di anticipo, rischiate di restare fuori.",
+                "en": "The only downside: the room is small and noisy, and if you don't book at least a week ahead, you risk not getting in."
+              },
+              {
+                "it": "Abbiamo pagato 45 euro a testa, caffè e grappa compresi.",
+                "en": "We paid 45 euros each, coffee and grappa included."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Vi consiglierei di andarci a pranzo, perché dopo un pasto del genere avrete bisogno di un pisolino, non delle curve delle Langhe.",
+                "en": "I'd suggest going at lunchtime, because after a meal like that you'll need a nap, not the bends of the Langhe roads."
+              },
+              {
+                "it": "Voto: quattro stelle e mezza.",
+                "en": "Rating: four and a half stars."
+              },
+              {
+                "it": "La mezza la tolgo per la storia del tartufo, anche se temo che la signora Franca abbia ragione.",
+                "en": "I'm taking off the half for the truffle business, though I suspect Signora Franca is right."
+              }
+            ]
+          }
+        ]
+      },
+      "B2": {
+        "body": [
+          {
+            "s": [
+              {
+                "it": "La trattoria che non c'è più (anche se è ancora lì)",
+                "en": "The trattoria that no longer exists (even though it's still there)"
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Per vent'anni «Da Nives» è stata la trattoria dove mio padre mi portava la domenica dopo la partita della Triestina, quasi sempre persa.",
+                "en": "For twenty years \"Da Nives\" was the trattoria where my father took me on Sundays after the Triestina match, which they nearly always lost."
+              },
+              {
+                "it": "Jota, porzioni che avrebbero sfamato un reggimento e la signora Nives che chiamava tutti «cocolo».",
+                "en": "Jota, portions that would have fed a regiment, and Signora Nives calling everyone \"cocolo\"."
+              },
+              {
+                "it": "Quando ho saputo che l'avevano rilevata due ragazzi tornati da Londra, ho avuto un brutto presentimento.",
+                "en": "When I heard it had been taken over by two young guys back from London, I had a bad feeling."
+              },
+              {
+                "it": "Mio padre, che ha ottantun anni e un'opinione su tutto, si è rifiutato di venire.",
+                "en": "My father, who is eighty-one and has an opinion on everything, refused to come."
+              },
+              {
+                "it": "Io ci sono andata soprattutto per confermare i miei sospetti, e devo dire che mi sbagliavo, almeno in parte.",
+                "en": "I went mainly to confirm my suspicions, and I have to say I was wrong, at least partly."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Il locale è irriconoscibile: pareti grigio salvia, lampadine a vista e un menù scritto a mano in un corsivo che richiede un certo impegno per essere decifrato.",
+                "en": "The place is unrecognisable: sage-grey walls, bare bulbs and a handwritten menu in a cursive that takes some effort to decipher."
+              },
+              {
+                "it": "La jota però c'è ancora, ed è sorprendentemente buona, forse più leggera di quella di Nives, ma con un fondo affumicato che le rende onore.",
+                "en": "The jota is still there, though, and it's surprisingly good, perhaps lighter than Nives's, but with a smoky depth that does it justice."
+              },
+              {
+                "it": "I problemi cominciano con il resto.",
+                "en": "The problems start with everything else."
+              },
+              {
+                "it": "Il gulasch arriva in una ciotolina che farebbe sorridere qualunque triestino, accompagnato da una «spuma di patate» che a casa mia si chiama purè e costa molto meno.",
+                "en": "The goulash arrives in a tiny bowl that would make any Triestine smile, with a \"potato foam\" that in my house is called mash and costs a lot less."
+              },
+              {
+                "it": "Il servizio è gentilissimo, quasi troppo: il ragazzo mi ha spiegato per tre minuti la provenienza della cipolla.",
+                "en": "The service is extremely kind, almost too kind: the waiter spent three minutes telling me where the onion came from."
+              },
+              {
+                "it": "Il conto, 52 euro per un pranzo senza vino, mi ha fatto rimpiangere persino le sconfitte della Triestina.",
+                "en": "The bill, 52 euros for a lunch without wine, made me miss even Triestina's defeats."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Detto questo, sarebbe ingiusto liquidarli come l'ennesimo locale per turisti.",
+                "en": "That said, it would be unfair to dismiss them as yet another tourist place."
+              },
+              {
+                "it": "Si vede che ci tengono, e i dolci, in particolare la putizza rivisitata, valgono da soli la visita.",
+                "en": "You can see they care, and the desserts, especially the reinvented putizza, are worth the visit on their own."
+              },
+              {
+                "it": "Tre stelle: due per la cucina, una per il coraggio di tenere la jota in carta.",
+                "en": "Three stars: two for the cooking, one for the courage to keep jota on the menu."
+              },
+              {
+                "it": "Nives, ne sono quasi sicura, avrebbe chiesto il bis e poi si sarebbe lamentata del prezzo.",
+                "en": "Nives, I'm almost sure, would have asked for seconds and then complained about the price."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "w-03",
+    "title": "Il divano dei miei incubi",
+    "en": "The sofa of my nightmares",
+    "topic": "daily",
+    "format": "complaint email",
+    "task": "You ordered a sofa online. It arrived late, or broken, or both. Write a complaint email to the company: explain what happened, describe the problem and say clearly what you want them to do.",
+    "guide": [
+      "Give the order number and say what you bought and when",
+      "Explain what went wrong, with dates",
+      "Describe the damage or the delay precisely",
+      "Say what you want: replacement, refund, collection",
+      "Set a deadline and say what you will do if nothing happens",
+      "Use a formal greeting and sign-off"
+    ],
+    "phrases": [
+      {
+        "it": "Ho ordinato un divano sul vostro sito.",
+        "en": "I ordered a sofa on your website."
+      },
+      {
+        "it": "Il divano è arrivato con due settimane di ritardo.",
+        "en": "The sofa arrived two weeks late."
+      },
+      {
+        "it": "Una gamba è rotta.",
+        "en": "One leg is broken."
+      },
+      {
+        "it": "Allego la ricevuta e le foto.",
+        "en": "I'm attaching the receipt and the photos."
+      },
+      {
+        "it": "Vi chiedo una data precisa per la consegna.",
+        "en": "I'm asking you for a precise delivery date."
+      },
+      {
+        "it": "Chiedo il rimborso completo.",
+        "en": "I'm requesting a full refund."
+      },
+      {
+        "it": "Vi scrivo in merito all'ordine numero 55-781.",
+        "en": "I'm writing regarding order number 55-781."
+      },
+      {
+        "it": "Vorrei che sostituiste il divano entro il 30 ottobre.",
+        "en": "I would like you to replace the sofa by 30 October."
+      },
+      {
+        "it": "Resto in attesa di una vostra risposta.",
+        "en": "I look forward to your reply."
+      },
+      {
+        "it": "Qualora non ricevessi risposta, mi rivolgerò a un'associazione di consumatori.",
+        "en": "Should I not receive a reply, I will contact a consumer association."
+      },
+      {
+        "it": "Distinti saluti,",
+        "en": "Yours faithfully,"
+      }
+    ],
+    "models": {
+      "A1": {
+        "body": [
+          {
+            "s": [
+              {
+                "it": "Oggetto: divano rotto, ordine 4471",
+                "en": "Subject: broken sofa, order 4471"
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Buongiorno,",
+                "en": "Good morning,"
+              },
+              {
+                "it": "il 2 marzo ho ordinato un divano verde sul vostro sito.",
+                "en": "On 2 March I ordered a green sofa on your website."
+              },
+              {
+                "it": "Il divano è arrivato oggi, con due settimane di ritardo.",
+                "en": "The sofa arrived today, two weeks late."
+              },
+              {
+                "it": "E c'è un problema: una gamba è rotta.",
+                "en": "And there's a problem: one leg is broken."
+              },
+              {
+                "it": "Adesso il divano è in salotto, sopra i libri di mio marito.",
+                "en": "Now the sofa is in the living room, propped up on my husband's books."
+              },
+              {
+                "it": "Il mio gatto è contento, io no.",
+                "en": "My cat is happy, I'm not."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Voglio una gamba nuova o i miei soldi.",
+                "en": "I want a new leg or my money back."
+              },
+              {
+                "it": "Ho le foto e posso mandarle.",
+                "en": "I have photos and I can send them."
+              },
+              {
+                "it": "Aspetto una risposta presto.",
+                "en": "I look forward to a quick reply."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Cordiali saluti,",
+                "en": "Kind regards,"
+              },
+              {
+                "it": "Ada Ferri",
+                "en": "Ada Ferri"
+              }
+            ]
+          }
+        ]
+      },
+      "A2": {
+        "body": [
+          {
+            "s": [
+              {
+                "it": "Oggetto: ordine 20931, divano non ancora arrivato",
+                "en": "Subject: order 20931, sofa not yet delivered"
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Gentile servizio clienti,",
+                "en": "Dear customer service,"
+              },
+              {
+                "it": "vi scrivo per la terza volta e spero di ricevere finalmente una risposta.",
+                "en": "I'm writing to you for the third time and I hope to finally get a reply."
+              },
+              {
+                "it": "Il 10 gennaio ho comprato da voi un divano letto grigio e ho pagato subito 890 euro.",
+                "en": "On 10 January I bought a grey sofa bed from you and paid 890 euros straight away."
+              },
+              {
+                "it": "Sul sito c'era scritto: consegna in quindici giorni.",
+                "en": "The website said: delivery in fifteen days."
+              },
+              {
+                "it": "Sono passati due mesi.",
+                "en": "Two months have gone by."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Il 3 febbraio ho preso un giorno di ferie per aspettare il corriere, ma non è venuto nessuno.",
+                "en": "On 3 February I took a day off work to wait for the courier, but nobody came."
+              },
+              {
+                "it": "Il 17 febbraio il corriere mi ha chiamato alle otto di sera: il divano era ancora a Civitavecchia.",
+                "en": "On 17 February the courier called me at eight in the evening: the sofa was still in Civitavecchia."
+              },
+              {
+                "it": "Intanto mia suocera, che doveva dormire sul divano letto, è arrivata da Nuoro e dorme nel mio letto.",
+                "en": "Meanwhile my mother-in-law, who was supposed to sleep on the sofa bed, has arrived from Nuoro and is sleeping in my bed."
+              },
+              {
+                "it": "Io dormo su un materassino in salotto.",
+                "en": "I'm sleeping on a camping mat in the living room."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Vi chiedo di comunicarmi entro venerdì una data precisa per la consegna.",
+                "en": "I'm asking you to give me a precise delivery date by Friday."
+              },
+              {
+                "it": "Se il divano non arriverà entro la fine del mese, annullerò l'ordine e chiederò il rimborso.",
+                "en": "If the sofa doesn't arrive by the end of the month, I'll cancel the order and ask for a refund."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Distinti saluti,",
+                "en": "Yours faithfully,"
+              },
+              {
+                "it": "Paolo Mura",
+                "en": "Paolo Mura"
+              }
+            ]
+          }
+        ]
+      },
+      "B1": {
+        "body": [
+          {
+            "s": [
+              {
+                "it": "Oggetto: reclamo per l'ordine 55-781 (divano Lisbona, tre posti)",
+                "en": "Subject: complaint about order 55-781 (Lisbona three-seater sofa)"
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Gentile Ufficio Reclami,",
+                "en": "Dear Complaints Department,"
+              },
+              {
+                "it": "vi scrivo in merito al divano che ho ordinato il 4 settembre e che mi è stato consegnato ieri, con tre settimane di ritardo.",
+                "en": "I'm writing about the sofa I ordered on 4 September, which was delivered to me yesterday, three weeks late."
+              },
+              {
+                "it": "Avrei anche accettato il ritardo, visto che mi avevate avvisato per email, ma purtroppo i problemi non finiscono qui.",
+                "en": "I would even have accepted the delay, given that you had warned me by email, but unfortunately the problems don't end there."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Quando i due addetti hanno tolto l'imballaggio, si è visto subito che lo schienale era spaccato.",
+                "en": "When the two delivery men took off the packaging, it was immediately clear that the backrest was split."
+              },
+              {
+                "it": "Secondo loro era un difetto «solo estetico», ma basta appoggiarsi per sentire il legno che scricchiola.",
+                "en": "According to them it was a \"purely cosmetic\" defect, but you only have to lean back to hear the wood creak."
+              },
+              {
+                "it": "Inoltre il tessuto doveva essere color sabbia, mentre quello che ho ricevuto è di un arancione che non avrei scelto nemmeno per una sedia da giardino.",
+                "en": "What's more, the fabric was supposed to be sand-coloured, while the one I received is an orange I wouldn't have chosen even for a garden chair."
+              },
+              {
+                "it": "Ho firmato la bolla di consegna con riserva e ho fatto delle foto, che trovate in allegato.",
+                "en": "I signed the delivery note \"subject to inspection\" and took some photos, which you'll find attached."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Vorrei che sostituiste il divano con uno integro e del colore giusto entro il 30 ottobre.",
+                "en": "I would like you to replace the sofa with an undamaged one in the right colour by 30 October."
+              },
+              {
+                "it": "In alternativa, chiedo il rimborso dell'intero importo, compresi i 60 euro di trasporto.",
+                "en": "Alternatively, I'm requesting a refund of the full amount, including the 60 euros for delivery."
+              },
+              {
+                "it": "Vi chiedo anche di ritirare a vostre spese il divano danneggiato, che occupa metà del soggiorno e che i miei figli usano già come trampolino.",
+                "en": "I also ask you to collect the damaged sofa at your expense, as it takes up half my living room and my children are already using it as a trampoline."
+              },
+              {
+                "it": "Resto in attesa di una vostra risposta e spero che la questione si possa risolvere senza coinvolgere un'associazione di consumatori.",
+                "en": "I look forward to your reply and I hope the matter can be resolved without involving a consumer association."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Cordiali saluti,",
+                "en": "Kind regards,"
+              },
+              {
+                "it": "Teresa Lamacchia",
+                "en": "Teresa Lamacchia"
+              }
+            ]
+          }
+        ]
+      },
+      "B2": {
+        "body": [
+          {
+            "s": [
+              {
+                "it": "Oggetto: divano «Oslo», ordine 88213. Cronaca di un acquisto",
+                "en": "Subject: \"Oslo\" sofa, order 88213. Chronicle of a purchase"
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Alla cortese attenzione della Direzione Clienti,",
+                "en": "For the attention of the Customer Relations Department,"
+              },
+              {
+                "it": "mi rivolgo a voi dopo aver esaurito, credo, tutte le strade che il vostro servizio clienti mi ha indicato, compresa una chat automatica che mi ha augurato «buona giornata» undici volte.",
+                "en": "I'm contacting you after exhausting, I believe, every route your customer service suggested, including an automated chat that wished me \"a nice day\" eleven times."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Riassumo i fatti.",
+                "en": "Let me summarise the facts."
+              },
+              {
+                "it": "Il 12 maggio ho acquistato il divano in oggetto, pagando 1.340 euro in un'unica soluzione, con consegna garantita entro il 9 giugno.",
+                "en": "On 12 May I bought the sofa in question, paying 1,340 euros in full, with delivery guaranteed by 9 June."
+              },
+              {
+                "it": "Il 9 giugno non è successo nulla.",
+                "en": "On 9 June nothing happened."
+              },
+              {
+                "it": "Il 23, dopo quattro solleciti, mi è stato comunicato che il divano era stato consegnato.",
+                "en": "On the 23rd, after four reminders, I was told that the sofa had been delivered."
+              },
+              {
+                "it": "Peccato che fosse stato lasciato a un mio omonimo in via Pignolo, che l'ha gentilmente custodito, e a quanto pare usato, per una settimana.",
+                "en": "Shame it had been left with someone of the same name on Via Pignolo, who kindly looked after it, and apparently used it, for a week."
+              },
+              {
+                "it": "Quando finalmente è arrivato a casa mia, il bracciolo sinistro era staccato e uno dei cuscini portava l'inconfondibile impronta di un cane di grossa taglia.",
+                "en": "When it finally reached my home, the left armrest had come off and one of the cushions bore the unmistakable imprint of a large dog."
+              },
+              {
+                "it": "Io non ho cani.",
+                "en": "I do not own a dog."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Capirete che a questo punto non mi interessano più né gli sconti sul prossimo acquisto né i buoni da 50 euro che mi sono stati proposti, con una certa disinvoltura, al telefono.",
+                "en": "You will understand that at this point I'm no longer interested in discounts on my next purchase or in the 50-euro vouchers I was offered, rather casually, over the phone."
+              },
+              {
+                "it": "Vi chiedo pertanto, ai sensi del Codice del Consumo, la risoluzione del contratto e il rimborso integrale entro quattordici giorni, nonché il ritiro del divano a vostro carico.",
+                "en": "I therefore request, under the Consumer Code, the cancellation of the contract and a full refund within fourteen days, as well as collection of the sofa at your expense."
+              },
+              {
+                "it": "Qualora non ricevessi una risposta soddisfacente entro tale termine, mi vedrò costretto a rivolgermi a un'associazione di consumatori e, se necessario, a un avvocato.",
+                "en": "Should I not receive a satisfactory reply within that time, I will be forced to contact a consumer association and, if necessary, a lawyer."
+              },
+              {
+                "it": "Preferirei evitarlo, sia per me sia per voi.",
+                "en": "I would rather avoid that, for my sake and for yours."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Nel frattempo il divano resta nel mio ingresso, avvolto nel cellophane, e chi viene a trovarmi ci gira intorno come se fosse un'installazione di arte contemporanea.",
+                "en": "Meanwhile the sofa sits in my hallway, wrapped in plastic, and visitors walk around it as if it were a piece of contemporary art."
+              },
+              {
+                "it": "Distinti saluti,",
+                "en": "Yours faithfully,"
+              },
+              {
+                "it": "Ing. Davide Locatelli",
+                "en": "Davide Locatelli, Eng."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "w-04",
+    "title": "Benvenuti nella mia città",
+    "en": "Welcome to my town",
+    "topic": "places",
+    "format": "guide post",
+    "task": "Someone is moving to your town and has asked for advice online. Write a post that describes the town for a newcomer: where to live, how to get around, what people are like, and the things nobody tells you.",
+    "guide": [
+      "Say how long you have lived there and how you felt at first",
+      "Suggest where to live and what to avoid",
+      "Explain transport and practical matters",
+      "Describe the people and how to make friends",
+      "Add one local custom, food or detail a newcomer should know"
+    ],
+    "phrases": [
+      {
+        "it": "Abito qui da dieci anni.",
+        "en": "I've lived here for ten years."
+      },
+      {
+        "it": "La città è piccola, ma ha tutto.",
+        "en": "The town is small, but it has everything."
+      },
+      {
+        "it": "Gli affitti non sono cari.",
+        "en": "Rents aren't expensive."
+      },
+      {
+        "it": "Si fa tutto a piedi o in bicicletta.",
+        "en": "You can do everything on foot or by bike."
+      },
+      {
+        "it": "All'inizio ero un po' triste.",
+        "en": "At first I was a bit sad."
+      },
+      {
+        "it": "Conviene cercare casa nella parte nuova.",
+        "en": "It's better to look for a home in the newer part."
+      },
+      {
+        "it": "Se dovete viaggiare spesso, vi servirà la macchina.",
+        "en": "If you need to travel often, you'll need a car."
+      },
+      {
+        "it": "È più facile di quanto sembri.",
+        "en": "It's easier than it looks."
+      },
+      {
+        "it": "Non stupitevi se...",
+        "en": "Don't be surprised if..."
+      },
+      {
+        "it": "Hanno fama di essere chiusi, e c'è del vero.",
+        "en": "They have a reputation for being reserved, and there's some truth in it."
+      },
+      {
+        "it": "Sarà quello il segno che ormai siete di qui.",
+        "en": "That will be the sign that you belong here now."
+      }
+    ],
+    "models": {
+      "A1": {
+        "body": [
+          {
+            "s": [
+              {
+                "it": "Ciao Emma!",
+                "en": "Hi Emma!"
+              },
+              {
+                "it": "Vieni a vivere a Ivrea? Ottima idea.",
+                "en": "You're coming to live in Ivrea? Great idea."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Ivrea è piccola, ma ha tutto.",
+                "en": "Ivrea is small, but it has everything."
+              },
+              {
+                "it": "C'è un fiume, la Dora, e c'è un castello rosso.",
+                "en": "There's a river, the Dora, and there's a red castle."
+              },
+              {
+                "it": "Il sabato c'è il mercato in centro.",
+                "en": "On Saturdays there's a market in the centre."
+              },
+              {
+                "it": "Per andare a Torino c'è il treno: un'ora.",
+                "en": "To get to Turin there's the train: one hour."
+              },
+              {
+                "it": "Gli affitti non sono cari.",
+                "en": "Rents aren't expensive."
+              },
+              {
+                "it": "D'inverno fa freddo e c'è la nebbia.",
+                "en": "In winter it's cold and foggy."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "A febbraio c'è il Carnevale: la gente tira le arance!",
+                "en": "In February there's Carnival: people throw oranges!"
+              },
+              {
+                "it": "Compra un cappello rosso, così nessuno ti colpisce.",
+                "en": "Buy a red hat, so nobody hits you."
+              },
+              {
+                "it": "Io sono arrivato qui per sei mesi e sono ancora qui dopo dieci anni.",
+                "en": "I came here for six months and I'm still here ten years later."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "A presto,",
+                "en": "See you soon,"
+              },
+              {
+                "it": "Luca",
+                "en": "Luca"
+              }
+            ]
+          }
+        ]
+      },
+      "A2": {
+        "body": [
+          {
+            "s": [
+              {
+                "it": "Ciao a tutti!",
+                "en": "Hi everyone!"
+              },
+              {
+                "it": "Molti nuovi arrivati chiedono informazioni su Trento, quindi provo a rispondere qui.",
+                "en": "Lots of newcomers ask for information about Trento, so I'll try to answer here."
+              },
+              {
+                "it": "Sono arrivata cinque anni fa da Napoli per lavoro e all'inizio ero un po' triste: tutto chiudeva presto e nessuno mi parlava sull'autobus.",
+                "en": "I came from Naples five years ago for work and at first I was a bit sad: everything closed early and nobody talked to me on the bus."
+              },
+              {
+                "it": "Adesso non voglio più andare via.",
+                "en": "Now I don't want to leave."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Per la casa, cercate vicino all'università: è comodo e ci sono molti giovani.",
+                "en": "For somewhere to live, look near the university: it's convenient and there are lots of young people."
+              },
+              {
+                "it": "Gli affitti sono alti, quindi preparatevi.",
+                "en": "Rents are high, so be prepared."
+              },
+              {
+                "it": "La città è piccola e si fa tutto a piedi o in bicicletta.",
+                "en": "The town is small and you can do everything on foot or by bike."
+              },
+              {
+                "it": "In mezz'ora siete in montagna: d'estate si va sul Bondone a camminare, d'inverno a sciare.",
+                "en": "In half an hour you're in the mountains: in summer people go up the Bondone to walk, in winter to ski."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Un consiglio: dite «grazie» al vicino che vi ricorda come dividere la spazzatura, anche se lo fa per la terza volta.",
+                "en": "A tip: say \"thank you\" to the neighbour who reminds you how to sort the rubbish, even if it's the third time."
+              },
+              {
+                "it": "I trentini all'inizio sembrano freddi, ma quando diventano amici, vi invitano a cena e vi offrono la grappa del nonno.",
+                "en": "People from Trento seem cold at first, but when they become your friends, they invite you to dinner and offer you grandpa's grappa."
+              },
+              {
+                "it": "Benvenuti!",
+                "en": "Welcome!"
+              }
+            ]
+          }
+        ]
+      },
+      "B1": {
+        "body": [
+          {
+            "s": [
+              {
+                "it": "Vivere a Matera: cosa sapere prima di trasferirsi",
+                "en": "Living in Matera: what to know before you move"
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Da quando la città è diventata famosa, ricevo almeno un messaggio al mese da qualcuno che vorrebbe trasferirsi qui e mi chiede consigli.",
+                "en": "Ever since the town became famous, I get at least one message a month from someone who'd like to move here and wants advice."
+              },
+              {
+                "it": "Allora ho deciso di scriverli una volta per tutte.",
+                "en": "So I've decided to write it all down once and for all."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Prima di tutto, non pensate di vivere nei Sassi.",
+                "en": "First of all, don't think about living in the Sassi."
+              },
+              {
+                "it": "Sono bellissimi, ma d'estate sono pieni di turisti, le case sono umide e portare la spesa su per le scale è un allenamento che non auguro a nessuno.",
+                "en": "They're beautiful, but in summer they're full of tourists, the houses are damp and carrying shopping up the steps is a workout I wouldn't wish on anyone."
+              },
+              {
+                "it": "Conviene cercare casa nella parte nuova, dove gli affitti sono ancora ragionevoli.",
+                "en": "It's better to look for a place in the newer part of town, where rents are still reasonable."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Il secondo consiglio riguarda i trasporti.",
+                "en": "The second tip is about transport."
+              },
+              {
+                "it": "Matera non ha una stazione delle Ferrovie dello Stato, e il treno locale per Bari ci mette circa un'ora e mezza.",
+                "en": "Matera has no mainline state railway station, and the local train to Bari takes about an hour and a half."
+              },
+              {
+                "it": "Se dovete viaggiare spesso, una macchina vi servirà.",
+                "en": "If you need to travel often, you'll need a car."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Per quanto riguarda la vita sociale, è più facile di quanto sembri.",
+                "en": "As for social life, it's easier than it looks."
+              },
+              {
+                "it": "La sera tutti escono a fare due passi in piazza Vittorio Veneto, e basta andare nello stesso bar per tre giorni perché il barista vi chieda da dove venite.",
+                "en": "In the evening everyone goes out for a stroll in Piazza Vittorio Veneto, and you only need to go to the same bar three days running for the barman to ask where you're from."
+              },
+              {
+                "it": "Non stupitevi se il quarto giorno vi presenta sua cugina, che guarda caso affitta una stanza.",
+                "en": "Don't be surprised if on the fourth day he introduces you to his cousin, who just happens to rent out a room."
+              },
+              {
+                "it": "Infine, il pane: comprate quello di un forno a legna e non tornerete più indietro.",
+                "en": "Finally, the bread: buy it from a wood-fired bakery and you'll never go back."
+              }
+            ]
+          }
+        ]
+      },
+      "B2": {
+        "body": [
+          {
+            "s": [
+              {
+                "it": "Guida minima per chi si trasferisce a Cagliari (scritta da una che ci è arrivata per sei mesi, undici anni fa)",
+                "en": "A short guide for anyone moving to Cagliari (written by someone who came for six months, eleven years ago)"
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "La prima cosa da sapere è che a Cagliari il tempo non si misura in ore, ma in vento.",
+                "en": "The first thing to know is that in Cagliari the weather isn't measured in hours but in wind."
+              },
+              {
+                "it": "Quando soffia il maestrale, la città diventa luminosissima e inabitabile: i panni stesi finiscono sul balcone del vicino e i cagliaritani non parlano d'altro.",
+                "en": "When the mistral blows, the city becomes dazzlingly bright and unliveable: the washing on the line ends up on the neighbour's balcony and people talk about nothing else."
+              },
+              {
+                "it": "Imparerete presto a controllare le previsioni prima di andare al Poetto, la spiaggia cittadina, che per buona parte dell'anno sarà il vostro salotto.",
+                "en": "You'll soon learn to check the forecast before heading to the Poetto, the city beach, which for much of the year will be your living room."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Per la casa, se lavorate in centro, cercate a Villanova o a Stampace: sono quartieri vivi, con case basse, botteghe e qualche affitto ancora umano.",
+                "en": "For a home, if you work in the centre, look in Villanova or Stampace: they're lively neighbourhoods with low houses, small shops and the odd rent that's still humane."
+              },
+              {
+                "it": "Castello è incantevole, ma ci si arriva in salita, e dopo un mese la salita smette di essere incantevole.",
+                "en": "Castello is enchanting, but you get there uphill, and after a month the hill stops being enchanting."
+              },
+              {
+                "it": "Evitate di firmare un contratto senza aver visto la via di sera, perché certe strade tranquille di giorno si trasformano in un bar all'aperto fino alle due.",
+                "en": "Don't sign a lease without seeing the street in the evening, because some streets that are quiet by day turn into an open-air bar until two."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Sul piano umano, i cagliaritani hanno fama di essere chiusi, e c'è del vero, ma è una chiusura che dura più o meno fino al secondo caffè offerto.",
+                "en": "On the human side, Cagliaritans have a reputation for being reserved, and there's some truth in it, but it's a reserve that lasts more or less until the second coffee they buy you."
+              },
+              {
+                "it": "Da lì in poi vi ritroverete invitati a pranzi domenicali che finiscono alle sei, con lo zio che fa il pecorino e la zia che vi chiede quando vi sposate.",
+                "en": "From then on you'll find yourself invited to Sunday lunches that end at six, with the uncle who makes pecorino and the aunt who asks when you're getting married."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Due avvertenze pratiche.",
+                "en": "Two practical warnings."
+              },
+              {
+                "it": "La prima: se qualcuno vi dice «ajò», non è un saluto ma un invito a muovervi, e conviene obbedire.",
+                "en": "The first: if someone says \"ajò\" to you, it isn't a greeting but an invitation to get moving, and you'd better obey."
+              },
+              {
+                "it": "La seconda: nello stagno di Molentargius, a due passi dalle case, vivono centinaia di fenicotteri rosa.",
+                "en": "The second: in the Molentargius lagoon, a stone's throw from the houses, live hundreds of pink flamingos."
+              },
+              {
+                "it": "Vi sembreranno straordinari per un paio di settimane; poi, come tutti, smetterete di notarli, e sarà quello il segno che ormai siete di qui.",
+                "en": "They'll seem extraordinary for a couple of weeks; then, like everyone else, you'll stop noticing them, and that will be the sign that you belong here now."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "w-05",
+    "title": "Il giorno in cui è andato tutto storto",
+    "en": "The day everything went wrong",
+    "topic": "feelings",
+    "format": "story",
+    "task": "Write a story about a day when everything went wrong, real or invented. Tell what happened one thing after another, how you felt, and how the day ended: maybe badly, maybe better than you expected.",
+    "guide": [
+      "Set the scene: when it was and what was supposed to happen",
+      "Tell the first problem and what came next",
+      "Describe how you felt as things got worse",
+      "Include a turning point or a surprise",
+      "Say how it ended and what is different now"
+    ],
+    "phrases": [
+      {
+        "it": "La sveglia non suona.",
+        "en": "The alarm doesn't go off."
+      },
+      {
+        "it": "L'autobus parte davanti a me.",
+        "en": "The bus leaves right in front of me."
+      },
+      {
+        "it": "Ho sbagliato giorno!",
+        "en": "I got the wrong day!"
+      },
+      {
+        "it": "Doveva essere una giornata semplice.",
+        "en": "It was supposed to be a simple day."
+      },
+      {
+        "it": "Mi sono seduta sulle scale e ho pianto.",
+        "en": "I sat down on the stairs and cried."
+      },
+      {
+        "it": "Poi è successa una cosa che non mi sarei mai aspettata.",
+        "en": "Then something happened that I would never have expected."
+      },
+      {
+        "it": "Pensavo che avrei perso il lavoro.",
+        "en": "I thought I would lose my job."
+      },
+      {
+        "it": "Mi sono accorta di aver dimenticato il telefono.",
+        "en": "I realised I'd forgotten my phone."
+      },
+      {
+        "it": "Invece di arrabbiarmi, mi è venuto da ridere.",
+        "en": "Instead of getting angry, I felt like laughing."
+      },
+      {
+        "it": "Dopo una giornata del genere, tutto il resto mi sembrava il meno.",
+        "en": "After a day like that, everything else seemed the least of my worries."
+      }
+    ],
+    "models": {
+      "A1": {
+        "body": [
+          {
+            "s": [
+              {
+                "it": "Lunedì la sveglia non suona.",
+                "en": "On Monday the alarm doesn't go off."
+              },
+              {
+                "it": "Mi alzo alle otto e mezza, e alle nove ho un colloquio di lavoro.",
+                "en": "I get up at half past eight, and at nine I have a job interview."
+              },
+              {
+                "it": "Non c'è tempo per il caffè.",
+                "en": "There's no time for coffee."
+              },
+              {
+                "it": "Corro alla fermata, ma l'autobus parte davanti a me.",
+                "en": "I run to the stop, but the bus leaves right in front of me."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Arrivo in ufficio alle nove e venti.",
+                "en": "I get to the office at twenty past nine."
+              },
+              {
+                "it": "La signora all'ingresso dice: «Il colloquio? È domani».",
+                "en": "The woman at the entrance says: \"The interview? It's tomorrow.\""
+              },
+              {
+                "it": "Ho sbagliato giorno!",
+                "en": "I got the wrong day!"
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Allora vado nel bar sotto l'ufficio e finalmente prendo un caffè.",
+                "en": "So I go to the café under the office and finally have a coffee."
+              },
+              {
+                "it": "Il barista mi guarda e ride.",
+                "en": "The barman looks at me and laughs."
+              },
+              {
+                "it": "Parliamo per un'ora.",
+                "en": "We talk for an hour."
+              },
+              {
+                "it": "Oggi ho due colloqui: uno alle nove e uno alle sei, al bar.",
+                "en": "Today I have two interviews: one at nine and one at six, at the café."
+              }
+            ]
+          }
+        ]
+      },
+      "A2": {
+        "body": [
+          {
+            "s": [
+              {
+                "it": "Il giorno del trasloco doveva essere semplice.",
+                "en": "Moving day was supposed to be simple."
+              },
+              {
+                "it": "Avevo organizzato tutto: un furgone, due amici e trenta scatole.",
+                "en": "I had organised everything: a van, two friends and thirty boxes."
+              },
+              {
+                "it": "Alle otto, però, uno dei due amici mi ha scritto che aveva la febbre.",
+                "en": "At eight, though, one of the two friends texted me that he had a temperature."
+              },
+              {
+                "it": "L'altro è arrivato alle dieci con un furgone troppo piccolo per il letto.",
+                "en": "The other one arrived at ten with a van that was too small for the bed."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Abbiamo fatto quattro viaggi sotto una pioggia fortissima.",
+                "en": "We made four trips in pouring rain."
+              },
+              {
+                "it": "Al terzo viaggio è caduta la scatola dei piatti.",
+                "en": "On the third trip the box of plates fell."
+              },
+              {
+                "it": "Si è salvata solo una tazza con scritto «Ti amo, Rimini».",
+                "en": "The only survivor was a mug saying \"I love you, Rimini\"."
+              },
+              {
+                "it": "Alle sette di sera eravamo nella casa nuova, stanchi e bagnati.",
+                "en": "At seven in the evening we were in the new flat, tired and wet."
+              },
+              {
+                "it": "E lì ho capito che le chiavi erano nella giacca, e la giacca era nel furgone, e il furgone era già tornato al noleggio.",
+                "en": "And that's when I realised the keys were in my jacket, and the jacket was in the van, and the van had already gone back to the rental place."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Mi sono seduta sulle scale e ho pianto un po'.",
+                "en": "I sat down on the stairs and cried a bit."
+              },
+              {
+                "it": "Poi la porta di fronte si è aperta e una signora anziana mi ha chiesto: «Hai fame?»",
+                "en": "Then the door opposite opened and an elderly lady asked me: \"Are you hungry?\""
+              },
+              {
+                "it": "Abbiamo mangiato tortellini in brodo nella sua cucina fino a mezzanotte.",
+                "en": "We ate tortellini in broth in her kitchen until midnight."
+              },
+              {
+                "it": "Adesso pranziamo insieme ogni domenica, e io bevo il vino nella tazza di Rimini.",
+                "en": "Now we have lunch together every Sunday, and I drink my wine out of the Rimini mug."
+              }
+            ]
+          }
+        ]
+      },
+      "B1": {
+        "body": [
+          {
+            "s": [
+              {
+                "it": "Faccio la fotografa di matrimoni da dodici anni e pensavo di aver visto tutto.",
+                "en": "I've been a wedding photographer for twelve years and I thought I'd seen it all."
+              },
+              {
+                "it": "Poi è arrivato il 14 giugno, a Orta San Giulio.",
+                "en": "Then came 14 June, in Orta San Giulio."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Quella mattina mi sono accorta di aver lasciato le batterie di riserva a Novara, e ho dovuto chiedere a mio fratello di portarmele in motorino.",
+                "en": "That morning I realised I'd left my spare batteries in Novara, and I had to ask my brother to bring them over on his scooter."
+              },
+              {
+                "it": "Mentre lo aspettavo, ha cominciato a piovere, anche se le previsioni dicevano sole fino a sera.",
+                "en": "While I was waiting for him, it started to rain, even though the forecast said sunshine until the evening."
+              },
+              {
+                "it": "La sposa, Chiara, aveva organizzato tutto perché la foto principale fosse fatta in barca, davanti all'isola.",
+                "en": "The bride, Chiara, had planned everything so that the main photo would be taken on a boat, in front of the island."
+              },
+              {
+                "it": "Ma il barcaiolo non si è presentato: aveva la febbre, o almeno così ha detto sua moglie al telefono.",
+                "en": "But the boatman didn't turn up: he had a fever, or at least that's what his wife said on the phone."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Alle quattro avevo davanti una sposa che piangeva, uno sposo che cercava un'altra barca e in mano un ombrello rotto.",
+                "en": "At four o'clock I had a crying bride in front of me, a groom looking for another boat and a broken umbrella in my hand."
+              },
+              {
+                "it": "Pensavo che avrei perso il lavoro, o almeno una buona recensione.",
+                "en": "I thought I'd lose the job, or at least a good review."
+              },
+              {
+                "it": "Poi è successa una cosa che non mi sarei mai aspettata.",
+                "en": "Then something happened that I never would have expected."
+              },
+              {
+                "it": "Chiara si è tolta le scarpe, ha preso la mano di Luca ed è corsa sotto la pioggia fino al pontile, ridendo come una bambina.",
+                "en": "Chiara took off her shoes, grabbed Luca's hand and ran through the rain to the jetty, laughing like a little girl."
+              },
+              {
+                "it": "Io li ho seguiti e ho scattato senza pensare.",
+                "en": "I followed them and kept shooting without thinking."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Quella foto, loro due bagnati fradici con l'isola nella nebbia dietro, adesso è appesa nel loro salotto, ed è anche la prima che si vede sul mio sito.",
+                "en": "That photo, the two of them soaked to the skin with the island in the mist behind them, now hangs in their living room, and it's also the first one you see on my website."
+              },
+              {
+                "it": "Da allora, quando una coppia mi chiede se pioverà, rispondo che speriamo di sì.",
+                "en": "Since then, when a couple asks me if it's going to rain, I say let's hope so."
+              }
+            ]
+          }
+        ]
+      },
+      "B2": {
+        "body": [
+          {
+            "s": [
+              {
+                "it": "Mi ero preparata per settimane.",
+                "en": "I had been getting ready for weeks."
+              },
+              {
+                "it": "Mio nipote Tommaso si laureava in ingegneria a Bologna, il primo della famiglia, e io avevo comprato un vestito blu che mia figlia definiva «da ambasciatrice».",
+                "en": "My grandson Tommaso was graduating in engineering in Bologna, the first in the family, and I'd bought a blue dress that my daughter called \"very ambassador\"."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Il treno da Rovigo era alle 7.42; alle 7.40 un annuncio ha comunicato, con la consueta cortesia, che era stato soppresso per uno sciopero.",
+                "en": "The train from Rovigo was at 7.42; at 7.40 an announcement informed us, with the usual courtesy, that it had been cancelled because of a strike."
+              },
+              {
+                "it": "Ho preso un autobus sostitutivo che si è fermato in ogni paese della Bassa, compresi alcuni che giurerei non esistessero.",
+                "en": "I took a replacement bus that stopped in every village on the plain, including a few I'd swear didn't exist."
+              },
+              {
+                "it": "A Ferrara mi sono accorta di aver dimenticato il telefono sul tavolo della cucina, accanto alla torta che avrei dovuto portare.",
+                "en": "At Ferrara I realised I'd left my phone on the kitchen table, next to the cake I was supposed to bring."
+              },
+              {
+                "it": "Sono arrivata a Bologna a mezzogiorno passato, con le scarpe nuove che mi avevano già scorticato i talloni, e ho girato per mezz'ora sotto i portici chiedendo dove fosse Ingegneria.",
+                "en": "I got to Bologna after midday, with new shoes that had already rubbed my heels raw, and wandered under the porticoes for half an hour asking where the engineering faculty was."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Quando finalmente l'ho trovata, la segreteria mi ha detto che il nome di Tommaso non era nell'elenco.",
+                "en": "When I finally found it, the office told me Tommaso's name wasn't on the list."
+              },
+              {
+                "it": "Ho pensato a un errore, poi a una disgrazia, poi, seduta su una panchina con il vestito da ambasciatrice tutto stropicciato, ho cominciato a ragionare.",
+                "en": "I thought it was a mistake, then a disaster, then, sitting on a bench in my crumpled ambassador dress, I started to think it through."
+              },
+              {
+                "it": "Tommaso è arrivato un'ora dopo; l'aveva chiamato la segreteria, o forse il senso di colpa.",
+                "en": "Tommaso arrived an hour later; the office had called him, or perhaps his guilty conscience had."
+              },
+              {
+                "it": "Mi ha confessato che l'ultimo esame non l'aveva passato e che non aveva avuto il coraggio di dirlo a nessuno.",
+                "en": "He confessed that he hadn't passed his last exam and hadn't had the courage to tell anyone."
+              },
+              {
+                "it": "La festa era diventata una messinscena che non sapeva più come fermare.",
+                "en": "The party had become a charade he no longer knew how to stop."
+              }
+            ]
+          },
+          {
+            "s": [
+              {
+                "it": "Mi aspettavo di arrabbiarmi, invece mi è venuto da ridere: dopo una giornata del genere, una laurea rimandata mi sembrava il meno.",
+                "en": "I expected to get angry, but instead I felt like laughing: after a day like that, a postponed graduation seemed the least of my worries."
+              },
+              {
+                "it": "Siamo andati a mangiare le tagliatelle in una trattoria vicino alle Due Torri, e lì gli ho raccontato di quando fui bocciata alla maturità e mia madre non mi parlò per un mese.",
+                "en": "We went for tagliatelle at a trattoria near the Two Towers, and there I told him about the time I failed my school-leaving exams and my mother didn't speak to me for a month."
+              },
+              {
+                "it": "Si è laureato a marzo.",
+                "en": "He graduated in March."
+              },
+              {
+                "it": "Il vestito blu l'ho rimesso, e questa volta il treno è partito.",
+                "en": "I wore the blue dress again, and this time the train left."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+]

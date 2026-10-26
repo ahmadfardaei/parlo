@@ -20,8 +20,8 @@ export default defineConfig({
         scope: base,
         display: "standalone",
         orientation: "portrait",
-        background_color: "#f4f6fb",
-        theme_color: "#1f3fbf",
+        background_color: "#f7f8f6",
+        theme_color: "#1d6b52",
         categories: ["education"],
         icons: [
           { src: "icons/icon-192.png", sizes: "192x192", type: "image/png" },

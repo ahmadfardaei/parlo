@@ -1,0 +1,4815 @@
+[
+ {
+  "id": "s-06",
+  "title": "La mia passione",
+  "en": "My passion",
+  "topic": "leisure",
+  "task": "Talk for 5-10 minutes about a passion or hobby that matters to you. Explain how it started, who or what got you into it, and what it gives you today. Tell at least one specific story: the first time, a disaster, a small victory.",
+  "questions": [
+   {
+    "it": "Qual è la tua passione o il tuo hobby?",
+    "en": "What is your passion or hobby?"
+   },
+   {
+    "it": "Quando e come hai cominciato?",
+    "en": "When and how did you start?"
+   },
+   {
+    "it": "C'è una persona che ti ha fatto scoprire questa passione?",
+    "en": "Is there a person who got you into this passion?"
+   },
+   {
+    "it": "Quanto tempo ci dedichi ogni settimana?",
+    "en": "How much time do you spend on it every week?"
+   },
+   {
+    "it": "Ti ricordi la prima volta? Com'è andata?",
+    "en": "Do you remember the first time? How did it go?"
+   },
+   {
+    "it": "C'è stato un momento in cui hai pensato di smettere?",
+    "en": "Was there a moment when you thought about giving up?"
+   },
+   {
+    "it": "Che cosa ti dà questa passione che il resto della tua vita non ti dà?",
+    "en": "What does this passion give you that the rest of your life doesn't?"
+   },
+   {
+    "it": "Che consiglio daresti a qualcuno che vuole cominciare?",
+    "en": "What advice would you give someone who wants to start?"
+   }
+  ],
+  "phrases": [
+   {
+    "it": "È nato tutto per caso.",
+    "en": "It all started by chance."
+   },
+   {
+    "it": "All'inizio non mi piaceva per niente.",
+    "en": "At first I didn't like it at all."
+   },
+   {
+    "it": "Mi ha preso subito.",
+    "en": "It hooked me straight away."
+   },
+   {
+    "it": "Ci passo ore.",
+    "en": "I spend hours on it."
+   },
+   {
+    "it": "Ormai è diventata una fissa.",
+    "en": "By now it's become an obsession."
+   },
+   {
+    "it": "Non ci avrei mai pensato.",
+    "en": "I would never have thought of it."
+   },
+   {
+    "it": "La cosa che mi piace di più è che…",
+    "en": "The thing I like most is that…"
+   },
+   {
+    "it": "Ti faccio un esempio.",
+    "en": "Let me give you an example."
+   },
+   {
+    "it": "Per farla breve…",
+    "en": "To cut a long story short…"
+   },
+   {
+    "it": "Non sono bravissimo, però…",
+    "en": "I'm not very good at it, but…"
+   },
+   {
+    "it": "Mi rilassa un sacco.",
+    "en": "It relaxes me a lot."
+   },
+   {
+    "it": "Se devo essere sincero…",
+    "en": "If I'm honest…"
+   }
+  ],
+  "models": {
+   "A1": {
+    "speaker": "Ivo, 31 anni, Cagliari",
+    "body": [
+     {
+      "s": [
+       {
+        "it": "Allora... la mia passione è il mare.",
+        "en": "So... my passion is the sea."
+       },
+       {
+        "it": "Cioè, nuotare nel mare.",
+        "en": "I mean, swimming in the sea."
+       },
+       {
+        "it": "Io abito a Cagliari, vicino alla spiaggia del Poetto.",
+        "en": "I live in Cagliari, near Poetto beach."
+       },
+       {
+        "it": "Ogni mattina, alle sette, vado in acqua.",
+        "en": "Every morning, at seven, I go into the water."
+       },
+       {
+        "it": "Anche a gennaio, sì.",
+        "en": "Even in January, yes."
+       },
+       {
+        "it": "A gennaio l'acqua è fredda, molto fredda.",
+        "en": "In January the water is cold, very cold."
+       },
+       {
+        "it": "Quattordici gradi, più o meno.",
+        "en": "Fourteen degrees, more or less."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Come è cominciato?",
+        "en": "How did it start?"
+       },
+       {
+        "it": "Allora, io lavoro in un ufficio, sono contabile.",
+        "en": "Well, I work in an office, I'm an accountant."
+       },
+       {
+        "it": "Sto seduto otto ore al giorno.",
+        "en": "I sit for eight hours a day."
+       },
+       {
+        "it": "Tre anni fa ho avuto mal di schiena, un mal di schiena terribile.",
+        "en": "Three years ago I had back pain, terrible back pain."
+       },
+       {
+        "it": "Il medico mi ha detto: \"Ivo, devi nuotare.\"",
+        "en": "The doctor said to me: \"Ivo, you have to swim.\""
+       },
+       {
+        "it": "Ma io non amo la piscina.",
+        "en": "But I don't love swimming pools."
+       },
+       {
+        "it": "C'è il cloro e c'è troppa gente.",
+        "en": "There's chlorine and there are too many people."
+       },
+       {
+        "it": "Allora ho detto: va bene, nuoto nel mare.",
+        "en": "So I said: OK, I'll swim in the sea."
+       },
+       {
+        "it": "Il primo giorno... boh, dieci minuti.",
+        "en": "The first day... I don't know, ten minutes."
+       },
+       {
+        "it": "Poi sono uscito e ho tremato per un'ora.",
+        "en": "Then I got out and shivered for an hour."
+       },
+       {
+        "it": "Ma il giorno dopo sono tornato.",
+        "en": "But the next day I went back."
+       },
+       {
+        "it": "Adesso nuoto quaranta minuti, a volte un'ora.",
+        "en": "Now I swim forty minutes, sometimes an hour."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Non sono solo, eh.",
+        "en": "I'm not alone, you know."
+       },
+       {
+        "it": "C'è un gruppo, si chiama \"I Pinguini del Poetto\".",
+        "en": "There's a group, it's called \"The Poetto Penguins\"."
+       },
+       {
+        "it": "Siamo dodici, più o meno.",
+        "en": "There are about twelve of us."
+       },
+       {
+        "it": "C'è Graziella, che ha settantadue anni e nuota più veloce di me.",
+        "en": "There's Graziella, who is seventy-two and swims faster than me."
+       },
+       {
+        "it": "C'è un signore, Efisio, che canta sempre in acqua.",
+        "en": "There's a man, Efisio, who always sings in the water."
+       },
+       {
+        "it": "Canta male, ma canta.",
+        "en": "He sings badly, but he sings."
+       },
+       {
+        "it": "Dopo il bagno beviamo un caffè al chiosco.",
+        "en": "After the swim we have a coffee at the kiosk."
+       },
+       {
+        "it": "Il caffè è caldo e noi siamo blu.",
+        "en": "The coffee is hot and we are blue."
+       },
+       {
+        "it": "Mi piace molto questo momento.",
+        "en": "I really like this moment."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "E il mal di schiena?",
+        "en": "And the back pain?"
+       },
+       {
+        "it": "Non c'è più. Finito.",
+        "en": "It's gone. Finished."
+       },
+       {
+        "it": "Mia madre dice che sono matto.",
+        "en": "My mother says I'm crazy."
+       },
+       {
+        "it": "Forse ha ragione.",
+        "en": "Maybe she's right."
+       },
+       {
+        "it": "Ma lei non conosce l'acqua fredda alle sette del mattino.",
+        "en": "But she doesn't know cold water at seven in the morning."
+       },
+       {
+        "it": "È difficile da spiegare.",
+        "en": "It's hard to explain."
+       },
+       {
+        "it": "Il primo minuto è orribile.",
+        "en": "The first minute is horrible."
+       },
+       {
+        "it": "Poi... non so, il corpo si sveglia, la testa si sveglia.",
+        "en": "Then... I don't know, the body wakes up, the head wakes up."
+       },
+       {
+        "it": "E quando arrivo in ufficio sono una persona diversa.",
+        "en": "And when I get to the office I'm a different person."
+       },
+       {
+        "it": "I miei colleghi hanno sonno, io no.",
+        "en": "My colleagues are sleepy, I'm not."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Ah, una cosa: d'estate non nuoto con il gruppo.",
+        "en": "Oh, one thing: in summer I don't swim with the group."
+       },
+       {
+        "it": "D'estate il Poetto è pieno di turisti.",
+        "en": "In summer Poetto is full of tourists."
+       },
+       {
+        "it": "Noi Pinguini, d'estate, stiamo a casa!",
+        "en": "We Penguins stay at home in summer!"
+       },
+       {
+        "it": "Ecco, niente, questa è la mia passione.",
+        "en": "There you go, that's it, this is my passion."
+       }
+      ]
+     }
+    ]
+   },
+   "A2": {
+    "speaker": "Samuele, 19 anni, Lecce",
+    "body": [
+     {
+      "s": [
+       {
+        "it": "Allora, io faccio la cartapesta.",
+        "en": "So, I do papier-mâché."
+       },
+       {
+        "it": "Non so se la conoscete.",
+        "en": "I don't know if you know it."
+       },
+       {
+        "it": "Qui a Lecce è una tradizione antica: con carta, colla e un po' di paglia si fanno statue, soprattutto statue di santi per le chiese.",
+        "en": "Here in Lecce it's an old tradition: with paper, glue and a bit of straw you make statues, mostly statues of saints for churches."
+       },
+       {
+        "it": "Ma io non faccio santi.",
+        "en": "But I don't make saints."
+       },
+       {
+        "it": "Faccio... come si dice... mostri.",
+        "en": "I make... what's the word... monsters."
+       },
+       {
+        "it": "Piccoli mostri, alti trenta centimetri, con tanti denti.",
+        "en": "Little monsters, thirty centimetres tall, with lots of teeth."
+       },
+       {
+        "it": "Vabbè, ci arrivo.",
+        "en": "Anyway, I'll get to that."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Tutto è cominciato quando avevo dodici anni.",
+        "en": "It all started when I was twelve."
+       },
+       {
+        "it": "Sotto casa mia, nel centro storico, c'era una bottega.",
+        "en": "Below my house, in the old town, there was a workshop."
+       },
+       {
+        "it": "Il proprietario era il signor Uccio, un uomo piccolo, sempre con le mani bianche di colla.",
+        "en": "The owner was Mr Uccio, a small man, his hands always white with glue."
+       },
+       {
+        "it": "Io passavo davanti alla bottega ogni giorno dopo la scuola.",
+        "en": "I walked past the workshop every day after school."
+       },
+       {
+        "it": "Guardavo dalla vetrina, ma non entravo mai.",
+        "en": "I looked through the window, but I never went in."
+       },
+       {
+        "it": "Un giorno lui è uscito e mi ha detto: \"Oh, vuoi entrare o vuoi consumare il vetro?\"",
+        "en": "One day he came out and said to me: \"Oi, do you want to come in or do you want to wear out the glass?\""
+       },
+       {
+        "it": "Sono entrato.",
+        "en": "I went in."
+       },
+       {
+        "it": "E per sei anni sono tornato quasi tutti i pomeriggi.",
+        "en": "And for six years I went back almost every afternoon."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "All'inizio facevo solo lavori noiosi.",
+        "en": "At the beginning I only did boring jobs."
+       },
+       {
+        "it": "Tagliavo la carta e pulivo il pavimento.",
+        "en": "I cut paper and cleaned the floor."
+       },
+       {
+        "it": "Dopo un anno, finalmente, Uccio mi ha dato un pezzo di argilla e mi ha detto: \"Fammi una mano.\"",
+        "en": "After a year, finally, Uccio gave me a lump of clay and said: \"Make me a hand.\""
+       },
+       {
+        "it": "E io ho fatto una mano.",
+        "en": "And I made a hand."
+       },
+       {
+        "it": "Bruttissima.",
+        "en": "Really ugly."
+       },
+       {
+        "it": "Sembrava una patata con cinque dita.",
+        "en": "It looked like a potato with five fingers."
+       },
+       {
+        "it": "Mia nonna l'ha vista e ha detto: \"Bella, cos'è? Un pesce?\"",
+        "en": "My grandmother saw it and said: \"Lovely, what is it? A fish?\""
+       },
+       {
+        "it": "Lui ha riso per dieci minuti, però l'ha tenuta.",
+        "en": "He laughed for ten minutes, but he kept it."
+       },
+       {
+        "it": "È ancora lì, sopra la porta della bottega.",
+        "en": "It's still there, above the workshop door."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Il problema è che i santi non mi piacevano tanto.",
+        "en": "The problem is that I didn't like the saints much."
+       },
+       {
+        "it": "Sono belli, eh, ma sono tutti uguali: occhi al cielo, mani così.",
+        "en": "They're beautiful, sure, but they're all the same: eyes to the sky, hands like this."
+       },
+       {
+        "it": "Una sera, invece di un santo, ho fatto un piccolo diavolo con le orecchie grandi.",
+        "en": "One evening, instead of a saint, I made a little devil with big ears."
+       },
+       {
+        "it": "Avevo paura della reazione di Uccio.",
+        "en": "I was scared of how Uccio would react."
+       },
+       {
+        "it": "Lui l'ha guardato a lungo e poi ha detto: \"Questo è tuo. I santi lasciali a me.\"",
+        "en": "He looked at it for a long time and then said: \"This one's yours. Leave the saints to me.\""
+       },
+       {
+        "it": "Da quel giorno faccio i miei mostri.",
+        "en": "Since that day I've been making my monsters."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Adesso ho diciannove anni e studio grafica all'università.",
+        "en": "Now I'm nineteen and I study graphic design at university."
+       },
+       {
+        "it": "Uccio è andato in pensione l'anno scorso, ma la bottega c'è ancora: la gestisce suo nipote.",
+        "en": "Uccio retired last year, but the workshop is still there: his nephew runs it."
+       },
+       {
+        "it": "Io ci vado il sabato.",
+        "en": "I go there on Saturdays."
+       },
+       {
+        "it": "Ho una pagina online e vendo qualche mostro, soprattutto a turisti tedeschi, non so perché.",
+        "en": "I have a page online and I sell the odd monster, mostly to German tourists, I don't know why."
+       },
+       {
+        "it": "Costano quaranta euro l'uno.",
+        "en": "They cost forty euros each."
+       },
+       {
+        "it": "Per fare un mostro ci vogliono circa due settimane, perché la carta deve asciugare piano.",
+        "en": "It takes about two weeks to make a monster, because the paper has to dry slowly."
+       },
+       {
+        "it": "Quindi, insomma, non divento ricco.",
+        "en": "So, basically, I'm not getting rich."
+       },
+       {
+        "it": "Ma non lo faccio per i soldi.",
+        "en": "But I don't do it for the money."
+       },
+       {
+        "it": "Quando lavoro con le mani, la testa si spegne.",
+        "en": "When I work with my hands, my head switches off."
+       },
+       {
+        "it": "Non penso agli esami e non guardo il telefono.",
+        "en": "I don't think about exams and I don't look at my phone."
+       },
+       {
+        "it": "A volte arrivo in bottega alle tre e quando guardo l'orologio sono le otto.",
+        "en": "Sometimes I get to the workshop at three and when I look at the clock it's eight."
+       },
+       {
+        "it": "I miei amici non capiscono, dicono che è un hobby da vecchi.",
+        "en": "My friends don't get it, they say it's an old person's hobby."
+       },
+       {
+        "it": "Poi però tutti vogliono un mostro per il compleanno.",
+        "en": "But then they all want a monster for their birthday."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "L'estate prossima voglio fare una piccola mostra, qui a Lecce.",
+        "en": "Next summer I want to put on a small exhibition, here in Lecce."
+       },
+       {
+        "it": "La chiamerò \"Santi sbagliati\".",
+        "en": "I'll call it \"Wrong Saints\"."
+       },
+       {
+        "it": "Uccio ha detto che verrà.",
+        "en": "Uccio said he'll come."
+       },
+       {
+        "it": "E la mano a forma di patata, secondo me, la porterà lui.",
+        "en": "And the potato-shaped hand, I reckon he'll bring it himself."
+       }
+      ]
+     }
+    ]
+   },
+   "B1": {
+    "speaker": "Margherita, 52 anni, Trieste",
+    "body": [
+     {
+      "s": [
+       {
+        "it": "Allora, devo dire che la mia passione è arrivata tardi, molto tardi.",
+        "en": "Well, I have to say my passion arrived late, very late."
+       },
+       {
+        "it": "Ho cominciato a fare canottaggio a quarantotto anni, e adesso ne ho cinquantadue.",
+        "en": "I started rowing at forty-eight, and now I'm fifty-two."
+       },
+       {
+        "it": "Lo so, non è l'età in cui di solito si comincia uno sport.",
+        "en": "I know, it's not the age when people usually take up a sport."
+       },
+       {
+        "it": "Diciamo che ci sono arrivata per una serie di coincidenze.",
+        "en": "Let's say I got there through a series of coincidences."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Quattro anni fa mia figlia Irene è partita per studiare a Lisbona.",
+        "en": "Four years ago my daughter Irene left to study in Lisbon."
+       },
+       {
+        "it": "È figlia unica, e io sono separata da tanto tempo, quindi da un giorno all'altro mi sono ritrovata in un appartamento vuoto.",
+        "en": "She's an only child, and I've been separated for a long time, so from one day to the next I found myself in an empty flat."
+       },
+       {
+        "it": "E non ero pronta.",
+        "en": "And I wasn't ready."
+       },
+       {
+        "it": "Cioè, pensavo di esserlo, ma non lo ero affatto.",
+        "en": "I mean, I thought I was, but I wasn't at all."
+       },
+       {
+        "it": "La sera tornavo dal lavoro, sono bibliotecaria, e il silenzio era... pesante, ecco.",
+        "en": "In the evening I'd come home from work, I'm a librarian, and the silence was... heavy, that's the word."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Un sabato mattina passeggiavo sulle Rive, vicino al porticciolo, e ho visto un cartello attaccato a un cancello.",
+        "en": "One Saturday morning I was walking along the Rive, near the little harbour, and I saw a sign stuck on a gate."
+       },
+       {
+        "it": "C'era scritto: \"Cercasi vogatori, anche principianti, anche over cinquanta\".",
+        "en": "It said: \"Rowers wanted, beginners welcome, over-fifties welcome\"."
+       },
+       {
+        "it": "Ricordo che ho riso, perché sembrava scritto apposta per me.",
+        "en": "I remember I laughed, because it seemed written specially for me."
+       },
+       {
+        "it": "Quel giorno non sono entrata.",
+        "en": "I didn't go in that day."
+       },
+       {
+        "it": "Ho fatto finta di niente e sono andata a prendere un caffè.",
+        "en": "I pretended I hadn't seen it and went for a coffee."
+       },
+       {
+        "it": "Ma per tutta la settimana ci ho pensato.",
+        "en": "But I thought about it all week."
+       },
+       {
+        "it": "Il sabato dopo sono tornata, e il cancello era aperto.",
+        "en": "The following Saturday I went back, and the gate was open."
+       },
+       {
+        "it": "Dentro c'era un signore sui settant'anni, il signor Bruno, che stava riparando una barca.",
+        "en": "Inside there was a man of about seventy, Mr Bruno, who was repairing a boat."
+       },
+       {
+        "it": "Gli ho chiesto se il cartello fosse vero.",
+        "en": "I asked him if the sign was for real."
+       },
+       {
+        "it": "Lui mi ha guardata da capo a piedi e ha detto: \"Sa nuotare?\"",
+        "en": "He looked me up and down and said: \"Can you swim?\""
+       },
+       {
+        "it": "Ho detto di sì.",
+        "en": "I said yes."
+       },
+       {
+        "it": "\"Allora va bene. Martedì alle sette.\"",
+        "en": "\"Then that's fine. Tuesday at seven.\""
+       },
+       {
+        "it": "E basta, questo è stato il colloquio.",
+        "en": "And that was it, that was the interview."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Le prime settimane sono state un disastro, devo essere onesta.",
+        "en": "The first weeks were a disaster, I have to be honest."
+       },
+       {
+        "it": "Il canottaggio sembra facile da fuori: ti siedi e tiri i remi.",
+        "en": "Rowing looks easy from the outside: you sit down and pull the oars."
+       },
+       {
+        "it": "In realtà è una questione di ritmo.",
+        "en": "In reality it's all about rhythm."
+       },
+       {
+        "it": "E se sbagli il ritmo in una barca con altre tre persone, lo sentono tutti.",
+        "en": "And if you get the rhythm wrong in a boat with three other people, everyone feels it."
+       },
+       {
+        "it": "Io lo sbagliavo continuamente.",
+        "en": "I got it wrong all the time."
+       },
+       {
+        "it": "Una volta ho perso un remo, ma proprio perso, in mare, e abbiamo dovuto girare la barca per recuperarlo.",
+        "en": "Once I lost an oar, I mean really lost it, in the sea, and we had to turn the boat round to get it back."
+       },
+       {
+        "it": "Bruno, dal gommone, urlava in triestino cose che non ripeterò.",
+        "en": "Bruno, from the dinghy, was shouting things in Triestine dialect that I won't repeat."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Eppure tornavo, ogni martedì e ogni giovedì.",
+        "en": "And yet I kept going back, every Tuesday and every Thursday."
+       },
+       {
+        "it": "Non so bene spiegare perché.",
+        "en": "I can't really explain why."
+       },
+       {
+        "it": "Forse perché in barca non puoi pensare ad altro.",
+        "en": "Maybe because in a boat you can't think about anything else."
+       },
+       {
+        "it": "Se ti distrai un secondo, rovini il lavoro degli altri.",
+        "en": "If you get distracted for a second, you ruin the others' work."
+       },
+       {
+        "it": "È una forma di concentrazione che non avevo mai provato, nemmeno leggendo.",
+        "en": "It's a kind of concentration I'd never felt, not even when reading."
+       },
+       {
+        "it": "E poi c'è il golfo alle sette di mattina.",
+        "en": "And then there's the gulf at seven in the morning."
+       },
+       {
+        "it": "D'inverno è ancora buio quando usciamo, e vedi le luci di Muggia dall'altra parte.",
+        "en": "In winter it's still dark when we go out, and you can see the lights of Muggia on the other side."
+       },
+       {
+        "it": "E il castello di Miramare, laggiù, sembra fatto di zucchero.",
+        "en": "And Miramare castle, down there, looks like it's made of sugar."
+       },
+       {
+        "it": "Con la bora, invece, non si esce.",
+        "en": "When the bora blows, though, we don't go out."
+       },
+       {
+        "it": "Quella è l'unica regola su cui Bruno non discute.",
+        "en": "That's the only rule Bruno won't argue about."
+       },
+       {
+        "it": "Una volta un ragazzo nuovo ha insistito, diceva che il vento non era poi così forte.",
+        "en": "Once a new lad insisted, he said the wind wasn't that strong really."
+       },
+       {
+        "it": "Bruno non ha nemmeno risposto: ha chiuso il cancello col lucchetto e se n'è andato a casa.",
+        "en": "Bruno didn't even answer: he padlocked the gate and went home."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Adesso faccio parte di un equipaggio fisso: siamo quattro donne, tutte sopra i cinquanta.",
+        "en": "Now I'm part of a regular crew: we're four women, all over fifty."
+       },
+       {
+        "it": "Ci sono io, una pediatra, un'ex poliziotta e una signora slovena che parla pochissimo e rema come una macchina.",
+        "en": "There's me, a paediatrician, an ex-policewoman and a Slovenian lady who barely speaks and rows like a machine."
+       },
+       {
+        "it": "L'anno scorso abbiamo fatto la nostra prima gara, una regata master a Venezia.",
+        "en": "Last year we did our first race, a masters regatta in Venice."
+       },
+       {
+        "it": "Siamo arrivate penultime.",
+        "en": "We came second to last."
+       },
+       {
+        "it": "Però abbiamo festeggiato come se avessimo vinto, con lo spritz alle undici di mattina.",
+        "en": "But we celebrated as if we'd won, with spritz at eleven in the morning."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Se qualcuno mi avesse detto, cinque anni fa, che mi sarei alzata alle sei per andare a remare al freddo, gli avrei riso in faccia.",
+        "en": "If someone had told me, five years ago, that I'd get up at six to go rowing in the cold, I'd have laughed in their face."
+       },
+       {
+        "it": "Irene, quando torna a casa, mi prende in giro.",
+        "en": "Irene, when she comes home, teases me."
+       },
+       {
+        "it": "Dice che adesso sono io quella che non c'è mai.",
+        "en": "She says that now I'm the one who's never around."
+       },
+       {
+        "it": "E un po' ha ragione.",
+        "en": "And she's sort of right."
+       },
+       {
+        "it": "L'unica cosa che mi dispiace è che le mani non sono più quelle di prima.",
+        "en": "The only thing I'm sorry about is that my hands aren't what they used to be."
+       },
+       {
+        "it": "Ho i calli, e in biblioteca qualche collega mi guarda in modo strano quando sfoglio i libri antichi.",
+        "en": "I've got calluses, and at the library some colleagues give me funny looks when I leaf through the old books."
+       },
+       {
+        "it": "Ma pazienza.",
+        "en": "But never mind."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Ah, il cartello, comunque, ce l'ho io.",
+        "en": "Oh, and the sign, by the way, I've got it."
+       },
+       {
+        "it": "Un giorno Bruno voleva buttarlo, e io gliel'ho chiesto.",
+        "en": "One day Bruno wanted to throw it away, and I asked him for it."
+       },
+       {
+        "it": "Adesso è appeso in cucina, sopra il frigorifero.",
+        "en": "Now it's hanging in my kitchen, above the fridge."
+       },
+       {
+        "it": "Irene dice che è la cosa più brutta della casa.",
+        "en": "Irene says it's the ugliest thing in the house."
+       },
+       {
+        "it": "Ha ragione anche su questo, ma resta lì.",
+        "en": "She's right about that too, but it's staying there."
+       }
+      ]
+     }
+    ]
+   },
+   "B2": {
+    "speaker": "Davide, 38 anni, Bologna (e i weekend sull'Appennino)",
+    "body": [
+     {
+      "s": [
+       {
+        "it": "Allora, premetto che quando dico alla gente qual è il mio hobby, la reazione è sempre la stessa.",
+        "en": "Right, let me start by saying that when I tell people what my hobby is, the reaction is always the same."
+       },
+       {
+        "it": "Prima una risatina, poi la domanda: \"Ma quindi sei ricco?\"",
+        "en": "First a little laugh, then the question: \"So you're rich, then?\""
+       },
+       {
+        "it": "No, non sono ricco.",
+        "en": "No, I'm not rich."
+       },
+       {
+        "it": "Vado a tartufi.",
+        "en": "I go truffle hunting."
+       },
+       {
+        "it": "O meglio, ci va la mia cagnolina, Lilla, e io le vado dietro con la zappetta e le scarpe sbagliate.",
+        "en": "Or rather, my little dog Lilla goes, and I trail after her with a little hoe and the wrong shoes."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "La cosa curiosa è che questa passione non l'ho scelta: me la sono ritrovata in eredità, letteralmente.",
+        "en": "The funny thing is that I didn't choose this passion: I inherited it, literally."
+       },
+       {
+        "it": "Sei anni fa è morto mio zio Gino, il fratello di mia madre, che viveva da solo in una casa sopra Loiano, sull'Appennino bolognese.",
+        "en": "Six years ago my uncle Gino died, my mother's brother, who lived alone in a house above Loiano, in the Bolognese Apennines."
+       },
+       {
+        "it": "Era un tipo burbero, di poche parole.",
+        "en": "He was a gruff type, a man of few words."
+       },
+       {
+        "it": "Uno che a Natale ti regalava un barattolo di miele senza etichetta e se ne andava prima del dolce.",
+        "en": "The kind who'd give you an unlabelled jar of honey at Christmas and leave before dessert."
+       },
+       {
+        "it": "Nel testamento, oltre a qualche debito e a una Panda del '94, c'era una riga che diceva: \"Lilla va a Davide\".",
+        "en": "In the will, besides a few debts and a '94 Panda, there was a line that said: \"Lilla goes to Davide\"."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Io non avevo mai avuto un cane.",
+        "en": "I had never had a dog."
+       },
+       {
+        "it": "Vivevo in un bilocale in via del Pratello e lavoravo, come lavoro tuttora, come sviluppatore per un'azienda di logistica.",
+        "en": "I lived in a two-room flat in via del Pratello and I worked, as I still do, as a developer for a logistics company."
+       },
+       {
+        "it": "La mia idea di natura era il parco della Montagnola la domenica pomeriggio.",
+        "en": "My idea of nature was the Montagnola park on a Sunday afternoon."
+       },
+       {
+        "it": "Ancora oggi non so perché lo zio abbia scelto proprio me.",
+        "en": "Even now I don't know why my uncle picked me of all people."
+       },
+       {
+        "it": "Mia madre sostiene che fosse un modo per costringermi a uscire di casa.",
+        "en": "My mother maintains it was a way of forcing me out of the house."
+       },
+       {
+        "it": "Io sospetto che fossi semplicemente l'unico nipote senza figli e senza gatti.",
+        "en": "I suspect I was simply the only nephew with no children and no cats."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Fatto sta che mi sono ritrovato con un lagotto romagnolo di quattro anni, una massa di riccioli color nocciola che in città si annoiava a morte.",
+        "en": "The fact is I ended up with a four-year-old Lagotto Romagnolo, a mass of hazel-coloured curls who was bored to death in the city."
+       },
+       {
+        "it": "E lo faceva capire in modo molto chiaro: nel giro di un mese ha mangiato due telecomandi e l'angolo del divano.",
+        "en": "And she made that very clear: within a month she'd eaten two remote controls and the corner of the sofa."
+       },
+       {
+        "it": "Un vicino di casa, un signore di Savigno, un giorno mi ha fermato per le scale.",
+        "en": "A neighbour, a man from Savigno, stopped me on the stairs one day."
+       },
+       {
+        "it": "\"Ma tu lo sai che quello è un cane da tartufi? Se non lo fai lavorare, impazzisce.\"",
+        "en": "\"You do know that's a truffle dog? If you don't let it work, it'll go mad.\""
+       },
+       {
+        "it": "Io non lo sapevo, ovviamente.",
+        "en": "I didn't know, obviously."
+       },
+       {
+        "it": "Quindi ho cominciato a informarmi, un po' per senso di colpa e un po' per salvare il divano.",
+        "en": "So I started reading up on it, partly out of guilt and partly to save the sofa."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "La prima scoperta è stata che in Emilia-Romagna per cercare tartufi serve un tesserino, e per averlo bisogna superare un esame.",
+        "en": "The first discovery was that in Emilia-Romagna you need a licence to look for truffles, and to get one you have to pass an exam."
+       },
+       {
+        "it": "Un esame vero, con domande sulle specie, sui periodi di raccolta, sulle piante con cui il tartufo vive in simbiosi.",
+        "en": "A real exam, with questions on the species, the harvest seasons, the trees truffles live in symbiosis with."
+       },
+       {
+        "it": "Così, a trentatré anni, mi sono ritrovato a studiare la differenza tra il bianchetto e il bianco pregiato su un manuale della Regione.",
+        "en": "So, at thirty-three, I found myself studying the difference between the bianchetto and the prized white truffle from a regional handbook."
+       },
+       {
+        "it": "La sera, dopo il lavoro, con un impegno che all'università non avevo mai avuto.",
+        "en": "In the evenings, after work, with a dedication I'd never had at university."
+       },
+       {
+        "it": "L'ho passato, l'esame.",
+        "en": "I passed it, the exam."
+       },
+       {
+        "it": "Al primo colpo, ci tengo a precisarlo.",
+        "en": "First time, I'd like to point out."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "La seconda scoperta, molto più umiliante, è stata che il tesserino non serve a niente se non sai dove andare.",
+        "en": "The second discovery, far more humiliating, was that the licence is useless if you don't know where to go."
+       },
+       {
+        "it": "I tartufai sono gelosissimi dei propri posti.",
+        "en": "Truffle hunters are fiercely protective of their spots."
+       },
+       {
+        "it": "Puoi chiedere a un tartufaio della sua salute, della sua famiglia, perfino delle sue idee politiche.",
+        "en": "You can ask a truffle hunter about his health, his family, even his politics."
+       },
+       {
+        "it": "Ma se gli chiedi dove trova i tartufi, ti guarda come se gli avessi chiesto il PIN del bancomat.",
+        "en": "But if you ask him where he finds truffles, he looks at you as if you'd asked for his bank card PIN."
+       },
+       {
+        "it": "Lo zio Gino, naturalmente, i suoi posti non li aveva scritti da nessuna parte.",
+        "en": "Uncle Gino, naturally, hadn't written his spots down anywhere."
+       },
+       {
+        "it": "O almeno, così credevo.",
+        "en": "Or at least, that's what I thought."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Per il primo anno ho girato per i boschi sopra Loiano praticamente a caso, il sabato all'alba.",
+        "en": "For the first year I wandered the woods above Loiano more or less at random, on Saturdays at dawn."
+       },
+       {
+        "it": "Lilla correva felice e io inciampavo nei rovi.",
+        "en": "Lilla ran about happily and I tripped over brambles."
+       },
+       {
+        "it": "Trovavamo funghi, castagne, una volta un portafoglio vuoto, ma di tartufi niente, o quasi.",
+        "en": "We found mushrooms, chestnuts, once an empty wallet, but truffles, nothing, or next to nothing."
+       },
+       {
+        "it": "Poi, un pomeriggio di ottobre, è successa una cosa che ancora adesso mi fa venire la pelle d'oca.",
+        "en": "Then, one October afternoon, something happened that still gives me goosebumps."
+       },
+       {
+        "it": "Ero alla casa dello zio, che nel frattempo stavamo cercando di vendere.",
+        "en": "I was at my uncle's house, which in the meantime we were trying to sell."
+       },
+       {
+        "it": "Lilla, invece di aspettarmi in macchina come al solito, è partita di corsa giù per un sentiero dietro il pollaio.",
+        "en": "Lilla, instead of waiting for me in the car as usual, shot off down a path behind the henhouse."
+       },
+       {
+        "it": "L'ho seguita per una ventina di minuti, imprecando.",
+        "en": "I followed her for twenty minutes or so, swearing."
+       },
+       {
+        "it": "A un certo punto si è fermata sotto una fila di querce, vicino a un muretto a secco, e ha cominciato a scavare come un'ossessa.",
+        "en": "At a certain point she stopped under a row of oaks, by a dry-stone wall, and started digging like a thing possessed."
+       },
+       {
+        "it": "Lì sotto c'erano tre tartufi bianchi.",
+        "en": "Down there were three white truffles."
+       },
+       {
+        "it": "Piccoli, d'accordo, ma bianchi, e con un profumo che ti stordiva.",
+        "en": "Small, granted, but white, and with a smell that made your head spin."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Lei quel posto lo conosceva.",
+        "en": "She knew that spot."
+       },
+       {
+        "it": "Ci era andata chissà quante volte con lo zio, e mi ci ha portato appena ha capito che io, da solo, non ci sarei mai arrivato.",
+        "en": "She'd been there who knows how many times with my uncle, and she took me there as soon as she realised that I'd never find it on my own."
+       },
+       {
+        "it": "Mi piace pensare che fosse questo il vero contenuto del testamento.",
+        "en": "I like to think that this was what the will was really about."
+       },
+       {
+        "it": "Non il cane, ma la mappa che il cane si portava in testa.",
+        "en": "Not the dog, but the map the dog carried in her head."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Da allora le cose sono cambiate parecchio.",
+        "en": "Since then things have changed quite a bit."
+       },
+       {
+        "it": "La casa alla fine non l'abbiamo venduta.",
+        "en": "In the end we didn't sell the house."
+       },
+       {
+        "it": "Ci passo quasi tutti i fine settimana da ottobre a dicembre, e ho imparato a convivere con la stufa a legna e con un vicino che mi chiama ancora \"il cittadino\".",
+        "en": "I spend almost every weekend there from October to December, and I've learnt to live with the wood stove and with a neighbour who still calls me \"the city boy\"."
+       },
+       {
+        "it": "Ho anche scoperto che i tartufi, nella maggior parte dei casi, non li vendo.",
+        "en": "I've also found out that, most of the time, I don't sell the truffles."
+       },
+       {
+        "it": "Li regalo, li grattugio sulle tagliatelle di mia madre, e una volta ne ho scambiato uno con un idraulico in cambio di una caldaia montata.",
+        "en": "I give them away, I grate them over my mother's tagliatelle, and once I swapped one with a plumber for a boiler installation."
+       },
+       {
+        "it": "È un'economia parallela, molto più divertente di quella ufficiale.",
+        "en": "It's a parallel economy, much more fun than the official one."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Se devo essere sincero, però, i tartufi sono quasi un pretesto.",
+        "en": "If I'm honest, though, the truffles are almost an excuse."
+       },
+       {
+        "it": "Quello che mi ha preso davvero è lavorare in coppia con un animale che ne sa più di me e non perde occasione per ricordarmelo.",
+        "en": "What really got me is working as a team with an animal who knows more than I do and never misses a chance to remind me."
+       },
+       {
+        "it": "Nel mio lavoro passo otto ore davanti a uno schermo a risolvere problemi astratti.",
+        "en": "In my job I spend eight hours in front of a screen solving abstract problems."
+       },
+       {
+        "it": "Nel bosco il problema è concretissimo, sta lì sotto, a venti centimetri, e la soluzione ce l'ha il naso di qualcun altro.",
+        "en": "In the woods the problem is extremely concrete, it's right there, twenty centimetres down, and the solution is in someone else's nose."
+       },
+       {
+        "it": "Per uno che di mestiere fa quello che sa tutto, è una bella lezione di umiltà, ogni sabato.",
+        "en": "For someone whose job is being the one who knows everything, it's a good lesson in humility, every Saturday."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Lilla adesso ha dieci anni e comincia a stancarsi prima.",
+        "en": "Lilla is ten now and is starting to tire more quickly."
+       },
+       {
+        "it": "Ogni tanto penso che dovrei prendere un cucciolo e farglielo addestrare, finché si è in tempo.",
+        "en": "Sometimes I think I should get a puppy and have her train it, while there's still time."
+       },
+       {
+        "it": "Poi però mi chiedo se il cucciolo imparerebbe da lei i posti o soltanto i vizi, tipo mangiare i telecomandi.",
+        "en": "But then I wonder whether the puppy would learn the spots from her or just the bad habits, like eating remote controls."
+       },
+       {
+        "it": "Non ho ancora deciso.",
+        "en": "I still haven't decided."
+       },
+       {
+        "it": "Intanto il muretto dietro il pollaio non l'ho mai segnato sul GPS.",
+        "en": "Meanwhile, I've never marked the wall behind the henhouse on GPS."
+       },
+       {
+        "it": "Me lo ricordo e basta.",
+        "en": "I just remember it."
+       },
+       {
+        "it": "Lo zio, credo, ne sarebbe fiero, anche se non me lo direbbe mai.",
+        "en": "My uncle, I think, would be proud of that, even if he'd never tell me."
+       }
+      ]
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "s-07",
+  "title": "Casa mia e il mio quartiere",
+  "en": "My home and my neighbourhood",
+  "topic": "daily",
+  "task": "Talk for 5-10 minutes about where you live: your home, the street, the neighbourhood and the people around you. Describe concrete places and faces, say how long you've been there and how the area has changed. Finish by saying whether you really feel at home there.",
+  "questions": [
+   {
+    "it": "Dove abiti? In una casa o in un appartamento?",
+    "en": "Where do you live? In a house or a flat?"
+   },
+   {
+    "it": "Com'è la tua casa? Qual è la tua stanza preferita?",
+    "en": "What's your home like? Which is your favourite room?"
+   },
+   {
+    "it": "Con chi vivi?",
+    "en": "Who do you live with?"
+   },
+   {
+    "it": "Che cosa c'è nel tuo quartiere? Negozi, bar, un parco?",
+    "en": "What is there in your neighbourhood? Shops, cafés, a park?"
+   },
+   {
+    "it": "Conosci i tuoi vicini? Che rapporto hai con loro?",
+    "en": "Do you know your neighbours? What's your relationship with them like?"
+   },
+   {
+    "it": "Da quanto tempo ci vivi, e com'è cambiata la zona?",
+    "en": "How long have you lived there, and how has the area changed?"
+   },
+   {
+    "it": "Se potessi, che cosa cambieresti della casa o del quartiere?",
+    "en": "If you could, what would you change about the home or the neighbourhood?"
+   },
+   {
+    "it": "Ti senti davvero a casa lì? Perché?",
+    "en": "Do you really feel at home there? Why?"
+   }
+  ],
+  "phrases": [
+   {
+    "it": "Abito al terzo piano senza ascensore.",
+    "en": "I live on the third floor with no lift."
+   },
+   {
+    "it": "È piccola ma luminosa.",
+    "en": "It's small but bright."
+   },
+   {
+    "it": "Sotto casa c'è…",
+    "en": "Right downstairs from me there's…"
+   },
+   {
+    "it": "È una zona tranquilla, un po' rumorosa la sera.",
+    "en": "It's a quiet area, a bit noisy in the evening."
+   },
+   {
+    "it": "Ci vivo da cinque anni.",
+    "en": "I've lived there for five years."
+   },
+   {
+    "it": "Mi trovo bene.",
+    "en": "I like it there."
+   },
+   {
+    "it": "L'unico difetto è che…",
+    "en": "The only downside is that…"
+   },
+   {
+    "it": "A due passi da casa…",
+    "en": "A stone's throw from home…"
+   },
+   {
+    "it": "Ci conosciamo tutti di vista.",
+    "en": "We all know each other by sight."
+   },
+   {
+    "it": "Non lo cambierei per niente al mondo.",
+    "en": "I wouldn't change it for anything in the world."
+   },
+   {
+    "it": "Ti dico la verità…",
+    "en": "I'll tell you the truth…"
+   },
+   {
+    "it": "Una volta qui c'era…",
+    "en": "There used to be … here."
+   }
+  ],
+  "models": {
+   "A1": {
+    "speaker": "Amina, 26 anni, Torino",
+    "body": [
+     {
+      "s": [
+       {
+        "it": "Allora, io abito a Torino, nel quartiere San Salvario.",
+        "en": "So, I live in Turin, in the San Salvario neighbourhood."
+       },
+       {
+        "it": "È vicino alla stazione di Porta Nuova.",
+        "en": "It's near Porta Nuova station."
+       },
+       {
+        "it": "Abito in un appartamento piccolo, al quarto piano.",
+        "en": "I live in a small flat, on the fourth floor."
+       },
+       {
+        "it": "C'è l'ascensore, ma è vecchio e spesso non funziona.",
+        "en": "There's a lift, but it's old and often doesn't work."
+       },
+       {
+        "it": "Quindi faccio le scale.",
+        "en": "So I take the stairs."
+       },
+       {
+        "it": "Ottantaquattro scalini, li ho contati.",
+        "en": "Eighty-four steps, I counted them."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "La mia casa ha due stanze: una camera e una cucina con un divano.",
+        "en": "My flat has two rooms: a bedroom and a kitchen with a sofa."
+       },
+       {
+        "it": "Il bagno è piccolissimo.",
+        "en": "The bathroom is tiny."
+       },
+       {
+        "it": "Quando faccio la doccia, tocco il muro con il gomito.",
+        "en": "When I have a shower, I touch the wall with my elbow."
+       },
+       {
+        "it": "Però ho un balcone.",
+        "en": "But I have a balcony."
+       },
+       {
+        "it": "Il balcone è la mia stanza preferita, anche se non è una stanza.",
+        "en": "The balcony is my favourite room, even if it isn't a room."
+       },
+       {
+        "it": "Lì ho il basilico, la menta e una sedia.",
+        "en": "There I have basil, mint and a chair."
+       },
+       {
+        "it": "La sera bevo un tè sul balcone e guardo la strada.",
+        "en": "In the evening I drink tea on the balcony and watch the street."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Vivo da sola.",
+        "en": "I live alone."
+       },
+       {
+        "it": "Cioè, quasi da sola.",
+        "en": "Well, almost alone."
+       },
+       {
+        "it": "C'è un gatto che non è mio.",
+        "en": "There's a cat that isn't mine."
+       },
+       {
+        "it": "È il gatto della vicina, la signora Franca.",
+        "en": "It's the neighbour's cat, Mrs Franca's."
+       },
+       {
+        "it": "Lui entra dal balcone, mangia, dorme sul mio letto e poi torna a casa sua.",
+        "en": "He comes in from the balcony, eats, sleeps on my bed and then goes back home."
+       },
+       {
+        "it": "La signora Franca non lo sa.",
+        "en": "Mrs Franca doesn't know."
+       },
+       {
+        "it": "O forse sì, non so.",
+        "en": "Or maybe she does, I don't know."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Il mio quartiere è molto vivo.",
+        "en": "My neighbourhood is very lively."
+       },
+       {
+        "it": "Ci sono persone di tanti paesi: italiani, marocchini come la mia famiglia, cinesi, peruviani.",
+        "en": "There are people from lots of countries: Italians, Moroccans like my family, Chinese, Peruvians."
+       },
+       {
+        "it": "Sotto casa c'è un panettiere egiziano.",
+        "en": "Downstairs there's an Egyptian baker."
+       },
+       {
+        "it": "Fa il pane arabo e anche i grissini torinesi.",
+        "en": "He makes Arab bread and also Turin breadsticks."
+       },
+       {
+        "it": "Di fronte c'è un bar dove il caffè costa un euro e dieci.",
+        "en": "Opposite there's a café where coffee costs one euro ten."
+       },
+       {
+        "it": "A due passi c'è il parco del Valentino, vicino al fiume.",
+        "en": "A stone's throw away there's Valentino park, by the river."
+       },
+       {
+        "it": "La domenica vado lì a correre.",
+        "en": "On Sundays I go running there."
+       },
+       {
+        "it": "Be', a camminare veloce.",
+        "en": "Well, walking fast."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "L'unico problema è la sera.",
+        "en": "The only problem is the evening."
+       },
+       {
+        "it": "Il venerdì e il sabato ci sono tanti ragazzi in strada, la musica, le voci.",
+        "en": "On Fridays and Saturdays there are lots of young people in the street, music, voices."
+       },
+       {
+        "it": "Io dormo con i tappi nelle orecchie.",
+        "en": "I sleep with earplugs in."
+       },
+       {
+        "it": "Ma va bene, perché anch'io, qualche volta, sono in strada con loro!",
+        "en": "But that's fine, because sometimes I'm in the street with them too!"
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Mi piace casa mia?",
+        "en": "Do I like my home?"
+       },
+       {
+        "it": "Sì, molto.",
+        "en": "Yes, a lot."
+       },
+       {
+        "it": "È piccola, ma è mia.",
+        "en": "It's small, but it's mine."
+       },
+       {
+        "it": "E il gatto, secondo me, è d'accordo.",
+        "en": "And the cat, I think, agrees."
+       }
+      ]
+     }
+    ]
+   },
+   "A2": {
+    "speaker": "Rosaria, 67 anni, Napoli",
+    "body": [
+     {
+      "s": [
+       {
+        "it": "Io abito al Rione Sanità, a Napoli, da quarantadue anni.",
+        "en": "I've lived in the Rione Sanità, in Naples, for forty-two years."
+       },
+       {
+        "it": "Sempre nello stesso palazzo, sempre allo stesso piano, il secondo.",
+        "en": "Always in the same building, always on the same floor, the second."
+       },
+       {
+        "it": "Prima ci abitava mia suocera, poi ci siamo venuti io e mio marito, Gennaro, quando ci siamo sposati.",
+        "en": "First my mother-in-law lived there, then my husband Gennaro and I moved in when we got married."
+       },
+       {
+        "it": "Adesso Gennaro non c'è più, e io sto qua con il canarino.",
+        "en": "Now Gennaro is gone, and I'm here with the canary."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "La casa non è grande: tre stanze e una cucina con una finestra sul cortile.",
+        "en": "The flat isn't big: three rooms and a kitchen with a window onto the courtyard."
+       },
+       {
+        "it": "Dalla finestra della cucina vedo tutto.",
+        "en": "From the kitchen window I see everything."
+       },
+       {
+        "it": "Chi entra, chi esce, chi litiga, chi si fidanza.",
+        "en": "Who comes in, who goes out, who argues, who gets engaged."
+       },
+       {
+        "it": "Mia nipote dice che sono meglio di una telecamera.",
+        "en": "My granddaughter says I'm better than a security camera."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Quando ero giovane, il quartiere era diverso.",
+        "en": "When I was young, the neighbourhood was different."
+       },
+       {
+        "it": "C'erano più bambini, giocavano tutti in strada, a pallone, fino a tardi.",
+        "en": "There were more children, they all played in the street, football, until late."
+       },
+       {
+        "it": "Le donne parlavano da un balcone all'altro.",
+        "en": "The women talked from one balcony to another."
+       },
+       {
+        "it": "E poi c'era il panaro.",
+        "en": "And then there was the panaro."
+       },
+       {
+        "it": "Sapete cos'è?",
+        "en": "Do you know what it is?"
+       },
+       {
+        "it": "È un cesto con una corda.",
+        "en": "It's a basket on a rope."
+       },
+       {
+        "it": "Io lo calavo dal balcone, il ragazzo del negozio ci metteva il pane o le sigarette di Gennaro, e io lo tiravo su.",
+        "en": "I'd lower it from the balcony, the boy from the shop would put the bread or Gennaro's cigarettes in it, and I'd pull it up."
+       },
+       {
+        "it": "Niente scale, niente fatica.",
+        "en": "No stairs, no effort."
+       },
+       {
+        "it": "Lo uso ancora, eh.",
+        "en": "I still use it, you know."
+       },
+       {
+        "it": "Il fruttivendolo, Peppe, quando mi vede, già sa: due limoni e un po' di prezzemolo.",
+        "en": "The greengrocer, Peppe, when he sees me, already knows: two lemons and a bit of parsley."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Per tanti anni la Sanità aveva una brutta fama.",
+        "en": "For many years the Sanità had a bad reputation."
+       },
+       {
+        "it": "La gente di fuori non veniva, aveva paura.",
+        "en": "People from outside didn't come, they were scared."
+       },
+       {
+        "it": "Qualche problema c'era, non dico di no.",
+        "en": "There were some problems, I won't deny it."
+       },
+       {
+        "it": "Ma negli ultimi anni è cambiato tanto.",
+        "en": "But in the last few years it's changed a lot."
+       },
+       {
+        "it": "Dei ragazzi del quartiere hanno aperto le catacombe ai visitatori e fanno da guide.",
+        "en": "Some local young people opened the catacombs to visitors and work as guides."
+       },
+       {
+        "it": "Adesso arrivano i turisti, con le mappe sul telefono e le scarpe da ginnastica bianche.",
+        "en": "Now the tourists come, with maps on their phones and white trainers."
+       },
+       {
+        "it": "Si fermano sotto il mio palazzo e fanno le foto alle lenzuola stese.",
+        "en": "They stop under my building and take photos of the sheets hanging out."
+       },
+       {
+        "it": "Alle mie lenzuola!",
+        "en": "Of my sheets!"
+       },
+       {
+        "it": "La prima volta mi sono arrabbiata.",
+        "en": "The first time I got angry."
+       },
+       {
+        "it": "Poi ho pensato: va bene, almeno le stiro bene.",
+        "en": "Then I thought: fine, at least I'll iron them properly."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "I vicini li conosco tutti.",
+        "en": "I know all the neighbours."
+       },
+       {
+        "it": "Al primo piano c'è una famiglia dello Sri Lanka, molto gentile.",
+        "en": "On the first floor there's a family from Sri Lanka, very kind."
+       },
+       {
+        "it": "La signora mi ha insegnato a fare il curry e io le ho insegnato il ragù.",
+        "en": "The lady taught me to make curry and I taught her ragù."
+       },
+       {
+        "it": "Il suo ragù è venuto buono, ma io il curry lo faccio ancora troppo piccante.",
+        "en": "Her ragù came out well, but I still make my curry too spicy."
+       },
+       {
+        "it": "Al terzo piano invece c'è un ragazzo che suona la batteria.",
+        "en": "On the third floor, on the other hand, there's a lad who plays the drums."
+       },
+       {
+        "it": "Di lui non parliamo.",
+        "en": "Let's not talk about him."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "La sera, d'estate, scendiamo tutti in cortile con le sedie.",
+        "en": "On summer evenings we all go down to the courtyard with our chairs."
+       },
+       {
+        "it": "Chi porta il caffè, chi porta le sfogliatelle, e si parla fino a mezzanotte.",
+        "en": "Someone brings coffee, someone brings sfogliatelle, and we talk until midnight."
+       },
+       {
+        "it": "Anche il ragazzo della batteria scende, e lì, devo dire, è un bravo ragazzo.",
+        "en": "Even the drum lad comes down, and there, I have to say, he's a good boy."
+       },
+       {
+        "it": "Mi porta su le bottiglie dell'acqua e non vuole niente.",
+        "en": "He carries the water bottles up for me and won't take anything."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Mio figlio vive a Caserta e mi dice sempre: \"Mamma, vieni a stare da noi, c'è il giardino, c'è il silenzio.\"",
+        "en": "My son lives in Caserta and he's always telling me: \"Mum, come and live with us, there's a garden, there's peace and quiet.\""
+       },
+       {
+        "it": "Io ci vado la domenica, mangio, e la sera voglio tornare a casa.",
+        "en": "I go there on Sundays, I eat, and in the evening I want to go home."
+       },
+       {
+        "it": "Il silenzio a me mi mette ansia.",
+        "en": "Silence makes me anxious."
+       },
+       {
+        "it": "Qua, se apro la finestra, sento la vita.",
+        "en": "Here, if I open the window, I hear life."
+       },
+       {
+        "it": "Anche la batteria, purtroppo.",
+        "en": "The drums too, unfortunately."
+       }
+      ]
+     }
+    ]
+   },
+   "B1": {
+    "speaker": "Tommaso, 30 anni, Matera",
+    "body": [
+     {
+      "s": [
+       {
+        "it": "Allora, io abito nei Sassi di Matera, e già questo, quando lo dico, fa effetto.",
+        "en": "Right, I live in the Sassi of Matera, and that alone gets a reaction when I say it."
+       },
+       {
+        "it": "La gente immagina subito una specie di presepe, tutto romantico, con le candele.",
+        "en": "People immediately imagine a sort of nativity scene, all romantic, with candles."
+       },
+       {
+        "it": "La realtà è un po' diversa, diciamo.",
+        "en": "The reality is a bit different, let's say."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "La mia casa è in parte scavata nella roccia.",
+        "en": "My home is partly carved into the rock."
+       },
+       {
+        "it": "Cioè, la parte davanti è costruita, con una porta e una finestra normali, mentre la stanza in fondo è proprio una grotta.",
+        "en": "I mean, the front part is built, with a normal door and window, while the room at the back is an actual cave."
+       },
+       {
+        "it": "Lì ho messo la camera da letto, perché d'estate è l'unico posto fresco di tutta Matera.",
+        "en": "I put the bedroom there, because in summer it's the only cool place in the whole of Matera."
+       },
+       {
+        "it": "D'inverno, invece, è umidissima.",
+        "en": "In winter, on the other hand, it's incredibly damp."
+       },
+       {
+        "it": "Ho un deumidificatore che va giorno e notte e che, ogni mattina, devo svuotare come se fosse un secchio di latte.",
+        "en": "I've got a dehumidifier that runs day and night and that I have to empty every morning as if it were a milk pail."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "La casa era di mio nonno.",
+        "en": "The house was my grandfather's."
+       },
+       {
+        "it": "Lui ci è nato, negli anni Quaranta, quando nei Sassi le famiglie vivevano in una stanza sola, insieme agli animali.",
+        "en": "He was born there, in the Forties, when families in the Sassi lived in a single room, together with the animals."
+       },
+       {
+        "it": "Poi, negli anni Cinquanta, lo Stato ha fatto sgomberare tutto il quartiere, perché le condizioni erano terribili.",
+        "en": "Then, in the Fifties, the State had the whole district evacuated, because conditions were terrible."
+       },
+       {
+        "it": "Mio nonno è andato a vivere in un palazzo nuovo, in periferia, e per tutta la vita ha detto che quella era stata la sua fortuna.",
+        "en": "My grandfather went to live in a new block of flats on the outskirts, and all his life he said that had been his lucky break."
+       },
+       {
+        "it": "Quando gli ho detto che volevo tornare a vivere qui, mi ha guardato come se fossi impazzito.",
+        "en": "When I told him I wanted to come back and live here, he looked at me as if I'd gone mad."
+       },
+       {
+        "it": "\"Ci abbiamo messo vent'anni a uscire da lì, e tu ci vuoi rientrare?\"",
+        "en": "\"It took us twenty years to get out of there, and you want to go back in?\""
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Ci sono rientrato, sì, e ci vivo da quattro anni.",
+        "en": "I did go back in, yes, and I've been living there for four years."
+       },
+       {
+        "it": "Ho dovuto ristrutturare quasi tutto, con un sacco di permessi, perché qui è tutto patrimonio UNESCO e non puoi spostare un sasso senza un timbro.",
+        "en": "I had to renovate almost everything, with loads of permits, because everything here is a UNESCO site and you can't move a stone without an official stamp."
+       },
+       {
+        "it": "Ci sono voluti due anni e tutti i miei risparmi.",
+        "en": "It took two years and all my savings."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Il quartiere, devo dire, è strano.",
+        "en": "The neighbourhood, I have to say, is strange."
+       },
+       {
+        "it": "Di giorno è pieno di turisti, gruppi con le guide, coppie che fanno le foto per il matrimonio, troupe che girano film.",
+        "en": "During the day it's full of tourists, groups with guides, couples doing wedding photos, crews shooting films."
+       },
+       {
+        "it": "Una volta sono uscito di casa in pigiama a buttare la spazzatura e mi sono ritrovato in mezzo a un set.",
+        "en": "Once I went out in my pyjamas to take the rubbish out and found myself in the middle of a film set."
+       },
+       {
+        "it": "Il regista mi ha chiesto di rientrare, perché \"il pigiama non era d'epoca\".",
+        "en": "The director asked me to go back inside, because \"the pyjamas weren't period\"."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Di sera, invece, cambia tutto.",
+        "en": "In the evening, though, everything changes."
+       },
+       {
+        "it": "I turisti tornano negli alberghi e nei Sassi rimaniamo in pochi.",
+        "en": "The tourists go back to their hotels and only a few of us are left in the Sassi."
+       },
+       {
+        "it": "Il problema è proprio questo: i residenti veri sono pochissimi.",
+        "en": "That's exactly the problem: there are very few real residents."
+       },
+       {
+        "it": "Quasi tutte le case intorno alla mia sono diventate B&B o case vacanza.",
+        "en": "Almost all the houses around mine have become B&Bs or holiday lets."
+       },
+       {
+        "it": "Quindi i miei vicini cambiano ogni due o tre giorni.",
+        "en": "So my neighbours change every two or three days."
+       },
+       {
+        "it": "Una settimana ho una famiglia di olandesi, quella dopo un gruppo di ragazze di Milano che fanno l'addio al nubilato.",
+        "en": "One week I've got a Dutch family, the next a group of girls from Milan on a hen party."
+       },
+       {
+        "it": "Sono quasi sempre gentili, eh, ma non è la stessa cosa.",
+        "en": "They're almost always nice, mind you, but it's not the same thing."
+       },
+       {
+        "it": "Non puoi chiedere a un olandese in vacanza di innaffiarti le piante.",
+        "en": "You can't ask a Dutch person on holiday to water your plants."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Per fortuna c'è la signora Nunzia, due porte più in là, che è una delle ultime \"vere\" abitanti.",
+        "en": "Luckily there's Mrs Nunzia, two doors down, who is one of the last \"real\" residents."
+       },
+       {
+        "it": "Ha ottantun anni, ci vive da sempre e non ha nessuna intenzione di andarsene.",
+        "en": "She's eighty-one, she's always lived there and has no intention of leaving."
+       },
+       {
+        "it": "Ogni tanto le porto la spesa su per gli scalini, e lei in cambio mi lascia davanti alla porta un piatto di peperoni cruschi.",
+        "en": "Now and then I carry her shopping up the steps, and in exchange she leaves a plate of peperoni cruschi outside my door."
+       },
+       {
+        "it": "Credo che sia l'unico scambio economico onesto rimasto nei Sassi.",
+        "en": "I think it's the only honest economic exchange left in the Sassi."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Poi ci sono i problemi pratici, che nessuno ti racconta.",
+        "en": "Then there are the practical problems nobody tells you about."
+       },
+       {
+        "it": "Nei Sassi le macchine non entrano, quindi la spesa, le bombole, i mobili, tutto si porta a mano su e giù per le scale.",
+        "en": "Cars can't get into the Sassi, so shopping, gas bottles, furniture, everything gets carried by hand up and down the steps."
+       },
+       {
+        "it": "Quando ho comprato il frigorifero, ci sono voluti quattro amici e una cassa di birra.",
+        "en": "When I bought the fridge, it took four friends and a crate of beer."
+       },
+       {
+        "it": "E il supermercato più vicino è su in città, a un quarto d'ora a piedi, tutto in salita al ritorno.",
+        "en": "And the nearest supermarket is up in the town, a quarter of an hour on foot, all uphill on the way back."
+       },
+       {
+        "it": "In compenso ho le gambe di un ciclista.",
+        "en": "On the plus side, I've got a cyclist's legs."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Se mi chiedessero se mi sento a casa, risponderei di sì, ma con qualche dubbio.",
+        "en": "If someone asked me whether I feel at home, I'd say yes, but with a few doubts."
+       },
+       {
+        "it": "Mi sento a casa la mattina presto, quando scendo verso la Gravina e non c'è nessuno, e si sentono solo le campane e i cani.",
+        "en": "I feel at home early in the morning, when I go down towards the Gravina and there's nobody around, and you only hear the bells and the dogs."
+       },
+       {
+        "it": "Mi sento un po' meno a casa quando una signora tedesca mi chiede quanto costa una notte da me.",
+        "en": "I feel a bit less at home when a German lady asks me how much a night at my place costs."
+       },
+       {
+        "it": "Mio nonno, purtroppo, non ha fatto in tempo a vedere la casa finita.",
+        "en": "My grandfather, sadly, didn't live to see the house finished."
+       },
+       {
+        "it": "Mia nonna sì: è entrata, ha toccato il muro della grotta e ha detto solo: \"È sempre fredda.\"",
+        "en": "My grandmother did: she came in, touched the cave wall and said only: \"It's still cold.\""
+       }
+      ]
+     }
+    ]
+   },
+   "B2": {
+    "speaker": "Federica, 41 anni, Milano",
+    "body": [
+     {
+      "s": [
+       {
+        "it": "Allora, io abito a NoLo, che sta per \"North of Loreto\".",
+        "en": "So, I live in NoLo, which stands for \"North of Loreto\"."
+       },
+       {
+        "it": "E già il nome, se ci pensi, è tutto un programma.",
+        "en": "And the name alone, if you think about it, says it all."
+       },
+       {
+        "it": "Fino a una decina d'anni fa questa zona era semplicemente via Padova e dintorni, un posto di cui i milanesi parlavano abbassando la voce.",
+        "en": "Until about ten years ago this area was simply via Padova and around, a place Milanese people talked about in lowered voices."
+       },
+       {
+        "it": "Poi qualcuno, pare un gruppo di creativi in un bar, ha deciso di chiamarla come un quartiere di Manhattan.",
+        "en": "Then someone, apparently a group of creative types in a bar, decided to name it like a Manhattan neighbourhood."
+       },
+       {
+        "it": "E da lì, come si dice, è cambiato tutto.",
+        "en": "And from then on, as they say, everything changed."
+       },
+       {
+        "it": "O forse niente, dipende da chi lo racconta.",
+        "en": "Or maybe nothing, depending on who's telling the story."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Ci sono arrivata otto anni fa, per motivi molto poco poetici.",
+        "en": "I came here eight years ago, for very unpoetic reasons."
+       },
+       {
+        "it": "Ero appena tornata da Rotterdam, dove avevo lavorato in uno studio di architettura, e a Milano non potevo permettermi praticamente nulla.",
+        "en": "I'd just come back from Rotterdam, where I'd worked in an architecture practice, and in Milan I could afford practically nothing."
+       },
+       {
+        "it": "Qui ho trovato un ex laboratorio di un tappezziere, al piano terra di una casa di ringhiera, con il soffitto alto quattro metri e una muffa che definire ambiziosa è poco.",
+        "en": "Here I found an old upholsterer's workshop, on the ground floor of a balcony-access tenement, with a four-metre ceiling and mould that could be called ambitious, to put it mildly."
+       },
+       {
+        "it": "L'agente immobiliare lo chiamava \"loft\".",
+        "en": "The estate agent called it a \"loft\"."
+       },
+       {
+        "it": "Io lo chiamavo \"la cantina\", ma l'affitto era la metà di quello che chiedevano in centro, e ho firmato.",
+        "en": "I called it \"the cellar\", but the rent was half what they were asking in the centre, and I signed."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Il cortile è la cosa che mi ha conquistata.",
+        "en": "The courtyard is what won me over."
+       },
+       {
+        "it": "È una casa di ringhiera tipica, con i ballatoi che girano intorno e le porte che danno tutte sullo stesso spazio.",
+        "en": "It's a typical balcony-access tenement, with walkways running round and all the doors opening onto the same space."
+       },
+       {
+        "it": "È un'architettura che ti costringe a conoscere i vicini, che tu lo voglia o no.",
+        "en": "It's architecture that forces you to know your neighbours, whether you like it or not."
+       },
+       {
+        "it": "Al secondo piano c'è il signor Liu, che ha un negozio di riparazione telefoni e mi ha salvato la vita digitale almeno tre volte.",
+        "en": "On the second floor there's Mr Liu, who has a phone repair shop and has saved my digital life at least three times."
+       },
+       {
+        "it": "Di fronte a me c'è la signora Ines, peruviana, che fa le pulizie in tre uffici e coltiva sul ballatoio un peperoncino così piccante che lo usiamo come arma.",
+        "en": "Opposite me there's Mrs Ines, from Peru, who cleans three offices and grows a chilli on the walkway so hot we use it as a weapon."
+       },
+       {
+        "it": "Al terzo, fino all'anno scorso, c'era il signor Arturo, ex tranviere, milanese da quattro generazioni, che si lamentava di tutti e conosceva il nome di ogni bambino del cortile.",
+        "en": "On the third, until last year, there was Mr Arturo, a retired tram driver, Milanese for four generations, who complained about everyone and knew the name of every child in the courtyard."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Ecco, il signor Arturo non c'è più, nel senso che si è trasferito da sua figlia a Monza.",
+        "en": "Now, Mr Arturo isn't here any more, in the sense that he's moved in with his daughter in Monza."
+       },
+       {
+        "it": "Il proprietario ha ristrutturato l'appartamento e l'ha rimesso in affitto a un prezzo quasi doppio.",
+        "en": "The landlord renovated the flat and put it back on the rental market at almost double the price."
+       },
+       {
+        "it": "Adesso ci abita una coppia di ragazzi che lavorano nel design, gentilissimi, con una bicicletta olandese in corridoio e un cane che si chiama Ottavio.",
+        "en": "Now a young couple who work in design live there, very nice, with a Dutch bike in the hallway and a dog called Ottavio."
+       },
+       {
+        "it": "Ed è lì che ho avuto la mia piccola crisi di coscienza.",
+        "en": "And that's when I had my little crisis of conscience."
+       },
+       {
+        "it": "Perché, se sono onesta, quella coppia sono io, otto anni dopo.",
+        "en": "Because, if I'm honest, that couple is me, eight years on."
+       },
+       {
+        "it": "Architetta, rientrata dall'estero, attratta dall'affitto basso e dall'\"atmosfera autentica\".",
+        "en": "An architect, back from abroad, drawn by the low rent and the \"authentic atmosphere\"."
+       },
+       {
+        "it": "Io mi lamento della gentrificazione davanti a un flat white da quattro euro in un bar che prima era una macelleria halal.",
+        "en": "I complain about gentrification over a four-euro flat white in a café that used to be a halal butcher's."
+       },
+       {
+        "it": "Mi rendo conto che c'è una certa ironia.",
+        "en": "I realise there's a certain irony in that."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Detto questo, non vorrei dipingere il quartiere peggio di com'è.",
+        "en": "That said, I wouldn't want to paint the neighbourhood worse than it is."
+       },
+       {
+        "it": "Via Padova resta una delle strade più vive di Milano.",
+        "en": "Via Padova is still one of the liveliest streets in Milan."
+       },
+       {
+        "it": "In cinquecento metri puoi comprare il cumino egiziano, farti tagliare i capelli da un barbiere bengalese e mangiare la miglior pupusa salvadoregna della città.",
+        "en": "Within five hundred metres you can buy Egyptian cumin, get your hair cut by a Bangladeshi barber and eat the best Salvadoran pupusa in town."
+       },
+       {
+        "it": "D'estate c'è il mercato del sabato al parco Trotter, dove ancora si mescolano le nonne del quartiere e i trentenni con il passeggino da mille euro.",
+        "en": "In summer there's the Saturday market at Trotter park, where the neighbourhood grannies and thirty-somethings with thousand-euro pushchairs still mix."
+       },
+       {
+        "it": "Il punto è capire per quanto tempo durerà questo equilibrio.",
+        "en": "The question is how long this balance will last."
+       },
+       {
+        "it": "Perché la storia, in tutte le città europee, è sempre la stessa: prima arrivano gli artisti e i bar, poi salgono gli affitti, e alla fine se ne vanno quelli che c'erano prima.",
+        "en": "Because the story, in every European city, is always the same: first come the artists and the bars, then the rents go up, and in the end the people who were there before leave."
+       },
+       {
+        "it": "A volte anche gli artisti.",
+        "en": "Sometimes the artists too."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Poi c'è la vita del cortile, che ha regole tutte sue, mai scritte ma rispettatissime.",
+        "en": "Then there's courtyard life, which has rules all of its own, never written down but strictly observed."
+       },
+       {
+        "it": "Il bucato si stende solo sul proprio tratto di ballatoio, e guai a sconfinare.",
+        "en": "Washing is hung only on your own stretch of walkway, and woe betide anyone who strays over."
+       },
+       {
+        "it": "Le biciclette si legano alla ringhiera di sinistra, mai a quella di destra, per motivi che nessuno ricorda ma che nessuno osa mettere in discussione.",
+        "en": "Bikes are locked to the left-hand railing, never the right, for reasons nobody remembers but nobody dares question."
+       },
+       {
+        "it": "E poi c'è la chat del condominio, che meriterebbe un trattato di antropologia.",
+        "en": "And then there's the building group chat, which would deserve an anthropology treatise all of its own."
+       },
+       {
+        "it": "Si chiama \"Cortile via Clitumno\", ha trentuno partecipanti e parla almeno cinque lingue, spesso nello stesso messaggio.",
+        "en": "It's called \"Via Clitumno Courtyard\", has thirty-one members and speaks at least five languages, often in the same message."
+       },
+       {
+        "it": "Ci si scambiano avvisi sull'acqua calda, foto di gatti smarriti, accuse velate a chi non chiude il portone e, a Natale, un numero imbarazzante di auguri animati.",
+        "en": "People swap notices about the hot water, photos of lost cats, veiled accusations at whoever leaves the front door open and, at Christmas, an embarrassing number of animated greetings."
+       },
+       {
+        "it": "Il signor Arturo non aveva lo smartphone, quindi qualcuno gli stampava i messaggi più importanti e glieli infilava sotto la porta.",
+        "en": "Mr Arturo didn't have a smartphone, so someone used to print out the important messages and slip them under his door."
+       },
+       {
+        "it": "Lui rispondeva a voce, dal ballatoio, gridando.",
+        "en": "He'd answer out loud, from the walkway, shouting."
+       },
+       {
+        "it": "Era un sistema perfettamente funzionante.",
+        "en": "It was a perfectly functioning system."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Di casa mia, invece, sono innamorata in modo quasi irrazionale.",
+        "en": "As for my flat, on the other hand, I'm almost irrationally in love with it."
+       },
+       {
+        "it": "Ho rifatto tutto da sola, nei weekend, e ogni difetto è una storia.",
+        "en": "I redid everything myself, at weekends, and every flaw is a story."
+       },
+       {
+        "it": "La finestra grande sul cortile era la vetrina del tappezziere, e ogni tanto qualche anziano del quartiere bussa per chiedere se faccio ancora le sedie.",
+        "en": "The big window onto the courtyard used to be the upholsterer's shop window, and every now and then some elderly local knocks to ask if I still do chairs."
+       },
+       {
+        "it": "Io rispondo di no, però offro un caffè.",
+        "en": "I tell them no, but I offer them a coffee."
+       },
+       {
+        "it": "Qualcuno accetta, e così ho scoperto più cose sulla storia del quartiere che in qualsiasi libro.",
+        "en": "Some accept, and that's how I've learnt more about the history of the neighbourhood than from any book."
+       },
+       {
+        "it": "La crepa sopra la porta è di quando ho provato ad appendere una mensola senza tassello.",
+        "en": "The crack above the door is from when I tried to put up a shelf without a wall plug."
+       },
+       {
+        "it": "Il pavimento in cemento ha l'impronta di una zampa, perché il gatto della signora Ines ci è passato sopra mentre asciugava.",
+        "en": "The concrete floor has a paw print, because Mrs Ines's cat walked over it while it was drying."
+       },
+       {
+        "it": "Avrei potuto lisciarla, ma l'ho lasciata.",
+        "en": "I could have smoothed it out, but I left it."
+       },
+       {
+        "it": "È l'unica firma che conta, in questa casa.",
+        "en": "It's the only signature that counts in this place."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Il mio contratto scade tra due anni.",
+        "en": "My lease runs out in two years."
+       },
+       {
+        "it": "Il proprietario, l'altro giorno, mi ha fermata nel cortile e mi ha detto, con un sorriso che non mi è piaciuto per niente, che \"la zona si è molto valorizzata\".",
+        "en": "The landlord stopped me in the courtyard the other day and told me, with a smile I didn't like one bit, that \"the area has gone up a lot in value\"."
+       },
+       {
+        "it": "Ho capito benissimo cosa intendeva.",
+        "en": "I understood perfectly what he meant."
+       },
+       {
+        "it": "La signora Ines, che aveva sentito tutto dal ballatoio, la sera mi ha portato un vasetto del suo peperoncino.",
+        "en": "Mrs Ines, who'd heard everything from the walkway, brought me a jar of her chilli that evening."
+       },
+       {
+        "it": "\"Per il proprietario\", ha detto.",
+        "en": "\"For the landlord,\" she said."
+       },
+       {
+        "it": "Non so se scherzasse.",
+        "en": "I don't know if she was joking."
+       }
+      ]
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "s-08",
+  "title": "Quella volta che mi sono sentito fuori posto",
+  "en": "The time I felt out of place",
+  "topic": "feelings",
+  "task": "Talk for 5-10 minutes about a time you felt like an outsider: in a new school, a new country, a family, a job or a group of friends. Describe the situation, what you felt and how you reacted. Say if something changed and how you see that moment today.",
+  "questions": [
+   {
+    "it": "Dove eri e quanti anni avevi?",
+    "en": "Where were you and how old were you?"
+   },
+   {
+    "it": "Chi c'era intorno a te?",
+    "en": "Who was around you?"
+   },
+   {
+    "it": "Che cosa ti faceva sentire diverso dagli altri?",
+    "en": "What made you feel different from the others?"
+   },
+   {
+    "it": "Come hai reagito? Hai detto qualcosa o sei stato zitto?",
+    "en": "How did you react? Did you say something or did you keep quiet?"
+   },
+   {
+    "it": "C'è stata una persona che ti ha aiutato?",
+    "en": "Was there someone who helped you?"
+   },
+   {
+    "it": "La situazione è cambiata con il tempo? Come?",
+    "en": "Did the situation change over time? How?"
+   },
+   {
+    "it": "Oggi come ripensi a quel momento?",
+    "en": "How do you look back on that moment today?"
+   },
+   {
+    "it": "Ti capita ancora di sentirti fuori posto? Quando?",
+    "en": "Do you still sometimes feel out of place? When?"
+   }
+  ],
+  "phrases": [
+   {
+    "it": "Mi sentivo un pesce fuor d'acqua.",
+    "en": "I felt like a fish out of water."
+   },
+   {
+    "it": "Non sapevo dove mettermi.",
+    "en": "I didn't know where to put myself."
+   },
+   {
+    "it": "Non capivo una parola.",
+    "en": "I didn't understand a word."
+   },
+   {
+    "it": "Tutti si conoscevano tranne me.",
+    "en": "Everyone knew each other except me."
+   },
+   {
+    "it": "Facevo finta di niente.",
+    "en": "I pretended everything was fine."
+   },
+   {
+    "it": "Mi vergognavo un po'.",
+    "en": "I was a bit embarrassed."
+   },
+   {
+    "it": "A un certo punto…",
+    "en": "At a certain point…"
+   },
+   {
+    "it": "Per fortuna c'era…",
+    "en": "Luckily there was…"
+   },
+   {
+    "it": "Col tempo mi sono abituato.",
+    "en": "Over time I got used to it."
+   },
+   {
+    "it": "Adesso ci rido sopra.",
+    "en": "Now I laugh about it."
+   },
+   {
+    "it": "Ripensandoci…",
+    "en": "Thinking back on it…"
+   },
+   {
+    "it": "Non lo dimenticherò mai.",
+    "en": "I'll never forget it."
+   }
+  ],
+  "models": {
+   "A1": {
+    "speaker": "Mei, 22 anni, studentessa a Perugia",
+    "body": [
+     {
+      "s": [
+       {
+        "it": "Allora, io sono cinese, di Chengdu.",
+        "en": "So, I'm Chinese, from Chengdu."
+       },
+       {
+        "it": "Da un anno studio italiano all'Università per Stranieri di Perugia.",
+        "en": "I've been studying Italian at the University for Foreigners in Perugia for a year."
+       },
+       {
+        "it": "Voglio raccontare una domenica di novembre.",
+        "en": "I want to tell you about a Sunday in November."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "La mia amica Chiara mi invita a pranzo dalla sua famiglia.",
+        "en": "My friend Chiara invites me to lunch with her family."
+       },
+       {
+        "it": "Vivono in campagna, vicino ad Assisi.",
+        "en": "They live in the country, near Assisi."
+       },
+       {
+        "it": "Sono contenta, ma anche un po' nervosa.",
+        "en": "I'm happy, but also a bit nervous."
+       },
+       {
+        "it": "Arrivo alle dodici e mezza.",
+        "en": "I arrive at half past twelve."
+       },
+       {
+        "it": "In casa ci sono quindici persone!",
+        "en": "There are fifteen people in the house!"
+       },
+       {
+        "it": "La nonna, il nonno, gli zii, i cugini, un cane.",
+        "en": "The grandmother, the grandfather, the aunts and uncles, the cousins, a dog."
+       },
+       {
+        "it": "Tutti parlano insieme, molto forte e molto veloce.",
+        "en": "Everyone talks at the same time, very loudly and very fast."
+       },
+       {
+        "it": "Io non capisco niente.",
+        "en": "I don't understand anything."
+       },
+       {
+        "it": "Cioè, capisco \"ciao\" e \"mangia\".",
+        "en": "I mean, I understand \"hi\" and \"eat\"."
+       },
+       {
+        "it": "Sorrido e basta.",
+        "en": "I just smile."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Poi mangiamo.",
+        "en": "Then we eat."
+       },
+       {
+        "it": "Prima c'è l'antipasto: salame, formaggio, bruschetta con l'olio nuovo.",
+        "en": "First there's the starter: salami, cheese, bruschetta with the new olive oil."
+       },
+       {
+        "it": "Io mangio tanto, perché ho fame e perché è buonissimo.",
+        "en": "I eat a lot, because I'm hungry and because it's delicious."
+       },
+       {
+        "it": "Penso: bene, il pranzo è finito.",
+        "en": "I think: great, lunch is over."
+       },
+       {
+        "it": "Ma non è finito.",
+        "en": "But it isn't over."
+       },
+       {
+        "it": "Arrivano le tagliatelle al tartufo.",
+        "en": "The tagliatelle with truffle arrive."
+       },
+       {
+        "it": "Io mangio ancora, piano piano.",
+        "en": "I eat some more, slowly."
+       },
+       {
+        "it": "Poi arrivano la carne, le patate e un'altra cosa che non conosco.",
+        "en": "Then the meat, the potatoes and something else I don't know arrive."
+       },
+       {
+        "it": "La nonna mi mette nel piatto un pezzo enorme.",
+        "en": "The grandmother puts an enormous piece on my plate."
+       },
+       {
+        "it": "Io dico: \"Grazie, basta, sono piena.\"",
+        "en": "I say: \"Thank you, enough, I'm full.\""
+       },
+       {
+        "it": "Lei non ascolta.",
+        "en": "She doesn't listen."
+       },
+       {
+        "it": "Dice: \"Sei magra, mangia!\"",
+        "en": "She says: \"You're thin, eat!\""
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "In quel momento mi sento strana.",
+        "en": "At that moment I feel strange."
+       },
+       {
+        "it": "Tutti ridono, tutti sono a casa.",
+        "en": "Everyone is laughing, everyone is at home."
+       },
+       {
+        "it": "Io no.",
+        "en": "Not me."
+       },
+       {
+        "it": "Non conosco le regole.",
+        "en": "I don't know the rules."
+       },
+       {
+        "it": "Non so quando il pranzo finisce.",
+        "en": "I don't know when lunch ends."
+       },
+       {
+        "it": "Non so se posso dire di no alla nonna.",
+        "en": "I don't know if I can say no to the grandmother."
+       },
+       {
+        "it": "Mi sento un po' sola, anche con quindici persone intorno.",
+        "en": "I feel a bit lonely, even with fifteen people around me."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Poi succede una cosa.",
+        "en": "Then something happens."
+       },
+       {
+        "it": "Il nonno, Sergio, si siede vicino a me.",
+        "en": "The grandfather, Sergio, sits down next to me."
+       },
+       {
+        "it": "Parla piano, solo per me.",
+        "en": "He speaks slowly, just for me."
+       },
+       {
+        "it": "Mi chiede: \"In Cina mangiate piccante?\"",
+        "en": "He asks me: \"Do you eat spicy food in China?\""
+       },
+       {
+        "it": "Io dico: \"Sì, a Chengdu molto, molto piccante.\"",
+        "en": "I say: \"Yes, in Chengdu very, very spicy.\""
+       },
+       {
+        "it": "Lui ride e va in cucina.",
+        "en": "He laughs and goes to the kitchen."
+       },
+       {
+        "it": "Torna con un barattolo di peperoncino.",
+        "en": "He comes back with a jar of chilli."
+       },
+       {
+        "it": "\"Questo è il mio. Lo faccio io. Nessuno lo mangia.\"",
+        "en": "\"This is mine. I make it. Nobody eats it.\""
+       },
+       {
+        "it": "Io lo mangio.",
+        "en": "I eat it."
+       },
+       {
+        "it": "Non è molto piccante, ma dico che è fortissimo.",
+        "en": "It's not very spicy, but I say it's really strong."
+       },
+       {
+        "it": "Lui è felicissimo.",
+        "en": "He's delighted."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Adesso vado a pranzo da loro quasi ogni mese.",
+        "en": "Now I go to lunch with them almost every month."
+       },
+       {
+        "it": "Capisco di più, parlo di più.",
+        "en": "I understand more, I speak more."
+       },
+       {
+        "it": "E so una cosa importante: a pranzo, la nonna vince sempre.",
+        "en": "And I know one important thing: at lunch, the grandmother always wins."
+       }
+      ]
+     }
+    ]
+   },
+   "A2": {
+    "speaker": "Gianluca, 16 anni, da Palermo a Bolzano",
+    "body": [
+     {
+      "s": [
+       {
+        "it": "L'anno scorso mio padre ha avuto un nuovo lavoro a Bolzano, all'ospedale.",
+        "en": "Last year my dad got a new job in Bolzano, at the hospital."
+       },
+       {
+        "it": "Lui è infermiere.",
+        "en": "He's a nurse."
+       },
+       {
+        "it": "Quindi, a settembre, ci siamo trasferiti tutti da Palermo: io, mia madre, mia sorella piccola e il pesce rosso.",
+        "en": "So, in September, we all moved from Palermo: me, my mum, my little sister and the goldfish."
+       },
+       {
+        "it": "Il pesce rosso è morto dopo una settimana.",
+        "en": "The goldfish died after a week."
+       },
+       {
+        "it": "Mia madre dice che era il freddo.",
+        "en": "My mum says it was the cold."
+       },
+       {
+        "it": "Secondo me era la tristezza.",
+        "en": "If you ask me, it was sadness."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Il primo giorno di scuola me lo ricordo benissimo.",
+        "en": "I remember the first day of school really well."
+       },
+       {
+        "it": "Sono entrato in classe e c'erano ventidue ragazzi che si conoscevano tutti da anni.",
+        "en": "I went into the classroom and there were twenty-two kids who had all known each other for years."
+       },
+       {
+        "it": "La professoressa mi ha presentato: \"Lui è Gianluca, viene dalla Sicilia.\"",
+        "en": "The teacher introduced me: \"This is Gianluca, he comes from Sicily.\""
+       },
+       {
+        "it": "Qualcuno ha detto \"Ah, mafia!\" e tutti hanno riso.",
+        "en": "Someone said \"Ah, mafia!\" and everyone laughed."
+       },
+       {
+        "it": "Io ho riso anche, perché non sapevo cosa fare.",
+        "en": "I laughed too, because I didn't know what to do."
+       },
+       {
+        "it": "Ma dentro non ridevo per niente.",
+        "en": "But inside I wasn't laughing at all."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "La cosa più strana era la lingua.",
+        "en": "The strangest thing was the language."
+       },
+       {
+        "it": "Io pensavo: Bolzano è in Italia, parlano italiano.",
+        "en": "I thought: Bolzano is in Italy, they speak Italian."
+       },
+       {
+        "it": "In classe sì, parlavano italiano.",
+        "en": "In class, yes, they spoke Italian."
+       },
+       {
+        "it": "Ma nel corridoio, al bar, sull'autobus, metà delle persone parlava tedesco.",
+        "en": "But in the corridor, in the café, on the bus, half the people spoke German."
+       },
+       {
+        "it": "Anzi, non tedesco normale: dialetto sudtirolese.",
+        "en": "Actually, not normal German: South Tyrolean dialect."
+       },
+       {
+        "it": "Io non capivo niente.",
+        "en": "I didn't understand a thing."
+       },
+       {
+        "it": "Mi sembrava di essere all'estero, ma con il passaporto italiano.",
+        "en": "It felt like being abroad, but with an Italian passport."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "E poi c'erano le piccole cose.",
+        "en": "And then there were the little things."
+       },
+       {
+        "it": "A Palermo cenavamo alle nove e mezza, qui alle sette la gente aveva già finito.",
+        "en": "In Palermo we had dinner at half past nine, here at seven people had already finished."
+       },
+       {
+        "it": "A Palermo, se un amico dice \"ci vediamo alle quattro\", arriva alle cinque.",
+        "en": "In Palermo, if a friend says \"see you at four\", he turns up at five."
+       },
+       {
+        "it": "Qui, alle quattro meno cinque, sono già tutti lì.",
+        "en": "Here, at five to four, everybody's already there."
+       },
+       {
+        "it": "La prima volta sono arrivato alle quattro e mezza e il mio compagno, Jonas, era già andato via.",
+        "en": "The first time I arrived at half past four and my classmate, Jonas, had already left."
+       },
+       {
+        "it": "Per lui, io non avevo voglia di vederlo.",
+        "en": "As far as he was concerned, I didn't want to see him."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Per due mesi mi sono sentito fuori posto.",
+        "en": "For two months I felt out of place."
+       },
+       {
+        "it": "Il pomeriggio stavo in camera e chiamavo i miei amici di Palermo su WhatsApp.",
+        "en": "In the afternoons I stayed in my room and called my friends in Palermo on WhatsApp."
+       },
+       {
+        "it": "Loro mi raccontavano tutto: il mare, le feste, le pizze.",
+        "en": "They told me everything: the sea, the parties, the pizzas."
+       },
+       {
+        "it": "E io guardavo dalla finestra le montagne, e pioveva.",
+        "en": "And I looked out of the window at the mountains, and it was raining."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Poi, a dicembre, è cambiato qualcosa.",
+        "en": "Then, in December, something changed."
+       },
+       {
+        "it": "Jonas, quello delle quattro, mi ha invitato al mercatino di Natale con i suoi amici.",
+        "en": "Jonas, the four o'clock guy, invited me to the Christmas market with his friends."
+       },
+       {
+        "it": "Io sono arrivato alle quattro meno dieci.",
+        "en": "I arrived at ten to four."
+       },
+       {
+        "it": "Lui mi ha guardato e ha detto: \"Bravo, stai diventando sudtirolese.\"",
+        "en": "He looked at me and said: \"Well done, you're turning South Tyrolean.\""
+       },
+       {
+        "it": "Abbiamo bevuto il punch e abbiamo parlato tanto, metà in italiano e metà a gesti.",
+        "en": "We drank punch and talked a lot, half in Italian and half with gestures."
+       },
+       {
+        "it": "A gennaio lui mi ha insegnato a sciare.",
+        "en": "In January he taught me to ski."
+       },
+       {
+        "it": "Sono caduto quaranta volte, più o meno.",
+        "en": "I fell over about forty times."
+       },
+       {
+        "it": "A febbraio io gli ho insegnato a fare le arancine.",
+        "en": "In February I taught him to make arancine."
+       },
+       {
+        "it": "Le sue erano bruttissime, ma lui era molto orgoglioso.",
+        "en": "His were really ugly, but he was very proud."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Adesso sto bene qui.",
+        "en": "Now I'm happy here."
+       },
+       {
+        "it": "Ho cominciato a studiare il tedesco e capisco qualche parola di dialetto.",
+        "en": "I've started studying German and I understand a few words of dialect."
+       },
+       {
+        "it": "Però quando torno a Palermo, d'estate, i miei amici dicono che parlo strano e che sono diventato \"un polentone\".",
+        "en": "But when I go back to Palermo in summer, my friends say I talk funny and that I've become \"a polenta-eater\"."
+       },
+       {
+        "it": "Quindi adesso mi sento un po' fuori posto anche lì.",
+        "en": "So now I feel a bit out of place there too."
+       },
+       {
+        "it": "Mia madre dice che è normale.",
+        "en": "My mum says that's normal."
+       },
+       {
+        "it": "Io dico che almeno adesso ho due posti dove sentirmi strano.",
+        "en": "I say at least now I've got two places to feel weird in."
+       }
+      ]
+     }
+    ]
+   },
+   "B1": {
+    "speaker": "Kofi, 28 anni, Brescia",
+    "body": [
+     {
+      "s": [
+       {
+        "it": "Allora, la volta che mi sono sentito più fuori posto in vita mia è stata, paradossalmente, nel paese dei miei genitori.",
+        "en": "Right, the time I felt most out of place in my life was, paradoxically, in my parents' country."
+       },
+       {
+        "it": "Mi spiego.",
+        "en": "Let me explain."
+       },
+       {
+        "it": "Io sono nato a Brescia, da genitori ghanesi.",
+        "en": "I was born in Brescia, to Ghanaian parents."
+       },
+       {
+        "it": "Mio padre è arrivato negli anni Novanta per lavorare in una fonderia in Val Trompia, mia madre l'ha raggiunto due anni dopo.",
+        "en": "My father came in the Nineties to work in a foundry in Val Trompia, my mother joined him two years later."
+       },
+       {
+        "it": "Io sono cresciuto qui, ho fatto le scuole qui, parlo bresciano meglio di molti miei colleghi e tifo Brescia, che è già una forma di sofferenza.",
+        "en": "I grew up here, went to school here, I speak Brescian dialect better than lots of my colleagues and I support Brescia, which is already a form of suffering."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "In Italia, però, mi è sempre capitato di sentirmi un po' \"ospite\".",
+        "en": "In Italy, though, I've always tended to feel a bit like a \"guest\"."
+       },
+       {
+        "it": "Non sempre, non in modo drammatico, ma succede.",
+        "en": "Not always, not dramatically, but it happens."
+       },
+       {
+        "it": "La signora sul treno che si stupisce perché parlo bene l'italiano.",
+        "en": "The lady on the train who's amazed because I speak Italian well."
+       },
+       {
+        "it": "Il cameriere che mi porge il menù in inglese.",
+        "en": "The waiter who hands me the menu in English."
+       },
+       {
+        "it": "Cose così.",
+        "en": "Things like that."
+       },
+       {
+        "it": "Quindi, quando tre anni fa sono andato per la prima volta in Ghana, ad Accra, per il matrimonio di un cugino, ero convinto che finalmente mi sarei sentito a casa.",
+        "en": "So, when I went to Ghana for the first time three years ago, to Accra, for a cousin's wedding, I was convinced that I'd finally feel at home."
+       },
+       {
+        "it": "Pensavo: lì sono tutti come me.",
+        "en": "I thought: everyone there is like me."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "E invece no.",
+        "en": "But no."
+       },
+       {
+        "it": "Già all'aeroporto, mio zio, che non avevo mai visto dal vivo, mi ha abbracciato e poi ha detto ridendo a tutti: \"Ecco l'italiano!\"",
+        "en": "Right at the airport, my uncle, whom I'd never seen in person, hugged me and then laughed and said to everyone: \"Here's the Italian!\""
+       },
+       {
+        "it": "E per tre settimane sono stato \"l'italiano\", oppure \"obroni\", che significa più o meno \"straniero\", \"bianco\".",
+        "en": "And for three weeks I was \"the Italian\", or \"obroni\", which means more or less \"foreigner\", \"white person\"."
+       },
+       {
+        "it": "A me, capite? Bianco!",
+        "en": "Me, can you believe it? White!"
+       },
+       {
+        "it": "Era tutto un po' sbagliato.",
+        "en": "Everything was slightly wrong."
+       },
+       {
+        "it": "Io capisco il twi, perché i miei lo parlano a casa, ma lo parlo male, con un accento che faceva ridere i bambini.",
+        "en": "I understand Twi, because my parents speak it at home, but I speak it badly, with an accent that made the children laugh."
+       },
+       {
+        "it": "Non sapevo come salutare gli anziani nel modo giusto.",
+        "en": "I didn't know how to greet elderly people properly."
+       },
+       {
+        "it": "Una volta ho dato la mano con la sinistra a una signora importante e mia madre mi ha fulminato con lo sguardo.",
+        "en": "Once I shook an important lady's hand with my left and my mother shot me a look that could kill."
+       },
+       {
+        "it": "Al mercato i prezzi raddoppiavano appena aprivo bocca.",
+        "en": "At the market prices doubled as soon as I opened my mouth."
+       },
+       {
+        "it": "E dopo due giorni sognavo un piatto di casoncelli.",
+        "en": "And after two days I was dreaming of a plate of casoncelli."
+       },
+       {
+        "it": "Il caldo, poi, era un'altra storia.",
+        "en": "The heat was another story altogether."
+       },
+       {
+        "it": "Tutti mi dicevano che era una settimana fresca, e io cambiavo maglietta tre volte al giorno.",
+        "en": "Everyone told me it was a cool week, and I was changing my T-shirt three times a day."
+       },
+       {
+        "it": "Le mie cugine mi guardavano con una specie di compassione divertita, come si guarda un turista che si è perso.",
+        "en": "My cousins looked at me with a sort of amused pity, the way you look at a tourist who's got lost."
+       },
+       {
+        "it": "E la cosa assurda è che io, in Italia, ero sempre stato quello che sopportava meglio il caldo, quello a cui i colleghi dicevano: \"Eh, ma tu sei abituato.\"",
+        "en": "And the absurd thing is that in Italy I'd always been the one who coped best with the heat, the one my colleagues would say to: \"Well, you're used to it.\""
+       },
+       {
+        "it": "Evidentemente no.",
+        "en": "Evidently not."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "La cosa che mi ha colpito di più, però, è stata un'altra.",
+        "en": "The thing that struck me most, though, was something else."
+       },
+       {
+        "it": "Una sera ero seduto fuori casa di mia nonna, e lei mi ha chiesto, con calma, quando sarei tornato \"per restare\".",
+        "en": "One evening I was sitting outside my grandmother's house, and she asked me, calmly, when I'd be coming back \"to stay\"."
+       },
+       {
+        "it": "Io non sapevo cosa rispondere.",
+        "en": "I didn't know what to say."
+       },
+       {
+        "it": "Per lei era ovvio che la mia vera casa fosse lì e che l'Italia fosse una specie di lunga trasferta.",
+        "en": "For her it was obvious that my real home was there and that Italy was a sort of long work trip."
+       },
+       {
+        "it": "Per me era il contrario.",
+        "en": "For me it was the other way round."
+       },
+       {
+        "it": "In quel momento mi sono sentito diviso a metà, ma non come si dice nei film, in modo romantico.",
+        "en": "At that moment I felt split in two, but not the way they say in films, in a romantic way."
+       },
+       {
+        "it": "Era più una sensazione di vuoto, come se non avessi un posto dove appoggiare i piedi.",
+        "en": "It was more a feeling of emptiness, as if I didn't have anywhere to put my feet down."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Poi, verso la fine del viaggio, è successa una cosa piccola.",
+        "en": "Then, towards the end of the trip, something small happened."
+       },
+       {
+        "it": "Al matrimonio c'era un altro cugino, Kwame, che vive a Londra da quando aveva cinque anni.",
+        "en": "At the wedding there was another cousin, Kwame, who's lived in London since he was five."
+       },
+       {
+        "it": "Anche lui era \"l'inglese\", e anche lui sbagliava i saluti e sudava come una fontana.",
+        "en": "He was \"the English one\" too, and he also got the greetings wrong and sweated buckets."
+       },
+       {
+        "it": "Ci siamo trovati in un angolo, ognuno con il suo piatto di jollof, e abbiamo cominciato a ridere di tutto.",
+        "en": "We ended up in a corner, each with our plate of jollof, and started laughing about everything."
+       },
+       {
+        "it": "Lui parlava di Londra, io di Brescia, e ci capivamo perfettamente, anche se le nostre città non c'entrano niente l'una con l'altra.",
+        "en": "He talked about London, I talked about Brescia, and we understood each other perfectly, even though our cities have nothing in common."
+       },
+       {
+        "it": "Abbiamo passato tutta la festa insieme.",
+        "en": "We spent the whole party together."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Ci sentiamo ancora quasi ogni settimana.",
+        "en": "We still talk almost every week."
+       },
+       {
+        "it": "Abbiamo un gruppo WhatsApp che si chiama \"Gli obroni\", e ormai ci sono dentro anche due cugine di Amburgo e uno di Toronto.",
+        "en": "We've got a WhatsApp group called \"The obronis\", and by now there are two cousins from Hamburg and one from Toronto in it too."
+       },
+       {
+        "it": "Credo di aver capito che il mio posto non è un paese preciso.",
+        "en": "I think I've realised that my place isn't one specific country."
+       },
+       {
+        "it": "È più una categoria di persone: quelli che si sentono un po' fuori posto dappertutto, e che quando si incontrano si riconoscono subito.",
+        "en": "It's more a category of people: the ones who feel a bit out of place everywhere, and who recognise each other straight away when they meet."
+       },
+       {
+        "it": "L'anno prossimo torno in Ghana.",
+        "en": "Next year I'm going back to Ghana."
+       },
+       {
+        "it": "Questa volta porto i casoncelli sottovuoto.",
+        "en": "This time I'm bringing vacuum-packed casoncelli."
+       },
+       {
+        "it": "Mia nonna dice che non li mangerà mai.",
+        "en": "My grandmother says she'll never eat them."
+       },
+       {
+        "it": "Scommetto di sì.",
+        "en": "I bet she will."
+       }
+      ]
+     }
+    ]
+   },
+   "B2": {
+    "speaker": "Ettore, 61 anni, Ivrea",
+    "body": [
+     {
+      "s": [
+       {
+        "it": "Allora, devo fare una premessa: io ho lavorato trentacinque anni in fabbrica.",
+        "en": "Well, I need to say something first: I worked in a factory for thirty-five years."
+       },
+       {
+        "it": "Prima all'Olivetti, qui a Ivrea, finché l'Olivetti è esistita come la intendevamo noi, poi in un'azienda di componenti elettronici che l'ha più o meno ereditata, almeno nei capannoni.",
+        "en": "First at Olivetti, here in Ivrea, as long as Olivetti existed in the sense we understood it, then at an electronic components company that more or less inherited it, at least the sheds."
+       },
+       {
+        "it": "A cinquantotto anni mi hanno proposto il prepensionamento, e io ho accettato senza pensarci troppo.",
+        "en": "At fifty-eight they offered me early retirement, and I accepted without thinking about it too much."
+       },
+       {
+        "it": "Avevo un'idea precisa in testa da almeno quarant'anni: iscrivermi all'università, a Filosofia.",
+        "en": "I'd had a clear idea in my head for at least forty years: to enrol at university, in Philosophy."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Da ragazzo non avevo potuto.",
+        "en": "As a young man I hadn't been able to."
+       },
+       {
+        "it": "Mio padre era operaio, mia madre faceva la sarta in casa, e a diciannove anni l'idea di studiare ancora quattro o cinque anni senza portare a casa uno stipendio era, come dire, fuori discussione.",
+        "en": "My father was a factory worker, my mother did sewing at home, and at nineteen the idea of studying for another four or five years without bringing home a wage was, how can I put it, out of the question."
+       },
+       {
+        "it": "Però alla Olivetti, negli anni Ottanta, c'era ancora una biblioteca aziendale straordinaria, e io durante la pausa pranzo leggevo.",
+        "en": "But at Olivetti, in the Eighties, there was still an extraordinary company library, and I used to read during my lunch break."
+       },
+       {
+        "it": "Spinoza tra un panino e l'altro, per dire.",
+        "en": "Spinoza between sandwiches, to give you an idea."
+       },
+       {
+        "it": "I colleghi mi chiamavano \"il professore\", e non era un complimento.",
+        "en": "My colleagues called me \"the professor\", and it wasn't a compliment."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Quindi, insomma, a cinquantotto anni mi presento a Torino, a Palazzo Nuovo, per il primo giorno di lezione.",
+        "en": "So, anyway, at fifty-eight I turn up in Turin, at Palazzo Nuovo, for the first day of lectures."
+       },
+       {
+        "it": "Mi ero preparato con una cura quasi ridicola.",
+        "en": "I'd prepared with almost ridiculous care."
+       },
+       {
+        "it": "Quaderno nuovo, penna stilografica, la giacca buona.",
+        "en": "New notebook, fountain pen, my good jacket."
+       },
+       {
+        "it": "Entro nell'aula e capisco immediatamente di aver sbagliato tutto.",
+        "en": "I walk into the lecture hall and realise immediately that I've got everything wrong."
+       },
+       {
+        "it": "Duecento ragazzi di diciannove anni, tutti con il portatile aperto, tutti in felpa.",
+        "en": "Two hundred nineteen-year-olds, all with their laptops open, all in hoodies."
+       },
+       {
+        "it": "E io lì, in giacca, con la stilografica, come un ispettore del ministero.",
+        "en": "And me there, in a jacket, with a fountain pen, like a ministry inspector."
+       },
+       {
+        "it": "Una ragazza in prima fila mi ha guardato, si è alzata e mi ha ceduto il posto.",
+        "en": "A girl in the front row looked at me, stood up and offered me her seat."
+       },
+       {
+        "it": "Pensava che fossi il docente.",
+        "en": "She thought I was the lecturer."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Ecco, quella sensazione di essere fuori posto mi è durata per mesi, e non era soltanto una questione di età.",
+        "en": "Well, that feeling of being out of place lasted for months, and it wasn't just a question of age."
+       },
+       {
+        "it": "Era il linguaggio, prima di tutto.",
+        "en": "It was the language, first of all."
+       },
+       {
+        "it": "I ragazzi parlavano tra loro con un lessico che non capivo, metà inglese e metà sigle, e organizzavano tutto su gruppi a cui nessuno pensava di aggiungermi.",
+        "en": "The kids talked among themselves in a vocabulary I didn't understand, half English and half acronyms, and organised everything on group chats nobody thought of adding me to."
+       },
+       {
+        "it": "Ma era anche un'altra cosa, più sottile.",
+        "en": "But it was something else too, subtler."
+       },
+       {
+        "it": "Io avevo un rispetto quasi sacro per quel posto, mentre per loro era semplicemente un passaggio obbligato, a volte anche noioso.",
+        "en": "I had an almost sacred respect for that place, while for them it was simply something they had to get through, sometimes even boring."
+       },
+       {
+        "it": "Mi irritava vederli guardare Instagram durante una lezione su Kant.",
+        "en": "It irritated me to see them looking at Instagram during a lecture on Kant."
+       },
+       {
+        "it": "E nello stesso tempo mi vergognavo di questa irritazione, perché mi faceva sentire esattamente il vecchio brontolone che non volevo essere.",
+        "en": "And at the same time I was ashamed of that irritation, because it made me feel exactly like the grumpy old man I didn't want to be."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "C'era poi la questione della memoria, che nessuno ti dice.",
+        "en": "Then there was the question of memory, which nobody tells you about."
+       },
+       {
+        "it": "A vent'anni leggi una pagina e ti resta.",
+        "en": "At twenty you read a page and it stays with you."
+       },
+       {
+        "it": "A sessanta la leggi tre volte e la mattina dopo ti ricordi il colore della copertina.",
+        "en": "At sixty you read it three times and the next morning you remember the colour of the cover."
+       },
+       {
+        "it": "Al primo esame, Storia della filosofia antica, ho preso ventitré.",
+        "en": "In my first exam, History of Ancient Philosophy, I got twenty-three."
+       },
+       {
+        "it": "Lo so, per un esame universitario non è un disastro.",
+        "en": "I know, for a university exam it's not a disaster."
+       },
+       {
+        "it": "Ma io ero tornato a Ivrea in treno con la sensazione di aver deluso qualcuno, e solo a metà strada ho capito che quel qualcuno era il ragazzo di diciannove anni che ero stato.",
+        "en": "But I travelled back to Ivrea on the train feeling I'd let someone down, and only halfway home did I realise that someone was the nineteen-year-old I'd once been."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "La svolta, se così vogliamo chiamarla, è arrivata in modo del tutto inaspettato.",
+        "en": "The turning point, if we want to call it that, came completely unexpectedly."
+       },
+       {
+        "it": "Durante il secondo semestre, un ragazzo del corso, Yassine, mi ha fermato all'uscita e mi ha chiesto, un po' imbarazzato, se potevo prestargli i miei appunti.",
+        "en": "During the second semester, a lad on the course, Yassine, stopped me on the way out and asked me, a bit embarrassed, if I could lend him my notes."
+       },
+       {
+        "it": "\"Lei scrive tutto a mano, e si capisce\", mi ha detto.",
+        "en": "\"You write everything by hand, and it's clear,\" he told me."
+       },
+       {
+        "it": "Era la prima volta che la stilografica mi faceva guadagnare qualcosa.",
+        "en": "It was the first time the fountain pen had earned me anything."
+       },
+       {
+        "it": "Gli ho prestato gli appunti, lui me li ha restituiti fotocopiati e rilegati, con una copia anche per me.",
+        "en": "I lent him the notes, he gave them back photocopied and bound, with a copy for me too."
+       },
+       {
+        "it": "Poi ha cominciato a fare domande.",
+        "en": "Then he started asking questions."
+       },
+       {
+        "it": "Non su Kant, ma sulla fabbrica, sull'Olivetti, su com'era lavorare in un posto dove l'operaio aveva la biblioteca e l'asilo per i figli.",
+        "en": "Not about Kant, but about the factory, about Olivetti, about what it was like to work somewhere where the workers had a library and a nursery for their kids."
+       },
+       {
+        "it": "Per lui era quasi una favola.",
+        "en": "For him it was almost a fairy tale."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Così è nato un piccolo gruppo di studio, tre ragazzi e un pensionato, che si trovava il giovedì in un bar di via Po.",
+        "en": "That's how a little study group got started, three young people and a pensioner, that met on Thursdays in a café on via Po."
+       },
+       {
+        "it": "Io spiegavo cosa voleva dire leggere Marx avendo fatto i turni di notte.",
+        "en": "I'd explain what it meant to read Marx after working night shifts."
+       },
+       {
+        "it": "Loro mi spiegavano come si usa una piattaforma per caricare le tesine e perché non si risponde a un messaggio con \"Distinti saluti\".",
+        "en": "They'd explain how to use a platform to upload essays and why you don't answer a text with \"Yours sincerely\"."
+       },
+       {
+        "it": "È stato uno scambio, diciamo, molto equilibrato.",
+        "en": "It was, let's say, a very balanced exchange."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "E qui viene la parte che ancora oggi mi fa sorridere.",
+        "en": "And here comes the part that still makes me smile today."
+       },
+       {
+        "it": "Una sera, parlando, è venuto fuori che anche loro, in quell'aula, si sentivano fuori posto.",
+        "en": "One evening, talking, it came out that they too felt out of place in that lecture hall."
+       },
+       {
+        "it": "Yassine perché era il primo della sua famiglia a fare l'università e ogni volta che apriva bocca aveva paura di dire una sciocchezza.",
+        "en": "Yassine because he was the first in his family to go to university and every time he opened his mouth he was afraid of saying something stupid."
+       },
+       {
+        "it": "Una ragazza, Bianca, perché veniva da un paesino della Val Maira e tutti gli altri le sembravano già adulti, sicuri, cittadini.",
+        "en": "A girl, Bianca, because she came from a tiny village in Val Maira and all the others seemed already grown-up to her, confident, city people."
+       },
+       {
+        "it": "Io guardavo loro e pensavo che fossero perfettamente a loro agio; loro guardavano me e pensavano che io, con la mia giacca, sapessi esattamente cosa stavo facendo.",
+        "en": "I looked at them and thought they were perfectly at ease; they looked at me and thought that I, with my jacket, knew exactly what I was doing."
+       },
+       {
+        "it": "Ci eravamo sbagliati tutti, e con una certa precisione.",
+        "en": "We'd all got it wrong, and quite precisely too."
+       },
+       {
+        "it": "Ricordo che siamo rimasti in silenzio per un po', con i bicchieri in mano, un po' sorpresi e un po' sollevati.",
+        "en": "I remember we sat there in silence for a while, glasses in hand, a bit surprised and a bit relieved."
+       },
+       {
+        "it": "Poi Bianca ha detto che avremmo dovuto fondare un'associazione degli spaesati, con tanto di statuto e tessera.",
+        "en": "Then Bianca said we ought to found an association for the displaced, complete with a constitution and membership cards."
+       },
+       {
+        "it": "Io, per deformazione professionale, ho proposto di chiamarla \"Circolo ricreativo\", come quelli della fabbrica.",
+        "en": "I, out of professional habit, suggested calling it \"Recreational Club\", like the ones at the factory."
+       },
+       {
+        "it": "Hanno riso, ma l'hanno chiamata così davvero, e sul gruppo WhatsApp adesso ci sono anch'io.",
+        "en": "They laughed, but they really did call it that, and I'm on the WhatsApp group now too."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Adesso sono al terzo anno e sto scrivendo la tesi, ovviamente su Adriano Olivetti e l'idea di comunità.",
+        "en": "Now I'm in my third year and I'm writing my thesis, on Adriano Olivetti and the idea of community, obviously."
+       },
+       {
+        "it": "Il relatore dice che è troppo lunga, e probabilmente ha ragione.",
+        "en": "My supervisor says it's too long, and he's probably right."
+       },
+       {
+        "it": "Yassine si laurea a marzo, io spero a luglio, e abbiamo già deciso che festeggeremo insieme, a Ivrea, con la mia polenta e il cuscus di sua madre.",
+        "en": "Yassine graduates in March, I hope to in July, and we've already decided we'll celebrate together, in Ivrea, with my polenta and his mother's couscous."
+       },
+       {
+        "it": "Ho tolto la giacca, almeno quella, e l'ho sostituita con un maglione di lana che Bianca giudica \"vintage\", e lo dice come se fosse un complimento.",
+        "en": "I've ditched the jacket, at least, and replaced it with a wool jumper that Bianca considers \"vintage\", and she says it as if it were a compliment."
+       },
+       {
+        "it": "La stilografica invece è rimasta.",
+        "en": "The fountain pen, though, has stayed."
+       },
+       {
+        "it": "Su quella non tratto.",
+        "en": "On that I won't negotiate."
+       }
+      ]
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "s-09",
+  "title": "Io, il telefono e i social",
+  "en": "Me, my phone and social media",
+  "topic": "tech",
+  "task": "Talk for 5-10 minutes about the place technology and social media have in your life. Describe how you use your phone and apps on a normal day, tell a story where technology helped you or got you into trouble, and say honestly whether you'd like to change something.",
+  "questions": [
+   {
+    "it": "Quante ore al giorno passi sul telefono, più o meno?",
+    "en": "Roughly how many hours a day do you spend on your phone?"
+   },
+   {
+    "it": "Quali app usi di più, e per fare cosa?",
+    "en": "Which apps do you use most, and for what?"
+   },
+   {
+    "it": "Usi i social? Pubblichi o guardi soltanto?",
+    "en": "Do you use social media? Do you post or just look?"
+   },
+   {
+    "it": "Ricordi la tua vita prima dello smartphone? Com'era?",
+    "en": "Do you remember your life before smartphones? What was it like?"
+   },
+   {
+    "it": "Racconta una volta in cui la tecnologia ti ha salvato o ti ha messo nei guai.",
+    "en": "Tell us about a time technology saved you or got you into trouble."
+   },
+   {
+    "it": "Hai mai provato a stare senza telefono per qualche giorno?",
+    "en": "Have you ever tried going without your phone for a few days?"
+   },
+   {
+    "it": "Secondo te, la tecnologia ci avvicina o ci allontana dagli altri?",
+    "en": "In your opinion, does technology bring us closer to others or push us apart?"
+   },
+   {
+    "it": "Che cosa vorresti cambiare nel tuo rapporto con la tecnologia?",
+    "en": "What would you like to change in your relationship with technology?"
+   }
+  ],
+  "phrases": [
+   {
+    "it": "Ce l'ho sempre in mano.",
+    "en": "I've always got it in my hand."
+   },
+   {
+    "it": "Lo guardo appena sveglio.",
+    "en": "I look at it as soon as I wake up."
+   },
+   {
+    "it": "Scorro senza pensare.",
+    "en": "I scroll without thinking."
+   },
+   {
+    "it": "Mi è arrivata una notifica.",
+    "en": "I got a notification."
+   },
+   {
+    "it": "Ho messo il telefono in modalità aereo.",
+    "en": "I put my phone in airplane mode."
+   },
+   {
+    "it": "Non ci posso fare niente.",
+    "en": "I can't help it."
+   },
+   {
+    "it": "Diciamo che ne faccio un uso…",
+    "en": "Let's say I use it…"
+   },
+   {
+    "it": "Da una parte… dall'altra…",
+    "en": "On the one hand… on the other…"
+   },
+   {
+    "it": "Mi fa perdere un sacco di tempo.",
+    "en": "It makes me waste loads of time."
+   },
+   {
+    "it": "Non saprei come fare senza.",
+    "en": "I wouldn't know how to manage without it."
+   },
+   {
+    "it": "Ogni tanto mi stacco.",
+    "en": "Every now and then I switch off."
+   },
+   {
+    "it": "A essere onesti…",
+    "en": "To be honest…"
+   }
+  ],
+  "models": {
+   "A1": {
+    "speaker": "Rita, 70 anni, Bari",
+    "body": [
+     {
+      "s": [
+       {
+        "it": "Allora, io ho settant'anni e da due anni ho uno smartphone.",
+        "en": "So, I'm seventy and I've had a smartphone for two years."
+       },
+       {
+        "it": "Me l'ha regalato mio figlio a Natale.",
+        "en": "My son gave it to me for Christmas."
+       },
+       {
+        "it": "Lui abita a Bologna, mia figlia in Germania, a Stoccarda.",
+        "en": "He lives in Bologna, my daughter in Germany, in Stuttgart."
+       },
+       {
+        "it": "Io sono qui a Bari, da sola, con mio marito Nicola.",
+        "en": "I'm here in Bari, on my own, with my husband Nicola."
+       },
+       {
+        "it": "Be', non da sola, ecco.",
+        "en": "Well, not on my own, then."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "All'inizio il telefono non mi piace.",
+        "en": "At the beginning I don't like the phone."
+       },
+       {
+        "it": "Io ho le dita grandi e scrivo sempre la lettera sbagliata.",
+        "en": "I've got big fingers and I always type the wrong letter."
+       },
+       {
+        "it": "Voglio scrivere \"ciao\" e scrivo \"cIal\".",
+        "en": "I want to write \"ciao\" and I write \"cIal\"."
+       },
+       {
+        "it": "Allora uso i messaggi vocali.",
+        "en": "So I use voice messages."
+       },
+       {
+        "it": "Parlo tanto, tantissimo.",
+        "en": "I talk a lot, a whole lot."
+       },
+       {
+        "it": "Un messaggio di cinque minuti, a volte otto.",
+        "en": "A five-minute message, sometimes eight."
+       },
+       {
+        "it": "Mia figlia dice: \"Mamma, sono al lavoro, non posso ascoltare otto minuti!\"",
+        "en": "My daughter says: \"Mum, I'm at work, I can't listen to eight minutes!\""
+       },
+       {
+        "it": "Ma io ho tante cose da dire.",
+        "en": "But I've got lots of things to say."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Adesso uso WhatsApp tutti i giorni.",
+        "en": "Now I use WhatsApp every day."
+       },
+       {
+        "it": "La mattina mando a tutti un'immagine con il caffè e \"Buongiorno\".",
+        "en": "In the morning I send everyone a picture with coffee and \"Good morning\"."
+       },
+       {
+        "it": "Ci sono i fiori, ci sono i gattini, a volte c'è un angelo.",
+        "en": "There are flowers, there are kittens, sometimes there's an angel."
+       },
+       {
+        "it": "I miei figli non rispondono.",
+        "en": "My children don't reply."
+       },
+       {
+        "it": "Ma le mie amiche sì, e anche loro mandano i gattini.",
+        "en": "But my friends do, and they send kittens too."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "La cosa più bella è la videochiamata.",
+        "en": "The nicest thing is the video call."
+       },
+       {
+        "it": "La domenica chiamo mia figlia e vedo i nipoti, Lena e Paul.",
+        "en": "On Sundays I call my daughter and I see my grandchildren, Lena and Paul."
+       },
+       {
+        "it": "Parlano tedesco e un po' di italiano.",
+        "en": "They speak German and a bit of Italian."
+       },
+       {
+        "it": "Io parlo barese.",
+        "en": "I speak Bari dialect."
+       },
+       {
+        "it": "Non ci capiamo molto, ma ridiamo tanto.",
+        "en": "We don't understand each other much, but we laugh a lot."
+       },
+       {
+        "it": "Una volta ho fatto la videochiamata con il telefono al contrario.",
+        "en": "Once I did the video call with the phone upside down."
+       },
+       {
+        "it": "Per dieci minuti i bambini hanno visto il soffitto della mia cucina.",
+        "en": "For ten minutes the children saw my kitchen ceiling."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Poi c'è un problema.",
+        "en": "Then there's a problem."
+       },
+       {
+        "it": "Il mese scorso ho mandato una foto sbagliata al gruppo della parrocchia.",
+        "en": "Last month I sent the wrong photo to the parish group."
+       },
+       {
+        "it": "Volevo mandare la foto della torta per la festa.",
+        "en": "I wanted to send the photo of the cake for the party."
+       },
+       {
+        "it": "Invece ho mandato la foto di Nicola in canottiera, sul divano, che dorme.",
+        "en": "Instead I sent the photo of Nicola in his vest, on the sofa, asleep."
+       },
+       {
+        "it": "Il prete ha risposto con un cuore.",
+        "en": "The priest replied with a heart."
+       },
+       {
+        "it": "Nicola non mi ha parlato per due giorni.",
+        "en": "Nicola didn't speak to me for two days."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Adesso imparo una cosa nuova ogni settimana.",
+        "en": "Now I learn something new every week."
+       },
+       {
+        "it": "Marco, il nipote della vicina, ha quindici anni e mi fa lezione.",
+        "en": "Marco, my neighbour's grandson, is fifteen and gives me lessons."
+       },
+       {
+        "it": "Io gli do le orecchiette, lui mi insegna.",
+        "en": "I give him orecchiette, he teaches me."
+       },
+       {
+        "it": "Questa settimana impariamo a cancellare i messaggi.",
+        "en": "This week we're learning to delete messages."
+       },
+       {
+        "it": "Secondo me è molto importante.",
+        "en": "I think it's very important."
+       }
+      ]
+     }
+    ]
+   },
+   "A2": {
+    "speaker": "Nicolò, 17 anni, Rovereto",
+    "body": [
+     {
+      "s": [
+       {
+        "it": "Allora, a marzo i miei genitori mi hanno tolto il telefono per un mese intero.",
+        "en": "So, in March my parents took my phone away for a whole month."
+       },
+       {
+        "it": "Trenta giorni.",
+        "en": "Thirty days."
+       },
+       {
+        "it": "Il motivo?",
+        "en": "The reason?"
+       },
+       {
+        "it": "Ho preso tre in una verifica di chimica e a pagella avevo un brutto voto anche in matematica.",
+        "en": "I got a three in a chemistry test and on my report card I had a bad mark in maths too."
+       },
+       {
+        "it": "Mia madre ha guardato il tempo di utilizzo sul mio telefono: sei ore e quaranta minuti al giorno.",
+        "en": "My mum looked at the screen time on my phone: six hours forty minutes a day."
+       },
+       {
+        "it": "Lei non ha detto niente.",
+        "en": "She didn't say anything."
+       },
+       {
+        "it": "Ha solo allungato la mano.",
+        "en": "She just held out her hand."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "I primi giorni sono stati orribili, davvero.",
+        "en": "The first days were horrible, really."
+       },
+       {
+        "it": "La mattina mi svegliavo e cercavo il telefono sul comodino, ma non c'era.",
+        "en": "In the morning I'd wake up and look for my phone on the bedside table, but it wasn't there."
+       },
+       {
+        "it": "A scuola, nell'intervallo, tutti guardavano lo schermo e io guardavo loro.",
+        "en": "At school, at break time, everyone looked at their screens and I looked at them."
+       },
+       {
+        "it": "Non sapevo niente: chi usciva con chi, quale video era virale, cosa diceva la chat della classe.",
+        "en": "I didn't know anything: who was going out with whom, which video was viral, what the class chat was saying."
+       },
+       {
+        "it": "Mi sentivo come un uomo delle caverne.",
+        "en": "I felt like a caveman."
+       },
+       {
+        "it": "Il mio amico Elia mi diceva le notizie importanti, ma lui è molto lento a raccontare.",
+        "en": "My friend Elia told me the important news, but he's very slow at telling stories."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Poi c'era il problema pratico.",
+        "en": "Then there was the practical problem."
+       },
+       {
+        "it": "Io non sapevo più a che ora passava l'autobus, perché lo guardavo sempre sull'app.",
+        "en": "I didn't know what time the bus came any more, because I always checked it on the app."
+       },
+       {
+        "it": "Il primo lunedì l'ho perso e sono arrivato a scuola a piedi, sotto la pioggia, con quaranta minuti di ritardo.",
+        "en": "The first Monday I missed it and walked to school, in the rain, forty minutes late."
+       },
+       {
+        "it": "Il secondo lunedì ho scritto gli orari su un foglio.",
+        "en": "The second Monday I wrote the times on a piece of paper."
+       },
+       {
+        "it": "Su un foglio di carta!",
+        "en": "On a piece of paper!"
+       },
+       {
+        "it": "Mio nonno, quando l'ha visto, era commosso.",
+        "en": "When my grandad saw it, he was moved."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Dopo una settimana, però, è successa una cosa strana.",
+        "en": "After a week, though, something strange happened."
+       },
+       {
+        "it": "Mi annoiavo così tanto che ho cominciato a fare cose.",
+        "en": "I was so bored that I started doing things."
+       },
+       {
+        "it": "Ho preso in cantina la vecchia chitarra di mio padre, tutta impolverata, e ho imparato tre accordi da un libro.",
+        "en": "I got my dad's old guitar from the cellar, all dusty, and learnt three chords from a book."
+       },
+       {
+        "it": "Il pomeriggio andavo in bici lungo l'Adige fino a Isera e tornavo.",
+        "en": "In the afternoons I cycled along the Adige as far as Isera and back."
+       },
+       {
+        "it": "E ho letto un libro intero, il primo dalla terza media, un giallo ambientato a Trieste.",
+        "en": "And I read a whole book, the first since the last year of middle school, a crime novel set in Trieste."
+       },
+       {
+        "it": "Non era male, anzi.",
+        "en": "It wasn't bad, actually."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "La sera, invece di stare in camera, stavo in cucina con i miei.",
+        "en": "In the evenings, instead of staying in my room, I stayed in the kitchen with my parents."
+       },
+       {
+        "it": "Una sera mio padre mi ha raccontato di quando aveva la mia età e suonava in un gruppo punk.",
+        "en": "One evening my dad told me about when he was my age and played in a punk band."
+       },
+       {
+        "it": "Mio padre!",
+        "en": "My dad!"
+       },
+       {
+        "it": "Che adesso lavora in banca e porta la cravatta.",
+        "en": "Who now works in a bank and wears a tie."
+       },
+       {
+        "it": "Non lo sapevo.",
+        "en": "I didn't know."
+       },
+       {
+        "it": "Mi ha fatto vedere una foto con i capelli verdi.",
+        "en": "He showed me a photo with green hair."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Alla fine del mese mia madre mi ha ridato il telefono.",
+        "en": "At the end of the month my mum gave me my phone back."
+       },
+       {
+        "it": "C'erano duemila e trecento messaggi non letti.",
+        "en": "There were two thousand three hundred unread messages."
+       },
+       {
+        "it": "Li ho guardati per due minuti e poi ho capito una cosa: non mi ero perso niente di importante.",
+        "en": "I looked at them for two minutes and then I realised something: I hadn't missed anything important."
+       },
+       {
+        "it": "Adesso, lo dico onestamente, uso di nuovo il telefono tanto.",
+        "en": "Now, I'll say it honestly, I use my phone a lot again."
+       },
+       {
+        "it": "Ma non sei ore: più o meno tre.",
+        "en": "But not six hours: about three."
+       },
+       {
+        "it": "E la sera la chitarra la suono ancora.",
+        "en": "And in the evening I still play the guitar."
+       },
+       {
+        "it": "Mio padre dice che suono male, ma più punk di lui.",
+        "en": "My dad says I play badly, but more punk than him."
+       },
+       {
+        "it": "In chimica, comunque, adesso ho sei e mezzo.",
+        "en": "In chemistry, anyway, I've got six and a half now."
+       }
+      ]
+     }
+    ]
+   },
+   "B1": {
+    "speaker": "Serena, 33 anni, Padova",
+    "body": [
+     {
+      "s": [
+       {
+        "it": "Allora, io di lavoro faccio la farmacista, qui a Padova, in una farmacia vicino al Prato della Valle.",
+        "en": "So, I'm a pharmacist by trade, here in Padua, in a pharmacy near Prato della Valle."
+       },
+       {
+        "it": "Ma per un periodo, un anno e mezzo più o meno, sono stata anche, diciamo, \"una che fa i video\".",
+        "en": "But for a while, about a year and a half, I was also, let's say, \"someone who makes videos\"."
+       },
+       {
+        "it": "E questa esperienza ha cambiato completamente il mio rapporto con i social.",
+        "en": "And that experience completely changed my relationship with social media."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "È cominciato tutto per gioco.",
+        "en": "It all started as a game."
+       },
+       {
+        "it": "Io ho sempre fatto dolci, è la mia valvola di sfogo.",
+        "en": "I've always baked, it's my way of letting off steam."
+       },
+       {
+        "it": "Durante un inverno particolarmente noioso ho aperto un profilo su Instagram per pubblicare le mie torte, giusto per le amiche.",
+        "en": "During a particularly boring winter I opened an Instagram account to post my cakes, just for my friends."
+       },
+       {
+        "it": "Avevo una quarantina di follower, quasi tutti parenti.",
+        "en": "I had about forty followers, nearly all relatives."
+       },
+       {
+        "it": "Poi, una sera, ho pubblicato un video in cui facevo la fugassa, il dolce pasquale veneto, e spiegavo, un po' ridendo, perché per me la colomba è \"una fugassa che ce l'ha fatta\".",
+        "en": "Then, one evening, I posted a video of me making fugassa, the Venetian Easter cake, explaining, half laughing, why for me the colomba is \"a fugassa that made it big\"."
+       },
+       {
+        "it": "La mattina dopo il video aveva trecentomila visualizzazioni.",
+        "en": "The next morning the video had three hundred thousand views."
+       },
+       {
+        "it": "Non sto scherzando.",
+        "en": "I'm not joking."
+       },
+       {
+        "it": "Ero in farmacia e il telefono vibrava in tasca come se avesse la febbre.",
+        "en": "I was at the pharmacy and the phone was vibrating in my pocket as if it had a fever."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Le prime settimane sono state bellissime, lo ammetto.",
+        "en": "The first weeks were wonderful, I admit it."
+       },
+       {
+        "it": "Mi scrivevano da tutta Italia, signore di ottant'anni che mi mandavano la ricetta della nonna, ragazzi in Australia che avevano nostalgia di casa.",
+        "en": "People wrote to me from all over Italy, ladies of eighty sending me their grandmother's recipe, young people in Australia who were homesick."
+       },
+       {
+        "it": "In due mesi ho superato i cinquantamila follower.",
+        "en": "In two months I passed fifty thousand followers."
+       },
+       {
+        "it": "Un'azienda di farine mi ha mandato un pacco enorme e mi ha proposto una collaborazione pagata.",
+        "en": "A flour company sent me an enormous parcel and offered me a paid partnership."
+       },
+       {
+        "it": "Mi sentivo, non so, importante, ecco.",
+        "en": "I felt, I don't know, important, that's it."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Il problema era il tempo.",
+        "en": "The problem was time."
+       },
+       {
+        "it": "La mattina lavoravo in farmacia, otto ore in piedi a spiegare alle signore come si prende l'antibiotico.",
+        "en": "In the mornings I worked at the pharmacy, eight hours on my feet explaining to ladies how to take antibiotics."
+       },
+       {
+        "it": "La sera tornavo a casa e cominciava il secondo lavoro: impastare, filmare, montare il video, scrivere il testo, rispondere ai messaggi.",
+        "en": "In the evening I'd get home and the second job would start: kneading, filming, editing the video, writing the caption, answering messages."
+       },
+       {
+        "it": "Il mio fidanzato, Andrea, è diventato il mio cameraman senza che nessuno glielo chiedesse.",
+        "en": "My boyfriend, Andrea, became my cameraman without anyone asking him to."
+       },
+       {
+        "it": "All'inizio si divertiva, poi ha cominciato a mangiare le torte con una faccia sempre più rassegnata.",
+        "en": "At first he enjoyed it, then he started eating the cakes with an increasingly resigned expression."
+       },
+       {
+        "it": "Una sera mi ha detto: \"Sere, non ce la faccio più a mangiare crema pasticcera alle undici di sera.\"",
+        "en": "One evening he said to me: \"Sere, I can't face custard at eleven at night any more.\""
+       },
+       {
+        "it": "Abbiamo riso, ma non stava scherzando del tutto.",
+        "en": "We laughed, but he wasn't entirely joking."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Il problema è che, piano piano, la cosa ha cominciato a mangiarmi.",
+        "en": "The problem is that, little by little, it started to eat me up."
+       },
+       {
+        "it": "Se non pubblicavo per tre giorni, i numeri scendevano, e io stavo male.",
+        "en": "If I didn't post for three days, the numbers dropped, and I felt bad."
+       },
+       {
+        "it": "Controllavo le statistiche di notte, alle due, alle tre.",
+        "en": "I checked the statistics at night, at two, at three."
+       },
+       {
+        "it": "Facevo dolci che non avevo voglia di fare, solo perché \"funzionavano\".",
+        "en": "I made cakes I didn't feel like making, just because they \"worked\"."
+       },
+       {
+        "it": "E poi c'erano i commenti.",
+        "en": "And then there were the comments."
+       },
+       {
+        "it": "La maggior parte gentili, ma bastava uno solo cattivo per rovinarmi la giornata.",
+        "en": "Most of them nice, but it took just one nasty one to ruin my day."
+       },
+       {
+        "it": "Uno mi ha scritto che le mie mani erano \"troppo vecchie per i video\".",
+        "en": "Someone wrote to me that my hands were \"too old for videos\"."
+       },
+       {
+        "it": "Ho trentatré anni!",
+        "en": "I'm thirty-three!"
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Il momento in cui ho capito che qualcosa non andava è stato un sabato sera, alla festa per i sessant'anni di mia madre.",
+        "en": "The moment I realised something was wrong was one Saturday evening, at my mum's sixtieth birthday party."
+       },
+       {
+        "it": "Avevo fatto io la torta, una torta bellissima, a tre piani, con i fiori di zucchero.",
+        "en": "I'd made the cake myself, a beautiful three-tier cake, with sugar flowers."
+       },
+       {
+        "it": "Ma ho passato tutta la serata a filmarla, da ogni lato, con la luce giusta.",
+        "en": "But I spent the whole evening filming it, from every side, with the right light."
+       },
+       {
+        "it": "Quando finalmente ho messo giù il telefono, la torta era già stata tagliata, e io non avevo visto mia madre spegnere le candeline.",
+        "en": "When I finally put my phone down, the cake had already been cut, and I hadn't seen my mum blow out the candles."
+       },
+       {
+        "it": "Lei non mi ha detto niente.",
+        "en": "She didn't say anything to me."
+       },
+       {
+        "it": "Ma mi ha guardata in un modo che mi è bastato.",
+        "en": "But she looked at me in a way that was enough."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Il giorno dopo ho cancellato l'app dal telefono.",
+        "en": "The next day I deleted the app from my phone."
+       },
+       {
+        "it": "Non il profilo, eh, solo l'app.",
+        "en": "Not the account, mind you, just the app."
+       },
+       {
+        "it": "Adesso pubblico una volta alla settimana, dal computer, il lunedì sera.",
+        "en": "Now I post once a week, from the computer, on Monday evenings."
+       },
+       {
+        "it": "Non guardo più le statistiche e i commenti li leggo solo una volta al mese, con un bicchiere di vino vicino.",
+        "en": "I don't look at the statistics any more and I only read the comments once a month, with a glass of wine within reach."
+       },
+       {
+        "it": "I follower sono scesi un po', ma non mi interessa più come prima.",
+        "en": "The followers have dropped a bit, but I don't care about it the way I used to."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Se dovessi dire che cosa penso dei social oggi, direi che sono come lo zucchero.",
+        "en": "If I had to say what I think about social media today, I'd say they're like sugar."
+       },
+       {
+        "it": "Io lo uso tutti i giorni, e senza zucchero non esisterebbero le mie torte.",
+        "en": "I use it every day, and without sugar my cakes wouldn't exist."
+       },
+       {
+        "it": "Però se ne mangi a cucchiaiate dal barattolo, dopo un po' stai male.",
+        "en": "But if you eat it by the spoonful straight from the jar, after a while you feel sick."
+       },
+       {
+        "it": "E la torta di mia madre, comunque, non l'ho mai pubblicata.",
+        "en": "And my mum's cake, by the way, I never posted it."
+       },
+       {
+        "it": "Il video è ancora lì, nel telefono, e ogni tanto lo guardo da sola.",
+        "en": "The video is still there, on my phone, and now and then I watch it on my own."
+       },
+       {
+        "it": "Andrea dice che è il mio video migliore.",
+        "en": "Andrea says it's my best video."
+       }
+      ]
+     }
+    ]
+   },
+   "B2": {
+    "speaker": "Paolo, 47 anni, Ancona",
+    "body": [
+     {
+      "s": [
+       {
+        "it": "Allora, io insegno italiano e storia in un istituto tecnico ad Ancona, e il mio rapporto con la tecnologia, negli ultimi due anni, è diventato, come dire, una questione professionale prima ancora che personale.",
+        "en": "Right, I teach Italian and history at a technical school in Ancona, and my relationship with technology, over the last two years, has become, how can I put it, a professional issue even before a personal one."
+       },
+       {
+        "it": "Vi spiego come mi sono accorto che le cose erano cambiate.",
+        "en": "I'll tell you how I realised things had changed."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Due anni fa ho dato in quarta un tema su Leopardi, e su Leopardi qui nelle Marche non si scherza: Recanati è a mezz'ora di macchina.",
+        "en": "Two years ago I set the fourth-year class an essay on Leopardi, and you don't joke about Leopardi here in the Marche: Recanati is half an hour's drive away."
+       },
+       {
+        "it": "La traccia era semplice: \"L'infinito e la siepe: c'è una siepe nella tua vita?\"",
+        "en": "The prompt was simple: \"The Infinite and the hedge: is there a hedge in your life?\""
+       },
+       {
+        "it": "Ho ricevuto ventiquattro temi.",
+        "en": "I received twenty-four essays."
+       },
+       {
+        "it": "Diciotto erano scritti in un italiano impeccabile, perfettamente strutturati, con introduzione, sviluppo e conclusione, e assolutamente privi di qualsiasi siepe.",
+        "en": "Eighteen were written in impeccable Italian, perfectly structured, with an introduction, a body and a conclusion, and utterly devoid of any hedge."
+       },
+       {
+        "it": "Nessuno parlava della propria vita.",
+        "en": "Nobody talked about their own life."
+       },
+       {
+        "it": "Erano temi scritti da nessuno, per nessuno.",
+        "en": "They were essays written by nobody, for nobody."
+       },
+       {
+        "it": "E il bello è che sei di questi cominciavano con la stessa frase: \"Nel vasto panorama della poesia italiana\".",
+        "en": "And the best part is that six of them began with the same phrase: \"In the vast panorama of Italian poetry\"."
+       },
+       {
+        "it": "Ecco, quando un ragazzo di diciassette anni di Falconara scrive \"nel vasto panorama\", tu capisci che non l'ha scritto lui.",
+        "en": "Now, when a seventeen-year-old from Falconara writes \"in the vast panorama\", you know he didn't write it himself."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "La mia prima reazione, lo confesso, è stata di rabbia.",
+        "en": "My first reaction, I confess, was anger."
+       },
+       {
+        "it": "Mi sentivo preso in giro, e soprattutto inutile.",
+        "en": "I felt I was being made a fool of, and above all useless."
+       },
+       {
+        "it": "Ho passato qualche settimana a fare il poliziotto: confrontavo stili, cercavo frasi sospette, facevo domande trabocchetto all'interrogazione.",
+        "en": "I spent a few weeks playing the policeman: comparing styles, looking for suspicious sentences, asking trick questions in oral tests."
+       },
+       {
+        "it": "Era una guerra persa in partenza, e anche piuttosto umiliante, per tutti.",
+        "en": "It was a war lost before it started, and rather humiliating too, for everyone."
+       },
+       {
+        "it": "Allora ho cambiato strategia.",
+        "en": "So I changed strategy."
+       },
+       {
+        "it": "I temi adesso si scrivono in classe, a mano, su fogli protocollo, come quando andavo a scuola io.",
+        "en": "Essays are now written in class, by hand, on lined exam paper, like when I was at school."
+       },
+       {
+        "it": "I ragazzi all'inizio hanno protestato, dicevano che gli faceva male la mano.",
+        "en": "The kids protested at first, they said their hands hurt."
+       },
+       {
+        "it": "Poi è successa una cosa che non mi aspettavo.",
+        "en": "Then something happened that I didn't expect."
+       },
+       {
+        "it": "I temi sono diventati peggiori, molto peggiori, pieni di errori e di frasi sgangherate.",
+        "en": "The essays got worse, much worse, full of mistakes and ramshackle sentences."
+       },
+       {
+        "it": "Ma erano vivi.",
+        "en": "But they were alive."
+       },
+       {
+        "it": "Una ragazza ha scritto che la sua siepe era il porto, perché vede le navi per la Croazia partire ogni sera dalla finestra e non è mai salita su nessuna.",
+        "en": "One girl wrote that her hedge was the port, because she sees the ships to Croatia leaving every evening from her window and she's never been on one."
+       },
+       {
+        "it": "Ho dovuto correggerle quattordici errori di ortografia e le ho dato otto.",
+        "en": "I had to correct fourteen spelling mistakes and I gave her an eight."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Detto questo, sarei ipocrita se facessi il nostalgico.",
+        "en": "That said, I'd be a hypocrite if I played the nostalgic."
+       },
+       {
+        "it": "Io la tecnologia la uso moltissimo, e anche l'intelligenza artificiale, sinceramente.",
+        "en": "I use technology a great deal, and artificial intelligence too, to be honest."
+       },
+       {
+        "it": "Mi aiuta a preparare le verifiche, a trovare documenti per le lezioni di storia, a tradurre le circolari del ministero in un italiano comprensibile.",
+        "en": "It helps me prepare tests, find documents for history lessons, translate the ministry's circulars into comprehensible Italian."
+       },
+       {
+        "it": "Lo strumento in sé funziona; il guaio è che io ci arrivo con quarant'anni di letture alle spalle e loro no.",
+        "en": "The tool itself works; the trouble is that I come to it with forty years of reading behind me and they don't."
+       },
+       {
+        "it": "Io so quando una risposta è sbagliata, perché ho gli strumenti per accorgermene.",
+        "en": "I know when an answer is wrong, because I have the tools to notice."
+       },
+       {
+        "it": "Un sedicenne, il più delle volte, no.",
+        "en": "A sixteen-year-old, most of the time, doesn't."
+       },
+       {
+        "it": "È come dare una calcolatrice a qualcuno che non sa ancora cos'è una divisione: funziona benissimo, finché non sbaglia, e a quel punto nessuno se ne accorge.",
+        "en": "It's like giving a calculator to someone who doesn't yet know what division is: it works brilliantly, until it makes a mistake, and at that point nobody notices."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "E poi c'è un'altra questione, di cui si parla meno: le chat.",
+        "en": "And then there's another issue, which gets talked about less: the group chats."
+       },
+       {
+        "it": "Ogni classe ha la sua chat dei genitori, e io, da docente, ne sono escluso, per fortuna.",
+        "en": "Every class has its parents' chat, and I, as a teacher, am excluded from it, luckily."
+       },
+       {
+        "it": "Ma gli effetti li vedo benissimo.",
+        "en": "But I see the effects perfectly well."
+       },
+       {
+        "it": "Se do un brutto voto alle undici, alle undici e un quarto lo sanno trenta famiglie, e alle due del pomeriggio ho tre mail scritte tutte con lo stesso tono offeso.",
+        "en": "If I give a bad mark at eleven, by a quarter past eleven thirty families know, and by two in the afternoon I've got three emails all written in the same offended tone."
+       },
+       {
+        "it": "Quando ho cominciato a insegnare, vent'anni fa, un genitore che voleva lamentarsi doveva prendere un permesso al lavoro, venire a scuola e guardarmi in faccia.",
+        "en": "When I started teaching, twenty years ago, a parent who wanted to complain had to take time off work, come to the school and look me in the face."
+       },
+       {
+        "it": "Questo, curiosamente, rendeva tutti molto più ragionevoli, me compreso.",
+        "en": "This, curiously, made everyone much more reasonable, myself included."
+       },
+       {
+        "it": "Adesso la distanza è zero, e la pazienza, di conseguenza, pure.",
+        "en": "Now the distance is zero, and so, as a result, is the patience."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Poi c'è il mio rapporto personale con il telefono, che è un capitolo a parte, e non particolarmente glorioso.",
+        "en": "Then there's my personal relationship with my phone, which is a separate chapter, and not a particularly glorious one."
+       },
+       {
+        "it": "L'estate scorsa mia moglie, esasperata, mi ha sfidato: un mese con un telefono vecchio, di quelli con i tasti, che fanno solo chiamate e messaggi.",
+        "en": "Last summer my wife, exasperated, challenged me: a month with an old phone, one of those with buttons, that only make calls and send texts."
+       },
+       {
+        "it": "Io, che a scuola predico la disconnessione, non potevo certo rifiutare.",
+        "en": "I, who preach disconnection at school, could hardly refuse."
+       },
+       {
+        "it": "Le prime quarantotto ore sono state imbarazzanti.",
+        "en": "The first forty-eight hours were embarrassing."
+       },
+       {
+        "it": "Mettevo la mano in tasca in continuazione, come chi ha smesso di fumare e cerca l'accendino.",
+        "en": "I kept putting my hand in my pocket, like someone who's quit smoking and is feeling for a lighter."
+       },
+       {
+        "it": "Non sapevo più come arrivare a casa di mio cognato a Osimo, dove vado da quindici anni.",
+        "en": "I didn't know how to get to my brother-in-law's in Osimo any more, where I've been going for fifteen years."
+       },
+       {
+        "it": "Ho dovuto chiedere la strada a un benzinaio, che mi ha guardato con una certa pietà.",
+        "en": "I had to ask a petrol station attendant for directions, and he looked at me with some pity."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Però, dopo una decina di giorni, ho notato due cose.",
+        "en": "But after ten days or so, I noticed two things."
+       },
+       {
+        "it": "La prima è che leggevo di nuovo i libri fino in fondo, cosa che non mi succedeva da anni, nonostante io insegni letteratura, il che è già abbastanza grave.",
+        "en": "The first is that I was reading books to the end again, something that hadn't happened to me for years, even though I teach literature, which is bad enough in itself."
+       },
+       {
+        "it": "La seconda è che mi annoiavo, e che la noia, dopo il fastidio iniziale, era quasi piacevole.",
+        "en": "The second is that I was bored, and that boredom, after the initial irritation, was almost pleasant."
+       },
+       {
+        "it": "Mia moglie sostiene che in quel mese sono stato anche più simpatico, ma su questo non esistono dati attendibili.",
+        "en": "My wife maintains I was also nicer that month, but there's no reliable data on that."
+       },
+       {
+        "it": "Mi è venuto in mente proprio Leopardi, che sulla noia ha scritto pagine bellissime, e che probabilmente, con uno smartphone in mano, non avrebbe scritto niente.",
+        "en": "Leopardi himself came to mind, who wrote beautiful pages on boredom, and who probably, with a smartphone in his hand, wouldn't have written anything."
+       },
+       {
+        "it": "O forse avrebbe aperto un profilo e avrebbe avuto un milione di follower depressi.",
+        "en": "Or maybe he'd have opened an account and had a million depressed followers."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Alla fine del mese sono tornato allo smartphone, ovviamente.",
+        "en": "At the end of the month I went back to my smartphone, obviously."
+       },
+       {
+        "it": "Non sono un eroe.",
+        "en": "I'm no hero."
+       },
+       {
+        "it": "Ma ho tenuto qualche abitudine: la sera il telefono resta in cucina, e a tavola non lo porta nessuno, nemmeno i miei figli, che naturalmente mi odiano per questo.",
+        "en": "But I've kept a few habits: in the evening the phone stays in the kitchen, and nobody brings one to the table, not even my kids, who naturally hate me for it."
+       },
+       {
+        "it": "E in classe, a inizio anno, ho raccontato ai ragazzi l'esperimento del telefono a tasti.",
+        "en": "And in class, at the start of the year, I told the kids about the button-phone experiment."
+       },
+       {
+        "it": "Si sono divertiti moltissimo, soprattutto la parte del benzinaio.",
+        "en": "They loved it, especially the part about the petrol station."
+       },
+       {
+        "it": "Uno di loro, il più sveglio, ha alzato la mano e mi ha chiesto se il racconto me l'avesse scritto l'intelligenza artificiale.",
+        "en": "One of them, the sharpest, put his hand up and asked me if the story had been written for me by artificial intelligence."
+       },
+       {
+        "it": "Gli ho messo una nota sul registro.",
+        "en": "I gave him a disciplinary note in the register."
+       },
+       {
+        "it": "Scherzo, ovviamente.",
+        "en": "I'm joking, obviously."
+       },
+       {
+        "it": "Gli ho dato un tema da scrivere.",
+        "en": "I gave him an essay to write."
+       }
+      ]
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "s-10",
+  "title": "Città grande o paese?",
+  "en": "Big city or small town?",
+  "topic": "society",
+  "task": "Talk for 5-10 minutes about where you would rather live: a big city or a small town or village. Compare the two using your own experience (work, prices, transport, people, freedom, boredom) and tell at least one concrete episode. End with your choice and the real reasons behind it.",
+  "questions": [
+   {
+    "it": "Sei cresciuto in una città o in un paese?",
+    "en": "Did you grow up in a city or in a small town?"
+   },
+   {
+    "it": "Dove vivi adesso? Ti piace?",
+    "en": "Where do you live now? Do you like it?"
+   },
+   {
+    "it": "Quali sono i vantaggi della città? E gli svantaggi?",
+    "en": "What are the advantages of the city? And the disadvantages?"
+   },
+   {
+    "it": "E in un paese piccolo, che cosa si guadagna e che cosa si perde?",
+    "en": "And in a small town, what do you gain and what do you lose?"
+   },
+   {
+    "it": "Come cambiano i rapporti con le persone nei due posti?",
+    "en": "How do relationships with people change in the two places?"
+   },
+   {
+    "it": "Il lavoro e i prezzi delle case contano molto nella tua scelta?",
+    "en": "Do work and house prices matter a lot in your choice?"
+   },
+   {
+    "it": "Il lavoro da remoto può cambiare le cose, secondo te?",
+    "en": "Can remote working change things, in your opinion?"
+   },
+   {
+    "it": "Se potessi scegliere liberamente, dove vivresti e perché?",
+    "en": "If you could choose freely, where would you live and why?"
+   }
+  ],
+  "phrases": [
+   {
+    "it": "In città c'è sempre qualcosa da fare.",
+    "en": "In the city there's always something to do."
+   },
+   {
+    "it": "In paese ci si conosce tutti.",
+    "en": "In a village everyone knows everyone."
+   },
+   {
+    "it": "Qui non succede mai niente.",
+    "en": "Nothing ever happens here."
+   },
+   {
+    "it": "Gli affitti sono alle stelle.",
+    "en": "Rents are sky-high."
+   },
+   {
+    "it": "Si vive con più calma.",
+    "en": "Life is calmer."
+   },
+   {
+    "it": "Mi manca…",
+    "en": "I miss…"
+   },
+   {
+    "it": "Il rovescio della medaglia è che…",
+    "en": "The flip side is that…"
+   },
+   {
+    "it": "Dipende da che cosa cerchi.",
+    "en": "It depends on what you're looking for."
+   },
+   {
+    "it": "Se proprio dovessi scegliere…",
+    "en": "If I really had to choose…"
+   },
+   {
+    "it": "Non tornerei indietro.",
+    "en": "I wouldn't go back."
+   },
+   {
+    "it": "Mi sta stretto.",
+    "en": "It feels too small for me."
+   },
+   {
+    "it": "Alla fine dei conti…",
+    "en": "When all's said and done…"
+   }
+  ],
+  "models": {
+   "A1": {
+    "speaker": "Giacomo, 27 anni, Milano",
+    "body": [
+     {
+      "s": [
+       {
+        "it": "Allora, io sono nato a Teglio, un paese in Valtellina, in montagna.",
+        "en": "So, I was born in Teglio, a village in Valtellina, in the mountains."
+       },
+       {
+        "it": "A Teglio ci sono quattromila persone, più o meno.",
+        "en": "There are about four thousand people in Teglio."
+       },
+       {
+        "it": "Adesso abito a Milano, perché lavoro qui.",
+        "en": "Now I live in Milan, because I work here."
+       },
+       {
+        "it": "Sono cameriere in un ristorante in zona Navigli.",
+        "en": "I'm a waiter in a restaurant in the Navigli area."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Milano mi piace.",
+        "en": "I like Milan."
+       },
+       {
+        "it": "C'è sempre qualcosa da fare: concerti, mostre, bar aperti fino a tardi.",
+        "en": "There's always something to do: concerts, exhibitions, bars open until late."
+       },
+       {
+        "it": "Ci sono persone di tutto il mondo.",
+        "en": "There are people from all over the world."
+       },
+       {
+        "it": "Al ristorante lavoro con un ragazzo egiziano, una ragazza brasiliana e un cuoco di Lecce.",
+        "en": "At the restaurant I work with an Egyptian guy, a Brazilian girl and a cook from Lecce."
+       },
+       {
+        "it": "Parliamo un italiano un po' strano, ma ci capiamo.",
+        "en": "We speak a slightly strange Italian, but we understand each other."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Ma Milano è cara, molto cara.",
+        "en": "But Milan is expensive, very expensive."
+       },
+       {
+        "it": "Io divido un appartamento con due ragazzi.",
+        "en": "I share a flat with two guys."
+       },
+       {
+        "it": "La mia camera è piccola e costa seicento euro al mese.",
+        "en": "My room is small and costs six hundred euros a month."
+       },
+       {
+        "it": "A Teglio, con seicento euro, affitto una casa intera con il giardino.",
+        "en": "In Teglio, with six hundred euros, I can rent a whole house with a garden."
+       },
+       {
+        "it": "E poi a Milano c'è il traffico, c'è la nebbia, e la gente cammina sempre veloce.",
+        "en": "And then in Milan there's traffic, there's fog, and people always walk fast."
+       },
+       {
+        "it": "Nessuno dice \"buongiorno\" sulle scale.",
+        "en": "Nobody says \"good morning\" on the stairs."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "A Teglio, invece, tutti dicono \"buongiorno\".",
+        "en": "In Teglio, on the other hand, everyone says \"good morning\"."
+       },
+       {
+        "it": "Anche troppo!",
+        "en": "Even too much!"
+       },
+       {
+        "it": "Quando torno a casa, per fare duecento metri ci metto mezz'ora.",
+        "en": "When I go home, it takes me half an hour to walk two hundred metres."
+       },
+       {
+        "it": "Tutti mi fermano: \"Giacomo, come va a Milano? Hai la fidanzata? Mangi?\"",
+        "en": "Everyone stops me: \"Giacomo, how's it going in Milan? Have you got a girlfriend? Are you eating?\""
+       },
+       {
+        "it": "Mia madre sa tutto prima di me.",
+        "en": "My mum knows everything before I do."
+       },
+       {
+        "it": "Se compro una giacca nuova a Milano, il giorno dopo la vicina di Teglio dice: \"Bella la giacca!\"",
+        "en": "If I buy a new jacket in Milan, the next day the neighbour in Teglio says: \"Nice jacket!\""
+       },
+       {
+        "it": "Non so come fa.",
+        "en": "I don't know how she does it."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "In città mi manca la natura.",
+        "en": "In the city I miss nature."
+       },
+       {
+        "it": "A Teglio apro la finestra e vedo le montagne e le vigne.",
+        "en": "In Teglio I open the window and I see the mountains and the vineyards."
+       },
+       {
+        "it": "A Milano apro la finestra e vedo la finestra di un altro.",
+        "en": "In Milan I open the window and I see someone else's window."
+       },
+       {
+        "it": "Mi manca anche il cibo di mia nonna, i pizzoccheri.",
+        "en": "I also miss my grandmother's food, pizzoccheri."
+       },
+       {
+        "it": "A Milano li trovo nei ristoranti, ma costano diciotto euro e non sono uguali.",
+        "en": "In Milan I find them in restaurants, but they cost eighteen euros and they're not the same."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Allora, città o paese?",
+        "en": "So, city or village?"
+       },
+       {
+        "it": "Per adesso, città.",
+        "en": "For now, the city."
+       },
+       {
+        "it": "Ho ventisette anni e voglio conoscere gente e imparare.",
+        "en": "I'm twenty-seven and I want to meet people and learn."
+       },
+       {
+        "it": "Ma tra dieci anni, forse, torno a Teglio.",
+        "en": "But in ten years, maybe, I'll go back to Teglio."
+       },
+       {
+        "it": "Apro un ristorante, con i pizzoccheri a dieci euro.",
+        "en": "I'll open a restaurant, with pizzoccheri at ten euros."
+       },
+       {
+        "it": "E la vicina, sicuramente, sa già il nome.",
+        "en": "And the neighbour, for sure, already knows the name."
+       }
+      ]
+     }
+    ]
+   },
+   "A2": {
+    "speaker": "Lucia, 39 anni, da Roma a Castelmezzano",
+    "body": [
+     {
+      "s": [
+       {
+        "it": "Fino a tre anni fa io abitavo a Roma, in zona Tuscolana.",
+        "en": "Until three years ago I lived in Rome, in the Tuscolana area."
+       },
+       {
+        "it": "Lavoravo, e lavoro ancora, come traduttrice per un'agenzia, dall'inglese e dal tedesco.",
+        "en": "I worked, and I still work, as a translator for an agency, from English and German."
+       },
+       {
+        "it": "Ogni mattina prendevo la metro A, piena come una scatola di sardine, e ogni sera tornavo a casa stanca morta.",
+        "en": "Every morning I took metro line A, packed like a tin of sardines, and every evening I got home dead tired."
+       },
+       {
+        "it": "Pagavo novecento euro di affitto per un bilocale con vista su un parcheggio.",
+        "en": "I paid nine hundred euros rent for a two-room flat with a view of a car park."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Durante la pandemia l'agenzia ci ha detto di lavorare da casa.",
+        "en": "During the pandemic the agency told us to work from home."
+       },
+       {
+        "it": "E dopo un po' io ho pensato: ma se lavoro da casa, perché la mia casa deve essere a Roma?",
+        "en": "And after a while I thought: if I work from home, why does my home have to be in Rome?"
+       },
+       {
+        "it": "Mia nonna era di Castelmezzano, un paese in Basilicata, nelle Dolomiti Lucane.",
+        "en": "My grandmother was from Castelmezzano, a village in Basilicata, in the Lucanian Dolomites."
+       },
+       {
+        "it": "Ci andavo da bambina, d'estate, e mi ricordavo le rocce altissime e le stelle.",
+        "en": "I used to go there as a child, in summer, and I remembered the very high rocks and the stars."
+       },
+       {
+        "it": "La casa della nonna era vuota da dieci anni.",
+        "en": "Grandma's house had been empty for ten years."
+       },
+       {
+        "it": "Così, un po' per gioco e un po' per coraggio, sono partita con due valigie e il computer.",
+        "en": "So, partly as a game and partly out of courage, I left with two suitcases and my computer."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Le prime settimane sono state bellissime.",
+        "en": "The first weeks were wonderful."
+       },
+       {
+        "it": "Silenzio, aria pulita, caffè sulla terrazza con vista sulla valle.",
+        "en": "Silence, clean air, coffee on the terrace with a view of the valley."
+       },
+       {
+        "it": "Al bar tutti volevano sapere chi ero.",
+        "en": "At the bar everyone wanted to know who I was."
+       },
+       {
+        "it": "Quando ho detto \"sono la nipote di Teresa\", è cambiato tutto: mi hanno offerto il caffè, il vino, e una signora mi ha portato a casa un chilo di peperoni.",
+        "en": "When I said \"I'm Teresa's granddaughter\", everything changed: they bought me coffee, wine, and a lady brought a kilo of peppers round to my house."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Poi è arrivato l'inverno, e ho capito alcune cose.",
+        "en": "Then winter came, and I understood a few things."
+       },
+       {
+        "it": "In paese ci sono circa settecento abitanti, e d'inverno restano soprattutto gli anziani.",
+        "en": "There are about seven hundred people in the village, and in winter it's mostly old people who stay."
+       },
+       {
+        "it": "Il supermercato più vicino è a mezz'ora di macchina, su una strada piena di curve.",
+        "en": "The nearest supermarket is half an hour away by car, on a road full of bends."
+       },
+       {
+        "it": "Internet all'inizio andava e veniva, e una volta ho dovuto consegnare una traduzione urgente dal bar, perché lì il segnale era migliore.",
+        "en": "At first the internet came and went, and once I had to deliver an urgent translation from the bar, because the signal was better there."
+       },
+       {
+        "it": "Tutto il paese ha visto il mio computer e mi ha chiesto di cosa parlava il testo.",
+        "en": "The whole village saw my computer and asked me what the text was about."
+       },
+       {
+        "it": "Era un manuale tecnico su una lavatrice.",
+        "en": "It was a technical manual for a washing machine."
+       },
+       {
+        "it": "Sono rimasti molto delusi.",
+        "en": "They were very disappointed."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "E poi mi mancavano alcune cose di Roma.",
+        "en": "And then I missed some things about Rome."
+       },
+       {
+        "it": "Il cinema, prima di tutto.",
+        "en": "The cinema, first of all."
+       },
+       {
+        "it": "E le amiche, la pizza al taglio alle undici di sera, la possibilità di fare una passeggiata senza che tutti sappiano dove vai.",
+        "en": "And my friends, pizza by the slice at eleven at night, being able to go for a walk without everyone knowing where you're going."
+       },
+       {
+        "it": "Qui, se esco con un uomo, il giorno dopo lo sa anche il prete.",
+        "en": "Here, if I go out with a man, the next day even the priest knows."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Adesso sono qui da tre anni.",
+        "en": "Now I've been here for three years."
+       },
+       {
+        "it": "Internet funziona, finalmente, e ho imparato a fare la spesa una volta alla settimana con la lista.",
+        "en": "The internet works, finally, and I've learnt to do the shopping once a week with a list."
+       },
+       {
+        "it": "Due volte all'anno torno a Roma per qualche giorno, vado al cinema tre volte e mangio troppa pizza.",
+        "en": "Twice a year I go back to Rome for a few days, go to the cinema three times and eat too much pizza."
+       },
+       {
+        "it": "Poi, dopo quattro giorni, il rumore mi stanca e voglio tornare a casa.",
+        "en": "Then, after four days, the noise tires me out and I want to go home."
+       },
+       {
+        "it": "Casa, sì.",
+        "en": "Home, yes."
+       },
+       {
+        "it": "Adesso la chiamo così.",
+        "en": "That's what I call it now."
+       },
+       {
+        "it": "E i peperoni della signora, ogni settembre, arrivano ancora.",
+        "en": "And the lady's peppers still turn up every September."
+       }
+      ]
+     }
+    ]
+   },
+   "B1": {
+    "speaker": "Nadia, 29 anni, Bologna (da un paese del Molise)",
+    "body": [
+     {
+      "s": [
+       {
+        "it": "Allora, io vengo da un paese del Molise che si chiama Pietrabbondante.",
+        "en": "Right, I come from a village in Molise called Pietrabbondante."
+       },
+       {
+        "it": "Lo so, nessuno lo conosce.",
+        "en": "I know, nobody's heard of it."
+       },
+       {
+        "it": "Ha circa ottocento abitanti, un teatro sannita di duemila anni fa e un bar.",
+        "en": "It has about eight hundred inhabitants, a two-thousand-year-old Samnite theatre and one bar."
+       },
+       {
+        "it": "A diciannove anni sono partita per studiare a Bologna, come metà dei miei compagni di classe, e non sono più tornata, se non per le feste.",
+        "en": "At nineteen I left to study in Bologna, like half my classmates, and I never went back, except for holidays."
+       },
+       {
+        "it": "Adesso ho ventinove anni, lavoro in una cooperativa che si occupa di progetti culturali e, da qualche mese, mi faccio una domanda che non mi ero mai fatta: e se tornassi?",
+        "en": "Now I'm twenty-nine, I work for a cooperative that runs cultural projects and, for a few months now, I've been asking myself a question I'd never asked before: what if I went back?"
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Devo dire che per anni Bologna è stata esattamente quello che cercavo.",
+        "en": "I have to say that for years Bologna was exactly what I was looking for."
+       },
+       {
+        "it": "Quando sono arrivata, mi sembrava impossibile che si potesse uscire alle undici di sera e trovare gente per strada, librerie aperte, concerti gratis in piazza.",
+        "en": "When I arrived, it seemed impossible to me that you could go out at eleven at night and find people in the street, bookshops open, free concerts in the square."
+       },
+       {
+        "it": "In paese, alle nove di sera, l'unico rumore era la televisione dei vicini.",
+        "en": "In the village, at nine in the evening, the only sound was the neighbours' television."
+       },
+       {
+        "it": "A Bologna potevo essere chi volevo, vestirmi come volevo, cambiare idea senza che nessuno se lo ricordasse.",
+        "en": "In Bologna I could be whoever I wanted, dress how I liked, change my mind without anyone remembering."
+       },
+       {
+        "it": "In un paese piccolo, invece, sei sempre \"la figlia di\", e quello che hai fatto a quindici anni te lo porti dietro per sempre.",
+        "en": "In a small village, on the other hand, you're always \"the daughter of\", and what you did at fifteen follows you around forever."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Però, negli ultimi anni, qualcosa è cambiato.",
+        "en": "But in the last few years, something has changed."
+       },
+       {
+        "it": "Prima di tutto, gli affitti.",
+        "en": "First of all, rents."
+       },
+       {
+        "it": "Bologna è diventata carissima, anche per colpa degli affitti brevi per i turisti.",
+        "en": "Bologna has become extremely expensive, partly because of short-term lets for tourists."
+       },
+       {
+        "it": "Io pago settecentocinquanta euro per un monolocale in Bolognina, e lo stipendio della cooperativa non è certo cresciuto alla stessa velocità.",
+        "en": "I pay seven hundred and fifty euros for a studio in Bolognina, and the cooperative's salary certainly hasn't grown at the same speed."
+       },
+       {
+        "it": "Poi le amicizie.",
+        "en": "Then there are friendships."
+       },
+       {
+        "it": "Tanti miei amici dell'università se ne sono andati, chi a Milano, chi all'estero, e ricominciare a trent'anni a conoscere gente è faticoso.",
+        "en": "Lots of my friends from university have left, some to Milan, some abroad, and starting to meet people all over again at thirty is tiring."
+       },
+       {
+        "it": "Ho la sensazione di vivere in una città piena di persone di passaggio, me compresa.",
+        "en": "I get the feeling I'm living in a city full of people passing through, myself included."
+       },
+       {
+        "it": "E c'è anche una questione di tempo.",
+        "en": "And there's also a question of time."
+       },
+       {
+        "it": "A Bologna passo quasi un'ora al giorno tra autobus e bicicletta, e il fine settimana lo passo a recuperare tutto quello che non ho fatto durante la settimana: lavatrici, spesa, mail arretrate.",
+        "en": "In Bologna I spend almost an hour a day on buses and bikes, and I spend the weekend catching up on everything I didn't get done during the week: laundry, shopping, a backlog of emails."
+       },
+       {
+        "it": "Quando torno a Pietrabbondante per Natale, invece, le giornate sembrano lunghissime.",
+        "en": "When I go back to Pietrabbondante for Christmas, on the other hand, the days seem incredibly long."
+       },
+       {
+        "it": "Mi sveglio senza sveglia, faccio una passeggiata fino al teatro, aiuto mia madre a fare i cavatelli e alle undici di mattina mi sembra di aver già vissuto una giornata intera.",
+        "en": "I wake up without an alarm, walk up to the theatre, help my mum make cavatelli and by eleven in the morning I feel I've already lived a whole day."
+       },
+       {
+        "it": "Certo, il terzo giorno comincio ad annoiarmi, ma è una noia diversa, quasi riposante.",
+        "en": "Sure, by the third day I start getting bored, but it's a different kind of boredom, almost restful."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "E poi è successa una cosa concreta.",
+        "en": "And then something concrete happened."
+       },
+       {
+        "it": "La scorsa estate, a Pietrabbondante, il comune ha organizzato un festival di teatro proprio nel teatro sannita.",
+        "en": "Last summer, in Pietrabbondante, the town council organised a theatre festival right in the Samnite theatre."
+       },
+       {
+        "it": "Mi hanno chiesto di dare una mano con l'organizzazione, visto che è il mio lavoro.",
+        "en": "They asked me to help with the organisation, since it's my job."
+       },
+       {
+        "it": "E lì ho visto una cosa che non mi aspettavo.",
+        "en": "And there I saw something I didn't expect."
+       },
+       {
+        "it": "C'erano ragazzi della mia età che erano tornati: un ingegnere che lavora da remoto per un'azienda di Monaco, una coppia che ha riaperto il caseificio del nonno, una ragazza che fa la ceramista.",
+        "en": "There were people my age who had come back: an engineer working remotely for a company in Munich, a couple who've reopened their grandfather's cheese dairy, a girl who's a ceramicist."
+       },
+       {
+        "it": "Non erano tornati per nostalgia, ma perché lì potevano permettersi una casa e un progetto.",
+        "en": "They hadn't come back out of nostalgia, but because there they could afford a house and a project."
+       },
+       {
+        "it": "La sera del festival c'erano trecento persone sedute sulle pietre del teatro, sotto le stelle, e io ho pensato che a Bologna una cosa così, così bella, non l'avevo mai vista.",
+        "en": "On the night of the festival there were three hundred people sitting on the theatre's stones, under the stars, and I thought that in Bologna I'd never seen anything like it, anything that beautiful."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Detto questo, non voglio idealizzare il paese.",
+        "en": "That said, I don't want to idealise the village."
+       },
+       {
+        "it": "Lo so benissimo com'è a febbraio, quando fa buio alle cinque, nevica e non c'è nessuno.",
+        "en": "I know perfectly well what it's like in February, when it gets dark at five, it snows and there's nobody around."
+       },
+       {
+        "it": "So che l'ospedale più vicino è a Isernia, a quaranta minuti, se la strada è libera.",
+        "en": "I know the nearest hospital is in Isernia, forty minutes away, if the road is clear."
+       },
+       {
+        "it": "So che se tornassi, mia madre passerebbe a trovarmi tutti i giorni senza avvisare, e che la signora del bar commenterebbe ogni mio fidanzato, passato, presente e futuro.",
+        "en": "I know that if I went back, my mother would drop round every day without warning, and that the lady at the bar would comment on every boyfriend of mine, past, present and future."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Quindi, insomma, non ho ancora deciso.",
+        "en": "So, basically, I haven't decided yet."
+       },
+       {
+        "it": "Se dovessi scegliere oggi, credo che proverei una soluzione a metà.",
+        "en": "If I had to choose today, I think I'd try a halfway solution."
+       },
+       {
+        "it": "Magari tenere un lavoro a Bologna, ma in parte da remoto, e passare alcuni mesi all'anno al paese.",
+        "en": "Maybe keep a job in Bologna, but partly remote, and spend a few months a year in the village."
+       },
+       {
+        "it": "Mia nonna dice che \"a metà\" non si vive bene da nessuna parte.",
+        "en": "My grandmother says you can't live well anywhere \"halfway\"."
+       },
+       {
+        "it": "Forse ha ragione.",
+        "en": "Maybe she's right."
+       },
+       {
+        "it": "Ma lei non ha mai pagato settecentocinquanta euro per un monolocale.",
+        "en": "But she's never paid seven hundred and fifty euros for a studio flat."
+       }
+      ]
+     }
+    ]
+   },
+   "B2": {
+    "speaker": "Elisa, 36 anni, medico di base in Alta Langa",
+    "body": [
+     {
+      "s": [
+       {
+        "it": "Allora, io sono cresciuta a Torino, in Crocetta, figlia di due professori universitari.",
+        "en": "Right, I grew up in Turin, in Crocetta, the daughter of two university professors."
+       },
+       {
+        "it": "Diciamo che l'idea di vivere in un paese di trecento abitanti non faceva esattamente parte del programma che i miei avevano in mente per me.",
+        "en": "Let's say that the idea of living in a village of three hundred people wasn't exactly part of the plan my parents had in mind for me."
+       },
+       {
+        "it": "E invece da quattro anni faccio il medico di base in Alta Langa, tra Bossolasco e tre o quattro frazioni che non trovereste su nessuna mappa.",
+        "en": "And yet for four years I've been a GP in the Alta Langa, between Bossolasco and three or four hamlets you wouldn't find on any map."
+       },
+       {
+        "it": "Quindi la domanda \"città o paese\" per me non è teorica: le ho provate entrambe, da adulta, e posso dire con una certa precisione che cosa si guadagna e che cosa si perde.",
+        "en": "So the question \"city or village\" isn't theoretical for me: I've tried both, as an adult, and I can say fairly precisely what you gain and what you lose."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Ci sono arrivata quasi per caso.",
+        "en": "I got here almost by chance."
+       },
+       {
+        "it": "Dopo la specializzazione cercavo un posto, e in città le graduatorie erano infinite.",
+        "en": "After specialising I was looking for a post, and in the city the waiting lists were endless."
+       },
+       {
+        "it": "In Alta Langa, invece, il vecchio medico era andato in pensione da un anno e nessuno voleva prendere il suo posto.",
+        "en": "In the Alta Langa, by contrast, the old doctor had retired a year earlier and nobody wanted to take over."
+       },
+       {
+        "it": "Ho accettato pensando di restare sei mesi, giusto il tempo di fare esperienza.",
+        "en": "I accepted thinking I'd stay six months, just long enough to get some experience."
+       },
+       {
+        "it": "I miei genitori l'hanno presa come si prende la notizia di un figlio che parte volontario per una missione umanitaria: con orgoglio e una vaga preoccupazione.",
+        "en": "My parents took it the way you take the news of a child volunteering for a humanitarian mission: with pride and a vague sense of worry."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "La prima cosa che ho scoperto è che in un paese piccolo il medico, oltre che un professionista, è un'istituzione.",
+        "en": "The first thing I discovered is that in a small village the doctor is an institution as much as a professional."
+       },
+       {
+        "it": "Vieni giudicata su tutto: come guidi, che cosa compri dal macellaio, se saluti abbastanza in fretta.",
+        "en": "You're judged on everything: how you drive, what you buy at the butcher's, whether you say hello quickly enough."
+       },
+       {
+        "it": "Una volta, durante le prime settimane, ho comprato una bottiglia di vino in un supermercato di Alba invece che dal produttore del paese.",
+        "en": "Once, in my first weeks, I bought a bottle of wine at a supermarket in Alba instead of from the local producer."
+       },
+       {
+        "it": "Lo ha saputo mezzo paese prima che arrivassi a casa.",
+        "en": "Half the village knew before I got home."
+       },
+       {
+        "it": "Il produttore, il signor Bertola, è venuto in ambulatorio il giorno dopo per una \"pressione alta\" che, guarda caso, non aveva, e mi ha lasciato sul tavolo due bottiglie di dolcetto, senza commentare.",
+        "en": "The producer, Mr Bertola, came to the surgery the next day for \"high blood pressure\" which, as it happens, he didn't have, and left two bottles of dolcetto on my desk without comment."
+       },
+       {
+        "it": "Il messaggio era chiarissimo.",
+        "en": "The message was crystal clear."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Il rovescio della medaglia, che poi è anche la ragione per cui sono rimasta, è che qui la medicina ha ancora una dimensione umana che in città avevo perso.",
+        "en": "The flip side, which is also the reason I stayed, is that here medicine still has a human dimension that I'd lost in the city."
+       },
+       {
+        "it": "A Torino, durante il tirocinio, vedevo un paziente per dodici minuti e non sapevo niente della sua vita.",
+        "en": "In Turin, during my training, I'd see a patient for twelve minutes and know nothing about their life."
+       },
+       {
+        "it": "Qui conosco le famiglie, le case, i cani.",
+        "en": "Here I know the families, the houses, the dogs."
+       },
+       {
+        "it": "So che la signora Ernesta non prende la pastiglia per il cuore perché la figlia è in Australia e lei, quando è triste, \"si dimentica\".",
+        "en": "I know that Mrs Ernesta doesn't take her heart pill because her daughter is in Australia and when she's sad she \"forgets\"."
+       },
+       {
+        "it": "Nessun esame del sangue me l'avrebbe detto.",
+        "en": "No blood test would have told me that."
+       },
+       {
+        "it": "Il problema, naturalmente, è che vale anche al contrario: i pazienti sanno tutto di me.",
+        "en": "The problem, of course, is that it works the other way round too: my patients know everything about me."
+       },
+       {
+        "it": "Sanno quando ho l'influenza, quando ho litigato con il mio compagno, quando ho preso due chili.",
+        "en": "They know when I've got the flu, when I've had a row with my partner, when I've put on two kilos."
+       },
+       {
+        "it": "Alcuni commentano il risultato dei miei esami del sangue prima che li abbia letti io, perché la cugina lavora al laboratorio di Dogliani.",
+        "en": "Some of them comment on my blood test results before I've read them myself, because their cousin works at the lab in Dogliani."
+       },
+       {
+        "it": "La privacy, qui, è un concetto più che altro teorico.",
+        "en": "Privacy, here, is a largely theoretical concept."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Anche la vita sociale, devo dire, funziona in modo completamente diverso.",
+        "en": "Social life, I have to say, works completely differently too."
+       },
+       {
+        "it": "In città sceglievo i miei amici per affinità: stessi gusti, stessa età, più o meno lo stesso lavoro.",
+        "en": "In the city I chose my friends by affinity: same tastes, same age, more or less the same job."
+       },
+       {
+        "it": "Qui la scelta non c'è, o quasi.",
+        "en": "Here there's no choice, or hardly any."
+       },
+       {
+        "it": "Il sabato sera, alla pizzeria di Bossolasco, al tavolo accanto al tuo ci sono il sindaco, il meccanico, due ragazzi che fanno la vendemmia e una coppia di olandesi che ha comprato una cascina e la sta ristrutturando da sei anni.",
+        "en": "On a Saturday night, at the pizzeria in Bossolasco, at the next table there's the mayor, the mechanic, two lads who work the grape harvest and a Dutch couple who bought a farmhouse and have been doing it up for six years."
+       },
+       {
+        "it": "Alla fine della serata siete tutti allo stesso tavolo, a discutere di cinghiali e di politica, e non sempre in quest'ordine.",
+        "en": "By the end of the evening you're all at the same table, arguing about wild boar and politics, and not always in that order."
+       },
+       {
+        "it": "Il mio compagno, che a Milano frequentava solo fotografi e grafici, ha fatto amicizia con il meccanico.",
+        "en": "My partner, who in Milan only hung out with photographers and graphic designers, has made friends with the mechanic."
+       },
+       {
+        "it": "Adesso passano le domeniche a smontare una Vespa del 1971 che, secondo me, non ripartirà mai.",
+        "en": "Now they spend Sundays taking apart a 1971 Vespa that, if you ask me, will never run again."
+       },
+       {
+        "it": "È una convivenza un po' forzata, ma ha qualcosa di sano.",
+        "en": "It's a slightly forced kind of coexistence, but there's something healthy about it."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Poi ci sono gli aspetti pratici, che chi idealizza la vita di paese tende a dimenticare.",
+        "en": "Then there are the practical aspects, which people who idealise village life tend to forget."
+       },
+       {
+        "it": "D'inverno, con la neve, raggiungere certe cascine diventa un'impresa, e più di una volta mi è toccato chiamare un trattore per farmi tirare fuori da un fosso.",
+        "en": "In winter, with the snow, reaching certain farmhouses becomes quite an undertaking, and more than once I've had to call a tractor to pull me out of a ditch."
+       },
+       {
+        "it": "Il cinema più vicino è ad Alba, il teatro a Torino, e il mio compagno, che è di Milano e fa il fotografo, dice che qui la vita culturale si riduce alla sagra della nocciola.",
+        "en": "The nearest cinema is in Alba, the theatre in Turin, and my partner, who is from Milan and works as a photographer, says cultural life here comes down to the hazelnut festival."
+       },
+       {
+        "it": "Esagera, ma non di molto.",
+        "en": "He's exaggerating, but not by much."
+       },
+       {
+        "it": "E poi c'è la questione più seria, quella demografica.",
+        "en": "And then there's the more serious issue, the demographic one."
+       },
+       {
+        "it": "I miei pazienti hanno in media settantadue anni.",
+        "en": "My patients are seventy-two on average."
+       },
+       {
+        "it": "Negli ultimi quattro anni ho firmato più certificati di morte che certificati per l'iscrizione all'asilo, e l'asilo, nel frattempo, ha chiuso.",
+        "en": "In the last four years I've signed more death certificates than nursery enrolment certificates, and the nursery, meanwhile, has closed."
+       },
+       {
+        "it": "Quando sento parlare in televisione di \"ritorno ai borghi\" come di una moda romantica, mi viene un po' da sorridere e un po' da arrabbiarmi.",
+        "en": "When I hear people on TV talk about the \"return to the villages\" as if it were a romantic trend, it makes me half smile and half angry."
+       },
+       {
+        "it": "Perché un paese lo salvano le scuole, i medici, la banda larga e le corriere che passano più di due volte al giorno, molto più delle case vacanza e delle foto dei tramonti.",
+        "en": "Because what saves a village is schools, doctors, broadband and buses that come more than twice a day, far more than holiday homes and sunset photos."
+       }
+      ]
+     },
+     {
+      "s": [
+       {
+        "it": "Detto tutto questo, se oggi mi chiedessero di scegliere, sceglierei di restare.",
+        "en": "All that said, if someone asked me to choose today, I'd choose to stay."
+       },
+       {
+        "it": "Non per una forma di eroismo, che non mi appartiene, e nemmeno per amore della natura, che pure c'è.",
+        "en": "Not out of some form of heroism, which isn't me, nor out of love for nature, though there is that too."
+       },
+       {
+        "it": "Resto perché qui ho la sensazione, rara, di servire a qualcosa di preciso, e di vedere le conseguenze di quello che faccio.",
+        "en": "I stay because here I have the rare feeling of being useful for something specific, and of seeing the consequences of what I do."
+       },
+       {
+        "it": "In città ero una tra mille.",
+        "en": "In the city I was one among thousands."
+       },
+       {
+        "it": "Qui, nel bene e nel male, sono \"la dottoressa\", con tutto quello che comporta, compreso il dolcetto del signor Bertola.",
+        "en": "Here, for better or worse, I'm \"the doctor\", with everything that comes with it, including Mr Bertola's dolcetto."
+       },
+       {
+        "it": "Mia madre, l'ultima volta che è venuta a trovarmi, è rimasta mezz'ora in piazza perché tutti volevano stringerle la mano.",
+        "en": "My mother, the last time she came to visit, was stuck in the square for half an hour because everyone wanted to shake her hand."
+       },
+       {
+        "it": "Tornando a Torino mi ha mandato un messaggio: \"Adesso capisco.\"",
+        "en": "On her way back to Turin she sent me a message: \"Now I understand.\""
+       },
+       {
+        "it": "Mio padre invece ha chiesto soltanto se il dolcetto di Bertola si può spedire.",
+        "en": "My father, on the other hand, only asked whether Bertola's dolcetto can be shipped."
+       }
+      ]
+     }
+    ]
+   }
+  }
+ }
+]

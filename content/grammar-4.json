@@ -1,0 +1,254 @@
+[
+  {
+    "id": "g-stare-gerund", "level": "A2", "topic": "tenses",
+    "title": "Stare + gerundio", "en": "Stare + gerund (-ing)",
+    "summary": "How to say what is happening right now (sto mangiando) and what is about to happen (sto per mangiare).",
+    "meaning": "<b>Stare + gerundio</b> is the Italian “to be doing”: it puts the spotlight on an action that is in progress at this exact moment. Italian uses it less than English, because the plain presente already covers “I'm doing”. Its cousin <b>stare per + infinitive</b> means “to be about to”.",
+    "uses": [
+      { "h": "Happening right now", "t": "To stress that something is going on at this very moment.", "ex": ["Non posso parlare, sto guidando.", "I can't talk, I'm driving."] },
+      { "h": "In progress in the past", "t": "With <b>stare</b> in the imperfetto, for an action that was going on when something else happened.", "ex": ["Stavo facendo la doccia quando è andata via la luce.", "I was having a shower when the power went off."] },
+      { "h": "A temporary situation", "t": "Something that is going on these days, but not forever.", "ex": ["Sto leggendo un giallo di Camilleri, è bellissimo.", "I'm reading a Camilleri detective novel, it's great."] },
+      { "h": "About to happen: stare per", "t": "<b>stare per + infinitive</b> for something that is going to happen any second.", "ex": ["Corri, il treno sta per partire!", "Run, the train is about to leave!"] },
+      { "h": "Almost happened", "t": "<b>stavo per</b> in the past: something nearly happened, and maybe didn't.", "ex": ["Stavo per chiamarti, giuro.", "I was just about to call you, I swear."] }
+    ],
+    "form": {
+      "intro": "<b>stare</b> (sto, stai, sta, stiamo, state, stanno) + the <b>gerundio</b>, which never changes. To form the gerund, drop <b>-are</b> and add <b>-ando</b>; drop <b>-ere</b> or <b>-ire</b> and add <b>-endo</b>.",
+      "tables": [
+        { "h": "Forming the gerund", "rows": [["-are → -ando", "parlare → parlando, mangiare → mangiando"], ["-ere → -endo", "leggere → leggendo, prendere → prendendo"], ["-ire → -endo", "dormire → dormendo, finire → finendo (no -isc-)"]] },
+        { "h": "stare + gerund · lavorare", "rows": [["io", "sto lavorando"], ["tu", "stai lavorando"], ["lui / lei", "sta lavorando"], ["noi", "stiamo lavorando"], ["voi", "state lavorando"], ["loro", "stanno lavorando"]] },
+        { "h": "stare per + infinitive", "rows": [["sto per uscire", "I'm about to go out"], ["stava per piovere", "it was about to rain"], ["stavamo per partire", "we were about to leave"]] }
+      ],
+      "notes": [
+        "Only <b>stare</b>, never essere: <i>sto mangiando</i>, not <i>sono mangiando</i>.",
+        "For the past, use stare in the <b>imperfetto</b>: stavo, stavi, stava, stavamo, stavate, stavano + gerund.",
+        "Pronouns go before stare or are glued to the gerund: <i>mi sto vestendo</i> = <i>sto vestendomi</i>. The first is more common.",
+        "Don't use it for the future or for habits: <i>domani parto</i>, not <i>domani sto partendo</i>."
+      ]
+    },
+    "irregular": [["fare", "facendo"], ["dire", "dicendo"], ["bere", "bevendo"], ["tradurre (-durre)", "traducendo"], ["porre (-porre)", "ponendo"]],
+    "irregularTitle": "Irregular gerunds (they come from the old Latin stem, like the imperfetto)",
+    "signals": ["adesso", "in questo momento", "proprio ora", "zitto!", "quando (+ stavo…)", "tra un attimo (stare per)"],
+    "mistakes": [
+      { "wrong": "Sono lavorando.", "right": "Sto lavorando.", "why": "The -ing form always uses <b>stare</b>, never essere." },
+      { "wrong": "Sto facciendo i compiti.", "right": "Sto facendo i compiti.", "why": "The gerund of fare is <b>facendo</b>, from the old stem fac-." },
+      { "wrong": "Stasera sto andando al cinema.", "right": "Stasera vado al cinema.", "why": "For plans, Italian uses the plain presente. Stare + gerund is only for what's in progress." },
+      { "wrong": "Il film sta per cominciando.", "right": "Il film sta per cominciare.", "why": "<b>stare per</b> takes the infinitive, not the gerund." }
+    ],
+    "ex": [
+      { "k": "type", "q": "Non posso rispondere adesso, ___ guidando.", "h": "stare · io", "a": ["sto"], "why": "Stare in the presente: sto, stai, sta…" },
+      { "k": "type", "q": "Cosa ___ facendo i bambini in giardino? C'è troppo silenzio.", "h": "stare · loro", "a": ["stanno"], "why": "Loro → stanno." },
+      { "k": "type", "q": "Shh, Pietro sta ___ per l'esame di domani.", "h": "studiare · gerund", "a": ["studiando"], "why": "-are → -ando: studiando." },
+      { "k": "type", "q": "Ma che stai ___? Non è vero niente!", "h": "dire · gerund", "a": ["dicendo"], "why": "Dire has an irregular gerund: dicendo." },
+      { "k": "type", "q": "Stiamo ___ il tiramisù per la festa di Chiara.", "h": "fare · gerund", "a": ["facendo"], "why": "Fare → facendo, from the old stem fac-." },
+      { "k": "type", "q": "Quando mi hai chiamato, ___ facendo la doccia.", "h": "stare · io, imperfetto", "a": ["stavo"], "why": "An action in progress in the past → stare in the imperfetto." },
+      { "k": "type", "q": "Corri, il treno per Bergamo sta ___ partire!", "h": "preposition", "a": ["per"], "why": "About to happen → stare <b>per</b> + infinitive." },
+      { "k": "type", "q": "Il bar sta ___: se vuoi un caffè, ordina subito.", "h": "chiudere · gerund", "a": ["chiudendo"], "why": "-ere → -endo: chiudendo." },
+      { "k": "type", "q": "Stavamo ___ di casa quando ha cominciato a grandinare.", "h": "uscire · gerund", "a": ["uscendo"], "why": "-ire → -endo: uscendo. Stavamo = it was in progress." },
+      { "k": "type", "q": "Aspetta un attimo, mi sto ___ e arrivo.", "h": "vestire · gerund", "a": ["vestendo"], "why": "The pronoun mi goes before stare; the gerund stays the same: vestendo." },
+      { "k": "mc", "q": "“Che fai?” “___ un libro di Natalia Ginzburg.”", "o": ["Sto leggendo", "Sono leggendo", "Sto leggere"], "a": "Sto leggendo", "why": "stare + gerund, never essere, never the infinitive." },
+      { "k": "mc", "q": "“I was about to fall asleep when the doorbell rang.”", "o": ["Stavo per addormentarmi quando ha suonato il campanello.", "Stavo addormentandomi per quando ha suonato il campanello.", "Ero per addormentarmi quando ha suonato il campanello."], "a": "Stavo per addormentarmi quando ha suonato il campanello.", "why": "About to → stare per + infinitive; in the past, stavo per." },
+      { "k": "mc", "q": "Domani mattina ___ per Cagliari alle sei.", "o": ["parto", "sto partendo", "stavo partendo"], "a": "parto", "why": "A planned future takes the plain presente, not stare + gerund." }
+    ]
+  },
+  {
+    "id": "g-imperative", "level": "A2", "topic": "tenses",
+    "title": "L'imperativo", "en": "The imperative",
+    "summary": "The form for telling people what to do: orders, instructions, advice and invitations.",
+    "meaning": "The imperativo is how you give instructions, advice and invitations: <i>gira a destra</i>, <i>prendi un ombrello</i>, <i>andiamo!</i>. It sounds far less bossy in Italian than in English; friends use it constantly, and a <i>dai</i> or <i>pure</i> softens it. For people you address as <b>Lei</b>, there is a separate polite form.",
+    "uses": [
+      { "h": "Instructions and directions", "t": "Recipes, directions, how-to.", "ex": ["Gira a sinistra e poi vai sempre dritto.", "Turn left and then keep going straight."] },
+      { "h": "Advice", "t": "Telling a friend what you think they should do.", "ex": ["Prendi l'ombrello, a Genova non si sa mai.", "Take the umbrella, in Genoa you never know."] },
+      { "h": "Invitations and offers", "t": "Often softened with <b>pure</b> or <b>dai</b>.", "ex": ["Entra pure, mettiti comodo.", "Come in, make yourself comfortable."] },
+      { "h": "Let's… (noi)", "t": "The noi form is the English “let's”.", "ex": ["Andiamo a mangiare, ho una fame da lupo.", "Let's go and eat, I'm starving."] },
+      { "h": "Polite (Lei)", "t": "To strangers, customers, older people: shop assistants, waiters, doctors use it all day.", "ex": ["Signora, si accomodi, il dottore arriva subito.", "Please take a seat, madam, the doctor will be right with you."] }
+    ],
+    "form": {
+      "intro": "For <b>tu</b>, -are verbs end in <b>-a</b>, -ere and -ire verbs in <b>-i</b>. <b>noi</b> and <b>voi</b> are the same as the presente. The polite <b>Lei</b> form swaps the vowel: -are → <b>-i</b>, -ere/-ire → <b>-a</b>.",
+      "tables": [
+        { "h": "Regular verbs", "rows": [["tu", "parla · prendi · senti · finisci"], ["noi", "parliamo · prendiamo · sentiamo · finiamo"], ["voi", "parlate · prendete · sentite · finite"], ["Lei", "parli · prenda · senta · finisca"]] },
+        { "h": "Negative", "rows": [["tu", "non + infinitive: non parlare, non toccare"], ["noi", "non parliamo"], ["voi", "non parlate"], ["Lei", "non parli"]] },
+        { "h": "Pronouns", "rows": [["tu, noi, voi", "glued to the end: dimmi, fallo, prendiamolo, sentitemi"], ["Lei", "before the verb: mi dica, si accomodi, lo prenda"], ["negative tu", "either way: non farlo = non lo fare"]] }
+      ],
+      "notes": [
+        "With the short forms <b>va', fa', da', sta', di'</b>, the pronoun doubles its consonant: dimmi, fallo, dammi, stammi bene, vacci. The only exception is <b>gli</b>: digli, dagli.",
+        "Reflexive verbs follow the same rule: <i>alzati!</i> (tu), <i>alziamoci!</i> (noi), <i>si alzi</i> (Lei).",
+        "The Lei forms are borrowed from the congiuntivo, so irregular verbs keep their irregular stem: vada, faccia, dica, venga, prenda."
+      ]
+    },
+    "irregular": [
+      ["andare", "tu va' / vai · Lei vada"], ["fare", "tu fa' / fai · Lei faccia"], ["dare", "tu da' / dai · Lei dia"],
+      ["stare", "tu sta' / stai · Lei stia"], ["dire", "tu di' · Lei dica"], ["essere", "tu sii · voi siate · Lei sia"],
+      ["avere", "tu abbi · voi abbiate · Lei abbia"], ["venire", "tu vieni · Lei venga"], ["uscire", "tu esci · Lei esca"], ["sapere", "tu sappi · voi sappiate · Lei sappia"]
+    ],
+    "irregularTitle": "Irregular forms (tu forms with an apostrophe are the short forms; the long ones are just as common)",
+    "signals": ["dai", "pure", "per favore", "su!", "mi raccomando", "scusi / scusa"],
+    "mistakes": [
+      { "wrong": "Non parla! (to a friend)", "right": "Non parlare!", "why": "Negative tu = <b>non + infinitive</b>." },
+      { "wrong": "Dimi la verità.", "right": "Dimmi la verità.", "why": "After the short forms di', fa', va', da', sta', the pronoun doubles: <b>dimmi</b>." },
+      { "wrong": "Signore, prendi un biscotto!", "right": "Signore, prenda un biscotto!", "why": "For Lei, -ere and -ire verbs end in <b>-a</b>." },
+      { "wrong": "Mi dì!", "right": "Dimmi! / Mi dica!", "why": "With tu the pronoun is glued on (dimmi); with Lei it goes before (mi dica). Di' has an apostrophe, not an accent." }
+    ],
+    "ex": [
+      { "k": "type", "q": "Marta, ___ la finestra, si gela!", "h": "chiudere · tu", "a": ["chiudi"], "why": "-ere verbs end in -i in the tu form: chiudi." },
+      { "k": "type", "q": "Ragazzi, ___ piano, il bambino dorme!", "h": "parlare · voi", "a": ["parlate"], "why": "The voi imperative is the same as the presente." },
+      { "k": "type", "q": "Non ___, è solo un raffreddore!", "h": "preoccuparsi · tu", "a": ["preoccuparti", "ti preoccupare"], "why": "Negative tu = non + infinitive; the pronoun is glued on (preoccuparti) or goes before (ti preoccupare)." },
+      { "k": "type", "q": "___ la verità: chi ha mangiato l'ultima fetta di torta?", "h": "dire · tu + mi", "a": ["dimmi"], "why": "Di' + mi → dimmi: the consonant doubles after a short form." },
+      { "k": "type", "q": "I compiti? ___ subito, poi esci con gli amici.", "h": "fare · tu + li", "a": ["falli"], "why": "Fa' + li → falli, with a double l." },
+      { "k": "type", "q": "Hai visto Sara? ___ che la aspetto al bar sotto casa.", "h": "dire · tu + le", "a": ["dille"], "why": "Di' + le → dille. Only gli doesn't double (digli)." },
+      { "k": "type", "q": "Signora, ___ pure, il dottore arriva tra cinque minuti.", "h": "accomodarsi · Lei", "a": ["si accomodi"], "why": "Lei: -are → -i, and the pronoun goes before: si accomodi." },
+      { "k": "type", "q": "Scusi, per il Duomo? ___ dritto e poi giri a destra.", "h": "andare · Lei", "a": ["vada"], "why": "Andare in the Lei form: vada." },
+      { "k": "type", "q": "Dai, stasera ___ una pizza e guardiamo un film!", "h": "ordinare · noi", "a": ["ordiniamo"], "why": "The noi imperative (“let's”) is the same as the presente." },
+      { "k": "type", "q": "Non ___ le chiavi sul tavolo, le perdi sempre.", "h": "lasciare · tu", "a": ["lasciare"], "why": "Negative tu = non + infinitive." },
+      { "k": "mc", "q": "Ragazzi, ___ zitti un momento, sto parlando al telefono!", "o": ["state", "stai", "stia"], "a": "state", "why": "Talking to several people → voi: state." },
+      { "k": "mc", "q": "In a bakery, the assistant turns to an elderly customer: “___, signora.”", "o": ["Mi dica", "Dimmi", "Dica mi"], "a": "Mi dica", "why": "Polite Lei form; the pronoun goes before the verb." },
+      { "k": "mc", "q": "To a friend: “Don't touch it, it's hot!”", "o": ["Non toccarlo, scotta!", "Non toccalo, scotta!", "Non lo tocchi, scotta!"], "a": "Non toccarlo, scotta!", "why": "Negative tu = non + infinitive (+ lo). “Non lo tocchi” is the Lei form." },
+      { "k": "mc", "q": "“___ paziente, il tecnico arriva tra un'ora”, dice la mamma a Luca.", "o": ["Sii", "Sei", "Sia"], "a": "Sii", "why": "Essere has an irregular tu imperative: sii." }
+    ]
+  },
+  {
+    "id": "g-trapassato", "level": "B1", "topic": "tenses",
+    "title": "Il trapassato prossimo", "en": "The past perfect (had done)",
+    "summary": "The “had done” tense: an action that happened before another past action.",
+    "meaning": "The trapassato prossimo is the English <b>“had done”</b>. When you're already telling a story in the past and need to step one further back in time, you use it: <i>when I arrived, the film had already started</i>. It's the passato prossimo with the auxiliary pushed into the imperfetto.",
+    "uses": [
+      { "h": "Before another past event", "t": "The earlier of two past actions.", "ex": ["Quando sono arrivata in stazione, il treno era già partito.", "When I got to the station, the train had already left."] },
+      { "h": "Explaining a past situation", "t": "Why something was the way it was: the cause is earlier.", "ex": ["Ero distrutto perché la notte prima non avevo dormito.", "I was exhausted because I hadn't slept the night before."] },
+      { "h": "Reported speech", "t": "What someone said they had done.", "ex": ["Lucia mi ha detto che era già stata a Matera.", "Lucia told me she had already been to Matera."] },
+      { "h": "Never before", "t": "With <b>mai</b> for a first experience in the past.", "ex": ["Non avevo mai visto la neve a Palermo.", "I had never seen snow in Palermo."] },
+      { "h": "After dopo che / appena", "t": "For the action that was over before the next one started.", "ex": ["Dopo che gli ospiti erano usciti, abbiamo lavato i piatti.", "After the guests had left, we washed the dishes."] }
+    ],
+    "form": {
+      "intro": "<b>avere / essere</b> in the <b>imperfetto</b> + <b>past participle</b>. The choice of avere or essere, and the agreement, work exactly as in the passato prossimo.",
+      "tables": [
+        { "h": "with avere · mangiare", "rows": [["io", "avevo mangiato"], ["tu", "avevi mangiato"], ["lui / lei", "aveva mangiato"], ["noi", "avevamo mangiato"], ["voi", "avevate mangiato"], ["loro", "avevano mangiato"]] },
+        { "h": "with essere · partire", "rows": [["io", "ero partito/a"], ["tu", "eri partito/a"], ["lui / lei", "era partito/a"], ["noi", "eravamo partiti/e"], ["voi", "eravate partiti/e"], ["loro", "erano partiti/e"]] },
+        { "h": "passato prossimo vs trapassato", "rows": [["Sono arrivato e il film è cominciato.", "first I arrived, then the film started"], ["Sono arrivato e il film era già cominciato.", "the film started first, then I arrived"]] }
+      ],
+      "notes": [
+        "If you tell events in the order they happened, you don't need it: <i>ho cenato e poi sono uscito</i>.",
+        "<b>già</b>, <b>mai</b>, <b>appena</b> and <b>ancora</b> go between the auxiliary and the participle: <i>era già partito</i>, <i>non avevo mai visto</i>.",
+        "Irregular participles are the same as in the passato prossimo: avevo fatto, era rimasta, avevamo letto."
+      ]
+    },
+    "signals": ["già", "mai", "ancora", "appena", "prima", "dopo che", "il giorno prima", "perché (+ cause)"],
+    "mistakes": [
+      { "wrong": "Quando sono arrivato, il film è già cominciato.", "right": "Quando sono arrivato, il film era già cominciato.", "why": "The film started <i>before</i> I arrived → trapassato." },
+      { "wrong": "Avevo andato a Roma.", "right": "Ero andato a Roma.", "why": "Andare takes <b>essere</b>, in every compound tense." },
+      { "wrong": "Mi ha detto che ha già mangiato.", "right": "Mi ha detto che aveva già mangiato.", "why": "In reported speech after a past verb, an earlier action moves to the trapassato." },
+      { "wrong": "Ieri ero tornato a casa e avevo cenato.", "right": "Ieri sono tornato a casa e ho cenato.", "why": "Events told in order don't need the trapassato: there's no stepping back." }
+    ],
+    "ex": [
+      { "k": "type", "q": "Quando sono arrivata in stazione, il treno ___ già partito.", "h": "essere · imperfetto", "a": ["era"], "why": "Partire takes essere; the train left first → trapassato: era partito." },
+      { "k": "type", "q": "Ero stanchissimo perché la notte prima non ___.", "h": "dormire · io", "a": ["avevo dormito"], "why": "The cause happened earlier → avevo + dormito." },
+      { "k": "type", "q": "Lucia mi ha raccontato che ___ a Matera l'anno prima.", "h": "andare · lei", "a": ["era andata"], "why": "Reported speech, earlier action; andare takes essere and agrees: era andata." },
+      { "k": "type", "q": "I ragazzi ___ già tutta la torta quando siamo arrivati noi.", "h": "mangiare · loro", "a": ["avevano mangiato"], "why": "They ate before we arrived → avevano mangiato." },
+      { "k": "type", "q": "Finalmente abbiamo ritrovato il portafoglio che ___ in treno.", "h": "perdere · noi", "a": ["avevamo perso"], "why": "Lost before it was found → trapassato. Perdere → perso." },
+      { "k": "type", "q": "Dopo che gli ospiti ___, abbiamo lavato i piatti in silenzio.", "h": "uscire · loro", "a": ["erano usciti"], "why": "Dopo che + the earlier action → trapassato; uscire takes essere." },
+      { "k": "type", "q": "Le ho restituito il libro che mi ___ a Natale.", "h": "prestare · lei", "a": ["aveva prestato"], "why": "She lent it before I gave it back → aveva prestato." },
+      { "k": "type", "q": "Quando è arrivata la polizia, i ladri ___ già.", "h": "scappare · loro", "a": ["erano scappati"], "why": "Scappare is a movement verb → essere; agreement: scappati." },
+      { "k": "type", "q": "Non ho riconosciuto Matteo: ___ la barba!", "h": "tagliarsi · lui", "a": ["si era tagliato"], "why": "Reflexive → essere: si era tagliato. He did it before I saw him." },
+      { "k": "mc", "q": "Prima di quel gennaio a Trieste, non ___ mai il mare con la bora.", "o": ["avevo visto", "ho visto", "vedrò"], "a": "avevo visto", "why": "Never before a point in the past → trapassato with mai." },
+      { "k": "mc", "q": "Ieri ___ a casa alle otto e poi ho cenato con mia sorella.", "o": ["sono tornato", "ero tornato", "tornavo"], "a": "sono tornato", "why": "Events told in the order they happened → passato prossimo, no trapassato needed." },
+      { "k": "mc", "q": "Siamo arrivati tardi al cinema: il film ___.", "o": ["era già cominciato", "è già cominciato", "cominciava già"], "a": "era già cominciato", "why": "The film started before we arrived → trapassato." },
+      { "k": "mc", "q": "“Gianni was angry because he had lost his keys.”", "o": ["Gianni era arrabbiato perché aveva perso le chiavi.", "Gianni era arrabbiato perché perdeva le chiavi.", "Gianni è stato arrabbiato perché ha perso le chiavi."], "a": "Gianni era arrabbiato perché aveva perso le chiavi.", "why": "A state in the past (imperfetto) explained by an earlier event (trapassato)." }
+    ]
+  },
+  {
+    "id": "g-si", "level": "B1", "topic": "verbtypes",
+    "title": "Il si impersonale e passivante", "en": "Impersonal and passive si",
+    "summary": "How Italian says “people do”, “you do”, “one does” or “is done” with one little word: si.",
+    "meaning": "Where English says <i>people say</i>, <i>you can't smoke here</i>, <i>one gets used to it</i> or <i>houses are sold</i>, Italian simply uses <b>si</b> + the verb in the third person. It talks about people in general without naming anyone. When the verb has an object, the verb agrees with it: <i>si vende <b>una casa</b></i>, <i>si vendono <b>case</b></i>.",
+    "uses": [
+      { "h": "What people do (impersonal)", "t": "General habits and customs, with no object.", "ex": ["In Italia si mangia tardi, soprattutto al Sud.", "In Italy people eat late, especially in the South."] },
+      { "h": "How you say / do things", "t": "Very common in questions about language and rules.", "ex": ["Come si dice “cheers” in italiano?", "How do you say “cheers” in Italian?"] },
+      { "h": "Rules and permissions", "t": "With <b>si può</b> / <b>non si può</b> / <b>si deve</b>.", "ex": ["In chiesa non si può entrare in pantaloncini.", "You can't go into the church in shorts."] },
+      { "h": "Something is done (passive)", "t": "With an object: the verb agrees with it. Typical on signs and ads.", "ex": ["Si vendono case al mare a prezzi bassi.", "Seaside houses for sale at low prices."] },
+      { "h": "Spoken “we”", "t": "In Tuscany and in casual speech, <b>noi si</b> replaces noi. Recognise it, don't copy it.", "ex": ["Noi si va al mare, voi che fate?", "We're going to the beach, what are you doing?"] }
+    ],
+    "form": {
+      "intro": "<b>si + verb in the 3rd person</b>. Singular when there's no object or the object is singular; plural when the object is plural.",
+      "tables": [
+        { "h": "Which form?", "rows": [["no object", "si vive bene a Bergamo"], ["singular object", "si beve un caffè"], ["plural object", "si bevono due caffè"], ["after a modal", "si può pagare con la carta / si possono pagare le multe online"]] },
+        { "h": "Reflexive verbs: ci si", "rows": [["alzarsi", "ci si alza presto"], ["divertirsi", "ci si diverte"], ["abituarsi", "ci si abitua a tutto"]] },
+        { "h": "Passato prossimo: always essere", "rows": [["no object", "si è mangiato benissimo"], ["singular object", "si è venduta una casa"], ["plural object", "si sono vendute molte case"]] }
+      ],
+      "notes": [
+        "Two si in a row are impossible, so reflexive verbs use <b>ci si</b>: <i>ci si veste</i>, never <i>si si veste</i>.",
+        "Adjectives and nouns after <b>si è</b> are <b>masculine plural</b>, even though the verb is singular: <i>quando si è giovani</i>, <i>si è stanchi</i>.",
+        "In the passato prossimo with verbs that normally take essere, the participle is plural too: <i>si è partiti presto</i>."
+      ]
+    },
+    "signals": ["in Italia", "qui", "di solito", "come si…?", "non si può", "affittasi / vendesi (signs)"],
+    "mistakes": [
+      { "wrong": "Si vende appartamenti.", "right": "Si vendono appartamenti.", "why": "With a plural object, the verb is plural: <b>si vendono</b>." },
+      { "wrong": "Si si alza presto.", "right": "Ci si alza presto.", "why": "Reflexive verbs need <b>ci si</b>." },
+      { "wrong": "Quando si è giovane, si sbaglia.", "right": "Quando si è giovani, si sbaglia.", "why": "After si è, adjectives go masculine plural." },
+      { "wrong": "Si ha mangiato bene.", "right": "Si è mangiato bene.", "why": "The si construction always takes <b>essere</b> in compound tenses." }
+    ],
+    "ex": [
+      { "k": "type", "q": "In Sardegna ___ molto pecorino, anche a colazione.", "h": "mangiare · si", "a": ["si mangia"], "why": "Pecorino is singular → si mangia." },
+      { "k": "type", "q": "In questa zona ___ case con giardino a prezzi bassi.", "h": "vendere · si", "a": ["si vendono"], "why": "Case is plural → the verb is plural: si vendono." },
+      { "k": "type", "q": "Scusa, come ___ “cheers” in italiano?", "h": "dire · si", "a": ["si dice"], "why": "Impersonal si + third person singular." },
+      { "k": "type", "q": "Al mercato di Porta Palazzo ___ le verdure più fresche di Torino.", "h": "trovare · si", "a": ["si trovano"], "why": "Le verdure is plural → si trovano." },
+      { "k": "type", "q": "Al rifugio ___ alle cinque per vedere l'alba.", "h": "alzarsi · si", "a": ["ci si alza"], "why": "Reflexive verb → ci si, never si si." },
+      { "k": "type", "q": "Dopo dieci ore di cammino ___ stanchi morti.", "h": "essere · si", "a": ["si è"], "why": "Si è + masculine plural adjective (stanchi)." },
+      { "k": "type", "q": "Al matrimonio di mia cugina ___ benissimo.", "h": "mangiare · si, passato prossimo", "a": ["si è mangiato"], "why": "No object → singular, and compound tenses use essere: si è mangiato." },
+      { "k": "type", "q": "Quest'anno ___ pochissimi biglietti per il concerto.", "h": "vendere · si, passato prossimo", "a": ["si sono venduti"], "why": "Plural object (biglietti) → si sono venduti, agreeing in the masculine plural." },
+      { "k": "type", "q": "In treno non ___ fumare.", "h": "potere · si", "a": ["si può"], "why": "Si + modal in the singular, followed by an infinitive with no object." },
+      { "k": "mc", "q": "In questa bottega di Firenze ___ scarpe fatte a mano.", "o": ["si fanno", "si fa", "si facciamo"], "a": "si fanno", "why": "Scarpe is plural → si fanno." },
+      { "k": "mc", "q": "“You get used to everything.”", "o": ["Ci si abitua a tutto.", "Si si abitua a tutto.", "Si abitua a tutto."], "a": "Ci si abitua a tutto.", "why": "Abituarsi is reflexive → ci si. “Si abitua” means “he/she gets used”." },
+      { "k": "mc", "q": "Quando si è in vacanza, si è più ___.", "o": ["rilassati", "rilassato", "rilassata"], "a": "rilassati", "why": "After si è, adjectives are masculine plural." },
+      { "k": "mc", "q": "A Napoli il caffè ___ ristretto e bollente.", "o": ["si beve", "si bevono", "si beviamo"], "a": "si beve", "why": "Il caffè is singular → si beve." }
+    ]
+  },
+  {
+    "id": "g-passive", "level": "B2", "topic": "verbtypes",
+    "title": "La forma passiva", "en": "The passive voice",
+    "summary": "How to put the thing that is acted on first: “the bridge was built”, “the form must be signed”.",
+    "meaning": "The passive turns the sentence around so the focus falls on what undergoes the action, not on who does it: <i>Il Duomo è stato costruito in sei secoli</i>. Italian has three auxiliaries for it: <b>essere</b> (the all-rounder), <b>venire</b> (stresses the action as it happens) and <b>andare</b> (means “must be done”). The doer, if mentioned, is introduced by <b>da</b>.",
+    "uses": [
+      { "h": "Focus on the result", "t": "When what happened matters more than who did it. <b>essere</b> works in every tense.", "ex": ["Il Duomo di Milano è stato costruito in quasi sei secoli.", "Milan Cathedral was built over almost six centuries."] },
+      { "h": "Naming the doer with da", "t": "<b>da</b> + agent, combined with the article: dal, dalla, dai…", "ex": ["La lettera è stata firmata dal sindaco in persona.", "The letter was signed by the mayor himself."] },
+      { "h": "An action, not a state: venire", "t": "<b>venire</b> makes it clear something is being done, not just how it is. Simple tenses only.", "ex": ["Il museo viene chiuso alle sette in punto.", "The museum is closed (by the staff) at seven sharp."] },
+      { "h": "Must be done: andare", "t": "<b>andare</b> + participle = must be / has to be. Instructions, rules, recipes.", "ex": ["Il modulo va compilato in stampatello.", "The form must be filled in in capital letters."] },
+      { "h": "Lost, wasted, destroyed: andare", "t": "With perdere, sprecare, distruggere, <b>andare</b> means something ended up lost, wasted or destroyed.", "ex": ["Durante il trasloco sono andate perse tutte le foto della nonna.", "All Grandma's photos got lost during the move."] }
+    ],
+    "form": {
+      "intro": "Auxiliary in the tense you need + <b>past participle</b>, which agrees with the subject like an adjective: <i>la casa è venduta</i>, <i>le case sono vendute</i>.",
+      "tables": [
+        { "h": "essere · costruire", "rows": [["presente", "il ponte è costruito"], ["passato prossimo", "il ponte è stato costruito"], ["imperfetto", "il ponte era costruito"], ["futuro", "il ponte sarà costruito"], ["with a modal", "il ponte deve essere costruito"]] },
+        { "h": "venire · simple tenses only", "rows": [["presente", "la porta viene chiusa"], ["imperfetto", "la porta veniva chiusa"], ["futuro", "la porta verrà chiusa"], ["passato prossimo", "not possible: use è stata chiusa"]] },
+        { "h": "andare · must be", "rows": [["singular", "il vino va servito fresco"], ["plural", "le bottiglie vanno tenute al buio"], ["past", "la domanda andava presentata entro marzo"]] },
+        { "h": "da + agent", "rows": [["da + il", "dal direttore"], ["da + la", "dalla polizia"], ["da + i", "dai turisti"], ["da + le", "dalle autorità"]] }
+      ],
+      "notes": [
+        "Only verbs that take a direct object can become passive: <i>Paolo ha scritto il libro</i> → <i>il libro è stato scritto da Paolo</i>.",
+        "<b>essere</b> can be ambiguous: <i>la porta è chiusa</i> may be a state (it's shut) or an action. <b>venire</b> removes the doubt: <i>la porta viene chiusa</i> (someone is shutting it).",
+        "<b>andare</b> = must be only in simple tenses. In compound tenses (<i>è andato perso</i>) it only works with the “lost / wasted” verbs."
+      ]
+    },
+    "signals": ["da + agent", "è stato…", "viene…", "va / vanno + participle", "andare perso"],
+    "mistakes": [
+      { "wrong": "Il quadro è venuto rubato.", "right": "Il quadro è stato rubato.", "why": "<b>venire</b> is only used in simple tenses. Compound tenses use essere." },
+      { "wrong": "La torta è stata preparata di mia nonna.", "right": "La torta è stata preparata da mia nonna.", "why": "The agent always takes <b>da</b>, never di or per." },
+      { "wrong": "Le regole sono state approvato.", "right": "Le regole sono state approvate.", "why": "Both participles agree with the subject: state, approvate." },
+      { "wrong": "Questi documenti va firmati.", "right": "Questi documenti vanno firmati.", "why": "<b>andare</b> agrees with the subject: plural → vanno." }
+    ],
+    "ex": [
+      { "k": "type", "q": "Il Duomo di Milano ___ in quasi sei secoli.", "h": "costruire · passato prossimo, essere", "a": ["è stato costruito"], "why": "Passive passato prossimo: è + stato + costruito, all masculine singular." },
+      { "k": "type", "q": "La partita è stata vinta ___ squadra di casa all'ultimo minuto.", "h": "da + article", "a": ["dalla"], "why": "Agent → da; da + la = dalla." },
+      { "k": "type", "q": "Ogni sera il museo ___ alle diciannove in punto.", "h": "chiudere · venire, presente", "a": ["viene chiuso"], "why": "A routine action → venire + participle, agreeing with il museo." },
+      { "k": "type", "q": "Questo modulo ___ compilato in stampatello.", "h": "andare", "a": ["va"], "why": "Must be done → andare + participle; singular subject → va." },
+      { "k": "type", "q": "I documenti ___ consegnati in segreteria entro venerdì.", "h": "andare", "a": ["vanno"], "why": "Must be done, plural subject → vanno." },
+      { "k": "type", "q": "Le nuove regole sul traffico ___ approvate ieri dal consiglio comunale.", "h": "essere · passato prossimo", "a": ["sono state"], "why": "Feminine plural subject → sono state approvate." },
+      { "k": "type", "q": "Purtroppo molte lettere di mio nonno ___ perse durante il trasloco.", "h": "andare · passato prossimo", "a": ["sono andate"], "why": "Andare perso = to get lost; in the passato prossimo it takes essere and agrees." },
+      { "k": "type", "q": "Il festival di Spoleto ___ organizzato ogni estate da più di sessant'anni.", "h": "venire · presente", "a": ["viene"], "why": "A repeated action in a simple tense → viene organizzato." },
+      { "k": "type", "q": "Il colpevole non ___ mai trovato.", "h": "essere · passato prossimo", "a": ["è stato"], "why": "Compound tense → essere, never venire: è stato trovato." },
+      { "k": "type", "q": "Il ponte sul fiume ___ riaperto entro la fine dell'anno.", "h": "essere or venire · futuro", "a": ["sarà", "verrà"], "why": "Future passive: sarà or verrà riaperto. Venire is fine in a simple tense." },
+      { "k": "mc", "q": "Which sentence is wrong?", "o": ["Il quadro è stato rubato.", "Il quadro è venuto rubato.", "Il quadro venne rubato."], "a": "Il quadro è venuto rubato.", "why": "Venire is never used in compound tenses like the passato prossimo." },
+      { "k": "mc", "q": "“The windows must be closed before you leave.”", "o": ["Le finestre vanno chiuse prima di uscire.", "Le finestre vanno chiudere prima di uscire.", "Le finestre vengono chiudendo prima di uscire."], "a": "Le finestre vanno chiuse prima di uscire.", "why": "Must be → andare + past participle, agreeing with le finestre." },
+      { "k": "mc", "q": "La mostra su Caravaggio ___ visitata da oltre centomila persone l'anno scorso.", "o": ["è stata", "è venuta", "va"], "a": "è stata", "why": "A finished event in a compound tense → essere: è stata visitata." },
+      { "k": "mc", "q": "Il romanzo ___ tradotto in venti lingue e adesso diventa un film.", "o": ["è stato", "va", "viene stato"], "a": "è stato", "why": "Already happened → passato prossimo with essere. “Va tradotto” would mean it must be translated." }
+    ]
+  }
+]

@@ -1,0 +1,496 @@
+[
+  {
+    "id": "g-prep", "level": "A1", "topic": "prepositions",
+    "title": "Le preposizioni semplici", "en": "Simple prepositions",
+    "summary": "The little words that link a noun to the rest of the sentence: di, a, da, in, con, su, per, tra/fra.",
+    "meaning": "Italian prepositions rarely match English ones one-to-one. <b>A</b> can be “to”, “at” or “in”; <b>da</b> can be “from”, “at someone's place” or “since”. Learn each one as a small set of typical uses with a model sentence, not as a single translation.",
+    "uses": [
+      { "h": "di · of, from (origin)", "t": "Possession, material, contents, and where a person is from with <b>essere</b>.", "ex": ["Sono di Bergamo, ma vivo a Trieste da dieci anni.", "I'm from Bergamo, but I've lived in Trieste for ten years."] },
+      { "h": "a · to, at, in (cities)", "t": "Cities as a destination or location, clock times, and the person you give or say something to.", "ex": ["Scrivo a mia nonna ogni domenica.", "I write to my grandmother every Sunday."] },
+      { "h": "da · from, at someone's place", "t": "Where you come from with <b>venire</b>, and someone's home or shop with a person.", "ex": ["Stasera ceniamo da Lucia, porta il dolce.", "Tonight we're having dinner at Lucia's, bring dessert."] },
+      { "h": "in · in, to (countries, rooms, transport)", "t": "Countries and regions, rooms, and means of transport (with no article).", "ex": ["Vado in ufficio in bicicletta, anche quando piove.", "I go to the office by bike, even when it rains."] },
+      { "h": "con · with; su · on, about; per · for", "t": "<b>per</b> also means “in order to” before an infinitive.", "ex": ["Ho comprato un libro su Matera per mio padre.", "I bought a book about Matera for my father."] },
+      { "h": "tra / fra · between, in (time)", "t": "Exactly the same word in two spellings. With time it means “in … from now”.", "ex": ["Il treno per Lecce parte tra dieci minuti.", "The train to Lecce leaves in ten minutes."] }
+    ],
+    "form": {
+      "intro": "A preposition goes before a noun, a pronoun or an infinitive. You use the simple form before names, cities, pronouns and words without an article. When <b>il, la, i…</b> follows, di, a, da, in and su merge with it (see <i>Le preposizioni articolate</i>).",
+      "tables": [
+        { "h": "Core meanings", "rows": [
+          ["di", "of, from (origin with essere), made of: una tazza di tè, sono di Lecce, una giacca di lana"],
+          ["a", "to, at, in + city; clock times; to someone: a Cagliari, a mezzanotte, a Paolo"],
+          ["da", "from; at/to someone's place; since: vengo da Napoli, da Sara, da lunedì"],
+          ["in", "in, to + country, region, room, transport: in Puglia, in cucina, in treno"],
+          ["con", "with: con gli amici, con lo zucchero"],
+          ["su", "on, about: su un'isola, un film su Fellini"],
+          ["per", "for, through, in order to: per te, per strada, per dormire"],
+          ["tra / fra", "between, among, in (time): tra Bologna e Firenze, fra un'ora"]
+        ] },
+        { "h": "Before an infinitive", "rows": [
+          ["a", "after verbs of starting and going: comincio a lavorare, vado a dormire"],
+          ["di", "after many verbs: decido di partire, finisco di mangiare"],
+          ["per", "in order to: studio per capire"],
+          ["da", "something to be done: una casa da vendere, niente da fare"]
+        ] }
+      ],
+      "notes": [
+        "<b>di</b> often becomes <b>d'</b> before a vowel: d'estate, d'oro, d'accordo.",
+        "<b>tra</b> and <b>fra</b> mean the same. Pick the one that sounds better: <i>fra tre giorni</i>, <i>tra fratelli</i>.",
+        "Transport takes <b>in</b> with no article (in treno, in macchina, in aereo), but on foot is <b>a piedi</b>."
+      ]
+    },
+    "mistakes": [
+      { "wrong": "Sono da Lecce.", "right": "Sono di Lecce. / Vengo da Lecce.", "why": "With <b>essere</b>, origin takes <b>di</b>. With <b>venire</b>, it takes <b>da</b>." },
+      { "wrong": "Vado a Sicilia.", "right": "Vado in Sicilia.", "why": "Regions, countries and large islands take <b>in</b>. Cities and small islands take <b>a</b> (a Palermo, a Capri)." },
+      { "wrong": "Ti chiamo in dieci minuti.", "right": "Ti chiamo tra dieci minuti.", "why": "“In ten minutes from now” is <b>tra/fra</b>. <i>In dieci minuti</i> means “taking ten minutes”." },
+      { "wrong": "Vado in piedi.", "right": "Vado a piedi.", "why": "A fixed phrase: <b>a piedi</b>, on foot." }
+    ],
+    "ex": [
+      { "k": "type", "q": "Mia nonna è ___ Matera, ma vive a Torino da quarant'anni.", "h": "preposition", "a": ["di"], "why": "Where someone is from, with essere → <b>di</b>." },
+      { "k": "type", "q": "Domani vado ___ Cagliari per un colloquio.", "h": "preposition", "a": ["a"], "why": "Cities take <b>a</b>, whether you're going there or already there." },
+      { "k": "type", "q": "Stasera dormo ___ mia sorella, ha una camera libera.", "h": "preposition", "a": ["da"], "why": "At someone's place → <b>da</b> + person." },
+      { "k": "type", "q": "Andiamo al mare ___ macchina o in treno?", "h": "preposition", "a": ["in"], "why": "Transport: <b>in</b> with no article (in macchina, in treno, in bici)." },
+      { "k": "type", "q": "Vengo al concerto ___ due colleghi dell'ufficio.", "h": "preposition", "a": ["con"], "why": "Company → <b>con</b>, “with”." },
+      { "k": "type", "q": "Lo spettacolo comincia ___ mezz'ora: sbrigati!", "h": "preposition", "a": ["tra", "fra"], "why": "“In half an hour from now” → <b>tra</b> or <b>fra</b>, both correct." },
+      { "k": "type", "q": "Questi biscotti sono ___ te, li ha fatti mia madre.", "h": "preposition", "a": ["per"], "why": "Who something is for → <b>per</b>." },
+      { "k": "type", "q": "Il Molise è ___ l'Abruzzo e la Puglia.", "h": "preposition", "a": ["tra", "fra"], "why": "Between two places → <b>tra/fra</b>." },
+      { "k": "type", "q": "Abito ___ Germania, ma lavoro in Svizzera.", "h": "preposition", "a": ["in"], "why": "Countries take <b>in</b>." },
+      { "k": "type", "q": "Ho comprato una tazza ___ ceramica a Deruta.", "h": "preposition", "a": ["di", "in"], "why": "Material: <b>di</b> is the classic choice, <b>in</b> is also common (in ceramica, in legno)." },
+      { "k": "type", "q": "La mattina comincio ___ lavorare alle otto.", "h": "preposition", "a": ["a"], "why": "Cominciare takes <b>a</b> before an infinitive." },
+      { "k": "mc", "q": "Studio italiano ___ capire i film di Sorrentino senza sottotitoli.", "o": ["per", "da", "di"], "a": "per", "why": "Purpose, “in order to” → <b>per</b> + infinitive." },
+      { "k": "mc", "q": "Sono appena arrivata ___ Napoli e sono stanca morta.", "o": ["da", "di", "a"], "a": "da", "why": "Arriving from somewhere → <b>da</b>. (Arrivare a Napoli would mean arriving in Naples.)" },
+      { "k": "mc", "q": "“I'm from Bergamo, but I live in Trieste.”", "o": ["Sono di Bergamo, ma abito a Trieste.", "Sono da Bergamo, ma abito in Trieste.", "Sono di Bergamo, ma abito in Trieste."], "a": "Sono di Bergamo, ma abito a Trieste.", "why": "Origin with essere → <b>di</b>; city → <b>a</b>." }
+    ]
+  },
+  {
+    "id": "g-prep-art", "level": "A1", "topic": "prepositions",
+    "title": "Le preposizioni articolate", "en": "Prepositions with the article",
+    "summary": "When di, a, da, in and su meet a definite article, they merge into one word: al, della, nei, sullo…",
+    "meaning": "Italian never says <i>a il</i> or <i>di la</i>: the two words fuse. The preposition gives the beginning, the article gives the ending. So if you know your articles (il, lo, la, l', i, gli, le), you already know the whole table. <b>Per</b> and <b>tra/fra</b> never merge, and <b>con</b> usually stays separate in modern Italian.",
+    "uses": [
+      { "h": "Whenever the noun needs an article", "t": "If the noun would have il, la, gli… after the preposition, use the merged form.", "ex": ["Il gatto dorme sul divano da stamattina.", "The cat has been sleeping on the sofa since this morning."] },
+      { "h": "Places with an article", "t": "Many places are used with the article: <b>al</b> bar, <b>al</b> mare, <b>allo</b> stadio, <b>alla</b> posta.", "ex": ["Ci vediamo al bar sotto l'ufficio?", "Shall we meet at the bar below the office?"] },
+      { "h": "Clock times", "t": "Hours are feminine plural (le ore), so: <b>alle</b> otto, <b>dalle</b> nove; one o'clock is singular: <b>all'</b>una.", "ex": ["La farmacia è aperta dalle nove all'una.", "The chemist is open from nine to one."] },
+      { "h": "Whose: di + article", "t": "Possession with a noun that has an article.", "ex": ["La macchina dei vicini è sempre davanti al nostro cancello.", "The neighbours' car is always in front of our gate."] },
+      { "h": "Some: del, della, dei", "t": "<b>di</b> + article can also mean “some”.", "ex": ["Ho comprato del pane e dei pomodori.", "I bought some bread and some tomatoes."] },
+      { "h": "No article, no merge", "t": "Cities, first names and singular family words with a possessive take no article, so the preposition stays simple.", "ex": ["Sono le chiavi di Lorenzo, non di sua sorella.", "They're Lorenzo's keys, not his sister's."] }
+    ],
+    "form": {
+      "intro": "Preposition + article = one word. <b>In</b> becomes <b>ne-</b>, <b>di</b> becomes <b>de-</b>. Before lo, la, l' and le the l doubles: allo, della, nell', sulle.",
+      "tables": [
+        { "h": "The full table", "rows": [
+          ["di", "del · dello · della · dell' · dei · degli · delle"],
+          ["a", "al · allo · alla · all' · ai · agli · alle"],
+          ["da", "dal · dallo · dalla · dall' · dai · dagli · dalle"],
+          ["in", "nel · nello · nella · nell' · nei · negli · nelle"],
+          ["su", "sul · sullo · sulla · sull' · sui · sugli · sulle"]
+        ] },
+        { "h": "Which article?", "rows": [
+          ["il → al, del, nel…", "masculine, most consonants: al mercato"],
+          ["lo → allo, dello…", "masculine before s + consonant, z, gn, ps: allo stadio, dello zio"],
+          ["l' → all', dell'…", "before a vowel: all'aeroporto, nell'acqua"],
+          ["la → alla, della…", "feminine: alla stazione"],
+          ["i → ai, dei…", "masculine plural: ai ragazzi"],
+          ["gli → agli, degli…", "plural of lo and l': agli amici, negli Stati Uniti"],
+          ["le → alle, delle…", "feminine plural: alle sei"]
+        ] }
+      ],
+      "notes": [
+        "<b>con</b>: con il, con la are standard. Col and coi exist but are optional and informal.",
+        "<b>per</b> and <b>tra/fra</b> never merge: per il treno, tra le case.",
+        "Many fixed phrases have no article, so no merge: a casa, a scuola, in centro, in ufficio, in montagna. But add a detail and the article appears: <i>in cucina</i>, but <i>nella cucina di Laura</i>."
+      ]
+    },
+    "mistakes": [
+      { "wrong": "Andiamo a il cinema.", "right": "Andiamo al cinema.", "why": "a + il always merges → <b>al</b>." },
+      { "wrong": "Ci vediamo alle una.", "right": "Ci vediamo all'una.", "why": "One o'clock is singular: l'una → <b>all'una</b>." },
+      { "wrong": "Il libro è nel zaino.", "right": "Il libro è nello zaino.", "why": "Zaino starts with z, so it takes lo → <b>nello</b>." },
+      { "wrong": "Vado alla Roma.", "right": "Vado a Roma.", "why": "Cities take no article, so no merge." }
+    ],
+    "ex": [
+      { "k": "type", "q": "Ci vediamo ___ otto davanti al cinema.", "h": "a + article", "a": ["alle"], "why": "le otto → <b>alle</b> otto." },
+      { "k": "type", "q": "Il gatto dorme ___ divano.", "h": "su + article", "a": ["sul"], "why": "il divano → <b>sul</b> divano." },
+      { "k": "type", "q": "Domenica andiamo ___ stadio a vedere il Cagliari.", "h": "a + article", "a": ["allo"], "why": "lo stadio (s + consonant) → <b>allo</b>." },
+      { "k": "type", "q": "Questo è il numero ___ idraulico: chiamalo tu.", "h": "di + article", "a": ["dell'"], "why": "l'idraulico → <b>dell'</b>idraulico." },
+      { "k": "type", "q": "Mio cugino torna ___ Stati Uniti a settembre.", "h": "da + article", "a": ["dagli"], "why": "gli Stati Uniti → <b>dagli</b>." },
+      { "k": "type", "q": "Il latte è ___ frigo, in basso a destra.", "h": "in + article", "a": ["nel"], "why": "il frigo → <b>nel</b> frigo." },
+      { "k": "type", "q": "Lo studio è aperto dalle nove ___ una.", "h": "a + article", "a": ["all'"], "why": "l'una → <b>all'</b>una." },
+      { "k": "type", "q": "Ho comprato ___ pane e un po' di pecorino.", "h": "di + article", "a": ["del"], "why": "“Some bread” → <b>del</b> pane." },
+      { "k": "type", "q": "La casa ___ miei nonni è in un paesino delle Langhe.", "h": "di + article", "a": ["dei"], "why": "Plural family words keep the article: i miei nonni → <b>dei</b> miei nonni." },
+      { "k": "type", "q": "Ho trovato i tuoi occhiali ___ scale.", "h": "su + article", "a": ["sulle"], "why": "le scale → <b>sulle</b> scale." },
+      { "k": "mc", "q": "Sabato pranziamo ___ zii a Lecce.", "o": ["dagli", "dai", "dalli"], "a": "dagli", "why": "zii starts with z → gli zii → <b>dagli</b> zii." },
+      { "k": "mc", "q": "Abito ___ centro, vicino ___ stazione.", "o": ["in / alla", "nel / alla", "in / a la"], "a": "in / alla", "why": "<b>In centro</b> is a fixed phrase with no article; la stazione → <b>alla</b>." },
+      { "k": "mc", "q": "Le chiavi sono ___ borsa di mia madre.", "o": ["nella", "in la", "nela"], "a": "nella", "why": "in + la → <b>nella</b>, with double l." }
+    ]
+  },
+  {
+    "id": "g-prep-place-time", "level": "A2", "topic": "prepositions",
+    "title": "Preposizioni di luogo e di tempo", "en": "Prepositions of place and time",
+    "summary": "Which preposition goes with which kind of place, and how to say “ago”, “in”, “for” and “since” with time.",
+    "meaning": "The choice between <b>a</b> and <b>in</b> depends on the kind of place, not on movement: <i>vado a Bari</i> and <i>sono a Bari</i> use the same word. For people, Italian uses <b>da</b>. With time, four short words do the work of English “ago”, “in”, “for” and “since”: <b>fa</b>, <b>tra</b>, <b>per</b> and <b>da</b>.",
+    "uses": [
+      { "h": "a + city, small island", "t": "Also a few everyday places: a casa, a scuola, a letto, a teatro.", "ex": ["Quest'estate andiamo a Procida, poi a Napoli dai cugini.", "This summer we're going to Procida, then to Naples to see our cousins."] },
+      { "h": "in + country, region, big island", "t": "Singular countries and regions take <b>in</b> with no article.", "ex": ["Mio fratello lavora in Norvegia, ma passa agosto in Sardegna.", "My brother works in Norway, but spends August in Sardinia."] },
+      { "h": "in + shops and everyday places", "t": "Most places ending in <b>-ia</b>, and many others, take <b>in</b> with no article: in banca, in farmacia, in libreria, in ufficio, in palestra, in piscina, in centro.", "ex": ["Passo in farmacia e poi ti raggiungo in piazza.", "I'll stop by the chemist's and then meet you in the square."] },
+      { "h": "da + person", "t": "To or at someone's house, shop or office: da Mario, dal medico, dal parrucchiere.", "ex": ["Domani vado dal dentista, che ansia.", "Tomorrow I'm going to the dentist, I'm dreading it."] },
+      { "h": "fa and tra / fra", "t": "<b>fa</b> comes after the time and means “ago”. <b>tra/fra</b> comes before and means “in … from now”.", "ex": ["Ci siamo conosciuti tre anni fa, e tra un mese ci sposiamo.", "We met three years ago, and in a month we're getting married."] },
+      { "h": "per and da", "t": "<b>per</b> = a closed period (“for”). <b>da</b> = since or for, still going on, with the presente.", "ex": ["Ho vissuto a Bergamo per sei anni; adesso vivo a Trieste da due.", "I lived in Bergamo for six years; now I've been living in Trieste for two."] }
+    ],
+    "form": {
+      "intro": "First ask what kind of place it is (city, country, shop, person), then pick the preposition. For time, ask whether the action is finished, still going on, or in the future.",
+      "tables": [
+        { "h": "Places", "rows": [
+          ["a", "cities, small islands: a Lecce, a Capri · a casa, a scuola, a letto"],
+          ["in", "countries, regions, big islands: in Francia, in Toscana, in Sicilia"],
+          ["in", "shops and many everyday places: in banca, in pizzeria, in ufficio, in biblioteca"],
+          ["da", "people: da Giulia, dal medico, dagli amici"],
+          ["al / alla / allo…", "places used with the article: al bar, al mare, al cinema, alla posta, allo stadio"]
+        ] },
+        { "h": "Time", "rows": [
+          ["fa", "ago, after the time: due giorni fa"],
+          ["tra / fra", "in, from now: tra una settimana"],
+          ["per", "for, a closed or planned period: per tre anni"],
+          ["da", "since, for, still true (+ presente): da martedì, da un mese, dal 2019"],
+          ["in", "time taken; seasons, months: in due ore, in inverno, in luglio"],
+          ["a", "clock times, months: a mezzogiorno, alle tre, a maggio"]
+        ] }
+      ],
+      "notes": [
+        "Add a detail and the article appears: <i>in Italia</i> but <i>nell'Italia del Sud</i>; <i>in banca</i> but <i>nella banca di mio zio</i>.",
+        "Plural countries and regions take the article: negli Stati Uniti, nelle Marche, nei Paesi Bassi.",
+        "With months, <b>a</b> and <b>in</b> are both fine: a luglio, in luglio."
+      ]
+    },
+    "signals": ["fa", "tra / fra", "per", "da", "dal + year", "in + month/season"],
+    "mistakes": [
+      { "wrong": "Vado al dentista.", "right": "Vado dal dentista.", "why": "People, even when you mean their surgery or shop → <b>da</b>." },
+      { "wrong": "Sono stato in Bologna.", "right": "Sono stato a Bologna.", "why": "Cities take <b>a</b>, not in." },
+      { "wrong": "Studio italiano per due anni.", "right": "Studio italiano da due anni.", "why": "Still studying now → presente + <b>da</b>." },
+      { "wrong": "Fa tre giorni ho visto Paolo.", "right": "Tre giorni fa ho visto Paolo.", "why": "<b>fa</b> always comes after the time expression." }
+    ],
+    "ex": [
+      { "k": "type", "q": "I miei genitori vivono ___ Puglia, vicino a Ostuni.", "h": "preposition", "a": ["in"], "why": "Regions take <b>in</b>." },
+      { "k": "type", "q": "Domani vado ___ Bergamo per un colloquio di lavoro.", "h": "preposition", "a": ["a"], "why": "Cities take <b>a</b>." },
+      { "k": "type", "q": "Devo passare ___ banca, poi sono libera.", "h": "preposition", "a": ["in"], "why": "Fixed phrase with no article: <b>in banca</b>, like in farmacia, in libreria, in ufficio." },
+      { "k": "type", "q": "Ho un appuntamento ___ medico alle tre.", "h": "da + article", "a": ["dal"], "why": "Person → <b>da</b>; il medico → <b>dal</b> medico." },
+      { "k": "type", "q": "Ho finito l'università tre anni ___.", "h": "time word", "a": ["fa"], "why": "“Ago” → <b>fa</b>, after the time." },
+      { "k": "type", "q": "Il film comincia ___ cinque minuti, sbrigati!", "h": "preposition", "a": ["tra", "fra"], "why": "“In five minutes from now” → <b>tra/fra</b>." },
+      { "k": "type", "q": "Abito a Matera ___ 2019 e non me ne vado più.", "h": "preposition + article", "a": ["dal"], "why": "Since a year, still true → <b>dal</b> (da + il) 2019." },
+      { "k": "type", "q": "Mia figlia ha studiato a Lisbona ___ un anno con l'Erasmus.", "h": "preposition", "a": ["per"], "why": "A finished period → passato prossimo + <b>per</b>." },
+      { "k": "type", "q": "Stasera ceniamo ___ Chiara: porta il vino.", "h": "preposition", "a": ["da"], "why": "At someone's house → <b>da</b> + name." },
+      { "k": "type", "q": "Vivo in questa casa ___ sei mesi e non conosco ancora i vicini.", "h": "preposition", "a": ["da"], "why": "Started in the past, still true → presente + <b>da</b>." },
+      { "k": "mc", "q": "Vado ___ Stati Uniti per lavoro a novembre.", "o": ["negli", "in", "agli"], "a": "negli", "why": "Plural country → in + gli → <b>negli</b>." },
+      { "k": "mc", "q": "Oggi lavoro da casa, domani torno ___ ufficio.", "o": ["in", "a", "da"], "a": "in", "why": "Fixed phrase: <b>in ufficio</b>, no article." },
+      { "k": "mc", "q": "“We met two years ago.”", "o": ["Ci siamo conosciuti due anni fa.", "Ci siamo conosciuti fra due anni.", "Ci siamo conosciuti da due anni."], "a": "Ci siamo conosciuti due anni fa.", "why": "“Ago” → <b>fa</b>, after the time." }
+    ]
+  },
+  {
+    "id": "g-negation", "level": "A1", "topic": "sentences",
+    "title": "La negazione", "en": "Negation",
+    "summary": "How to say no: put non before the verb, and pair it with mai, niente, nessuno, più or ancora.",
+    "meaning": "Italian makes a sentence negative by putting <b>non</b> right before the verb. Unlike standard English, Italian loves double negatives: <i>non vedo niente</i> is literally “I don't see nothing”, and it's perfectly correct. Leave out non and the sentence sounds wrong.",
+    "uses": [
+      { "h": "non + verb", "t": "<b>non</b> goes straight before the verb, and before any object pronouns.", "ex": ["Non mi piace il caffè americano.", "I don't like American-style coffee."] },
+      { "h": "non … mai · never", "t": "The most common double negative.", "ex": ["Mio nonno non prende mai l'ascensore, nemmeno a ottant'anni.", "My grandfather never takes the lift, not even at eighty."] },
+      { "h": "non … niente · nothing", "t": "<b>niente</b> and <b>nulla</b> mean the same; niente is more common in speech.", "ex": ["Non ho mangiato niente da stamattina.", "I haven't eaten anything since this morning."] },
+      { "h": "non … nessuno · nobody, no", "t": "Alone it means “nobody”; before a noun it means “no, not any”.", "ex": ["Il sabato sera in paese non c'è nessuno.", "On Saturday nights there's nobody in the village."] },
+      { "h": "non … più / non … ancora", "t": "<b>più</b> = no longer, any more. <b>ancora</b> = not yet.", "ex": ["Non fumo più. — Io invece non ho ancora smesso.", "I don't smoke any more. — I, on the other hand, haven't quit yet."] },
+      { "h": "Negative word first: no non", "t": "If nessuno, niente or mai comes before the verb, drop non.", "ex": ["Nessuno mi ascolta in questa famiglia.", "Nobody listens to me in this family."] }
+    ],
+    "form": {
+      "intro": "<b>non</b> + (pronouns) + verb + second negative word. In the passato prossimo, <b>mai, più, ancora</b> usually sit between avere/essere and the participle; <b>niente</b> and <b>nessuno</b> go after it.",
+      "tables": [
+        { "h": "Negative pairs", "rows": [
+          ["non … mai", "never: non bevo mai"],
+          ["non … niente / nulla", "nothing, not anything: non dice niente"],
+          ["non … nessuno", "nobody, not anybody: non conosco nessuno"],
+          ["non … nessun / nessuna + noun", "no, not any: non ho nessuna idea"],
+          ["non … più", "no longer, not any more: non abito più qui"],
+          ["non … ancora", "not yet: non è ancora arrivato"],
+          ["non … neanche / nemmeno", "not even: non mi ha neanche salutato"],
+          ["non … né … né", "neither … nor: non bevo né vino né birra"]
+        ] },
+        { "h": "In the past", "rows": [
+          ["Non ho mai visto il mare.", "mai between ho and visto"],
+          ["Non è più tornato.", "più between è and tornato"],
+          ["Non ho visto nessuno.", "nessuno after the participle"],
+          ["Non abbiamo detto niente.", "niente after the participle"]
+        ] }
+      ],
+      "notes": [
+        "<b>No</b> is the answer word; <b>non</b> goes with the verb: <i>Vieni? — No, non posso.</i>",
+        "<b>nessuno</b> before a noun is always singular and changes like un: nessun problema, nessuno studente, nessuna voglia.",
+        "In a question, <b>mai</b> alone means “ever”: <i>Sei mai stato a Lecce?</i>"
+      ]
+    },
+    "mistakes": [
+      { "wrong": "No parlo tedesco.", "right": "Non parlo tedesco.", "why": "Before a verb it's always <b>non</b>. <b>No</b> is the answer “no”." },
+      { "wrong": "Vedo niente.", "right": "Non vedo niente.", "why": "Italian needs the double negative: <b>non</b> + niente." },
+      { "wrong": "Non ho visto nessuni amici.", "right": "Non ho visto nessun amico.", "why": "<b>nessuno</b> has no plural; the noun stays singular." },
+      { "wrong": "Nessuno non è venuto.", "right": "Nessuno è venuto.", "why": "When the negative word comes first, drop <b>non</b>." }
+    ],
+    "ex": [
+      { "k": "type", "q": "Scusi, ___ capisco: può ripetere più piano?", "h": "negation", "a": ["non"], "why": "<b>non</b> goes right before the verb." },
+      { "k": "type", "q": "Sono vegetariana: non mangio ___ carne.", "h": "never", "a": ["mai"], "why": "Never → non … <b>mai</b>." },
+      { "k": "type", "q": "Ho aperto il frigo, ma non c'è ___ da mangiare.", "h": "nothing", "a": ["niente", "nulla"], "why": "Nothing → non … <b>niente/nulla</b>." },
+      { "k": "type", "q": "Ho bussato tre volte, ma non ha risposto ___.", "h": "nobody", "a": ["nessuno"], "why": "Nobody → non … <b>nessuno</b>, after the participle." },
+      { "k": "type", "q": "Luca non lavora ___ in banca: ha aperto un agriturismo.", "h": "no longer", "a": ["più"], "why": "No longer → non … <b>più</b>." },
+      { "k": "type", "q": "Il treno per Ivrea non è ___ arrivato.", "h": "not yet", "a": ["ancora"], "why": "Not yet → non … <b>ancora</b>, between è and the participle." },
+      { "k": "type", "q": "Non ho ___ voglia di uscire stasera.", "h": "no, not any", "a": ["nessuna"], "why": "Before a feminine noun: <b>nessuna</b> voglia." },
+      { "k": "type", "q": "___ mi ha detto niente della festa!", "h": "nobody", "a": ["nessuno"], "why": "Nessuno comes first, so there's no non." },
+      { "k": "type", "q": "Non bevo né vino ___ birra.", "h": "nor", "a": ["né"], "why": "Neither … nor → non … né … <b>né</b>, with an accent." },
+      { "k": "type", "q": "Non mi ha ___ salutato, che maleducato.", "h": "not even", "a": ["neanche", "nemmeno", "neppure"], "why": "Not even → non … <b>neanche/nemmeno</b>." },
+      { "k": "mc", "q": "“I've never been to Sardinia.”", "o": ["Non sono mai stato in Sardegna.", "Sono mai stato in Sardegna.", "Non mai sono stato in Sardegna."], "a": "Non sono mai stato in Sardegna.", "why": "<b>non</b> before the verb, <b>mai</b> between sono and stato." },
+      { "k": "mc", "q": "“Vuoi qualcosa?” “No, ___, grazie.”", "o": ["niente", "non niente", "nessuno"], "a": "niente", "why": "With no verb, <b>niente</b> stands alone." },
+      { "k": "mc", "q": "Which sentence is correct?", "o": ["Non c'è nessun problema.", "Non c'è nessuno problema.", "C'è nessun problema."], "a": "Non c'è nessun problema.", "why": "Problema is masculine (like un problema) → <b>nessun</b>, and the verb needs <b>non</b>." }
+    ]
+  },
+  {
+    "id": "g-questions", "level": "A1", "topic": "sentences",
+    "title": "Fare domande", "en": "Asking questions",
+    "summary": "Yes/no questions with rising intonation, and the question words chi, che cosa, come, dove, quando, perché, quanto and quale.",
+    "meaning": "A yes/no question in Italian usually has exactly the same words as the statement: only your voice changes, rising at the end. <i>Parli italiano.</i> / <i>Parli italiano?</i> There's no “do” and no swapping of subject and verb. For open questions, put the question word first and the verb straight after it.",
+    "uses": [
+      { "h": "Yes/no: raise your voice", "t": "Same words as a statement; the tone goes up at the end.", "ex": ["Hai fame? Ho fatto la parmigiana.", "Are you hungry? I've made aubergine parmigiana."] },
+      { "h": "chi · who; che cosa · what", "t": "<b>che cosa</b>, <b>cosa</b> and <b>che</b> all mean “what”; cosa is the most common in speech.", "ex": ["Chi viene stasera? E cosa porto?", "Who's coming tonight? And what shall I bring?"] },
+      { "h": "dove, quando, come", "t": "Where, when, how. <b>Dove</b> and <b>come</b> shorten before è: dov'è, com'è.", "ex": ["Dove abiti adesso? E quando torni a Cagliari?", "Where do you live now? And when are you going back to Cagliari?"] },
+      { "h": "perché · why", "t": "The same word answers too: <b>perché</b> also means “because”.", "ex": ["Perché ridi? — Perché hai il cappuccino sul naso.", "Why are you laughing? — Because you've got cappuccino on your nose."] },
+      { "h": "quanto · how much, how many", "t": "Agrees with the noun: quanto, quanta, quanti, quante.", "ex": ["Quanti anni ha tua nonna? — Novantadue, e guida ancora.", "How old is your grandmother? — Ninety-two, and she still drives."] },
+      { "h": "quale · which, what", "t": "For choosing between options. Plural <b>quali</b>; before è it becomes <b>qual è</b>, with no apostrophe.", "ex": ["Qual è il tuo autobus, il 5 o il 12?", "Which is your bus, the 5 or the 12?"] }
+    ],
+    "form": {
+      "intro": "Question word + verb + (subject). If you name the subject, it usually comes after the verb: <i>Dove lavora tua sorella?</i> A preposition goes at the start, never at the end: <i>Con chi esci?</i> (“Who are you going out with?”).",
+      "tables": [
+        { "h": "Question words", "rows": [
+          ["chi?", "who? Chi è?"],
+          ["che cosa? / cosa? / che?", "what? Cosa fai?"],
+          ["come?", "how? Come stai?"],
+          ["dove?", "where? Dove sei?"],
+          ["quando?", "when? Quando parti?"],
+          ["perché?", "why? Perché no?"],
+          ["quanto / quanta / quanti / quante?", "how much, how many? Quanto costa? Quante persone?"],
+          ["quale / quali?", "which, what? Quale preferisci?"],
+          ["di dove?", "where from? Di dove sei?"],
+          ["a che ora?", "at what time? A che ora apre?"]
+        ] }
+      ],
+      "notes": [
+        "<b>Qual è</b> never takes an apostrophe, even though dov'è and com'è do.",
+        "For “what is your name / address / number”, Italian uses <b>come</b> or <b>qual è</b>: <i>Come ti chiami? Qual è il tuo indirizzo?</i>",
+        "A tag turns a statement into a question: <i>Vieni anche tu, no?</i> / <i>È buono, vero?</i>"
+      ]
+    },
+    "mistakes": [
+      { "wrong": "Chi esci con?", "right": "Con chi esci?", "why": "The preposition always goes before the question word." },
+      { "wrong": "Qual'è il problema?", "right": "Qual è il problema?", "why": "<b>Qual</b> exists on its own, so there's no apostrophe." },
+      { "wrong": "Che cosa è il tuo nome?", "right": "Come ti chiami?", "why": "Names are asked with <b>come</b> + chiamarsi." },
+      { "wrong": "Dove tua sorella lavora?", "right": "Dove lavora tua sorella?", "why": "After a question word, the verb comes first and the subject follows." }
+    ],
+    "ex": [
+      { "k": "type", "q": "___ si chiama il tuo cane? — Bricco.", "h": "question word", "a": ["come"], "why": "Names → <b>come</b> + chiamarsi." },
+      { "k": "type", "q": "___ costa un chilo di ciliegie? — Sei euro, signora.", "h": "question word", "a": ["quanto"], "why": "Price → <b>quanto</b> costa." },
+      { "k": "type", "q": "___ abiti? — In via Garibaldi, sopra la pasticceria.", "h": "question word", "a": ["dove"], "why": "Place → <b>dove</b>." },
+      { "k": "type", "q": "___ parte il treno per Lecce? — Alle 14:20.", "h": "question word(s)", "a": ["a che ora", "quando"], "why": "A clock time answers <b>a che ora</b> (or quando)." },
+      { "k": "type", "q": "___ mi hai chiamato a mezzanotte? — Perché non riuscivo a dormire.", "h": "question word", "a": ["perché"], "why": "The answer gives a reason → <b>perché</b>." },
+      { "k": "type", "q": "Di ___ sei? — Di Ivrea, in Piemonte.", "h": "question word", "a": ["dove"], "why": "Where from → <b>di dove</b>." },
+      { "k": "type", "q": "___ è quel signore con il cappello? — È il sindaco.", "h": "question word", "a": ["chi"], "why": "A person → <b>chi</b>." },
+      { "k": "type", "q": "___ sorelle hai? — Tre, tutte più grandi.", "h": "question word", "a": ["quante"], "why": "How many + feminine plural → <b>quante</b>." },
+      { "k": "type", "q": "___ è il tuo numero di telefono?", "h": "question word", "a": ["qual"], "why": "“What is your number?” → <b>qual è</b>, no apostrophe." },
+      { "k": "type", "q": "___ fai sabato sera? — Niente di speciale.", "h": "question word", "a": ["che cosa", "cosa", "che"], "why": "What → <b>che cosa</b>, <b>cosa</b> or <b>che</b>." },
+      { "k": "mc", "q": "“Who are you going on holiday with?”", "o": ["Con chi vai in vacanza?", "Chi vai in vacanza con?", "Con che vai in vacanza?"], "a": "Con chi vai in vacanza?", "why": "Preposition first, then <b>chi</b> for a person." },
+      { "k": "mc", "q": "“Where does your brother work?”", "o": ["Dove lavora tuo fratello?", "Dov'è lavora tuo fratello?", "Dove fa lavorare tuo fratello?"], "a": "Dove lavora tuo fratello?", "why": "No auxiliary like “does”: question word + verb + subject." },
+      { "k": "mc", "q": "___ preferisci, il rosso o il bianco?", "o": ["Quale", "Quanto", "Come"], "a": "Quale", "why": "Choosing between options → <b>quale</b>." }
+    ]
+  },
+  {
+    "id": "g-numbers-time", "level": "A1", "topic": "sentences",
+    "title": "Numeri, ore e date", "en": "Numbers, time and dates",
+    "summary": "Counting, telling the time, and saying dates and years.",
+    "meaning": "Italian numbers are logical once you know 1 to 20 and the tens. For the time, Italian says <b>sono le</b> + hour (plural, because it means “le ore”), except for one o'clock, midday and midnight: <b>è l'una</b>, <b>è mezzogiorno</b>, <b>è mezzanotte</b>. Dates use plain numbers, not “second, third”, except for the 1st.",
+    "uses": [
+      { "h": "Asking the time", "t": "<b>Che ore sono?</b> and <b>Che ora è?</b> are both correct.", "ex": ["Che ore sono? — Sono le cinque e un quarto.", "What time is it? — It's a quarter past five."] },
+      { "h": "One o'clock, midday, midnight", "t": "Singular, so <b>è</b>, not sono.", "ex": ["È l'una e mezza e non ho ancora pranzato.", "It's half past one and I still haven't had lunch."] },
+      { "h": "At what time", "t": "<b>A che ora?</b> → alle + hour, all'una, a mezzogiorno.", "ex": ["Il museo apre alle nove e chiude all'una.", "The museum opens at nine and closes at one."] },
+      { "h": "Dates", "t": "il + number + month, months in lower case. Only the 1st is <b>primo</b>.", "ex": ["Il mio compleanno è il primo maggio, quello di mia moglie il tre.", "My birthday is on the 1st of May, my wife's on the 3rd."] },
+      { "h": "Years", "t": "Years take the article: <b>il</b> 2024, <b>nel</b> 1987, <b>dal</b> 2010.", "ex": ["Mio padre è nato nel 1961 a Cagliari.", "My father was born in 1961 in Cagliari."] },
+      { "h": "Age and prices", "t": "Age uses <b>avere</b>. Euro doesn't change in the plural.", "ex": ["Quanto costa? — Tre euro e cinquanta.", "How much is it? — Three euros fifty."] }
+    ],
+    "form": {
+      "intro": "From 21 on, tens and units join in one word. The tens drop their last vowel before <b>uno</b> and <b>otto</b>: ventuno, ventotto, trentuno. A final <b>tre</b> takes an accent: ventitré, trentatré.",
+      "tables": [
+        { "h": "Numbers", "rows": [
+          ["1–10", "uno, due, tre, quattro, cinque, sei, sette, otto, nove, dieci"],
+          ["11–20", "undici, dodici, tredici, quattordici, quindici, sedici, diciassette, diciotto, diciannove, venti"],
+          ["tens", "venti, trenta, quaranta, cinquanta, sessanta, settanta, ottanta, novanta"],
+          ["21–29", "ventuno, ventidue, ventitré, ventiquattro… ventotto, ventinove"],
+          ["hundreds", "cento, centouno, duecento, trecento… (centottanta, not centoottanta)"],
+          ["thousands", "mille, duemila (plural mila), diecimila"],
+          ["millions", "un milione, due milioni; + di before a noun: un milione di abitanti"]
+        ] },
+        { "h": "The time", "rows": [
+          ["Sono le tre.", "It's three o'clock."],
+          ["Sono le tre e dieci.", "3:10"],
+          ["Sono le tre e un quarto.", "3:15"],
+          ["Sono le tre e mezza / e mezzo.", "3:30"],
+          ["Sono le quattro meno un quarto.", "3:45"],
+          ["Sono le quattro meno cinque.", "3:55"],
+          ["È l'una.", "It's one o'clock."],
+          ["È mezzogiorno. / È mezzanotte.", "It's midday. / It's midnight."]
+        ] },
+        { "h": "Dates and years", "rows": [
+          ["Che giorno è oggi?", "What's the date? → Oggi è il 12 ottobre."],
+          ["il primo marzo", "1st March (ordinal only for the 1st)"],
+          ["l'otto agosto, l'undici", "il becomes l' before otto and undici"],
+          ["nel 2019", "in 2019 (in + il)"],
+          ["gli anni Ottanta", "the eighties"]
+        ] }
+      ],
+      "notes": [
+        "Timetables and offices use the 24-hour clock: <i>il treno parte alle 17:40</i> (diciassette e quaranta).",
+        "Days and months are lower case: lunedì, gennaio.",
+        "Decimals use a comma: 3,50 € is <i>tre euro e cinquanta</i>, or just <i>tre e cinquanta</i>."
+      ]
+    },
+    "mistakes": [
+      { "wrong": "Sono l'una.", "right": "È l'una.", "why": "One o'clock is singular → <b>è</b>." },
+      { "wrong": "Il uno maggio.", "right": "Il primo maggio.", "why": "The 1st of the month is always <b>primo</b>." },
+      { "wrong": "Sono nato in 1990.", "right": "Sono nato nel 1990.", "why": "Years take the article: in + il → <b>nel</b>." },
+      { "wrong": "Sono trent'anni.", "right": "Ho trent'anni.", "why": "Age uses <b>avere</b>." }
+    ],
+    "ex": [
+      { "k": "type", "q": "Scusi, che ore sono? — ___ le sei e mezza.", "h": "essere", "a": ["sono"], "why": "Hours are plural: <b>sono</b> le sei." },
+      { "k": "type", "q": "___ l'una: andiamo a pranzo?", "h": "essere", "a": ["è"], "why": "One o'clock is singular: <b>è</b> l'una." },
+      { "k": "type", "q": "La panetteria apre ___ sette.", "h": "a + article", "a": ["alle"], "why": "At + hour → <b>alle</b>." },
+      { "k": "type", "q": "Mia figlia è nata ___ 2015.", "h": "in + article", "a": ["nel"], "why": "Years take the article → <b>nel</b>." },
+      { "k": "type", "q": "Capodanno è il ___ gennaio.", "h": "1st", "a": ["primo"], "why": "Only the 1st uses the ordinal: il <b>primo</b>." },
+      { "k": "type", "q": "Ho ___ anni, ma me ne sento venti.", "h": "number · 31", "a": ["trentuno"], "why": "trenta + uno → <b>trentuno</b>: the a drops before uno." },
+      { "k": "type", "q": "Sono le otto ___ un quarto: è tardi, svegliati!", "h": "7:45", "a": ["meno"], "why": "7:45 = eight minus a quarter → le otto <b>meno</b> un quarto." },
+      { "k": "type", "q": "Il mio volo parte ___ mezzanotte.", "h": "preposition", "a": ["a"], "why": "Mezzanotte has no article → <b>a</b> mezzanotte." },
+      { "k": "type", "q": "La bici usata costa ___ euro: un affare.", "h": "number · 280", "a": ["duecentottanta"], "why": "duecento + ottanta: the o drops → <b>duecentottanta</b>." },
+      { "k": "type", "q": "Mio nonno è nato ___ anni Trenta.", "h": "in + article", "a": ["negli"], "why": "gli anni Trenta → <b>negli</b> anni Trenta." },
+      { "k": "mc", "q": "“It's half past four.”", "o": ["Sono le quattro e mezza.", "È le quattro e mezza.", "Sono quattro e mezza."], "a": "Sono le quattro e mezza.", "why": "Plural verb and article: <b>sono le</b>." },
+      { "k": "mc", "q": "How do you write 23?", "o": ["ventitré", "ventitre", "ventetré"], "a": "ventitré", "why": "A final tre takes an accent: <b>ventitré</b>." },
+      { "k": "mc", "q": "“Quando è il tuo compleanno?” “___ marzo.”", "o": ["L'otto", "Il otto", "L'ottavo"], "a": "L'otto", "why": "Otto starts with a vowel → <b>l'otto</b>, and dates use plain numbers." }
+    ]
+  },
+  {
+    "id": "g-connectors", "level": "B1", "topic": "sentences",
+    "title": "I connettivi", "en": "Connectors",
+    "summary": "The small words that link ideas: cause, result, contrast, concession and explanation.",
+    "meaning": "Connectors (<i>connettivi</i>) tell the listener how one idea relates to the next: is it a reason, a consequence, a contrast, a correction? Using a handful of them well is what makes B1 Italian sound connected rather than like a list. Almost all take the indicative, including <b>anche se</b>; its formal cousins <i>benché</i> and <i>sebbene</i> need the congiuntivo.",
+    "uses": [
+      { "h": "Cause: perché, infatti", "t": "<b>perché</b> gives the reason. <b>infatti</b> confirms or proves what you've just said: “indeed, and in fact”. It does not mean “actually” in the sense of correcting someone.", "ex": ["Ero distrutto, infatti alle dieci dormivo già.", "I was exhausted, and in fact by ten I was already asleep."] },
+      { "h": "Result: quindi, dunque", "t": "<b>quindi</b> is the everyday “so”. <b>dunque</b> is a little more formal, and can also open a thought (“right, so…”).", "ex": ["Il treno è stato cancellato, quindi ci ha dato un passaggio un camionista di Brescia.", "The train was cancelled, so a lorry driver from Brescia gave us a lift."] },
+      { "h": "Contrast: però, invece, mentre", "t": "<b>però</b> = but, however. <b>invece</b> = on the other hand, instead. <b>mentre</b> = while (time) or whereas (contrast).", "ex": ["Io adoro il mare, mia moglie invece preferisce la montagna.", "I love the sea; my wife, on the other hand, prefers the mountains."] },
+      { "h": "Concession: anche se, eppure, comunque", "t": "<b>anche se</b> = even though, even if. <b>eppure</b> = and yet, with surprise. <b>comunque</b> = anyway, in any case.", "ex": ["Anche se piove, la sagra si fa lo stesso.", "Even if it rains, the village festival is going ahead anyway."] },
+      { "h": "Explaining: cioè", "t": "Rephrases or clarifies: “that is, I mean”. Very frequent in speech, sometimes as a filler.", "ex": ["Arrivo dopodomani, cioè giovedì.", "I'm arriving the day after tomorrow, that is, Thursday."] }
+    ],
+    "form": {
+      "intro": "Most connectors join two clauses with the indicative. Their position matters: <b>ma</b>, <b>quindi</b>, <b>anche se</b> and <b>eppure</b> open their clause, while <b>però</b>, <b>invece</b> and <b>comunque</b> can move around.",
+      "tables": [
+        { "h": "At a glance", "rows": [
+          ["perché", "because: Resto a casa perché ho la febbre."],
+          ["infatti", "indeed, in fact (confirms): Era chiuso, infatti non c'era nessuno."],
+          ["quindi / dunque", "so, therefore: Ho perso le chiavi, quindi aspetto mio marito."],
+          ["però", "but, however: È caro, però è buonissimo."],
+          ["invece", "on the other hand, instead: Lui è calmo, lei invece no."],
+          ["mentre", "while, whereas: Mentre cucino, ascolto la radio."],
+          ["anche se", "even though, even if (+ indicative): Esco anche se piove."],
+          ["eppure", "and yet: Ha studiato poco, eppure ha passato l'esame."],
+          ["comunque", "anyway, in any case: Comunque, ne parliamo domani."],
+          ["cioè", "that is, I mean: Vengo in due, cioè con mia sorella."]
+        ] }
+      ],
+      "notes": [
+        "<b>però</b> can follow a word or even end the sentence: <i>Il film però era lungo.</i> / <i>È bravo, però.</i> <b>Ma</b> must come first.",
+        "<b>invece di</b> + noun or infinitive = instead of: <i>Invece di lamentarti, aiutami.</i>",
+        "To start a sentence with a cause, use <b>siccome</b> or <b>dato che</b>, not perché: <i>Siccome piove, restiamo a casa.</i>",
+        "For “actually” as a correction, use <b>in realtà</b>, not infatti."
+      ]
+    },
+    "mistakes": [
+      { "wrong": "Infatti, non sono d'accordo.", "right": "In realtà, non sono d'accordo.", "why": "<b>infatti</b> confirms; to correct or contradict, use <b>in realtà</b>." },
+      { "wrong": "Anche se sia tardi, esco.", "right": "Anche se è tardi, esco.", "why": "<b>anche se</b> takes the indicative. It's <b>benché</b> and <b>sebbene</b> that need the congiuntivo: benché sia tardi." },
+      { "wrong": "Invece andare in macchina, prendo il treno.", "right": "Invece di andare in macchina, prendo il treno.", "why": "“Instead of” is <b>invece di</b>." },
+      { "wrong": "Perché piove, restiamo a casa.", "right": "Siccome piove, restiamo a casa.", "why": "At the start of a sentence, a cause is introduced by <b>siccome</b> or <b>dato che</b>." }
+    ],
+    "ex": [
+      { "k": "type", "q": "Non sono venuto alla festa ___ avevo la febbre.", "h": "because", "a": ["perché", "poiché"], "why": "Reason after the main clause → <b>perché</b>." },
+      { "k": "type", "q": "Il ristorante era chiuso, ___ abbiamo mangiato un panino in piazza.", "h": "so", "a": ["quindi", "dunque", "perciò", "così"], "why": "Consequence → <b>quindi</b> (or dunque, perciò)." },
+      { "k": "type", "q": "Mio fratello è un disastro in cucina, sua moglie ___ è una cuoca fantastica.", "h": "on the other hand", "a": ["invece"], "why": "Contrast between two people → <b>invece</b>, after the subject." },
+      { "k": "type", "q": "___ è ricchissimo, guida una Panda del 1998.", "h": "even though · + indicative", "a": ["anche se"], "why": "Concession with the indicative → <b>anche se</b>." },
+      { "k": "type", "q": "Pensavo che il museo fosse chiuso il lunedì, e ___ era chiuso.", "h": "indeed", "a": ["infatti"], "why": "Confirms what you expected → <b>infatti</b>." },
+      { "k": "type", "q": "Ci vediamo dopodomani, ___ venerdì.", "h": "that is", "a": ["cioè"], "why": "Clarifying → <b>cioè</b>." },
+      { "k": "type", "q": "Ho studiato tantissimo, ___ l'esame è andato male.", "h": "and yet", "a": ["eppure"], "why": "A surprising contradiction → <b>eppure</b>." },
+      { "k": "type", "q": "Non so ancora se vengo alla cena. ___, ti scrivo entro stasera.", "h": "anyway", "a": ["comunque", "in ogni caso"], "why": "“Whatever happens” → <b>comunque</b>." },
+      { "k": "type", "q": "___ io cucinavo, i bambini apparecchiavano la tavola.", "h": "while", "a": ["mentre"], "why": "Two actions at the same time → <b>mentre</b>." },
+      { "k": "type", "q": "È un bel lavoro, lo stipendio ___ è basso.", "h": "however · after the subject", "a": ["però"], "why": "<b>però</b> can follow the subject; ma can't." },
+      { "k": "mc", "q": "Abbiamo perso l'ultimo traghetto per Ischia, ___ abbiamo dormito a Pozzuoli.", "o": ["quindi", "infatti", "eppure"], "a": "quindi", "why": "Sleeping in Pozzuoli is the consequence → <b>quindi</b>." },
+      { "k": "mc", "q": "Lo so che sembra strano, ___ è tutto vero.", "o": ["eppure", "quindi", "cioè"], "a": "eppure", "why": "Strange, and yet true → <b>eppure</b>." },
+      { "k": "mc", "q": "Choose the correct sentence.", "o": ["Anche se è tardi, ti accompagno a casa.", "Anche se sia tardi, ti accompagno a casa.", "Anche se tardi è, ti accompagno a casa."], "a": "Anche se è tardi, ti accompagno a casa.", "why": "<b>anche se</b> + indicative, normal word order." }
+    ]
+  },
+  {
+    "id": "g-discourse", "level": "B2", "topic": "sentences",
+    "title": "Il discorso indiretto", "en": "Reported speech",
+    "summary": "How to report what someone said or asked: verbs shift back in time, and pronouns, places and time words change point of view.",
+    "meaning": "In direct speech you quote the exact words: <i>Laura ha detto: “Sono stanca.”</i> In indirect speech you retell them from your own point of view: <i>Laura ha detto che era stanca.</i> If the reporting verb is in the present, almost nothing changes. If it's in a past tense, the verbs move one step back, and words like <i>io, qui, oggi, domani</i> shift to fit the new speaker, place and time.",
+    "uses": [
+      { "h": "Statements: dire che", "t": "With a present reporting verb, the tenses stay as they are.", "ex": ["Mia madre dice che il pesce a Chioggia costa meno.", "My mother says fish is cheaper in Chioggia."] },
+      { "h": "Past reporting verb: tenses shift", "t": "After ha detto, disse, diceva… the reported verb moves back.", "ex": ["Il tecnico ha detto che sarebbe passato in mattinata, ma non si è visto.", "The technician said he'd come by in the morning, but there was no sign of him."] },
+      { "h": "Questions: se and question words", "t": "Yes/no questions take <b>se</b>; open questions keep their question word. No question mark.", "ex": ["Il vigile mi ha chiesto se sapevo leggere i cartelli. Simpatico.", "The traffic warden asked me if I could read the signs. Charming."] },
+      { "h": "Orders and requests: di + infinitive", "t": "An imperative becomes <b>di</b> + infinitive.", "ex": ["La portinaia mi ha detto di non lasciare la bici nell'androne.", "The concierge told me not to leave my bike in the entrance hall."] },
+      { "h": "Point of view", "t": "People, places and times shift: io → lui/lei, qui → lì, domani → il giorno dopo.", "ex": ["Mi ha scritto che il giorno dopo sarebbe passato a prendere le sue cose.", "He wrote to me that he'd come by the next day to pick up his things."] }
+    ],
+    "form": {
+      "intro": "Reporting verb in the presente or futuro → no tense change. Reporting verb in a past tense (passato prossimo, imperfetto, passato remoto, trapassato) → shift the reported verb as in the table.",
+      "tables": [
+        { "h": "Tense shifts after a past reporting verb", "rows": [
+          ["presente → imperfetto", "“Ho fame.” → Ha detto che aveva fame."],
+          ["passato prossimo → trapassato prossimo", "“Ho perso il treno.” → Ha detto che aveva perso il treno."],
+          ["imperfetto → imperfetto", "“Ero in ufficio.” → Ha detto che era in ufficio."],
+          ["futuro → condizionale passato", "“Verrò.” → Ha detto che sarebbe venuto."],
+          ["condizionale presente → condizionale passato", "“Vorrei un caffè.” → Ha detto che avrebbe voluto un caffè."],
+          ["congiuntivo presente → congiuntivo imperfetto", "“Credo che sia tardi.” → Ha detto che credeva che fosse tardi."],
+          ["imperativo → di + infinito", "“Chiudi la porta!” → Mi ha detto di chiudere la porta."]
+        ] },
+        { "h": "Words that change", "rows": [
+          ["io, mi, mio", "lui/lei, gli/le, suo"],
+          ["questo", "quello"],
+          ["qui, qua", "lì, là"],
+          ["oggi", "quel giorno"],
+          ["ieri", "il giorno prima"],
+          ["domani", "il giorno dopo, l'indomani"],
+          ["la settimana prossima", "la settimana dopo / seguente"],
+          ["due giorni fa", "due giorni prima"],
+          ["venire", "often andare"]
+        ] }
+      ],
+      "notes": [
+        "For something still true, speakers often keep the presente: <i>Mi ha detto che abita a Bergamo</i> (and she still does). Both versions are correct.",
+        "Future in the past is <b>condizionale passato</b>, never condizionale presente: <i>ha detto che sarebbe venuto</i>, not <i>verrebbe</i>. This is the classic trap for English speakers (“he said he would come”).",
+        "In careful writing, reported questions often take the congiuntivo: <i>mi ha chiesto dove abitassi</i>. The indicative (<i>dove abitavo</i>) is normal in speech."
+      ]
+    },
+    "mistakes": [
+      { "wrong": "Ha detto che verrebbe.", "right": "Ha detto che sarebbe venuto.", "why": "A future seen from the past → <b>condizionale passato</b>." },
+      { "wrong": "Mi ha chiesto se ho fame?", "right": "Mi ha chiesto se avevo fame.", "why": "Shift the tense, and drop the question mark: it's no longer a question." },
+      { "wrong": "Mi ha detto che chiudo la porta.", "right": "Mi ha detto di chiudere la porta.", "why": "Orders become <b>di</b> + infinitive." },
+      { "wrong": "Il mese scorso ha detto che partiva domani.", "right": "Il mese scorso ha detto che sarebbe partito il giorno dopo.", "why": "Shift the time word too: domani → <b>il giorno dopo</b>." }
+    ],
+    "ex": [
+      { "k": "type", "q": "“Sono stanca morta.” → Giulia ha detto che ___ stanca morta.", "h": "essere", "a": ["era"], "why": "presente → <b>imperfetto</b>." },
+      { "k": "type", "q": "“Ho perso le chiavi.” → Pietro ha detto che ___ le chiavi.", "h": "perdere", "a": ["aveva perso"], "why": "passato prossimo → <b>trapassato prossimo</b>." },
+      { "k": "type", "q": "“Ti chiamerò stasera.” → Mi ha promesso che mi ___ quella sera.", "h": "chiamare", "a": ["avrebbe chiamato"], "why": "futuro → <b>condizionale passato</b>." },
+      { "k": "type", "q": "“Hai visto il mio telefono?” → Mi ha chiesto ___ avevo visto il suo telefono.", "h": "conjunction", "a": ["se"], "why": "Yes/no question → <b>se</b>." },
+      { "k": "type", "q": "“Dove abiti?” → Mi ha chiesto dove ___.", "h": "abitare · io", "a": ["abitavo", "abitassi"], "why": "presente → imperfetto: <b>abitavo</b> (or congiuntivo <b>abitassi</b>, more formal)." },
+      { "k": "type", "q": "“Non toccate niente!” → Il custode ci ha detto ___ non toccare niente.", "h": "preposition", "a": ["di"], "why": "Imperative → <b>di</b> + infinitive." },
+      { "k": "type", "q": "“Torno domani.” → Ha detto che sarebbe tornato ___.", "h": "time word", "a": ["il giorno dopo", "l'indomani", "il giorno seguente"], "why": "domani → <b>il giorno dopo</b>." },
+      { "k": "type", "q": "“Questa casa è troppo piccola.” → Ha detto che ___ casa era troppo piccola.", "h": "demonstrative", "a": ["quella"], "why": "questo → <b>quello</b>." },
+      { "k": "type", "q": "“Vorrei parlare con il direttore.” → La signora ha detto che ___ parlare con il direttore.", "h": "volere", "a": ["avrebbe voluto", "voleva"], "why": "condizionale presente → <b>condizionale passato</b>; in speech <b>voleva</b> is also common." },
+      { "k": "type", "q": "“Penso che Marta abbia ragione.” → Ha detto che pensava che Marta ___ ragione.", "h": "avere", "a": ["avesse"], "why": "congiuntivo presente → <b>congiuntivo imperfetto</b>." },
+      { "k": "mc", "q": "“I'll be there at eight,” he said.", "o": ["Ha detto che sarebbe stato lì alle otto.", "Ha detto che sarebbe lì alle otto.", "Ha detto che è stato lì alle otto."], "a": "Ha detto che sarebbe stato lì alle otto.", "why": "Future in the past → <b>condizionale passato</b>; qui → lì." },
+      { "k": "mc", "q": "“Siediti pure.” → Mi ha detto ___", "o": ["di sedermi.", "che mi siedo.", "sedermi."], "a": "di sedermi.", "why": "Imperative → <b>di</b> + infinitive, and ti → mi." },
+      { "k": "mc", "q": "Lucia: “Ho finito la tesi.” Report it with dice (present).", "o": ["Lucia dice che ha finito la tesi.", "Lucia dice che aveva finito la tesi.", "Lucia dice che finiva la tesi."], "a": "Lucia dice che ha finito la tesi.", "why": "Present reporting verb → no tense shift." }
+    ]
+  }
+]
