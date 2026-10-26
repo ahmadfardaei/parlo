@@ -313,7 +313,9 @@ export const GRAMMAR = [
       notes: [
         "Shortcut for irregulars: start from the <b>io</b> form of the presente. vengo → venga, dico → dica, faccio → faccia, esco → esca, posso → possa.",
         "<b>Same subject → di + infinitive</b>: Penso <b>di</b> avere ragione (not “penso che io abbia”).",
-        "<b>Certainty → indicativo</b>: So che è vero. Sono sicuro che viene. È vero che…"
+        "<b>Certainty → indicativo</b>: So che è vero. Sono sicuro che viene. È vero che…",
+        "<b>Sequence of tenses</b>: main verb in the presente → congiuntivo <b>presente</b> or <b>passato</b> (penso che venga / sia venuto); main verb in a past tense → congiuntivo <b>imperfetto</b> or <b>trapassato</b> (pensavo che venisse / fosse venuto). See the lessons on those tenses.",
+        "In casual speech many Italians use the indicative after <i>penso che</i> (<i>penso che è tardi</i>), and <i>non so se</i> + indicative (<i>non so se viene</i>) is very common. In writing and careful speech, use the congiuntivo: <i>penso che sia tardi</i>, <i>non so se venga</i>."
       ]
     },
     irregular: [

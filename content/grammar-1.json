@@ -15,14 +15,19 @@
       "intro": "Look at the last letter. It usually tells you the gender, and it tells you which plural ending to use.",
       "tables": [
         { "h": "Regular endings", "rows": [["-o (m.) → -i", "il libro → i libri"], ["-a (f.) → -e", "la casa → le case"], ["-e (m.) → -i", "il fiore → i fiori"], ["-e (f.) → -i", "la chiave → le chiavi"], ["-a (m.) → -i", "il problema → i problemi"]] },
-        { "h": "No change in the plural", "rows": [["accented vowel", "la città → le città, il caffè → i caffè, la virtù → le virtù"], ["short forms", "la foto → le foto, la moto → le moto, la bici → le bici"], ["foreign words", "il bar → i bar, il film → i film, lo sport → gli sport"], ["one-syllable words", "il re → i re"]] },
-        { "h": "Hard sounds", "rows": [["-ca / -ga → -che / -ghe", "l'amica → le amiche, la riga → le righe"], ["-co / -go → -chi / -ghi", "il parco → i parchi, il lago → i laghi"], ["but some -co → -ci", "l'amico → gli amici, il medico → i medici, il greco → i greci"]] }
+        { "h": "No change in the plural", "rows": [["accented vowel", "la città → le città, il caffè → i caffè, la virtù → le virtù"], ["short forms", "la foto → le foto, la moto → le moto, la bici → le bici"], ["foreign words", "il bar → i bar, il film → i film, lo sport → gli sport"], ["one-syllable words", "il re → i re"], ["-i (feminine, from Greek)", "la crisi → le crisi, l'analisi → le analisi, la tesi → le tesi"]] },
+        { "h": "Hard sounds", "rows": [["-ca / -ga → -che / -ghe", "l'amica → le amiche, la riga → le righe"], ["-co / -go → -chi / -ghi", "il parco → i parchi, il lago → i laghi"], ["but some -co → -ci", "l'amico → gli amici, il medico → i medici, il greco → i greci"]] },
+        { "h": "Gender changes the meaning", "rows": [["il capitale / la capitale", "capital (money) / capital city: Roma è la capitale; serve un capitale iniziale."], ["il fine / la fine", "aim, purpose / end: il fine giustifica i mezzi; la fine del film."], ["il fronte / la fronte", "front (war, weather, politics) / forehead: il fronte freddo; ha la fronte calda."]] },
+        { "h": "Double plurals", "rows": [["il braccio", "le braccia (of a person) · i bracci (of a lamp, a river)"], ["il dito", "le dita (the fingers of a hand) · i diti only when counting them one by one, rare"], ["il ginocchio", "le ginocchia (more common) · i ginocchi"], ["l'osso", "le ossa (of a skeleton) · gli ossi (single bones, e.g. for the dog)"], ["il muro", "i muri (of a house) · le mura (city walls)"]] }
       ],
       "notes": [
         "Masculine nouns in <b>-a</b> are mostly Greek words in <b>-ma</b>: il problema, il programma, il sistema, il tema, il clima.",
         "Nouns in <b>-ione</b> are feminine (la stazione, la lezione) and nouns in <b>-ore</b> are masculine (il colore, il dottore).",
         "Nouns in <b>-ista</b> work for both sexes: il turista / la turista. In the plural: i turisti, le turiste.",
-        "<b>-cia / -gia</b>: keep the i if a vowel comes before it (la camicia → le camicie), drop it after a consonant (l'arancia → le arance)."
+        "<b>-cia / -gia</b>: keep the i if a vowel comes before it (la camicia → le camicie), drop it after a consonant (l'arancia → le arance).",
+        "Nouns in <b>-i</b> are feminine and never change: una crisi, due crisi; la tesi, le tesi. Same for la sintesi, l'ipotesi, la diagnosi.",
+        "Some masculine nouns end in <b>-ta</b>: il pianeta, il poeta, il pilota. Plural in -i: i pianeti, i poeti.",
+        "With double plurals, the feminine <b>-a</b> form is the one for the body or a set (le braccia, le ossa, le mura); the regular <b>-i</b> form is for separate objects or figurative uses (i bracci della lampada, gli ossi per il cane)."
       ]
     },
     "irregularTitle": "Common irregular plurals",
@@ -49,6 +54,8 @@
       { "k": "type", "q": "Nella mia famiglia gli ___ non cucinano mai.", "h": "plural · uomo", "a": ["uomini"], "why": "Irregular: l'uomo → gli uomini." },
       { "k": "type", "q": "Mi fanno male le ___ dopo la corsa.", "h": "plural · ginocchio", "a": ["ginocchia"], "why": "Body part with a feminine plural in -a: il ginocchio → le ginocchia." },
       { "k": "mc", "q": "___ problema è che il treno per Matera non c'è.", "o": ["Il", "La"], "a": "Il", "why": "Problema is masculine, like most -ma nouns from Greek." },
+      { "k": "type", "q": "Dopo il 2008 l'Italia ha vissuto due ___ economiche molto dure.", "h": "plural · crisi", "a": ["crisi"], "why": "Nouns in -i are invariable: una crisi, due crisi. Only the article and the adjective (economiche) show the plural." },
+      { "k": "mc", "q": "Il film era noioso, ma ___ fine mi ha sorpreso: il colpevole era la nonna.", "o": ["il", "la"], "a": "la", "why": "<b>La fine</b> is the end. <b>Il fine</b> means aim or purpose (il fine giustifica i mezzi)." },
       { "k": "mc", "q": "___ stazione di Cagliari è vicina al porto.", "o": ["Il", "La"], "a": "La", "why": "Nouns in -ione are feminine." },
       { "k": "mc", "q": "Which plural is correct?", "o": ["le foto", "le fote", "le foti"], "a": "le foto", "why": "Foto is short for fotografia, so it doesn't change." }
     ]
