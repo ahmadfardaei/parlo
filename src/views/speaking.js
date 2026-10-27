@@ -2,7 +2,7 @@ import { S, esc, ICON, setEntry, remember, TOPICS, on, showToast } from "../core
 import { ensure } from "../data.js";
 import { plainLines, sentHTML } from "./texts.js";
 import { readerTools, wireReader } from "./reading.js";
-import { modelsHTML } from "./writing.js";
+import { modelsHTML, modelVoice } from "./writing.js";
 
 let cleanup = [];
 on("leave", () => { cleanup.forEach(f => { try { f(); } catch (e) {} }); cleanup = []; });
@@ -55,7 +55,7 @@ export async function viewSpeaking(app, v, alive) {
     app.querySelector("[data-sp-done]")?.addEventListener("click", () => { setEntry("sp:" + t.id, { done: 1 }); draw(); });
     app.querySelector("[data-show-models]")?.addEventListener("click", () => { showModels = true; draw(); app.querySelector(".reader-tools")?.scrollIntoView({ block: "start", behavior: "smooth" }); });
     app.querySelectorAll("[data-model]").forEach(b => b.onclick = () => { level = b.dataset.model; draw(); });
-    if (showModels) wireReader(app, plainLines(t.models[level].body), draw);
+    if (showModels) wireReader(app, plainLines(t.models[level].body, () => modelVoice(t, level)), draw);
   };
   const tick = () => {
     left--; const el = document.getElementById("timer"); if (el) el.textContent = mmss(Math.max(0, left));

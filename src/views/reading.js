@@ -1,6 +1,7 @@
 import { S, esc, ICON, canSpeak, setEntry, savePref, remember, speakAll, lsGet, lsSet, TOPICS, shuffle, openSheet } from "../core.js";
 import { ensure } from "../data.js";
 import { blocksHTML, plainLines, sentHTML, sizeControlHTML } from "./texts.js";
+import { voiceForName, narratorVoice } from "../voice.js";
 
 export function readerTools(showEn) {
   return `<div class="reader-tools">
@@ -38,6 +39,7 @@ export async function viewReading(app, v, alive) {
   if (!r) { location.hash = "#/learn/reading"; return; }
   remember("reading", r.title, `#/read/${r.id}`, `${r.level} · ${r.minutes} min`);
   const st = S.st["r:" + r.id] || {};
+  const voiceOf = b => b.who ? voiceForName(b.who) : narratorVoice(r.id);
   const draw = () => {
     const showEn = !!S.pref.showEn;
     const qs = r.questions.map(q => ({ ...q, o: shuffle(q.o) }));
@@ -47,7 +49,7 @@ export async function viewReading(app, v, alive) {
         <header class="page-head"><p class="eyebrow">${r.level} · ${esc(r.genre)} · ${r.minutes} min · ${esc(TOPICS[r.topic] || "")}</p>
         <h1 class="it">${esc(r.title)}</h1><p class="muted">${esc(r.blurb)}</p></header></div>
       <div class="l-main">
-        <article class="reader">${blocksHTML(r.body, `#/read/${r.id}`, r.title, showEn)}</article>
+        <article class="reader">${blocksHTML(r.body, `#/read/${r.id}`, r.title, showEn, voiceOf)}</article>
         <section class="g-sec"><h2>Did you get it?</h2>
           <div class="panel flush" id="qs">${qs.map((q, i) => `<div class="rq" data-q="${i}"><p class="it strong">${i + 1}. ${esc(q.q)}</p><div class="opts">${q.o.map((o, j) => `<button class="opt it" data-qo="${j}">${esc(o)}</button>`).join("")}</div></div>`).join("")}</div>
           <div class="panel finish" id="finish">${st.done ? `<p class="ok-text">${ICON.check} You've read this${st.score != null ? ` · ${st.score}/${r.questions.length} correct` : ""}.</p>` : `<p class="muted small">Answer the questions, or simply mark it as read.</p>`}
@@ -59,7 +61,7 @@ export async function viewReading(app, v, alive) {
         <div class="l-side2"><details class="group" ${wide ? "open" : ""}><summary><span class="group-title">Glossary</span><span class="group-meta">${r.glossary.length} words</span></summary>
           <div class="panel flush reader">${r.glossary.map(g => `<div class="gloss">${sentHTML({ it: g.it, en: g.en }, `#/read/${r.id}`, r.title)}<span class="muted">${esc(g.en)}</span></div>`).join("")}</div></details></div>
       </aside></div>`;
-    wireReader(app, plainLines(r.body), draw);
+    wireReader(app, plainLines(r.body, voiceOf), draw);
     let answered = 0, correct = 0;
     app.querySelectorAll(".rq").forEach(div => {
       const q = qs[+div.dataset.q];

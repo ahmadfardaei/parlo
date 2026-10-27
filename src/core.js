@@ -1,5 +1,6 @@
 // Shared state, data registry, progress storage, sync, and small UI helpers.
 import { supabase } from "./supabase.js";
+import { clipUrl, AUDIO_READY } from "./voice.js";
 
 /* ---------- Helpers ---------- */
 export const $ = s => document.querySelector(s);
@@ -47,10 +48,11 @@ export const ICON = {
 };
 
 /* ---------- Speech ---------- */
-export const canSpeak = "speechSynthesis" in window;
-let speakQueueToken = 0;
-export function speak(text, onEnd) {
-  if (!canSpeak) { onEnd && onEnd(); return; }
+// Recorded neural voices first (one clip per text and voice), device speech as the fallback.
+export const canSpeak = true;
+let speakQueueToken = 0, current = null;
+function deviceSpeak(text, onEnd) {
+  if (!("speechSynthesis" in window)) { onEnd && onEnd(); return; }
   try {
     const u = new SpeechSynthesisUtterance(String(text).replace(/[…—«»“”]/g, " ").replace(/\/[aie]+\b/g, ""));
     u.lang = "it-IT"; u.rate = S.pref.rate || 0.92;
@@ -59,21 +61,36 @@ export function speak(text, onEnd) {
     speechSynthesis.speak(u);
   } catch (e) { onEnd && onEnd(); }
 }
-export function say(text) { speakQueueToken++; if (canSpeak) speechSynthesis.cancel(); speak(text); }
+export function speak(text, onEnd, voice = "f") {
+  if (!text) { onEnd && onEnd(); return; }
+  if (!AUDIO_READY) { deviceSpeak(text, onEnd); return; }
+  const a = new Audio(clipUrl(text, voice));
+  a.playbackRate = (S.pref.rate || 0.92) / 0.92;
+  let settled = false;
+  const finish = () => { if (settled) return; settled = true; if (current === a) current = null; onEnd && onEnd(); };
+  const fallback = () => { if (settled) return; if (current === a) current = null; deviceSpeak(text, () => { settled = true; onEnd && onEnd(); }); };
+  a.onended = finish; a.onerror = fallback;
+  current = a;
+  a.play().catch(fallback);
+}
+function stopAudio() { if (current) { current.onended = current.onerror = null; current.pause(); current = null; } if ("speechSynthesis" in window) speechSynthesis.cancel(); }
+export function say(text, voice) { speakQueueToken++; stopAudio(); speak(text, null, voice); }
+// lines: strings or { t, v } objects.
 export function speakAll(lines, onProgress, onDone) {
   const token = ++speakQueueToken;
-  if (canSpeak) speechSynthesis.cancel();
+  stopAudio();
   let i = 0;
   const next = () => {
     if (token !== speakQueueToken) return;
     if (i >= lines.length) { onDone && onDone(); return; }
     onProgress && onProgress(i);
-    speak(lines[i++], next);
+    const l = lines[i++];
+    typeof l === "string" ? speak(l, next) : speak(l.t, next, l.v);
   };
   next();
-  return () => { speakQueueToken++; if (canSpeak) speechSynthesis.cancel(); onDone && onDone(); };
+  return () => { speakQueueToken++; stopAudio(); onDone && onDone(); };
 }
-export function stopSpeaking() { speakQueueToken++; if (canSpeak) speechSynthesis.cancel(); }
+export function stopSpeaking() { speakQueueToken++; stopAudio(); }
 
 /* ---------- Toast & sheet ---------- */
 export function showToast(text, actionLabel, action, ms = 4500) {
@@ -177,10 +194,10 @@ export function toggleDeck(id) {
 }
 // A sentence saved from a text. `it` may be part of a longer sentence `ctx`.
 export function sentenceId(it) { return "s:" + hash(it.trim().toLowerCase()); }
-export function saveSentence({ it, en, ctx, src, srcTitle }) {
+export function saveSentence({ it, en, ctx, src, srcTitle, voice }) {
   const id = sentenceId(it);
   const had = inDeck(id);
-  setEntry(id, { s: 1, it: it.trim(), en, ctx: ctx && ctx.trim() !== it.trim() ? ctx.trim() : "", src: src || "", st: srcTitle || "" });
+  setEntry(id, { s: 1, it: it.trim(), en, ctx: ctx && ctx.trim() !== it.trim() ? ctx.trim() : "", src: src || "", st: srcTitle || "", vo: voice || "f" });
   if (!had) showToast("Sentence saved to your deck.", "Undo", () => setEntry(id, { s: 0 }), 3500);
   return id;
 }
@@ -356,6 +373,7 @@ export function gf(text, isIo = true) {
   return String(text).replace(/(\p{L}+?)([oi])\/([ae])(?!\p{L})/gu, (_, stem, m, f) => stem + (g === "m" ? m : f));
 }
 // Example sentences said by "io" may have a version for the other gender: alt = { base: "m"|"f", other: "…" }.
+export function exVoice(text, alt) { return !alt ? "f" : text === alt.other ? (alt.base === "m" ? "f" : "m") : alt.base; }
 export function pickEx(text, alt) {
   const g = S.pref.gender;
   if (alt && (g === "m" || g === "f") && alt.base !== g) return alt.other;

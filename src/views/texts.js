@@ -5,18 +5,19 @@ const SENT = new Map();
 let seq = 0;
 export function resetSentences() { SENT.clear(); }
 
-export function sentHTML(s, src, title) {
+export function sentHTML(s, src, title, voice = "f") {
   const k = "s" + (++seq);
-  SENT.set(k, { it: s.it, en: s.en, src, title });
+  SENT.set(k, { it: s.it, en: s.en, src, title, voice });
   return `<span class="sent${inDeck(sentenceId(s.it)) ? " saved" : ""}" data-sent="${k}" role="button" tabindex="0">${esc(s.it)}</span>`;
 }
 // body: [{ who?, s: [{it,en}] }]. Shows English under each paragraph when showEn is true.
-export function blocksHTML(body, src, title, showEn) {
+// voiceOf(block) picks the recorded voice for each paragraph or dialogue turn.
+export function blocksHTML(body, src, title, showEn, voiceOf = () => "f") {
   return body.map(b => `<div class="para${b.who ? " turn" : ""}">${b.who ? `<span class="who">${esc(b.who)}</span>` : ""}
-    <p class="it-text">${b.s.map(s => sentHTML(s, src, title)).join(" ")}</p>
+    <p class="it-text">${b.s.map(s => sentHTML(s, src, title, voiceOf(b))).join(" ")}</p>
     <p class="en-text">${b.s.map(s => esc(s.en)).join(" ")}</p></div>`).join("");
 }
-export const plainLines = body => body.flatMap(b => b.s.map(s => s.it));
+export const plainLines = (body, voiceOf = () => "f") => body.flatMap(b => b.s.map(s => ({ t: s.it, v: voiceOf(b) })));
 
 function sentenceSheet(k) {
   const x = SENT.get(k); if (!x) return;
@@ -25,7 +26,7 @@ function sentenceSheet(k) {
       <p class="s-it">${esc(x.it)}</p>
       <p class="s-en">${esc(x.en)}</p>
       <div class="btn-row">
-        ${canSpeak ? `<button class="btn" data-say-text="${esc(x.it)}">${ICON.speak} Listen</button>` : ""}
+        ${canSpeak ? `<button class="btn" data-say-text="${esc(x.it)}" data-voice="${x.voice || "f"}">${ICON.speak} Listen</button>` : ""}
         <button class="btn ${saved ? "" : "primary"}" data-sent-save="${k}">${saved ? `${ICON.check} In your deck` : `${ICON.star} Save to deck`}</button>
       </div></div>`);
 }
@@ -37,7 +38,7 @@ document.addEventListener("click", e => {
   if (b) {
     const x = SENT.get(b.dataset.sentSave); if (!x) return;
     const id = sentenceId(x.it);
-    if (inDeck(id)) setEntry(id, { s: 0 }); else saveSentence({ it: x.it, en: x.en, src: x.src, srcTitle: x.title });
+    if (inDeck(id)) setEntry(id, { s: 0 }); else saveSentence({ it: x.it, en: x.en, src: x.src, srcTitle: x.title, voice: x.voice });
     closeSheet(); return;
   }
   const s = e.target.closest(".sent");
@@ -85,7 +86,7 @@ document.addEventListener("click", e => {
   if (!e.target.closest("[data-save-selection]") || !selBar) return;
   const { text, sents } = selBar._info;
   const ctx = sents.map(s => s.it).join(" "), en = sents.map(s => s.en).join(" ");
-  saveSentence({ it: text, en, ctx, src: sents[0].src, srcTitle: sents[0].title });
+  saveSentence({ it: text, en, ctx, src: sents[0].src, srcTitle: sents[0].title, voice: sents[0].voice });
   window.getSelection().removeAllRanges(); hideSelBar();
 });
 on("leave", () => { hideSelBar(); resetSentences(); });

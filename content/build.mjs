@@ -20,4 +20,8 @@ out("writing", writing);
 const speaking = [1, 2].filter(i => has(`speaking-${i}.json`)).flatMap(i => C(`speaking-${i}.json`)).sort((a, b) => a.id.localeCompare(b.id));
 out("speaking", speaking);
 
-fs.writeFileSync(new URL("../src/data/meta.json", import.meta.url), JSON.stringify({ grammar: grammar.length, reading: reading.length, writing: writing.length, speaking: speaking.length }));
+// A tiny index (ids and levels) so the home screen can show progress without loading the content itself.
+fs.writeFileSync(new URL("../src/data/meta.json", import.meta.url), JSON.stringify({
+  grammar: grammar.map(g => [g.id, g.level]), reading: reading.map(r => [r.id, r.level]),
+  writing: writing.map(w => w.id), speaking: speaking.map(s => s.id)
+}));

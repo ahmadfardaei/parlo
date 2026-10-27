@@ -4,10 +4,10 @@ import META from "../data/meta.json";
 
 export const SECTIONS = [
   { key: "vocab", it: "Vocabolario", en: "Words, verbs and phrases", count: () => `${D.units.length} units` },
-  { key: "grammar", it: "Grammatica", en: "How the language works", count: () => `${META.grammar} lessons` },
-  { key: "reading", it: "Lettura", en: "Stories, chats and reportage", count: () => `${META.reading} texts` },
-  { key: "writing", it: "Scrittura", en: "Write, then compare with models", count: () => `${META.writing} tasks` },
-  { key: "speaking", it: "Parlato", en: "Talk about real topics", count: () => `${META.speaking} topics` }
+  { key: "grammar", it: "Grammatica", en: "How the language works", count: () => `${META.grammar.length} lessons` },
+  { key: "reading", it: "Lettura", en: "Stories, chats and reportage", count: () => `${META.reading.length} texts` },
+  { key: "writing", it: "Scrittura", en: "Write, then compare with models", count: () => `${META.writing.length} tasks` },
+  { key: "speaking", it: "Parlato", en: "Talk about real topics", count: () => `${META.speaking.length} topics` }
 ];
 
 export function nextUnit() {
@@ -77,12 +77,30 @@ export function viewHome(app) {
       <section class="panel hero-card">
         <div class="hero-main"><p class="eyebrow">Oggi</p><p class="big-line">${title}</p><p class="muted">${sub}</p></div>
         ${cta ? `<a class="btn primary large" href="#/session/due">${cta}</a>` : ""}
-        <p class="level-line small muted">${S.pref.level} · ${pct(lc)}% of ${S.pref.level} vocabulary known · <a href="#/account/settings">change level</a></p>
       </section>
       ${cont ? `<a class="panel row-link continue" href="${esc(cont.href)}">
         <span><span class="eyebrow">${cont.eyebrow}</span><span class="row-title">${esc(cont.title)}</span>${cont.sub ? `<span class="muted small">${esc(cont.sub)}</span>` : ""}</span>${ICON.chev}</a>` : ""}
     </div>
+    <section class="panel progress-panel" id="overview"><div class="panel-head"><h2>Your progress · ${S.pref.level}</h2><a class="small" href="#/account/settings">change level</a></div><div class="ov-rows"></div></section>
     ${supabase && !S.user && !lsGet("parlo.hide.signin", false) ? `<p class="signin-line small muted"><a href="#/account/settings">Sign in</a> to keep your progress on every device. <button class="text-btn quiet-link" data-hide-signin>Hide</button></p>` : ""}
   `;
   app.querySelector("[data-hide-signin]")?.addEventListener("click", () => { lsSet("parlo.hide.signin", true); viewHome(app); });
+  drawOverview(app.querySelector("#overview .ov-rows"), lc);
+}
+
+// One bar per section. Vocabulary, grammar and reading are counted at the learner's level.
+function drawOverview(box, lc) {
+  const L = S.pref.level;
+  const row = (key, label, done, total, part = 0) => `<a class="ov-row" href="#/learn/${key}">
+      <span class="ov-label">${label}</span>
+      <span class="bar" aria-hidden="true"><span class="k" style="width:${done / Math.max(1, total) * 100}%"></span><span class="l" style="width:${part / Math.max(1, total) * 100}%"></span></span>
+      <span class="ov-val">${done + part} of ${total}</span>${ICON.chev}</a>`;
+  const gl = META.grammar.filter(([, l]) => l === L), rl = META.reading.filter(([, l]) => l === L);
+  box.innerHTML = [
+    row("vocab", "Vocabulary", lc.known, lc.total, lc.learning),
+    row("grammar", "Grammar", gl.filter(([id]) => S.st["g:" + id]?.best != null).length, gl.length),
+    row("reading", "Reading", rl.filter(([id]) => S.st["r:" + id]?.done).length, rl.length),
+    row("writing", "Writing", META.writing.filter(id => (S.st["wr:" + id]?.text || "").trim()).length, META.writing.length),
+    row("speaking", "Speaking", META.speaking.filter(id => S.st["sp:" + id]?.done).length, META.speaking.length)
+  ].join("") + `<p class="legend small"><span><i class="lg-k"></i>Known / done</span><span><i class="lg-l"></i>Learning</span></p>`;
 }

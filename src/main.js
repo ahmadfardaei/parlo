@@ -79,7 +79,7 @@ setInterval(updateBadges, 60000);
 document.addEventListener("click", e => {
   const t = e.target.closest("button, [data-say-text]"); if (!t || t.disabled) return;
   const ds = t.dataset;
-  if (ds.sayText !== undefined) { e.preventDefault(); say(ds.sayText); return; }
+  if (ds.sayText !== undefined) { e.preventDefault(); say(ds.sayText, ds.voice); return; }
   if (ds.sayId) { say(sayOf(ds.sayId)); return; }
   if (ds.deck) { e.stopPropagation(); toggleDeck(ds.deck); return; }
   if (ds.sched) { schedule(ds.id, ds.sched); return; }

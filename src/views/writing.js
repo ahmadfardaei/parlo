@@ -2,6 +2,9 @@ import { S, esc, ICON, LEVELS, setEntry, debounce, remember, TOPICS, on } from "
 import { ensure } from "../data.js";
 import { blocksHTML, plainLines, sentHTML } from "./texts.js";
 import { readerTools, wireReader } from "./reading.js";
+import { voiceForName } from "../voice.js";
+export const MODEL_VOICE = { A1: "f", A2: "m", B1: "f", B2: "m" };
+export const modelVoice = (x, level) => x.models[level].speaker ? voiceForName(x.models[level].speaker) : MODEL_VOICE[level];
 
 const TARGET = { A1: [60, 90], A2: [110, 160], B1: [180, 250], B2: [260, 350] };
 let flushDraft = null;
@@ -13,7 +16,7 @@ export function modelsHTML(x, level, showEn, src) {
   const m = x.models[level];
   return `<div class="seg small" role="group" aria-label="Example level">${LEVELS.map(l => `<button data-model="${l}" aria-pressed="${l === level}">${l}</button>`).join("")}</div>
     ${m.speaker ? `<p class="muted small">${esc(m.speaker)}</p>` : ""}
-    <article class="reader">${blocksHTML(m.body, src, x.title, showEn)}</article>`;
+    <article class="reader">${blocksHTML(m.body, src, x.title, showEn, () => modelVoice(x, level))}</article>`;
 }
 
 export async function viewWriting(app, v, alive) {
@@ -60,7 +63,7 @@ export async function viewWriting(app, v, alive) {
     app.querySelectorAll("[data-lvl]").forEach(b => b.onclick = () => { level = b.dataset.lvl; draw(); });
     app.querySelector("[data-show-models]")?.addEventListener("click", () => { showModels = true; draw(); app.querySelector(".reader-tools")?.scrollIntoView({ block: "start", behavior: "smooth" }); });
     app.querySelectorAll("[data-model]").forEach(b => b.onclick = () => { level = b.dataset.model; draw(); });
-    if (showModels) wireReader(app, plainLines(w.models[level].body), draw);
+    if (showModels) wireReader(app, plainLines(w.models[level].body, () => modelVoice(w, level)), draw);
   };
   draw();
 }

@@ -498,3 +498,17 @@ body.focus .toast { bottom: calc(16px + env(safe-area-inset-bottom, 0px)); }
 .hm-2 { background: color-mix(in srgb, var(--accent) 50%, var(--sunk)) !important; }
 .hm-3 { background: color-mix(in srgb, var(--accent) 75%, var(--sunk)) !important; }
 .hm-4 { background: var(--accent) !important; }
+
+/* Home: progress overview */
+.progress-panel { margin-top: 14px; }
+.ov-rows { display: grid; }
+.ov-row { display: grid; grid-template-columns: 100px 1fr auto 18px; gap: 12px; align-items: center; padding: 10px 0; border-top: 1px solid var(--line); text-decoration: none; color: var(--ink); }
+.ov-row:first-child { border-top: 0; }
+.ov-row:hover .ov-label { color: var(--accent); }
+.ov-label { font-weight: 600; font-size: 15px; }
+.ov-val { color: var(--muted); font-size: 14px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.ov-row svg { width: 16px; height: 16px; color: var(--muted); }
+.ov-row .bar { height: 8px; }
+.legend { display: flex; gap: 14px; color: var(--muted); margin: 8px 0 0; }
+.legend i { display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin-right: 6px; }
+.lg-k { background: var(--accent); } .lg-l { background: var(--hl-line); }

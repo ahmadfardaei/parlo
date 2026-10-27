@@ -35,6 +35,12 @@ export default defineConfig({
         navigateFallback: "index.html",
         runtimeCaching: [
           {
+            // Recorded voices: kept once played, so listening works offline afterwards.
+            urlPattern: ({ url }) => url.pathname.startsWith("/parlo-audio/"),
+            handler: "CacheFirst",
+            options: { cacheName: "parlo-audio", expiration: { maxEntries: 4000 }, cacheableResponse: { statuses: [200] }, rangeRequests: true }
+          },
+          {
             urlPattern: ({ url }) => url.origin === "https://fonts.googleapis.com" || url.origin === "https://fonts.gstatic.com",
             handler: "StaleWhileRevalidate",
             options: { cacheName: "google-fonts", expiration: { maxEntries: 20 } }

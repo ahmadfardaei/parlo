@@ -1,4 +1,4 @@
-import { S, D, esc, ICON, gf, pickEx, canSpeak, say, full, statusOf, statusLabel, setEntry, schedule, dueIds, deckIds, allReviewable, fmtIn, on, schedHTML, lsGet } from "../core.js";
+import { S, D, esc, ICON, gf, pickEx, exVoice, canSpeak, say, full, statusOf, statusLabel, setEntry, schedule, dueIds, deckIds, allReviewable, fmtIn, on, schedHTML, lsGet } from "../core.js";
 import { highlight } from "./unit.js";
 import { nextUnit } from "./home.js";
 
@@ -12,13 +12,13 @@ export function cardData(id) {
   const it = D.items[id];
   if (!it) {
     const e = S.st[id] || {};
-    return { kind: "Saved sentence", from: e.st || "", fromHref: e.src || "", target: "", sentIt: e.ctx ? boldIn(e.ctx, e.it) : esc(e.it), sentEn: e.en || "", meaning: "", say: e.ctx || e.it };
+    return { kind: "Saved sentence", from: e.st || "", fromHref: e.src || "", target: "", sentIt: e.ctx ? boldIn(e.ctx, e.it) : esc(e.it), sentEn: e.en || "", meaning: "", say: e.ctx || e.it, sv: e.vo || "f" };
   }
   const d = it.d, unit = `Unità ${it.u}`;
-  if (it.type === "w") { const ex = pickEx(d.ex, d.exAlt); return { kind: "Word", from: unit, fromHref: `#/unit/${it.u}/words`, target: full(d), sentIt: highlight(ex, d.it), sentEn: d.exEn, meaning: d.en, say: ex }; }
-  if (it.type === "v") { const ex = pickEx(d.ex[0][0], d.exAlt?.[0]); return { kind: "Verb", from: unit, fromHref: `#/unit/${it.u}/verbs`, target: d.inf, sentIt: esc(ex), sentEn: d.ex[0][1], meaning: d.en, extra: d.t.pres.join(" · "), say: ex }; }
+  if (it.type === "w") { const ex = pickEx(d.ex, d.exAlt); return { kind: "Word", from: unit, fromHref: `#/unit/${it.u}/words`, target: full(d), sentIt: highlight(ex, d.it), sentEn: d.exEn, meaning: d.en, say: ex, sv: exVoice(ex, d.exAlt) }; }
+  if (it.type === "v") { const ex = pickEx(d.ex[0][0], d.exAlt?.[0]); return { kind: "Verb", from: unit, fromHref: `#/unit/${it.u}/verbs`, target: d.inf, sentIt: esc(ex), sentEn: d.ex[0][1], meaning: d.en, extra: d.t.pres.join(" · "), say: ex, sv: exVoice(ex, d.exAlt?.[0]) }; }
   const ex = pickEx(d.ex, d.exAlt);
-  return { kind: "Phrase", from: unit, fromHref: `#/unit/${it.u}/phrases`, target: d.it, sentIt: highlight(ex, d.it.split(" ")[0]), sentEn: d.exEn, meaning: d.en, say: ex };
+  return { kind: "Phrase", from: unit, fromHref: `#/unit/${it.u}/phrases`, target: d.it, sentIt: highlight(ex, d.it.split(" ")[0]), sentEn: d.exEn, meaning: d.en, say: ex, sv: exVoice(ex, d.exAlt) };
 }
 
 /* ---------- Mazzo (my deck) ---------- */
@@ -35,7 +35,7 @@ export function viewDeck(app) {
     ${shown.length ? `<div class="deck-grid">${shown.map(id => { const c = cardData(id); return `<div class="panel deck-item">
         <p class="ex-it">${c.sentIt}</p><p class="ex-en">${esc(c.sentEn)}</p>
         <p class="muted small">${c.target ? `<span class="it">${esc(c.target)}</span> = ${esc(c.meaning)} · ` : ""}${c.fromHref ? `<a href="${esc(c.fromHref)}">${esc(c.from)}</a>` : esc(c.from)}</p>
-        <div class="item-actions">${canSpeak ? `<button class="btn quiet small" data-say-text="${esc(c.say)}">${ICON.speak}<span>Listen</span></button>` : ""}
+        <div class="item-actions">${canSpeak ? `<button class="btn quiet small" data-say-text="${esc(c.say)}" data-voice="${c.sv || "f"}">${ICON.speak}<span>Listen</span></button>` : ""}
           <button class="status ${statusOf(id)}" data-status="${esc(id)}" data-toggle-sched>${statusLabel(id)}</button>
           <button class="btn quiet small" data-remove="${esc(id)}">Remove</button></div>
         <div class="sched-wrap" hidden>${schedHTML(id)}</div></div>`; }).join("")}</div>`
@@ -92,7 +92,7 @@ function draw(app, v) {
   if (i > 0) { const [id] = ses.queue.splice(i, 1); ses.queue.unshift(id); }
   const id = ses.queue[0], c = cardData(id), en = S.pref.dir === "en";
   // A card you've never seen is introduced in full, not tested.
-  if (statusOf(id) === "new" && !ses.flipped) { ses.flipped = true; ses.intro = true; setTimeout(() => { if (ses && ses.queue[0] === id) say(c.say); }, 150); }
+  if (statusOf(id) === "new" && !ses.flipped) { ses.flipped = true; ses.intro = true; setTimeout(() => { if (ses && ses.queue[0] === id) say(c.say, c.sv); }, 150); }
   const sentenceFirst = ses.deckMode || !c.target;
   const front = en
     ? `${c.meaning ? `<p class="card-target en">${esc(c.meaning)}</p>` : ""}<p class="card-sent en">${esc(c.sentEn)}</p>`
@@ -106,7 +106,7 @@ function draw(app, v) {
       <p class="card-meta">${ses.intro ? `<span class="pill new">New</span> ` : ""}${esc(c.kind)} · ${esc(c.from)}</p>
       ${front}
       ${ses.flipped ? `<hr class="card-rule">${back}` : `<p class="tap-hint">Try to remember, then tap</p>`}
-      ${ses.flipped && canSpeak ? `<button class="icon-btn listen" data-say-text="${esc(c.say)}" aria-label="Listen">${ICON.speak}</button>` : ""}
+      ${ses.flipped && canSpeak ? `<button class="icon-btn listen" data-say-text="${esc(c.say)}" data-voice="${c.sv || "f"}" aria-label="Listen">${ICON.speak}</button>` : ""}
     </div>
     <div class="card-actions">
     ${ses.flipped ? `<p class="muted small center">${ses.intro ? "Read it and listen. When should you see it again?" : "When should you see this again?"}</p><div class="rate">
@@ -141,7 +141,7 @@ function wire(app, v) {
 function flip(app, v) {
   if (!ses || ses.flipped || !ses.queue.length || nextIndex() < 0) return;
   ses.flipped = true; draw(app, v);
-  if (S.pref.dir === "it") say(cardData(ses.queue[0]).say);
+  if (S.pref.dir === "it") { const c = cardData(ses.queue[0]); say(c.say, c.sv); }
 }
 function rate(app, v, key) {
   if (!ses || !ses.flipped) return;
