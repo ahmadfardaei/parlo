@@ -74,12 +74,13 @@ export function viewSession(app, v) { ses = build(v); draw(app, v); }
 function draw(app, v) {
   if (!ses) return;
   const total = ses.done + ses.queue.length;
+  // Top row: Previous word (top left) · progress · count · end session (top right).
   const top = `<div class="focus-top">
-      <a class="icon-btn" href="${exitHref(v)}" aria-label="End session">${ICON.close}</a>
+      ${ses.history.length ? `<button class="btn small prev-word" data-undo>${ICON.back}<span>Previous word</span></button>` : `<span class="prev-word"></span>`}
       <div class="progress-track" aria-hidden="true"><span style="width:${total ? (ses.done / total) * 100 : 100}%"></span></div>
       <span class="count small" aria-live="polite">${ses.queue.length ? `${ses.done + 1} / ${total}` : ""}</span>
-    </div>
-    ${lastLine()}`;
+      <a class="icon-btn" href="${exitHref(v)}" aria-label="End session">${ICON.close}</a>
+    </div>`;
   if (!ses.queue.length) return drawEnd(app, v, top);
   const i = nextIndex();
   if (i < 0) {
@@ -119,10 +120,6 @@ function draw(app, v) {
 </div>
   </div>`;
   wire(app, v);
-}
-// Shows the previous card and the choice made, with a one-tap way back to change it.
-function lastLine() {
-  return `<div class="last-line">${ses.history.length ? `<button class="btn small" data-undo>${ICON.back}<span>Previous word</span></button>` : ""}</div>`;
 }
 function drawEnd(app, v, top) {
   const s = ses.stats;

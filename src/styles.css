@@ -540,7 +540,11 @@ body.focus .toast { bottom: calc(16px + env(safe-area-inset-bottom, 0px)); }
 .card-meta { right: 104px; }
 .last-line { justify-content: flex-start; }
 /* In focus mode the answer buttons live at the bottom, so messages appear at the top instead. */
-body.focus .toast { top: calc(12px + env(safe-area-inset-top, 0px)); bottom: auto; }
+@media (max-width: 720px) { body.focus .toast { bottom: calc(190px + env(safe-area-inset-bottom, 0px)); } }
 .toast > span { min-width: 0; }
 .toast { width: max-content; max-width: calc(100vw - 32px); }
 .toast > span:first-child { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.focus-top .prev-word { flex: none; min-width: 0; }
+.focus-top span.prev-word { width: 0; }
+@media (max-width: 380px) { .prev-word span { display: none; } }
