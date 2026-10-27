@@ -81,6 +81,9 @@ export function viewHome(app) {
       ${cont ? `<a class="panel row-link continue" href="${esc(cont.href)}">
         <span><span class="eyebrow">${cont.eyebrow}</span><span class="row-title">${esc(cont.title)}</span>${cont.sub ? `<span class="muted small">${esc(cont.sub)}</span>` : ""}</span>${ICON.chev}</a>` : ""}
     </div>
+    <section class="panel quiz-card">
+      <div><p class="eyebrow">Quiz rapido</p><p class="row-title">Test yourself</p><p class="muted small">10 questions on words, verbs and grammar you've studied.</p></div>
+      <div class="btn-row"><a class="btn" href="#/quiz/mix">Start quiz</a><a class="text-btn" href="#/quiz">More quizzes</a></div></section>
     <section class="panel progress-panel" id="overview"><div class="panel-head"><h2>Your progress · ${S.pref.level}</h2><a class="small" href="#/account/settings">change level</a></div><div class="ov-rows"></div></section>
     ${supabase && !S.user && !lsGet("parlo.hide.signin", false) ? `<p class="signin-line small muted"><a href="#/account/settings">Sign in</a> to keep your progress on every device. <button class="text-btn quiet-link" data-hide-signin>Hide</button></p>` : ""}
   `;

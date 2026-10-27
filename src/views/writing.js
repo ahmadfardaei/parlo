@@ -1,6 +1,6 @@
 import { S, esc, ICON, LEVELS, setEntry, debounce, remember, TOPICS, on } from "../core.js";
 import { ensure } from "../data.js";
-import { blocksHTML, plainLines, sentHTML } from "./texts.js";
+import { blocksHTML, plainLines, sentHTML, starHTML } from "./texts.js";
 import { readerTools, wireReader } from "./reading.js";
 import { voiceForName } from "../voice.js";
 export const MODEL_VOICE = { A1: "f", A2: "m", B1: "f", B2: "m" };
@@ -53,7 +53,7 @@ export async function viewWriting(app, v, alive) {
         <div class="l-side"><section class="panel prose"><p>${esc(w.task)}</p>
           <p class="eyebrow">Cover these points</p><ul class="notes">${w.guide.map(g => `<li>${esc(g)}</li>`).join("")}</ul></section></div>
         <div class="l-side2"><details class="group" ${wide ? "open" : ""}><summary><span class="group-title">Useful phrases</span><span class="group-meta">${w.phrases.length}</span></summary>
-          <div class="panel flush reader">${w.phrases.map(p => `<div class="gloss">${sentHTML(p, `#/write/${w.id}`, w.title)}<span class="muted">${esc(p.en)}</span></div>`).join("")}</div></details></div>
+          <div class="panel flush reader">${w.phrases.map(p => `<div class="gloss"><div class="gloss-main">${sentHTML(p, `#/write/${w.id}`, w.title)}<span class="muted">${esc(p.en)}</span></div>${starHTML(p, `#/write/${w.id}`, w.title)}</div>`).join("")}</div></details></div>
       </aside></div>`;
     const ta = app.querySelector("#draft"), wc = app.querySelector("#wc");
     const upd = () => { const n = countWords(ta.value); wc.textContent = `${n} words · aim for ${lo}–${hi} at ${level}${n ? (n < lo ? " · keep going" : n > hi ? " · a bit long" : " · good length") : ""}. Saved automatically.`; };

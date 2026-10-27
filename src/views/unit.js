@@ -1,3 +1,5 @@
+import { starHTML } from "./texts.js";
+import { exVoice } from "../core.js";
 import { S, D, esc, rich, ICON, full, unitByN, counts, barHTML, statusOf, statusLabel, inDeck, schedHTML, canSpeak, TOPICS, remember, shuffle, pick, say, openSheet, gf, pickEx } from "../core.js";
 
 export const PRON = ["io", "tu", "lui / lei", "noi", "voi", "loro"];
@@ -37,11 +39,13 @@ function itemHTML(id) {
   if (it.type === "w") {
     term = d.art ? `<span class="art ${d.g}">${esc(d.art)}</span>${d.art.endsWith("'") ? "" : " "}${esc(d.it)}` : esc(d.it);
     sub = d.g ? `<span class="tag ${d.g}">${d.g === "m" ? "masculine" : "feminine"}${d.pl ? " · plural " + esc(d.pl) : ""}</span>` : `<span class="tag">${POS[d.pos] || esc(d.pos)}</span>`;
-    more = `<p class="ex-it">${highlight(pickEx(d.ex, d.exAlt), d.it)}</p><p class="ex-en">${esc(d.exEn)}</p>${d.note ? `<p class="note">${rich(d.note)}</p>` : ""}`;
+    const ex = pickEx(d.ex, d.exAlt);
+    more = `<div class="ex-row"><p class="ex-it">${highlight(ex, d.it)}</p>${starHTML({ it: ex, en: d.exEn }, `#/unit/${it.u}/words`, `Unità ${it.u}`, exVoice(ex, d.exAlt))}</div><p class="ex-en">${esc(d.exEn)}</p>${d.note ? `<p class="note">${rich(d.note)}</p>` : ""}`;
   } else {
     term = esc(d.it);
     sub = `<span class="tag">${esc(d.reg)}</span>`;
-    more = `<p class="muted small">Literally: “${esc(d.lit)}”</p><p class="ex-it">${esc(pickEx(d.ex, d.exAlt))}</p><p class="ex-en">${esc(d.exEn)}</p>${d.note ? `<p class="note">${rich(d.note)}</p>` : ""}`;
+    const ex = pickEx(d.ex, d.exAlt);
+    more = `<p class="muted small">Literally: “${esc(d.lit)}”</p><div class="ex-row"><p class="ex-it">${esc(ex)}</p>${starHTML({ it: ex, en: d.exEn }, `#/unit/${it.u}/phrases`, `Unità ${it.u}`, exVoice(ex, d.exAlt))}</div><p class="ex-en">${esc(d.exEn)}</p>${d.note ? `<p class="note">${rich(d.note)}</p>` : ""}`;
   }
   return `<div class="item">
     <button class="item-main" data-expand aria-haspopup="dialog">
@@ -61,7 +65,7 @@ function verbHTML(id) {
       <div class="item-tags"><span class="tag">${esc(v.kind)}</span><span class="tag">past with ${esc(v.aux)}</span></div>
       <div class="seg small scroll" role="group" aria-label="Tense">${TENSES.map((t, i) => `<button data-tense="${t.k}" aria-pressed="${i === 0}">${t.it}</button>`).join("")}</div>
       <div class="conj-wrap">${conjHTML(v, "pres")}</div>
-      ${v.ex.map(([a, b], i) => `<p class="ex-it">${esc(pickEx(a, v.exAlt?.[i]))}</p><p class="ex-en">${esc(b)}</p>`).join("")}
+      ${v.ex.map(([a, b], i) => { const ex = pickEx(a, v.exAlt?.[i]); return `<div class="ex-row"><p class="ex-it">${esc(ex)}</p>${starHTML({ it: ex, en: b }, `#/unit/${D.items[id].u}/verbs`, `Unità ${D.items[id].u}`, exVoice(ex, v.exAlt?.[i]))}</div><p class="ex-en">${esc(b)}</p>`; }).join("")}
       <p class="note">${rich(v.note)}</p>
       ${actionsHTML(id)}
     </div></div>`;

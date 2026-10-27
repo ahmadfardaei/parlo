@@ -30,7 +30,7 @@ export function viewDeck(app) {
   app.innerHTML = `<header class="page-head"><h1>Mazzo</h1><p class="muted">Sentences you saved, with the words in context. Tap ★ on any word, or tap a sentence in a text, to add it here.</p></header>
     ${ids.length ? `<section class="panel deck-head">
         <div><p class="big-line">${ids.length} sentence${ids.length === 1 ? "" : "s"}</p><p class="muted small">${ready ? `${ready} ready to practise` : "Nothing due. You can still go through them."}</p></div>
-        <a class="btn primary" href="#/session/deck">Practise my deck</a></section>
+        <div class="btn-row"><a class="btn primary" href="#/session/deck">Practise my deck</a><a class="btn" href="#/quiz/deck">Quiz</a></div></section>
       <div class="list-tools"><div class="seg small" role="group" aria-label="Show">${[["all", "All"], ["units", "From units"], ["texts", "From texts"]].map(([k, l]) => `<button data-df="${k}" aria-pressed="${deckFilter === k}">${l}</button>`).join("")}</div></div>` : ""}
     ${shown.length ? `<div class="deck-grid">${shown.map(id => { const c = cardData(id); return `<div class="panel deck-item">
         <p class="ex-it">${c.sentIt}</p><p class="ex-en">${esc(c.sentEn)}</p>
@@ -78,8 +78,8 @@ function draw(app, v) {
       <a class="icon-btn" href="${exitHref(v)}" aria-label="End session">${ICON.close}</a>
       <div class="progress-track" aria-hidden="true"><span style="width:${total ? (ses.done / total) * 100 : 100}%"></span></div>
       <span class="count small" aria-live="polite">${ses.queue.length ? `${ses.done + 1} / ${total}` : ""}</span>
-      <button class="icon-btn" data-undo ${ses.history.length ? "" : "disabled"} aria-label="Back to the previous card" title="Back">${ICON.back}</button>
-    </div>`;
+    </div>
+    ${lastLine()}`;
   if (!ses.queue.length) return drawEnd(app, v, top);
   const i = nextIndex();
   if (i < 0) {
@@ -90,7 +90,7 @@ function draw(app, v) {
     return wire(app, v);
   }
   if (i > 0) { const [id] = ses.queue.splice(i, 1); ses.queue.unshift(id); }
-  const id = ses.queue[0], c = cardData(id), en = S.pref.dir === "en";
+  const id = ses.queue[0], c = cardData(id), en = false;
   // A card you've never seen is introduced in full, not tested.
   if (statusOf(id) === "new" && !ses.flipped) { ses.flipped = true; ses.intro = true; setTimeout(() => { if (ses && ses.queue[0] === id) say(c.say, c.sv); }, 150); }
   const sentenceFirst = ses.deckMode || !c.target;
@@ -117,6 +117,15 @@ function draw(app, v) {
   </div>`;
   wire(app, v);
 }
+// Shows the previous card and the choice made, with a one-tap way back to change it.
+const CHOICE = { "10m": "10 min", "1d": "1 day", "3d": "3 days", "7d": "7 days", known: "I already know it" };
+function lastLine() {
+  const h = ses.history[ses.history.length - 1];
+  if (!h) return `<div class="last-line"></div>`;
+  const c = cardData(h.id);
+  return `<div class="last-line"><span class="muted small">Previous: <span class="it">${esc(c.target || c.sentIt.replace(/<[^>]+>/g, "").slice(0, 40))}</span> → ${CHOICE[h.key] || ""}</span>
+    <button class="btn small" data-undo>${ICON.back}<span>Change</span></button></div>`;
+}
 function drawEnd(app, v, top) {
   const s = ses.stats;
   const later = allReviewable().filter(id => statusOf(id) === "later");
@@ -141,12 +150,12 @@ function wire(app, v) {
 function flip(app, v) {
   if (!ses || ses.flipped || !ses.queue.length || nextIndex() < 0) return;
   ses.flipped = true; draw(app, v);
-  if (S.pref.dir === "it") { const c = cardData(ses.queue[0]); say(c.say, c.sv); }
+  { const c = cardData(ses.queue[0]); say(c.say, c.sv); }
 }
 function rate(app, v, key) {
   if (!ses || !ses.flipped) return;
   const id = ses.queue[0];
-  ses.history.push({ id, prev: S.st[id] ? { ...S.st[id] } : null, queue: [...ses.queue], done: ses.done, stats: { ...ses.stats } });
+  ses.history.push({ id, key, prev: S.st[id] ? { ...S.st[id] } : null, queue: [...ses.queue], done: ses.done, stats: { ...ses.stats } });
   if (ses.history.length > 30) ses.history.shift();
   if (statusOf(id) === "new") ses.stats.learned++;
   ses.queue.shift();

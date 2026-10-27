@@ -11,6 +11,7 @@ import { viewWriting } from "./views/writing.js";
 import { viewSpeaking } from "./views/speaking.js";
 import { viewDeck, viewSession } from "./views/review.js";
 import { viewAccount, onAuthEvent } from "./views/account.js";
+import { viewQuizHub, viewQuiz } from "./views/quiz.js";
 import { ensure } from "./data.js";
 
 const app = $("#app");
@@ -28,12 +29,13 @@ export function parseHash() {
     case "review": return { name: "home" }; // the review hub now lives on the home screen
     case "deck": return { name: "deck" };
     case "session": return { name: "session", src: p[1] || "due", u: p[2] ? +p[2] : undefined, focus: true };
+    case "quiz": return p[1] ? { name: "quiz", scope: p[1], focus: true } : { name: "quizhub" };
     case "account": return { name: "account", tab: ["stats", "settings", "data"].includes(p[1]) ? p[1] : "stats" };
     default: return { name: "home" };
   }
 }
-const TAB_OF = { home: "home", learn: "learn", unit: "learn", grammar: "learn", reading: "learn", writing: "learn", speaking: "learn", review: "home", deck: "deck", session: "home", account: "account" };
-const VIEWS = { home: viewHome, learn: viewLearn, unit: viewUnit, grammar: viewGrammar, reading: viewReading, writing: viewWriting, speaking: viewSpeaking, deck: viewDeck, session: viewSession, account: viewAccount };
+const TAB_OF = { home: "home", learn: "learn", unit: "learn", grammar: "learn", reading: "learn", writing: "learn", speaking: "learn", review: "home", deck: "deck", session: "home", account: "account", quiz: "home", quizhub: "home" };
+const VIEWS = { home: viewHome, learn: viewLearn, unit: viewUnit, grammar: viewGrammar, reading: viewReading, writing: viewWriting, speaking: viewSpeaking, deck: viewDeck, quiz: viewQuiz, quizhub: viewQuizHub, session: viewSession, account: viewAccount };
 let renderToken = 0, prevPath = "";
 export async function render() {
   if (!D.units.length) return;

@@ -512,3 +512,23 @@ body.focus .toast { bottom: calc(16px + env(safe-area-inset-bottom, 0px)); }
 .legend { display: flex; gap: 14px; color: var(--muted); margin: 8px 0 0; }
 .legend i { display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin-right: 6px; }
 .lg-k { background: var(--accent); } .lg-l { background: var(--hl-line); }
+
+.quiz-card { margin-top: 14px; }
+.link-like { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+
+.quiz-card { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; }
+.quiz-card .row-title { margin: 2px 0; font-size: 17px; font-weight: 600; }
+.quiz-card p { margin: 0; }
+.last-line { display: flex; align-items: center; justify-content: space-between; gap: 10px; min-height: 40px; margin: -8px 0 10px; }
+.last-line .muted { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+.last-line .btn { flex: none; }
+
+/* Sentence stars */
+.ex-row { display: flex; align-items: flex-start; gap: 10px; }
+.ex-row .ex-it { flex: 1; min-width: 0; }
+.ex-row .star-sent { margin-top: 8px; }
+.star-sent { color: var(--muted); }
+.star-sent[aria-pressed="true"] { color: var(--due); border-color: var(--due); background: var(--due-soft); }
+.star-sent[aria-pressed="true"] svg path { fill: currentColor; }
+.gloss { grid-template-columns: 1fr auto; align-items: center; gap: 4px 12px; }
+.gloss-main { display: grid; gap: 2px; min-width: 0; }

@@ -1,6 +1,6 @@
 import { S, esc, ICON, setEntry, remember, TOPICS, on, showToast } from "../core.js";
 import { ensure } from "../data.js";
-import { plainLines, sentHTML } from "./texts.js";
+import { plainLines, sentHTML, starHTML } from "./texts.js";
 import { readerTools, wireReader } from "./reading.js";
 import { modelsHTML, modelVoice } from "./writing.js";
 
@@ -33,7 +33,7 @@ export async function viewSpeaking(app, v, alive) {
         <header class="page-head"><p class="eyebrow">${esc(TOPICS[t.topic] || "")}</p><h1 class="it">${esc(t.title)}</h1><p class="muted">${esc(t.en)}</p></header></div>
       <div class="l-main">
         <section class="panel prose"><p>${esc(t.task)}</p></section>
-        <section class="g-sec"><h2>Talk about…</h2><div class="panel flush reader">${t.questions.map(q => `<div class="gloss">${sentHTML(q, `#/speak/${t.id}`, t.title)}<span class="muted">${esc(q.en)}</span></div>`).join("")}</div></section>
+        <section class="g-sec"><h2>Talk about…</h2><div class="panel flush reader">${t.questions.map(q => `<div class="gloss"><div class="gloss-main">${sentHTML(q, `#/speak/${t.id}`, t.title)}<span class="muted">${esc(q.en)}</span></div>${starHTML(q, `#/speak/${t.id}`, t.title)}</div>`).join("")}</div></section>
         <section class="g-sec">
           ${showModels ? `<h2>Example talks</h2>${readerTools(showEn)}${modelsHTML(t, level, showEn, `#/speak/${t.id}`)}`
             : `<div class="panel note-card"><p>Try it yourself first. Then listen to how someone at each level talks about it.</p><button class="btn primary" data-show-models>Show example talks</button></div>`}
@@ -48,7 +48,7 @@ export async function viewSpeaking(app, v, alive) {
           ${done ? `<p class="ok-text">${ICON.check} Practised</p>` : `<button class="btn quiet small" data-sp-done>Mark as practised</button>`}
         </section></div>
         <div class="l-side2"><details class="group" ${wide ? "open" : ""}><summary><span class="group-title">Useful phrases</span><span class="group-meta">${t.phrases.length}</span></summary>
-          <div class="panel flush reader">${t.phrases.map(p => `<div class="gloss">${sentHTML(p, `#/speak/${t.id}`, t.title)}<span class="muted">${esc(p.en)}</span></div>`).join("")}</div></details></div>
+          <div class="panel flush reader">${t.phrases.map(p => `<div class="gloss"><div class="gloss-main">${sentHTML(p, `#/speak/${t.id}`, t.title)}<span class="muted">${esc(p.en)}</span></div>${starHTML(p, `#/speak/${t.id}`, t.title)}</div>`).join("")}</div></details></div>
       </aside></div>`;
     app.querySelectorAll("[data-min]").forEach(b => b.onclick = () => { if (timer) return; minutes = +b.dataset.min; left = 0; draw(); });
     app.querySelector("[data-start]").onclick = start;

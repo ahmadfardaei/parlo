@@ -11,6 +11,13 @@ export function sentHTML(s, src, title, voice = "f") {
   return `<span class="sent${inDeck(sentenceId(s.it)) ? " saved" : ""}" data-sent="${k}" role="button" tabindex="0">${esc(s.it)}</span>`;
 }
 // body: [{ who?, s: [{it,en}] }]. Shows English under each paragraph when showEn is true.
+// A ☆ button that saves one sentence (with its translation) to the deck.
+export function starHTML(s, src, title, voice = "f") {
+  const k = "s" + (++seq);
+  SENT.set(k, { it: s.it, en: s.en, src, title, voice });
+  const on = inDeck(sentenceId(s.it));
+  return `<button class="icon-btn small star-sent" data-sent-star="${k}" aria-pressed="${on}" aria-label="${on ? "Remove sentence from" : "Save sentence to"} your deck" title="Save sentence">${ICON.star}</button>`;
+}
 // voiceOf(block) picks the recorded voice for each paragraph or dialogue turn.
 export function blocksHTML(body, src, title, showEn, voiceOf = () => "f") {
   return body.map(b => `<div class="para${b.who ? " turn" : ""}">${b.who ? `<span class="who">${esc(b.who)}</span>` : ""}
@@ -30,10 +37,20 @@ function sentenceSheet(k) {
         <button class="btn ${saved ? "" : "primary"}" data-sent-save="${k}">${saved ? `${ICON.check} In your deck` : `${ICON.star} Save to deck`}</button>
       </div></div>`);
 }
-function markSaved() { $$(".sent").forEach(el => { const x = SENT.get(el.dataset.sent); if (x) el.classList.toggle("saved", inDeck(sentenceId(x.it))); }); }
+function markSaved() {
+  $$(".sent").forEach(el => { const x = SENT.get(el.dataset.sent); if (x) el.classList.toggle("saved", inDeck(sentenceId(x.it))); });
+  $$("[data-sent-star]").forEach(el => { const x = SENT.get(el.dataset.sentStar); if (x) el.setAttribute("aria-pressed", inDeck(sentenceId(x.it))); });
+}
 on("change", markSaved);
 
 document.addEventListener("click", e => {
+  const st = e.target.closest("[data-sent-star]");
+  if (st) {
+    const x = SENT.get(st.dataset.sentStar); if (!x) return;
+    const id = sentenceId(x.it);
+    if (inDeck(id)) setEntry(id, { s: 0 }); else saveSentence({ it: x.it, en: x.en, src: x.src, srcTitle: x.title, voice: x.voice });
+    return;
+  }
   const b = e.target.closest("[data-sent-save]");
   if (b) {
     const x = SENT.get(b.dataset.sentSave); if (!x) return;

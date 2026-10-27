@@ -2,7 +2,7 @@ import { S, D, esc, rich, ICON, canSpeak, setEntry, shuffle, pick, say, lsGet, l
 import { ensure } from "../data.js";
 import { PRON, TENSES } from "./unit.js";
 import { GTOPICS } from "./learn.js";
-import { sentHTML } from "./texts.js";
+import { sentHTML, starHTML } from "./texts.js";
 
 const ACCENTS = ["à", "è", "é", "ì", "ò", "ù"];
 const score = id => S.st["g:" + id] || null;
@@ -31,7 +31,7 @@ export async function viewGrammar(app, v, alive) {
     <section class="g-sec"><h2>The idea</h2><div class="panel prose"><p>${g.meaning}</p></div></section>
     <section class="g-sec"><h2>When to use it</h2><div class="panel flush">${g.uses.map(u => `<div class="use">
       <p class="use-h">${esc(u.h)}</p><p class="small">${u.t}</p>
-      <p class="ex-it">${sentHTML({ it: u.ex[0], en: u.ex[1] }, `#/grammar/${g.id}`, g.title)}</p><p class="ex-en">${esc(u.ex[1])}</p></div>`).join("")}</div>
+      <div class="ex-row"><p class="ex-it">${sentHTML({ it: u.ex[0], en: u.ex[1] }, `#/grammar/${g.id}`, g.title)}</p>${starHTML({ it: u.ex[0], en: u.ex[1] }, `#/grammar/${g.id}`, g.title)}</div><p class="ex-en">${esc(u.ex[1])}</p></div>`).join("")}</div>
       <p class="muted small">Tap any example to hear it or save it to your deck.</p></section>
     <section class="g-sec"><h2>How it works</h2>
       <div class="panel prose"><p>${g.form.intro}</p></div>
@@ -54,7 +54,7 @@ export async function viewGrammar(app, v, alive) {
 const norm = s => String(s).toLowerCase().replace(/[’‘`´]/g, "'").replace(/\s+/g, " ").trim().replace(/[.!?,;]+$/, "");
 const plain = s => s.normalize("NFD").replace(/[̀-ͯ]/g, "");
 const forms = f => /[oi]\/[ae]\b/.test(f) ? [f.replace(/([oi])\/([ae])\b/, "$1"), f.replace(/([oi])\/([ae])\b/, "$2")] : [f];
-function judge(input, answers) {
+export function judge(input, answers) {
   const n = norm(input), all = answers.flatMap(forms).map(norm);
   if (!n) return "empty";
   if (all.includes(n)) return "ok";

@@ -44,7 +44,6 @@ export function viewAccount(app, v = S.view) {
       <div class="setting"><span>Your level</span><div class="seg small" role="group" aria-label="Your level">${LEVELS.map(l => `<button data-level="${l}" aria-pressed="${S.pref.level === l}">${l}</button>`).join("")}</div></div>
       <div class="setting"><span>Forms about you</span><div class="seg small" role="group" aria-label="Gendered forms about you">${[["m", "stanco"], ["f", "stanca"], ["x", "stanco/a"]].map(([k, l]) => `<button class="it" data-gender="${k}" aria-pressed="${(S.pref.gender || "x") === k}">${l}</button>`).join("")}</div></div>
       <div class="setting"><span>New words per session</span><div class="seg small" role="group" aria-label="New words per session">${[0, 10, 20, 30].map(n => `<button data-newn="${n}" aria-pressed="${S.pref.newN === n}">${n}</button>`).join("")}</div></div>
-      <div class="setting"><span>Card front</span><div class="seg small" role="group" aria-label="Card front">${[["it", "Italian"], ["en", "English"]].map(([k, l]) => `<button data-dir="${k}" aria-pressed="${S.pref.dir === k}">${l}</button>`).join("")}</div></div>
       <div class="setting"><span>Speech speed</span><div class="seg small" role="group" aria-label="Speech speed">${[["0.75", "Slow"], ["0.92", "Normal"]].map(([r, l]) => `<button data-rate="${r}" aria-pressed="${String(S.pref.rate || 0.92) === r}">${l}</button>`).join("")}</div></div>
       <div class="setting"><span>Install the app</span><div>${installHTML()}</div></div>
     </section>`;

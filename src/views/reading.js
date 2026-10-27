@@ -1,6 +1,6 @@
 import { S, esc, ICON, canSpeak, setEntry, savePref, remember, speakAll, lsGet, lsSet, TOPICS, shuffle, openSheet } from "../core.js";
 import { ensure } from "../data.js";
-import { blocksHTML, plainLines, sentHTML, sizeControlHTML } from "./texts.js";
+import { blocksHTML, plainLines, sentHTML, sizeControlHTML, starHTML } from "./texts.js";
 import { voiceForName, narratorVoice } from "../voice.js";
 
 export function readerTools(showEn) {
@@ -59,7 +59,7 @@ export async function viewReading(app, v, alive) {
       <aside class="l-aside">
         <div class="l-side">${readerTools(showEn)}</div>
         <div class="l-side2"><details class="group" ${wide ? "open" : ""}><summary><span class="group-title">Glossary</span><span class="group-meta">${r.glossary.length} words</span></summary>
-          <div class="panel flush reader">${r.glossary.map(g => `<div class="gloss">${sentHTML({ it: g.it, en: g.en }, `#/read/${r.id}`, r.title)}<span class="muted">${esc(g.en)}</span></div>`).join("")}</div></details></div>
+          <div class="panel flush reader">${r.glossary.map(g => `<div class="gloss"><div class="gloss-main">${sentHTML({ it: g.it, en: g.en }, `#/read/${r.id}`, r.title)}<span class="muted">${esc(g.en)}</span></div>${starHTML({ it: g.it, en: g.en }, `#/read/${r.id}`, r.title)}</div>`).join("")}</div></details></div>
       </aside></div>`;
     wireReader(app, plainLines(r.body, voiceOf), draw);
     let answered = 0, correct = 0;

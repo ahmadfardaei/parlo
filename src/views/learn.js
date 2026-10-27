@@ -23,7 +23,8 @@ export async function viewLearn(app, v, alive) {
     <div class="list-tools">
       ${modeless ? `<p class="muted small">${SECTIONS.find(s => s.key === sec).en}. Each task has examples for every level.</p>` : `<div class="seg small" role="group" aria-label="Group by">
         <button data-groupby="level" aria-pressed="${byLevel()}">By level</button><button data-groupby="topic" aria-pressed="${!byLevel()}">By topic</button></div>`}
-      ${sec === "vocab" ? `<input class="input search" id="vsearch" type="search" placeholder="Search words, verbs, phrases" aria-label="Search the vocabulary">` : ""}
+      ${sec === "vocab" ? `<input class="input search" id="vsearch" type="search" placeholder="Search words, verbs, phrases" aria-label="Search the vocabulary"><a class="btn small" href="#/quiz/vocab">Quiz</a>` : ""}
+      ${sec === "grammar" ? `<a class="btn small" href="#/quiz/grammar">Quiz</a>` : ""}
     </div>
     <div id="learn-body"><p class="muted">Loading…</p></div>`;
   app.querySelectorAll("[data-groupby]").forEach(b => b.onclick = () => { savePref({ groupBy: b.dataset.groupby }); viewLearn(app, v, alive); });
