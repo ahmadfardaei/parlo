@@ -1,4 +1,4 @@
-import { S, D, esc, ICON, gf, pickEx, exVoice, canSpeak, say, full, statusOf, statusLabel, setEntry, schedule, dueIds, deckIds, allReviewable, fmtIn, on, schedHTML, lsGet } from "../core.js";
+import { S, D, esc, ICON, gf, pickEx, exVoice, inDeck, canSpeak, say, full, statusOf, statusLabel, setEntry, schedule, dueIds, deckIds, allReviewable, fmtIn, on, schedHTML, lsGet } from "../core.js";
 import { highlight } from "./unit.js";
 import { nextUnit } from "./home.js";
 
@@ -106,25 +106,23 @@ function draw(app, v) {
       <p class="card-meta">${ses.intro ? `<span class="pill new">New</span> ` : ""}${esc(c.kind)} · ${esc(c.from)}</p>
       ${front}
       ${ses.flipped ? `<hr class="card-rule">${back}` : `<p class="tap-hint">Try to remember, then tap</p>`}
-      ${ses.flipped && canSpeak ? `<button class="icon-btn listen" data-say-text="${esc(c.say)}" data-voice="${c.sv || "f"}" aria-label="Listen">${ICON.speak}</button>` : ""}
+      <span class="card-corner">
+        <button class="icon-btn star-card" data-deck="${esc(id)}" aria-pressed="${inDeck(id)}" aria-label="${inDeck(id) ? "Remove from" : "Add to"} your deck" title="Your deck">${ICON.star}</button>
+        ${ses.flipped && canSpeak ? `<button class="icon-btn" data-say-text="${esc(c.say)}" data-voice="${c.sv || "f"}" aria-label="Listen">${ICON.speak}</button>` : ""}
+      </span>
     </div>
     <div class="card-actions">
     ${ses.flipped ? `<p class="muted small center">${ses.intro ? "Read it and listen. When should you see it again?" : "When should you see this again?"}</p><div class="rate">
       <button class="btn rate-again" data-rate="10m">10 min</button><button class="btn" data-rate="1d">1 day</button><button class="btn" data-rate="3d">3 days</button><button class="btn" data-rate="7d">7 days</button>
       <button class="btn rate-know" data-rate="known">I already know it</button></div>`
       : `<button class="btn primary large wide" data-flip>Show answer</button>`}
-    <p class="muted small center keys">Space: show · 1–5: choose · ←: back</p></div>
+</div>
   </div>`;
   wire(app, v);
 }
 // Shows the previous card and the choice made, with a one-tap way back to change it.
-const CHOICE = { "10m": "10 min", "1d": "1 day", "3d": "3 days", "7d": "7 days", known: "I already know it" };
 function lastLine() {
-  const h = ses.history[ses.history.length - 1];
-  if (!h) return `<div class="last-line"></div>`;
-  const c = cardData(h.id);
-  return `<div class="last-line"><span class="muted small">Previous: <span class="it">${esc(c.target || c.sentIt.replace(/<[^>]+>/g, "").slice(0, 40))}</span> → ${CHOICE[h.key] || ""}</span>
-    <button class="btn small" data-undo>${ICON.back}<span>Change</span></button></div>`;
+  return `<div class="last-line">${ses.history.length ? `<button class="btn small" data-undo>${ICON.back}<span>Previous word</span></button>` : ""}</div>`;
 }
 function drawEnd(app, v, top) {
   const s = ses.stats;

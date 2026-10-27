@@ -532,3 +532,15 @@ body.focus .toast { bottom: calc(16px + env(safe-area-inset-bottom, 0px)); }
 .star-sent[aria-pressed="true"] svg path { fill: currentColor; }
 .gloss { grid-template-columns: 1fr auto; align-items: center; gap: 4px 12px; }
 .gloss-main { display: grid; gap: 2px; min-width: 0; }
+
+/* Review card corner: star + listen */
+.card-corner { position: absolute; top: 10px; right: 10px; display: flex; gap: 6px; }
+.star-card[aria-pressed="true"] { color: var(--due); border-color: var(--due); background: var(--due-soft); }
+.star-card[aria-pressed="true"] svg path { fill: currentColor; }
+.card-meta { right: 104px; }
+.last-line { justify-content: flex-start; }
+/* In focus mode the answer buttons live at the bottom, so messages appear at the top instead. */
+body.focus .toast { top: calc(12px + env(safe-area-inset-top, 0px)); bottom: auto; }
+.toast > span { min-width: 0; }
+.toast { width: max-content; max-width: calc(100vw - 32px); }
+.toast > span:first-child { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
