@@ -1,4 +1,4 @@
-import { S, D, esc, rich, ICON, canSpeak, setEntry, shuffle, pick, say, lsGet, lsSet, remember, gf } from "../core.js";
+import { S, D, esc, rich, ICON, canSpeak, setEntry, shuffle, pick, say, lsGet, lsSet, remember, gf, judge } from "../core.js";
 import { ensure } from "../data.js";
 import { PRON, TENSES } from "./unit.js";
 import { GTOPICS } from "./learn.js";
@@ -51,18 +51,15 @@ export async function viewGrammar(app, v, alive) {
 }
 
 /* ---------- Exercises ---------- */
-const norm = s => String(s).toLowerCase().replace(/[’‘`´]/g, "'").replace(/\s+/g, " ").trim().replace(/[.!?,;]+$/, "");
-const plain = s => s.normalize("NFD").replace(/[̀-ͯ]/g, "");
-const forms = f => /[oi]\/[ae]\b/.test(f) ? [f.replace(/([oi])\/([ae])\b/, "$1"), f.replace(/([oi])\/([ae])\b/, "$2")] : [f];
-export function judge(input, answers) {
-  const n = norm(input), all = answers.flatMap(forms).map(norm);
-  if (!n) return "empty";
-  if (all.includes(n)) return "ok";
-  if (all.some(a => plain(a) === plain(n))) return "accent";
-  return "no";
-}
+export { judge };
 let drillLevel = lsGet("parlo.drillLevel", "A2");
 
+// What the learner got wrong, with the right answer.
+function missedHTML(items, log) {
+  const miss = items.filter((_, k) => log[k] === false);
+  if (!miss.length) return "";
+  return `<div class="missed"><p class="eyebrow">To look at again</p><ul>${miss.map(it => `<li><span class="it">${esc(it.q).replace("___", `<b>${esc(it.k === "mc" ? it.a : gf(it.a[0], it.io))}</b>`)}</span></li>`).join("")}</ul></div>`;
+}
 function practice(app, g, mode) {
   let items;
   if (mode === "drill") {
@@ -86,7 +83,8 @@ function practice(app, g, mode) {
       app.innerHTML = shell(`<div class="panel result"><p class="eyebrow">Your score</p><p class="score">${right}<span>/${items.length}</span></p>
         <p>${right === items.length ? "Perfetto!" : right >= items.length * 0.75 ? "Molto bene!" : right >= items.length / 2 ? "Bene. Keep going." : "Read the lesson again, then try once more."}</p>
         ${mode === "drill" ? `<div class="seg small" role="group" aria-label="Verbs from">${[["A1", "A1 verbs"], ["A2", "A1–A2"], ["B1", "A1–B1"], ["ALL", "All"]].map(([k, l]) => `<button data-dl="${k}" aria-pressed="${drillLevel === k}">${l}</button>`).join("")}</div>` : ""}
-        <div class="btn-row center"><button class="btn primary" data-again>${mode === "drill" ? "10 more verbs" : "Try again"}</button><a class="btn" href="#/grammar/${g.id}">Back to the lesson</a></div></div>`);
+        ${missedHTML(items, log)}
+        <div class="btn-row center"><button class="btn primary" data-again>${mode === "drill" ? "10 more verbs" : "Try again"}</button>${mode === "practice" ? `<a class="btn" href="#/say/grammar/${g.id}">Say it: 5 sentences</a>` : ""}<a class="btn quiet" href="#/grammar/${g.id}">Back to the lesson</a></div></div>`);
       app.querySelector("[data-again]").onclick = () => practice(app, g, mode);
       app.querySelectorAll("[data-dl]").forEach(b => b.onclick = () => { drillLevel = b.dataset.dl; lsSet("parlo.drillLevel", drillLevel); practice(app, g, mode); });
       return;
@@ -123,7 +121,7 @@ function practice(app, g, mode) {
         if (answered) { i++; draw(); return; }
         const r = judge(inp.value, it.a);
         if (r === "empty") { inp.focus(); return; }
-        const ok = r !== "no";
+        const ok = r === "ok" || r === "accent";
         inp.disabled = true; inp.classList.add(ok ? "right" : "wrong");
         app.querySelectorAll(".answer-form button, [data-acc]").forEach(b => b.disabled = true);
         if (ok) say(it.a[0]);

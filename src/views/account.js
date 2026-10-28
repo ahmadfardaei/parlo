@@ -1,4 +1,4 @@
-import { S, esc, ICON, LEVELS, LEVEL_NAMES, savePref, showToast, switchUser, displayName, sync, pull, push, resetAll, mergeEntries, applyChanged, markDirty, unitOf, lsDel, emit, go, syncText, activityByDay, ACT_CATS, fmtDur, dayKey } from "../core.js";
+import { S, D, esc, ICON, LEVELS, LEVEL_NAMES, savePref, showToast, switchUser, displayName, sync, pull, push, resetAll, mergeEntries, applyChanged, markDirty, unitOf, lsDel, emit, go, syncText, activityByDay, ACT_CATS, fmtDur, dayKey, learned, deckIds } from "../core.js";
 import { supabase, appUrl } from "../supabase.js";
 
 let mode = "signin", recovery = false, msg = null, armed = null;
@@ -34,19 +34,28 @@ export function onAuthEvent(event, session) {
   if (event === "PASSWORD_RECOVERY") recovery = true;
   const was = !S.user;
   switchUser(session?.user || null);
-  if (event === "PASSWORD_RECOVERY") go("#/account/settings");
+  if (event === "PASSWORD_RECOVERY") go("#/account/data");
   else if (event === "SIGNED_IN" && was && S.view.name === "account") { msg = null; showToast("Signed in. Your progress now syncs."); go("#/"); }
 }
 
 export function viewAccount(app, v = S.view) {
   const tab = v.tab || "stats";
-  const prefs = `<section class="panel"><h2>Learning</h2>
-      <div class="setting"><span>Learning mode</span><div class="seg small" role="group" aria-label="Learning mode">${[["path", "Path"], ["self", "Free study"]].map(([k, l]) => `<button data-lmode="${k}" aria-pressed="${(S.pref.mode || "self") === k}">${l}</button>`).join("")}</div></div>
-      <div class="setting"><span>Your level</span><div class="seg small" role="group" aria-label="Your level">${LEVELS.map(l => `<button data-level="${l}" aria-pressed="${S.pref.level === l}">${l}</button>`).join("")}</div></div>
-      <div class="setting"><span>Forms about you</span><div class="seg small" role="group" aria-label="Gendered forms about you">${[["m", "stanco"], ["f", "stanca"], ["x", "stanco/a"]].map(([k, l]) => `<button class="it" data-gender="${k}" aria-pressed="${(S.pref.gender || "x") === k}">${l}</button>`).join("")}</div></div>
-      <div class="setting"><span>New words per session</span><div class="seg small" role="group" aria-label="New words per session">${[0, 10, 20, 30].map(n => `<button data-newn="${n}" aria-pressed="${S.pref.newN === n}">${n}</button>`).join("")}</div></div>
-      <div class="setting"><span>Speech speed</span><div class="seg small" role="group" aria-label="Speech speed">${[["0.75", "Slow"], ["0.92", "Normal"]].map(([r, l]) => `<button data-rate="${r}" aria-pressed="${String(S.pref.rate || 0.92) === r}">${l}</button>`).join("")}</div></div>
-      <div class="setting"><span>Install the app</span><div>${installHTML()}</div></div>
+  // Each setting: a label and a short hint, with its control underneath, the same on every screen size.
+  const row = (label, hint, control) => `<div class="setting"><div class="setting-label"><span>${label}</span>${hint ? `<span class="muted small">${hint}</span>` : ""}</div>${control}</div>`;
+  const seg = (aria, attr, opts, cur, cls = "") => `<div class="seg small fill" role="group" aria-label="${aria}">${opts.map(([k, l]) => `<button class="${cls}" data-${attr}="${k}" aria-pressed="${cur === k}">${l}</button>`).join("")}</div>`;
+  const prefs = `<section class="panel"><h2>Your level</h2>
+      ${row("You understand", "Reading and listening.", seg("Level you understand", "und", LEVELS.map(l => [l, l]), S.pref.understand || S.pref.level))}
+      ${row("You speak", "Your path follows this level.", seg("Level you speak", "level", LEVELS.map(l => [l, l]), S.pref.level))}
+    </section>
+    <section class="panel"><h2>How you practise</h2>
+      ${row("Learning mode", "A guided path, or the library in any order.", seg("Learning mode", "lmode", [["path", "Path"], ["self", "Free study"]], S.pref.mode || "self"))}
+      ${row("Review cards", "English first trains speaking. Italian first trains understanding.", seg("Review direction", "revdir", [["en", "English → Italiano"], ["it", "Italiano → English"]], S.pref.revDir || "en"))}
+      ${row("New words per session", "", seg("New words per session", "newn", [0, 10, 20, 30].map(n => [n, n]), S.pref.newN))}
+    </section>
+    <section class="panel"><h2>Voice and forms</h2>
+      ${row("Forms about you", "Which forms you see in sentences about yourself.", seg("Gendered forms about you", "gender", [["m", "stanco"], ["f", "stanca"], ["x", "stanco/a"]], S.pref.gender || "x", "it"))}
+      ${row("Speech speed", "", seg("Speech speed", "rate", [["0.75", "Slow"], ["0.92", "Normal"]], String(S.pref.rate || 0.92)))}
+      ${row("Install the app", "", `<div>${installHTML()}</div>`)}
     </section>`;
   let account;
   if (!supabase) account = `<section class="panel"><h2>Account</h2><p class="muted">Accounts aren't set up for this copy of Parlo. Progress is saved on this device.</p></section>`;
@@ -82,10 +91,9 @@ export function viewAccount(app, v = S.view) {
     </section>`;
   }
   const [syncCls, syncTxt] = syncText();
-  const data = `<section class="panel"><h2>Sync</h2>
-      <p class="sync ${syncCls}" data-sync><i></i><span>${syncTxt}</span></p>
-      <p class="muted small">${S.user ? `Last synced ${sync.last ? new Date(sync.last).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }) : "—"}.` : `Sign in under <a href="#/account/settings">Settings</a> to sync across devices.`}</p>
-      ${S.user ? `<button class="btn" data-sync-now>Sync now</button>` : ""}</section>
+  const data = `${!S.user ? "" : `<section class="panel"><h2>Sync</h2>
+      <p class="muted small">${S.user ? `Last synced ${sync.last ? new Date(sync.last).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }) : "—"}.` : `Sign in to sync across devices.`}</p>
+      <button class="btn" data-sync-now>Sync now</button></section>`}
     <section class="panel"><h2>Backup</h2>
       <p class="muted small">A file with all your progress, deck, drafts and statistics.</p>
       <div class="btn-row"><button class="btn" data-export>Download a backup</button><label class="btn">Restore a backup<input type="file" id="import-file" accept="application/json,.json" hidden></label></div></section>
@@ -93,9 +101,19 @@ export function viewAccount(app, v = S.view) {
       <p class="muted small">Erases your progress, deck and drafts on every device.</p>
       <button class="btn quiet danger-text" data-reset>${armed === "reset" ? "Tap again to erase everything" : "Reset all progress"}</button>
       <p class="muted small"><a href="privacy.html">Privacy</a></p></section>`;
-  const tabs = `<nav class="seg tabs-seg" aria-label="Profile sections">${[["stats", "Statistiche"], ["settings", "Impostazioni"], ["data", "I miei dati"]].map(([k, l]) => `<a href="#/account/${k}" ${k === tab ? 'aria-current="page"' : ""}>${l}</a>`).join("")}</nav>`;
-  const body = tab === "settings" ? `<div class="grid-2"><div>${account}</div><div>${prefs}</div></div>` : tab === "data" ? `<div class="grid-2"><div>${data}</div></div>` : statsHTML();
-  app.innerHTML = `<header class="page-head"><h1>${S.user ? "Ciao, " + esc(displayName().split(" ")[0] || "") : "Profilo"}</h1></header>${tabs}${body}`;
+  // Three tabs: progress, how you study, and your account and data.
+  const tabs = `<nav class="seg tabs-seg" aria-label="Profile sections">${[["stats", "Progressi"], ["settings", "Studio"], ["data", "Account"]].map(([k, l]) => `<a href="#/account/${k}" ${k === tab ? 'aria-current="page"' : ""}>${l}</a>`).join("")}</nav>`;
+  const body = tab === "settings" ? `<div class="settings-col">${prefs}</div>` : tab === "data" ? `<div class="grid-2"><div>${account}</div><div>${data}</div></div>` : statsHTML();
+  const name = S.user ? displayName() : "";
+  const und = S.pref.understand || S.pref.level;
+  const head = `<section class="panel profile-card">
+      <span class="avatar" aria-hidden="true">${name ? esc(name.trim()[0].toUpperCase()) : ICON.user}</span>
+      <div class="profile-main"><p class="row-title">${name ? esc(name) : "Guest"}</p>
+        <p class="muted small">Understands ${und} · speaks ${S.pref.level} · ${S.pref.mode === "path" ? "Path" : "Free study"}</p>
+        <p class="sync ${syncCls}" data-sync><i></i><span>${syncTxt}</span></p></div>
+      ${S.user || tab === "data" ? "" : `<a class="btn small primary" href="#/account/data">Sign in</a>`}
+    </section>`;
+  app.innerHTML = `<header class="page-head"><h1>Profilo</h1></header>${head}${tabs}${body}`;
   wire(app);
 }
 
@@ -111,8 +129,19 @@ function statsHTML() {
   const range = period === "all" ? Object.keys(days) : lastN(+period);
   const by = {}; for (const d of range) for (const [k, s] of Object.entries(days[d] || {})) by[k] = (by[k] || 0) + s;
   const rangeTotal = sum(by), max = Math.max(1, ...Object.values(by));
-  if (!total) return `<div class="empty-state"><h2>Nothing to show yet</h2><p class="muted">Your study time and activity appear here as you learn. Time is counted only while you're actively using Parlo.</p><a class="btn primary" href="#/">Start today's session</a></div>`;
-  return `<div class="kpis">
+  // What you can say: the measure that matters most, before study time.
+  const canSay = D.order.filter(learned).length, said = S.st["sp:say"]?.n || 0;
+  const talks = Object.keys(S.st).filter(k => /^sp:s-/.test(k) && S.st[k]?.done).length, deck = deckIds().length;
+  if (!total && !canSay && !said) return `<div class="empty-state"><h2>Nothing to show yet</h2><p class="muted">What you can say, and your study time, appear here as you learn. Time is counted only while you're actively using Parlo.</p><a class="btn primary" href="#/">Start today's session</a></div>`;
+  return `<h2 class="section-h">What you can say</h2>
+    <div class="kpis">
+      <div class="panel kpi"><span class="eyebrow">Words you can say</span><span class="kpi-num">${canSay}</span></div>
+      <div class="panel kpi"><span class="eyebrow">Sentences said aloud</span><span class="kpi-num">${said}</span></div>
+      <div class="panel kpi"><span class="eyebrow">Talks practised</span><span class="kpi-num">${talks}</span></div>
+      <div class="panel kpi"><span class="eyebrow">In your deck</span><span class="kpi-num">${deck}</span></div>
+    </div>
+    <h2 class="section-h">Study time</h2>
+    <div class="kpis">
       <div class="panel kpi"><span class="eyebrow">Today</span><span class="kpi-num">${fmtDur(sum(days[today]))}</span></div>
       <div class="panel kpi"><span class="eyebrow">Last 7 days</span><span class="kpi-num">${fmtDur(week)}</span></div>
       <div class="panel kpi"><span class="eyebrow">Streak</span><span class="kpi-num">${streak} ${streak === 1 ? "day" : "days"}</span></div>
@@ -153,7 +182,9 @@ function heatmapHTML(days) {
 function wire(app) {
   const $ = s => app.querySelector(s);
   app.querySelectorAll("[data-period]").forEach(b => b.onclick = () => { period = b.dataset.period; viewAccount(app); });
-  app.querySelectorAll("[data-level]").forEach(b => b.onclick = () => { savePref({ level: b.dataset.level }); viewAccount(app); });
+  app.querySelectorAll("[data-level]").forEach(b => b.onclick = () => { const l = b.dataset.level, u = S.pref.understand || S.pref.level; savePref({ level: l, understand: LEVELS.indexOf(u) < LEVELS.indexOf(l) ? l : u }); viewAccount(app); });
+  app.querySelectorAll("[data-und]").forEach(b => b.onclick = () => { const u = b.dataset.und; savePref({ understand: u, level: LEVELS.indexOf(u) < LEVELS.indexOf(S.pref.level) ? u : S.pref.level }); viewAccount(app); });
+  app.querySelectorAll("[data-revdir]").forEach(b => b.onclick = () => { savePref({ revDir: b.dataset.revdir }); viewAccount(app); });
   app.querySelectorAll("[data-newn]").forEach(b => b.onclick = () => { savePref({ newN: +b.dataset.newn }); viewAccount(app); });
   app.querySelectorAll("[data-gender]").forEach(b => b.onclick = () => { savePref({ gender: b.dataset.gender }); viewAccount(app); });
   app.querySelectorAll("[data-lmode]").forEach(b => b.onclick = () => { savePref({ mode: b.dataset.lmode }); viewAccount(app); });

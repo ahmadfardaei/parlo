@@ -14,6 +14,7 @@ import { viewDeck, viewSession } from "./views/review.js";
 import { viewAccount, onAuthEvent } from "./views/account.js";
 import { viewQuizHub, viewQuiz } from "./views/quiz.js";
 import { viewPath } from "./views/path.js";
+import { viewSay } from "./views/say.js";
 import { ensure } from "./data.js";
 
 const app = $("#app");
@@ -22,7 +23,8 @@ const app = $("#app");
 export function parseHash() {
   const p = location.hash.replace(/^#\/?/, "").split("/").filter(Boolean).map(decodeURIComponent);
   switch (p[0]) {
-    case "learn": return { name: "learn", section: ["vocab", "grammar", "reading", "listening", "writing", "speaking"].includes(p[1]) ? p[1] : "vocab" };
+    case "learn": if (p[1] === "path") return { name: "path", level: S.pref.level };
+      return { name: "learn", section: ["vocab", "grammar", "reading", "listening", "writing", "speaking"].includes(p[1]) ? p[1] : "vocab" };
     case "unit": return { name: "unit", u: +p[1], tab: ["words", "verbs", "phrases", "quiz"].includes(p[2]) ? p[2] : "words" };
     case "grammar": return { name: "grammar", id: p[1], mode: ["practice", "drill"].includes(p[2]) ? p[2] : "learn", focus: ["practice", "drill"].includes(p[2]) };
     case "read": return { name: "reading", id: p[1] };
@@ -34,19 +36,20 @@ export function parseHash() {
     case "session": return { name: "session", src: p[1] || "due", u: p[2] ? +p[2] : undefined, focus: true };
     case "quiz": return p[1] ? { name: "quiz", scope: p[1], a: p[2], b: p[3], focus: true } : { name: "quizhub" };
     case "path": return { name: "path", level: p[1] };
+    case "say": return { name: "say", src: p[1] || "daily", id: p[2], focus: true };
     case "account": return { name: "account", tab: ["stats", "settings", "data"].includes(p[1]) ? p[1] : "stats" };
     default: return { name: "home" };
   }
 }
-const TAB_OF = { home: "home", learn: "learn", unit: "learn", grammar: "learn", reading: "learn", listening: "learn", writing: "learn", speaking: "learn", review: "home", deck: "deck", session: "home", account: "account", quiz: "home", quizhub: "home", path: "home" };
-const VIEWS = { home: viewHome, learn: viewLearn, unit: viewUnit, grammar: viewGrammar, reading: viewReading, listening: viewListening, writing: viewWriting, speaking: viewSpeaking, deck: viewDeck, quiz: viewQuiz, quizhub: viewQuizHub, path: viewPath, session: viewSession, account: viewAccount };
+const TAB_OF = { home: "home", learn: "learn", unit: "learn", grammar: "learn", reading: "learn", listening: "learn", writing: "learn", speaking: "learn", review: "home", deck: "deck", session: "home", account: "account", quiz: "home", quizhub: "home", path: "learn", say: "home" };
+const VIEWS = { home: viewHome, learn: viewLearn, unit: viewUnit, grammar: viewGrammar, reading: viewReading, listening: viewListening, writing: viewWriting, speaking: viewSpeaking, deck: viewDeck, quiz: viewQuiz, quizhub: viewQuizHub, path: viewPath, say: viewSay, session: viewSession, account: viewAccount };
 let renderToken = 0, prevPath = "";
 export async function render() {
   if (!D.units.length) return;
   const token = ++renderToken;
   const v = parseHash();
   // Switching tabs inside the same screen (e.g. unit words → verbs) keeps the scroll position.
-  const path = [v.name, v.u, v.id, v.mode].join("|");
+  const path = [v.name, v.u, v.id, v.mode, v.src].join("|");
   S.view = v;
   stopSpeaking(); closeSheet(true); emit("leave");
   document.body.classList.toggle("focus", !!v.focus);
@@ -69,6 +72,8 @@ on("rerender", () => render());
 
 /* ---------- Shell ---------- */
 function updateBadges() {
+  // In Path mode, Impara opens on the path.
+  const learnTab = $("[data-tab=learn]"); if (learnTab) learnTab.setAttribute("href", S.pref.mode === "path" ? "#/learn/path" : "#/learn/vocab");
   const due = D.units.length ? dueIds().length : 0;
   $$("[data-due-badge]").forEach(b => { b.textContent = due > 99 ? "99+" : due; b.hidden = !due; });
   if ("setAppBadge" in navigator) { try { due ? navigator.setAppBadge(due) : navigator.clearAppBadge(); } catch (e) {} }

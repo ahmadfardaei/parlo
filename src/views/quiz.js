@@ -1,9 +1,8 @@
 // Quizzes: quick checks on what the learner has studied. Two directions:
 //  "it" = recognise (Italian shown, choose the meaning) · "en" = produce (English shown, type or say the Italian).
 // Wrong answers are scheduled to come back in the next review.
-import { S, D, esc, rich, ICON, full, statusOf, schedule, shuffle, pick, say, deckIds, LEVEL_NAMES, gf } from "../core.js";
+import { S, D, esc, rich, ICON, full, statusOf, schedule, shuffle, pick, say, deckIds, LEVEL_NAMES, gf, judge, adjForms } from "../core.js";
 import { ensure } from "../data.js";
-import { judge } from "./grammar.js";
 import { PRON, TENSES } from "./unit.js";
 import { cardData } from "./review.js";
 import { setEntry } from "../core.js";
@@ -16,17 +15,17 @@ export const SCOPES = {
   grammar: { it: "Grammatica", en: "Exercises from the lessons at your level" },
   deck: { it: "Il mio mazzo", en: "Sentences you saved" }
 };
-const MODES = { it: "Italiano → English", en: "English → Italiano" };
+const MODES = { en: "English → Italiano", it: "Italiano → English" };
 const ACCENTS = ["à", "è", "é", "ì", "ò", "ù"];
 
 /* ---------- Hub ---------- */
 export function viewQuizHub(app) {
-  const mode = S.pref.quizMode || "it";
+  const mode = S.pref.quizMode || "en";
   app.innerHTML = `<a class="back-link" href="#/">${ICON.back} Oggi</a>
     <header class="page-head"><h1>Quiz</h1><p class="muted">Ten quick questions. Anything you miss comes back in your next review.</p></header>
     <section class="panel"><h2>Direction</h2>
       <div class="seg" role="group" aria-label="Direction">${Object.entries(MODES).map(([k, l]) => `<button data-qmode="${k}" aria-pressed="${mode === k}">${l}</button>`).join("")}</div>
-      <p class="muted small">${mode === "it" ? "Recognise: you see Italian and choose what it means." : "Produce: you see English and type the Italian. Harder, and the best way to make words your own."}</p>
+      <p class="muted small">${mode === "it" ? "Recognise: you see Italian and choose what it means. Easier, but it trains understanding, not speaking." : "Produce: you see English and type or say the Italian. Harder, and the way to make words your own."}</p>
     </section>
     <div class="link-list panel flush">${Object.entries(SCOPES).map(([k, s]) => `<a class="row-link" href="#/quiz/${k}"><span><span class="row-title it">${s.it}</span><span class="muted small">${s.en}</span></span>${ICON.chev}</a>`).join("")}</div>`;
   app.querySelectorAll("[data-qmode]").forEach(b => b.onclick = () => { S.pref.quizMode = b.dataset.qmode; try { localStorage.setItem("parlo.pref", JSON.stringify(S.pref)); } catch (e) {} viewQuizHub(app); });
@@ -48,7 +47,7 @@ function vocabQ(id, mode, poolIds) {
   }
   // Producing: accept the word with or without its article.
   const answers = it.type === "w" && d.art ? [full(d), d.it] : [term];
-  return { id, kind: it.type === "w" ? "Word" : "Phrase", prompt: esc(d.en), ask: "Say it in Italian", k: "type", a: answers, say: term, why: `<span class="it">${esc(d.ex)}</span><br>${esc(d.exEn)}`, loose: it.type === "p" };
+  return { id, kind: it.type === "w" ? "Word" : "Phrase", prompt: esc(d.en), ask: "Say it in Italian", k: "type", a: answers, alt: it.type === "w" ? adjForms(d) : [], say: term, why: `<span class="it">${esc(d.ex)}</span><br>${esc(d.exEn)}`, loose: it.type === "p" };
 }
 function verbQ(id, mode) {
   const v = D.items[id].d, t = pick(TENSES.slice(0, 4));
@@ -87,7 +86,8 @@ async function buildPath(v) {
   const lessons = seg.filter(s => s.type === "grammar").map(s => s.ref);
   const total = v.scope === "test" ? 20 : 10;
   const nGram = !unitIds.length ? total : !lessons.length || v.scope === "to" ? 0 : Math.round(total * 0.4);
-  const qs = shuffle(unitIds).slice(0, total - nGram).map(id => vocabQ(id, "it", unitIds));
+  // Half the words are asked from English (say it in Italian); testing out is all from English.
+  const qs = shuffle(unitIds).slice(0, total - nGram).map((id, k) => vocabQ(id, v.scope === "to" || k % 2 ? "en" : "it", unitIds));
   if (nGram) {
     const all = await ensure("grammar");
     qs.push(...shuffle(all.filter(g => lessons.includes(g.id)).flatMap(g => g.ex.map(e => ({ ...e, lesson: g.title })))).slice(0, nGram).map(e => ({
@@ -120,44 +120,56 @@ async function build(scope, mode) {
 /* ---------- Running a quiz ---------- */
 export async function viewQuiz(app, v, alive) {
   const pathQuiz = ["cp", "test", "to"].includes(v.scope);
-  const scope = pathQuiz ? v.scope : SCOPES[v.scope] ? v.scope : "mix", mode = pathQuiz ? "it" : (S.pref.quizMode || "it");
+  const scope = pathQuiz ? v.scope : SCOPES[v.scope] ? v.scope : "mix", mode = pathQuiz ? "en" : (S.pref.quizMode || "en");
   const built = pathQuiz ? await buildPath(v) : await build(scope, mode);
-  const { qs, note } = built;
-  const exit = built.back || "#/quiz", label = built.title || `Quiz · ${SCOPES[scope].it} · ${MODES[mode]}`;
   if (!alive()) return;
+  built.label = built.title || `Quiz · ${SCOPES[scope].it} · ${MODES[mode]}`;
+  run(app, v, alive, built, built.qs, false);
+}
+// What the learner missed, with the right answer.
+const missedHTML = list => !list.length ? "" : `<div class="missed"><p class="eyebrow">You missed</p><ul>${list.map(q => `<li><span>${q.prompt}</span> → <span class="it strong">${q.k === "mc" ? esc(q.a) : q.k === "self" ? (q.aHtml ? q.a : esc(q.a)) : esc(gf(q.a[0], q.io))}</span></li>`).join("")}</ul></div>`;
+
+// retry: a second round on the questions missed, which does not change scores.
+function run(app, v, alive, built, qs, retry) {
+  const { note } = built, exit = built.back || "#/quiz", label = retry ? "Practise what you missed" : built.label;
   let i = 0, right = 0, answered = false;
-  const missed = [];
+  const missed = [], missedQs = [];
   const top = () => `<div class="focus-top"><a class="icon-btn" href="${exit}" aria-label="End quiz">${ICON.close}</a>
       <div class="progress-track" aria-hidden="true"><span style="width:${qs.length ? i / qs.length * 100 : 0}%"></span></div>
       <span class="count small">${Math.min(i + 1, qs.length)} / ${qs.length}</span></div>
     <p class="eyebrow center">${esc(label)}</p>`;
+  const again = () => missedQs.length ? `<button class="btn primary" data-retry>Practise these ${missedQs.length}</button>` : "";
+  const wireEnd = () => {
+    app.querySelector("[data-retry]")?.addEventListener("click", () => run(app, v, alive, built, shuffle(missedQs), true));
+  };
   const draw = () => {
     if (!qs.length) { app.innerHTML = `${top()}<div class="panel result"><p>${esc(note || "Nothing to quiz yet.")}</p><a class="btn primary" href="#/">Back to Oggi</a></div>`; return; }
     if (i >= qs.length) {
       // Missed words, verbs and sentences come back in the next review.
       missed.forEach(id => schedule(id, "10m"));
-      if (built.save) {
+      const back = missed.length ? `<p class="muted small">${missed.length === 1 ? "The word you missed comes" : "The words you missed come"} back in your next review.</p>` : "";
+      if (built.save && !retry) {
         const prev = S.st[built.save.key];
         if (built.save.key.startsWith("to:")) { if (right / qs.length >= built.save.pass) setEntry(built.save.key, { done: 1 }); }
         else if (!prev || prev.best == null || right > prev.best) setEntry(built.save.key, { best: right, total: qs.length });
         const passed = right / qs.length >= built.save.pass;
         app.innerHTML = `${top()}<div class="panel result"><p class="eyebrow">${esc(label)}</p><p class="score">${right}<span>/${qs.length}</span></p>
           <p>${passed ? (built.save.key.startsWith("to:") ? "Passed. This step is done." : "Passed. The next steps are open.") : `Not yet: you need ${Math.ceil(built.save.pass * qs.length)} to pass.`}</p>
-          ${missed.length ? `<p class="muted small">${missed.length} you missed will come back in your next review.</p>` : ""}
-          <div class="btn-row center"><a class="btn primary" href="${exit}">Back to the path</a>${passed ? "" : `<button class="btn" data-again>Try again</button>`}</div></div>`;
+          ${missedHTML(missedQs)}${back}
+          <div class="btn-row center">${passed ? `<a class="btn primary" href="${exit}">Back to the path</a>${again().replace("btn primary", "btn")}` : `${again()}<button class="btn" data-again>Try again</button><a class="btn quiet" href="${exit}">Back to the path</a>`}</div></div>`;
         app.querySelector("[data-again]")?.addEventListener("click", () => viewQuiz(app, v, alive));
-        return;
+        return wireEnd();
       }
-      app.innerHTML = `${top()}<div class="panel result"><p class="eyebrow">Your score</p><p class="score">${right}<span>/${qs.length}</span></p>
+      app.innerHTML = `${top()}<div class="panel result"><p class="eyebrow">${retry ? "Second try" : "Your score"}</p><p class="score">${right}<span>/${qs.length}</span></p>
         <p>${right === qs.length ? "Perfetto!" : right >= qs.length * 0.7 ? "Molto bene!" : "Keep at it."}</p>
-        ${missed.length ? `<p class="muted small">${missed.length} you missed will come back in your next review.</p>` : ""}
-        <div class="btn-row center"><button class="btn primary" data-again>Another quiz</button><a class="btn" href="#/quiz">Choose another</a></div></div>`;
-      app.querySelector("[data-again]").onclick = () => viewQuiz(app, v, alive);
-      return;
+        ${missedHTML(missedQs)}${back}
+        <div class="btn-row center">${again()}${retry ? `<a class="btn ${missedQs.length ? "" : "primary"}" href="${exit}">Done</a>` : `<button class="btn ${missedQs.length ? "" : "primary"}" data-again>Another quiz</button><a class="btn quiet" href="#/quiz">Choose another</a>`}</div></div>`;
+      app.querySelector("[data-again]")?.addEventListener("click", () => viewQuiz(app, v, alive));
+      return wireEnd();
     }
-    const q = qs[i]; answered = false;
+    const q = qs[i]; answered = false; let retried = false;
     app.innerHTML = `${top()}<div class="panel quiz">
-      ${i === 0 && note ? `<p class="hint-line">${esc(note)}</p>` : ""}
+      ${i === 0 && note && !retry ? `<p class="hint-line">${esc(note)}</p>` : ""}
       <p class="eyebrow">${esc(q.kind)}</p>
       <p class="q-prompt">${q.prompt}</p>${q.ask ? `<p class="muted small">${esc(q.ask)}</p>` : ""}
       ${q.k === "mc" ? `<div class="opts">${q.o.map((o, j) => `<button class="opt ${q.it ? "it" : ""}" data-o="${j}">${esc(o)}</button>`).join("")}</div>`
@@ -167,7 +179,7 @@ export async function viewQuiz(app, v, alive) {
       <div class="fb" aria-live="polite"></div></div>`;
     const fb = app.querySelector(".fb");
     const finish = (ok, extra) => {
-      answered = true; if (ok) right++; else if (q.id) missed.push(q.id);
+      answered = true; if (ok) right++; else { missedQs.push(q); if (q.id) missed.push(q.id); }
       const shown = q.k === "mc" ? esc(q.a) : q.k === "self" ? (q.aHtml ? q.a : esc(q.a)) : esc(gf(q.a[0], q.io));
       fb.innerHTML = `${q.k === "self" ? "" : `<p class="${ok ? "ok-text" : "bad-text"}">${ok ? "Giusto!" : "Not quite."}${extra ? ` <span class="warn-text">${extra}</span>` : ""}</p>`}
         ${!ok || extra || q.k !== "mc" ? `<p>${q.k === "self" ? "" : "Answer: "}<span class="it strong">${shown}</span></p>` : ""}
@@ -186,11 +198,16 @@ export async function viewQuiz(app, v, alive) {
       app.querySelector(".answer-form").onsubmit = e => {
         e.preventDefault(); if (answered) { i++; draw(); return; }
         const val = q.loose ? inp.value.replace(/[!?.…,]/g, "") : inp.value;
-        const r = judge(val, q.loose ? q.a.map(a => a.replace(/[!?.…,]/g, "")) : q.a);
+        let r = judge(val, q.loose ? q.a.map(a => a.replace(/[!?.…,]/g, "")) : q.a, q.kind === "Word" || q.kind === "Phrase");
         if (r === "empty") return inp.focus();
-        inp.disabled = true; inp.classList.add(r !== "no" ? "right" : "wrong");
+        // Another ending of the same adjective is also right.
+        if (r === "no" && q.alt?.length && judge(val, q.alt) === "ok") r = "alt";
+        // One letter off: say so and allow one more try.
+        if (r === "close" && !retried) { retried = true; fb.innerHTML = `<p class="warn-text">Almost: check the spelling and try again.</p>`; inp.focus(); return; }
+        const ok = ["ok", "accent", "alt"].includes(r);
+        inp.disabled = true; inp.classList.add(ok ? "right" : "wrong");
         app.querySelectorAll(".answer-form button, [data-acc]").forEach(b => b.disabled = true);
-        finish(r !== "no", r === "accent" ? "Watch the accent." : "");
+        finish(ok, r === "accent" ? "Watch the accent." : r === "alt" ? `Also right. The dictionary form is ${q.a[0]}.` : "");
       };
       app.querySelectorAll("[data-acc]").forEach(b => b.onclick = () => { const a = inp.selectionStart ?? inp.value.length; inp.value = inp.value.slice(0, a) + b.dataset.acc + inp.value.slice(inp.selectionEnd ?? a); inp.focus(); inp.setSelectionRange(a + 1, a + 1); });
     }
@@ -198,7 +215,7 @@ export async function viewQuiz(app, v, alive) {
       app.querySelector("[data-reveal]").remove();
       fb.innerHTML = `<p class="it strong">${q.aHtml ? q.a : esc(q.a)}</p><p class="muted small">Did you get it?</p><div class="btn-row"><button class="btn" data-self="0">Not yet</button><button class="btn primary" data-self="1">Got it</button></div>`;
       if (q.say) say(q.say, q.sv);
-      fb.querySelectorAll("[data-self]").forEach(b => b.onclick = () => { const ok = b.dataset.self === "1"; if (ok) right++; else missed.push(q.id); i++; draw(); });
+      fb.querySelectorAll("[data-self]").forEach(b => b.onclick = () => { const ok = b.dataset.self === "1"; if (ok) right++; else { missedQs.push(q); missed.push(q.id); } i++; draw(); });
     };
   };
   draw();

@@ -15,19 +15,28 @@ function groupsHTML(items, keyOf, labelOf, rowOf, summaryOf, openKey) {
   }).join("");
 }
 const byLevel = () => S.pref.groupBy !== "topic";
+// Impara's header and section tabs. In Path mode the path itself is the first tab.
+export function learnNav(active) {
+  const tabs = [...(S.pref.mode === "path" ? [{ key: "path", it: "Percorso", href: `#/path/${S.pref.level}` }] : []), ...SECTIONS.map(s => ({ ...s, href: `#/learn/${s.key}` }))];
+  return `<header class="page-head"><h1>Impara</h1></header>
+    <nav class="seg tabs-seg" aria-label="Sections">${tabs.map(s => `<a href="${s.href}" ${s.key === active ? 'aria-current="page"' : ""}>${s.it}</a>`).join("")}</nav>`;
+}
 
 export async function viewLearn(app, v, alive) {
   const sec = v.section;
   const modeless = sec === "writing" || sec === "speaking";
-  app.innerHTML = `<header class="page-head"><h1>Impara</h1></header>
-    <nav class="seg tabs-seg" aria-label="Sections">${SECTIONS.map(s => `<a href="#/learn/${s.key}" ${s.key === sec ? 'aria-current="page"' : ""}>${s.it}</a>`).join("")}</nav>
+  // One toolbar for every section: the filter on the left, actions (Quiz, then PDF) on the right, search on its own row.
+  const actions = [
+    sec === "vocab" || sec === "grammar" ? `<a class="btn quiet small" href="#/quiz/${sec}">Quiz</a>` : "",
+    ["vocab", "grammar", "reading"].includes(sec) ? `<button class="btn quiet small pdf-link" data-pdf>${ICON.download}<span>PDF</span></button>` : ""
+  ].join("");
+  app.innerHTML = `${learnNav(sec)}
     <div class="list-tools">
       ${modeless ? `<p class="muted small">${SECTIONS.find(s => s.key === sec).en}. Each task has examples for every level.</p>` : `<div class="seg small" role="group" aria-label="Group by">
         <button data-groupby="level" aria-pressed="${byLevel()}">By level</button><button data-groupby="topic" aria-pressed="${!byLevel()}">By topic</button></div>`}
-      ${!["vocab", "grammar", "reading"].includes(sec) ? "" : `<button class="btn quiet small pdf-link" data-pdf>${ICON.download}<span>PDF</span></button>`}
-      ${sec === "vocab" ? `<input class="input search" id="vsearch" type="search" placeholder="Search words, verbs, phrases" aria-label="Search the vocabulary">` : ""}
-      ${sec === "vocab" || sec === "grammar" ? `<a class="btn small" href="#/quiz/${sec}">Quiz</a>` : ""}
+      ${actions ? `<div class="tool-actions">${actions}</div>` : ""}
     </div>
+    ${sec === "vocab" ? `<input class="input search" id="vsearch" type="search" placeholder="Search words, verbs, phrases" aria-label="Search the vocabulary">` : ""}
     <div id="learn-body"><p class="muted">Loading…</p></div>`;
   app.querySelectorAll("[data-groupby]").forEach(b => b.onclick = () => { savePref({ groupBy: b.dataset.groupby }); viewLearn(app, v, alive); });
   app.querySelector("[data-pdf]")?.addEventListener("click", () => openSheet(`<div class="sheet-body">

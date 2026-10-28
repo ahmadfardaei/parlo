@@ -53,7 +53,7 @@ export async function viewReading(app, v, alive) {
         <section class="g-sec"><h2>Did you get it?</h2>
           <div class="panel flush" id="qs">${qs.map((q, i) => `<div class="rq" data-q="${i}"><p class="it strong">${i + 1}. ${esc(q.q)}</p><div class="opts">${q.o.map((o, j) => `<button class="opt it" data-qo="${j}">${esc(o)}</button>`).join("")}</div></div>`).join("")}</div>
           <div class="panel finish" id="finish">${st.done ? `<p class="ok-text">${ICON.check} You've read this${st.score != null ? ` · ${st.score}/${r.questions.length} correct` : ""}.</p>` : `<p class="muted small">Answer the questions, or simply mark it as read.</p>`}
-            <div class="btn-row">${st.done ? "" : `<button class="btn primary" data-done>Mark as read</button>`}<a class="btn" href="#/learn/reading">More texts</a></div></div>
+            <div class="btn-row">${st.done ? `<a class="btn primary" href="#/say/read/${r.id}">Say it: 5 sentences</a>` : `<button class="btn primary" data-done>Mark as read</button>`}<a class="btn" href="#/learn/reading">More texts</a></div></div>
         </section>
       </div>
       <aside class="l-aside">
@@ -70,7 +70,7 @@ export async function viewReading(app, v, alive) {
         div.querySelectorAll("[data-qo]").forEach(x => { x.disabled = true; if (q.o[+x.dataset.qo] === q.a) x.classList.add("right"); else if (x === b) x.classList.add("wrong"); });
         if (answered === qs.length) {
           setEntry("r:" + r.id, { done: 1, score: correct, total: qs.length });
-          app.querySelector("#finish").innerHTML = `<p class="ok-text">${ICON.check} ${correct}/${qs.length} correct. Marked as read.</p><div class="btn-row"><a class="btn primary" href="#/learn/reading">More texts</a></div>`;
+          app.querySelector("#finish").innerHTML = `<p class="ok-text">${ICON.check} ${correct}/${qs.length} correct. Marked as read.</p><p class="muted small">Now say a few of its sentences yourself, from English.</p><div class="btn-row"><a class="btn primary" href="#/say/read/${r.id}">Say it: 5 sentences</a><a class="btn" href="#/learn/reading">More texts</a></div>`;
         }
       });
     });

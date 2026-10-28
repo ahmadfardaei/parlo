@@ -34,6 +34,14 @@ const course = JSON.parse(fs.readFileSync(new URL("../src/data/course.json", imp
 const WRITE = { A1: ["w-01", "w-02", "w-03"], A2: ["w-04", "w-05", "w-07"], B1: ["w-06", "w-08", "w-09"], B2: ["w-10", "w-08", "w-05"] };
 const SPEAK = { A1: ["s-01", "s-02", "s-03"], A2: ["s-04", "s-05", "s-07"], B1: ["s-06", "s-08", "s-09"], B2: ["s-10", "s-08", "s-06"] };
 const WRITE_MIN = { A1: [20, 35], A2: [25, 45], B1: [35, 55], B2: [45, 75] };
+// Grammar a unit's theme needs, so you can talk about it: placed just before the unit (BEFORE) or right after its words (AFTER).
+const BEFORE = {
+  2: ["g-subj", "pres"], 3: ["g-articles"], 4: ["g-reflexive"], 9: ["g-piacere", "g-modal"], 10: ["pp"],
+  11: ["imp"], 12: ["g-prep-place-time"], 15: ["g-iobj"], 17: ["g-partitive", "g-imperative"], 19: ["fut", "cond"],
+  21: ["cong"], 24: ["g-si"], 30: ["g-cong-imp", "g-ipotetico"],
+  33: ["g-passive"], 34: ["g-passato-remoto"], 36: ["g-pronominali"], 37: ["g-registro"], 40: ["g-discourse"]
+};
+const AFTER = { 11: ["ppimp"] };
 const roadmap = {};
 for (const L of LV) {
   const units = course.units.filter(u => u.level === L);
@@ -41,12 +49,17 @@ for (const L of LV) {
   const reads = reading.filter(r => r.level === L), hears = listening.filter(l => l.level === L);
   const content = [];
   const gPerUnit = gram.length / units.length;
-  let gi = 0;
+  const placed = new Set();
+  const addG = g => { if (!g || placed.has(g.id)) return; placed.add(g.id); content.push({ type: "grammar", ref: g.id, title: g.title, en: g.en, min: [25, 50] }); };
+  const byId = id => gram.find(g => g.id === id);
   units.forEach((u, i) => {
+    (BEFORE[u.n] || []).forEach(id => addG(byId(id)));
     const n = u.words.length + u.verbs.length + u.phrases.length;
     content.push({ type: "unit", ref: u.n, title: u.title, en: u.en, min: [Math.round(n * 1.5), Math.round(n * 3)] });
+    (AFTER[u.n] || []).forEach(id => addG(byId(id)));
+    // The other lessons, spread evenly in their usual order.
     const until = Math.round((i + 1) * gPerUnit);
-    while (gi < until) { const g = gram[gi++]; content.push({ type: "grammar", ref: g.id, title: g.title, en: g.en, min: [25, 50] }); }
+    for (const g of gram) { if (placed.size >= until) break; if (!placed.has(g.id) && !Object.values(BEFORE).flat().concat(Object.values(AFTER).flat()).includes(g.id)) addG(g); }
     if (reads[i]) { const r = reads[i]; content.push({ type: "reading", ref: r.id, title: r.title, en: r.en, min: [Math.round(r.minutes * 2), Math.round(r.minutes * 3.5)] }); }
     // Listening: two or three times through, plus the questions.
     if (hears[i]) { const l = hears[i]; content.push({ type: "listening", ref: l.id, title: l.title, en: l.en, min: [l.minutes * 3 + 5, l.minutes * 5 + 10] }); }
@@ -56,7 +69,7 @@ for (const L of LV) {
       if (SPEAK[L][k]) { const s = speaking.find(x => x.id === SPEAK[L][k]); content.push({ type: "speaking", ref: s.id, title: s.title, en: s.en, min: [15, 30] }); }
     }
   });
-  while (gi < gram.length) { const g = gram[gi++]; content.push({ type: "grammar", ref: g.id, title: g.title, en: g.en, min: [25, 50] }); }
+  gram.forEach(addG);
   // A checkpoint after every 5 steps, and a level test at the end.
   const steps = []; let cp = 0;
   content.forEach((s, i) => {
@@ -64,7 +77,8 @@ for (const L of LV) {
     if ((i + 1) % 5 === 0 && i < content.length - 1) steps.push({ type: "checkpoint", ref: ++cp, title: `Checkpoint ${cp}`, en: "A short quiz on the last five steps", min: [8, 12] });
   });
   steps.push({ type: "test", ref: L, title: `Test ${L}`, en: "A level test on everything in this path", min: [25, 40] });
-  steps.forEach((s, i) => { s.id = `${L}-${i + 1}`; });
+  // Ids follow the content, not the position, so reordering the path keeps progress on each step.
+  steps.forEach(s => { s.id = `${L}-${s.type}-${s.ref}`; });
   const minH = steps.reduce((a, s) => a + s.min[0], 0) / 60, maxH = steps.reduce((a, s) => a + s.min[1], 0) / 60;
   roadmap[L] = { steps, hours: [Math.round(minH), Math.round(maxH)] };
   console.log(`roadmap ${L}: ${steps.length} steps, ${Math.round(minH)}–${Math.round(maxH)} h`);

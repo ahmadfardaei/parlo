@@ -26,7 +26,7 @@ export async function viewListening(app, v, alive) {
       <section class="g-sec"><h2>Questions</h2>
         <p class="muted small">Read them first, then listen. You can answer while it plays.</p>
         <div class="panel flush">${qs.map((q, i) => `<div class="rq" data-q="${i}"><p class="it strong">${i + 1}. ${esc(q.q)}</p><div class="opts">${q.o.map((o, j) => `<button class="opt it" data-qo="${j}">${esc(o)}</button>`).join("")}</div></div>`).join("")}</div>
-        <div class="panel finish" id="finish">${st.done ? `<p class="ok-text">${ICON.check} Last time: ${st.score}/${st.total} correct.</p>` : `<p class="muted small">Answer every question to finish.</p>`}</div>
+        <div class="panel finish" id="finish">${st.done ? `<p class="ok-text">${ICON.check} Last time: ${st.score}/${st.total} correct.</p><div class="btn-row"><a class="btn" href="#/say/listen/${l.id}">Say it: 5 lines</a></div>` : `<p class="muted small">Answer every question to finish.</p>`}</div>
       </section>
       <details class="group transcript" id="tr" ${st.done ? "open" : ""}><summary><span class="group-title">Transcript</span><span class="group-meta">${st.done ? "" : "Best after you answer"}</span></summary>
         <div class="reader-tools"><div class="seg small" role="group" aria-label="Translation"><button data-en="0">Italiano</button><button data-en="1">+ English</button></div></div>
@@ -42,6 +42,7 @@ export async function viewListening(app, v, alive) {
         </div>
         <button class="icon-btn" data-back aria-label="Back one line" title="Back one line">${ICON.replay}</button>
         <button class="btn quiet small" data-slow aria-pressed="false" title="Play slower">${SLOW}×</button>
+        <button class="btn quiet small" data-shadow aria-pressed="false" title="Pause after each line so you can repeat it">Repeat</button>
       </section>
     </div></aside></div>`;
 
@@ -50,7 +51,7 @@ export async function viewListening(app, v, alive) {
   // Player: plays line by line from `at`; pausing keeps the place.
   // The place in the audio is kept per exercise, so a long piece can be finished later.
   const posKey = "parlo.listen." + l.id;
-  let at = Math.min(lsGet(posKey, 0) || 0, lines.length - 1), playing = false, slow = false, stop = null;
+  let at = Math.min(lsGet(posKey, 0) || 0, lines.length - 1), playing = false, slow = false, shadow = false, stop = null;
   const playBtn = app.querySelector("[data-play]"), pos = app.querySelector("[data-pos]"), prog = app.querySelector("[data-prog]");
   const sents = () => [...app.querySelectorAll(".transcript .sent")];
   const show = () => {
@@ -64,8 +65,10 @@ export async function viewListening(app, v, alive) {
   const halt = () => { if (stop) { const s = stop; stop = null; s(); } };
   const start = () => {
     halt(); playing = true; const from = at;
+    // Repeat mode: after each line, a pause as long as the line, for the learner to say it.
+    const gap = shadow ? (i, ms) => { pos.textContent = "Your turn: say it"; return Math.round(ms * 1.1 + 700); } : null;
     stop = speakAll(lines.slice(from), i => { at = from + i; show(); },
-      () => { if (!stop) return; stop = null; playing = false; at = 0; show(); pos.textContent = "Finished · play again?"; }, slow ? SLOW : 1);
+      () => { if (!stop) return; stop = null; playing = false; at = 0; show(); pos.textContent = "Finished · play again?"; }, slow ? SLOW : 1, gap);
     show();
   };
   const pause = () => { playing = false; halt(); stopSpeaking(); show(); };
@@ -74,6 +77,8 @@ export async function viewListening(app, v, alive) {
   app.querySelector("[data-back]").onclick = () => { at = Math.max(0, at - 1); playing ? start() : show(); };
   const slowBtn = app.querySelector("[data-slow]");
   slowBtn.onclick = () => { slow = !slow; slowBtn.setAttribute("aria-pressed", slow); if (playing) start(); };
+  const shBtn = app.querySelector("[data-shadow]");
+  shBtn.onclick = () => { shadow = !shadow; shBtn.setAttribute("aria-pressed", shadow); if (playing) start(); };
 
   // Questions
   let answered = 0, correct = 0;
@@ -84,7 +89,7 @@ export async function viewListening(app, v, alive) {
       div.querySelectorAll("[data-qo]").forEach(x => { x.disabled = true; if (q.o[+x.dataset.qo] === q.a) x.classList.add("right"); else if (x === b) x.classList.add("wrong"); });
       if (answered === qs.length) {
         setEntry("l:" + l.id, { done: 1, score: correct, total: qs.length });
-        app.querySelector("#finish").innerHTML = `<p class="ok-text">${ICON.check} ${correct}/${qs.length} correct.</p><p class="muted small">Now read the transcript and listen again.</p><div class="btn-row"><a class="btn primary" href="#/learn/listening">More listening</a></div>`;
+        app.querySelector("#finish").innerHTML = `<p class="ok-text">${ICON.check} ${correct}/${qs.length} correct.</p><p class="muted small">Now read the transcript, then listen again with Repeat on: say each line after the speaker.</p><div class="btn-row"><a class="btn primary" href="#/say/listen/${l.id}">Say it: 5 lines</a><a class="btn" href="#/learn/listening">More listening</a></div>`;
         const tr = app.querySelector("#tr"); tr.open = true; tr.querySelector(".group-meta").textContent = "";
       }
     });

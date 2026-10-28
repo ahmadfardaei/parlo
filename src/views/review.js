@@ -1,4 +1,4 @@
-import { S, D, esc, ICON, gf, pickEx, exVoice, inDeck, canSpeak, say, full, statusOf, statusLabel, setEntry, schedule, dueIds, deckIds, allReviewable, fmtIn, on, schedHTML, lsGet } from "../core.js";
+import { S, D, esc, ICON, gf, pickEx, exVoice, inDeck, canSpeak, say, full, statusOf, statusLabel, setEntry, schedule, dueIds, deckIds, allReviewable, fmtIn, on, schedHTML, lsGet, learned, LEVELS, unitByN } from "../core.js";
 import { highlight } from "./unit.js";
 import { nextUnit } from "./home.js";
 
@@ -78,7 +78,7 @@ function build(v) {
   let queue = [...due, ...fresh], cram = false;
   if (!queue.length && v.src !== "due") { queue = pool.filter(id => statusOf(id) === "later").slice(0, 30); cram = queue.length > 0; }
   queue = queue.slice(0, 60);
-  return { queue, done: 0, flipped: false, intro: false, history: [], cram, deckMode: v.src === "deck", stats: { learned: 0, again: 0, known: 0 } };
+  return { queue, done: 0, flipped: false, intro: false, check: false, history: [], cram, deckMode: v.src === "deck", stats: { learned: 0, seen: 0, again: 0, known: 0 } };
 }
 const nextIndex = () => ses.queue.findIndex(id => ses.cram || ["new", "due"].includes(statusOf(id)));
 const exitHref = v => v.src === "unit" ? `#/unit/${v.u}/words` : v.src === "deck" ? "#/deck" : "#/";
@@ -105,45 +105,62 @@ function draw(app, v) {
     return wire(app, v);
   }
   if (i > 0) { const [id] = ses.queue.splice(i, 1); ses.queue.unshift(id); }
-  const id = ses.queue[0], c = cardData(id), en = false;
-  // A card you've never seen is introduced in full, not tested.
-  if (statusOf(id) === "new" && !ses.flipped) { ses.flipped = true; ses.intro = true; setTimeout(() => { if (ses && ses.queue[0] === id) say(c.say, c.sv); }, 150); }
+  const id = ses.queue[0], c = cardData(id), isNew = statusOf(id) === "new";
+  // A new card is introduced in full and comes back a few cards later to be recalled.
+  // Learners who understand more than this level are asked first: they may already know how to say it.
+  if (isNew && !ses.flipped && !ses.check) {
+    if (quickCheck(id)) ses.check = true;
+    else { ses.flipped = true; ses.intro = true; setTimeout(() => { if (ses && ses.queue[0] === id) say(c.say, c.sv); }, 150); }
+  }
+  // Recall goes from English to Italian unless the learner chose otherwise.
+  const en = !ses.intro && (ses.check || S.pref.revDir !== "it");
   const sentenceFirst = ses.deckMode || !c.target;
   const front = en
     ? `${c.meaning ? `<p class="card-target en">${esc(c.meaning)}</p>` : ""}<p class="card-sent en">${esc(c.sentEn)}</p>`
     : sentenceFirst ? `<p class="card-sent big it">${c.sentIt}</p>`
     : `<p class="card-target it">${esc(c.target)}</p><p class="card-sent it">${c.sentIt}</p>`;
   const back = en
-    ? `${c.target ? `<p class="card-answer it">${esc(c.target)}</p>` : ""}<p class="card-sent it">${c.sentIt}</p>`
+    ? `${c.target ? `<p class="card-answer it">${esc(c.target)}</p>` : ""}<p class="card-sent it">${c.sentIt}</p>${c.extra ? `<p class="muted small it">${esc(c.extra)}</p>` : ""}`
     : `${c.meaning ? `<p class="card-answer">${esc(c.meaning)}</p>` : ""}<p class="card-sent en">${esc(c.sentEn)}</p>${sentenceFirst && c.target ? `<p class="muted small it">${esc(c.target)}</p>` : ""}${c.extra ? `<p class="muted small it">${esc(c.extra)}</p>` : ""}`;
+  const hint = en ? (c.target ? "Say it in Italian, out loud. Then tap." : "Say the sentence in Italian, out loud. Then tap.") : "Try to remember, then tap";
+  const actions = !ses.flipped ? `<button class="btn primary large wide" data-flip>Show answer</button>`
+    : ses.intro ? `<p class="muted small center">Read it and listen. It comes back in a moment for you to say.</p><div class="rate">
+        <button class="btn primary large wide" data-rate="seen">Next</button><button class="btn rate-know" data-rate="known">I already know it</button></div>`
+    : ses.check ? `<p class="muted small center">Did you know how to say it?</p><div class="rate two">
+        <button class="btn" data-rate="seen">New to me</button><button class="btn primary" data-rate="3d">I knew it</button></div>`
+    : `<p class="muted small center">When should you see this again?</p><div class="rate">
+        <button class="btn rate-again" data-rate="10m">10 min</button><button class="btn" data-rate="1d">1 day</button><button class="btn" data-rate="3d">3 days</button><button class="btn" data-rate="7d">7 days</button>
+        <button class="btn rate-know" data-rate="known">I already know it</button></div>`;
   app.innerHTML = `${top}<div class="card-stage">
     <div class="flash" id="card" ${ses.flipped ? "" : 'role="button" tabindex="0" aria-label="Show the answer"'}>
-      <p class="card-meta">${ses.intro ? `<span class="pill new">New</span> ` : ""}${esc(c.kind)} · ${esc(c.from)}</p>
+      <p class="card-meta">${ses.intro || ses.check ? `<span class="pill new">New</span> ` : ""}${esc(c.kind)} · ${esc(c.from)}</p>
       ${front}
-      ${ses.flipped ? `<hr class="card-rule">${back}` : `<p class="tap-hint">Try to remember, then tap</p>`}
+      ${ses.flipped ? `<hr class="card-rule">${back}` : `<p class="tap-hint">${hint}</p>`}
       <span class="card-corner">
         <button class="icon-btn star-card" data-deck="${esc(id)}" aria-pressed="${inDeck(id)}" aria-label="${inDeck(id) ? "Remove from" : "Add to"} your deck" title="Your deck">${ICON.star}</button>
         ${ses.flipped && canSpeak ? `<button class="icon-btn" data-say-text="${esc(c.say)}" data-voice="${c.sv || "f"}" aria-label="Listen">${ICON.speak}</button>` : ""}
       </span>
     </div>
-    <div class="card-actions">
-    ${ses.flipped ? `<p class="muted small center">${ses.intro ? "Read it and listen. When should you see it again?" : "When should you see this again?"}</p><div class="rate">
-      <button class="btn rate-again" data-rate="10m">10 min</button><button class="btn" data-rate="1d">1 day</button><button class="btn" data-rate="3d">3 days</button><button class="btn" data-rate="7d">7 days</button>
-      <button class="btn rate-know" data-rate="known">I already know it</button></div>`
-      : `<button class="btn primary large wide" data-flip>Show answer</button>`}
-</div>
+    <div class="card-actions">${actions}</div>
   </div>`;
   wire(app, v);
+}
+// Words at or below the level the learner understands, when that is above the level they speak.
+function quickCheck(id) {
+  const it = D.items[id]; if (!it) return false;
+  const und = LEVELS.indexOf(S.pref.understand || S.pref.level), sp = LEVELS.indexOf(S.pref.level);
+  const lv = LEVELS.indexOf(unitByN(it.u)?.level);
+  return und > sp && lv >= 0 && lv <= und;
 }
 function drawEnd(app, v, top) {
   const s = ses.stats;
   const later = allReviewable().filter(id => statusOf(id) === "later");
   const next = later.length ? Math.min(...later.map(id => S.st[id].d)) : 0;
   const last = lsGet("parlo.last", null), nu = nextUnit();
-  const keep = v.src !== "due" ? null : last ? { href: last.href, label: `Continue: ${last.title}` } : nu ? { href: `#/unit/${nu.n}/words`, label: `Explore Unità ${nu.n}` } : null;
+  const keep = v.src === "unit" ? { href: `#/say/unit/${v.u}`, label: "Say it: 5 sentences" } : v.src !== "due" ? null : last ? { href: last.href, label: `Continue: ${last.title}` } : nu ? { href: `#/unit/${nu.n}/words`, label: `Explore Unità ${nu.n}` } : null;
   app.innerHTML = `${top}<div class="card-stage"><div class="flash done-card">
       <p class="big-line it">${ses.done ? "Bravo!" : "Tutto fatto"}</p>
-      ${ses.done ? `<div class="end-stats">${s.learned ? `<span><b>${s.learned}</b> new ${s.learned === 1 ? "word" : "words"}</span>` : ""}${ses.done - s.learned > 0 ? `<span><b>${ses.done - s.learned}</b> reviewed</span>` : ""}${s.known ? `<span><b>${s.known}</b> already known</span>` : ""}</div>` : ""}
+      ${ses.done ? `<div class="end-stats">${s.learned ? `<span><b>${s.learned}</b> ${s.learned === 1 ? "word" : "words"} you can now say</span>` : ""}${ses.done - s.learned - s.known > 0 ? `<span><b>${ses.done - s.learned - s.known}</b> reviewed</span>` : ""}${s.known ? `<span><b>${s.known}</b> already known</span>` : ""}</div>` : ""}
       <p class="muted">${ses.done ? "" : v.src === "deck" ? "Your deck has nothing to practise yet. " : "Nothing to review right now. "}${next ? `Next review in ${fmtIn(next - Date.now())}.` : ""}</p></div>
     <div class="card-actions">${keep ? `<a class="btn primary large wide" href="${esc(keep.href)}">${esc(keep.label)}</a><a class="btn wide" href="${exitHref(v)}">Done</a>` : `<a class="btn primary large wide" href="${exitHref(v)}">Done</a>`}</div></div>`;
   wire(app, v);
@@ -166,23 +183,30 @@ function rate(app, v, key) {
   const id = ses.queue[0];
   ses.history.push({ id, key, prev: S.st[id] ? { ...S.st[id] } : null, queue: [...ses.queue], done: ses.done, stats: { ...ses.stats } });
   if (ses.history.length > 30) ses.history.shift();
-  if (statusOf(id) === "new") ses.stats.learned++;
+  const was = learned(id);
   ses.queue.shift();
   schedule(id, key);
-  if (key === "known") ses.stats.known++;
-  if (key === "10m") { ses.queue.push(id); ses.stats.again++; } else ses.done++;
-  ses.flipped = false; ses.intro = false; draw(app, v);
+  if (key === "seen") {
+    // Back in a few cards, to be recalled.
+    ses.stats.seen++; ses.queue.splice(Math.min(3, ses.queue.length), 0, id);
+  } else {
+    if (key === "known") ses.stats.known++;
+    else if (!was && learned(id)) ses.stats.learned++;
+    if (key === "10m") { ses.queue.push(id); ses.stats.again++; } else ses.done++;
+  }
+  ses.flipped = false; ses.intro = false; ses.check = false; draw(app, v);
 }
 function undo(app, v) {
   const h = ses?.history.pop(); if (!h) return;
   setEntry(h.id, h.prev ? Object.fromEntries(Object.entries(h.prev).filter(([k]) => k !== "t")) : { d: 0, k: 0, iv: "" }, true);
-  ses.queue = h.queue; ses.done = h.done; ses.stats = h.stats; ses.flipped = true; ses.intro = !h.prev;
+  ses.queue = h.queue; ses.done = h.done; ses.stats = h.stats; ses.flipped = true; ses.intro = !h.prev && !quickCheck(h.id); ses.check = !h.prev && quickCheck(h.id);
   draw(app, v);
 }
 document.addEventListener("keydown", e => {
   if (!ses || S.view.name !== "session" || e.target.matches("input, textarea") || e.metaKey || e.ctrlKey || e.altKey) return;
   const app = document.getElementById("app");
   if ((e.code === "Space" || e.key === "Enter") && !ses.flipped && !e.target.closest("a, .icon-btn")) { e.preventDefault(); flip(app, S.view); }
-  else if (ses.flipped && /^[1-5]$/.test(e.key)) rate(app, S.view, ["10m", "1d", "3d", "7d", "known"][+e.key - 1]);
+  else if (ses.flipped && ses.intro && e.key === "Enter") { e.preventDefault(); rate(app, S.view, "seen"); }
+  else if (ses.flipped && !ses.intro && !ses.check && /^[1-5]$/.test(e.key)) rate(app, S.view, ["10m", "1d", "3d", "7d", "known"][+e.key - 1]);
   else if (e.key === "ArrowLeft" || e.key === "Backspace") { e.preventDefault(); undo(app, S.view); }
 });

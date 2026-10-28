@@ -79,7 +79,8 @@ export function speak(text, onEnd, voice = "f", scale = 1) {
 function stopAudio() { if (current) { current.onended = current.onerror = null; current.pause(); current = null; } if ("speechSynthesis" in window) speechSynthesis.cancel(); }
 export function say(text, voice) { speakQueueToken++; stopAudio(); speak(text, null, voice); }
 // lines: strings or { t, v } objects; scale slows or speeds the whole run.
-export function speakAll(lines, onProgress, onDone, scale = 1) {
+// gap(i, ms): pause after line i (which took ms to say) before the next one, e.g. for repeating after the speaker.
+export function speakAll(lines, onProgress, onDone, scale = 1, gap = null) {
   const token = ++speakQueueToken;
   stopAudio();
   let i = 0;
@@ -90,8 +91,9 @@ export function speakAll(lines, onProgress, onDone, scale = 1) {
     // Fetch the next clip while this one plays, so long texts run without gaps.
     const n = lines[i + 1];
     if (AUDIO_READY && n) { const p = new Audio(); p.preload = "auto"; p.src = typeof n === "string" ? clipUrl(n, "f") : clipUrl(n.t, n.v); }
-    const l = lines[i++];
-    typeof l === "string" ? speak(l, next, "f", scale) : speak(l.t, next, l.v, scale);
+    const l = lines[i++], at = i - 1, t0 = Date.now();
+    const after = () => { if (token !== speakQueueToken) return; const d = gap ? gap(at, Date.now() - t0) : 0; d ? setTimeout(next, d) : next(); };
+    typeof l === "string" ? speak(l, after, "f", scale) : speak(l.t, after, l.v, scale);
   };
   next();
   return () => { speakQueueToken++; stopAudio(); onDone && onDone(); };
@@ -133,7 +135,7 @@ document.addEventListener("keydown", e => { if (e.key === "Escape" && $("#sheet"
 export const S = {
   user: null, profile: null,
   st: {},                              // id -> entry
-  pref: Object.assign({ dir: "it", newN: 10, level: "A1", groupBy: "level", size: 19, rate: 0.92 }, lsGet("parlo.pref", {})),
+  pref: Object.assign({ revDir: "en", quizMode: "en", newN: 10, level: "A1", groupBy: "level", size: 19, rate: 0.92 }, lsGet("parlo.pref", {})),
   view: { name: "home" }
 };
 
@@ -183,12 +185,16 @@ export function statusOf(id) {
   return "new";
 }
 export const inDeck = id => !!S.st[id]?.s;
+// Learned = recalled at least once (or marked as known), not only seen.
+export const learned = id => { const e = S.st[id]; return !!e && (!!e.k || (!!e.iv && e.iv !== "10m")); };
 export function setEntry(id, patch, replace) {
   S.st[id] = Object.assign({}, replace ? {} : (S.st[id] || {}), patch, { t: Date.now() });
   saveLocal(); markDirty(unitOf(id)); refreshItem(id); emit("change", id);
 }
+// "seen": met for the first time; due again at once, so it is recalled before it counts as learned.
 export function schedule(id, key) {
   if (key === "known") setEntry(id, { k: 1, d: 0, iv: "" });
+  else if (key === "seen") setEntry(id, { k: 0, d: Date.now(), iv: "" });
   else if (key === "reset") setEntry(id, { k: 0, d: 0, iv: "" });
   else setEntry(id, { k: 0, d: Date.now() + IV[key], iv: key });
 }
@@ -371,6 +377,30 @@ export function go(h) { if (location.hash !== h) location.hash = h; else emit("r
 // Remember what the learner opened last, for "Continue" on the home screen.
 export function remember(kind, title, href, sub) { lsSet("parlo.last", { kind, title, href, sub, t: Date.now() }); }
 
+/* ---------- Checking typed answers ---------- */
+const norm = s => String(s).toLowerCase().replace(/[’‘`´]/g, "'").replace(/\s+/g, " ").trim().replace(/[.!?,;]+$/, "");
+const plain = s => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+const forms = f => /[oi]\/[ae]\b/.test(f) ? [f.replace(/([oi])\/([ae])\b/, "$1"), f.replace(/([oi])\/([ae])\b/, "$2")] : [f];
+// One letter added, missing or wrong, or two letters swapped.
+function oneOff(a, b) {
+  if (Math.abs(a.length - b.length) > 1 || a === b) return false;
+  let i = 0; while (i < a.length && a[i] === b[i]) i++;
+  if (a[i] === b[i + 1] && a[i + 1] === b[i] && a.slice(i + 2) === b.slice(i + 2)) return true;
+  return a.slice(i + 1) === b.slice(i + 1) || a.slice(i) === b.slice(i + 1) || a.slice(i + 1) === b.slice(i);
+}
+// "ok" · "accent" (right apart from an accent) · "close" (one letter off; only when typo is on) · "no" · "empty"
+// Typo tolerance is for recalling words. In grammar and verb forms the one letter is often the point.
+export function judge(input, answers, typo = false) {
+  const n = norm(input), all = answers.flatMap(forms).map(norm);
+  if (!n) return "empty";
+  if (all.includes(n)) return "ok";
+  if (all.some(a => plain(a) === plain(n))) return "accent";
+  if (typo && all.some(a => a.length >= 4 && oneOff(plain(a), plain(n)))) return "close";
+  return "no";
+}
+// Adjectives are listed in the masculine singular; the other endings are also right.
+export const adjForms = w => !w.art && /o$/.test(w.it) && !/\s/.test(w.it) ? ["a", "i", "e"].map(e => w.it.slice(0, -1) + e) : [];
+
 /* ---------- Gendered forms about the learner ---------- */
 // pref.gender: "m" | "f" | "x" (show both). Only forms about the learner ("io") change: "sono andato/a" → "sono andata".
 export function gf(text, isIo = true) {
@@ -380,6 +410,12 @@ export function gf(text, isIo = true) {
 }
 // Example sentences said by "io" may have a version for the other gender: alt = { base: "m"|"f", other: "…" }.
 export function exVoice(text, alt) { return !alt ? "f" : text === alt.other ? (alt.base === "m" ? "f" : "m") : alt.base; }
+// "andato o andata" in a question to the learner → the learner's form.
+export function gq(text) {
+  const g = S.pref.gender;
+  if (g !== "m" && g !== "f") return text;
+  return gf(String(text).replace(/(\p{L}+)o o (\p{L}+)a(?!\p{L})/gu, (m, a, b) => a === b ? a + (g === "m" ? "o" : "a") : m));
+}
 export function pickEx(text, alt) {
   const g = S.pref.gender;
   if (alt && (g === "m" || g === "f") && alt.base !== g) return alt.other;
@@ -404,6 +440,7 @@ function activityCat(v) {
     case "writing": return "writing";
     case "speaking": return "speaking";
     case "session": case "deck": return "review";
+    case "say": return "speaking";
     default: return null;
   }
 }

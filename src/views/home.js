@@ -1,4 +1,4 @@
-import { S, D, esc, lsGet, lsSet, counts, dueIds, statusOf, fmtIn, LEVELS, LEVEL_NAMES, barHTML, pct, displayName, savePref, allReviewable, ICON } from "../core.js";
+import { S, D, esc, lsGet, lsSet, counts, dueIds, statusOf, fmtIn, LEVELS, LEVEL_NAMES, barHTML, pct, displayName, savePref, allReviewable, ICON, learned, deckIds } from "../core.js";
 import { supabase } from "../supabase.js";
 import META from "../data/meta.json";
 import ROADMAP from "../data/roadmap.json";
@@ -25,22 +25,39 @@ function greeting() {
   const h = new Date().getHours();
   return h < 5 ? "Buonanotte" : h < 13 ? "Buongiorno" : h < 18 ? "Buon pomeriggio" : "Buonasera";
 }
-const LEVEL_CAN = {
-  A1: "Brand new, or you know a few words. Greetings, ordering, simple questions.",
-  A2: "You get by in simple situations. Talking about your day and your past.",
-  B1: "You can hold a conversation. Opinions, plans, stories.",
-  B2: "You're comfortable. Nuance, idioms, news and debate."
+// Most learners understand more than they can say, so we ask about both.
+const LEVEL_UNDERSTAND = {
+  A1: "A few words, signs and very simple questions.",
+  A2: "Simple conversations, messages and menus, if people speak slowly.",
+  B1: "Most everyday talk, and the news when it's clear.",
+  B2: "Films, radio and articles, with some effort."
+};
+const LEVEL_SPEAK = {
+  A1: "A few words, or I freeze.",
+  A2: "Short sentences about me, my day and my past.",
+  B1: "I get by, but I often search for words.",
+  B2: "I can discuss most topics, with some mistakes."
 };
 export const GENDER_OPTS = [["m", "-o", "Masculine forms: sono stanco"], ["f", "-a", "Feminine forms: sono stanca"], ["x", "-o/a", "Show both: sono stanco/a"]];
 const hasHistory = () => Object.values(S.st).some(e => e && (e.d || e.k || e.s || e.best != null || e.done || e.text));
 
 export function viewHome(app) {
-  // First run: ask for the level once, before anything else.
+  // First run: what you understand, then how well you speak. The path follows how you speak.
   if (!lsGet("parlo.onboarded", false) && !hasHistory()) {
-    app.innerHTML = `<header class="page-head"><p class="eyebrow">Benvenuto</p><h1>Where are you with Italian?</h1>
-      <p class="muted">Pick the level that sounds most like you. You can change it any time in your profile.</p></header>
-      <div class="level-pick">${LEVELS.map(l => `<button class="panel level-opt" data-pick="${l}"><span class="level-badge">${l}</span><span><span class="row-title">${LEVEL_NAMES[l]}</span><span class="muted small">${LEVEL_CAN[l]}</span></span>${ICON.chev}</button>`).join("")}</div>`;
-    app.querySelectorAll("[data-pick]").forEach(b => b.onclick = () => { savePref({ level: b.dataset.pick }); lsSet("parlo.onboarded", true); lsSet("parlo.ask.mode", true); viewHome(app); });
+    const und = lsGet("parlo.ask.und", null);
+    if (!und) {
+      app.innerHTML = `<header class="page-head"><p class="eyebrow">Benvenuto</p><h1>How much Italian do you understand?</h1>
+        <p class="muted">Understand more. Say what you mean. Most people understand more than they can say, so we ask about both.</p></header>
+        <div class="level-pick">${LEVELS.map(l => `<button class="panel level-opt" data-und="${l}"><span class="level-badge">${l}</span><span><span class="row-title">${LEVEL_NAMES[l]}</span><span class="muted small">${LEVEL_UNDERSTAND[l]}</span></span>${ICON.chev}</button>`).join("")}</div>`;
+      app.querySelectorAll("[data-und]").forEach(b => b.onclick = () => { lsSet("parlo.ask.und", b.dataset.und); viewHome(app); });
+      return;
+    }
+    const upTo = LEVELS.slice(0, LEVELS.indexOf(und) + 1);
+    app.innerHTML = `<header class="page-head"><p class="eyebrow">Step 2 of 2</p><h1>And when you speak?</h1>
+      <p class="muted">You understand ${und}. Your path follows how well you speak, so it trains what you need most. <button class="text-btn" data-und-back>Change</button></p></header>
+      <div class="level-pick">${upTo.map(l => `<button class="panel level-opt" data-pick="${l}"><span class="level-badge">${l}</span><span><span class="row-title">${LEVEL_NAMES[l]}</span><span class="muted small">${LEVEL_SPEAK[l]}</span></span>${ICON.chev}</button>`).join("")}</div>`;
+    app.querySelector("[data-und-back]").onclick = () => { lsSet("parlo.ask.und", null); viewHome(app); };
+    app.querySelectorAll("[data-pick]").forEach(b => b.onclick = () => { savePref({ level: b.dataset.pick, understand: und }); lsSet("parlo.onboarded", true); lsSet("parlo.ask.mode", true); viewHome(app); });
     return;
   }
   // First run, step 2: guided path or free study.
@@ -49,7 +66,7 @@ export function viewHome(app) {
     app.innerHTML = `<header class="page-head"><p class="eyebrow">How do you want to learn?</p><h1>Choose your way</h1>
       <p class="muted">You can switch any time in your profile.</p></header>
       <div class="level-pick">
-        <button class="panel level-opt" data-mode="path"><span class="level-badge">◆</span><span><span class="row-title">Follow a path <span class="pill new">Recommended</span></span><span class="muted small">A guided route through ${S.pref.level}: words, grammar, reading, writing and speaking in a sensible order, with checkpoints. About ${lo}–${hi} hours.</span></span>${ICON.chev}</button>
+        <button class="panel level-opt" data-mode="path"><span class="level-badge">◆</span><span><span class="row-title">Follow a path <span class="pill new">Recommended</span></span><span class="muted small">A guided route through ${S.pref.level}: words, grammar, reading, listening, writing and speaking in a sensible order, with checkpoints. About ${lo}–${hi} hours.${LEVELS.indexOf(S.pref.understand) > LEVELS.indexOf(S.pref.level) ? ` Words you probably understand are checked first, so you move faster.` : ""}</span></span>${ICON.chev}</button>
         <button class="panel level-opt" data-mode="self"><span class="level-badge">≡</span><span><span class="row-title">Study freely</span><span class="muted small">Pick what you want from the library, in any order.</span></span>${ICON.chev}</button>
       </div>`;
     app.querySelectorAll("[data-mode]").forEach(b => b.onclick = () => { savePref({ mode: b.dataset.mode }); lsSet("parlo.ask.mode", false); lsSet("parlo.ask.gender", true); viewHome(app); });
@@ -96,16 +113,25 @@ export function viewHome(app) {
       ${S.pref.mode === "path" ? pathCardHTML() : cont ? `<a class="panel row-link continue" href="${esc(cont.href)}">
         <span><span class="eyebrow">${cont.eyebrow}</span><span class="row-title">${esc(cont.title)}</span>${cont.sub ? `<span class="muted small">${esc(cont.sub)}</span>` : ""}</span>${ICON.chev}</a>` : ""}
     </div>
+    ${sayCardHTML()}
     ${S.pref.mode === "path" ? "" : `<section class="panel quiz-card">
       <div><p class="eyebrow">Quiz rapido</p><p class="row-title">Test yourself</p><p class="muted small">10 questions on words, verbs and grammar you've studied.</p></div>
       <div class="btn-row"><a class="btn" href="#/quiz/mix">Start quiz</a><a class="text-btn" href="#/quiz">More quizzes</a></div></section>`}
     ${S.pref.mode === "path" ? "" : `<section class="panel progress-panel" id="overview"><div class="panel-head"><h2>Your progress · ${S.pref.level}</h2><a class="small" href="#/account/settings">change level</a></div><div class="ov-rows"></div></section>`}
-    ${supabase && !S.user && !lsGet("parlo.hide.signin", false) ? `<p class="signin-line small muted"><a href="#/account/settings">Sign in</a> to keep your progress on every device. <button class="text-btn quiet-link" data-hide-signin>Hide</button></p>` : ""}
+    ${supabase && !S.user && !lsGet("parlo.hide.signin", false) ? `<p class="signin-line small muted"><a href="#/account/data">Sign in</a> to keep your progress on every device. <button class="text-btn quiet-link" data-hide-signin>Hide</button></p>` : ""}
   `;
   app.querySelector("[data-hide-signin]")?.addEventListener("click", () => { lsSet("parlo.hide.signin", true); viewHome(app); });
   const ov = app.querySelector("#overview .ov-rows"); if (ov) drawOverview(ov, lc);
 }
 
+// A short daily speaking round, once there's something to say.
+function sayCardHTML() {
+  const n = D.order.filter(learned).length + deckIds().length;
+  if (n < 5) return "";
+  return `<section class="panel quiz-card say-card-home">
+      <div><p class="eyebrow">Dillo in italiano</p><p class="row-title">Say it out loud</p><p class="muted small">5 sentences you've met, from English to Italian. About 3 min.</p></div>
+      <div class="btn-row"><a class="btn" href="#/say/daily">Start</a></div></section>`;
+}
 // Roadmap mode: the next step on the path, with the level's progress.
 function pathCardHTML() {
   const dueNow = dueIds().length;
