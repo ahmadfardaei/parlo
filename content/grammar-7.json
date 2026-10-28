@@ -5,12 +5,12 @@
     "topic": "sentences",
     "title": "Organizzare il discorso",
     "en": "Structuring what you say",
-    "summary": "The words that give a longer text or a talk its shape: putting points in order, adding, explaining, changing direction and summing up.",
-    "meaning": "Basic connectors link two clauses. In a longer piece of speech or writing you also need signposts that show where you are: the first point, an extra one, a clarification, a change of direction, the summary. Italians use them a lot, in meetings, emails and arguments at the bar. They usually open the sentence and are followed by a comma. The skill is choosing the one that fits the move you're making, not stacking them up.",
+    "summary": "Words that order, add, explain, turn and sum up points in a longer text.",
+    "meaning": "Use these markers to show the structure of a long text or talk. Put them at the start of the sentence, with a comma after them. Choose one marker for each step.",
     "uses": [
       {
         "h": "Putting points in order",
-        "t": "<b>innanzitutto</b> (or <i>prima di tutto</i>, <i>in primo luogo</i>) opens the list, <b>poi</b> / <b>in secondo luogo</b> continue it, and <b>infine</b> introduces the last item.",
+        "t": "Use <b>innanzitutto</b> for the first point, <b>poi</b> for the next, <b>infine</b> for the last.",
         "ex": [
           "Innanzitutto, la sala è troppo piccola; poi, il proiettore non funziona; infine, nessuno ha portato il caffè.",
           "First of all, the room is too small; then, the projector doesn't work; and finally, nobody brought the coffee."
@@ -18,7 +18,7 @@
       },
       {
         "h": "Adding a point: inoltre, peraltro",
-        "t": "<b>inoltre</b> adds one more argument in the same direction: “moreover”. <b>peraltro</b> adds a remark on the side, often one that makes things worse or more interesting: “what's more, incidentally”. <b>oltre a</b> + noun or infinitive = “besides, as well as”.",
+        "t": "Use <b>inoltre</b> to add a point, and <b>peraltro</b> for a side remark.",
         "ex": [
           "Il B&B è lontano dal centro; peraltro, il proprietario non risponde al telefono.",
           "The B&B is far from the centre; what's more, the owner doesn't answer the phone."
@@ -26,7 +26,7 @@
       },
       {
         "h": "Explaining: vale a dire, ovvero",
-        "t": "<b>vale a dire</b> and <b>ovvero</b> rephrase more precisely what you just said: “that is, namely”. They are more formal than <i>cioè</i>. <b>in particolare</b> zooms in on one part.",
+        "t": "Use <b>vale a dire</b> or <b>ovvero</b> to say the same thing more precisely.",
         "ex": [
           "La consegna è prevista entro fine mese, vale a dire tra dieci giorni.",
           "Delivery is expected by the end of the month, that is, in ten days."
@@ -34,7 +34,7 @@
       },
       {
         "h": "Confirming and turning: in effetti, detto questo",
-        "t": "<b>in effetti</b> agrees or concedes, often with a hint of “now that you mention it”. <b>detto questo</b> (or <i>detto ciò</i>) accepts what came before and then turns: “that said”.",
+        "t": "Use <b>in effetti</b> to agree, and <b>detto questo</b> to accept a point, then turn.",
         "ex": [
           "«Il treno per Bari è sempre in ritardo.» «In effetti, ieri ho aspettato quaranta minuti.»",
           "“The train to Bari is always late.” “True, yesterday I waited forty minutes.”"
@@ -42,7 +42,7 @@
       },
       {
         "h": "Two things at once: nel frattempo",
-        "t": "<b>nel frattempo</b> (or <i>intanto</i>) = meanwhile, while that was happening. <b>contemporaneamente</b> is the formal “at the same time”.",
+        "t": "Use <b>nel frattempo</b> or <i>intanto</i> for an action at the same time.",
         "ex": [
           "Io cercavo un parcheggio a Napoli; nel frattempo, mia moglie aveva già ordinato le pizze.",
           "I was looking for a parking space in Naples; meanwhile, my wife had already ordered the pizzas."
@@ -50,7 +50,7 @@
       },
       {
         "h": "Summing up: insomma",
-        "t": "<b>insomma</b> wraps things up: “in short, all in all”. In speech it can also show impatience (<i>Insomma, vieni o no?</i>). <i>In sintesi</i> and <i>in breve</i> are the neutral versions for written summaries.",
+        "t": "Use <b>insomma</b> to sum up or, in speech, to show impatience.",
         "ex": [
           "Pioveva, il rifugio era chiuso e avevamo finito l'acqua. Insomma, una gita indimenticabile.",
           "It was raining, the mountain hut was closed and we'd run out of water. In short, an unforgettable hike."
@@ -58,7 +58,7 @@
       }
     ],
     "form": {
-      "intro": "These markers usually open the sentence (or follow a semicolon) and take a comma after them. They don't change the verb: everything here is followed by the indicative. Choose them by the job they do in the text.",
+      "intro": "Put these markers at the start of the sentence or after a semicolon. Put a comma after them. They do not change the verb: use the indicative.",
       "tables": [
         {
           "h": "Ordering",
@@ -73,7 +73,7 @@
             ],
             [
               "infine, per finire",
-              "finally, lastly (the last item of a list)"
+              "finally (the last item in a list)"
             ],
             [
               "dopodiché, a quel punto",
@@ -86,19 +86,19 @@
           "rows": [
             [
               "inoltre",
-              "moreover, in addition (neutral, very common in writing)"
+              "moreover, in addition (neutral, common in writing)"
             ],
             [
               "peraltro, tra l'altro",
-              "what's more, incidentally (a side remark)"
+              "what is more, incidentally (a side remark)"
             ],
             [
               "per di più, in più",
-              "on top of that (often a complaint)"
+              "on top of that (often in a complaint)"
             ],
             [
               "oltre a + noun / infinitive",
-              "besides, as well as: oltre al prezzo, oltre a essere caro…"
+              "besides, as well as: oltre al prezzo, oltre a essere caro"
             ],
             [
               "non solo… ma anche",
@@ -132,7 +132,7 @@
             ],
             [
               "detto questo, detto ciò",
-              "that said (accepts, then turns)"
+              "that said (accepts a point, then turns)"
             ],
             [
               "nel frattempo, intanto",
@@ -146,11 +146,10 @@
         }
       ],
       "notes": [
-        "<b>infine</b> closes a list: <i>infine, il prezzo</i>. For “in the end, eventually” after a long wait or a story, use <b>alla fine</b>: <i>Alla fine il traghetto è partito.</i>",
-        "<b>ovvero</b> today almost always means “that is”. In old or legal texts it can mean “or”, which is why some people avoid it in contracts.",
-        "<b>oltre a</b> + infinitive: the subject is the same in both parts. <i>Oltre a essere caro, è scomodo.</i> Never <i>inoltre di</i>.",
-        "In <b>non solo… ma anche</b>, <i>anche</i> goes next to the word it adds: <i>non solo è caro, ma è anche brutto</i>.",
-        "Don't stack markers. One per sentence is plenty; two in a row (<i>inoltre, peraltro, …</i>) sounds like a bureaucrat."
+        "Use <b>infine</b> for the last item in a list. Use <b>alla fine</b> for “in the end”: <i>Alla fine il traghetto è partito.</i>",
+        "Use <b>oltre a</b> + infinitive when both parts have the same subject: <i>Oltre a essere caro, è scomodo.</i>",
+        "In <b>non solo… ma anche</b>, put <i>anche</i> before the word it adds: <i>non solo è caro, ma è anche brutto</i>.",
+        "Use one marker for each sentence. Do not put two markers together."
       ]
     },
     "signals": [
@@ -169,22 +168,22 @@
       {
         "wrong": "Infine, dopo tre ore di attesa, il treno è partito.",
         "right": "Alla fine, dopo tre ore di attesa, il treno è partito.",
-        "why": "<b>infine</b> introduces the last item of a list. “Eventually, in the end” is <b>alla fine</b>."
+        "why": "Use <b>infine</b> for a last list item and <b>alla fine</b> for “in the end”."
       },
       {
         "wrong": "Inoltre di essere bravo, è simpatico.",
         "right": "Oltre a essere bravo, è simpatico.",
-        "why": "“Besides being” is <b>oltre a</b> + infinitive. <i>Inoltre</i> stands alone: <i>È bravo. Inoltre, è simpatico.</i>"
+        "why": "“Besides being” is <b>oltre a</b> + infinitive, because <i>inoltre</i> stands alone."
       },
       {
         "wrong": "Non solo è lontano, ma anche è caro.",
         "right": "Non solo è lontano, ma è anche caro.",
-        "why": "<b>anche</b> goes right before the word it adds (here <i>caro</i>), after the verb."
+        "why": "Put <b>anche</b> after the verb, before the word it adds."
       },
       {
         "wrong": "Il progetto ha dei limiti. Detto questo, non mi piace.",
         "right": "Il progetto ha dei limiti. Detto questo, è il migliore che abbiamo.",
-        "why": "<b>detto questo</b> marks a turn: after it, you go in a different direction from what you just said, not further in the same one."
+        "why": "After <b>detto questo</b>, go in the opposite direction."
       }
     ],
     "ex": [
@@ -198,7 +197,7 @@
           "in primo luogo",
           "anzitutto"
         ],
-        "why": "The first item of a list: <b>innanzitutto</b> or <i>prima di tutto</i>, <i>in primo luogo</i>."
+        "why": "Use <b>innanzitutto</b> for the first item in a list."
       },
       {
         "k": "type",
@@ -210,7 +209,7 @@
           "per di più",
           "peraltro"
         ],
-        "why": "Another argument in the same direction: <b>inoltre</b>."
+        "why": "Use <b>inoltre</b> to add a point in the same direction."
       },
       {
         "k": "type",
@@ -219,7 +218,7 @@
         "a": [
           "oltre a"
         ],
-        "why": "“Besides being” = <b>oltre a</b> + infinitive, with the same subject in both parts."
+        "why": "“Besides being” is <b>oltre a</b> + infinitive, with the same subject."
       },
       {
         "k": "type",
@@ -228,7 +227,7 @@
         "a": [
           "vale a dire"
         ],
-        "why": "<b>vale a dire</b> rephrases more precisely: the first Monday, namely 3 March."
+        "why": "<b>vale a dire</b> says the same thing more precisely."
       },
       {
         "k": "mc",
@@ -239,7 +238,7 @@
           "Insomma"
         ],
         "a": "In effetti",
-        "why": "<b>In effetti</b> agrees with what the other person said and explains it. <i>Detto questo</i> would turn against it; <i>insomma</i> sums up."
+        "why": "<b>In effetti</b> agrees with the other speaker and explains."
       },
       {
         "k": "type",
@@ -272,7 +271,7 @@
           "Inoltre"
         ],
         "a": "Alla fine",
-        "why": "“Eventually, after all that” is <b>alla fine</b>. <i>Infine</i> only introduces the last point of a list."
+        "why": "Use <b>alla fine</b> for “in the end”, because <i>infine</i> starts a last list item."
       },
       {
         "k": "type",
@@ -283,7 +282,7 @@
           "in breve",
           "in sintesi"
         ],
-        "why": "Summing up a series of facts: <b>insomma</b>."
+        "why": "Use <b>insomma</b> to sum up a series of facts."
       },
       {
         "k": "mc",
@@ -299,7 +298,7 @@
       {
         "k": "type",
         "q": "Il paese ha trecento abitanti e, ___, metà sono parenti del sindaco.",
-        "h": "what's more, incidentally",
+        "h": "what is more, incidentally",
         "a": [
           "peraltro",
           "tra l'altro",
@@ -307,7 +306,7 @@
           "inoltre",
           "oltretutto"
         ],
-        "why": "A side remark that adds colour: <b>peraltro</b> or <i>tra l'altro</i>."
+        "why": "Use <b>peraltro</b> or <i>tra l'altro</i> for a side remark."
       },
       {
         "k": "mc",
@@ -318,7 +317,7 @@
           "however"
         ],
         "a": "that is",
-        "why": "In modern Italian <b>ovvero</b> rephrases: “that is, namely”."
+        "why": "In modern Italian, <b>ovvero</b> means “that is”."
       },
       {
         "k": "type",
@@ -327,7 +326,7 @@
         "a": [
           "particolare"
         ],
-        "why": "<b>in particolare</b> zooms in on one part of what you just mentioned."
+        "why": "Use <b>in particolare</b> to focus on one part."
       }
     ]
   },
@@ -337,12 +336,12 @@
     "topic": "tenses",
     "title": "L'infinito passato",
     "en": "The past infinitive",
-    "summary": "avere or essere + past participle, as in “dopo aver mangiato”: an action that's already finished before another one.",
-    "meaning": "The <b>infinito passato</b> is the infinitive of the passato prossimo: <i>aver mangiato</i> (to have eaten), <i>essere arrivato</i> (to have arrived). It shows that something was <b>completed before</b> the main action, and it only works when both actions have <b>the same subject</b>. English often uses “-ing” here: <i>dopo aver mangiato</i> = after eating.",
+    "summary": "Avere or essere + past participle, for an action finished before another action.",
+    "meaning": "The past infinitive is avere or essere + past participle: <i>aver mangiato</i>, <i>essere arrivato</i>. Use it for an action that is <b>finished before</b> the main action. Use it only when both actions have <b>the same subject</b>.",
     "uses": [
       {
         "h": "After doing: dopo + infinito passato",
-        "t": "The most common use. Italian needs the past infinitive after <b>dopo</b>, where English says “after doing”.",
+        "t": "After <b>dopo</b>, use the past infinitive for English “after doing”.",
         "ex": [
           "Dopo aver visto il mare di Polignano, non voleva più tornare a Torino.",
           "After seeing the sea at Polignano, she didn't want to go back to Turin."
@@ -350,7 +349,7 @@
       },
       {
         "h": "Essere verbs agree",
-        "t": "Verbs that take essere in the passato prossimo take it here too, and the participle agrees with the subject.",
+        "t": "With essere verbs, the past participle agrees with the subject.",
         "ex": [
           "Dopo essere arrivate a Lecce, Sara e Ilaria hanno cercato un bar aperto.",
           "After arriving in Lecce, Sara and Ilaria looked for a bar that was open."
@@ -358,7 +357,7 @@
       },
       {
         "h": "With pronouns: dopo averlo visto",
-        "t": "Object pronouns attach to <b>aver / essere</b>. With lo, la, li, le and ne, the participle agrees as in the passato prossimo.",
+        "t": "Attach pronouns to <b>aver / essere</b>; the past participle agrees with lo, la, li, le.",
         "ex": [
           "La lettera? Dopo averla letta, l'ha strappata.",
           "The letter? After reading it, he tore it up."
@@ -366,7 +365,7 @@
       },
       {
         "h": "Without having done: senza",
-        "t": "<b>senza</b> + infinito passato = without having done something.",
+        "t": "Use <b>senza</b> + past infinitive for “without having done”.",
         "ex": [
           "È partito per Cagliari senza aver salutato nessuno.",
           "He left for Cagliari without saying goodbye to anyone."
@@ -374,7 +373,7 @@
       },
       {
         "h": "Because of what you did: per",
-        "t": "<b>per</b> + infinito passato gives the reason for a reward, a thank-you or a punishment: “for having done”.",
+        "t": "Use <b>per</b> + past infinitive for the reason for thanks, a reward or a punishment.",
         "ex": [
           "Grazie per avermi aspettato.",
           "Thanks for waiting for me."
@@ -382,7 +381,7 @@
       },
       {
         "h": "After verbs with di",
-        "t": "When the same person thinks, regrets or remembers a past action: <b>credo di, mi dispiace di, sono contento di, ricordo di</b> + infinito passato.",
+        "t": "Use the past infinitive after <b>credo di, mi dispiace di, sono contento di, ricordo di</b>.",
         "ex": [
           "Mi dispiace di non essere venuto alla tua laurea.",
           "I'm sorry I didn't come to your graduation."
@@ -390,7 +389,7 @@
       }
     ],
     "form": {
-      "intro": "<b>avere</b> or <b>essere</b> in the infinitive + the past participle. The choice of auxiliary is the same as in the passato prossimo. <i>Avere</i> usually drops its final -e: <b>aver</b> mangiato (both are correct).",
+      "intro": "Use <b>avere</b> or <b>essere</b> in the infinitive + the past participle. Choose the auxiliary as in the passato prossimo. <i>Avere</i> often drops the final -e: <b>aver</b> mangiato.",
       "tables": [
         {
           "h": "The forms",
@@ -440,10 +439,9 @@
         }
       ],
       "notes": [
-        "The reflexive pronoun changes with the subject: <i>dopo <b>essermi</b> svegliato</i> (io), <i>dopo <b>esserti</b> svegliato</i> (tu), <i>dopo <b>esserci</b> svegliati</i> (noi).",
-        "<b>Different subjects</b> → use <b>dopo che</b> + a conjugated verb: <i>Dopo che lui è uscito, ho chiamato Anna.</i>",
-        "<b>prima di</b> takes the ordinary infinitive, not the past one: <i>prima di uscire</i>, <i>prima di partire</i>.",
-        "In speech you may hear <i>dopo mangiato</i> or <i>dopo cena</i>. <i>Dopo mangiare</i> is regional; the standard form is <i>dopo aver mangiato</i>."
+        "The reflexive pronoun changes with the subject: <i>dopo <b>essermi</b> svegliato</i> (io), <i>dopo <b>esserci</b> svegliati</i> (noi).",
+        "If the subjects are different, use <b>dopo che</b> + a conjugated verb: <i>Dopo che lui è uscito, ho chiamato Anna.</i>",
+        "After <b>prima di</b>, use the present infinitive: <i>prima di uscire</i>."
       ]
     },
     "signals": [
@@ -459,99 +457,99 @@
       {
         "wrong": "Dopo mangiare, facciamo una passeggiata.",
         "right": "Dopo aver mangiato, facciamo una passeggiata.",
-        "why": "After <b>dopo</b>, standard Italian uses the past infinitive: the meal is finished first."
+        "why": "After <b>dopo</b>, use the past infinitive because the meal is finished first."
       },
       {
         "wrong": "Dopo aver arrivato, ho chiamato mia madre.",
         "right": "Dopo essere arrivato, ho chiamato mia madre.",
-        "why": "<b>arrivare</b> takes essere in the passato prossimo, so it takes essere here too."
+        "why": "<b>arrivare</b> takes essere in the passato prossimo, so use essere here."
       },
       {
         "wrong": "Dopo essere uscita, Marco mi ha chiamato.",
         "right": "Dopo che sono uscita, Marco mi ha chiamato.",
-        "why": "The infinitive only works with the same subject. Here I left and Marco called, so use <b>dopo che</b> + passato prossimo."
+        "why": "With different subjects, use <b>dopo che</b> + passato prossimo."
       },
       {
         "wrong": "Le foto? Dopo aver le viste, le ho cancellate.",
         "right": "Le foto? Dopo averle viste, le ho cancellate.",
-        "why": "The pronoun attaches to <b>aver</b> (averle), and the participle agrees with it (viste)."
+        "why": "Attach the pronoun to <b>aver</b> and make the past participle agree with it."
       }
     ],
     "ex": [
       {
         "k": "type",
         "q": "Dopo ___ le orecchiette, il nonno si è addormentato in poltrona.",
-        "h": "infinito passato · mangiare",
+        "h": "past infinitive · mangiare",
         "a": [
           "aver mangiato",
           "avere mangiato"
         ],
-        "why": "<b>mangiare</b> takes avere: aver mangiato. No agreement."
+        "why": "<b>mangiare</b> takes avere, so the past participle does not agree."
       },
       {
         "k": "type",
         "q": "Dopo ___ a Matera, Silvia e Chiara hanno cercato subito un bar.",
-        "h": "infinito passato · arrivare",
+        "h": "past infinitive · arrivare",
         "a": [
           "essere arrivate"
         ],
-        "why": "<b>arrivare</b> takes essere, and the participle agrees with Silvia e Chiara: arrivate."
+        "why": "<b>arrivare</b> takes essere, so the past participle agrees with Silvia e Chiara."
       },
       {
         "k": "type",
         "q": "Ho visto il film di Garrone. Dopo ___, ho capito perché tutti ne parlavano.",
-        "h": "infinito passato + lo · vedere",
+        "h": "past infinitive + lo · vedere",
         "a": [
           "averlo visto"
         ],
-        "why": "The pronoun attaches to aver: <b>averlo visto</b>."
+        "why": "Attach the pronoun to aver: <b>averlo visto</b>."
       },
       {
         "k": "type",
         "q": "Le chiavi? Sono sicura di ___ sul tavolo dell'ingresso.",
-        "h": "infinito passato + le · lasciare",
+        "h": "past infinitive + le · lasciare",
         "a": [
           "averle lasciate"
         ],
-        "why": "Same subject (io… io) → di + infinito passato. With <b>le</b> the participle agrees: lasciate."
+        "why": "The subject is the same, and with <b>le</b> the past participle agrees: lasciate."
       },
       {
         "k": "type",
         "q": "È uscito di casa senza ___ la porta.",
-        "h": "infinito passato · chiudere",
+        "h": "past infinitive · chiudere",
         "a": [
           "aver chiuso",
           "avere chiuso"
         ],
-        "why": "<b>senza</b> + infinito passato = without having done."
+        "why": "<b>senza</b> + past infinitive means “without having done”."
       },
       {
         "k": "type",
         "q": "Un tassista di Bergamo è stato premiato per ___ un portafoglio con tremila euro.",
-        "h": "infinito passato · restituire",
+        "h": "past infinitive · restituire",
         "a": [
           "aver restituito",
           "avere restituito"
         ],
-        "why": "<b>per</b> + infinito passato gives the reason for the reward."
+        "why": "<b>per</b> + past infinitive gives the reason for the reward."
       },
       {
         "k": "type",
         "q": "Grazie per ___ ieri sera: da solo non avrei mai trovato la strada.",
-        "h": "infinito passato + mi · accompagnare",
+        "h": "past infinitive + mi · accompagnare",
         "a": [
           "avermi accompagnato"
         ],
-        "why": "<b>mi</b> is an object pronoun here but not lo/la/li/le, so the participle normally stays -o: avermi accompagnato."
+        "why": "With <b>mi</b>, the past participle does not agree: avermi accompagnato."
       },
       {
         "k": "type",
         "q": "Dopo ___ alle sei, Luca ha fatto colazione sul balcone.",
-        "h": "infinito passato · svegliarsi",
+        "h": "past infinitive · svegliarsi",
         "a": [
           "essersi svegliato"
         ],
-        "why": "Reflexive → essere, with the right pronoun (si for Luca) and agreement: <b>essersi svegliato</b>."
+        "why": "Reflexive verbs take essere, and Luca needs si: <b>essersi svegliato</b>."
       },
       {
         "k": "mc",
@@ -562,7 +560,7 @@
           "esserci stato"
         ],
         "a": "esserci stati",
-        "why": "<b>stare/essere</b> takes essere; the subject is noi, so stati. <b>ci</b> = there."
+        "why": "<b>stare/essere</b> take essere, and the subject is noi: <b>stati</b>."
       },
       {
         "k": "mc",
@@ -573,7 +571,7 @@
           "venire"
         ],
         "a": "essere venuto",
-        "why": "<b>venire</b> takes essere. The regret is about a finished event, so the past infinitive."
+        "why": "<b>venire</b> takes essere, and the event is finished: <b>essere venuto</b>."
       },
       {
         "k": "mc",
@@ -584,17 +582,17 @@
           "Dopo uscire"
         ],
         "a": "Dopo che sono uscita",
-        "why": "Two different subjects (io, Anna): the infinitive can't be used. Use <b>dopo che</b> + passato prossimo."
+        "why": "With different subjects, use <b>dopo che</b> + passato prossimo."
       },
       {
         "k": "type",
         "q": "Credo di ___ il tuo messaggio: arrivi giovedì, giusto?",
-        "h": "infinito passato · capire",
+        "h": "past infinitive · capire",
         "a": [
           "aver capito",
           "avere capito"
         ],
-        "why": "<b>credo di</b> + infinito passato: the same person thinks and understood."
+        "why": "Same person thinks and understood: <b>credo di</b> + past infinitive."
       },
       {
         "k": "mc",
@@ -605,7 +603,7 @@
           "essere andata"
         ],
         "a": "essere andato",
-        "why": "<b>andare</b> takes essere, and the participle agrees with mio padre: andato."
+        "why": "<b>andare</b> takes essere, so the past participle agrees with mio padre."
       }
     ]
   },
@@ -615,12 +613,12 @@
     "topic": "verbtypes",
     "title": "I verbi pronominali",
     "en": "Pronominal verbs",
-    "summary": "Everyday verbs with built-in pronouns, like farcela, andarsene and prendersela, whose meaning goes beyond the parts.",
-    "meaning": "Some very common Italian verbs carry one or two pronouns that no longer refer to anything: <i>farcela</i> is not “to make it there”, it means “to manage”. The pronouns (<b>ci, la, ne, si</b>) are part of the verb and change form in the usual combinations: <i>ce la faccio</i>, <i>me ne vado</i>, <i>se l'è presa</i>. Native speakers use them all the time, so they are worth learning as whole expressions, with their passato prossimo.",
+    "summary": "Common verbs with fixed pronouns, like farcela and andarsene, that have a special meaning.",
+    "meaning": "Some common verbs have one or two fixed pronouns: <b>ci, la, ne, si</b>. These pronouns do not refer to a thing, and the verb has a new meaning. Learn each verb as a full expression, with its passato prossimo.",
     "uses": [
       {
         "h": "farcela: to manage, to make it",
-        "t": "Can you cope, will you make it in time, can you do it? <b>Non ce la faccio più</b> = I can't take it any more.",
+        "t": "Use <b>farcela</b> for “to manage”; <b>non ce la faccio più</b> means “I cannot take more”.",
         "ex": [
           "Dopo tre bocciature, finalmente ce l'ho fatta: sono ingegnere.",
           "After failing three times, I finally made it: I'm an engineer."
@@ -628,7 +626,7 @@
       },
       {
         "h": "andarsene: to leave, to go away",
-        "t": "Stronger than <i>andare via</i>: leaving a place or a situation, often for good or in a huff. <b>Vattene!</b> = Go away!",
+        "t": "Use <b>andarsene</b> to leave a place or a situation: <b>vattene!</b> means “go away!”",
         "ex": [
           "Alle dieci mia suocera se n'è andata senza dire una parola.",
           "At ten my mother-in-law left without saying a word."
@@ -636,7 +634,7 @@
       },
       {
         "h": "cavarsela: to get by",
-        "t": "To manage reasonably well, or to get out of a tight spot. <b>Me la cavo</b> is the modest Italian answer to “do you speak…?”.",
+        "t": "Use <b>cavarsela</b> for “to get by”: <b>me la cavo</b>.",
         "ex": [
           "Con il dialetto barese me la cavo, ma il napoletano non lo capisco.",
           "I get by in Bari dialect, but I don't understand Neapolitan."
@@ -644,7 +642,7 @@
       },
       {
         "h": "prendersela: to take it badly",
-        "t": "To get upset or offended, <b>con</b> someone or <b>per</b> something. <b>Non te la prendere</b> = don't take it personally.",
+        "t": "Use <b>prendersela</b> (con someone, per something) for “to get upset”.",
         "ex": [
           "Gli ho detto che il suo tiramisù era asciutto e se l'è presa.",
           "I told him his tiramisù was dry and he took offence."
@@ -652,7 +650,7 @@
       },
       {
         "h": "metterci and volerci: how long it takes",
-        "t": "<b>metterci</b> has a person as subject: <i>ci metto un'ora</i> (I take an hour). <b>volerci</b> has the time or thing needed as subject: <i>ci vuole un'ora</i>, <i>ci vogliono due ore</i>.",
+        "t": "Use <b>metterci</b> with a person as subject and <b>volerci</b> with the time as subject.",
         "ex": [
           "Da Ivrea a Torino ci metto quaranta minuti, ma col treno ci vuole un'ora.",
           "It takes me forty minutes from Ivrea to Turin, but by train it takes an hour."
@@ -660,7 +658,7 @@
       },
       {
         "h": "fregarsene and smetterla: attitude",
-        "t": "<b>fregarsene</b> (di) = not to give a damn: colloquial and a bit rude. <b>smetterla</b> (di) = to stop doing something annoying, mostly in the imperative: <b>smettila!</b>",
+        "t": "Use <b>fregarsene</b> for “not to care” (rude) and <b>smetterla</b> for “to stop”.",
         "ex": [
           "Smettila di controllare il telefono: tanto lui se ne frega.",
           "Stop checking your phone: he couldn't care less anyway."
@@ -668,7 +666,7 @@
       }
     ],
     "form": {
-      "intro": "In front of <b>la</b> and <b>ne</b>, the pronouns mi, ti, si, ci, vi become <b>me, te, se, ce, ve</b>. The pronouns go before a conjugated verb and attach to the end of an infinitive, a gerund or a tu/voi imperative.",
+      "intro": "Before <b>la</b> and <b>ne</b>, mi, ti, si, ci, vi change to <b>me, te, se, ce, ve</b>. Put the pronouns before a conjugated verb. Attach them to an infinitive, a gerund or a tu/voi imperative.",
       "tables": [
         {
           "h": "Presente",
@@ -700,7 +698,7 @@
           "rows": [
             [
               "farcela",
-              "ce l'ho fatta, ce l'hai fatta… (avere; always <b>fatta</b>, agreeing with la)"
+              "ce l'ho fatta, ce l'hai fatta (avere; always <b>fatta</b>)"
             ],
             [
               "cavarsela",
@@ -744,17 +742,17 @@
               "non te la prendere / non prendertela, non te ne andare / non andartene"
             ],
             [
-              "with modals",
+              "with modal verbs",
               "devo andarmene = me ne devo andare; non riesco a farcela"
             ]
           ]
         }
       ],
       "notes": [
-        "With <b>la</b>, the participle is always feminine even when the subject is a man: <i>Paolo ce l'ha fatta</i>, <i>Paolo se l'è presa</i>.",
-        "With <b>andarsene</b> and <b>fregarsene</b>, the participle agrees with the subject: <i>Giulia se n'è andata</i>, <i>i ragazzi se ne sono andati</i>.",
-        "<b>metterci</b> vs <b>volerci</b>: who takes the time? A person → metterci. The time is just needed → volerci (singular or plural: <i>ci vuole un'ora</i>, <i>ci vogliono tre ore</i>).",
-        "Other common ones: <b>avercela con</b> qualcuno (to have it in for someone), <b>sentirsela</b> (to feel up to it), <b>godersela</b> (to enjoy it), <b>passarsela</b> (to be getting on: <i>come te la passi?</i>)."
+        "With <b>la</b>, the past participle is always feminine: <i>Paolo ce l'ha fatta</i>, <i>Paolo se l'è presa</i>.",
+        "With <b>andarsene</b> and <b>fregarsene</b>, the past participle agrees with the subject: <i>Giulia se n'è andata</i>.",
+        "A person takes the time: use <b>metterci</b>. The time is necessary: use <b>volerci</b> (<i>ci vuole un'ora</i>, <i>ci vogliono tre ore</i>).",
+        "Other common verbs: <b>avercela con</b> (to be angry with), <b>sentirsela</b> (to feel ready), <b>godersela</b> (to enjoy it)."
       ]
     },
     "signals": [
@@ -773,33 +771,33 @@
       {
         "wrong": "Ce l'ho fatto!",
         "right": "Ce l'ho fatta!",
-        "why": "The participle agrees with <b>la</b>, so it is always <b>fatta</b>, whoever is speaking."
+        "why": "The past participle agrees with <b>la</b>, so it is always <b>fatta</b>."
       },
       {
         "wrong": "Mia sorella se ne è andato.",
         "right": "Mia sorella se n'è andata.",
-        "why": "<b>andarsene</b> takes essere and agrees with the subject: andata. <i>ne è</i> usually contracts to <b>n'è</b>."
+        "why": "<b>andarsene</b> takes essere and agrees with the subject: andata."
       },
       {
         "wrong": "Ci vuole tre ore per arrivare a Lecce.",
         "right": "Ci vogliono tre ore per arrivare a Lecce.",
-        "why": "With <b>volerci</b> the time is the subject: tre ore is plural, so <b>vogliono</b>."
+        "why": "With <b>volerci</b>, the plural time <i>tre ore</i> is the subject: <b>vogliono</b>."
       },
       {
         "wrong": "Ci ho voluto un'ora per trovare parcheggio.",
         "right": "Ci ho messo un'ora per trovare parcheggio.",
-        "why": "When a person is the subject, use <b>metterci</b>. <i>Volerci</i> is impersonal: <i>c'è voluta un'ora</i>."
+        "why": "A person is the subject, so use <b>metterci</b>."
       }
     ],
     "ex": [
       {
         "k": "type",
         "q": "Dopo sette ore di salita sul Gran Sasso, finalmente ce l'abbiamo ___!",
-        "h": "farcela · participle",
+        "h": "farcela · past participle",
         "a": [
           "fatta"
         ],
-        "why": "With <b>farcela</b> the participle agrees with la: always <b>fatta</b>."
+        "why": "With <b>farcela</b>, the past participle is always <b>fatta</b>."
       },
       {
         "k": "type",
@@ -808,12 +806,12 @@
         "a": [
           "me ne"
         ],
-        "why": "mi + ne → <b>me ne</b>: me ne vado."
+        "why": "mi + ne changes to <b>me ne</b>."
       },
       {
         "k": "type",
         "q": "Era arrabbiata con tutti e alle undici se n'è ___ senza salutare.",
-        "h": "andarsene · participle",
+        "h": "andarsene · past participle",
         "a": [
           "andata"
         ],
@@ -826,16 +824,16 @@
         "a": [
           "me la"
         ],
-        "why": "mi + la → <b>me la</b>: me la cavo = I get by."
+        "why": "mi + la changes to <b>me la</b>: me la cavo means “I get by”."
       },
       {
         "k": "type",
         "q": "Gli ho detto che il suo tiramisù era un po' asciutto e se l'è ___ a morte.",
-        "h": "prendersela · participle",
+        "h": "prendersela · past participle",
         "a": [
           "presa"
         ],
-        "why": "<b>prendersela</b>: the participle agrees with la, so <b>presa</b>, even for a man."
+        "why": "The past participle agrees with la: <b>presa</b>, also for a man."
       },
       {
         "k": "type",
@@ -844,7 +842,7 @@
         "a": [
           "ci"
         ],
-        "why": "<b>metterci</b> = to take (time), with a person as subject: ci metto."
+        "why": "Use <b>metterci</b> with a person as subject: ci metto."
       },
       {
         "k": "type",
@@ -853,16 +851,16 @@
         "a": [
           "vogliono"
         ],
-        "why": "<b>volerci</b> agrees with the time needed: quattro ore → ci vogliono."
+        "why": "<b>volerci</b> agrees with the time: quattro ore, so ci vogliono."
       },
       {
         "k": "type",
         "q": "Per arrivare a Santa Maria di Leuca ci è ___ un'intera giornata.",
-        "h": "volerci · participle",
+        "h": "volerci · past participle",
         "a": [
           "voluta"
         ],
-        "why": "<b>volerci</b> takes essere and agrees with the subject, <i>un'intera giornata</i>: voluta."
+        "why": "<b>volerci</b> takes essere and agrees with <i>un'intera giornata</i>: voluta."
       },
       {
         "k": "mc",
@@ -873,7 +871,7 @@
           "non ce la fare"
         ],
         "a": "non te la prendere",
-        "why": "<b>Non te la prendere</b> = don't take it badly. Negative tu imperative: non + infinitive."
+        "why": "<b>Non te la prendere</b> means “do not take it badly”."
       },
       {
         "k": "mc",
@@ -884,7 +882,7 @@
           "ce la frega"
         ],
         "a": "se ne frega",
-        "why": "<b>fregarsene</b> (di qualcosa) uses <b>ne</b>: se ne frega. <i>Altamente</i> is the usual intensifier."
+        "why": "<b>fregarsene</b> uses <b>ne</b>: se ne frega."
       },
       {
         "k": "type",
@@ -893,7 +891,7 @@
         "a": [
           "smettila"
         ],
-        "why": "Tu imperative + la attached: <b>smettila</b>."
+        "why": "Attach la to the tu imperative: <b>smettila</b>."
       },
       {
         "k": "mc",
@@ -904,7 +902,7 @@
           "ci metto"
         ],
         "a": "ce la faccio",
-        "why": "<b>farcela</b> = to manage: ce la faccio da sola = I can manage on my own."
+        "why": "<b>farcela</b> means “to manage”: ce la faccio."
       },
       {
         "k": "mc",
@@ -915,7 +913,7 @@
           "ci sono messo"
         ],
         "a": "ci ho messo",
-        "why": "A person (io) takes the time → <b>metterci</b> with avere. <i>Ci è voluto</i> is wrong because <i>due ore</i> is plural (ci sono volute)."
+        "why": "A person takes the time, so use <b>metterci</b> with avere."
       },
       {
         "k": "type",
@@ -924,7 +922,7 @@
         "a": [
           "ce la"
         ],
-        "why": "<b>Non ce la faccio più</b> = I can't take it any more."
+        "why": "<b>Non ce la faccio più</b> means “I cannot take it any more”."
       }
     ]
   }

@@ -5,20 +5,20 @@
     "topic": "functions",
     "title": "Essere cortesi",
     "en": "Being polite",
-    "summary": "How Italians soften requests, refusals and bad news: the condizionale, ready-made formulas, questions and small cushioning words.",
-    "meaning": "In Italian a bare request can sound like an order, even with <i>per favore</i> on the end. So Italians soften anything that might sound blunt: they switch the verb to the <b>condizionale</b>, wrap the request in a <b>fixed formula</b>, or turn a statement into a <b>question</b>. It isn't hypocrisy: it's simply what respect sounds like. One or two softeners per sentence are enough; pile on more and you sound servile or sarcastic.",
+    "summary": "Use the condizionale, fixed formulas and questions to make requests and refusals polite.",
+    "meaning": "In Italian, a direct request can sound like an order, even with <i>per favore</i>. To make it polite, use the <b>condizionale</b>, a fixed formula or a question. Use one or two of these per sentence, not more.",
     "uses": [
       {
         "h": "Condizionale instead of presente",
-        "t": "The single most useful switch: <b>voglio → vorrei</b>, <b>posso → potrei</b>, <b>mi serve → mi servirebbe</b>, <b>è possibile → sarebbe possibile</b>.",
+        "t": "Use the condizionale: <b>voglio → vorrei</b>, <b>posso → potrei</b>, <b>mi serve → mi servirebbe</b>.",
         "ex": [
           "Mi servirebbe il preventivo entro giovedì, se riesci.",
           "I'd need the quote by Thursday, if you can manage."
         ]
       },
       {
-        "h": "Ready-made request formulas",
-        "t": "Learn them whole. Formal: <b>Le sarei grato/a se potesse…</b>, <b>Le chiederei cortesemente di…</b>. Informal: <b>Ti dispiacerebbe…?</b>",
+        "h": "Fixed request formulas",
+        "t": "Learn these as fixed phrases: <b>Le sarei grato/a se potesse…</b> (formal), <b>Ti dispiacerebbe…?</b> (informal).",
         "ex": [
           "Le sarei grata se potesse spedirmi la fattura anche via email.",
           "I'd be grateful if you could also send me the invoice by email."
@@ -26,7 +26,7 @@
       },
       {
         "h": "A question instead of a statement",
-        "t": "<i>Bisogna cambiare data</i> sounds like a decision already taken. <b>Che ne dici se…?</b>, <b>Ti andrebbe di…?</b>, <b>Sarebbe possibile…?</b> invite the other person in.",
+        "t": "Ask a question to include the other person: <b>Che ne dici se…?</b>, <b>Ti andrebbe di…?</b>",
         "ex": [
           "Che ne dici se spostiamo la cena a sabato?",
           "How about moving the dinner to Saturday?"
@@ -34,23 +34,23 @@
       },
       {
         "h": "Saying no",
-        "t": "A polite refusal has three parts: <b>regret</b> (purtroppo, mi dispiace), a <b>short reason</b>, and an <b>alternative</b>.",
+        "t": "A polite refusal has three parts: regret (<b>purtroppo</b>), a short reason and an alternative.",
         "ex": [
           "Purtroppo sabato non riesco, lavoro fino alle otto. Domenica ti andrebbe bene?",
           "Unfortunately I can't make Saturday, I'm working until eight. Would Sunday suit you?"
         ]
       },
       {
-        "h": "Cushions before criticism or bad news",
-        "t": "A few words that prepare the ground: <b>Forse mi sbaglio, ma…</b>, <b>Se posso permettermi…</b>, <b>Purtroppo devo dirti che…</b>, <b>Mi dispiace informarLa che…</b>",
+        "h": "Softeners before criticism or bad news",
+        "t": "Put a softener first: <b>Forse mi sbaglio, ma…</b>, <b>Purtroppo devo dirti che…</b>",
         "ex": [
           "Forse mi sbaglio, ma nel conto c'è un caffè di troppo.",
           "Maybe I'm wrong, but there's one coffee too many on the bill."
         ]
       },
       {
-        "h": "Taking the blame off the person",
-        "t": "An impersonal phrase describes the problem without pointing a finger: <b>c'è stato un errore</b> rather than <i>hai sbagliato</i>.",
+        "h": "Describe the problem, not the person",
+        "t": "Use an impersonal phrase: say <b>c'è stato un errore</b>, not <i>hai sbagliato</i>.",
         "ex": [
           "C'è stato un malinteso sulle date, lo sistemiamo subito.",
           "There's been a misunderstanding about the dates; we'll sort it out right away."
@@ -58,10 +58,10 @@
       }
     ],
     "form": {
-      "intro": "Most of the work is done by swapping a direct form for a softer one. Learn these pairs as chunks: you'll use them every day in shops, offices and emails.",
+      "intro": "Change a direct form to a softer form. Learn these pairs as fixed phrases.",
       "tables": [
         {
-          "h": "Direct → softened",
+          "h": "Direct → polite",
           "rows": [
             [
               "voglio…",
@@ -98,7 +98,7 @@
           ]
         },
         {
-          "h": "Formulas by situation",
+          "h": "Formulas for each situation",
           "rows": [
             [
               "asking (Lei)",
@@ -128,10 +128,10 @@
         }
       ],
       "notes": [
-        "<b>Per favore</b> doesn't make an imperative polite by itself. <i>Mandami il file, per favore</i> is fine with a close colleague; with anyone else say <i>potresti mandarmi il file?</i>",
-        "A condizionale in the main clause pulls what follows into the <b>congiuntivo imperfetto</b>: <i>Vorrei che tu venissi</i>, <i>Le sarei grato se potesse</i>, <i>Sarebbe bello se avessimo più tempo</i>.",
-        "In <i>Le sarei grato / grata</i> the adjective agrees with the person writing, not with the reader.",
-        "Don't stack every tool at once. A condizionale plus one formula is polite; add three cushions on top and it starts to sound ironic."
+        "<b>Per favore</b> does not make an imperative polite. Use <i>Mandami il file, per favore</i> only with a close colleague. With other people, say <i>potresti mandarmi il file?</i>",
+        "After a condizionale in the main clause, use the <b>congiuntivo imperfetto</b>: <i>Vorrei che tu venissi</i>, <i>Le sarei grato se potesse</i>.",
+        "In <i>Le sarei grato / grata</i>, the adjective agrees with the writer, not with the reader.",
+        "Do not use too many softeners. A condizionale and one formula are enough. More softeners can sound ironic."
       ]
     },
     "signals": [
@@ -148,22 +148,22 @@
       {
         "wrong": "Voglio sapere quando arriva il pacco.",
         "right": "Vorrei sapere quando arriva il pacco.",
-        "why": "<b>Voglio</b> sounds like a demand to an Italian ear. For anything you are asking for, use <b>vorrei</b>."
+        "why": "Use <b>vorrei</b>, not <b>voglio</b>, because <b>voglio</b> sounds like a demand."
       },
       {
         "wrong": "Vorrei che tu vieni alla riunione.",
         "right": "Vorrei che tu venissi alla riunione.",
-        "why": "After <b>vorrei che</b> the verb goes in the congiuntivo imperfetto."
+        "why": "After <b>vorrei che</b>, use the congiuntivo imperfetto."
       },
       {
         "wrong": "Le sarei grato se può rispondermi entro venerdì.",
         "right": "Le sarei grato se potesse rispondermi entro venerdì.",
-        "why": "<b>Sarei grato se</b> is a hypothetical: se + congiuntivo imperfetto (potesse, volesse, fosse)."
+        "why": "After <b>sarei grato se</b>, use the congiuntivo imperfetto (potesse, volesse, fosse)."
       },
       {
         "wrong": "No, non posso venire.",
         "right": "Purtroppo non riesco a venire. Possiamo vederci la settimana prossima?",
-        "why": "A bare no sounds like a door slammed shut. Regret, a short reason and an alternative keep it open."
+        "why": "Add regret, a short reason and an alternative, because a bare no sounds rude."
       }
     ],
     "ex": [
@@ -174,7 +174,7 @@
         "a": [
           "vorrei"
         ],
-        "why": "At the bar, <b>vorrei</b>, never voglio."
+        "why": "At the bar, use <b>vorrei</b>, not voglio."
       },
       {
         "k": "type",
@@ -183,7 +183,7 @@
         "a": [
           "potrebbe"
         ],
-        "why": "Polite question to a stranger: <b>potrebbe</b> (Lei)."
+        "why": "For a polite question to a stranger, use <b>potrebbe</b> (Lei)."
       },
       {
         "k": "type",
@@ -192,7 +192,7 @@
         "a": [
           "potesse"
         ],
-        "why": "<b>Le sarei grata se</b> + congiuntivo imperfetto: <b>potesse</b>."
+        "why": "<b>Le sarei grata se</b> takes the congiuntivo imperfetto: <b>potesse</b>."
       },
       {
         "k": "type",
@@ -201,7 +201,7 @@
         "a": [
           "dispiacerebbe"
         ],
-        "why": "<b>Ti dispiacerebbe</b> + infinitive is the friendliest way to ask a favour."
+        "why": "Use <b>ti dispiacerebbe</b> + infinitive to ask a friend for a favour."
       },
       {
         "k": "type",
@@ -210,7 +210,7 @@
         "a": [
           "servirebbe"
         ],
-        "why": "<b>Mi servirebbe</b> is softer than mi serve."
+        "why": "<b>Mi servirebbe</b> is more polite than <i>mi serve</i>."
       },
       {
         "k": "type",
@@ -219,7 +219,7 @@
         "a": [
           "sarebbe"
         ],
-        "why": "<b>Sarebbe possibile…?</b> turns a demand into an open question."
+        "why": "<b>Sarebbe possibile…?</b> changes a demand into a question."
       },
       {
         "k": "type",
@@ -228,7 +228,7 @@
         "a": [
           "foste"
         ],
-        "why": "Condizionale (vorrei) → congiuntivo imperfetto: <b>foste</b>."
+        "why": "A condizionale (vorrei) takes the congiuntivo imperfetto: <b>foste</b>."
       },
       {
         "k": "type",
@@ -237,7 +237,7 @@
         "a": [
           "purtroppo"
         ],
-        "why": "<b>Purtroppo</b> signals regret before a refusal."
+        "why": "<b>Purtroppo</b> shows regret before a refusal."
       },
       {
         "k": "type",
@@ -246,7 +246,7 @@
         "a": [
           "vorrei"
         ],
-        "why": "<b>Non vorrei sembrare insistente</b> is a classic cushion before a reminder."
+        "why": "<b>Non vorrei sembrare insistente</b> is a standard softener before a reminder."
       },
       {
         "k": "type",
@@ -255,7 +255,7 @@
         "a": [
           "dici"
         ],
-        "why": "<b>Che ne dici se…?</b> proposes instead of deciding."
+        "why": "<b>Che ne dici se…?</b> makes a proposal, not a decision."
       },
       {
         "k": "mc",
@@ -266,7 +266,7 @@
           "Voglio che la caldaia sia riparata entro lunedì."
         ],
         "a": "Le sarei grato se potesse far riparare la caldaia entro lunedì.",
-        "why": "A formal formula with the congiuntivo. The other two are orders."
+        "why": "Only this option uses a formal formula with the congiuntivo."
       },
       {
         "k": "mc",
@@ -277,7 +277,7 @@
           "Non voglio lavorare sabato."
         ],
         "a": "Purtroppo sabato non riesco, ho già un impegno. Se vuoi, posso coprirti domenica.",
-        "why": "Regret + reason + alternative."
+        "why": "It has regret, a reason and an alternative."
       },
       {
         "k": "mc",
@@ -288,7 +288,7 @@
           "L'indirizzo l'hai scritto male tu."
         ],
         "a": "C'è stato un errore nell'indirizzo della spedizione.",
-        "why": "<b>C'è stato un errore</b> names the problem, not the culprit."
+        "why": "<b>C'è stato un errore</b> names the problem, not the person."
       },
       {
         "k": "mc",
@@ -299,7 +299,7 @@
           "Sarebbe bello se avessimo più tempo."
         ],
         "a": "Sarebbe bello se avessimo più tempo.",
-        "why": "After <b>se</b> in a hypothesis: congiuntivo imperfetto. Never the condizionale."
+        "why": "In a hypothesis with se, use the congiuntivo imperfetto, never the condizionale."
       }
     ]
   },
@@ -309,12 +309,12 @@
     "topic": "functions",
     "title": "Negoziare e dissentire",
     "en": "Negotiating and disagreeing",
-    "summary": "How to disagree without breaking the relationship: acknowledge, concede, then contrast, with the connectors that make it work.",
-    "meaning": "In a negotiation Italians rarely say a flat <i>non sono d'accordo</i>. Disagreement usually moves in three steps: <b>acknowledge</b> the other view (<i>capisco</i>), <b>concede</b> part of it (<i>è vero che…, anche se…</i>), then <b>contrast</b> with your own position, ideally with an alternative (<i>però…, Le proporrei…</i>). The grammar that carries this is concession: <b>anche se</b> takes the indicative, while <b>benché, sebbene, nonostante, per quanto</b> take the congiuntivo.",
+    "summary": "Disagree politely in three steps: acknowledge, concede, contrast, with the correct connectors.",
+    "meaning": "To disagree, use three steps: acknowledge the other view (<i>capisco</i>), concede part of it (<i>è vero che</i>), then contrast (<i>però</i>). <b>Anche se</b> takes the indicative. <b>Benché</b>, <b>sebbene</b>, <b>nonostante</b> and <b>per quanto</b> take the congiuntivo.",
     "uses": [
       {
         "h": "Acknowledge first",
-        "t": "Show you've understood before you push back: <b>Capisco il tuo punto</b>, <b>È una posizione legittima</b>, <b>Su questo hai ragione</b>.",
+        "t": "Show that you understand before you disagree: <b>Capisco il tuo punto</b>, <b>Su questo hai ragione</b>.",
         "ex": [
           "Capisco benissimo la tua preoccupazione sul prezzo, però guarda cosa include.",
           "I completely understand your worry about the price, but look at what's included."
@@ -322,23 +322,23 @@
       },
       {
         "h": "Concede: anche se",
-        "t": "The everyday way to grant a point. Always with the <b>indicativo</b>.",
+        "t": "Use <b>anche se</b> + indicative to accept a point.",
         "ex": [
           "Anche se il furgone è vecchio, il motore è stato appena rifatto.",
           "Even though the van is old, the engine has just been rebuilt."
         ]
       },
       {
-        "h": "Concede formally: benché, sebbene, per quanto",
-        "t": "More formal, typical of emails and meetings. Always with the <b>congiuntivo</b>.",
+        "h": "Formal concession: benché, sebbene, per quanto",
+        "t": "Use <b>benché</b>, <b>sebbene</b> or <b>per quanto</b> + congiuntivo in emails and meetings.",
         "ex": [
           "Sebbene l'offerta sia interessante, non possiamo scendere sotto i duemila euro.",
           "Although the offer is interesting, we can't go below two thousand euros."
         ]
       },
       {
-        "h": "Concede compactly: pur + gerundio, nonostante + noun",
-        "t": "<b>pur</b> + gerund when both halves share the subject; <b>nonostante</b> or <b>malgrado</b> + a noun.",
+        "h": "Short concession: pur + gerund, nonostante + noun",
+        "t": "Use <b>pur</b> + gerund with the same subject; use <b>nonostante</b> + noun.",
         "ex": [
           "Pur apprezzando la proposta, preferiamo aspettare la primavera.",
           "While we appreciate the proposal, we'd rather wait until spring."
@@ -346,15 +346,15 @@
       },
       {
         "h": "Contrast and counter-offer",
-        "t": "<b>però</b> (everyday), <b>tuttavia</b> (formal), <b>in compenso</b> (to make up for it), <b>anzi</b> (on the contrary, even better), <b>d'altra parte</b> (on the other hand).",
+        "t": "Use <b>però</b> (everyday), <b>tuttavia</b> (formal) or <b>in compenso</b> (on the plus side).",
         "ex": [
           "Il prezzo è alto. In compenso, consegna e montaggio sono gratuiti.",
           "The price is high. On the plus side, delivery and assembly are free."
         ]
       },
       {
-        "h": "Soft disagreement formulas",
-        "t": "Ways to say “no” without saying it: <b>Mi permetto di osservare che…</b>, <b>Non sarei così sicuro che…</b>, <b>Non è del tutto vero che…</b>, <b>Ho l'impressione che…</b> (the last three + congiuntivo).",
+        "h": "Soft disagreement phrases",
+        "t": "Use these to disagree softly: <b>Non sarei così sicuro che…</b>, <b>Ho l'impressione che…</b> + congiuntivo.",
         "ex": [
           "Non sarei così sicura che i clienti accettino l'aumento.",
           "I wouldn't be so sure the customers will accept the increase."
@@ -362,13 +362,13 @@
       }
     ],
     "form": {
-      "intro": "Choose the connector by register and by what follows it: a clause with the indicative, a clause with the congiuntivo, a noun, or a gerund.",
+      "intro": "Choose the connector by register and by what comes next: indicative, congiuntivo, noun or gerund.",
       "tables": [
         {
-          "h": "Concession: what follows",
+          "h": "Concession: what comes next",
           "rows": [
             [
-              "anche se + indicativo",
+              "anche se + indicative",
               "Anche se è tardi, ne parliamo adesso."
             ],
             [
@@ -388,7 +388,7 @@
               "Malgrado le difficoltà, abbiamo chiuso l'accordo. (formal)"
             ],
             [
-              "pur + gerundio (same subject)",
+              "pur + gerund (same subject)",
               "Pur essendo stanco, ha guidato fino a Lecce."
             ]
           ]
@@ -398,11 +398,11 @@
           "rows": [
             [
               "ma",
-              "but: neutral, always first in its clause"
+              "but: neutral, always at the start of its clause"
             ],
             [
               "però",
-              "but, however: can move inside the clause (io però…)"
+              "but: can go inside the clause (io però…)"
             ],
             [
               "tuttavia",
@@ -410,24 +410,24 @@
             ],
             [
               "invece",
-              "instead, whereas: a sharp contrast"
+              "instead, whereas: strong contrast"
             ],
             [
               "d'altra parte",
-              "on the other hand: another angle"
+              "on the other hand: another point of view"
             ],
             [
               "in compenso",
-              "on the plus side, to make up for it"
+              "on the plus side"
             ],
             [
               "anzi",
-              "on the contrary; or rather, even more"
+              "on the contrary; or even better"
             ]
           ]
         },
         {
-          "h": "The three moves",
+          "h": "The three steps",
           "rows": [
             [
               "1 · acknowledge",
@@ -445,10 +445,10 @@
         }
       ],
       "notes": [
-        "<b>però</b> sounds very natural in mid-sentence: <i>Ho capito il tuo punto, io però la vedo diversamente.</i>",
-        "In emails, <b>detto questo</b> (that said) is the natural bridge between concession and contrast, much more common than a string of <i>tuttavia</i>.",
-        "<b>nonostante</b> + noun needs nothing else: <i>nonostante la pioggia</i>. Before a verb both <i>nonostante</i> and <i>nonostante che</i> are used.",
-        "Opening a written reply with <i>Ma…</i> sounds abrupt. Put the contrast inside the sentence: <i>Vorrei però segnalare che…</i>"
+        "<b>Però</b> can go in the middle of the sentence: <i>Ho capito il tuo punto, io però la vedo diversamente.</i>",
+        "In emails, use <b>detto questo</b> (that said) between the concession and the contrast.",
+        "<b>Nonostante</b> + noun needs nothing else: <i>nonostante la pioggia</i>.",
+        "Do not start a written reply with <i>Ma…</i>. Put the contrast inside the sentence: <i>Vorrei però segnalare che…</i>"
       ]
     },
     "signals": [
@@ -465,22 +465,22 @@
       {
         "wrong": "Anche se sia d'accordo, preferisco aspettare.",
         "right": "Anche se sono d'accordo, preferisco aspettare.",
-        "why": "<b>anche se</b> always takes the indicative."
+        "why": "<b>Anche se</b> always takes the indicative."
       },
       {
         "wrong": "Benché il prezzo è alto, lo compriamo.",
         "right": "Benché il prezzo sia alto, lo compriamo.",
-        "why": "<b>benché</b> and <b>sebbene</b> always take the congiuntivo."
+        "why": "<b>Benché</b> and <b>sebbene</b> always take the congiuntivo."
       },
       {
         "wrong": "Pur essendo in ritardo, il cliente ci ha aspettato. (meaning: we were late)",
         "right": "Anche se eravamo in ritardo, il cliente ci ha aspettato.",
-        "why": "<b>pur</b> + gerund shares the subject of the main clause: as written, it says the client was late."
+        "why": "<b>Pur</b> + gerund takes the main subject, so here the client was late."
       },
       {
         "wrong": "Non sono d'accordo. Hai torto.",
         "right": "Capisco il tuo punto, però io la vedo diversamente.",
-        "why": "Acknowledge before you contrast. A flat “you're wrong” ends the negotiation."
+        "why": "Acknowledge the other view before you contrast, because a flat no stops the negotiation."
       }
     ],
     "ex": [
@@ -495,7 +495,7 @@
           "per quanto",
           "malgrado"
         ],
-        "why": "<b>sia</b> is congiuntivo, so <b>benché / sebbene / nonostante</b>, not anche se."
+        "why": "<b>Sia</b> is congiuntivo, so use <b>benché</b> or <b>sebbene</b>, not anche se."
       },
       {
         "k": "type",
@@ -504,7 +504,7 @@
         "a": [
           "è"
         ],
-        "why": "<b>anche se</b> + indicativo: <b>è</b>."
+        "why": "<b>Anche se</b> takes the indicative: <b>è</b>."
       },
       {
         "k": "type",
@@ -513,26 +513,26 @@
         "a": [
           "abbia"
         ],
-        "why": "<b>sebbene</b> + congiuntivo: <b>abbia</b>."
+        "why": "<b>Sebbene</b> takes the congiuntivo: <b>abbia</b>."
       },
       {
         "k": "type",
         "q": "___ essendo d'accordo sul principio, Giada ha votato contro.",
-        "h": "while · + gerund",
+        "h": "although · + gerund",
         "a": [
           "pur"
         ],
-        "why": "<b>pur</b> + gerund = although, with the same subject (Giada)."
+        "why": "<b>Pur</b> + gerund means although, with the same subject (Giada)."
       },
       {
         "k": "type",
         "q": "Pur ___ il tuo punto di vista, credo che il prezzo sia troppo alto.",
-        "h": "capire · gerundio",
+        "h": "capire · gerund",
         "a": [
           "capendo",
           "comprendendo"
         ],
-        "why": "Gerund of capire: <b>capendo</b>."
+        "why": "The gerund of capire is <b>capendo</b>."
       },
       {
         "k": "type",
@@ -541,7 +541,7 @@
         "a": [
           "compenso"
         ],
-        "why": "<b>In compenso</b> balances a negative with a positive."
+        "why": "<b>In compenso</b> puts a positive point after a negative point."
       },
       {
         "k": "type",
@@ -550,7 +550,7 @@
         "a": [
           "sarei"
         ],
-        "why": "<b>Non sarei così sicuro che</b> + congiuntivo: disagreement without saying no."
+        "why": "<b>Non sarei così sicuro che</b> + congiuntivo disagrees without a direct no."
       },
       {
         "k": "type",
@@ -559,7 +559,7 @@
         "a": [
           "sia"
         ],
-        "why": "<b>Non è del tutto vero che</b> + congiuntivo: a partial, softened denial."
+        "why": "<b>Non è del tutto vero che</b> + congiuntivo is a soft, partial denial."
       },
       {
         "k": "type",
@@ -568,7 +568,7 @@
         "a": [
           "permetto"
         ],
-        "why": "<b>Mi permetto di</b> asks permission before saying something uncomfortable."
+        "why": "<b>Mi permetto di</b> introduces an uncomfortable point politely."
       },
       {
         "k": "type",
@@ -578,7 +578,7 @@
           "anzi",
           "al contrario"
         ],
-        "why": "<b>anzi</b> flips the expectation: it's even a good thing."
+        "why": "<b>Anzi</b> means the opposite is true: the delay is a good thing."
       },
       {
         "k": "type",
@@ -587,7 +587,7 @@
         "a": [
           "dispiaccia"
         ],
-        "why": "<b>per quanto</b> + congiuntivo: <b>dispiaccia</b>."
+        "why": "<b>Per quanto</b> takes the congiuntivo: <b>dispiaccia</b>."
       },
       {
         "k": "mc",
@@ -598,7 +598,7 @@
           "Benché il preventivo è alto, è il più completo."
         ],
         "a": "Anche se il preventivo è alto, è il più completo.",
-        "why": "anche se + indicativo; benché would need sia."
+        "why": "<b>Anche se</b> takes the indicative; benché needs sia."
       },
       {
         "k": "mc",
@@ -609,7 +609,7 @@
           "No, il prezzo è mille e basta."
         ],
         "a": "Capisco, ed è vero che ha qualche graffio. Però ha solo diecimila chilometri: Le proporrei 920.",
-        "why": "Acknowledge (capisco), concede (è vero che…), contrast with a counter-offer (però… Le proporrei)."
+        "why": "It acknowledges (capisco), concedes (è vero che) and contrasts with an offer (però)."
       },
       {
         "k": "mc",
@@ -620,7 +620,7 @@
           "Pur che sia stanca, Marta ha finito il turno."
         ],
         "a": "Pur essendo stanca, Marta ha finito il turno.",
-        "why": "<b>pur</b> + gerund, same subject. For a noun use nonostante: nonostante la pioggia."
+        "why": "Use <b>pur</b> + gerund with the same subject; use nonostante before a noun."
       }
     ]
   },
@@ -630,20 +630,20 @@
     "topic": "functions",
     "title": "Certezza, dubbio e opinione",
     "en": "Expressing uncertainty",
-    "summary": "How to say how sure you are, from sono sicuro to forse, chissà and dubito, and the verb forms that carry the doubt.",
-    "meaning": "Italian has precise tools for saying how certain you are. Adverbs (<i>sicuramente, probabilmente, forse, chissà</i>) do part of the job, but the verb does more: <b>dovrebbe</b> for what's expected, the <b>futuro</b> for a guess about now, the <b>condizionale</b> for something reported but unconfirmed, and the <b>congiuntivo</b> after <i>credo che, pare che, può darsi che, dubito che</i>. Saying <i>dovrebbe arrivare</i> instead of <i>arriva</i> can save you from a promise you can't keep.",
+    "summary": "Show how sure you are with adverbs, dovrebbe, the futuro, condizionale and congiuntivo.",
+    "meaning": "Use adverbs (<i>forse, probabilmente</i>) or the verb form to show how sure you are. Use <b>dovrebbe</b> for an expectation, the <b>futuro</b> for a guess and the <b>condizionale</b> for an unconfirmed report. Use the <b>congiuntivo</b> after <i>credo che, pare che, può darsi che, dubito che</i>.",
     "uses": [
       {
         "h": "Adverbs on a scale",
-        "t": "<b>sicuramente</b> → <b>probabilmente</b> → <b>forse</b> → <b>chissà se</b>. With an adverb the verb stays in the indicative.",
+        "t": "After these adverbs, use the indicative: <b>sicuramente</b>, <b>probabilmente</b>, <b>forse</b>, <b>chissà se</b>.",
         "ex": [
           "Forse il traghetto per Ponza parte più tardi, con questo vento.",
           "Maybe the ferry to Ponza will leave later, with this wind."
         ]
       },
       {
-        "h": "dovrebbe: what's expected",
-        "t": "<b>dovrebbe</b> + infinitive = should, is expected to. Add <i>salvo imprevisti</i> (barring surprises) and you've promised nothing.",
+        "h": "dovrebbe: an expectation",
+        "t": "Use <b>dovrebbe</b> + infinitive for an expected event; add <i>salvo imprevisti</i> to promise nothing.",
         "ex": [
           "Il pacco dovrebbe arrivare domani, salvo imprevisti.",
           "The parcel should arrive tomorrow, barring surprises."
@@ -651,7 +651,7 @@
       },
       {
         "h": "The futuro for a guess",
-        "t": "<b>Sarà</b>, <b>avrà</b>: a supposition about the present. With a past participle it's a guess about the past: <b>sarà uscito</b>.",
+        "t": "Use the futuro for a guess about now (<b>sarà</b>) or the past (<b>sarà uscito</b>).",
         "ex": [
           "Non risponde al telefono. Sarà ancora in palestra.",
           "He's not answering. He's probably still at the gym."
@@ -659,7 +659,7 @@
       },
       {
         "h": "Opinion and doubt + congiuntivo",
-        "t": "<b>credo che, ho l'impressione che, può darsi che, è possibile che, dubito che, non sono sicuro che</b>.",
+        "t": "Use the congiuntivo after <b>credo che, può darsi che, dubito che, non sono sicuro che</b>.",
         "ex": [
           "Può darsi che il museo sia chiuso per lavori.",
           "The museum may be closed for renovation."
@@ -667,7 +667,7 @@
       },
       {
         "h": "Hearsay: pare che, a quanto pare",
-        "t": "To pass on what you've heard. <b>pare che / sembra che</b> + congiuntivo; <b>a quanto pare</b> + indicativo.",
+        "t": "For things you heard, use <b>pare che</b> + congiuntivo or <b>a quanto pare</b> + indicative.",
         "ex": [
           "Pare che il nuovo chef venga da Matera.",
           "Apparently the new chef is from Matera."
@@ -675,7 +675,7 @@
       },
       {
         "h": "Unconfirmed reports: condizionale",
-        "t": "News and gossip use the <b>condizionale</b> to say “reportedly”: the speaker doesn't vouch for it.",
+        "t": "News uses the condizionale for facts that nobody has confirmed.",
         "ex": [
           "Secondo la radio, la strada per Cortina sarebbe ancora chiusa.",
           "According to the radio, the road to Cortina is apparently still closed."
@@ -683,18 +683,18 @@
       }
     ],
     "form": {
-      "intro": "Pick the degree of certainty first, then the matching grammar. A <b>che</b>-clause after an opinion, a doubt or hearsay takes the congiuntivo; adverbs leave the verb in the indicative.",
+      "intro": "First choose how sure you are. Then use the grammar for that level. After an opinion, a doubt or hearsay, a <b>che</b>-clause takes the congiuntivo. After an adverb, the verb stays in the indicative.",
       "tables": [
         {
           "h": "The certainty scale",
           "rows": [
             [
               "certain",
-              "so che, sono sicuro che + indicativo · sicuramente"
+              "so che, sono sicuro che + indicative · sicuramente"
             ],
             [
               "very likely",
-              "probabilmente · dovrebbe + infinito · futuro (sarà)"
+              "probabilmente · dovrebbe + infinitive · futuro (sarà)"
             ],
             [
               "opinion",
@@ -702,20 +702,20 @@
             ],
             [
               "possible",
-              "forse, magari + indicativo · può darsi che, è possibile che + congiuntivo"
+              "forse, magari + indicative · può darsi che, è possibile che + congiuntivo"
             ],
             [
               "doubtful",
-              "dubito che, non credo che + congiuntivo · chissà se + indicativo"
+              "dubito che, non credo che + congiuntivo · chissà se + indicative"
             ],
             [
               "hearsay",
-              "pare che, sembra che + congiuntivo · a quanto pare + indicativo · condizionale"
+              "pare che, sembra che + congiuntivo · a quanto pare + indicative · condizionale"
             ]
           ]
         },
         {
-          "h": "One fact, six degrees",
+          "h": "One fact, six levels of certainty",
           "rows": [
             [
               "È a casa.",
@@ -745,11 +745,11 @@
         }
       ],
       "notes": [
-        "<b>sembra</b> + adjective is indicative (<i>sembra facile</i>); <b>sembra che</b> + verb takes the congiuntivo (<i>sembra che sia facile</i>).",
-        "<b>magari</b> has two meanings: “maybe” with the indicative (<i>magari ci vediamo dopo</i>) and “if only” with the congiuntivo imperfetto (<i>magari fosse vero!</i>).",
-        "For a guess about the past: <i>deve aver dimenticato</i> or <i>avrà dimenticato</i> = he must have forgotten.",
-        "Same subject → di + infinito: <i>credo di avere ragione</i>, not <i>credo che io abbia ragione</i>.",
-        "After <b>non so se</b> the indicative is normal in speech (<i>non so se viene</i>); the congiuntivo (<i>non so se venga</i>) is more formal. Both are correct."
+        "Use the indicative after <b>sembra</b> + adjective: <i>sembra facile</i>. Use the congiuntivo after <b>sembra che</b>: <i>sembra che sia facile</i>.",
+        "<b>Magari</b> has two meanings: “maybe” + indicative (<i>magari ci vediamo dopo</i>) and “if only” + congiuntivo imperfetto (<i>magari fosse vero!</i>).",
+        "For a guess about the past, use <i>deve aver dimenticato</i> or <i>avrà dimenticato</i> (he must have forgotten).",
+        "With the same subject, use di + infinitive: <i>credo di avere ragione</i>, not <i>credo che io abbia ragione</i>.",
+        "After <b>non so se</b>, use the indicative: <i>non so se viene</i>."
       ]
     },
     "signals": [
@@ -767,22 +767,22 @@
       {
         "wrong": "Sembra che il ristorante è chiuso.",
         "right": "Sembra che il ristorante sia chiuso.",
-        "why": "<b>sembra che</b> + congiuntivo."
+        "why": "<b>Sembra che</b> takes the congiuntivo."
       },
       {
         "wrong": "Dubito che arriva in tempo.",
         "right": "Dubito che arrivi in tempo.",
-        "why": "Doubt → congiuntivo."
+        "why": "<b>Dubito che</b> takes the congiuntivo."
       },
       {
         "wrong": "Forse sia malato.",
         "right": "Forse è malato.",
-        "why": "<b>forse</b> is an adverb: the verb stays in the indicative. Only che-clauses take the congiuntivo."
+        "why": "<b>Forse</b> is an adverb, so the verb stays in the indicative."
       },
       {
         "wrong": "Il treno arriva alle otto. (when you're not sure)",
         "right": "Il treno dovrebbe arrivare alle otto.",
-        "why": "Calibrate: <b>dovrebbe</b> says what's expected without promising it."
+        "why": "Use <b>dovrebbe</b> to say what you expect without a promise."
       }
     ],
     "ex": [
@@ -793,7 +793,7 @@
         "a": [
           "dovrebbe"
         ],
-        "why": "Expected but not certain → <b>dovrebbe</b>."
+        "why": "Use <b>dovrebbe</b> for something expected but not certain."
       },
       {
         "k": "type",
@@ -802,7 +802,7 @@
         "a": [
           "sia"
         ],
-        "why": "<b>può darsi che</b> + congiuntivo: <b>sia</b> (partita)."
+        "why": "<b>Può darsi che</b> takes the congiuntivo: <b>sia</b> (partita)."
       },
       {
         "k": "type",
@@ -811,7 +811,7 @@
         "a": [
           "avrà"
         ],
-        "why": "Futuro of probability: <b>avrà</b> = he probably has."
+        "why": "The futuro shows a guess: <b>avrà</b> means he probably has."
       },
       {
         "k": "type",
@@ -820,7 +820,7 @@
         "a": [
           "sia"
         ],
-        "why": "<b>dubito che</b> + congiuntivo."
+        "why": "<b>Dubito che</b> takes the congiuntivo."
       },
       {
         "k": "type",
@@ -829,7 +829,7 @@
         "a": [
           "venga"
         ],
-        "why": "<b>pare che</b> + congiuntivo: <b>venga</b>."
+        "why": "<b>Pare che</b> takes the congiuntivo: <b>venga</b>."
       },
       {
         "k": "type",
@@ -839,7 +839,7 @@
           "pare",
           "sembra"
         ],
-        "why": "<b>A quanto pare</b> = apparently, followed by the indicative."
+        "why": "<b>A quanto pare</b> means apparently and takes the indicative."
       },
       {
         "k": "type",
@@ -848,7 +848,7 @@
         "a": [
           "sia"
         ],
-        "why": "<b>ho l'impressione che</b> + congiuntivo."
+        "why": "<b>Ho l'impressione che</b> takes the congiuntivo."
       },
       {
         "k": "type",
@@ -857,7 +857,7 @@
         "a": [
           "assumerebbe"
         ],
-        "why": "Unconfirmed report → condizionale: <b>assumerebbe</b>."
+        "why": "Use the condizionale for an unconfirmed report: <b>assumerebbe</b>."
       },
       {
         "k": "type",
@@ -866,7 +866,7 @@
         "a": [
           "chissà"
         ],
-        "why": "<b>Chissà se</b> + indicativo: real doubt."
+        "why": "<b>Chissà se</b> takes the indicative and shows real doubt."
       },
       {
         "k": "type",
@@ -875,7 +875,7 @@
         "a": [
           "è"
         ],
-        "why": "<b>So che</b> = certainty → indicativo."
+        "why": "<b>So che</b> shows certainty, so use the indicative."
       },
       {
         "k": "type",
@@ -885,7 +885,7 @@
           "aver",
           "avere"
         ],
-        "why": "Same subject → <b>di</b> + infinito passato: credo di aver lasciato."
+        "why": "With the same subject, use <b>di</b> + past infinitive: credo di aver lasciato."
       },
       {
         "k": "mc",
@@ -896,7 +896,7 @@
           "L'idraulico è venuto lunedì."
         ],
         "a": "L'idraulico dovrebbe venire lunedì.",
-        "why": "<b>dovrebbe</b> signals an expectation, not a promise."
+        "why": "<b>Dovrebbe</b> shows an expectation, not a promise."
       },
       {
         "k": "mc",
@@ -907,7 +907,7 @@
           "Forse che Luca è in ritardo."
         ],
         "a": "Forse Luca è in ritardo.",
-        "why": "<b>forse</b> + indicativo, no che."
+        "why": "Use <b>forse</b> + indicative, without che."
       },
       {
         "k": "mc",
@@ -918,7 +918,7 @@
           "He was tired."
         ],
         "a": "He's probably tired.",
-        "why": "Futuro of probability: a guess about now."
+        "why": "Here the futuro is a guess about now."
       }
     ]
   },
@@ -928,36 +928,36 @@
     "topic": "functions",
     "title": "Causa e conseguenza",
     "en": "Cause and consequence",
-    "summary": "Explaining why something happened and what follows from it, beyond perché and quindi.",
-    "meaning": "English gets by with <i>because</i> and <i>so</i>. Italian has a wider set, chosen by position and register: <b>siccome</b> and <b>dato che</b> put the cause first, <b>poiché</b> sounds written, <b>a causa di</b> and <b>grazie a</b> take a noun. For consequences, <b>quindi</b> is the all-rounder, while <b>così… che</b> and <b>tanto… da</b> tie a result to an intensity. Almost all take the indicative. The exceptions are purpose (<b>affinché, in modo che</b>) and <b>il fatto che</b>, which take the congiuntivo.",
+    "summary": "Use these connectors to give a reason, a result or a purpose.",
+    "meaning": "<b>Siccome</b> and <b>dato che</b> put the cause first; <b>a causa di</b> and <b>grazie a</b> take a noun. <b>Quindi</b> gives a result. Most connectors take the indicative, but <b>affinché</b>, <b>in modo che</b> and <b>il fatto che</b> take the congiuntivo.",
     "uses": [
       {
         "h": "Cause first: siccome, dato che, visto che",
-        "t": "When the reason opens the sentence. <b>perché</b> normally comes after the main clause.",
+        "t": "Use these when the cause starts the sentence; put <b>perché</b> after the main clause.",
         "ex": [
           "Siccome pioveva, abbiamo rimandato la gita alle Cinque Terre.",
           "Since it was raining, we put off the trip to the Cinque Terre."
         ]
       },
       {
-        "h": "Cause in writing: poiché, in quanto",
-        "t": "Formal versions of perché, typical of notices, reports and emails.",
+        "h": "Formal cause: poiché, in quanto",
+        "t": "Use these formal forms of perché in notices, reports and emails.",
         "ex": [
           "Il museo resterà chiuso fino a maggio, poiché sono in corso lavori di restauro.",
           "The museum will remain closed until May, as restoration work is under way."
         ]
       },
       {
-        "h": "Cause as a noun: a causa di, grazie a, per",
-        "t": "<b>a causa di</b> for a problem, <b>grazie a</b> for a good cause, <b>per</b> in set phrases (chiuso per ferie, multato per eccesso di velocità).",
+        "h": "Cause + noun: a causa di, grazie a",
+        "t": "Use <b>a causa di</b> for problems and <b>grazie a</b> for good causes.",
         "ex": [
           "Grazie ai volontari, la spiaggia di Tropea è tornata pulita in un giorno.",
           "Thanks to the volunteers, the beach at Tropea was clean again in a day."
         ]
       },
       {
-        "h": "Consequence: quindi, perciò, di conseguenza",
-        "t": "<b>quindi</b> everywhere; <b>perciò</b> is common too; <b>di conseguenza</b> and <b>pertanto</b> are more formal.",
+        "h": "Result: quindi, perciò, di conseguenza",
+        "t": "Use <b>quindi</b> or <b>perciò</b> in speech; <b>di conseguenza</b> and <b>pertanto</b> are formal.",
         "ex": [
           "Il frigo si è rotto, quindi abbiamo mangiato tutto il gelato.",
           "The fridge broke, so we ate all the ice cream."
@@ -965,7 +965,7 @@
       },
       {
         "h": "Intensity: così… che, tanto… da",
-        "t": "The result comes from how strong something is. <b>così / talmente</b> + adjective + <b>che</b> + clause; <b>tanto</b> + adjective + <b>da</b> + infinitive.",
+        "t": "Use <b>così</b> + adjective + <b>che</b>, or <b>tanto</b> + adjective + <b>da</b> + infinitive.",
         "ex": [
           "Il sugo era così piccante che nessuno è riuscito a finirlo.",
           "The sauce was so spicy that nobody managed to finish it."
@@ -973,7 +973,7 @@
       },
       {
         "h": "Purpose: in modo da, in modo che, affinché",
-        "t": "A result you want. Same subject: <b>per / in modo da</b> + infinitive. Different subject: <b>in modo che / affinché</b> + congiuntivo.",
+        "t": "Same subject: <b>in modo da</b> + infinitive; different subject: <b>in modo che</b> + congiuntivo.",
         "ex": [
           "Ho lasciato la chiave alla vicina in modo che tu possa entrare.",
           "I left the key with the neighbour so that you can get in."
@@ -981,21 +981,21 @@
       }
     ],
     "form": {
-      "intro": "The key question is what follows the connector: a clause in the indicative, a noun, an infinitive, or a clause in the congiuntivo.",
+      "intro": "Check what comes after the connector: an indicative clause, a noun, an infinitive or a congiuntivo clause.",
       "tables": [
         {
           "h": "Cause",
           "rows": [
             [
-              "perché + indicativo",
+              "perché + indicative",
               "after the main clause: Resto a casa perché ho la febbre."
             ],
             [
-              "siccome / dato che / visto che + indicativo",
+              "siccome / dato che / visto che + indicative",
               "usually first: Dato che sei qui, aiutami."
             ],
             [
-              "poiché / in quanto + indicativo",
+              "poiché / in quanto + indicative",
               "formal: La riunione è annullata, poiché manca il numero legale."
             ],
             [
@@ -1003,33 +1003,33 @@
               "a causa della neve · grazie al tuo aiuto"
             ],
             [
-              "essendo / avendo + participle",
+              "gerund: essendo / avendo + past participle",
               "formal, same subject: Avendo perso il treno, ho preso un taxi."
             ],
             [
               "il fatto che + congiuntivo",
-              "the cause as a topic: Il fatto che non abbia chiamato è strano."
+              "the cause as the topic: Il fatto che non abbia chiamato è strano."
             ]
           ]
         },
         {
-          "h": "Consequence and purpose",
+          "h": "Result and purpose",
           "rows": [
             [
               "quindi / perciò / di conseguenza",
-              "+ indicativo: Era tardi, quindi sono andato a letto."
+              "+ indicative: Era tardi, quindi sono andato a letto."
             ],
             [
               "così / talmente … che",
-              "+ indicativo: Ero così stanco che mi sono addormentato in treno."
+              "+ indicative: Ero così stanco che mi sono addormentato in treno."
             ],
             [
               "tanto … da",
-              "+ infinito: Era tanto stanco da addormentarsi in treno."
+              "+ infinitive: Era tanto stanco da addormentarsi in treno."
             ],
             [
               "per / in modo da",
-              "+ infinito, same subject: Parto presto per evitare il traffico."
+              "+ infinitive, same subject: Parto presto per evitare il traffico."
             ],
             [
               "in modo che / affinché",
@@ -1039,10 +1039,10 @@
         }
       ],
       "notes": [
-        "Don't open a sentence with <b>perché</b> to give a reason: it sounds like the start of a question. Use <i>siccome</i> or <i>dato che</i>.",
-        "The gerund works only with the same subject: <i>Essendo stanca, Anna è andata a letto.</i> If the subject changes, use <i>dato che</i>: <i>Dato che era tardi, il bar ha chiuso.</i>",
-        "<b>così</b> on its own (<i>era tardi, così sono andato via</i>) is fine in speech; in writing prefer <i>quindi</i>.",
-        "<b>grazie a</b> and <b>a causa di</b> merge with the article: grazie al, grazie alla, a causa del, a causa della…"
+        "Do not start a sentence with <b>perché</b> to give a reason, because it sounds like a question. Use <i>siccome</i> or <i>dato che</i>.",
+        "Use the gerund only with the same subject: <i>Essendo stanca, Anna è andata a letto.</i> If the subject changes, use <i>dato che</i>: <i>Dato che era tardi, il bar ha chiuso.</i>",
+        "<b>Così</b> alone (<i>era tardi, così sono andato via</i>) is correct in speech. In writing, use <i>quindi</i>.",
+        "<b>Grazie a</b> and <b>a causa di</b> join with the article: grazie al, grazie alla, a causa del, a causa della."
       ]
     },
     "signals": [
@@ -1061,22 +1061,22 @@
       {
         "wrong": "Perché era tardi, siamo tornati a casa.",
         "right": "Siccome era tardi, siamo tornati a casa.",
-        "why": "A cause that opens the sentence takes <b>siccome</b> or <b>dato che</b>."
+        "why": "When the cause starts the sentence, use <b>siccome</b> or <b>dato che</b>."
       },
       {
         "wrong": "Ho chiuso la finestra in modo che il gatto non può uscire.",
         "right": "Ho chiuso la finestra in modo che il gatto non possa uscire.",
-        "why": "<b>in modo che</b> (purpose) + congiuntivo."
+        "why": "<b>In modo che</b> (purpose) takes the congiuntivo."
       },
       {
         "wrong": "Grazie alla nebbia, l'aereo è partito con due ore di ritardo.",
         "right": "A causa della nebbia, l'aereo è partito con due ore di ritardo.",
-        "why": "<b>grazie a</b> is for good causes; for problems use <b>a causa di</b>."
+        "why": "Use <b>grazie a</b> for good causes and <b>a causa di</b> for problems."
       },
       {
         "wrong": "Essendo stanco, il viaggio mi è sembrato lunghissimo.",
         "right": "Siccome ero stanco, il viaggio mi è sembrato lunghissimo.",
-        "why": "The gerund takes the subject of the main clause: here it would mean the journey was tired."
+        "why": "The gerund takes the subject of the main clause, so here the journey is tired."
       }
     ],
     "ex": [
@@ -1090,7 +1090,7 @@
           "visto che",
           "poiché"
         ],
-        "why": "Cause at the start of the sentence → <b>siccome / dato che</b>."
+        "why": "When the cause starts the sentence, use <b>siccome</b> or <b>dato che</b>."
       },
       {
         "k": "type",
@@ -1100,7 +1100,7 @@
           "a causa di",
           "per"
         ],
-        "why": "Cause expressed by a noun: <b>a causa di</b> (or per)."
+        "why": "For a cause as a noun, use <b>a causa di</b> (or per)."
       },
       {
         "k": "type",
@@ -1109,7 +1109,7 @@
         "a": [
           "grazie"
         ],
-        "why": "Positive cause → <b>grazie a</b> (all' = a + l')."
+        "why": "For a good cause, use <b>grazie a</b> (all' = a + l')."
       },
       {
         "k": "type",
@@ -1118,7 +1118,7 @@
         "a": [
           "che"
         ],
-        "why": "<b>così</b> + adjective + <b>che</b> + result."
+        "why": "Use <b>così</b> + adjective + <b>che</b> + result."
       },
       {
         "k": "type",
@@ -1127,7 +1127,7 @@
         "a": [
           "da"
         ],
-        "why": "<b>tanto</b> + adjective + <b>da</b> + infinitive."
+        "why": "Use <b>tanto</b> + adjective + <b>da</b> + infinitive."
       },
       {
         "k": "type",
@@ -1136,7 +1136,7 @@
         "a": [
           "possa"
         ],
-        "why": "Purpose with a different subject → <b>in modo che</b> + congiuntivo."
+        "why": "For purpose with a different subject, use <b>in modo che</b> + congiuntivo."
       },
       {
         "k": "type",
@@ -1145,7 +1145,7 @@
         "a": [
           "da"
         ],
-        "why": "Same subject → <b>in modo da</b> + infinitive."
+        "why": "With the same subject, use <b>in modo da</b> + infinitive."
       },
       {
         "k": "type",
@@ -1154,7 +1154,7 @@
         "a": [
           "possiate"
         ],
-        "why": "<b>affinché</b> + congiuntivo: <b>possiate</b>."
+        "why": "<b>Affinché</b> takes the congiuntivo: <b>possiate</b>."
       },
       {
         "k": "type",
@@ -1163,16 +1163,16 @@
         "a": [
           "abbia"
         ],
-        "why": "<b>il fatto che</b> + congiuntivo."
+        "why": "<b>Il fatto che</b> takes the congiuntivo."
       },
       {
         "k": "type",
         "q": "___ già visto il film, Sara è rimasta a casa.",
-        "h": "avere · gerundio",
+        "h": "avere · gerund",
         "a": [
           "avendo"
         ],
-        "why": "Causal gerund, same subject (Sara): <b>avendo</b> visto."
+        "why": "The gerund gives the cause with the same subject (Sara): <b>avendo</b> visto."
       },
       {
         "k": "type",
@@ -1186,7 +1186,7 @@
           "dunque",
           "pertanto"
         ],
-        "why": "Consequence → <b>quindi</b>."
+        "why": "Use <b>quindi</b> for a result."
       },
       {
         "k": "mc",
@@ -1197,7 +1197,7 @@
           "siccome lo"
         ],
         "a": "a causa dello",
-        "why": "Cause as a noun → <b>a causa di</b> + article: dello sciopero."
+        "why": "For a cause as a noun, use <b>a causa di</b> + article: dello sciopero."
       },
       {
         "k": "mc",
@@ -1208,7 +1208,7 @@
           "Siccome non avessi l'ombrello, mi sono bagnato tutto."
         ],
         "a": "Siccome non avevo l'ombrello, mi sono bagnato tutto.",
-        "why": "<b>siccome</b> first, with the indicative."
+        "why": "Use <b>siccome</b> first, with the indicative."
       },
       {
         "k": "mc",
@@ -1219,7 +1219,7 @@
           "Siccome la"
         ],
         "a": "A causa della",
-        "why": "Snow closing a school is a problem → <b>a causa di</b>."
+        "why": "Snow that closes a school is a problem, so use <b>a causa di</b>."
       }
     ]
   },
@@ -1229,28 +1229,28 @@
     "topic": "functions",
     "title": "Dare istruzioni",
     "en": "Giving instructions",
-    "summary": "Five ways to tell someone what to do, from the direct imperative to the infinitive on signs and the softened request.",
-    "meaning": "The imperativo is only one way to give instructions in Italian, and often not the best. Written instructions (forms, manuals, recipes, signs) use the <b>infinito</b>: <i>Non fumare</i>, <i>Compilare in stampatello</i>. Explanations of how something works use <b>si</b>: <i>si prende il biglietto, si timbra</i>. Rules use <b>va / vanno</b> + participle. And when you ask a person to do something, Italians usually soften the imperative into a question: <i>potresti…?</i>, <i>ti dispiacerebbe…?</i>",
+    "summary": "Give instructions with the imperative, the infinitive, si, va + past participle or a question.",
+    "meaning": "Use the imperative to speak to a person directly. Written instructions (forms, signs, recipes) use the <b>infinitive</b>: <i>Non fumare</i>. Use <b>si</b> to explain a procedure, <b>va / vanno</b> + past participle for rules, and a question to soften a request.",
     "uses": [
       {
-        "h": "Direct: imperativo tu / voi",
-        "t": "With friends, family and close colleagues, for directions and quick instructions.",
+        "h": "Direct: imperative tu / voi",
+        "t": "Use it with friends, family and close colleagues, and for directions.",
         "ex": [
           "Prendi la seconda a sinistra e parcheggia davanti alla farmacia.",
           "Take the second left and park outside the pharmacy."
         ]
       },
       {
-        "h": "Polite: imperativo Lei",
-        "t": "To customers, patients, strangers. Often with <b>pure</b>, which makes it sound like an invitation.",
+        "h": "Polite: imperative Lei",
+        "t": "Use it with customers, patients and strangers; add <b>pure</b> to make it an invitation.",
         "ex": [
           "Si accomodi pure, la dottoressa arriva subito.",
           "Do take a seat, the doctor will be right with you."
         ]
       },
       {
-        "h": "Written: infinito",
-        "t": "Forms, signs, labels, manuals and recipes. It addresses nobody in particular.",
+        "h": "Written: infinitive",
+        "t": "Use the infinitive on forms, signs, labels, manuals and recipes.",
         "ex": [
           "Prima dell'uso, agitare bene la bottiglia.",
           "Shake the bottle well before use."
@@ -1258,15 +1258,15 @@
       },
       {
         "h": "Explaining a procedure: si",
-        "t": "Describes how something is done, step by step: “you do this, then this”.",
+        "t": "Use <b>si</b> + verb to describe the steps of a procedure.",
         "ex": [
           "Per il rimborso si compila il modulo online e si allega lo scontrino.",
           "For a refund, you fill in the online form and attach the receipt."
         ]
       },
       {
-        "h": "Rules: va / vanno + participle",
-        "t": "Something <b>must be</b> done. Agrees with the thing.",
+        "h": "Rules: va / vanno + past participle",
+        "t": "Use <b>va / vanno</b> + past participle for an obligation; it agrees with the thing.",
         "ex": [
           "Il modulo va firmato su ogni pagina.",
           "The form must be signed on every page."
@@ -1274,7 +1274,7 @@
       },
       {
         "h": "Softened requests",
-        "t": "Between adults, an instruction is often a question: <b>Potresti…?</b>, <b>Ti dispiacerebbe…?</b>, <b>Quando hai un attimo…</b>, <b>Sarebbe da…</b>",
+        "t": "Between adults, ask a question: <b>Potresti…?</b>, <b>Ti dispiacerebbe…?</b>, <b>Quando hai un attimo…</b>",
         "ex": [
           "Quando hai un attimo, potresti dare un'occhiata al volantino?",
           "When you have a moment, could you take a look at the flyer?"
@@ -1282,10 +1282,10 @@
       }
     ],
     "form": {
-      "intro": "The same instruction can be given in several registers. Choose by who you're talking to and whether it's spoken or written.",
+      "intro": "Choose the form by the person you talk to, and by speech or writing.",
       "tables": [
         {
-          "h": "One instruction, six ways",
+          "h": "One instruction, six forms",
           "rows": [
             [
               "tu",
@@ -1296,7 +1296,7 @@
               "Chiuda la porta, per cortesia."
             ],
             [
-              "written (infinito)",
+              "written (infinitive)",
               "Chiudere la porta."
             ],
             [
@@ -1318,7 +1318,7 @@
           "rows": [
             [
               "tu",
-              "non + infinito: Non toccare!"
+              "non + infinitive: Non toccare!"
             ],
             [
               "voi",
@@ -1330,22 +1330,22 @@
             ],
             [
               "written",
-              "non + infinito: Non toccare. Non gettare rifiuti."
+              "non + infinitive: Non toccare. Non gettare rifiuti."
             ]
           ]
         }
       ],
       "notes": [
-        "Pronouns attach to tu, voi and noi imperatives and to the infinitive (<i>mandamelo</i>, <i>conservarlo in frigo</i>), but go before the Lei form (<i>me lo mandi</i>).",
-        "<i>Non esiti a contattarmi</i> (don't hesitate to contact me) is a fixed polite line in emails.",
-        "Even the Lei imperative can sound curt in writing: <i>Mi mandi il file</i> is correct but cold. <i>Le chiederei di mandarmi il file</i> is safer with a client.",
-        "On public signs you'll also see <b>vietato</b> + infinitive: <i>vietato fumare</i>, <i>vietato l'accesso</i>."
+        "Attach pronouns to the tu, voi and noi imperative and to the infinitive: <i>mandamelo</i>, <i>conservarlo in frigo</i>. Put pronouns before the Lei imperative: <i>me lo mandi</i>.",
+        "<i>Non esiti a contattarmi</i> (do not hesitate to contact me) is a fixed polite phrase for emails.",
+        "In writing, the Lei imperative can sound cold: <i>Mi mandi il file</i>. With a client, use <i>Le chiederei di mandarmi il file</i>.",
+        "Public signs also use <b>vietato</b> + infinitive: <i>vietato fumare</i>, <i>vietato l'accesso</i>."
       ]
     },
     "signals": [
-      "infinito on signs",
+      "infinitive on signs",
       "si + verb",
-      "va / vanno + participio",
+      "va / vanno + past participle",
       "pure",
       "potresti…?",
       "ti dispiacerebbe…?"
@@ -1354,22 +1354,22 @@
       {
         "wrong": "Non tocca il forno, è caldo! (to a child)",
         "right": "Non toccare il forno, è caldo!",
-        "why": "The negative tu imperative is <b>non + infinito</b>."
+        "why": "The negative tu imperative is <b>non</b> + infinitive."
       },
       {
         "wrong": "Signora, fa attenzione al gradino.",
         "right": "Signora, faccia attenzione al gradino.",
-        "why": "The Lei imperative borrows the congiuntivo: <b>faccia</b>, not the indicative fa."
+        "why": "The Lei imperative uses the congiuntivo form: <b>faccia</b>, not fa."
       },
       {
         "wrong": "Compilate il modulo in stampatello. (on a public form)",
         "right": "Compilare il modulo in stampatello.",
-        "why": "Forms and signs use the <b>infinito</b>."
+        "why": "Forms and signs use the infinitive."
       },
       {
         "wrong": "Le bottiglie va lavate prima del riciclo.",
         "right": "Le bottiglie vanno lavate prima del riciclo.",
-        "why": "<b>andare</b> agrees with the thing: vanno lavate."
+        "why": "<b>Andare</b> agrees with the thing: vanno lavate."
       }
     ],
     "ex": [
@@ -1390,7 +1390,7 @@
         "a": [
           "aprire"
         ],
-        "why": "Negative tu → <b>non + infinito</b>."
+        "why": "The negative tu imperative is <b>non</b> + infinitive."
       },
       {
         "k": "type",
@@ -1399,7 +1399,7 @@
         "a": [
           "si accomodi"
         ],
-        "why": "Lei imperative of a reflexive verb: pronoun before → <b>si accomodi</b>."
+        "why": "With a reflexive verb, put the pronoun before the Lei imperative: <b>si accomodi</b>."
       },
       {
         "k": "type",
@@ -1408,7 +1408,7 @@
         "a": [
           "si"
         ],
-        "why": "Describing a procedure → <b>si</b> + verb."
+        "why": "Use <b>si</b> + verb to describe a procedure."
       },
       {
         "k": "type",
@@ -1417,7 +1417,7 @@
         "a": [
           "vanno"
         ],
-        "why": "<b>vanno</b> + participle = must be (plural)."
+        "why": "<b>Vanno</b> + past participle means must be (plural)."
       },
       {
         "k": "type",
@@ -1426,7 +1426,7 @@
         "a": [
           "dispiacerebbe"
         ],
-        "why": "A favour, softened: <b>ti dispiacerebbe</b> + infinitive."
+        "why": "To ask a favour politely, use <b>ti dispiacerebbe</b> + infinitive."
       },
       {
         "k": "type",
@@ -1435,7 +1435,7 @@
         "a": [
           "faccia"
         ],
-        "why": "Lei imperative of fare: <b>faccia</b>."
+        "why": "The Lei imperative of fare is <b>faccia</b>."
       },
       {
         "k": "type",
@@ -1444,7 +1444,7 @@
         "a": [
           "lasciate"
         ],
-        "why": "Negative voi = non + voi form: <b>lasciate</b>."
+        "why": "The negative voi imperative is non + voi form: <b>lasciate</b>."
       },
       {
         "k": "type",
@@ -1453,7 +1453,7 @@
         "a": [
           "rompere"
         ],
-        "why": "Written instructions → infinitive, like <i>premere</i>."
+        "why": "Written instructions use the infinitive, like <i>premere</i>."
       },
       {
         "k": "type",
@@ -1462,7 +1462,7 @@
         "a": [
           "mandamela"
         ],
-        "why": "Pronouns attach to the tu imperative: <b>mandamela</b>."
+        "why": "Attach pronouns to the tu imperative: <b>mandamela</b>."
       },
       {
         "k": "type",
@@ -1471,7 +1471,7 @@
         "a": [
           "esiti"
         ],
-        "why": "<b>Non esiti</b>: negative Lei imperative, a fixed email formula."
+        "why": "<b>Non esiti</b> is a negative Lei imperative in a fixed email phrase."
       },
       {
         "k": "mc",
@@ -1482,7 +1482,7 @@
           "Non fumerai."
         ],
         "a": "Non fumare.",
-        "why": "Signs use <b>non</b> + infinitive (or vietato fumare)."
+        "why": "Signs use <b>non</b> + infinitive or vietato + infinitive."
       },
       {
         "k": "mc",
@@ -1493,7 +1493,7 @@
           "Spostare la macchina."
         ],
         "a": "Mi scusi, potrebbe spostare la macchina? Devo uscire.",
-        "why": "A softened question with <b>potrebbe</b>; the infinitive is only for written instructions."
+        "why": "A question with <b>potrebbe</b> is polite; the infinitive is only for written instructions."
       },
       {
         "k": "mc",
@@ -1504,7 +1504,7 @@
           "Mi lo mandi entro venerdì, per cortesia."
         ],
         "a": "Me lo mandi entro venerdì, per cortesia.",
-        "why": "With the Lei imperative the pronouns go before: <b>me lo mandi</b>."
+        "why": "Put pronouns before the Lei imperative: <b>me lo mandi</b>."
       }
     ]
   },
@@ -1514,12 +1514,12 @@
     "topic": "functions",
     "title": "Registro formale e informale",
     "en": "Formal and informal register",
-    "summary": "How to move between a message to a friend and an email to someone you've never met: greetings, verbs and sentence shape.",
-    "meaning": "Correct Italian can still sound wrong if the register doesn't fit. Formal written Italian differs from everyday speech in a few recurring ways: <b>Lei</b> and its forms, fixed <b>openings and closings</b>, more <b>precise verbs</b> (<i>inviare</i> for mandare, <i>comunicare</i> for dire), <b>participles</b> instead of <i>che</i>-clauses (<i>il documento allegato</i>), and fewer but well-built sentences. The aim is precision, not pomp: one formula too many and it sounds baroque.",
+    "summary": "Change greetings, verbs and sentence structure to match an informal or a formal message.",
+    "meaning": "Correct Italian can sound wrong in the wrong register. Formal written Italian uses <b>Lei</b>, fixed openings and closings, precise verbs (<i>inviare</i>, not <i>mandare</i>) and past participles instead of <i>che</i>-clauses. Do not use too many formulas, because the text then sounds artificial.",
     "uses": [
       {
         "h": "Openings and closings",
-        "t": "They set the tone of the whole message. <b>Gentile</b> + name or title is the safe formal opening; <b>Cordiali saluti</b> the safe closing.",
+        "t": "Use <b>Gentile</b> + name for a formal opening and <b>Cordiali saluti</b> for the closing.",
         "ex": [
           "Gentile signora Bassi, Le scrivo in merito alla Sua richiesta del 3 marzo.",
           "Dear Mrs Bassi, I am writing regarding your request of 3 March."
@@ -1527,39 +1527,39 @@
       },
       {
         "h": "Precise verbs",
-        "t": "Everyday verbs have formal equivalents: <b>mandare → inviare</b>, <b>dire → comunicare</b>, <b>cambiare → modificare</b>, <b>finire → completare</b>, <b>fare un controllo → effettuare un controllo</b>.",
+        "t": "Use formal verbs: <b>mandare → inviare</b>, <b>dire → comunicare</b>, <b>cambiare → modificare</b>.",
         "ex": [
           "In allegato Le invio il preventivo aggiornato.",
           "Please find attached the updated quote."
         ]
       },
       {
-        "h": "Participle instead of che + verb",
-        "t": "<i>il modulo che abbiamo compilato</i> → <b>il modulo compilato</b>. A strong marker of written register.",
+        "h": "Past participle instead of che + verb",
+        "t": "Replace a che-clause: <i>il modulo che abbiamo compilato</i> → <b>il modulo compilato</b>.",
         "ex": [
           "Le decisioni prese in assemblea saranno comunicate a tutti i condomini.",
           "The decisions taken at the meeting will be communicated to all residents."
         ]
       },
       {
-        "h": "Impersonal and noun phrases",
-        "t": "<i>abbiamo deciso</i> → <b>si è deciso</b>; <i>faremo una riunione</i> → <b>è prevista una riunione</b>. Use them now and then, not in every sentence.",
+        "h": "Impersonal forms and noun phrases",
+        "t": "Use <b>si è deciso</b> or <b>è prevista</b> sometimes, not in every sentence.",
         "ex": [
           "È prevista una riunione per martedì 12 alle 18.",
           "A meeting is scheduled for Tuesday the 12th at 6 pm."
         ]
       },
       {
-        "h": "Formal set phrases",
-        "t": "<b>Resto a disposizione per eventuali chiarimenti</b>, <b>In attesa di un Suo riscontro</b>, <b>La ringrazio per l'attenzione</b>.",
+        "h": "Formal fixed phrases",
+        "t": "Formal emails use: <b>Resto a disposizione…</b>, <b>In attesa di un Suo riscontro</b>, <b>La ringrazio</b>.",
         "ex": [
           "Resto a disposizione per eventuali chiarimenti.",
           "I remain available should you need any clarification."
         ]
       },
       {
-        "h": "The informal end",
-        "t": "With friends, short sentences, tu and everyday verbs are right. A formal formula in a chat sounds cold or ironic.",
+        "h": "Informal register",
+        "t": "With friends, use tu, short sentences and everyday verbs, not formal phrases.",
         "ex": [
           "Ciao Fede, ti giro le foto di ieri. Ci sentiamo stasera!",
           "Hi Fede, I'm forwarding you yesterday's photos. Talk tonight!"
@@ -1567,7 +1567,7 @@
       }
     ],
     "form": {
-      "intro": "Register is a bundle of choices. Change one and the others should follow: if you open with <i>Gentile</i>, don't close with <i>Baci</i>.",
+      "intro": "Keep all choices in one register. If you open with <i>Gentile</i>, do not close with <i>Baci</i>.",
       "tables": [
         {
           "h": "Everyday → formal",
@@ -1615,7 +1615,7 @@
           ]
         },
         {
-          "h": "Email frame",
+          "h": "Email structure",
           "rows": [
             [
               "opening · friend",
@@ -1648,7 +1648,7 @@
           ]
         },
         {
-          "h": "Nominal style · verb → noun",
+          "h": "Noun style: verb → noun",
           "rows": [
             [
               "dopo aver deciso",
@@ -1686,12 +1686,11 @@
         }
       ],
       "notes": [
-        "In formal letters Lei and its forms are often capitalised: <i>Le invio</i>, <i>La ringrazio</i>, <i>la Sua richiesta</i>. It's a courtesy, not a rule; just be consistent.",
-        "<b>Gentile</b> is the default formal opening. <b>Egregio</b> is very formal and old-fashioned; <b>Caro</b> is for people you know.",
-        "Formal Italian uses the colon and semicolon more than English emails: <i>Il problema è chiaro: mancano i dati.</i>",
-        "Don't overdo it. <i>Le sarei grato se potesse inviarmi il documento</i> is right; adding <i>infinitamente</i>, <i>cortesemente</i> and <i>con la Sua consueta gentilezza</i> turns it into parody.",
-        "Alternate active, si and passive forms: a chain of passives (<i>è stato fatto… è stato deciso… è stato inviato</i>) reads like a translation.",
-        "<b>Nominalisation</b>: formal writing often turns a verb into a noun (<i>dopo aver deciso → dopo la decisione</i>, <i>per migliorare → per il miglioramento</i>). The verb's object follows with <b>di</b>: <i>migliorare il servizio → il miglioramento del servizio</i>. One or two per sentence; a paragraph made only of nouns becomes bureaucratese."
+        "In formal letters, many writers use a capital letter for Lei and its forms: <i>Le invio</i>, <i>La ringrazio</i>, <i>la Sua richiesta</i>. This is optional, but be consistent.",
+        "Use <b>Gentile</b> for a formal opening. Use <b>Caro</b> only for people you know.",
+        "Use one polite formula per sentence. <i>Le sarei grato se potesse inviarmi il documento</i> is correct. More softeners sound like a parody.",
+        "Mix active, si and passive forms. Many passives in a row sound like a translation.",
+        "Formal writing often changes a verb into a noun: <i>dopo aver deciso → dopo la decisione</i>. The object follows with <b>di</b>: <i>il miglioramento del servizio</i>. Use one or two per sentence."
       ]
     },
     "signals": [
@@ -1707,22 +1706,22 @@
       {
         "wrong": "Gentile Dott. Neri, ti mando il file che mi hai chiesto.",
         "right": "Gentile Dott. Neri, Le invio il file che mi ha richiesto.",
-        "why": "A formal opening commits you to <b>Lei</b> for the whole message."
+        "why": "After a formal opening, use <b>Lei</b> in the whole message."
       },
       {
         "wrong": "Abbiamo fatto un controllo sul contatore.",
         "right": "Abbiamo effettuato un controllo sul contatore.",
-        "why": "In formal writing, <b>fare</b> + noun is often replaced by a precise verb."
+        "why": "In formal writing, use a precise verb instead of <b>fare</b> + noun."
       },
       {
         "wrong": "Il modulo che è stato allegato contiene i dati che sono stati richiesti.",
         "right": "Il modulo allegato contiene i dati richiesti.",
-        "why": "Participles replace <b>che è stato</b> + participle: lighter and more formal."
+        "why": "Use a past participle instead of <b>che è stato</b> + past participle."
       },
       {
         "wrong": "Le sarei infinitamente grato se, con la Sua consueta gentilezza, potesse cortesemente inviarmi il modulo.",
         "right": "Le sarei grato se potesse inviarmi il modulo.",
-        "why": "One polite formula is enough. More sounds baroque, even ironic."
+        "why": "Use one polite formula; more formulas sound ironic."
       }
     ],
     "ex": [
@@ -1734,7 +1733,7 @@
           "invio",
           "trasmetto"
         ],
-        "why": "Formal for ti mando: <b>Le invio</b>."
+        "why": "The formal form of ti mando is <b>Le invio</b>."
       },
       {
         "k": "type",
@@ -1745,7 +1744,7 @@
           "riferimento",
           "relazione"
         ],
-        "why": "<b>in merito a</b> = regarding, the classic first line."
+        "why": "<b>In merito a</b> means regarding; it is a standard first line."
       },
       {
         "k": "type",
@@ -1755,7 +1754,7 @@
           "disposizione",
           "sua disposizione"
         ],
-        "why": "<b>Resto a disposizione</b>: the standard line before closing."
+        "why": "<b>Resto a disposizione</b> is the standard line before the closing."
       },
       {
         "k": "type",
@@ -1764,37 +1763,37 @@
         "a": [
           "ringrazio"
         ],
-        "why": "<b>La ringrazio</b>: ringraziare takes a direct object (La)."
+        "why": "<b>Ringraziare</b> takes a direct object: <b>La ringrazio</b>."
       },
       {
         "k": "type",
         "q": "Il documento ___ ieri contiene tutte le informazioni necessarie.",
-        "h": "inviare · participle",
+        "h": "inviare · past participle",
         "a": [
           "inviato",
           "trasmesso"
         ],
-        "why": "Participle instead of <i>che è stato inviato</i>."
+        "why": "Use the past participle instead of <i>che è stato inviato</i>."
       },
       {
         "k": "type",
         "q": "È ___ una riunione condominiale per giovedì 14 alle 18.",
-        "h": "prevedere · participle",
+        "h": "prevedere · past participle",
         "a": [
           "prevista",
           "fissata",
           "convocata"
         ],
-        "why": "<b>È prevista</b> = is scheduled; agrees with riunione."
+        "why": "<b>È prevista</b> means is scheduled; it agrees with riunione."
       },
       {
         "k": "type",
         "q": "Abbiamo ___ alcune modifiche al programma del convegno.",
-        "h": "apportare · participle",
+        "h": "apportare · past participle",
         "a": [
           "apportato"
         ],
-        "why": "Formal for fare modifiche: <b>apportare</b> modifiche."
+        "why": "The formal verb for fare modifiche is <b>apportare</b>."
       },
       {
         "k": "type",
@@ -1803,16 +1802,16 @@
         "a": [
           "riscontro"
         ],
-        "why": "<b>riscontro</b> = reply, in formal correspondence."
+        "why": "<b>Riscontro</b> means reply in formal letters."
       },
       {
         "k": "type",
         "q": "Si è ___ di rinviare l'inaugurazione a settembre.",
-        "h": "decidere · participle",
+        "h": "decidere · past participle",
         "a": [
           "deciso"
         ],
-        "why": "Impersonal past: <b>si è deciso</b>."
+        "why": "The impersonal past is <b>si è deciso</b>."
       },
       {
         "k": "type",
@@ -1822,7 +1821,7 @@
           "giro",
           "mando"
         ],
-        "why": "Informal register: <b>ti giro</b> = I'm forwarding you."
+        "why": "In informal register, <b>ti giro</b> means I am forwarding you."
       },
       {
         "k": "mc",
@@ -1844,7 +1843,7 @@
           "Mi dica se hai domande."
         ],
         "a": "Mi faccia sapere se ha domande.",
-        "why": "All Lei forms, and <i>far sapere</i> is softer than dire."
+        "why": "It uses only Lei forms, and <i>far sapere</i> is softer than dire."
       },
       {
         "k": "mc",
@@ -1855,7 +1854,7 @@
           "Potrebbe inviarmi il modulo?"
         ],
         "a": "Le sarei infinitamente grato se, con la Sua consueta gentilezza, potesse cortesemente inviarmi il modulo.",
-        "why": "Three cushions in one sentence: baroque."
+        "why": "It has three softeners in one sentence, which is too many."
       },
       {
         "k": "mc",
@@ -1866,7 +1865,7 @@
           "abbiamo fatto un cambio la data"
         ],
         "a": "abbiamo modificato la data",
-        "why": "<b>modificare</b> is the formal counterpart of cambiare."
+        "why": "<b>Modificare</b> is the formal verb for cambiare."
       },
       {
         "k": "type",
@@ -1876,7 +1875,7 @@
           "firma",
           "sottoscrizione"
         ],
-        "why": "Nominal style: <i>dopo aver firmato il contratto</i> → <b>dopo la firma del contratto</b>; the object follows with di."
+        "why": "<i>Dopo aver firmato il contratto</i> becomes <b>dopo la firma del contratto</b>."
       },
       {
         "k": "mc",
@@ -1887,7 +1886,7 @@
           "Prima che parta, controlli i documenti."
         ],
         "a": "Prima della partenza, controlli i documenti.",
-        "why": "partire → <b>la partenza</b>; prima di + article → <b>prima della</b>. Prima che parta is a clause, not a noun."
+        "why": "Partire becomes <b>la partenza</b>, and prima di + la becomes <b>prima della</b>."
       }
     ]
   },
@@ -1897,12 +1896,12 @@
     "topic": "tenses",
     "title": "Il futuro anteriore",
     "en": "Future perfect",
-    "summary": "“Will have done”: what will be finished by a point in the future, and a guess about the past.",
-    "meaning": "The futuro anteriore is the futuro of <b>avere</b> or <b>essere</b> + the past participle: <i>avrò finito, sarà partita</i>. It has two jobs. The first is the English “will have done”: something finished before another future moment. The second is very Italian: just as <i>sarà a casa</i> means “he's probably at home”, <i>sarà uscito</i> means “he's probably gone out”, a guess about the past.",
+    "summary": "Use it for actions done before a future time, and for guesses about the past.",
+    "meaning": "Form the futuro anteriore with the futuro of <b>avere</b> or <b>essere</b> + past participle: <i>avrò finito, sarà partita</i>. Use it for an action finished before another future moment (“will have done”). Also use it for a guess about the past: <i>sarà uscito</i> means “he has probably gone out”.",
     "uses": [
       {
-        "h": "Finished by a future moment",
-        "t": "Often with <b>entro</b> (by), <b>fra</b> (in) or <b>per</b> + a date.",
+        "h": "Finished before a future moment",
+        "t": "Use it with <b>entro</b> (by), <b>fra</b> (in) or <b>per</b> + a date.",
         "ex": [
           "Entro giugno avremo finito di ristrutturare la cucina.",
           "By June we'll have finished redoing the kitchen."
@@ -1910,7 +1909,7 @@
       },
       {
         "h": "After quando, appena, dopo che",
-        "t": "The earlier of two future actions: first one is done, then the other happens.",
+        "t": "Use it for the first of two future actions.",
         "ex": [
           "Appena sarò arrivata a Cagliari, ti chiamerò.",
           "As soon as I've arrived in Cagliari, I'll call you."
@@ -1918,7 +1917,7 @@
       },
       {
         "h": "Guessing about the past",
-        "t": "Probably did, must have done. The past version of <i>sarà</i>.",
+        "t": "Use it to say that something probably happened.",
         "ex": [
           "Le luci sono spente. Saranno già andati a dormire.",
           "The lights are off. They must have gone to bed already."
@@ -1926,7 +1925,7 @@
       },
       {
         "h": "Puzzled questions",
-        "t": "Talking to yourself about something that has already happened.",
+        "t": "Use it to ask yourself about something that already happened.",
         "ex": [
           "Dove avrò messo gli occhiali?",
           "Where on earth have I put my glasses?"
@@ -1934,7 +1933,7 @@
       },
       {
         "h": "Conceding: avrà anche…, ma",
-        "t": "“He may well have…, but”: granting a point before a contrast.",
+        "t": "Use <b>avrà anche</b> + past participle, <b>ma</b> to accept a point before a contrast.",
         "ex": [
           "Avrà anche studiato, ma all'esame non sapeva niente.",
           "He may well have studied, but in the exam he knew nothing."
@@ -1942,10 +1941,10 @@
       }
     ],
     "form": {
-      "intro": "Futuro of <b>avere</b> or <b>essere</b> + past participle. The choice of auxiliary and the agreement rules are the same as in the passato prossimo.",
+      "intro": "Form it with the futuro of <b>avere</b> or <b>essere</b> + past participle. The auxiliary and agreement rules are the same as in the passato prossimo.",
       "tables": [
         {
-          "h": "with avere · finire",
+          "h": "With avere: finire",
           "rows": [
             [
               "io",
@@ -1974,7 +1973,7 @@
           ]
         },
         {
-          "h": "with essere · partire",
+          "h": "With essere: partire",
           "rows": [
             [
               "io",
@@ -2025,10 +2024,10 @@
         }
       ],
       "notes": [
-        "In everyday speech, after <i>quando</i> and <i>appena</i> people often use the presente or passato prossimo instead: <i>Appena arrivo, ti chiamo.</i> In writing, the futuro anteriore is the careful choice.",
-        "<b>già</b>, <b>appena</b> and <b>mai</b> go between the auxiliary and the participle: <i>avrà già finito</i>.",
-        "Irregular participles are the same as in the passato prossimo: avrò fatto, sarà venuta, avremo scritto.",
-        "For a guess about the past you can also use dovere: <i>deve essere uscito</i> = <i>sarà uscito</i>."
+        "In speech, people often use the presente after <i>quando</i> and <i>appena</i>: <i>Appena arrivo, ti chiamo.</i> In writing, use the futuro anteriore.",
+        "Put <b>già</b>, <b>appena</b> and <b>mai</b> between the auxiliary and the past participle: <i>avrà già finito</i>.",
+        "Irregular past participles are the same as in the passato prossimo: avrò fatto, sarà venuta, avremo scritto.",
+        "For a guess about the past, you can also use dovere: <i>deve essere uscito</i> = <i>sarà uscito</i>."
       ]
     },
     "signals": [
@@ -2043,17 +2042,17 @@
       {
         "wrong": "Quando sarò finito il lavoro, ti chiamerò.",
         "right": "Quando avrò finito il lavoro, ti chiamerò.",
-        "why": "<b>finire</b> with an object takes avere, as in the passato prossimo."
+        "why": "<b>Finire</b> with an object takes avere, as in the passato prossimo."
       },
       {
         "wrong": "Sono le dieci: Laura avrà arrivata a Roma.",
         "right": "Sono le dieci: Laura sarà arrivata a Roma.",
-        "why": "<b>arrivare</b> takes essere, and the participle agrees: arrivata."
+        "why": "<b>Arrivare</b> takes essere, and the past participle agrees: arrivata."
       },
       {
         "wrong": "Entro sabato i muratori finiranno già il tetto.",
         "right": "Entro sabato i muratori avranno già finito il tetto.",
-        "why": "Finished before a future deadline → futuro anteriore, with <b>già</b> between auxiliary and participle."
+        "why": "For an action finished before a future deadline, use the futuro anteriore."
       }
     ],
     "ex": [
@@ -2064,7 +2063,7 @@
         "a": [
           "avrò"
         ],
-        "why": "Futuro of avere + participle: <b>avrò</b> finito."
+        "why": "Use the futuro of avere + past participle: <b>avrò</b> finito."
       },
       {
         "k": "type",
@@ -2073,7 +2072,7 @@
         "a": [
           "saremo"
         ],
-        "why": "arrivare takes essere: <b>saremo</b> arrivati."
+        "why": "<b>Arrivare</b> takes essere: <b>saremo</b> arrivati."
       },
       {
         "k": "type",
@@ -2082,7 +2081,7 @@
         "a": [
           "sarà"
         ],
-        "why": "Guess about the past → <b>sarà</b> arrivata."
+        "why": "For a guess about the past, use <b>sarà</b> arrivata."
       },
       {
         "k": "type",
@@ -2091,7 +2090,7 @@
         "a": [
           "avrò"
         ],
-        "why": "A puzzled question to yourself: <b>l'avrò</b> lasciato."
+        "why": "For a puzzled question to yourself, use <b>l'avrò</b> lasciato."
       },
       {
         "k": "type",
@@ -2100,7 +2099,7 @@
         "a": [
           "avremo"
         ],
-        "why": "The earlier future action: <b>avremo</b> letto."
+        "why": "Use the futuro anteriore for the first future action: <b>avremo</b> letto."
       },
       {
         "k": "type",
@@ -2109,16 +2108,16 @@
         "a": [
           "saranno"
         ],
-        "why": "Guess about the past with essere: <b>saranno</b> andati."
+        "why": "For a guess about the past with essere, use <b>saranno</b> andati."
       },
       {
         "k": "type",
         "q": "Fra un mese i ragazzi avranno ___ la scuola.",
-        "h": "finire · participle",
+        "h": "finire · past participle",
         "a": [
           "finito"
         ],
-        "why": "Futuro anteriore = avranno + <b>finito</b>."
+        "why": "The futuro anteriore is avranno + <b>finito</b>."
       },
       {
         "k": "type",
@@ -2132,11 +2131,11 @@
       {
         "k": "type",
         "q": "Quando avrete ___ le valigie, chiudete bene la porta.",
-        "h": "fare · participle",
+        "h": "fare · past participle",
         "a": [
           "fatto"
         ],
-        "why": "Irregular participle: <b>fatto</b>."
+        "why": "<b>Fatto</b> is the irregular past participle of fare."
       },
       {
         "k": "type",
@@ -2145,7 +2144,7 @@
         "a": [
           "avrà"
         ],
-        "why": "<b>Avrà anche</b> + participle, ma… = he may well have…, but."
+        "why": "<b>Avrà anche</b> + past participle, ma means he may have…, but."
       },
       {
         "k": "mc",
@@ -2156,7 +2155,7 @@
           "They would have gone out."
         ],
         "a": "They've probably gone out.",
-        "why": "Futuro anteriore of probability: a guess about the past."
+        "why": "Here the futuro anteriore shows a guess about the past."
       },
       {
         "k": "mc",
@@ -2167,7 +2166,7 @@
           "Quando avrò finita l'università, andrò a vivere a Torino."
         ],
         "a": "Quando avrò finito l'università, andrò a vivere a Torino.",
-        "why": "finire + object → avere, and no agreement with a following noun."
+        "why": "<b>Finire</b> + object takes avere, and the past participle does not agree."
       },
       {
         "k": "mc",
@@ -2178,7 +2177,7 @@
           "partirà già"
         ],
         "a": "sarà già partito",
-        "why": "Finished before another future moment; partire takes essere."
+        "why": "The action ends before another future moment, and partire takes essere."
       }
     ]
   },
@@ -2188,12 +2187,12 @@
     "topic": "prepositions",
     "title": "Verbi e preposizioni",
     "en": "Verbs with prepositions",
-    "summary": "Which preposition follows which verb: pensare a, decidere di, dipendere da, contare su… learned as pairs.",
-    "meaning": "Many verbs come with a fixed preposition, and it rarely matches English: <i>depend <b>on</b></i> is <i>dipendere <b>da</b></i>, <i>think <b>about</b></i> is <i>pensare <b>a</b></i>. You can't work it out, but there are patterns: <b>a</b> goes with many verbs of starting, managing and taking part; <b>di</b> with verbs of deciding, trying, stopping, remembering and with feelings; <b>da</b> with dependence and origin; <b>su</b> with relying and focusing. Learn each verb together with its preposition.",
+    "summary": "Learn which preposition follows each verb: pensare a, decidere di, dipendere da, contare su.",
+    "meaning": "Many Italian verbs take a fixed preposition that does not match English: <i>dipendere <b>da</b></i> (depend on). Some patterns help: <b>a</b> for starting and managing, <b>di</b> for deciding and stopping, <b>da</b> for dependence, <b>su</b> for relying. Learn each verb with its preposition.",
     "uses": [
       {
         "h": "Verb + a + infinitive",
-        "t": "Starting, continuing, managing, learning: <b>cominciare a, continuare a, riuscire a, imparare a, provare a, aiutare a</b>.",
+        "t": "Use <b>a</b> after verbs of starting, continuing and managing: <b>cominciare a, riuscire a, provare a</b>.",
         "ex": [
           "Non riesco a trovare parcheggio vicino al mercato di Porta Palazzo.",
           "I can't find parking near the Porta Palazzo market."
@@ -2201,7 +2200,7 @@
       },
       {
         "h": "Verb + di + infinitive",
-        "t": "Deciding, trying, finishing, stopping, remembering: <b>decidere di, cercare di, finire di, smettere di, ricordarsi di, dimenticarsi di</b>.",
+        "t": "Use <b>di</b> after verbs of deciding, trying and stopping: <b>decidere di, cercare di, smettere di</b>.",
         "ex": [
           "Abbiamo deciso di passare l'estate in Val d'Aosta.",
           "We've decided to spend the summer in the Aosta Valley."
@@ -2209,7 +2208,7 @@
       },
       {
         "h": "Verb + a + noun",
-        "t": "<b>pensare a, partecipare a, credere a, rispondere a, abituarsi a, interessarsi a</b>.",
+        "t": "These verbs take <b>a</b> before a noun: <b>pensare a, partecipare a, rispondere a, abituarsi a</b>.",
         "ex": [
           "Sabato ho partecipato a una degustazione di vini a Montalcino.",
           "On Saturday I took part in a wine tasting in Montalcino."
@@ -2217,7 +2216,7 @@
       },
       {
         "h": "Verb + di + noun",
-        "t": "<b>parlare di, avere bisogno di, occuparsi di, fidarsi di, accorgersi di, innamorarsi di</b>.",
+        "t": "These take <b>di</b> + noun: <b>parlare di, avere bisogno di, occuparsi di, fidarsi di</b>.",
         "ex": [
           "Mio fratello si occupa del bar di famiglia.",
           "My brother runs the family bar."
@@ -2225,7 +2224,7 @@
       },
       {
         "h": "da, su, in, con",
-        "t": "<b>dipendere da</b>, <b>contare su</b>, <b>basarsi su</b>, <b>credere in</b>, <b>specializzarsi in</b>, <b>parlare con</b>.",
+        "t": "Learn these pairs: <b>dipendere da</b>, <b>contare su</b>, <b>basarsi su</b>, <b>credere in</b>, <b>parlare con</b>.",
         "ex": [
           "Conto su di te per la festa di sabato.",
           "I'm counting on you for Saturday's party."
@@ -2233,7 +2232,7 @@
       },
       {
         "h": "No preposition in Italian",
-        "t": "Some verbs take a direct object where English uses a preposition: <b>aspettare, ascoltare, cercare, guardare</b>, and <b>chiedere</b> something.",
+        "t": "These verbs take a direct object without a preposition: <b>aspettare, ascoltare, cercare, guardare, chiedere</b>.",
         "ex": [
           "Aspetto l'autobus da venti minuti.",
           "I've been waiting for the bus for twenty minutes."
@@ -2241,7 +2240,7 @@
       }
     ],
     "form": {
-      "intro": "When the preposition meets an article they merge: pensare <b>al</b> lavoro, occuparsi <b>dei</b> bambini, dipendere <b>dalla</b> stagione. Before an infinitive there is no article.",
+      "intro": "A preposition and an article join: pensare <b>al</b> lavoro, occuparsi <b>dei</b> bambini, dipendere <b>dalla</b> stagione. Before an infinitive, there is no article.",
       "tables": [
         {
           "h": "a",
@@ -2332,32 +2331,32 @@
         }
       ],
       "notes": [
-        "<b>pensare a</b> = have in mind (<i>penso a te</i>); <b>pensare di</b> + infinitive = intend (<i>penso di partire</i>); <b>pensare che</b> + congiuntivo = believe (<i>penso che sia vero</i>).",
-        "<b>credere a</b> = believe what someone says (<i>non credo alle sue scuse</i>); <b>credere in</b> = have faith in (<i>credo in te</i>).",
-        "<b>provare a</b> and <b>cercare di</b> both mean “try to”; cercare di stresses the effort.",
-        "Before a stressed pronoun, <b>su</b> adds <b>di</b>: <i>conto su di te</i>, <i>su di lui</i>."
+        "<b>Pensare</b> has three patterns. <b>Pensare a</b> = have in mind (<i>penso a te</i>). <b>Pensare di</b> + infinitive = intend (<i>penso di partire</i>). <b>Pensare che</b> + congiuntivo = believe (<i>penso che sia vero</i>).",
+        "<b>Credere a</b> = believe what a person says (<i>non credo alle sue scuse</i>). <b>Credere in</b> = have faith in (<i>credo in te</i>).",
+        "<b>Provare a</b> and <b>cercare di</b> both mean “try to”.",
+        "Before a stressed pronoun, use <b>su di</b>: <i>conto su di te</i>, <i>su di lui</i>."
       ]
     },
     "mistakes": [
       {
         "wrong": "Dipende di te.",
         "right": "Dipende da te.",
-        "why": "<b>dipendere da</b>, always."
+        "why": "<b>Dipendere</b> always takes <b>da</b>."
       },
       {
         "wrong": "Sono interessato in questo corso.",
         "right": "Sono interessato a questo corso.",
-        "why": "<b>interessato a</b>, not “in” as in English."
+        "why": "Use <b>interessato a</b>, not “in” as in English."
       },
       {
         "wrong": "Ho deciso a partire.",
         "right": "Ho deciso di partire.",
-        "why": "<b>decidere di</b> + infinitive."
+        "why": "<b>Decidere</b> takes <b>di</b> + infinitive."
       },
       {
         "wrong": "Penso sul problema.",
         "right": "Penso al problema.",
-        "why": "<b>pensare a</b> = think about."
+        "why": "Use <b>pensare a</b> for think about."
       }
     ],
     "ex": [
@@ -2368,7 +2367,7 @@
         "a": [
           "a"
         ],
-        "why": "<b>riuscire a</b> + infinitive."
+        "why": "<b>Riuscire</b> takes <b>a</b> + infinitive."
       },
       {
         "k": "type",
@@ -2377,7 +2376,7 @@
         "a": [
           "di"
         ],
-        "why": "<b>decidere di</b> + infinitive."
+        "why": "<b>Decidere</b> takes <b>di</b> + infinitive."
       },
       {
         "k": "type",
@@ -2386,7 +2385,7 @@
         "a": [
           "dalla"
         ],
-        "why": "<b>dipendere da</b> + la → dalla."
+        "why": "<b>Dipendere da</b> + la becomes dalla."
       },
       {
         "k": "type",
@@ -2395,7 +2394,7 @@
         "a": [
           "del"
         ],
-        "why": "<b>occuparsi di</b> + il → del."
+        "why": "<b>Occuparsi di</b> + il becomes del."
       },
       {
         "k": "type",
@@ -2404,7 +2403,7 @@
         "a": [
           "su"
         ],
-        "why": "<b>contare su</b>; before a stressed pronoun, su di te."
+        "why": "<b>Contare</b> takes <b>su</b>; before a stressed pronoun, use su di te."
       },
       {
         "k": "type",
@@ -2413,7 +2412,7 @@
         "a": [
           "alla"
         ],
-        "why": "<b>partecipare a</b> + la → alla."
+        "why": "<b>Partecipare a</b> + la becomes alla."
       },
       {
         "k": "type",
@@ -2422,7 +2421,7 @@
         "a": [
           "di"
         ],
-        "why": "<b>smettere di</b> + infinitive."
+        "why": "<b>Smettere</b> takes <b>di</b> + infinitive."
       },
       {
         "k": "type",
@@ -2431,7 +2430,7 @@
         "a": [
           "del"
         ],
-        "why": "<b>fidarsi di</b> + il → del."
+        "why": "<b>Fidarsi di</b> + il becomes del."
       },
       {
         "k": "type",
@@ -2440,7 +2439,7 @@
         "a": [
           "alle"
         ],
-        "why": "<b>pensare a</b> = have in mind: a + le → alle."
+        "why": "<b>Pensare a</b> means have in mind: a + le becomes alle."
       },
       {
         "k": "type",
@@ -2449,7 +2448,7 @@
         "a": [
           "alle"
         ],
-        "why": "Believe what someone says → <b>credere a</b>: alle sue scuse."
+        "why": "To believe what someone says, use <b>credere a</b>: alle sue scuse."
       },
       {
         "k": "type",
@@ -2458,7 +2457,7 @@
         "a": [
           "di"
         ],
-        "why": "<b>ricordarsi di</b> + infinitive."
+        "why": "<b>Ricordarsi</b> takes <b>di</b> + infinitive."
       },
       {
         "k": "mc",
@@ -2469,7 +2468,7 @@
           "Sono interessata di questo corso di ceramica."
         ],
         "a": "Sono interessata a questo corso di ceramica.",
-        "why": "<b>interessato a</b>."
+        "why": "Use <b>interessato a</b>."
       },
       {
         "k": "mc",
@@ -2480,7 +2479,7 @@
           "che"
         ],
         "a": "di",
-        "why": "Intention → <b>pensare di</b> + infinitive."
+        "why": "For an intention, use <b>pensare di</b> + infinitive."
       },
       {
         "k": "mc",
@@ -2491,7 +2490,7 @@
           "partecipare"
         ],
         "a": "aspettare",
-        "why": "<b>aspettare</b> qualcuno: “wait for” has no preposition in Italian."
+        "why": "<b>Aspettare</b> takes a direct object: aspettare qualcuno."
       }
     ]
   }
