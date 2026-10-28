@@ -1,12 +1,14 @@
 // Shared by the app and by the audio generator (content/tts), so both agree on which clip belongs to which text.
-export const AUDIO_BASE = "https://ahmadfardaei.github.io/parlo-audio";
+// Audio clips and PDFs live in a separate static repo (parlo-media) so the app itself stays small.
+export const MEDIA_BASE = "https://ahmadfardaei.github.io/parlo-media";
+export const pdfUrl = path => `${MEDIA_BASE}/pdf/${path}.pdf`;
 // Switched on once the clips have been generated and published.
 export const AUDIO_READY = false;
 
 // The text that is actually spoken: drop quote marks and dashes that make voices pause oddly.
 export const spoken = t => String(t).replace(/\/[aie]+(?![\p{L}])/gu, "").replace(/[«»“”"]/g, "").replace(/\s*[—–]\s*/g, ", ").replace(/…/g, ".").replace(/\s+/g, " ").trim();
 export function clipHash(t) { const s = spoken(t).toLowerCase(); let h = 5381; for (let i = 0; i < s.length; i++) h = ((h << 5) + h + s.charCodeAt(i)) >>> 0; return h.toString(36); }
-export const clipUrl = (t, v = "f") => `${AUDIO_BASE}/${v}/${clipHash(t)}.mp3`;
+export const clipUrl = (t, v = "f") => `${MEDIA_BASE}/audio/${v}/${clipHash(t)}.mp3`;
 
 // Speaker names → voice. Italian first names ending in -a are mostly feminine, with a few well-known exceptions.
 const MALE_A = ["andrea", "luca", "nicola", "mattia", "elia", "battista", "enea", "gianluca", "giosuè", "tobia", "zaccaria", "geremia", "isaia"];

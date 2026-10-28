@@ -6,6 +6,8 @@ import { ensure } from "../data.js";
 import { judge } from "./grammar.js";
 import { PRON, TENSES } from "./unit.js";
 import { cardData } from "./review.js";
+import { setEntry } from "../core.js";
+import ROADMAP from "../data/roadmap.json";
 
 export const SCOPES = {
   mix: { it: "Mix", en: "Words, verbs and grammar you've studied" },
@@ -75,6 +77,26 @@ function deckQ(id, mode, ids) {
   // Whole sentences are too long to type exactly: say or write it, then check yourself.
   return { id, kind: "Saved sentence", prompt: mode === "it" ? `<span class="it">${c.sentIt}</span>` : esc(c.sentEn), ask: mode === "it" ? "What does it mean?" : "Say it in Italian, then check", k: "self", a: mode === "it" ? c.sentEn : c.sentIt, aHtml: true, say: c.say, sv: c.sv };
 }
+// Questions for a path checkpoint, the level test, or testing out of a unit.
+async function buildPath(v) {
+  const L = v.a, steps = ROADMAP[L]?.steps || [];
+  let seg = steps;
+  if (v.scope === "cp") { const at = steps.findIndex(s => s.type === "checkpoint" && String(s.ref) === String(v.b)); let from = at - 1; while (from >= 0 && steps[from].type !== "checkpoint") from--; seg = steps.slice(from + 1, at); }
+  if (v.scope === "to") seg = [steps[+v.b]].filter(Boolean);
+  const unitIds = seg.filter(s => s.type === "unit").flatMap(s => (D.unitIds[s.ref] || []).filter(id => D.items[id].type !== "v"));
+  const lessons = seg.filter(s => s.type === "grammar").map(s => s.ref);
+  const total = v.scope === "test" ? 20 : 10;
+  const nGram = !unitIds.length ? total : !lessons.length || v.scope === "to" ? 0 : Math.round(total * 0.4);
+  const qs = shuffle(unitIds).slice(0, total - nGram).map(id => vocabQ(id, "it", unitIds));
+  if (nGram) {
+    const all = await ensure("grammar");
+    qs.push(...shuffle(all.filter(g => lessons.includes(g.id)).flatMap(g => g.ex.map(e => ({ ...e, lesson: g.title })))).slice(0, nGram).map(e => ({
+      kind: "Grammar · " + e.lesson, prompt: `<span class="it">${esc(e.q).replace("___", '<span class="blank"></span>')}</span>`,
+      ask: e.h || (e.v ? e.v + (e.p ? " · " + e.p : "") : ""), k: e.k, a: e.a, o: e.k === "mc" ? shuffle(e.o) : null, why: rich(e.why), it: true, io: e.p === "io" })));
+  }
+  return { qs: shuffle(qs), note: "", save: v.scope === "to" ? { key: "to:" + (steps[+v.b]?.id), pass: 0.8 } : { key: `cp:${L}:${v.scope === "test" ? L : v.b}`, pass: 0.7 }, back: `#/path/${L}`,
+    title: v.scope === "test" ? `Test ${L}` : v.scope === "to" ? `Test out · ${steps[+v.b]?.title || ""}` : `Checkpoint ${v.b}` };
+}
 async function build(scope, mode) {
   let qs = [], note = "";
   if (scope === "vocab" || scope === "mix") {
@@ -97,20 +119,35 @@ async function build(scope, mode) {
 
 /* ---------- Running a quiz ---------- */
 export async function viewQuiz(app, v, alive) {
-  const scope = SCOPES[v.scope] ? v.scope : "mix", mode = S.pref.quizMode || "it";
-  const { qs, note } = await build(scope, mode);
+  const pathQuiz = ["cp", "test", "to"].includes(v.scope);
+  const scope = pathQuiz ? v.scope : SCOPES[v.scope] ? v.scope : "mix", mode = pathQuiz ? "it" : (S.pref.quizMode || "it");
+  const built = pathQuiz ? await buildPath(v) : await build(scope, mode);
+  const { qs, note } = built;
+  const exit = built.back || "#/quiz", label = built.title || `Quiz · ${SCOPES[scope].it} · ${MODES[mode]}`;
   if (!alive()) return;
   let i = 0, right = 0, answered = false;
   const missed = [];
-  const top = () => `<div class="focus-top"><a class="icon-btn" href="#/quiz" aria-label="End quiz">${ICON.close}</a>
+  const top = () => `<div class="focus-top"><a class="icon-btn" href="${exit}" aria-label="End quiz">${ICON.close}</a>
       <div class="progress-track" aria-hidden="true"><span style="width:${qs.length ? i / qs.length * 100 : 0}%"></span></div>
       <span class="count small">${Math.min(i + 1, qs.length)} / ${qs.length}</span></div>
-    <p class="eyebrow center">Quiz · ${SCOPES[scope].it} · ${MODES[mode]}</p>`;
+    <p class="eyebrow center">${esc(label)}</p>`;
   const draw = () => {
     if (!qs.length) { app.innerHTML = `${top()}<div class="panel result"><p>${esc(note || "Nothing to quiz yet.")}</p><a class="btn primary" href="#/">Back to Oggi</a></div>`; return; }
     if (i >= qs.length) {
       // Missed words, verbs and sentences come back in the next review.
       missed.forEach(id => schedule(id, "10m"));
+      if (built.save) {
+        const prev = S.st[built.save.key];
+        if (built.save.key.startsWith("to:")) { if (right / qs.length >= built.save.pass) setEntry(built.save.key, { done: 1 }); }
+        else if (!prev || prev.best == null || right > prev.best) setEntry(built.save.key, { best: right, total: qs.length });
+        const passed = right / qs.length >= built.save.pass;
+        app.innerHTML = `${top()}<div class="panel result"><p class="eyebrow">${esc(label)}</p><p class="score">${right}<span>/${qs.length}</span></p>
+          <p>${passed ? (built.save.key.startsWith("to:") ? "Passed. This step is done." : "Passed. The next steps are open.") : `Not yet: you need ${Math.ceil(built.save.pass * qs.length)} to pass.`}</p>
+          ${missed.length ? `<p class="muted small">${missed.length} you missed will come back in your next review.</p>` : ""}
+          <div class="btn-row center"><a class="btn primary" href="${exit}">Back to the path</a>${passed ? "" : `<button class="btn" data-again>Try again</button>`}</div></div>`;
+        app.querySelector("[data-again]")?.addEventListener("click", () => viewQuiz(app, v, alive));
+        return;
+      }
       app.innerHTML = `${top()}<div class="panel result"><p class="eyebrow">Your score</p><p class="score">${right}<span>/${qs.length}</span></p>
         <p>${right === qs.length ? "Perfetto!" : right >= qs.length * 0.7 ? "Molto bene!" : "Keep at it."}</p>
         ${missed.length ? `<p class="muted small">${missed.length} you missed will come back in your next review.</p>` : ""}

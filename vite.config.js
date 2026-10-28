@@ -36,7 +36,7 @@ export default defineConfig({
         runtimeCaching: [
           {
             // Recorded voices: kept once played, so listening works offline afterwards.
-            urlPattern: ({ url }) => url.pathname.startsWith("/parlo-audio/"),
+            urlPattern: ({ url }) => url.pathname.startsWith("/parlo-media/audio/"),
             handler: "CacheFirst",
             options: { cacheName: "parlo-audio", expiration: { maxEntries: 4000 }, cacheableResponse: { statuses: [200] }, rangeRequests: true }
           },

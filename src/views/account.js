@@ -41,6 +41,7 @@ export function onAuthEvent(event, session) {
 export function viewAccount(app, v = S.view) {
   const tab = v.tab || "stats";
   const prefs = `<section class="panel"><h2>Learning</h2>
+      <div class="setting"><span>Learning mode</span><div class="seg small" role="group" aria-label="Learning mode">${[["path", "Path"], ["self", "Free study"]].map(([k, l]) => `<button data-lmode="${k}" aria-pressed="${(S.pref.mode || "self") === k}">${l}</button>`).join("")}</div></div>
       <div class="setting"><span>Your level</span><div class="seg small" role="group" aria-label="Your level">${LEVELS.map(l => `<button data-level="${l}" aria-pressed="${S.pref.level === l}">${l}</button>`).join("")}</div></div>
       <div class="setting"><span>Forms about you</span><div class="seg small" role="group" aria-label="Gendered forms about you">${[["m", "stanco"], ["f", "stanca"], ["x", "stanco/a"]].map(([k, l]) => `<button class="it" data-gender="${k}" aria-pressed="${(S.pref.gender || "x") === k}">${l}</button>`).join("")}</div></div>
       <div class="setting"><span>New words per session</span><div class="seg small" role="group" aria-label="New words per session">${[0, 10, 20, 30].map(n => `<button data-newn="${n}" aria-pressed="${S.pref.newN === n}">${n}</button>`).join("")}</div></div>
@@ -155,6 +156,7 @@ function wire(app) {
   app.querySelectorAll("[data-level]").forEach(b => b.onclick = () => { savePref({ level: b.dataset.level }); viewAccount(app); });
   app.querySelectorAll("[data-newn]").forEach(b => b.onclick = () => { savePref({ newN: +b.dataset.newn }); viewAccount(app); });
   app.querySelectorAll("[data-gender]").forEach(b => b.onclick = () => { savePref({ gender: b.dataset.gender }); viewAccount(app); });
+  app.querySelectorAll("[data-lmode]").forEach(b => b.onclick = () => { savePref({ mode: b.dataset.lmode }); viewAccount(app); });
   app.querySelectorAll("[data-rate]").forEach(b => b.onclick = () => { savePref({ rate: +b.dataset.rate }); viewAccount(app); });
   app.querySelectorAll("[data-dir]").forEach(b => b.onclick = () => { savePref({ dir: b.dataset.dir }); viewAccount(app); });
   app.querySelectorAll("[data-mode]").forEach(b => b.onclick = () => { mode = b.dataset.mode; msg = null; viewAccount(app); });

@@ -25,3 +25,44 @@ fs.writeFileSync(new URL("../src/data/meta.json", import.meta.url), JSON.stringi
   grammar: grammar.map(g => [g.id, g.level]), reading: reading.map(r => [r.id, r.level]),
   writing: writing.map(w => w.id), speaking: speaking.map(s => s.id)
 }));
+
+/* ---------- Roadmap: one guided path per level ---------- */
+// Time ranges (minutes) per step. Vocabulary includes the reviews needed to really learn each item.
+const course = JSON.parse(fs.readFileSync(new URL("../src/data/course.json", import.meta.url)));
+const WRITE = { A1: ["w-01", "w-02", "w-03"], A2: ["w-04", "w-05", "w-07"], B1: ["w-06", "w-08", "w-09"], B2: ["w-10", "w-08", "w-05"] };
+const SPEAK = { A1: ["s-01", "s-02", "s-03"], A2: ["s-04", "s-05", "s-07"], B1: ["s-06", "s-08", "s-09"], B2: ["s-10", "s-08", "s-06"] };
+const WRITE_MIN = { A1: [20, 35], A2: [25, 45], B1: [35, 55], B2: [45, 75] };
+const roadmap = {};
+for (const L of LV) {
+  const units = course.units.filter(u => u.level === L);
+  const gram = grammar.filter(g => g.level === L);
+  const reads = reading.filter(r => r.level === L);
+  const content = [];
+  const gPerUnit = gram.length / units.length;
+  let gi = 0;
+  units.forEach((u, i) => {
+    const n = u.words.length + u.verbs.length + u.phrases.length;
+    content.push({ type: "unit", ref: u.n, title: u.title, en: u.en, min: [Math.round(n * 1.5), Math.round(n * 3)] });
+    const until = Math.round((i + 1) * gPerUnit);
+    while (gi < until) { const g = gram[gi++]; content.push({ type: "grammar", ref: g.id, title: g.title, en: g.en, min: [25, 50] }); }
+    if (reads[i]) { const r = reads[i]; content.push({ type: "reading", ref: r.id, title: r.title, en: r.en, min: [Math.round(r.minutes * 2), Math.round(r.minutes * 3.5)] }); }
+    if (i % 3 === 2) {
+      const k = (i - 2) / 3;
+      if (WRITE[L][k]) { const w = writing.find(x => x.id === WRITE[L][k]); content.push({ type: "writing", ref: w.id, title: w.title, en: w.en, min: WRITE_MIN[L] }); }
+      if (SPEAK[L][k]) { const s = speaking.find(x => x.id === SPEAK[L][k]); content.push({ type: "speaking", ref: s.id, title: s.title, en: s.en, min: [15, 30] }); }
+    }
+  });
+  while (gi < gram.length) { const g = gram[gi++]; content.push({ type: "grammar", ref: g.id, title: g.title, en: g.en, min: [25, 50] }); }
+  // A checkpoint after every 5 steps, and a level test at the end.
+  const steps = []; let cp = 0;
+  content.forEach((s, i) => {
+    steps.push(s);
+    if ((i + 1) % 5 === 0 && i < content.length - 1) steps.push({ type: "checkpoint", ref: ++cp, title: `Checkpoint ${cp}`, en: "A short quiz on the last five steps", min: [8, 12] });
+  });
+  steps.push({ type: "test", ref: L, title: `Test ${L}`, en: "A level test on everything in this path", min: [25, 40] });
+  steps.forEach((s, i) => { s.id = `${L}-${i + 1}`; });
+  const minH = steps.reduce((a, s) => a + s.min[0], 0) / 60, maxH = steps.reduce((a, s) => a + s.min[1], 0) / 60;
+  roadmap[L] = { steps, hours: [Math.round(minH), Math.round(maxH)] };
+  console.log(`roadmap ${L}: ${steps.length} steps, ${Math.round(minH)}–${Math.round(maxH)} h`);
+}
+fs.writeFileSync(new URL("../src/data/roadmap.json", import.meta.url), JSON.stringify(roadmap));

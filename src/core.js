@@ -44,6 +44,7 @@ export const ICON = {
   play: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg>',
   stop: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>',
   mic: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>',
+  download: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>',
   check: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>'
 };
 
@@ -148,12 +149,12 @@ export function indexCourse(course) {
 }
 export const unitByN = n => D.units.find(u => u.n === n);
 // Non-vocabulary progress is stored in its own sync rows, identified by id prefix.
-const PREFIX_UNIT = { "g:": 101, "s:": 102, "r:": 103, "wr:": 104, "sp:": 105, "t:": 106 };
+const PREFIX_UNIT = { "g:": 101, "s:": 102, "r:": 103, "wr:": 104, "sp:": 105, "t:": 106, "cp:": 107, "to:": 107 };
 export function unitOf(id) {
   for (const [p, n] of Object.entries(PREFIX_UNIT)) if (id.startsWith(p)) return n;
   return D.items[id]?.u;
 }
-const known = id => !!(D.items[id] || /^(g|s|r|wr|sp|t):/.test(id));
+const known = id => !!(D.items[id] || /^(g|s|r|wr|sp|t|cp|to):/.test(id));
 export const sayOf = id => { const it = D.items[id]; if (!it) return S.st[id]?.it || ""; return it.type === "w" ? full(it.d) : it.type === "v" ? it.d.inf : it.d.it; };
 export const meaningOf = id => D.items[id]?.d.en ?? S.st[id]?.en ?? "";
 

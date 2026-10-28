@@ -30,7 +30,7 @@ export function viewDeck(app) {
   app.innerHTML = `<header class="page-head"><h1>Mazzo</h1><p class="muted">Sentences you saved, with the words in context. Tap ★ on any word, or tap a sentence in a text, to add it here.</p></header>
     ${ids.length ? `<section class="panel deck-head">
         <div><p class="big-line">${ids.length} sentence${ids.length === 1 ? "" : "s"}</p><p class="muted small">${ready ? `${ready} ready to practise` : "Nothing due. You can still go through them."}</p></div>
-        <div class="btn-row"><a class="btn primary" href="#/session/deck">Practise my deck</a><a class="btn" href="#/quiz/deck">Quiz</a></div></section>
+        <div class="btn-row"><a class="btn primary" href="#/session/deck">Practise my deck</a><a class="btn" href="#/quiz/deck">Quiz</a><button class="btn quiet" data-print-deck>${ICON.download}<span>Print / PDF</span></button></div></section>
       <div class="list-tools"><div class="seg small" role="group" aria-label="Show">${[["all", "All"], ["units", "From units"], ["texts", "From texts"]].map(([k, l]) => `<button data-df="${k}" aria-pressed="${deckFilter === k}">${l}</button>`).join("")}</div></div>` : ""}
     ${shown.length ? `<div class="deck-grid">${shown.map(id => { const c = cardData(id); return `<div class="panel deck-item">
         <p class="ex-it">${c.sentIt}</p><p class="ex-en">${esc(c.sentEn)}</p>
@@ -42,6 +42,20 @@ export function viewDeck(app) {
       : `<div class="empty-state"><h2>${ids.length ? "Nothing here" : "Your deck is empty"}</h2><p class="muted">Save sentences while you read, or tap ★ Save on any word or phrase.</p><a class="btn" href="#/learn/reading">Find something to read</a></div>`}`;
   app.querySelectorAll("[data-df]").forEach(b => b.onclick = () => { deckFilter = b.dataset.df; viewDeck(app); });
   app.querySelectorAll("[data-remove]").forEach(b => b.onclick = () => { setEntry(b.dataset.remove, { s: 0 }); viewDeck(app); });
+  app.querySelector("[data-print-deck]")?.addEventListener("click", () => printDeck(ids));
+}
+
+// A clean printable page of the deck; the browser's print dialog can save it as PDF.
+function printDeck(ids) {
+  const el = document.createElement("div");
+  el.id = "print-root";
+  el.innerHTML = `<p class="eyebrow">Parlo Italiano · Il mio mazzo · ${new Date().toLocaleDateString("it-IT")}</p><h1>Il mio mazzo</h1>
+    ${ids.map(id => { const c = cardData(id); return `<div class="print-item"><p class="it">${c.sentIt}</p><p class="muted">${esc(c.sentEn)}${c.target ? ` · <span class="it">${esc(c.target)}</span> = ${esc(c.meaning)}` : ""}</p></div>`; }).join("")}`;
+  document.body.appendChild(el);
+  document.body.classList.add("printing");
+  const done = () => { document.body.classList.remove("printing"); el.remove(); window.removeEventListener("afterprint", done); };
+  window.addEventListener("afterprint", done);
+  setTimeout(() => { window.print(); setTimeout(() => { if (document.body.classList.contains("printing") && !matchMedia("print").matches) done(); }, 1000); }, 50);
 }
 
 /* ---------- Session (focus mode) ---------- */

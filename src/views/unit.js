@@ -1,4 +1,5 @@
 import { starHTML } from "./texts.js";
+import { pdfUrl } from "../voice.js";
 import { exVoice } from "../core.js";
 import { S, D, esc, rich, ICON, full, unitByN, counts, barHTML, statusOf, statusLabel, inDeck, schedHTML, canSpeak, TOPICS, remember, shuffle, pick, say, openSheet, gf, pickEx } from "../core.js";
 
@@ -91,6 +92,7 @@ export function viewUnit(app, v) {
     </header>
     <section class="panel unit-cta">
       <div class="level-prog">${barHTML(c)}<span class="small">${Math.round(c.known / Math.max(1, c.total) * 100)}% known</span></div>
+      <a class="btn quiet small pdf-link" href="${pdfUrl(`vocab/u${String(u.n).padStart(2, "0")}`)}" target="_blank" rel="noopener">${ICON.download}<span>PDF</span></a>
       <a class="btn primary" href="#/session/unit/${u.n}">${c.due ? `Review ${c.due} due` : fresh ? `Learn ${Math.min(fresh, Math.max(S.pref.newN, 10))} new` : "Practise again"}</a>
     </section>
     <nav class="seg tabs-seg" aria-label="Unit sections">

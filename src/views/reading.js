@@ -1,7 +1,7 @@
 import { S, esc, ICON, canSpeak, setEntry, savePref, remember, speakAll, lsGet, lsSet, TOPICS, shuffle, openSheet } from "../core.js";
 import { ensure } from "../data.js";
 import { blocksHTML, plainLines, sentHTML, sizeControlHTML, starHTML } from "./texts.js";
-import { voiceForName, narratorVoice } from "../voice.js";
+import { voiceForName, narratorVoice, pdfUrl } from "../voice.js";
 
 export function readerTools(showEn) {
   return `<div class="reader-tools">
@@ -57,7 +57,7 @@ export async function viewReading(app, v, alive) {
         </section>
       </div>
       <aside class="l-aside">
-        <div class="l-side">${readerTools(showEn)}</div>
+        <div class="l-side">${readerTools(showEn)}<div class="pdf-row"><a class="btn quiet small pdf-link" href="${pdfUrl(`reading/${r.id}`)}" target="_blank" rel="noopener">${ICON.download}<span>Text as PDF</span></a></div></div>
         <div class="l-side2"><details class="group" ${wide ? "open" : ""}><summary><span class="group-title">Glossary</span><span class="group-meta">${r.glossary.length} words</span></summary>
           <div class="panel flush reader">${r.glossary.map(g => `<div class="gloss"><div class="gloss-main">${sentHTML({ it: g.it, en: g.en }, `#/read/${r.id}`, r.title)}<span class="muted">${esc(g.en)}</span></div>${starHTML({ it: g.it, en: g.en }, `#/read/${r.id}`, r.title)}</div>`).join("")}</div></details></div>
       </aside></div>`;
@@ -69,7 +69,7 @@ export async function viewReading(app, v, alive) {
         const ok = q.o[+b.dataset.qo] === q.a; answered++; if (ok) correct++;
         div.querySelectorAll("[data-qo]").forEach(x => { x.disabled = true; if (q.o[+x.dataset.qo] === q.a) x.classList.add("right"); else if (x === b) x.classList.add("wrong"); });
         if (answered === qs.length) {
-          setEntry("r:" + r.id, { done: 1, score: correct });
+          setEntry("r:" + r.id, { done: 1, score: correct, total: qs.length });
           app.querySelector("#finish").innerHTML = `<p class="ok-text">${ICON.check} ${correct}/${qs.length} correct. Marked as read.</p><div class="btn-row"><a class="btn primary" href="#/learn/reading">More texts</a></div>`;
         }
       });

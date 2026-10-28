@@ -18,7 +18,7 @@ async function worker() {
     for (let attempt = 0; ; attempt++) {
       try { fs.writeFileSync(`${root}/${j.v}/${j.h}.mp3`, await synth(k, j.t, VOICE[j.v], 0.95)); done++; break; }
       catch (e) {
-        if ((e.status === 429 || e.status >= 500) && attempt < 6) { await new Promise(r => setTimeout(r, 1000 * 2 ** attempt + Math.random() * 500)); continue; }
+        if ((!e.status || e.status === 429 || e.status >= 500) && attempt < 6) { await new Promise(r => setTimeout(r, 1000 * 2 ** attempt + Math.random() * 500)); continue; }
         failed++; fs.appendFileSync(`${root}/failed.log`, `${j.v}\t${j.h}\t${j.t}\t${e.message}\n`); break;
       }
     }
