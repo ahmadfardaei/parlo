@@ -440,26 +440,26 @@
    {
     "q": "Che cosa insospettisce Ilaria all'inizio?",
     "o": [
-     "Il prezzo troppo basso della forma",
+     "Il prezzo troppo basso",
      "La forma sembra troppo perfetta, anche nei difetti",
-     "Il negoziante non parla bene l'italiano"
+     "L'italiano del negoziante, troppo perfetto per uno straniero"
     ],
     "a": "La forma sembra troppo perfetta, anche nei difetti"
    },
    {
     "q": "Perché il codice sulla placca dimostra che la forma è falsa?",
     "o": [
-     "Il codice non esiste nei registri",
-     "Il codice appartiene a una forma venduta e consumata anni prima",
-     "Il codice è stato scritto a mano"
+     "Il codice non compare in nessun registro del Consorzio di Reggio",
+     "Il codice è di una forma venduta e consumata anni prima",
+     "Il codice è stato scritto a mano invece che impresso nella placca"
     ],
-    "a": "Il codice appartiene a una forma venduta e consumata anni prima"
+    "a": "Il codice è di una forma venduta e consumata anni prima"
    },
    {
     "q": "Che cosa trova il giornalista all'indirizzo dell'azienda italiana?",
     "o": [
-     "Un caseificio abbandonato",
-     "Un ufficio pieno di documenti falsi",
+     "Un caseificio abbandonato tra le colline dell'Appennino reggiano",
+     "Un ufficio pieno di bolle di consegna e fatture false",
      "Un capannone vuoto da affittare"
     ],
     "a": "Un capannone vuoto da affittare"
@@ -468,28 +468,28 @@
     "q": "Che cosa intende l'autore con «il paradosso della trasparenza»?",
     "o": [
      "Più il sistema di controllo è visibile, più è facile imitarlo",
-     "I consumatori non leggono le etichette",
-     "Il Consorzio nasconde informazioni importanti"
+     "I consumatori guardano la placca ma non leggono mai le etichette",
+     "Il Consorzio nasconde ai consumatori informazioni importanti sui microchip"
     ],
     "a": "Più il sistema di controllo è visibile, più è facile imitarlo"
    },
    {
     "q": "Come reagisce il negoziante quando scopre la verità?",
     "o": [
-     "È contento di aver aiutato l'indagine",
-     "Si sente offeso e mette in dubbio il proprio palato",
+     "È contento di aver aiutato l'indagine e ringrazia il Consorzio",
+     "Si sente offeso e dubita del proprio palato",
      "Decide di chiudere il negozio"
     ],
-    "a": "Si sente offeso e mette in dubbio il proprio palato"
+    "a": "Si sente offeso e dubita del proprio palato"
    },
    {
     "q": "Perché Ermes vuole appendere la foto della placca?",
     "o": [
-     "Per ricordarsi di controllare meglio le forme",
-     "Perché la considera, con ironia, un complimento al suo lavoro",
-     "Per mostrarla ai carabinieri"
+     "Per ricordarsi di controllare meglio le placche delle sue forme",
+     "Perché la vede, con ironia, come un complimento al suo lavoro",
+     "Per mostrarla ai carabinieri che indagano sul capannone"
     ],
-    "a": "Perché la considera, con ironia, un complimento al suo lavoro"
+    "a": "Perché la vede, con ironia, come un complimento al suo lavoro"
    }
   ]
  },
@@ -970,9 +970,9 @@
    {
     "q": "Com'era il rapporto tra Tommaso e suo padre negli anni all'estero?",
     "o": [
-     "Si scrivevano lettere lunghe ogni mese",
+     "Si scrivevano lunghe lettere ogni mese, oltre a telefonarsi",
      "Si parlavano poco, con telefonate brevi e ripetitive",
-     "Il padre lo andava a trovare spesso"
+     "Il padre andava spesso a trovarlo"
     ],
     "a": "Si parlavano poco, con telefonate brevi e ripetitive"
    },
@@ -980,44 +980,44 @@
     "q": "Come capisce Tommaso chi ha scritto le cartoline?",
     "o": [
      "Dalla calligrafia e dal timbro di Bergamo",
-     "Glielo dice il postino",
-     "C'è una lettera di spiegazione nella scatola"
+     "Glielo dice il postino di via Pignolo durante il funerale",
+     "Da una lettera di spiegazione trovata in fondo alla scatola"
     ],
     "a": "Dalla calligrafia e dal timbro di Bergamo"
    },
    {
     "q": "Da dove venivano le frasi scritte sulle cartoline?",
     "o": [
-     "Da guide turistiche delle città",
-     "Da quello che Tommaso diceva al telefono la domenica",
-     "Dalle foto che Tommaso pubblicava online"
+     "Da guide turistiche delle città dove viveva Tommaso",
+     "Da ciò che Tommaso gli diceva al telefono la domenica",
+     "Dalle foto che Tommaso pubblicava online e mandava su WhatsApp"
     ],
-    "a": "Da quello che Tommaso diceva al telefono la domenica"
+    "a": "Da ciò che Tommaso gli diceva al telefono la domenica"
    },
    {
     "q": "Che cosa rivela la zia Gabriella?",
     "o": [
-     "Che credeva davvero che le cartoline fossero di Tommaso",
-     "Che sapeva la verità ma reggeva il gioco per far contento il cognato",
-     "Che era stata lei a comprare le cartoline"
+     "Che credeva davvero che le cartoline arrivassero da Tommaso",
+     "Che sapeva la verità, ma fingeva per farlo contento",
+     "Che le cartoline le comprava lei"
     ],
-    "a": "Che sapeva la verità ma reggeva il gioco per far contento il cognato"
+    "a": "Che sapeva la verità, ma fingeva per farlo contento"
    },
    {
     "q": "Perché, secondo Tommaso, l'ultima cartolina era bianca?",
     "o": [
-     "Il padre non aveva fatto in tempo a scriverla",
-     "Forse era per il giorno in cui il figlio sarebbe tornato davvero",
-     "Era una cartolina rovinata"
+     "Il padre non aveva fatto in tempo a scriverla prima di morire",
+     "Forse era pronta per il giorno in cui il figlio sarebbe tornato davvero",
+     "Era una cartolina rovinata dall'umidità, che il padre aveva scartato"
     ],
-    "a": "Forse era per il giorno in cui il figlio sarebbe tornato davvero"
+    "a": "Forse era pronta per il giorno in cui il figlio sarebbe tornato davvero"
    },
    {
     "q": "Cosa c'è di speciale nella cartolina che Tommaso spedisce alla fine?",
     "o": [
      "È la prima scritta davvero da lui, anche se nessuno la leggerà",
-     "La spedisce a sua zia",
-     "La scrive in portoghese"
+     "La spedisce alla zia Gabriella, a Seriate",
+     "La scrive in portoghese, come quella di Lisbona"
     ],
     "a": "È la prima scritta davvero da lui, anche se nessuno la leggerà"
    }
@@ -1504,44 +1504,44 @@
    {
     "q": "Perché Arturo ha bisogno del timbro?",
     "o": [
-     "Per rinnovare la carta d'identità",
+     "Per rinnovare la carta d'identità prima di tornare a Zurigo",
      "Per dimostrare alla cassa pensioni svizzera di essere vivo",
-     "Per cambiare residenza a Zurigo"
+     "Per trasferire la residenza da Padova a Zurigo"
     ],
     "a": "Per dimostrare alla cassa pensioni svizzera di essere vivo"
    },
    {
     "q": "Che cosa intende il narratore quando dice che «Altri servizi» significa «auguri»?",
     "o": [
-     "Che quello sportello si occupa di feste",
+     "Che quello sportello si occupa di feste e matrimoni",
      "Che chi sceglie quella categoria avrà vita difficile",
-     "Che gli impiegati sono molto gentili"
+     "Che gli impiegati di quello sportello sono i più gentili dell'anagrafe"
     ],
     "a": "Che chi sceglie quella categoria avrà vita difficile"
    },
    {
     "q": "Perché Loredana non può timbrare il modulo?",
     "o": [
-     "Il modulo è sbagliato",
-     "Serve il timbro tondo, che è nel cassetto del dottor Zanon",
-     "Il suo turno è finito"
+     "Il modulo è scritto solo in tedesco e non c'è la parte in italiano",
+     "Serve il timbro tondo, che ha solo il dottor Zanon",
+     "Il suo turno allo sportello 4 è appena finito"
     ],
-    "a": "Serve il timbro tondo, che è nel cassetto del dottor Zanon"
+    "a": "Serve il timbro tondo, che ha solo il dottor Zanon"
    },
    {
     "q": "Perché Arturo deve prendere un nuovo numero?",
     "o": [
-     "Ha perso il primo biglietto",
-     "È uscito a comprare la marca da bollo e la regola non prevede eccezioni",
-     "La guardia non lo riconosce"
+     "Ha perso il primo biglietto, l'F27, nella fila dal tabaccaio",
+     "È uscito, e chi esce deve riprendere il numero",
+     "Lo chiede il dottor Zanon"
     ],
-    "a": "È uscito a comprare la marca da bollo e la regola non prevede eccezioni"
+    "a": "È uscito, e chi esce deve riprendere il numero"
    },
    {
     "q": "Qual è l'ironia finale della storia?",
     "o": [
      "Il timbro certifica che Arturo era vivo solo in un preciso momento",
-     "Il modulo non serviva più",
+     "Il modulo non serviva più alla cassa pensioni",
      "Il dottor Zanon timbra il modulo sbagliato"
     ],
     "a": "Il timbro certifica che Arturo era vivo solo in un preciso momento"
@@ -1985,18 +1985,18 @@
    {
     "q": "Perché la foresta di Paneveggio è chiamata «la foresta dei violini»?",
     "o": [
-     "Perché ci si tengono concerti ogni estate",
-     "Perché vi cresce un abete con un legno ideale per gli strumenti",
-     "Perché Stradivari è nato lì"
+     "Perché ci si tengono concerti all'aperto ogni estate, tra gli abeti",
+     "Perché vi cresce un abete rosso con un legno ideale per gli strumenti",
+     "Perché, secondo i documenti, Stradivari sceglieva lì i suoi tronchi"
     ],
-    "a": "Perché vi cresce un abete con un legno ideale per gli strumenti"
+    "a": "Perché vi cresce un abete rosso con un legno ideale per gli strumenti"
    },
    {
     "q": "Che cosa è successo ai boschi negli anni dopo la tempesta?",
     "o": [
-     "Sono ricresciuti in fretta",
+     "Sono ricresciuti in fretta grazie agli inverni lunghi e alle estati brevi",
      "Un piccolo insetto ha fatto morire ancora più alberi",
-     "Sono stati tutti ripuliti in pochi mesi"
+     "Sono stati ripuliti in pochi mesi"
     ],
     "a": "Un piccolo insetto ha fatto morire ancora più alberi"
    },
@@ -2004,15 +2004,15 @@
     "q": "Perché i liutai erano incerti sul legno caduto?",
     "o": [
      "Perché il vento poteva aver creato difetti invisibili all'interno",
-     "Perché il legno era troppo giovane",
-     "Perché era vietato raccoglierlo"
+     "Perché il legno di alberi così giovani non era ancora adatto agli strumenti",
+     "Perché la legge vietava di raccogliere i tronchi caduti nella foresta"
     ],
     "a": "Perché il vento poteva aver creato difetti invisibili all'interno"
    },
    {
     "q": "Che cosa vuole dire Silvano con «Sembrava un medico, o un matto»?",
     "o": [
-     "Che i liutai lavoravano male",
+     "Che i liutai lavoravano male e gli facevano perdere tempo",
      "Che il loro metodo gli sembrava insieme serio e strano",
      "Che uno dei liutai si era fatto male"
     ],
@@ -2030,11 +2030,11 @@
    {
     "q": "Che cosa intende Marta dicendo che il legno «deve smettere di avere paura»?",
     "o": [
-     "Che il legno ha bisogno di tempo e stagionatura prima di suonare bene",
-     "Che il legno è ancora umido di pioggia",
-     "Che non vuole vendere quel violino"
+     "Che il legno ha bisogno di tempo prima di suonare bene",
+     "Che il legno è ancora umido per la pioggia della notte della tempesta",
+     "Che non vuole vendere quel violino a un musicista che non conosce"
     ],
-    "a": "Che il legno ha bisogno di tempo e stagionatura prima di suonare bene"
+    "a": "Che il legno ha bisogno di tempo prima di suonare bene"
    }
   ]
  },
@@ -2455,18 +2455,18 @@
    {
     "q": "Che cosa significa il detto che il Palio «si corre trecentosessantacinque giorni all'anno»?",
     "o": [
-     "Che ci sono gare ogni giorno",
-     "Che la preparazione e la passione durano tutto l'anno, anche se la corsa è brevissima",
-     "Che i cavalli si allenano in piazza ogni giorno"
+     "Che in piazza del Campo ci sono gare di cavalli ogni giorno",
+     "Che la passione dura tutto l'anno, anche se la corsa è brevissima",
+     "Che i cavalli si allenano ogni giorno sul tufo della piazza, tutto l'anno"
     ],
-    "a": "Che la preparazione e la passione durano tutto l'anno, anche se la corsa è brevissima"
+    "a": "Che la passione dura tutto l'anno, anche se la corsa è brevissima"
    },
    {
     "q": "Perché il capitano fa un discorso in cui «non dice niente»?",
     "o": [
-     "Perché è stanco e ha bevuto troppo",
+     "Perché è stanco, non dorme da giorni e ha bevuto troppo",
      "Perché teme che le informazioni arrivino alla contrada rivale",
-     "Perché non conosce bene il fantino"
+     "Perché non conosce bene Scompiglio, il fantino arrivato dalla Sardegna"
     ],
     "a": "Perché teme che le informazioni arrivino alla contrada rivale"
    },
@@ -2474,7 +2474,7 @@
     "q": "Qual è lo scopo della sorveglianza davanti alla stalla?",
     "o": [
      "Proteggere la cavalla da chi potrebbe danneggiarla",
-     "Impedire ai turisti di fare foto per motivi di privacy",
+     "Impedire ai turisti di fotografare la cavalla per motivi di privacy",
      "Tenere lontani i giornalisti"
     ],
     "a": "Proteggere la cavalla da chi potrebbe danneggiarla"
@@ -2482,20 +2482,20 @@
    {
     "q": "Che cosa sorprende Niccolò nella risposta di Beppe?",
     "o": [
-     "Che ha vinto molte volte",
-     "Che, dopo trentun anni, non ha mai vinto",
-     "Che non gli piacciono i cavalli"
+     "Che ha vinto molte volte, ma non ne parla mai",
+     "Che, dopo trentun anni e una sessantina di Palii, non ha mai vinto",
+     "Che, dopo tanti anni, non gli piacciono più i cavalli"
     ],
-    "a": "Che, dopo trentun anni, non ha mai vinto"
+    "a": "Che, dopo trentun anni e una sessantina di Palii, non ha mai vinto"
    },
    {
     "q": "Secondo Beppe, perché la notte prima è così speciale?",
     "o": [
-     "Perché si mangia e si beve molto",
-     "Perché la contrada la vive da sola, e la speranza è ancora intatta",
-     "Perché è l'unico momento in cui si può parlare con il fantino"
+     "Perché alla cena per strada si mangia e si beve molto",
+     "Perché è solo della contrada e nessuno ha ancora perso",
+     "Perché è l'unico momento in cui si può parlare con il fantino al telefono"
     ],
-    "a": "Perché la contrada la vive da sola, e la speranza è ancora intatta"
+    "a": "Perché è solo della contrada e nessuno ha ancora perso"
    },
    {
     "q": "Che cosa suggerisce la frase finale di Beppe?",

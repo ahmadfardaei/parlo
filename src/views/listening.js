@@ -24,7 +24,7 @@ export async function viewListening(app, v, alive) {
       <h1 class="it">${esc(l.title)}</h1><p class="muted">${esc(l.situation)}</p></header></div>
     <div class="l-main">
       <section class="g-sec"><h2>Questions</h2>
-        <p class="muted small">Read them first, then listen. You can answer while it plays.</p>
+        <p class="muted small" id="qhint">Read them first, then listen. ${st.done || lsGet("parlo.listen." + l.id, 0) ? "You can answer while it plays." : "The answers open when you press play."}</p>
         <div class="panel flush">${qs.map((q, i) => `<div class="rq" data-q="${i}"><p class="it strong">${i + 1}. ${esc(q.q)}</p><div class="opts">${q.o.map((o, j) => `<button class="opt it" data-qo="${j}">${esc(o)}</button>`).join("")}</div></div>`).join("")}</div>
         <div class="panel finish" id="finish">${st.done ? `<p class="ok-text">${ICON.check} Last time: ${st.score}/${st.total} correct.</p><div class="btn-row"><a class="btn" href="#/say/listen/${l.id}">Say it: 5 lines</a></div>` : `<p class="muted small">Answer every question to finish.</p>`}</div>
       </section>
@@ -63,7 +63,10 @@ export async function viewListening(app, v, alive) {
     lsSet(posKey, at);
   };
   const halt = () => { if (stop) { const s = stop; stop = null; s(); } };
+  // Answers open once listening has started, so a stray tap before playing can't lock in an answer.
+  const unlock = () => { app.querySelectorAll(".rq [data-lock]").forEach(b => { if (b.dataset.lock) { b.disabled = false; delete b.dataset.lock; } }); const h = app.querySelector("#qhint"); if (h) h.textContent = "Read them first, then listen. You can answer while it plays."; };
   const start = () => {
+    unlock();
     halt(); playing = true; const from = at;
     // Repeat mode: after each line, a pause as long as the line, for the learner to say it.
     const gap = shadow ? (i, ms) => { pos.textContent = "Your turn: say it"; return Math.round(ms * 1.1 + 700); } : null;
@@ -81,6 +84,7 @@ export async function viewListening(app, v, alive) {
   shBtn.onclick = () => { shadow = !shadow; shBtn.setAttribute("aria-pressed", shadow); if (playing) start(); };
 
   // Questions
+  if (!st.done && !at) app.querySelectorAll(".rq [data-qo]").forEach(b => { b.disabled = true; b.dataset.lock = "1"; });
   let answered = 0, correct = 0;
   app.querySelectorAll(".rq").forEach(div => {
     const q = qs[+div.dataset.q];

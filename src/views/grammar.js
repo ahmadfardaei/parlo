@@ -12,7 +12,7 @@ export async function viewGrammar(app, v, alive) {
   if (!alive()) return;
   const g = all.find(x => x.id === v.id);
   if (!g) { location.hash = "#/learn/grammar"; return; }
-  if (v.mode === "practice" || v.mode === "drill") return practice(app, g, v.mode, all);
+  if (v.mode === "practice" || v.mode === "drill") return practice(app, g, v.mode);
   remember("grammar", g.title, `#/grammar/${g.id}`, g.en);
   const sorted = all;
   const idx = sorted.indexOf(g);
@@ -60,8 +60,10 @@ function missedHTML(items, log) {
   if (!miss.length) return "";
   return `<div class="missed"><p class="eyebrow">To look at again</p><ul>${miss.map(it => `<li><span class="it">${esc(it.q).replace("___", `<b>${esc(it.k === "mc" ? it.a : gf(it.a[0], it.io))}</b>`)}</span></li>`).join("")}</ul></div>`;
 }
-function practice(app, g, mode) {
-  let items;
+// Practice keeps its place, so leaving halfway and coming back picks up where you were.
+const posKey = id => "parlo.gp." + id;
+function practice(app, g, mode, fresh) {
+  let items, order, resumed = null;
   if (mode === "drill") {
     if (!g.tense) { location.hash = `#/grammar/${g.id}`; return; }
     const levels = { A1: ["A1"], A2: ["A1", "A2"], B1: ["A1", "A2", "B1"], ALL: ["A1", "A2", "B1", "B2"] }[drillLevel] || ["A1", "A2"];
@@ -71,27 +73,34 @@ function practice(app, g, mode) {
       const p = pick([0, 1, 2, 3, 4, 5].filter(i => vb.t[g.tense][i] !== "—"));
       return { k: "type", io: p === 0, q: `${g.tense === "cong" ? "che " : ""}${PRON[p]} ___`, hint: `${vb.inf} · ${vb.en.split(";")[0]} · ${tname}`, a: [vb.t[g.tense][p]], why: `${tname} of <b>${esc(vb.inf)}</b>: ${vb.t[g.tense].filter(f => f !== "—").map(esc).join(", ")}` };
     });
-  } else items = shuffle(g.ex).map(x => ({ ...x, io: x.p === "io", hint: x.h || (x.v ? x.v + (x.p ? " · " + x.p : "") : "") }));
-  let i = 0, right = 0, answered = false;
-  const log = [];
+  } else {
+    const saved = !fresh && lsGet(posKey(g.id), null);
+    if (saved && saved.order?.length === g.ex.length && saved.i > 0 && saved.i < g.ex.length) resumed = saved;
+    order = resumed ? resumed.order : shuffle(g.ex.map((_, k) => k));
+    items = order.map(k => g.ex[k]).map(x => ({ ...x, io: x.p === "io", hint: x.h || (x.v ? x.v + (x.p ? " · " + x.p : "") : "") }));
+  }
+  let i = resumed?.i || 0, right = resumed?.right || 0, answered = false;
+  const log = resumed?.log || [];
+  const keep = () => { if (mode === "practice") lsSet(posKey(g.id), { order, i, right, log }); };
   const shell = inner => `<div class="focus-top"><a class="icon-btn" href="#/grammar/${g.id}" aria-label="Exit">${ICON.close}</a>
       <div class="progress-track" aria-hidden="true"><span style="width:${(i / items.length) * 100}%"></span></div><span class="muted small">${Math.min(i + 1, items.length)}/${items.length}</span></div>
     <p class="eyebrow center">${mode === "drill" ? "Verb drill" : "Exercises"} · ${esc(g.title)}</p>${inner}`;
   const draw = () => {
     if (i >= items.length) {
+      if (mode === "practice") lsSet(posKey(g.id), null);
       if (mode === "practice") { const prev = score(g.id); if (!prev || prev.best == null || right > prev.best) setEntry("g:" + g.id, { best: right, total: items.length }); }
       app.innerHTML = shell(`<div class="panel result"><p class="eyebrow">Your score</p><p class="score">${right}<span>/${items.length}</span></p>
         <p>${right === items.length ? "Perfetto!" : right >= items.length * 0.75 ? "Molto bene!" : right >= items.length / 2 ? "Bene. Keep going." : "Read the lesson again, then try once more."}</p>
         ${mode === "drill" ? `<div class="seg small" role="group" aria-label="Verbs from">${[["A1", "A1 verbs"], ["A2", "A1–A2"], ["B1", "A1–B1"], ["ALL", "All"]].map(([k, l]) => `<button data-dl="${k}" aria-pressed="${drillLevel === k}">${l}</button>`).join("")}</div>` : ""}
         ${missedHTML(items, log)}
         <div class="btn-row center"><button class="btn primary" data-again>${mode === "drill" ? "10 more verbs" : "Try again"}</button>${mode === "practice" ? `<a class="btn" href="#/say/grammar/${g.id}">Say it: 5 sentences</a>` : ""}<a class="btn quiet" href="#/grammar/${g.id}">Back to the lesson</a></div></div>`);
-      app.querySelector("[data-again]").onclick = () => practice(app, g, mode);
+      app.querySelector("[data-again]").onclick = () => practice(app, g, mode, true);
       app.querySelectorAll("[data-dl]").forEach(b => b.onclick = () => { drillLevel = b.dataset.dl; lsSet("parlo.drillLevel", drillLevel); practice(app, g, mode); });
       return;
     }
     const it = items[i];
     answered = false;
-    app.innerHTML = shell(`<div class="panel quiz">
+    app.innerHTML = shell(`${resumed && i === resumed.i ? `<p class="hint-line center">Picking up where you left off. <button class="text-btn" data-restart>Start over</button></p>` : ""}<div class="panel quiz">
       <p class="q-prompt it">${esc(it.q).replace("___", '<span class="blank"></span>')}</p>
       ${it.hint ? `<p class="muted small">(${esc(it.hint)})</p>` : ""}
       ${it.k === "mc" ? `<div class="opts">${it.o.map((o, j) => `<button class="opt it" data-o="${j}">${esc(o)}</button>`).join("")}</div>`
@@ -104,8 +113,9 @@ function practice(app, g, mode) {
       fb.innerHTML = `<p class="${ok ? "ok-text" : "bad-text"}">${ok ? "Giusto!" : "Not quite."}${note ? ` <span class="warn-text">${note}</span>` : ""}</p>
         ${!ok || note ? `<p>Answer: <span class="it strong">${esc(it.k === "mc" ? it.a : gf(it.a[0], it.io))}</span></p>` : ""}<p class="muted small">${rich(it.why)}</p>
         <button class="btn primary" data-next>${i + 1 < items.length ? "Next" : "See score"}</button>`;
-      const nx = fb.querySelector("[data-next]"); nx.onclick = () => { i++; draw(); }; nx.focus();
+      const nx = fb.querySelector("[data-next]"); nx.onclick = () => { i++; keep(); draw(); }; nx.focus();
     };
+    app.querySelector("[data-restart]")?.addEventListener("click", () => practice(app, g, mode, true));
     if (it.k === "mc") {
       app.querySelectorAll("[data-o]").forEach(b => b.onclick = () => {
         if (answered) return;
@@ -118,7 +128,7 @@ function practice(app, g, mode) {
       inp.focus({ preventScroll: true });
       app.querySelector(".answer-form").onsubmit = e => {
         e.preventDefault();
-        if (answered) { i++; draw(); return; }
+        if (answered) { i++; keep(); draw(); return; }
         const r = judge(inp.value, it.a);
         if (r === "empty") { inp.focus(); return; }
         const ok = r === "ok" || r === "accent";

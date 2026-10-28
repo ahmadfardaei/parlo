@@ -379,7 +379,7 @@
     "q": "Perché Bea scrive nel gruppo la prima volta?",
     "o": [
      "Perché mancano cinque capsule",
-     "Perché il frigo è sporco",
+     "Perché il frigo è sporco e c'è un formaggio vecchio",
      "Perché Tommaso non dice buongiorno"
     ],
     "a": "Perché mancano cinque capsule"
@@ -396,11 +396,11 @@
    {
     "q": "Che cosa è diverso a casa il secondo giorno?",
     "o": [
-     "La cucina è pulita e ci sono dei fiori",
+     "Ci sono fiori e il frigo è pulito",
      "Ci sono cinquanta capsule nuove",
-     "Il formaggio non c'è più"
+     "Il formaggio di ottobre non c'è più nel frigo"
     ],
-    "a": "La cucina è pulita e ci sono dei fiori"
+    "a": "Ci sono fiori e il frigo è pulito"
    },
    {
     "q": "Come capisce Bea chi è il ladro?",
@@ -415,7 +415,7 @@
     "q": "Che cosa pensa la mamma del frigo dei ragazzi?",
     "o": [
      "Che è un disastro",
-     "Che è troppo piccolo",
+     "Che è troppo piccolo per tre ragazzi",
      "Che è pieno di capsule"
     ],
     "a": "Che è un disastro"
@@ -729,38 +729,38 @@
    {
     "q": "Che cosa pensa la nonna delle orecchiette di Lella?",
     "o": [
-     "Sono troppo dure e grosse",
+     "Sono dure e grosse",
      "Sono più buone delle sue",
      "Sono troppo piccole"
     ],
-    "a": "Sono troppo dure e grosse"
+    "a": "Sono dure e grosse"
    },
    {
     "q": "Come sa la nonna che Lella guarda la televisione?",
     "o": [
-     "Lella abita di fronte e la nonna guarda dalla finestra",
+     "La vede dalla finestra",
      "Lella le telefona ogni sera",
      "Michele glielo dice"
     ],
-    "a": "Lella abita di fronte e la nonna guarda dalla finestra"
+    "a": "La vede dalla finestra"
    },
    {
     "q": "Perché la nonna è ancora arrabbiata con Lella?",
     "o": [
-     "Secondo lei, Lella ha vinto una gara con la sua ricetta",
+     "Lella ha vinto una gara con la sua ricetta",
      "Lella compra le cime di rapa al supermercato",
      "Lella non la invita a cena"
     ],
-    "a": "Secondo lei, Lella ha vinto una gara con la sua ricetta"
+    "a": "Lella ha vinto una gara con la sua ricetta"
    },
    {
     "q": "Perché alla fine Michele deve strappare il foglio?",
     "o": [
-     "Per la nonna si impara a fare le orecchiette solo con le mani, insieme",
+     "Le orecchiette si imparano con le mani, insieme",
      "Perché la ricetta è sbagliata",
-     "Perché Lella può copiare la ricetta"
+     "Perché Lella può vedere il foglio e copiare la ricetta"
     ],
-    "a": "Per la nonna si impara a fare le orecchiette solo con le mani, insieme"
+    "a": "Le orecchiette si imparano con le mani, insieme"
    }
   ]
  },
@@ -1035,7 +1035,7 @@
     "q": "Che problema ha la bicicletta di Marta?",
     "o": [
      "Il campanello non funziona",
-     "I freni non funzionano",
+     "I freni non funzionano bene",
      "Non ha il cestino"
     ],
     "a": "Il campanello non funziona"
@@ -1052,11 +1052,11 @@
    {
     "q": "Perché il ragazzo dell'autobus scrive un annuncio?",
     "o": [
-     "È timido e non riesce a parlare con la ragazza",
+     "Non ha il coraggio di parlarle",
      "Ha perso il suo libro",
      "Cerca una stanza vicino alla fermata"
     ],
-    "a": "È timido e non riesce a parlare con la ragazza"
+    "a": "Non ha il coraggio di parlarle"
    },
    {
     "q": "Perché Giacomo parla della fermata del 13?",
@@ -1072,7 +1072,7 @@
     "o": [
      "La ragazza vuole conoscere il ragazzo",
      "La ragazza non prende più il 13",
-     "La ragazza vuole comprare la bici"
+     "La ragazza vuole comprare la bici di Marta"
     ],
     "a": "La ragazza vuole conoscere il ragazzo"
    }
@@ -1326,11 +1326,11 @@
    {
     "q": "Come trovi un'osmiza, secondo la famiglia?",
     "o": [
-     "Cerchi un ramo verde vicino alla strada",
+     "Cerchi un ramo verde",
      "Cerchi l'indirizzo su internet",
      "Chiedi al nonno al Pedocin"
     ],
-    "a": "Cerchi un ramo verde vicino alla strada"
+    "a": "Cerchi un ramo verde"
    },
    {
     "q": "Perché Nika dice che anche Hannah ha una regola strana?",
@@ -1650,11 +1650,11 @@
    {
     "q": "Perché Irene è sorpresa quando Davide parla della gara?",
     "o": [
-     "Davide normalmente non mangia la cipolla",
+     "Davide non mangia mai la cipolla",
      "Davide è a dieta",
-     "La gara è solo per i bambini"
+     "La gara è solo per i bambini del paese"
     ],
-    "a": "Davide normalmente non mangia la cipolla"
+    "a": "Davide non mangia mai la cipolla"
    },
    {
     "q": "Perché Davide vuole andare al concerto?",
@@ -1669,7 +1669,7 @@
     "q": "Com'è andata la gara per Davide?",
     "o": [
      "Non ha vinto, e adesso sta male",
-     "Ha vinto il primo premio",
+     "Ha vinto il primo premio con undici cipolle",
      "Non ha partecipato"
     ],
     "a": "Non ha vinto, e adesso sta male"
@@ -1677,11 +1677,11 @@
    {
     "q": "Perché Irene dice che il premio è suo?",
     "o": [
-     "Davide ha vinto con la cartella che lei ha comprato",
+     "Lei ha comprato la cartella",
      "Lei ha vinto la gara delle cipolle",
      "Lei ama il salame"
     ],
-    "a": "Davide ha vinto con la cartella che lei ha comprato"
+    "a": "Lei ha comprato la cartella"
    }
   ]
  },
@@ -1907,7 +1907,7 @@
     "q": "Perché don Peppe dice che Ilaria è in ritardo?",
     "o": [
      "Perché lui è al lavoro da un'ora",
-     "Perché lei arriva alle cinque",
+     "Perché lei arriva alle cinque e mezza",
      "Perché i clienti aspettano"
     ],
     "a": "Perché lui è al lavoro da un'ora"
@@ -1934,7 +1934,7 @@
     "q": "Perché Ilaria ha paura quando fa le graffe?",
     "o": [
      "Le graffe non sono perfette",
-     "L'olio è troppo caldo",
+     "L'olio è troppo caldo e lei si brucia",
      "Non sa la ricetta"
     ],
     "a": "Le graffe non sono perfette"
@@ -2225,35 +2225,35 @@
    {
     "q": "Che cosa capisce la dottoressa dalla prima email?",
     "o": [
-     "Che la moglie del signore ha un problema emotivo",
-     "Che il signore vuole un libro",
+     "Che la moglie ha un problema emotivo",
+     "Che il signore vuole un buon libro per la moglie",
      "Che il signore cerca un medico"
     ],
-    "a": "Che la moglie del signore ha un problema emotivo"
+    "a": "Che la moglie ha un problema emotivo"
    },
    {
     "q": "Perché la dottoressa non capisce subito?",
     "o": [
      "Ha letto l'email prima del caffè",
      "Non conosce la tisana Serenità",
-     "L'email è in un'altra lingua"
+     "L'email del signore è in dialetto piemontese"
     ],
     "a": "Ha letto l'email prima del caffè"
    },
    {
     "q": "Perché il signor Bertolino ha bisogno della tisana anche per sé?",
     "o": [
-     "Se la moglie non dorme, non dorme neanche lui",
-     "Lui beve la tisana ogni mattina",
+     "Se lei non dorme, lui non dorme",
+     "Lui beve la tisana ogni mattina prima del caffè",
      "La vuole regalare alla dottoressa"
     ],
-    "a": "Se la moglie non dorme, non dorme neanche lui"
+    "a": "Se lei non dorme, lui non dorme"
    },
    {
     "q": "Perché la moglie non vuole la tisana Calma?",
     "o": [
      "Il nome la rende più nervosa",
-     "Ha un sapore di arancia",
+     "Ha un sapore di arancia, e lei la odia",
      "Costa troppo"
     ],
     "a": "Il nome la rende più nervosa"
@@ -2512,20 +2512,20 @@
    {
     "q": "Com'è il tempo il primo giorno?",
     "o": [
-     "Bellissimo, c'è il sole",
-     "Nuvoloso",
-     "Piove"
+     "C'è il sole",
+     "Nuvoloso, ma non piove",
+     "Piove tutto il giorno"
     ],
-    "a": "Bellissimo, c'è il sole"
+    "a": "C'è il sole"
    },
    {
     "q": "Perché Agnese non vede il paesaggio il terzo giorno?",
     "o": [
-     "Piove e lei guarda solo davanti a sé",
+     "Vede solo la schiena di Luca",
      "È in camera a dormire",
-     "C'è troppa neve"
+     "C'è troppa neve e la strada è chiusa"
     ],
-    "a": "Piove e lei guarda solo davanti a sé"
+    "a": "Vede solo la schiena di Luca"
    },
    {
     "q": "Perché i ragazzi non sono calmi al Passo Gardena?",
@@ -2548,11 +2548,11 @@
    {
     "q": "Perché Agnese dice che le cartoline sono bugiarde?",
     "o": [
-     "Mostrano un tempo diverso dalla sua settimana",
-     "Costano troppo",
+     "In tutte le foto c'è il sole",
+     "Costano troppo al rifugio",
      "Hanno nomi di posti sbagliati"
     ],
-    "a": "Mostrano un tempo diverso dalla sua settimana"
+    "a": "In tutte le foto c'è il sole"
    }
   ]
  },
@@ -2922,11 +2922,11 @@
    {
     "q": "Perché all'inizio Giulia vede il soffitto?",
     "o": [
-     "Il nonno tiene il telefono nel modo sbagliato",
-     "La lampada è troppo forte",
+     "Il nonno tiene male il telefono",
+     "La lampada nuova della cucina è troppo forte",
      "La connessione non funziona"
     ],
-    "a": "Il nonno tiene il telefono nel modo sbagliato"
+    "a": "Il nonno tiene male il telefono"
    },
    {
     "q": "Perché il nonno mette il telefono sull'orecchio?",
@@ -2960,7 +2960,7 @@
     "o": [
      "Il nonno chiama troppo presto la mattina",
      "Il nonno non sa più usare il telefono",
-     "Giulia non risponde mai"
+     "Giulia non risponde mai alle videochiamate"
     ],
     "a": "Il nonno chiama troppo presto la mattina"
    }
@@ -3273,11 +3273,11 @@
    {
     "q": "Perché Saro alla fine dice «Mamma mia»?",
     "o": [
-     "Capisce che tutti hanno sentito il suo segreto",
+     "Tutti hanno sentito il suo segreto",
      "Ha finito le sarde",
-     "Il medico è arrivato al banco"
+     "Il medico è arrivato al banco con tre signore"
     ],
-    "a": "Capisce che tutti hanno sentito il suo segreto"
+    "a": "Tutti hanno sentito il suo segreto"
    }
   ]
  }

@@ -372,20 +372,20 @@
    {
     "q": "Perché Angela non vuole dormire nella suite?",
     "o": [
-     "È troppo lontana da casa sua",
-     "Da bambina ci ha già vissuto in condizioni difficili",
+     "È troppo lontana dall'appartamento dove vive adesso",
+     "Ci ha già dormito abbastanza da bambina",
      "Costa troppo anche per lei"
     ],
-    "a": "Da bambina ci ha già vissuto in condizioni difficili"
+    "a": "Ci ha già dormito abbastanza da bambina"
    },
    {
     "q": "Come si sentiva Angela quando la sua famiglia ha lasciato i Sassi?",
     "o": [
-     "Triste come sua madre",
-     "Felice, perché la nuova casa aveva il bagno",
-     "Arrabbiata con il governo"
+     "Triste come sua madre, che piangeva perché lasciava la grotta",
+     "Felice, perché finalmente aveva il bagno",
+     "Arrabbiata con il governo che li obbligava a partire"
     ],
-    "a": "Felice, perché la nuova casa aveva il bagno"
+    "a": "Felice, perché finalmente aveva il bagno"
    },
    {
     "q": "Che cosa pensa Nicola del turismo a Matera?",
@@ -408,11 +408,11 @@
    {
     "q": "Che cosa vuole dire Angela con l'ultima frase?",
     "o": [
-     "Che il prezzo le sembra assurdo per quella grotta",
-     "Che vorrebbe un mulo nella suite",
-     "Che lei vorrebbe dormire lì gratis"
+     "Che il prezzo le sembra assurdo",
+     "Che vorrebbe riportare un mulo nella grotta, come una volta",
+     "Che lei, come il mulo, vorrebbe dormire lì senza pagare"
     ],
-    "a": "Che il prezzo le sembra assurdo per quella grotta"
+    "a": "Che il prezzo le sembra assurdo"
    }
   ]
  },
@@ -813,38 +813,38 @@
    {
     "q": "Perché la lettera arriva con trent'anni di ritardo?",
     "o": [
-     "Ennio l'aveva spedita all'indirizzo sbagliato",
-     "Era rimasta nascosta dietro un mobile all'ufficio postale",
+     "Ennio l'aveva spedita a un indirizzo sbagliato di Ascoli Piceno",
+     "Era rimasta dietro un mobile all'ufficio postale",
      "Tonino l'aveva dimenticata nella borsa"
     ],
-    "a": "Era rimasta nascosta dietro un mobile all'ufficio postale"
+    "a": "Era rimasta dietro un mobile all'ufficio postale"
    },
    {
     "q": "Come capisce Tonino chi ha scritto la lettera?",
     "o": [
-     "Dal francobollo tedesco",
+     "Dal francobollo tedesco, ancora in marchi",
      "Dalla calligrafia sulla busta",
-     "Dal nome sul retro"
+     "Dal nome del mittente scritto sul retro"
     ],
     "a": "Dalla calligrafia sulla busta"
    },
    {
     "q": "Che cosa chiedeva Ennio nella lettera?",
     "o": [
-     "Dei soldi per sistemare il tetto",
-     "Se doveva restare in Germania o tornare a casa",
-     "Di raggiungerlo a Wolfsburg con i figli"
+     "Dei soldi per far studiare i ragazzi e sistemare il tetto",
+     "Se doveva restare in Germania o tornare",
+     "Di raggiungerlo a Wolfsburg con i due figli"
     ],
-    "a": "Se doveva restare in Germania o tornare a casa"
+    "a": "Se doveva restare in Germania o tornare"
    },
    {
     "q": "Perché Ennio era strano a Natale del 1996?",
     "o": [
-     "Aspettava una risposta che non era mai arrivata",
+     "Aspettava una risposta che non è mai arrivata",
      "Era malato",
-     "Non gli piaceva il panettone italiano"
+     "Non gli piaceva il panettone italiano e lo diceva a tutti"
     ],
-    "a": "Aspettava una risposta che non era mai arrivata"
+    "a": "Aspettava una risposta che non è mai arrivata"
    },
    {
     "q": "Che cosa ha capito Rosalba dopo aver letto la lettera?",
@@ -1389,11 +1389,11 @@
    {
     "q": "Che cosa è successo a Chiara il 9 marzo 2021?",
     "o": [
-     "È stata licenziata dalla banca",
-     "Ha perso un file importante e ha capito che il suo lavoro non contava niente per lei",
-     "Il nonno si è ammalato"
+     "È stata licenziata dal capo dopo una videochiamata di sette ore",
+     "Ha perso un file e ha capito che il suo lavoro era inutile",
+     "Il nonno le ha telefonato per dirle che stava male"
     ],
-    "a": "Ha perso un file importante e ha capito che il suo lavoro non contava niente per lei"
+    "a": "Ha perso un file e ha capito che il suo lavoro era inutile"
    },
    {
     "q": "Con quale spirito il nonno ha detto \"allora vieni tu\"?",
@@ -1408,10 +1408,10 @@
     "q": "Perché il barista voleva che Chiara resistesse almeno fino ad aprile?",
     "o": [
      "Perché era innamorato di lei",
-     "Perché aveva scommesso che lei sarebbe rimasta",
+     "Perché aveva puntato su di lei",
      "Perché voleva comprare il suo vino"
     ],
-    "a": "Perché aveva scommesso che lei sarebbe rimasta"
+    "a": "Perché aveva puntato su di lei"
    },
    {
     "q": "Come guardava il nonno il foglio di calcolo di Chiara?",
@@ -1434,11 +1434,11 @@
    {
     "q": "Perché essere \"una collega che sbaglia\" è un passo avanti per Chiara?",
     "o": [
-     "Perché il nonno adesso la tratta come una persona del mestiere",
-     "Perché sbaglia meno di prima",
-     "Perché il nonno ha cominciato a pagarla"
+     "Perché il nonno la tratta come una del mestiere",
+     "Perché ora sbaglia molto meno di quando lavorava in banca",
+     "Perché il nonno ha cominciato a pagarla come una dipendente"
     ],
-    "a": "Perché il nonno adesso la tratta come una persona del mestiere"
+    "a": "Perché il nonno la tratta come una del mestiere"
    }
   ]
  },
@@ -1807,20 +1807,20 @@
    {
     "q": "Che cosa è successo mentre l'autore rispondeva all'amico inglese?",
     "o": [
-     "Ha messo subito le mani in tasca",
+     "Ha detto di no, perché gli italiani non ci riescono",
      "Ha fatto un gesto senza accorgersene",
-     "Si è offeso ed è andato via"
+     "Si è offeso per la domanda ed è andato via senza rispondere"
     ],
     "a": "Ha fatto un gesto senza accorgersene"
    },
    {
     "q": "Secondo l'autore, perché i gesti sono difficili da tradurre per una macchina?",
     "o": [
-     "Perché sono troppo numerosi",
-     "Perché il significato cambia con la velocità e l'espressione del viso",
-     "Perché li usano solo a Napoli"
+     "Perché sono più di duecento e nessuno li ha mai descritti",
+     "Perché il significato cambia con velocità ed espressione",
+     "Perché li usano solo a Napoli, dove hanno dieci significati"
     ],
-    "a": "Perché il significato cambia con la velocità e l'espressione del viso"
+    "a": "Perché il significato cambia con velocità ed espressione"
    },
    {
     "q": "Che cosa dimostra la scena al mercato di Porta Palazzo?",
@@ -1854,7 +1854,7 @@
     "o": [
      "Che parlino troppo forte",
      "Che non usino più le mani quando parlano",
-     "Che non sappiano scrivere bene"
+     "Che non sappiano più scrivere bene in italiano"
     ],
     "a": "Che non usino più le mani quando parlano"
    }
@@ -2337,19 +2337,19 @@
     "q": "Perché la casa di Lena non è costata davvero un euro?",
     "o": [
      "Il prezzo era aumentato nel frattempo",
-     "Ha dovuto pagare molti lavori di ristrutturazione",
+     "Ha speso trentamila euro di lavori",
      "Ha comprato due case insieme"
     ],
-    "a": "Ha dovuto pagare molti lavori di ristrutturazione"
+    "a": "Ha speso trentamila euro di lavori"
    },
    {
     "q": "Perché a volte Matteo lavora in piazza, davanti alla chiesa?",
     "o": [
-     "Per incontrare i clienti al bar",
-     "Perché è l'unico posto dove il cellulare prende bene",
-     "Perché gli piace il suono delle campane"
+     "Per incontrare i clienti al bar della piazza di Graziella",
+     "Perché è l'unico punto dove il cellulare prende",
+     "Perché gli piace il suono delle campane a mezzogiorno"
     ],
-    "a": "Perché è l'unico posto dove il cellulare prende bene"
+    "a": "Perché è l'unico punto dove il cellulare prende"
    },
    {
     "q": "Che cosa dà fastidio a Graziella di alcuni nuovi clienti?",
@@ -2372,7 +2372,7 @@
    {
     "q": "Perché tziu Antonio pensa che i nuovi arrivati non lavorino?",
     "o": [
-     "Perché li vede sempre al bar",
+     "Perché li vede sempre seduti al bar con il computer",
      "Perché il loro lavoro non si vede",
      "Perché glielo ha detto Graziella"
     ],
@@ -2381,11 +2381,11 @@
    {
     "q": "Perché alla fine Antonio vuole tagliare una parte della registrazione?",
     "o": [
-     "Perché ha detto una cosa falsa",
-     "Perché si è accorto di essersi contraddetto parlando del nipote",
+     "Perché ha detto una cosa falsa sulla ragazza tedesca",
+     "Perché si è contraddetto parlando del nipote",
      "Perché ha offeso Lena"
     ],
-    "a": "Perché si è accorto di essersi contraddetto parlando del nipote"
+    "a": "Perché si è contraddetto parlando del nipote"
    }
   ]
  }

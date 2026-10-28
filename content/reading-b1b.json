@@ -396,44 +396,44 @@
    {
     "q": "Perché il turista è deluso il lunedì?",
     "o": [
-     "Il cappuccino che riceve è molto più piccolo di quello che si aspettava.",
-     "La barista si rifiuta di preparargli il caffè.",
-     "Il bar non serve caffè con il latte."
+     "Il cappuccino è molto più piccolo del previsto.",
+     "La barista si rifiuta di preparargli un altro caffè con il latte.",
+     "Il bar non serve caffè con il latte, solo caffè nero."
     ],
-    "a": "Il cappuccino che riceve è molto più piccolo di quello che si aspettava."
+    "a": "Il cappuccino è molto più piccolo del previsto."
    },
    {
     "q": "Che cosa pensa la barista del modo in cui il turista ha passato il tempo al bar il martedì?",
     "o": [
-     "Che sia rimasto troppo a lungo, perché in quel bar il caffè si beve in fretta.",
-     "Che avrebbe dovuto leggere un giornale locale.",
-     "Che sia stato maleducato con il signor Livio."
+     "Che sia rimasto troppo, perché lì il caffè si beve in piedi.",
+     "Che avrebbe dovuto leggere un giornale locale invece di quello straniero.",
+     "Che sia stato maleducato con il signor Livio, che arriva alle sette e dieci."
     ],
-    "a": "Che sia rimasto troppo a lungo, perché in quel bar il caffè si beve in fretta."
+    "a": "Che sia rimasto troppo, perché lì il caffè si beve in piedi."
    },
    {
     "q": "Perché la barista dice che l'ordinazione di giovedì è 'un progresso'?",
     "o": [
-     "Il turista usa le parole triestine, anche se le combina male.",
-     "Il turista finalmente ordina un caffè senza latte.",
+     "Usa le parole giuste, anche se nell'ordine sbagliato.",
+     "Il turista finalmente ordina un caffè senza latte e senza schiuma.",
      "Il turista ha deciso di sedersi al banco."
     ],
-    "a": "Il turista usa le parole triestine, anche se le combina male."
+    "a": "Usa le parole giuste, anche se nell'ordine sbagliato."
    },
    {
     "q": "Perché la barista racconta il suo segreto proprio l'ultimo giorno?",
     "o": [
-     "Perché il turista è riuscito a ordinare bene e lei si riconosce in lui.",
-     "Perché vuole convincerlo a restare a Trieste.",
+     "Perché il turista ha ordinato bene e lei si riconosce in lui.",
+     "Perché vuole convincerlo a restare a Trieste invece di partire per Bologna.",
      "Perché il signor Bruno le ha chiesto di farlo."
     ],
-    "a": "Perché il turista è riuscito a ordinare bene e lei si riconosce in lui."
+    "a": "Perché il turista ha ordinato bene e lei si riconosce in lui."
    },
    {
     "q": "Che cosa possiamo capire della vita della barista?",
     "o": [
      "Ha sposato il figlio del vecchio proprietario del bar.",
-     "Ha sempre lavorato in bar a Catania e a Trieste.",
+     "Ha sempre lavorato in bar, prima a Catania e poi a Trieste.",
      "Ha comprato il bar perché amava il caffè triestino."
     ],
     "a": "Ha sposato il figlio del vecchio proprietario del bar."
@@ -776,11 +776,11 @@
    {
     "q": "Perché, secondo Ornella, Sara si è davvero offesa?",
     "o": [
-     "Ha capito che Martina ascoltava i suoi messaggi come un dovere fastidioso.",
-     "Non le piace sentire la propria voce registrata.",
-     "Martina ha fatto ascoltare i suoi vocali ad altre persone."
+     "Ha capito che per Martina ascoltarla era un compito da sbrigare.",
+     "Non le piace sentire la propria voce registrata, soprattutto veloce.",
+     "Martina ha fatto ascoltare i suoi vocali ad altre persone a casa sua."
     ],
-    "a": "Ha capito che Martina ascoltava i suoi messaggi come un dovere fastidioso."
+    "a": "Ha capito che per Martina ascoltarla era un compito da sbrigare."
    },
    {
     "q": "Chi è l'autore della terza lettera?",
@@ -794,20 +794,20 @@
    {
     "q": "Che cosa decide di cambiare Ornella dopo la terza lettera?",
     "o": [
-     "Una sera alla settimana non lavora e dedica il tempo al marito.",
-     "Smette di scrivere la rubrica.",
-     "Risponderà al marito solo per iscritto."
+     "Il martedì sera non lavora e sta con il marito.",
+     "Smette di scrivere la rubrica per passare più tempo a casa.",
+     "Risponderà al marito solo per iscritto, come ai lettori."
     ],
-    "a": "Una sera alla settimana non lavora e dedica il tempo al marito."
+    "a": "Il martedì sera non lavora e sta con il marito."
    },
    {
     "q": "Che cosa ci fa capire la risposta sul rubinetto?",
     "o": [
-     "Anche Ornella ha qualcosa da rimproverare al marito, e lo fa con ironia.",
-     "Ornella sa riparare il rubinetto ma non ha tempo.",
-     "Il rubinetto è stato riparato da poco."
+     "Anche lei ha qualcosa da rimproverargli, con ironia.",
+     "Ornella sa riparare il rubinetto, ma non ha mai tempo di farlo.",
+     "Il rubinetto è stato riparato da poco da un idraulico."
     ],
-    "a": "Anche Ornella ha qualcosa da rimproverare al marito, e lo fa con ironia."
+    "a": "Anche lei ha qualcosa da rimproverargli, con ironia."
    }
   ]
  },
@@ -1116,11 +1116,11 @@
    {
     "q": "Perché una gondola non è simmetrica?",
     "o": [
-     "Perché deve compensare il fatto che il gondoliere rema da un lato solo.",
+     "Perché il gondoliere rema da un lato solo.",
      "Perché viene costruita con otto tipi di legno diversi.",
      "Perché così può passare sotto i ponti più bassi."
     ],
-    "a": "Perché deve compensare il fatto che il gondoliere rema da un lato solo."
+    "a": "Perché il gondoliere rema da un lato solo."
    },
    {
     "q": "Che cosa pensa Ennio del turismo?",
@@ -1134,17 +1134,17 @@
    {
     "q": "Perché la classe di Elisa è sempre più piccola?",
     "o": [
-     "Molte famiglie lasciano Venezia perché non riescono più a trovare casa a prezzi accettabili.",
-     "Molti bambini preferiscono le scuole di Mestre.",
-     "La scuola ha deciso di accettare meno alunni."
+     "Molte famiglie vanno in terraferma perché le case costano troppo.",
+     "Molti bambini preferiscono le scuole di Mestre, che sono più grandi.",
+     "La scuola ha deciso di accettare meno alunni ogni anno."
     ],
-    "a": "Molte famiglie lasciano Venezia perché non riescono più a trovare casa a prezzi accettabili."
+    "a": "Molte famiglie vanno in terraferma perché le case costano troppo."
    },
    {
     "q": "Che cosa capisce il giornalista quando vede il pennarello verde?",
     "o": [
      "Che Nicolò è il bambino che vuole costruire gondole.",
-     "Che Nicolò ha rubato il pennarello alla maestra.",
+     "Che Nicolò ha rubato il pennarello verde dalla classe della maestra.",
      "Che Ennio ha un nipote nella classe di Elisa."
     ],
     "a": "Che Nicolò è il bambino che vuole costruire gondole."
@@ -1153,7 +1153,7 @@
     "q": "Che cosa rivela l'ultima frase di Ennio?",
     "o": [
      "Che, a modo suo, ha accettato Nicolò come apprendista.",
-     "Che vuole mandare via Nicolò dallo squero.",
+     "Che vuole mandare via Nicolò perché spazza male i trucioli.",
      "Che pensa di andare in pensione molto presto."
     ],
     "a": "Che, a modo suo, ha accettato Nicolò come apprendista."
@@ -1478,11 +1478,11 @@
    {
     "q": "Come si vede che il paese si è diviso?",
     "o": [
-     "Le due parti si siedono in posti diversi al bar e in chiesa.",
-     "Le due parti abitano in zone diverse del paese.",
+     "Al bar e in chiesa le due parti si siedono in posti diversi.",
+     "Le due parti abitano in zone diverse del paese e non si parlano.",
      "Le due parti vanno in due bar diversi."
     ],
-    "a": "Le due parti si siedono in posti diversi al bar e in chiesa."
+    "a": "Al bar e in chiesa le due parti si siedono in posti diversi."
    },
    {
     "q": "Perché la sala esplode durante l'assemblea?",
@@ -1497,19 +1497,19 @@
     "q": "Che cosa fa davvero il nonno quando esce alle quattro e mezza?",
     "o": [
      "Va sul crinale a osservare i lupi con il binocolo.",
-     "Va a controllare le pecore con il fucile.",
-     "Va a togliere i cartelli di Rosanna."
+     "Va a controllare le pecore con il fucile, come aveva promesso.",
+     "Va a togliere i cartelli di Rosanna dalla farmacia."
     ],
     "a": "Va sul crinale a osservare i lupi con il binocolo."
    },
    {
     "q": "Perché il nonno chiede alla nipote di non dire niente?",
     "o": [
-     "Non vuole che il paese sappia che i lupi lo emozionano.",
+     "Non vuole che si sappia che i lupi lo emozionano.",
      "Ha paura che qualcuno vada a sparare ai cuccioli.",
-     "Vuole raccontarlo lui stesso all'assemblea."
+     "Vuole raccontarlo lui stesso all'assemblea, davanti a tutto il paese."
     ],
-    "a": "Non vuole che il paese sappia che i lupi lo emozionano."
+    "a": "Non vuole che si sappia che i lupi lo emozionano."
    }
   ]
  },
@@ -1842,11 +1842,11 @@
    {
     "q": "Come capisce Irene che il violino non è il suo?",
     "o": [
-     "Lo conosce così bene che riconosce subito un altro strumento.",
-     "Il violino nella custodia è rotto.",
-     "Nella custodia c'è un biglietto del ladro."
+     "Conosce il suo violino come la voce di una persona.",
+     "Il violino nella custodia è rotto e senza corde.",
+     "Nella custodia c'è un biglietto del ladro con un numero di telefono."
     ],
-    "a": "Lo conosce così bene che riconosce subito un altro strumento."
+    "a": "Conosce il suo violino come la voce di una persona."
    },
    {
     "q": "Che cosa scopre la signora Lidia guardando dentro il violino?",
@@ -1860,20 +1860,20 @@
    {
     "q": "Perché Pietro non ha restituito subito il violino?",
     "o": [
-     "Non ha resistito alla tentazione di suonare lo strumento di un liutaio famoso.",
-     "Voleva venderlo a un collezionista di Milano.",
+     "Voleva suonare il violino di un liutaio famoso.",
+     "Voleva venderlo a un collezionista di Milano per molti soldi.",
      "Non sapeva a chi apparteneva."
     ],
-    "a": "Non ha resistito alla tentazione di suonare lo strumento di un liutaio famoso."
+    "a": "Voleva suonare il violino di un liutaio famoso."
    },
    {
     "q": "Perché il concerto va così bene?",
     "o": [
-     "Pietro ha sistemato un piccolo difetto del violino durante la notte.",
-     "Irene ha suonato il violino di Pietro.",
-     "Kasia ha aiutato Irene a prepararsi."
+     "Pietro ha sistemato un difetto del violino.",
+     "Irene ha suonato il violino nuovo di Pietro, con la vernice color miele.",
+     "Kasia ha aiutato Irene a prepararsi durante le prove."
     ],
-    "a": "Pietro ha sistemato un piccolo difetto del violino durante la notte."
+    "a": "Pietro ha sistemato un difetto del violino."
    },
    {
     "q": "Che cosa vuol dire Irene con «ci sentiamo nel 2045»?",

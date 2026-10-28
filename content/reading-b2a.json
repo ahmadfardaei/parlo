@@ -376,26 +376,26 @@
       {
         "q": "Che cosa intende Chiara quando dice che risponde «vediamo» alla madre?",
         "o": [
-          "Che non ha ancora deciso se tornare",
+          "Che non ha ancora deciso se tornare o restare in Olanda",
           "Che, in realtà, non ha intenzione di tornare",
-          "Che tornerà appena avrà finito il contratto"
+          "Che tornerà appena finito il contratto"
         ],
         "a": "Che, in realtà, non ha intenzione di tornare"
       },
       {
         "q": "Perché il giornalista trova ironica l'espressione «fuga dei cervelli»?",
         "o": [
-          "Perché chi parte non è sempre laureato",
-          "Perché fa sembrare che la partenza riguardi solo la mente e non tutta la persona e la famiglia",
-          "Perché i giornali la usano troppo poco"
+          "Perché molti di quelli che partono non sono laureati, ma lavoratori in cerca di un posto",
+          "Perché fa pensare che parta solo la mente e non la persona intera",
+          "Perché i giornali l'hanno inventata da poco e non corrisponde alle statistiche"
         ],
-        "a": "Perché fa sembrare che la partenza riguardi solo la mente e non tutta la persona e la famiglia"
+        "a": "Perché fa pensare che parta solo la mente e non la persona intera"
       },
       {
         "q": "Che cosa pesa di più a Davide, nonostante l'ironia?",
         "o": [
-          "Il rumore del topo in casa",
-          "Gli orari dei turni in ospedale",
+          "Il topo che nessuno riesce a catturare",
+          "I turni «creativi» al pronto soccorso e l'affitto che si mangia metà dello stipendio",
           "Il fatto che la vita della famiglia vada avanti senza di lui"
         ],
         "a": "Il fatto che la vita della famiglia vada avanti senza di lui"
@@ -404,28 +404,28 @@
         "q": "Perché Serena dice di essersi sentita «troppo furba»?",
         "o": [
           "Perché il suo piano dipendeva da una situazione che poi è cambiata",
-          "Perché aveva comprato una casa troppo cara",
-          "Perché aveva mentito all'azienda tedesca"
+          "Perché aveva comprato a Grottaglie una casa che costava più di tre anni di affitto a Kreuzberg",
+          "Perché aveva mentito all'azienda tedesca su dove viveva"
         ],
         "a": "Perché il suo piano dipendeva da una situazione che poi è cambiata"
       },
       {
         "q": "Che cosa suggerisce il fatto che le vicine la chiamino «la berlinese»?",
         "o": [
-          "Che Serena parla con un accento tedesco",
+          "Che Serena, dopo otto anni a Berlino, parla ancora con un accento tedesco",
           "Che in paese non la considerano più del tutto una di loro",
-          "Che Serena preferisce Berlino a Grottaglie"
+          "Che Serena parla spesso di Berlino e la preferisce a Grottaglie"
         ],
         "a": "Che in paese non la considerano più del tutto una di loro"
       },
       {
         "q": "Che cosa pensa Serena della frase del nipote?",
         "o": [
-          "Che è troppo semplice: tornare non risolve tutto",
-          "Che è giusta e lo incoraggia a partire",
-          "Che il nipote non dovrebbe andare a Delft"
+          "Che è troppo semplice: anche tornare è una forma di partenza",
+          "Che è giusta, e per questo gli ha regalato un ombrello come incoraggiamento",
+          "Che il nipote non dovrebbe partire"
         ],
-        "a": "Che è troppo semplice: tornare non risolve tutto"
+        "a": "Che è troppo semplice: anche tornare è una forma di partenza"
       }
     ]
   },
@@ -812,25 +812,25 @@
         "o": [
           "Che parlasse male l'italiano",
           "Che fosse napoletana anche lei, pur combattendo il dialetto",
-          "Che usasse il dialetto quando si arrabbiava"
+          "Che usasse il dialetto del Vomero quando si arrabbiava con gli alunni"
         ],
         "a": "Che fosse napoletana anche lei, pur combattendo il dialetto"
       },
       {
         "q": "Perché la nonna parlava solo napoletano, secondo l'autore adulto?",
         "o": [
-          "Perché non capiva l'italiano",
-          "Per una sorta di fedeltà alla propria lingua e alla propria vita",
-          "Perché la televisione parlava napoletano"
+          "Perché non capiva l'italiano che sentiva ogni sera alla televisione",
+          "Per una sorta di fedeltà, non per ignoranza: l'italiano lo capiva benissimo",
+          "Perché a Forcella nessuno, nemmeno il fruttivendolo, parlava italiano"
         ],
-        "a": "Per una sorta di fedeltà alla propria lingua e alla propria vita"
+        "a": "Per una sorta di fedeltà, non per ignoranza: l'italiano lo capiva benissimo"
       },
       {
         "q": "Qual è, per l'autore, la differenza tra «vergogna» e «scuorno»?",
         "o": [
           "Lo scuorno si prova davanti a qualcuno che hai deluso",
-          "La vergogna è più forte dello scuorno",
-          "Sono esattamente la stessa cosa"
+          "La vergogna è più forte e ha un suono più rosso dello scuorno",
+          "Sono la stessa cosa"
         ],
         "a": "Lo scuorno si prova davanti a qualcuno che hai deluso"
       },
@@ -838,19 +838,19 @@
         "q": "Come si sente l'autore quando a Torino gli chiedono di «dire qualcosa in napoletano»?",
         "o": [
           "Finalmente libero e orgoglioso",
-          "A disagio, perché quell'orgoglio a comando gli sembra falso",
-          "Arrabbiato con i suoi amici torinesi"
+          "A disagio: quell'orgoglio a comando gli sembra falso",
+          "Arrabbiato con gli amici torinesi, che lo prendono in giro per l'accento"
         ],
-        "a": "A disagio, perché quell'orgoglio a comando gli sembra falso"
+        "a": "A disagio: quell'orgoglio a comando gli sembra falso"
       },
       {
         "q": "Che cosa vuole dire la frase finale «A Bianca è bastata una febbre»?",
         "o": [
-          "Che Bianca è spesso malata",
-          "Che la figlia ha imparato la parola senza la fatica e la vergogna vissute dal padre",
-          "Che la maestra ha punito Bianca"
+          "Che Bianca, a quattro anni, si ammalava spesso e aveva la febbre alta",
+          "Che la figlia ha imparato la parola senza la fatica e la vergogna del padre",
+          "Che la maestra di Pinerolo ha mandato a casa Bianca perché stava male"
         ],
-        "a": "Che la figlia ha imparato la parola senza la fatica e la vergogna vissute dal padre"
+        "a": "Che la figlia ha imparato la parola senza la fatica e la vergogna del padre"
       }
     ]
   },
@@ -1263,9 +1263,9 @@
       {
         "q": "Perché Elena decide di cercare Teresa, nonostante il consiglio della madre?",
         "o": [
-          "Perché la madre le ha chiesto di farlo",
+          "Perché la madre, dopo un lungo silenzio, le ha chiesto di scoprire chi fosse",
           "Perché la frase della madre, invece di fermarla, la incuriosisce ancora di più",
-          "Perché vuole vendere la macchina da scrivere"
+          "Perché lo zio Piero le ha detto che Teresa era una vecchia amica del nonno"
         ],
         "a": "Perché la frase della madre, invece di fermarla, la incuriosisce ancora di più"
       },
@@ -1273,46 +1273,46 @@
         "q": "Che cosa si aspettava Elena prima di sentire il racconto di Teresa?",
         "o": [
           "Una storia d'amore drammatica e un addio",
-          "Una lite per motivi di lavoro",
-          "Una storia di famiglia legata alla nonna Margherita"
+          "Una lite tra colleghi all'Olivetti, nata per motivi di lavoro",
+          "Un segreto di famiglia legato alla nonna Margherita e al suo matrimonio"
         ],
         "a": "Una storia d'amore drammatica e un addio"
       },
       {
         "q": "Che cosa rivela l'episodio del mercato negli anni Settanta?",
         "o": [
-          "Che Aldo non riconobbe Teresa",
-          "Che Aldo si sentiva ancora in imbarazzo, forse non solo per i soldi",
-          "Che Teresa voleva conoscere la moglie di Aldo"
+          "Che Aldo non riconobbe Teresa, perché era con la moglie e i bambini",
+          "Che Aldo provava ancora imbarazzo, forse non solo per i soldi",
+          "Che Teresa voleva conoscere la moglie di Aldo e i suoi figli"
         ],
-        "a": "Che Aldo si sentiva ancora in imbarazzo, forse non solo per i soldi"
+        "a": "Che Aldo provava ancora imbarazzo, forse non solo per i soldi"
       },
       {
         "q": "Perché Teresa conta con attenzione i cinquanta euro?",
         "o": [
-          "Perché non si fida di Elena",
+          "Perché non si fida di Elena e teme di ricevere meno di cinquanta euro",
           "È un gesto ironico, quasi un gioco, sul vecchio debito",
-          "Perché le servono per pagare la casa di riposo"
+          "Perché le servono per la casa di riposo"
         ],
         "a": "È un gesto ironico, quasi un gioco, sul vecchio debito"
       },
       {
         "q": "Che cosa sappiamo, alla fine, del testo che Teresa scrive sul foglio?",
         "o": [
-          "Che è una lettera d'amore per Elena",
+          "Che è una lettera per Elena, con la storia completa della macchina",
           "Niente: Teresa lo tiene per sé",
-          "Che ripete le parole del nonno"
+          "Che finisce la frase del nonno con le parole che lui aveva in mente"
         ],
         "a": "Niente: Teresa lo tiene per sé"
       },
       {
         "q": "Che cosa mostra la notifica scritta da Elena il lunedì?",
         "o": [
-          "Che l'esperienza con Teresa ha lasciato una traccia nel suo modo di scrivere",
-          "Che Elena vuole cambiare lavoro",
-          "Che il capo apprezza la poesia"
+          "Che l'esperienza con Teresa ha lasciato un segno nel suo modo di scrivere",
+          "Che Elena vuole lasciare la banca per scrivere romanzi",
+          "Che il capo apprezza lo stile poetico"
         ],
-        "a": "Che l'esperienza con Teresa ha lasciato una traccia nel suo modo di scrivere"
+        "a": "Che l'esperienza con Teresa ha lasciato un segno nel suo modo di scrivere"
       }
     ]
   },
@@ -1697,56 +1697,56 @@
       {
         "q": "Che cosa ha spinto Ilaria a fare l'esperimento?",
         "o": [
-          "La curiosità per le nuove tecnologie",
-          "Una clausola del nuovo contratto che riduceva il suo compenso",
+          "La curiosità per le nuove tecnologie e per i programmi di traduzione",
+          "Una clausola del nuovo contratto che riduceva il compenso",
           "Una richiesta del gruppo di lettura"
         ],
-        "a": "Una clausola del nuovo contratto che riduceva il suo compenso"
+        "a": "Una clausola del nuovo contratto che riduceva il compenso"
       },
       {
         "q": "Secondo Ilaria, qual è il limite principale della traduzione automatica?",
         "o": [
-          "Fa troppi errori di grammatica",
-          "Non riesce a tradurre i dialoghi",
-          "Traduce le parole ma non sempre l'intenzione dell'autore"
+          "Fa ancora troppi errori di grammatica, anche nelle descrizioni tecniche",
+          "Non riesce a tradurre i dialoghi, nemmeno quelli più semplici",
+          "Traduce le parole, non sempre l'intenzione dell'autore"
         ],
-        "a": "Traduce le parole ma non sempre l'intenzione dell'autore"
+        "a": "Traduce le parole, non sempre l'intenzione dell'autore"
       },
       {
         "q": "Come reagisce Ilaria ai risultati del test?",
         "o": [
           "Con ironia, anche se il colpo è stato duro",
-          "Con rabbia verso i lettori",
-          "Con indifferenza, perché sapeva già come sarebbe finita"
+          "Con rabbia verso i lettori, soprattutto verso la farmacista e lo studente",
+          "Con indifferenza, perché sapeva già che avrebbero scelto la versione B"
         ],
         "a": "Con ironia, anche se il colpo è stato duro"
       },
       {
         "q": "Che cosa nota Ilaria rileggendo i commenti?",
         "o": [
-          "Che i lettori non avevano capito il testo",
-          "Che chi sceglie le versioni automatiche apprezza la facilità, mentre i suoi due lettori parlano di emozione",
-          "Che lo studente aveva copiato i commenti degli altri"
+          "Che molti lettori non avevano capito il testo e avevano risposto a caso",
+          "Che chi preferisce A o B parla di facilità, chi sceglie C di emozione",
+          "Che lo studente di ingegneria aveva copiato i commenti della farmacista"
         ],
-        "a": "Che chi sceglie le versioni automatiche apprezza la facilità, mentre i suoi due lettori parlano di emozione"
+        "a": "Che chi preferisce A o B parla di facilità, chi sceglie C di emozione"
       },
       {
         "q": "Perché il commento di Gino colpisce tanto Ilaria?",
         "o": [
-          "Perché Gino ha indovinato qualcosa della sua vita che non poteva sapere",
+          "Perché Gino ha colto qualcosa della sua vita che non poteva sapere",
           "Perché Gino è il più anziano del gruppo",
-          "Perché Gino ha criticato la sua traduzione"
+          "Perché Gino, che i gialli non li sopporta, ha criticato la sua traduzione"
         ],
-        "a": "Perché Gino ha indovinato qualcosa della sua vita che non poteva sapere"
+        "a": "Perché Gino ha colto qualcosa della sua vita che non poteva sapere"
       },
       {
         "q": "Perché Sauro non ha voluto essere pagato per la cornice?",
         "o": [
-          "Perché è amico di Gino",
-          "Perché Ilaria gli paga già l'affitto",
-          "Perché incorniciare qualcosa scritto a mano gli è sembrato un lavoro che valeva la pena"
+          "Perché è un vecchio amico di Gino, l'ex ferroviere del gruppo",
+          "Perché Ilaria gli paga già l'affitto dello studio al piano di sopra",
+          "Perché incorniciare qualcosa scritto a mano gli è sembrato un lavoro serio"
         ],
-        "a": "Perché incorniciare qualcosa scritto a mano gli è sembrato un lavoro che valeva la pena"
+        "a": "Perché incorniciare qualcosa scritto a mano gli è sembrato un lavoro serio"
       }
     ]
   },
@@ -2147,9 +2147,9 @@
       {
         "q": "Che cosa intendeva il tassista con «Con quella, domani, vola»?",
         "o": [
-          "Che l'autore sarebbe partito in aereo",
+          "Che l'autore sarebbe ripartito in aereo, invece che in treno",
           "Che la bora sarebbe stata così forte da portare via la valigia",
-          "Che la valigia era troppo leggera per il viaggio"
+          "Che la valigia era troppo leggera e fragile per il viaggio in taxi"
         ],
         "a": "Che la bora sarebbe stata così forte da portare via la valigia"
       },
@@ -2157,8 +2157,8 @@
         "q": "Perché, secondo l'autore, la pausa tra una raffica e l'altra è pericolosa?",
         "o": [
           "Perché ti fa abbassare la guardia",
-          "Perché arriva la pioggia",
-          "Perché i negozi chiudono"
+          "Perché subito dopo arrivano le nuvole basse e la pioggia",
+          "Perché i negozi approfittano della quiete per chiudere"
         ],
         "a": "Perché ti fa abbassare la guardia"
       },
@@ -2166,35 +2166,35 @@
         "q": "Come interpreta l'autore il cenno del cameriere quando ordina un «capo in b»?",
         "o": [
           "Come un rimprovero",
-          "Come un segno che stava cominciando a capire le regole della città",
-          "Come un invito ad andarsene"
+          "Come un segno che stava cominciando a capire la città",
+          "Come un invito gentile ad andarsene e a lasciare libero il tavolo"
         ],
-        "a": "Come un segno che stava cominciando a capire le regole della città"
+        "a": "Come un segno che stava cominciando a capire la città"
       },
       {
         "q": "Che cosa vuole dire la frase «era il confine ad attraversare loro»?",
         "o": [
-          "Che molti abitanti emigravano all'estero",
-          "Che i confini sono stati spostati più volte, cambiando lo Stato di chi restava a casa",
-          "Che il confine era sorvegliato dalla polizia"
+          "Che molti abitanti del Carso emigravano all'estero in cerca di lavoro",
+          "Che i confini si spostavano, cambiando lo Stato di chi restava a casa",
+          "Che il confine era sorvegliato giorno e notte da poliziotti e sbarre"
         ],
-        "a": "Che i confini sono stati spostati più volte, cambiando lo Stato di chi restava a casa"
+        "a": "Che i confini si spostavano, cambiando lo Stato di chi restava a casa"
       },
       {
         "q": "Perché domenica la gente in piazza ha «un'aria quasi delusa»?",
         "o": [
-          "Perché è finito il fine settimana",
-          "Perché la bora, pur faticosa, fa parte della loro identità e ora manca",
-          "Perché il caffè era chiuso"
+          "Perché è domenica ed è finito il fine settimana",
+          "Perché la bora, pur faticosa, fa parte di loro e ora manca",
+          "Perché il caffè in piazza era chiuso e non servivano il capo in b"
         ],
-        "a": "Perché la bora, pur faticosa, fa parte della loro identità e ora manca"
+        "a": "Perché la bora, pur faticosa, fa parte di loro e ora manca"
       },
       {
         "q": "Che cosa rivela il finale sul treno?",
         "o": [
-          "Che l'autore ha preso freddo",
+          "Che l'autore ha preso freddo per la bora e si sente male",
           "Che la settimana a Trieste gli è rimasta addosso, anche nel corpo",
-          "Che il controllore lo ha scambiato per un altro"
+          "Che il controllore lo ha scambiato per un altro passeggero"
         ],
         "a": "Che la settimana a Trieste gli è rimasta addosso, anche nel corpo"
       }

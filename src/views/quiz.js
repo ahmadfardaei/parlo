@@ -38,12 +38,14 @@ function vocabPool(types) {
   if (studied.length >= 12) return { ids: studied, studied: true };
   return { ids: levelUnits().flatMap(u => D.unitIds[u.n]).filter(id => types.includes(D.items[id].type)), studied: false };
 }
+const sense = en => String(en).split(";")[0].trim();
 const opts = (answer, pool) => shuffle([answer, ...shuffle([...new Set(pool)].filter(x => x && x !== answer)).slice(0, 3)]);
 function vocabQ(id, mode, poolIds) {
   const it = D.items[id], d = it.d, term = it.type === "w" ? full(d) : d.it;
   if (mode === "it") {
-    const same = poolIds.filter(x => D.items[x].type === it.type && D.items[x].u === it.u).map(x => D.items[x].d.en);
-    return { id, kind: it.type === "w" ? "Word" : "Phrase", prompt: `<span class="it">${esc(term)}</span>`, ask: "What does it mean?", k: "mc", a: d.en, o: opts(d.en, same.length > 3 ? same : poolIds.map(x => D.items[x].d.en)), say: term, why: `<span class="it">${esc(d.ex)}</span><br>${esc(d.exEn)}` };
+    // Only the first meaning of each option, so the answer doesn't stand out by its length.
+    const same = poolIds.filter(x => D.items[x].type === it.type && D.items[x].u === it.u).map(x => sense(D.items[x].d.en));
+    return { id, kind: it.type === "w" ? "Word" : "Phrase", prompt: `<span class="it">${esc(term)}</span>`, ask: "What does it mean?", k: "mc", a: sense(d.en), o: opts(sense(d.en), same.length > 3 ? same : poolIds.map(x => sense(D.items[x].d.en))), say: term, why: `<span class="it">${esc(d.ex)}</span><br>${esc(d.exEn)}` };
   }
   // Producing: accept the word with or without its article.
   const answers = it.type === "w" && d.art ? [full(d), d.it] : [term];

@@ -154,7 +154,7 @@ function startQuiz(body, u, only) {
     // Phrases: which Italian phrase says this?
     if (k === "p" && phrases.length > 3) { const p = fresh(phrases, x => x.it); return { kind: "How do you say it?", q: `“${esc(p.en)}”`, a: p.it, o: opts(p.it, phrases.map(x => x.it)), it: 1, opt: 1, why: `${esc(p.ex)} · ${esc(p.exEn)}` }; }
     const w = fresh(words, x => x.it);
-    if (k === "m") { const same = words.filter(x => x.c === w.c).map(x => x.en); return { kind: "What does it mean?", q: esc(full(w)), it: 1, a: w.en, o: opts(w.en, same.length > 3 ? same : words.map(x => x.en)), why: `${esc(w.ex)} · ${esc(w.exEn)}` }; }
+    if (k === "m") { const sense = en => en.split(";")[0].trim(); const same = words.filter(x => x.c === w.c).map(x => sense(x.en)); return { kind: "What does it mean?", q: esc(full(w)), it: 1, a: sense(w.en), o: opts(sense(w.en), same.length > 3 ? same : words.map(x => sense(x.en))), why: `${esc(w.ex)} · ${esc(w.exEn)}` }; }
     return { kind: "Say it in Italian", q: esc(w.en), k: "type", a: w.art ? [full(w), w.it] : [w.it], alt: adjForms(w), id: "w:" + w.it, why: `${esc(w.ex)} · ${esc(w.exEn)}` };
   });
   let i = 0, score = 0;

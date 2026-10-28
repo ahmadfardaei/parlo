@@ -344,20 +344,20 @@
       {
         "q": "Perché il signore suona proprio al campanello di Chiara?",
         "o": [
-          "Perché vuole conoscere Chiara.",
-          "Perché sul campanello c'è ancora il nome Gribaudo.",
+          "Perché vuole conoscere Chiara, la nuova inquilina.",
+          "Perché sul campanello c'è scritto Gribaudo.",
           "Perché non vede bene i numeri."
         ],
-        "a": "Perché sul campanello c'è ancora il nome Gribaudo."
+        "a": "Perché sul campanello c'è scritto Gribaudo."
       },
       {
         "q": "Che cosa pensava Aldo quando nessuno lo faceva entrare?",
         "o": [
-          "Che la signora Gribaudo era malata.",
+          "Che la signora Gribaudo era malata e non poteva rispondere.",
           "Che il citofono era rotto.",
-          "Che la signora Gribaudo era arrabbiata perché lui aveva vinto."
+          "Che la signora Gribaudo era arrabbiata con lui."
         ],
-        "a": "Che la signora Gribaudo era arrabbiata perché lui aveva vinto."
+        "a": "Che la signora Gribaudo era arrabbiata con lui."
       },
       {
         "q": "Come si sente Chiara durante la prima settimana?",
@@ -372,10 +372,10 @@
         "q": "Perché Aldo dice che il vermut lo porta lui?",
         "o": [
           "Perché Chiara non beve alcol.",
-          "Perché pensa, scherzando, che Chiara compra vermut di cattiva qualità.",
-          "Perché è un regalo per la signora Gribaudo."
+          "Per scherzo: pensa che Chiara compra vermut cattivo.",
+          "Perché è un regalo per la signora Gribaudo quando torna da Cuneo."
         ],
-        "a": "Perché pensa, scherzando, che Chiara compra vermut di cattiva qualità."
+        "a": "Per scherzo: pensa che Chiara compra vermut cattivo."
       },
       {
         "q": "Che cosa capiamo dalla fine della storia?",
@@ -706,10 +706,10 @@
         "q": "Perché la narratrice prende il treno notte?",
         "o": [
           "Perché ha paura dell'aereo.",
-          "Perché vuole vedere se la storia del nonno è vera.",
+          "Per controllare una storia del nonno.",
           "Perché deve andare a trovare una zia a Messina."
         ],
-        "a": "Perché vuole vedere se la storia del nonno è vera."
+        "a": "Per controllare una storia del nonno."
       },
       {
         "q": "Che cosa succede a Villa San Giovanni?",
@@ -723,29 +723,29 @@
       {
         "q": "Di che cosa discutono la signora di Palermo e il signore di Catania?",
         "o": [
-          "Del prezzo dell'arancino al bar.",
+          "Del prezzo dell'arancino al ragù al bar della nave.",
           "Di quale città è più bella.",
-          "Del nome giusto della palla di riso fritta."
+          "Di come si chiama la palla di riso."
         ],
-        "a": "Del nome giusto della palla di riso fritta."
+        "a": "Di come si chiama la palla di riso."
       },
       {
         "q": "Perché il barista di Siracusa la corregge?",
         "o": [
-          "Perché a Siracusa, come a Catania, si dice \"arancino\".",
+          "Perché a Siracusa si dice \"arancino\".",
           "Perché ha chiesto un piatto che non esiste.",
           "Perché ha parlato in tedesco."
         ],
-        "a": "Perché a Siracusa, come a Catania, si dice \"arancino\"."
+        "a": "Perché a Siracusa si dice \"arancino\"."
       },
       {
         "q": "Che cosa sappiamo della signora di Palermo?",
         "o": [
           "Non parla con nessuno durante il viaggio.",
-          "È generosa, ma anche decisa: offre il cibo come un ordine.",
+          "È generosa, ma anche molto decisa.",
           "Lavora sulla nave tra Villa San Giovanni e Messina."
         ],
-        "a": "È generosa, ma anche decisa: offre il cibo come un ordine."
+        "a": "È generosa, ma anche molto decisa."
       }
     ]
   },
@@ -1248,19 +1248,19 @@
         "q": "Perché, secondo Ilaria, forse le regole di Davide non sono così antiche?",
         "o": [
           "Perché la carbonara è nata a Bologna.",
-          "Perché la carbonara è una ricetta nata solo dopo la guerra.",
+          "Perché la carbonara è nata dopo la guerra.",
           "Perché i romani oggi usano il bacon americano."
         ],
-        "a": "Perché la carbonara è una ricetta nata solo dopo la guerra."
+        "a": "Perché la carbonara è nata dopo la guerra."
       },
       {
         "q": "Come risponde Davide a Tommaso?",
         "o": [
           "Con molta pazienza e una ricetta alternativa.",
-          "In modo esagerato e scherzoso: gli dice di cambiare supermercato e poi paese.",
+          "In modo esagerato e scherzoso.",
           "Gli dice che la pancetta va benissimo."
         ],
-        "a": "In modo esagerato e scherzoso: gli dice di cambiare supermercato e poi paese."
+        "a": "In modo esagerato e scherzoso."
       },
       {
         "q": "Chi è il \"bambino\" di cui parla Marisa?",
@@ -1274,11 +1274,11 @@
       {
         "q": "Perché Davide diventa bianco quando sente Marisa?",
         "o": [
-          "Perché riconosce la voce di sua madre e ha paura di quello che dirà.",
+          "Perché ha capito che è sua madre.",
           "Perché Marisa è una cuoca famosa.",
           "Perché Marisa lo ha criticato su internet."
         ],
-        "a": "Perché riconosce la voce di sua madre e ha paura di quello che dirà."
+        "a": "Perché ha capito che è sua madre."
       },
       {
         "q": "Che cosa dice davvero Davide alla fine?",
@@ -1626,23 +1626,23 @@
         "o": [
           "Perché sulla nave non c'è internet.",
           "Perché la nonna non legge i messaggi sul telefono.",
-          "Perché la mamma gli ha chiesto di farlo."
+          "Perché la mamma gli ha chiesto di scrivere ogni settimana."
         ],
         "a": "Perché la nonna non legge i messaggi sul telefono."
       },
       {
         "q": "Come cambia il lavoro di Nicola tra giugno e luglio?",
         "o": [
-          "Lo promuovono e lavora al bar.",
-          "Si abitua al mare e comincia a comunicare meglio con i turisti.",
+          "Lascia il garage e lavora al bar della nave.",
+          "Non sta più male e parla con i turisti.",
           "Decide di lasciare il lavoro."
         ],
-        "a": "Si abitua al mare e comincia a comunicare meglio con i turisti."
+        "a": "Non sta più male e parla con i turisti."
       },
       {
         "q": "Perché il cane va a Portoferraio ogni giorno?",
         "o": [
-          "Perché il suo padrone lavora al porto.",
+          "Perché il suo padrone lavora al porto di Portoferraio.",
           "Perché in una trattoria gli danno da mangiare.",
           "Perché segue Nicola."
         ],
@@ -1670,10 +1670,10 @@
         "q": "Che cosa vuol dire la battuta finale sui \"due pendolari\"?",
         "o": [
           "Che anche la nonna comincerà a lavorare.",
-          "Che anche Nicola viaggerà ogni giorno, in treno per l'università, come il cane faceva sul traghetto.",
-          "Che Nicola porterà il cane all'università."
+          "Che anche Nicola viaggerà ogni giorno, in treno.",
+          "Che Nicola porterà il cane con sé ogni giorno all'università."
         ],
-        "a": "Che anche Nicola viaggerà ogni giorno, in treno per l'università, come il cane faceva sul traghetto."
+        "a": "Che anche Nicola viaggerà ogni giorno, in treno."
       }
     ]
   },
@@ -1979,10 +1979,10 @@
         "q": "Perché la signora Canepa è così arrabbiata?",
         "o": [
           "Perché qualcuno ha rubato il suo basilico.",
-          "Perché il suo basilico finisce in posti dove c'è poca luce.",
+          "Perché il suo basilico finisce al buio.",
           "Perché Lorenzo canta sulle scale."
         ],
-        "a": "Perché il suo basilico finisce in posti dove c'è poca luce."
+        "a": "Perché il suo basilico finisce al buio."
       },
       {
         "q": "Che cosa succede dopo il biglietto della signora Canepa?",
@@ -1998,25 +1998,25 @@
         "o": [
           "Il gatto, quando tutti dormono.",
           "Il marito della narratrice, mentre dorme.",
-          "Il signor Firpo, per fare uno scherzo."
+          "Il signor Firpo, l'ex capitano, per fare uno scherzo."
         ],
         "a": "Il marito della narratrice, mentre dorme."
       },
       {
         "q": "Perché le piante adesso stanno meglio di prima?",
         "o": [
-          "Perché Gianni conosce bene le piante e le mette dove c'è sole.",
+          "Perché Gianni sa dove arriva il sole.",
           "Perché la signora Canepa le annaffia ogni giorno.",
           "Perché l'amministratore ha comprato piante nuove."
         ],
-        "a": "Perché Gianni conosce bene le piante e le mette dove c'è sole."
+        "a": "Perché Gianni sa dove arriva il sole."
       },
       {
         "q": "Che cosa c'è di sorprendente nell'assemblea di giugno?",
         "o": [
           "Dura tre ore e finisce male.",
           "Finisce in pochi minuti e tutti sono d'accordo.",
-          "Gianni deve pagare le piante a tutti."
+          "Gianni deve pagare le piante nuove a tutti i vicini."
         ],
         "a": "Finisce in pochi minuti e tutti sono d'accordo."
       }
@@ -2364,11 +2364,11 @@
       {
         "q": "Che cosa scopre Marta il 24 marzo?",
         "o": [
-          "Che la sua paura dell'acqua viene da un episodio di quando era bambina.",
-          "Che Bruno sa già nuotare molto bene.",
+          "Che la paura viene da quando era bambina.",
+          "Che Bruno sa già nuotare molto bene grazie alla pancia.",
           "Che Ettore vuole lasciare il corso."
         ],
-        "a": "Che la sua paura dell'acqua viene da un episodio di quando era bambina."
+        "a": "Che la paura viene da quando era bambina."
       },
       {
         "q": "Perché il marito fa domande sui capelli bagnati?",
@@ -2384,14 +2384,14 @@
         "o": [
           "Che andava a trovare sua madre.",
           "Che faceva un corso di cucina.",
-          "Che forse aveva una relazione con un altro uomo."
+          "Che aveva un amante."
         ],
-        "a": "Che forse aveva una relazione con un altro uomo."
+        "a": "Che aveva un amante."
       },
       {
         "q": "Come reagisce Bea alla fine?",
         "o": [
-          "Si arrabbia perché la mamma ha mentito.",
+          "Si arrabbia perché la mamma ha mentito per tanti anni.",
           "Vuole aiutare la mamma a nuotare meglio.",
           "Dice alla mamma che nuota benissimo."
         ],
@@ -2828,7 +2828,7 @@
       {
         "q": "Che cosa è successo alla tenda di Graziella?",
         "o": [
-          "Qualcuno l'ha rubata di notte.",
+          "Qualcuno l'ha rubata di notte mentre dormivano.",
           "Il vento l'ha portata via verso il mare.",
           "Si è rotta perché era vecchia."
         ],
@@ -2837,11 +2837,11 @@
       {
         "q": "Perché, per Emanuele, la cosa peggiore è che il gondoliere non li ha fatti pagare?",
         "o": [
-          "Perché voleva lasciare una mancia.",
-          "Perché è stato troppo gentile e questo ha reso la situazione ancora più strana.",
+          "Perché voleva lasciare una mancia al gondoliere per le canzoni.",
+          "Perché la sua gentilezza rende tutto più strano.",
           "Perché la gondola era molto costosa."
         ],
-        "a": "Perché è stato troppo gentile e questo ha reso la situazione ancora più strana."
+        "a": "Perché la sua gentilezza rende tutto più strano."
       },
       {
         "q": "Come ha conosciuto Ottavio sua moglie?",
@@ -2855,11 +2855,11 @@
       {
         "q": "Perché Ottavio dice che è la vacanza peggiore?",
         "o": [
-          "Scherza: dice che da quella vacanza sua moglie parla sempre e non lo lascia finire.",
+          "Scherza: sua moglie non lo lascia finire una frase.",
           "Perché è ancora arrabbiato per il portafoglio perso.",
           "Perché a Rimini ha conosciuto la persona sbagliata."
         ],
-        "a": "Scherza: dice che da quella vacanza sua moglie parla sempre e non lo lascia finire."
+        "a": "Scherza: sua moglie non lo lascia finire una frase."
       },
       {
         "q": "Che cosa scopriamo nell'ultima battuta?",
@@ -3250,10 +3250,10 @@
         "q": "Perché Gabriele ha creato l'app?",
         "o": [
           "Perché la scuola gli ha dato un compito.",
-          "Perché perdeva spesso l'autobus e l'orario ufficiale non era affidabile.",
+          "Perché perdeva spesso l'autobus.",
           "Perché voleva lavorare per il Comune."
         ],
-        "a": "Perché perdeva spesso l'autobus e l'orario ufficiale non era affidabile."
+        "a": "Perché perdeva spesso l'autobus."
       },
       {
         "q": "Perché l'app funziona meglio con più utenti?",
@@ -3268,15 +3268,15 @@
         "q": "Che ruolo ha la nonna Efisia?",
         "o": [
           "Ha pagato lo sviluppo dell'app.",
-          "Ha insegnato a Gabriele a programmare.",
-          "Prova l'app ogni giorno, trova errori e ha scelto il nome."
+          "Ha insegnato a Gabriele a programmare con i video.",
+          "La prova, trova errori e ha scelto il nome."
         ],
-        "a": "Prova l'app ogni giorno, trova errori e ha scelto il nome."
+        "a": "La prova, trova errori e ha scelto il nome."
       },
       {
         "q": "Perché la madre dice che Gabriele è maleducato?",
         "o": [
-          "Perché non ha risposto al Comune.",
+          "Perché non ha voluto rispondere alla telefonata del Comune.",
           "Perché ha chiesto al Comune di adattarsi ai suoi orari.",
           "Perché parla male degli autisti."
         ],
@@ -3285,11 +3285,11 @@
       {
         "q": "Qual è l'ironia alla fine dell'intervista?",
         "o": [
-          "L'app non funziona più.",
-          "Gabriele continua a perdere l'autobus proprio a causa dell'app.",
+          "L'app adesso dice a tutti che l'autobus 5 è in mezzo al mare.",
+          "Gabriele perde ancora l'autobus, per colpa dell'app.",
           "Gabriele adesso va a scuola in macchina."
         ],
-        "a": "Gabriele continua a perdere l'autobus proprio a causa dell'app."
+        "a": "Gabriele perde ancora l'autobus, per colpa dell'app."
       }
     ]
   },
@@ -3595,17 +3595,17 @@
         "q": "Perché la principessa della luna sta male sulla terra?",
         "o": [
           "Perché il principe non la ama più.",
-          "Perché tutto è scuro e le manca la luce bianca della luna.",
+          "Perché sulla terra tutto è scuro.",
           "Perché fa troppo freddo sulle montagne."
         ],
-        "a": "Perché tutto è scuro e le manca la luce bianca della luna."
+        "a": "Perché sulla terra tutto è scuro."
       },
       {
         "q": "Che cosa chiedono i Salvans in cambio del loro aiuto?",
         "o": [
           "Il castello del principe.",
           "Una parte del regno, per sempre.",
-          "Di poter andare sulla luna."
+          "Di poter andare sulla luna con la principessa."
         ],
         "a": "Una parte del regno, per sempre."
       },
@@ -3621,20 +3621,20 @@
       {
         "q": "Perché, secondo la leggenda, le Dolomiti diventano rosa al tramonto?",
         "o": [
-          "Perché re Laurino ha dimenticato il tramonto quando ha nascosto le sue rose.",
+          "Perché Laurino ha dimenticato il tramonto.",
           "Perché la principessa è triste ogni sera.",
           "Perché i Salvans tolgono la luce della luna."
         ],
-        "a": "Perché re Laurino ha dimenticato il tramonto quando ha nascosto le sue rose."
+        "a": "Perché Laurino ha dimenticato il tramonto."
       },
       {
         "q": "Che cosa pensa la narratrice, da adulta, della nonna?",
         "o": [
-          "Che la nonna non conosceva la storia di Laurino.",
-          "Che la nonna rimandava la storia per farla tornare a Canazei.",
+          "Che la nonna non conosceva bene la fine della storia di Laurino.",
+          "Che la nonna lo faceva apposta, per farla tornare.",
           "Che la nonna era stanca di raccontare storie."
         ],
-        "a": "Che la nonna rimandava la storia per farla tornare a Canazei."
+        "a": "Che la nonna lo faceva apposta, per farla tornare."
       }
     ]
   },
@@ -3920,16 +3920,16 @@
       {
         "q": "Come ha salvato il cinema la gente del paese?",
         "o": [
-          "Il Comune ha comprato il cinema.",
-          "Hanno creato un'associazione e raccolto soldi con le quote e una tombola.",
+          "Il Comune ha comprato il cinema dal proprietario di Napoli.",
+          "Con un'associazione, le quote e una tombola.",
           "Un regista famoso ha pagato i lavori."
         ],
-        "a": "Hanno creato un'associazione e raccolto soldi con le quote e una tombola."
+        "a": "Con un'associazione, le quote e una tombola."
       },
       {
         "q": "Che cosa capiamo quando Michele dice che Donato piange \"per colpa della stufa\"?",
         "o": [
-          "Che la stufa fa fumo e dà fastidio agli occhi.",
+          "Che la stufa a gasolio fa fumo e dà fastidio agli occhi.",
           "Che Donato si commuove ma non vuole ammetterlo.",
           "Che Donato non ama quel film."
         ],
@@ -3938,11 +3938,11 @@
       {
         "q": "Che cosa mostra la storia del signore di ottant'anni?",
         "o": [
-          "Che Donato rispetta la sua regola anche con un solo spettatore.",
-          "Che il cinema non funziona d'inverno.",
+          "Che Donato rispetta sempre la sua regola.",
+          "Che il cinema non funziona d'inverno, quando nevica.",
           "Che gli anziani non vanno più al cinema."
         ],
-        "a": "Che Donato rispetta la sua regola anche con un solo spettatore."
+        "a": "Che Donato rispetta sempre la sua regola."
       },
       {
         "q": "Perché la sera della visita ci sono tanti spettatori?",
