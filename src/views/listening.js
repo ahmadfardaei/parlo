@@ -87,6 +87,8 @@ export async function viewListening(app, v, alive) {
     div.querySelectorAll("[data-qo]").forEach(b => b.onclick = () => {
       const ok = q.o[+b.dataset.qo] === q.a; answered++; if (ok) correct++;
       div.querySelectorAll("[data-qo]").forEach(x => { x.disabled = true; if (q.o[+x.dataset.qo] === q.a) x.classList.add("right"); else if (x === b) x.classList.add("wrong"); });
+        // Say the result in words too, not only in colour.
+        div.insertAdjacentHTML("beforeend", ok ? `<p class="q-fb ok-text">${ICON.check} Right</p>` : `<p class="q-fb bad-text">Not quite. The answer: <span class="it strong">${esc(q.a)}</span></p>`);
       if (answered === qs.length) {
         setEntry("l:" + l.id, { done: 1, score: correct, total: qs.length });
         app.querySelector("#finish").innerHTML = `<p class="ok-text">${ICON.check} ${correct}/${qs.length} correct.</p><p class="muted small">Now read the transcript, then listen again with Repeat on: say each line after the speaker.</p><div class="btn-row"><a class="btn primary" href="#/say/listen/${l.id}">Say it: 5 lines</a><a class="btn" href="#/learn/listening">More listening</a></div>`;

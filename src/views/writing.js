@@ -19,6 +19,17 @@ export function modelsHTML(x, level, showEn, src) {
     <article class="reader">${blocksHTML(m.body, src, x.title, showEn, () => modelVoice(x, level))}</article>`;
 }
 
+// Common slips worth a second look. These are hints, not corrections: the learner decides.
+const it = t => `<span class="it">${esc(t)}</span>`;
+const SLIPS = [
+  [/\bho (andat|venut|stat|partit|arrivat|uscit|tornat|entrat|rimast|cadut|nat|mort)\w*/i, m => `${it(m[0])}: verbs of moving and changing take essere. ${it("Sono andato/a")}, not ${it("ho andato")}.`],
+  [/\b(perche|piu|citta|puo|gia|cosi|pero|universita|caffe|lunedi|martedi|mercoledi|giovedi|venerdi)\b/i, m => `${it(m[0])} needs an accent on the last letter.`],
+  [/\be (molto|bello|bella|brutto|bravo|vero|facile|difficile|caro|cara|veloce|lontano|vicino|importante|possibile)\b/i, m => `${it(m[0])}: do you mean ${it("è")} (is) rather than ${it("e")} (and)?`],
+  [/\b(al|del|nel|sul|dal) ([aeiou]\w+)/i, m => `${it(m[0])}: before a vowel use the apostrophe form, like ${it(`${m[1]}l'${m[2]}`)}.`],
+  [/\b(persone|ragazzi|ragazze|amici|amiche|colleghi|colleghe|italiani|italiane) (sono|erano|sembrano) (gentile|felice|simpatico|simpatica|aperto|aperta|cordiale|socievole)\b/i, m => `${it(m[0])}: the adjective agrees with a plural noun.`]
+];
+function selfCheck(text) { return SLIPS.map(([re, f]) => { const m = text.match(re); return m ? f(m) : null; }).filter(Boolean); }
+
 export async function viewWriting(app, v, alive) {
   const all = await ensure("writing");
   if (!alive()) return;
@@ -43,7 +54,8 @@ export async function viewWriting(app, v, alive) {
         <section><div class="panel-head"><h2>Your text</h2>
           <div class="seg small" role="group" aria-label="Your level">${LEVELS.map(l => `<button data-lvl="${l}" aria-pressed="${l === level}">${l}</button>`).join("")}</div></div>
           <textarea class="input write-area it" id="draft" rows="12" placeholder="Scrivi qui…" aria-label="Your text">${esc(text)}</textarea>
-          <p class="muted small" id="wc"></p></section>
+          <p class="muted small" id="wc"></p>
+          <div class="panel checks" id="checks" hidden></div></section>
         <section class="g-sec">
           ${showModels ? `<h2>Model answers</h2>${readerTools(showEn)}${modelsHTML(w, level, showEn, `#/write/${w.id}`)}`
             : `<div class="panel note-card"><p>Write your own version first. Then compare it with a model answer for your level.</p><button class="btn primary" data-show-models>Show model answers</button></div>`}
@@ -56,7 +68,13 @@ export async function viewWriting(app, v, alive) {
           <div class="panel flush reader">${w.phrases.map(p => `<div class="gloss"><div class="gloss-main">${sentHTML(p, `#/write/${w.id}`, w.title)}<span class="muted">${esc(p.en)}</span></div>${starHTML(p, `#/write/${w.id}`, w.title)}</div>`).join("")}</div></details></div>
       </aside></div>`;
     const ta = app.querySelector("#draft"), wc = app.querySelector("#wc");
-    const upd = () => { const n = countWords(ta.value); wc.textContent = `${n} words · aim for ${lo}–${hi} at ${level}${n ? (n < lo ? " · keep going" : n > hi ? " · a bit long" : " · good length") : ""}. Saved automatically.`; };
+    const checks = app.querySelector("#checks");
+    const upd = () => {
+      const n = countWords(ta.value); wc.textContent = `${n} words · aim for ${lo}–${hi} at ${level}${n ? (n < lo ? " · keep going" : n > hi ? " · a bit long" : " · good length") : ""}. Saved automatically.`;
+      const found = selfCheck(ta.value);
+      checks.hidden = n < 15;
+      checks.innerHTML = `<p class="eyebrow">Check before you compare</p>${found.length ? `<ul class="notes">${found.map(f => `<li>${f}</li>`).join("")}</ul>` : `<p class="muted small">No common slips found. Still check: accents (è, perché, più), adjective endings, and essere or avere in the past.</p>`}`;
+    };
     upd();
     ta.addEventListener("input", () => { upd(); pending = ta.value; save(); });
     ta.addEventListener("blur", () => save.flush());

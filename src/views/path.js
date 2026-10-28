@@ -5,8 +5,8 @@ import { pdfUrl } from "../voice.js";
 import { learnNav } from "./learn.js";
 
 const TYPE = {
-  unit: { label: "Vocabulary", icon: "Aa" }, grammar: { label: "Grammar", icon: "§" }, reading: { label: "Reading", icon: "¶" }, listening: { label: "Listening", icon: "♪" },
-  writing: { label: "Writing", icon: "✎" }, speaking: { label: "Speaking", icon: "◌" }, checkpoint: { label: "Checkpoint", icon: "◆" }, test: { label: "Level test", icon: "★" }
+  unit: { label: "Vocabolario", icon: "Aa" }, grammar: { label: "Grammatica", icon: "§" }, reading: { label: "Lettura", icon: "¶" }, listening: { label: "Ascolto", icon: "♪" },
+  writing: { label: "Scrittura", icon: "✎" }, speaking: { label: "Parlato", icon: "◌" }, checkpoint: { label: "Checkpoint", icon: "◆" }, test: { label: "Test di livello", icon: "★" }
 };
 const WRITE_TARGET = { A1: 60, A2: 110, B1: 180, B2: 260 };
 const words = s => (String(s || "").trim().match(/\S+/g) || []).length;
@@ -65,7 +65,7 @@ export function viewPath(app, v) {
     </header>
     <section class="panel path-summary">
       <div class="level-prog"><span class="bar"><span class="k" style="width:${done / steps.length * 100}%"></span></span><span class="small">${done} of ${steps.length}</span></div>
-      <div class="pdf-row"><span class="pdf-lbl small">${ICON.download} PDF</span>${[["vocab", "Vocabulary"], ["grammar", "Grammar"], ["reading", "Reading"]].map(([k, t]) => `<a class="btn quiet small pdf-link" href="${pdfUrl(`${k}-${L}`)}" target="_blank" rel="noopener">${t}</a>`).join("")}</div>
+      <div class="pdf-row"><span class="pdf-lbl small">${ICON.download} PDF</span>${[["vocab", "Vocabolario"], ["grammar", "Grammatica"], ["reading", "Lettura"]].map(([k, t]) => `<a class="btn quiet small pdf-link" href="${pdfUrl(`${k}-${L}`)}" target="_blank" rel="noopener">${t}</a>`).join("")}</div>
       <p class="muted small">At <select class="pace" aria-label="Minutes per day">${[10, 20, 30, 45, 60].map(m => `<option value="${m}" ${m === (S.pref.pace || 20) ? "selected" : ""}>${m} min</option>`).join("")}</select> a day, this level takes about <b>${paceText(L)}</b>.</p>
     </section>
     <ol class="path">${steps.map((s, i) => {

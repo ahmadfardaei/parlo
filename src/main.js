@@ -63,6 +63,13 @@ export async function render() {
   }
   if (token !== renderToken) return;
   if (path !== prevPath) window.scrollTo(0, 0);
+  // Section tabs that don't fit: show the current one, and fade the edge that has more.
+  app.querySelectorAll(".tabs-seg").forEach(nav => {
+    const cur = nav.querySelector("[aria-current]");
+    if (cur) nav.scrollLeft = cur.offsetLeft - (nav.clientWidth - cur.offsetWidth) / 2;
+    const edge = () => { nav.classList.toggle("more-r", nav.scrollLeft + nav.clientWidth < nav.scrollWidth - 4); nav.classList.toggle("more-l", nav.scrollLeft > 4); };
+    edge(); nav.addEventListener("scroll", edge, { passive: true });
+  });
   prevPath = path;
   const h = app.querySelector("h1"); document.title = h && v.name !== "home" ? `${h.textContent} · Parlo` : "Parlo Italiano";
   setSync(); updateBadges();

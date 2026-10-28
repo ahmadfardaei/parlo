@@ -123,7 +123,7 @@ export async function viewQuiz(app, v, alive) {
   const scope = pathQuiz ? v.scope : SCOPES[v.scope] ? v.scope : "mix", mode = pathQuiz ? "en" : (S.pref.quizMode || "en");
   const built = pathQuiz ? await buildPath(v) : await build(scope, mode);
   if (!alive()) return;
-  built.label = built.title || `Quiz · ${SCOPES[scope].it} · ${MODES[mode]}`;
+  built.label = built.title || `Quiz · ${SCOPES[scope].it}`;
   run(app, v, alive, built, built.qs, false);
 }
 // What the learner missed, with the right answer.

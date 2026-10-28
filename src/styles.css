@@ -134,6 +134,11 @@ body.focus main.wrap { padding-top: calc(12px + env(safe-area-inset-top, 0px)); 
 .seg.scroll::-webkit-scrollbar, .tabs-seg::-webkit-scrollbar { display: none; }
 .tabs-seg { display: flex; width: 100%; margin-bottom: 14px; }
 .tabs-seg a { flex: 1 0 auto; text-align: center; }
+.tabs-seg.more-r { -webkit-mask-image: linear-gradient(to right, #000 82%, transparent); mask-image: linear-gradient(to right, #000 82%, transparent); }
+.tabs-seg.more-l { -webkit-mask-image: linear-gradient(to left, #000 82%, transparent); mask-image: linear-gradient(to left, #000 82%, transparent); }
+.tabs-seg.more-l.more-r { -webkit-mask-image: linear-gradient(to right, transparent, #000 14%, #000 86%, transparent); mask-image: linear-gradient(to right, transparent, #000 14%, #000 86%, transparent); }
+.unit-legend { display: flex; flex-wrap: wrap; gap: 6px 14px; margin: 0 0 12px; color: var(--muted); }
+.unit-legend span { display: inline-flex; align-items: center; gap: 6px; }
 .tabs-seg .n { color: var(--muted); font-weight: 500; font-size: 13px; }
 .chips { display: flex; flex-wrap: wrap; gap: 8px; }
 .chip { display: inline-flex; align-items: center; border: 1px solid var(--line); background: var(--surface); border-radius: 99px; padding: 5px 12px; font-size: 15px; }
@@ -347,9 +352,13 @@ audio { width: 100%; max-width: 420px; }
 .rate .rate-know { grid-column: 1 / -1; color: var(--ok); }
 .rate .rate-again { color: var(--bad); }
 .rate .wide { grid-column: 1 / -1; }
+.rate:not(.two) .btn { flex-direction: column; gap: 0; line-height: 1.2; }
+.rate .btn small { display: block; font-size: 12px; font-weight: 500; color: var(--muted); margin-top: 1px; }
 .rate.two { grid-template-columns: 1fr 1fr; }
 .card-actions > .rate.two + .btn { margin-top: 8px; }
 /* What you missed, on result screens */
+.q-fb { margin: 8px 0 0; font-size: 15px; display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+.q-fb svg { width: 16px; height: 16px; }
 .missed { width: 100%; max-width: 520px; text-align: left; border-top: 1px solid var(--line); padding-top: 12px; margin-top: 4px; }
 .missed .eyebrow { margin: 0 0 6px; }
 .missed ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; font-size: 15px; }

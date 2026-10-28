@@ -89,10 +89,13 @@ export function viewHome(app) {
   const newN = Math.min(S.pref.newN, newAvailable());
   const first = !hasHistory();
   const last = lsGet("parlo.last", null);
-  const lc = counts(D.units.filter(u => u.level === S.pref.level).flatMap(u => D.unitIds[u.n]));
+  const lvIds = D.units.filter(u => u.level === S.pref.level).flatMap(u => D.unitIds[u.n]);
+  const lc = { total: lvIds.length, learned: lvIds.filter(learned).length, started: lvIds.filter(id => statusOf(id) !== "new").length };
   const nu = nextUnit();
   const name = displayName().split(" ")[0];
-  const cont = last ? { eyebrow: "Continue", title: last.title, sub: last.sub, href: last.href }
+  // "Continue" only points to a unit of the level you're on now.
+  const lastUnit = last?.kind === "unit" ? D.units.find(u => u.n === +String(last.href).split("/")[2]) : null;
+  const cont = last && !(lastUnit && lastUnit.level !== S.pref.level) ? { eyebrow: "Continue", title: last.title, sub: last.sub, href: last.href }
     : nu ? { eyebrow: "Explore the unit", title: `Unità ${nu.n}: ${nu.title}`, sub: nu.en, href: `#/unit/${nu.n}/words` } : null;
   let title, sub, cta;
   if (due) { title = `${due} ${due === 1 ? "card" : "cards"} to review`; sub = newN ? `Plus ${newN} new ${newN === 1 ? "word" : "words"}. About ${Math.max(1, Math.round((due + newN) / 4))} min.` : `About ${Math.max(1, Math.round(due / 4))} min.`; cta = "Start today's session"; }
@@ -153,11 +156,11 @@ function drawOverview(box, lc) {
       <span class="ov-val">${done + part} of ${total}</span>${ICON.chev}</a>`;
   const gl = META.grammar.filter(([, l]) => l === L), rl = META.reading.filter(([, l]) => l === L), ll = META.listening.filter(([, l]) => l === L);
   box.innerHTML = [
-    row("vocab", "Vocabulary", lc.known, lc.total, lc.learning),
-    row("grammar", "Grammar", gl.filter(([id]) => S.st["g:" + id]?.best != null).length, gl.length),
-    row("reading", "Reading", rl.filter(([id]) => S.st["r:" + id]?.done).length, rl.length),
-    row("listening", "Listening", ll.filter(([id]) => S.st["l:" + id]?.done).length, ll.length),
-    row("writing", "Writing", META.writing.filter(id => (S.st["wr:" + id]?.text || "").trim()).length, META.writing.length),
-    row("speaking", "Speaking", META.speaking.filter(id => S.st["sp:" + id]?.done).length, META.speaking.length)
-  ].join("") + `<p class="legend small"><span><i class="lg-k"></i>Known / done</span><span><i class="lg-l"></i>Learning</span></p>`;
+    row("vocab", "Vocabolario", lc.learned, lc.total, lc.started - lc.learned),
+    row("grammar", "Grammatica", gl.filter(([id]) => S.st["g:" + id]?.best != null).length, gl.length),
+    row("reading", "Lettura", rl.filter(([id]) => S.st["r:" + id]?.done).length, rl.length),
+    row("listening", "Ascolto", ll.filter(([id]) => S.st["l:" + id]?.done).length, ll.length),
+    row("writing", "Scrittura", META.writing.filter(id => (S.st["wr:" + id]?.text || "").trim()).length, META.writing.length),
+    row("speaking", "Parlato", META.speaking.filter(id => S.st["sp:" + id]?.done).length, META.speaking.length)
+  ].join("") + `<p class="legend small"><span><i class="lg-k"></i>Learned / done</span><span><i class="lg-l"></i>Started</span></p>`;
 }

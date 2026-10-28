@@ -1,6 +1,6 @@
 import { starHTML } from "./texts.js";
 import { exVoice } from "../core.js";
-import { S, D, esc, rich, ICON, full, unitByN, counts, barHTML, statusOf, statusLabel, inDeck, schedHTML, canSpeak, TOPICS, remember, shuffle, pick, say, openSheet, gf, pickEx, judge, adjForms, schedule } from "../core.js";
+import { S, D, esc, rich, ICON, full, unitByN, counts, barHTML, statusOf, statusLabel, inDeck, schedHTML, canSpeak, TOPICS, remember, shuffle, pick, say, openSheet, gf, pickEx, judge, adjForms, schedule, learned } from "../core.js";
 
 export const PRON = ["io", "tu", "lui / lei", "noi", "voi", "loro"];
 export const TENSES = [
@@ -90,7 +90,7 @@ export function viewUnit(app, v) {
       <p class="muted">${esc(u.en)}. ${esc(u.intro || "")}</p>
     </header>
     <section class="panel unit-cta">
-      <div class="level-prog">${barHTML(c)}<span class="small">${Math.round(c.known / Math.max(1, c.total) * 100)}% known</span></div>
+      <div class="level-prog">${barHTML({ known: ids.filter(learned).length, learning: ids.filter(id => statusOf(id) !== "new" && !learned(id)).length, total: c.total })}<span class="small">${ids.filter(learned).length} of ${c.total} learned</span></div>
       <a class="btn primary" href="#/session/unit/${u.n}">${c.due ? `Review ${c.due} due` : fresh ? `Learn ${Math.min(fresh, Math.max(S.pref.newN, 10))} new` : "Practise again"}</a>
     </section>
     <nav class="seg tabs-seg" aria-label="Unit sections">
@@ -105,7 +105,7 @@ export function viewUnit(app, v) {
   if (v.tab === "words") {
     const words = ids.filter(id => D.items[id].type === "w");
     const cats = Object.keys(u.cats).filter(k => words.some(id => D.items[id].d.c === k));
-    body.innerHTML = cats.map(k => `<section class="item-group"><h2 class="group-label">${esc(u.cats[k])}</h2><div class="panel flush cols">${words.filter(id => D.items[id].d.c === k).map(itemHTML).join("")}</div></section>`).join("");
+    body.innerHTML = `<p class="small unit-legend"><span><i class="dot"></i>New</span><span><i class="dot later"></i>Learning</span><span><i class="dot due"></i>Due</span><span><i class="dot known"></i>Known</span><span><span class="art f">la</span> feminine · <span class="art m">il</span> masculine</span></p>` + cats.map(k => `<section class="item-group"><h2 class="group-label">${esc(u.cats[k])}</h2><div class="panel flush cols">${words.filter(id => D.items[id].d.c === k).map(itemHTML).join("")}</div></section>`).join("");
   } else if (v.tab === "verbs") {
     body.innerHTML = `<div class="panel flush cols">${ids.filter(id => D.items[id].type === "v").map(verbHTML).join("")}</div>`;
   } else if (v.tab === "phrases") {

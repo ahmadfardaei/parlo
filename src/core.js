@@ -100,6 +100,14 @@ export function speakAll(lines, onProgress, onDone, scale = 1, gap = null) {
 }
 export function stopSpeaking() { speakQueueToken++; stopAudio(); }
 
+/* ---------- Italian text is marked as Italian, so screen readers pronounce it right ---------- */
+const IT_SEL = ".it, .it-text, .ex-it, .s-it, .sent";
+let markQueued = false;
+new MutationObserver(() => {
+  if (markQueued) return; markQueued = true;
+  queueMicrotask(() => { markQueued = false; document.querySelectorAll(IT_SEL).forEach(el => { if (el.lang !== "it") el.lang = "it"; }); });
+}).observe(document.documentElement, { childList: true, subtree: true });
+
 /* ---------- Toast & sheet ---------- */
 export function showToast(text, actionLabel, action, ms = 4500) {
   const root = $("#toast-root");
@@ -117,6 +125,9 @@ export function openSheet(html, onMount) {
   el.id = "sheet";
   el.innerHTML = `<div class="sheet-backdrop" data-sheet-close></div><div class="sheet-panel" role="dialog" aria-modal="true"><button class="sheet-x icon-btn" data-sheet-close aria-label="Close">${ICON.close}</button>${html}</div>`;
   document.body.appendChild(el);
+  // Name the dialog after its title, for screen readers.
+  const title = el.querySelector(".sheet-panel .s-it, .sheet-panel h2, .sheet-panel .eyebrow");
+  if (title) { title.id = title.id || "sheet-title"; el.querySelector(".sheet-panel").setAttribute("aria-labelledby", title.id); }
   requestAnimationFrame(() => el.classList.add("open"));
   const first = el.querySelector(".sheet-panel button:not(.sheet-x), .sheet-panel a, .sheet-panel input"); (first || el.querySelector(".sheet-x")).focus({ preventScroll: true });
   onMount && onMount(el);
@@ -425,7 +436,7 @@ export function pickEx(text, alt) {
 /* ---------- Study time ---------- */
 // Time is counted in 15-second ticks, only while the app is visible and the learner has interacted in the last 90 s.
 // Each device writes its own record per day ("t:2026-10-26:abc123"), so devices never overwrite each other.
-export const ACT_CATS = { vocab: "Vocabulary", grammar: "Grammar", reading: "Reading", listening: "Listening", writing: "Writing", speaking: "Speaking", review: "Review & deck" };
+export const ACT_CATS = { vocab: "Vocabolario", grammar: "Grammatica", reading: "Lettura", listening: "Ascolto", writing: "Scrittura", speaking: "Parlato", review: "Ripasso e mazzo" };
 const DEVICE = lsGet("parlo.device", null) || (() => { const d = Math.random().toString(36).slice(2, 8); lsSet("parlo.device", d); return d; })();
 let lastInput = Date.now(), lastTimeSync = 0;
 ["pointerdown", "keydown", "wheel", "touchstart", "input"].forEach(ev => addEventListener(ev, () => { lastInput = Date.now(); }, { passive: true, capture: true }));
