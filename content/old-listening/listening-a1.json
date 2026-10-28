@@ -1,0 +1,703 @@
+[
+  {
+    "id": "l-a1-01",
+    "level": "A1",
+    "title": "Un messaggio da Chiara",
+    "en": "A message from Chiara",
+    "topic": "people",
+    "genre": "voicemail",
+    "minutes": 1,
+    "situation": "Sofia lives in Trieste. Her friend Chiara calls her and leaves a message on her voicemail.",
+    "speakers": { "Chiara": "f2" },
+    "body": [
+      { "who": "Chiara", "s": [
+        { "it": "Ciao Sofia, sono Chiara!", "en": "Hi Sofia, it's Chiara!" },
+        { "it": "Ti chiamo, ma tu non rispondi mai.", "en": "I'm calling you, but you never answer." },
+        { "it": "Allora, ho il biglietto per Trieste.", "en": "So, I've got the ticket to Trieste." },
+        { "it": "Arrivo sabato mattina, non venerdì.", "en": "I'm arriving on Saturday morning, not Friday." },
+        { "it": "Il treno arriva alle dieci e quaranta.", "en": "The train gets in at ten forty." },
+        { "it": "Sì, dieci e quaranta, non dieci e quattordici come ho scritto ieri.", "en": "Yes, ten forty, not ten fourteen like I wrote yesterday." },
+        { "it": "Ho sbagliato, scusa!", "en": "My mistake, sorry!" },
+        { "it": "Senti, a Trieste c'è la bora questa settimana?", "en": "Listen, is the bora blowing in Trieste this week?" },
+        { "it": "Mia madre dice di sì, e dice di portare una giacca pesante.", "en": "My mum says yes, and she says to bring a heavy jacket." },
+        { "it": "Io porto anche il cappello di lana, quello verde e brutto.", "en": "I'm bringing my wool hat too, the ugly green one." },
+        { "it": "Per pranzo andiamo in un buffet, va bene?", "en": "Let's go to a buffet for lunch, OK?" },
+        { "it": "Voglio mangiare la porzina con la senape e il kren.", "en": "I want to eat porzina with mustard and horseradish." },
+        { "it": "Offro io, perché tu mi ospiti per tre notti.", "en": "It's on me, because you're putting me up for three nights." },
+        { "it": "Ah, un'altra cosa importante.", "en": "Oh, one more important thing." },
+        { "it": "Il mio telefono ha la batteria quasi morta e ho perso il caricabatterie.", "en": "My phone battery is almost dead and I've lost my charger." },
+        { "it": "Se non rispondo, chiama mio fratello Davide.", "en": "If I don't answer, call my brother Davide." },
+        { "it": "Il suo numero è tre quattro sette, cinque zero due, nove otto uno.", "en": "His number is three four seven, five zero two, nine eight one." },
+        { "it": "Lui sa tutto: l'orario, il treno, tutto.", "en": "He knows everything: the time, the train, everything." },
+        { "it": "Va be', ci vediamo sabato al binario, mi raccomando!", "en": "Right, see you on Saturday at the platform, don't forget!" },
+        { "it": "Ciao, un bacio, e saluta il gatto!", "en": "Bye, love you, and say hi to the cat!" }
+      ]}
+    ],
+    "questions": [
+      { "q": "Perché chiama Chiara?", "o": ["Per dire quando arriva a Trieste", "Per cancellare il viaggio", "Per invitare Sofia a pranzo a casa sua"], "a": "Per dire quando arriva a Trieste" },
+      { "q": "Quando arriva Chiara?", "o": ["Sabato mattina", "Venerdì mattina", "Sabato sera"], "a": "Sabato mattina" },
+      { "q": "A che ora arriva il treno?", "o": ["Alle 10:40", "Alle 10:14", "Alle 10:04"], "a": "Alle 10:40" },
+      { "q": "Chi paga il pranzo?", "o": ["Chiara", "Sofia", "Davide"], "a": "Chiara" },
+      { "q": "Quante notti resta Chiara da Sofia?", "o": ["Tre", "Due", "Quattro"], "a": "Tre" },
+      { "q": "Quando deve chiamare Davide, Sofia?", "o": ["Se Chiara non risponde", "Se il treno è in ritardo", "Se c'è la bora"], "a": "Se Chiara non risponde" }
+    ]
+  },
+  {
+    "id": "l-a1-02",
+    "level": "A1",
+    "title": "Il solito, signora?",
+    "en": "The usual, signora?",
+    "topic": "daily",
+    "genre": "conversation at a bar counter",
+    "minutes": 1,
+    "situation": "Half past seven in the morning, a bar in Lecce. Rosaria comes in for breakfast, like every day.",
+    "speakers": { "Salvatore": "m2", "Rosaria": "f" },
+    "body": [
+      { "who": "Salvatore", "s": [
+        { "it": "Buongiorno, signora Rosaria! Il solito?", "en": "Good morning, Signora Rosaria! The usual?" }
+      ]},
+      { "who": "Rosaria", "s": [
+        { "it": "Buongiorno, Salvatore.", "en": "Good morning, Salvatore." },
+        { "it": "Sì, un cappuccino e un pasticciotto, grazie.", "en": "Yes, a cappuccino and a pasticciotto, thanks." }
+      ]},
+      { "who": "Salvatore", "s": [
+        { "it": "Il cappuccino sì. Il pasticciotto, eh, no.", "en": "The cappuccino, yes. The pasticciotto, well, no." },
+        { "it": "Mi dispiace, sono finiti.", "en": "I'm sorry, they're all gone." }
+      ]},
+      { "who": "Rosaria", "s": [
+        { "it": "Finiti? Alle sette e mezza?", "en": "Gone? At half past seven?" }
+      ]},
+      { "who": "Salvatore", "s": [
+        { "it": "Un signore tedesco ha preso gli ultimi sei.", "en": "A German man took the last six." },
+        { "it": "Per il viaggio, dice.", "en": "For the journey, he says." }
+      ]},
+      { "who": "Rosaria", "s": [
+        { "it": "Sei pasticciotti per il viaggio!", "en": "Six pasticciotti for the journey!" },
+        { "it": "Ma dove va, in Germania a piedi?", "en": "Where's he going, to Germany on foot?" }
+      ]},
+      { "who": "Salvatore", "s": [
+        { "it": "Boh. Abbiamo i cornetti alla crema, o un rustico caldo.", "en": "No idea. We've got custard croissants, or a hot rustico." }
+      ]},
+      { "who": "Rosaria", "s": [
+        { "it": "Un rustico a colazione? No, grazie.", "en": "A rustico for breakfast? No, thanks." },
+        { "it": "Allora oggi niente cappuccino.", "en": "Then no cappuccino today." },
+        { "it": "Prendo un caffè in ghiaccio con latte di mandorla.", "en": "I'll have an iced coffee with almond milk." }
+      ]},
+      { "who": "Salvatore", "s": [
+        { "it": "A fine ottobre?", "en": "At the end of October?" }
+      ]},
+      { "who": "Rosaria", "s": [
+        { "it": "Sì, a fine ottobre. Sono di Lecce, il caffè in ghiaccio è per tutto l'anno.", "en": "Yes, at the end of October. I'm from Lecce, iced coffee is for all year round." }
+      ]},
+      { "who": "Salvatore", "s": [
+        { "it": "Va bene. E da mangiare?", "en": "Fine. And to eat?" }
+      ]},
+      { "who": "Rosaria", "s": [
+        { "it": "Un cornetto alla crema, dai.", "en": "A custard croissant, go on." }
+      ]},
+      { "who": "Salvatore", "s": [
+        { "it": "Allora, caffè un euro e cinquanta, cornetto un euro e venti.", "en": "So, coffee one fifty, croissant one twenty." },
+        { "it": "Sono due euro e settanta.", "en": "That's two seventy." }
+      ]},
+      { "who": "Rosaria", "s": [
+        { "it": "Ecco... oh no.", "en": "Here you... oh no." },
+        { "it": "Il portafoglio è a casa, sul tavolo della cucina.", "en": "My wallet is at home, on the kitchen table." }
+      ]},
+      { "who": "Salvatore", "s": [
+        { "it": "Tranquilla, signora. Paga domani.", "en": "Don't worry, signora. Pay tomorrow." }
+      ]},
+      { "who": "Rosaria", "s": [
+        { "it": "Grazie, Salvatore.", "en": "Thank you, Salvatore." },
+        { "it": "E domani un pasticciotto per me, mi raccomando!", "en": "And tomorrow keep a pasticciotto for me, don't forget!" }
+      ]},
+      { "who": "Salvatore", "s": [
+        { "it": "Ci provo. Ma il signore tedesco torna domani alle sette.", "en": "I'll try. But the German man is coming back tomorrow at seven." }
+      ]}
+    ],
+    "questions": [
+      { "q": "Che problema c'è oggi per Rosaria?", "o": ["Non ci sono pasticciotti", "Non c'è il cappuccino", "Il bar è chiuso"], "a": "Non ci sono pasticciotti" },
+      { "q": "Che cosa prende di solito Rosaria?", "o": ["Un cappuccino e un pasticciotto", "Un caffè in ghiaccio e un cornetto", "Un caffè e un rustico"], "a": "Un cappuccino e un pasticciotto" },
+      { "q": "Perché non ci sono pasticciotti?", "o": ["Un signore tedesco ha preso gli ultimi sei", "Il bar apre alle sette e mezza", "Salvatore non fa i pasticciotti il lunedì"], "a": "Un signore tedesco ha preso gli ultimi sei" },
+      { "q": "Che cosa beve Rosaria oggi?", "o": ["Un caffè in ghiaccio con latte di mandorla", "Un cappuccino", "Un latte di mandorla caldo"], "a": "Un caffè in ghiaccio con latte di mandorla" },
+      { "q": "Quanto costa la colazione?", "o": ["Due euro e settanta", "Un euro e cinquanta", "Un euro e venti"], "a": "Due euro e settanta" },
+      { "q": "Perché Rosaria paga domani?", "o": ["Il portafoglio è a casa", "Salvatore non ha il resto", "Il signore tedesco paga per lei"], "a": "Il portafoglio è a casa" }
+    ]
+  },
+  {
+    "id": "l-a1-03",
+    "level": "A1",
+    "title": "Annunci alla stazione di Verona",
+    "en": "Announcements at Verona station",
+    "topic": "places",
+    "genre": "station announcement",
+    "minutes": 1,
+    "situation": "You are waiting at Verona Porta Nuova railway station on a busy afternoon. A series of announcements comes over the loudspeakers.",
+    "speakers": { "Annunciatore": "m" },
+    "body": [
+      { "who": "Annunciatore", "s": [
+        { "it": "Attenzione, prego.", "en": "Your attention, please." },
+        { "it": "Il Frecciarossa per Venezia Santa Lucia delle ore quattordici e ventidue oggi parte dal binario cinque.", "en": "The Frecciarossa to Venezia Santa Lucia, scheduled at 14:22, departs today from platform five." },
+        { "it": "Ripetiamo: binario cinque, non binario tre.", "en": "We repeat: platform five, not platform three." },
+        { "it": "Il treno ferma a Vicenza e a Padova.", "en": "The train calls at Vicenza and Padua." }
+      ]},
+      { "who": "Annunciatore", "s": [
+        { "it": "Attenzione, prego.", "en": "Your attention, please." },
+        { "it": "Il treno regionale per Bolzano delle ore quattordici e trenta è in ritardo di venticinque minuti.", "en": "The regional train to Bolzano, scheduled at 14:30, is running twenty-five minutes late." },
+        { "it": "Il treno parte dal binario due alle quattordici e cinquantacinque.", "en": "The train will depart from platform two at 14:55." },
+        { "it": "Ci scusiamo per il disagio.", "en": "We apologise for the inconvenience." }
+      ]},
+      { "who": "Annunciatore", "s": [
+        { "it": "Avviso per i viaggiatori diretti al Brennero.", "en": "Notice for passengers travelling to Brennero." },
+        { "it": "Oggi il treno arriva solo fino a Bolzano.", "en": "Today the train only goes as far as Bolzano." },
+        { "it": "Da Bolzano al Brennero c'è un autobus.", "en": "From Bolzano to Brennero there is a bus." },
+        { "it": "L'autobus parte dalla piazza davanti alla stazione di Bolzano.", "en": "The bus leaves from the square in front of Bolzano station." },
+        { "it": "Il biglietto del treno è valido anche sull'autobus.", "en": "Train tickets are also valid on the bus." }
+      ]},
+      { "who": "Annunciatore", "s": [
+        { "it": "Attenzione, prego.", "en": "Your attention, please." },
+        { "it": "Nella sala d'attesa abbiamo trovato un cane piccolo e bianco, con un cappottino rosso.", "en": "In the waiting room we have found a small white dog in a little red coat." },
+        { "it": "Il cane si chiama Biscotto.", "en": "The dog's name is Biscotto." },
+        { "it": "Biscotto aspetta la sua famiglia all'ufficio informazioni, vicino al binario uno.", "en": "Biscotto is waiting for his family at the information office, next to platform one." },
+        { "it": "Ripetiamo: il cane Biscotto è all'ufficio informazioni.", "en": "We repeat: Biscotto the dog is at the information office." },
+        { "it": "Non è molto contento.", "en": "He is not very happy." },
+        { "it": "Grazie e buon viaggio.", "en": "Thank you, and have a good journey." }
+      ]}
+    ],
+    "questions": [
+      { "q": "Che cosa dicono gli annunci?", "o": ["Ci sono dei cambi per alcuni treni", "Tutti i treni sono cancellati", "La stazione chiude presto oggi"], "a": "Ci sono dei cambi per alcuni treni" },
+      { "q": "Da quale binario parte il treno per Venezia?", "o": ["Dal binario cinque", "Dal binario tre", "Dal binario due"], "a": "Dal binario cinque" },
+      { "q": "Quanti minuti di ritardo ha il treno per Bolzano?", "o": ["Venticinque", "Trenta", "Cinquantacinque"], "a": "Venticinque" },
+      { "q": "Come vanno al Brennero i viaggiatori, da Bolzano?", "o": ["In autobus", "In treno", "In taxi"], "a": "In autobus" },
+      { "q": "Il biglietto del treno...", "o": ["è valido anche sull'autobus", "non è valido sull'autobus", "costa di più oggi"], "a": "è valido anche sull'autobus" },
+      { "q": "Dove aspetta il cane Biscotto?", "o": ["All'ufficio informazioni", "Nella sala d'attesa", "Al binario cinque"], "a": "All'ufficio informazioni" }
+    ]
+  },
+  {
+    "id": "l-a1-04",
+    "level": "A1",
+    "title": "Scusi, per Piazza Vecchia?",
+    "en": "Excuse me, which way to Piazza Vecchia?",
+    "topic": "language",
+    "genre": "asking for directions",
+    "minutes": 1,
+    "situation": "Tom, a tourist with a little Italian, is in the lower town of Bergamo. He stops an older woman in the street to ask the way.",
+    "speakers": { "Tom": "m", "Signora Pina": "f2" },
+    "body": [
+      { "who": "Tom", "s": [
+        { "it": "Scusi, signora. Parla inglese?", "en": "Excuse me, madam. Do you speak English?" }
+      ]},
+      { "who": "Signora Pina", "s": [
+        { "it": "No, mi dispiace. Solo italiano e bergamasco!", "en": "No, I'm sorry. Only Italian and Bergamo dialect!" }
+      ]},
+      { "who": "Tom", "s": [
+        { "it": "Va bene. Io parlo un po' di italiano.", "en": "That's fine. I speak a bit of Italian." },
+        { "it": "Piano, per favore.", "en": "Slowly, please." }
+      ]},
+      { "who": "Signora Pina", "s": [
+        { "it": "Certo. Dove deve andare?", "en": "Of course. Where do you need to go?" }
+      ]},
+      { "who": "Tom", "s": [
+        { "it": "Cerco Piazza Vecchia. È in Città... Città Alta?", "en": "I'm looking for Piazza Vecchia. It's in the Upper... the Upper Town?" }
+      ]},
+      { "who": "Signora Pina", "s": [
+        { "it": "Sì, è su, in Città Alta. Adesso lei è in Città Bassa.", "en": "Yes, it's up there, in the Upper Town. Right now you're in the Lower Town." }
+      ]},
+      { "who": "Tom", "s": [
+        { "it": "Ah. Come si dice... il treno piccolo che va su?", "en": "Ah. How do you say... the little train that goes up?" }
+      ]},
+      { "who": "Signora Pina", "s": [
+        { "it": "La funicolare!", "en": "The funicular!" },
+        { "it": "Allora, vada dritto per questa strada, viale Vittorio Emanuele.", "en": "So, go straight along this road, Viale Vittorio Emanuele." },
+        { "it": "Dopo cinque minuti, la funicolare è a destra.", "en": "After five minutes, the funicular is on the right." }
+      ]},
+      { "who": "Tom", "s": [
+        { "it": "Scusi, può ripetere? Dritto e poi...?", "en": "Sorry, can you repeat that? Straight on and then...?" }
+      ]},
+      { "who": "Signora Pina", "s": [
+        { "it": "Dritto, dritto, dritto. Poi a destra.", "en": "Straight, straight, straight. Then right." },
+        { "it": "Il biglietto costa un euro e settanta.", "en": "The ticket costs one euro seventy." }
+      ]},
+      { "who": "Tom", "s": [
+        { "it": "E a piedi? Io cammino molto.", "en": "And on foot? I walk a lot." }
+      ]},
+      { "who": "Signora Pina", "s": [
+        { "it": "A piedi? Eh, sono trenta minuti, e la strada sale sempre.", "en": "On foot? Well, it's thirty minutes, and the road goes uphill the whole way." }
+      ]},
+      { "who": "Tom", "s": [
+        { "it": "Trenta minuti... Va bene, prendo la funicolare.", "en": "Thirty minutes... OK, I'll take the funicular." }
+      ]},
+      { "who": "Signora Pina", "s": [
+        { "it": "Bravo. E in Città Alta mangi la polenta e osei.", "en": "Good. And in the Upper Town, eat polenta e osei." }
+      ]},
+      { "who": "Tom", "s": [
+        { "it": "Polenta? Come dolce?", "en": "Polenta? As a dessert?" }
+      ]},
+      { "who": "Signora Pina", "s": [
+        { "it": "Sì, è un dolce giallo con piccoli uccelli di cioccolato.", "en": "Yes, it's a yellow cake with little chocolate birds." },
+        { "it": "Non è polenta vera.", "en": "It isn't real polenta." }
+      ]},
+      { "who": "Tom", "s": [
+        { "it": "E osei, come si scrive?", "en": "And osei, how do you spell it?" }
+      ]},
+      { "who": "Signora Pina", "s": [
+        { "it": "O, esse, e, i. Osei. In bergamasco vuol dire uccelli.", "en": "O, S, E, I. Osei. In Bergamo dialect it means birds." }
+      ]},
+      { "who": "Tom", "s": [
+        { "it": "Grazie mille, signora!", "en": "Thank you so much, madam!" }
+      ]},
+      { "who": "Signora Pina", "s": [
+        { "it": "Prego. E piano piano, eh!", "en": "You're welcome. And take it slowly, eh!" }
+      ]}
+    ],
+    "questions": [
+      { "q": "Come va Tom in Città Alta, alla fine?", "o": ["Con la funicolare", "A piedi", "In autobus"], "a": "Con la funicolare" },
+      { "q": "Che lingue parla la signora Pina?", "o": ["Italiano e bergamasco", "Italiano e inglese", "Solo bergamasco"], "a": "Italiano e bergamasco" },
+      { "q": "Dov'è la funicolare?", "o": ["Dritto e poi a destra", "Dritto e poi a sinistra", "Dietro Piazza Vecchia"], "a": "Dritto e poi a destra" },
+      { "q": "Quanto costa il biglietto della funicolare?", "o": ["Un euro e settanta", "Un euro e cinquanta", "Tre euro"], "a": "Un euro e settanta" },
+      { "q": "Quanto tempo ci vuole a piedi?", "o": ["Trenta minuti", "Cinque minuti", "Tredici minuti"], "a": "Trenta minuti" },
+      { "q": "Che cos'è la polenta e osei?", "o": ["Un dolce", "Un piatto di polenta e carne", "Un uccello di Bergamo"], "a": "Un dolce" }
+    ]
+  },
+  {
+    "id": "l-a1-05",
+    "level": "A1",
+    "title": "Un tavolo dopo l'opera",
+    "en": "A table after the opera",
+    "topic": "leisure",
+    "genre": "booking a table by phone",
+    "minutes": 1,
+    "situation": "Giada phones a trattoria in Parma. She wants a table for Saturday night, but there is a small problem with the time.",
+    "speakers": { "Ettore": "m2", "Giada": "f" },
+    "body": [
+      { "who": "Ettore", "s": [
+        { "it": "Trattoria del Borgo, buonasera.", "en": "Trattoria del Borgo, good evening." }
+      ]},
+      { "who": "Giada", "s": [
+        { "it": "Buonasera. Vorrei prenotare un tavolo per sabato sera.", "en": "Good evening. I'd like to book a table for Saturday evening." }
+      ]},
+      { "who": "Ettore", "s": [
+        { "it": "Sì. Per quante persone?", "en": "Yes. For how many people?" }
+      ]},
+      { "who": "Giada", "s": [
+        { "it": "Siamo in sei. Anzi no, sette: viene anche mia suocera.", "en": "There are six of us. No, actually, seven: my mother-in-law is coming too." }
+      ]},
+      { "who": "Ettore", "s": [
+        { "it": "Sette persone, va bene. A che ora?", "en": "Seven people, fine. What time?" }
+      ]},
+      { "who": "Giada", "s": [
+        { "it": "Allora, questo è il problema.", "en": "Well, that's the problem." },
+        { "it": "Andiamo all'opera al Teatro Regio, e l'opera finisce alle undici meno un quarto.", "en": "We're going to the opera at the Teatro Regio, and it finishes at a quarter to eleven." }
+      ]},
+      { "who": "Ettore", "s": [
+        { "it": "Eh, signora, la cucina chiude alle undici.", "en": "Ah, signora, the kitchen closes at eleven." }
+      ]},
+      { "who": "Giada", "s": [
+        { "it": "Lo so, lo so. Ma il teatro è a cinque minuti da voi.", "en": "I know, I know. But the theatre is five minutes from you." }
+      ]},
+      { "who": "Ettore", "s": [
+        { "it": "Va be'. Facciamo alle undici. Ma ordinate subito, mi raccomando.", "en": "All right. Let's say eleven. But order straight away, please." }
+      ]},
+      { "who": "Giada", "s": [
+        { "it": "Perfetto! Possiamo ordinare adesso, al telefono?", "en": "Perfect! Can we order now, on the phone?" }
+      ]},
+      { "who": "Ettore", "s": [
+        { "it": "Al telefono? Ma sì, perché no. Dica.", "en": "On the phone? Well, why not. Go ahead." }
+      ]},
+      { "who": "Giada", "s": [
+        { "it": "Tre anolini in brodo e due tortelli d'erbetta.", "en": "Three anolini in broth and two tortelli with greens." }
+      ]},
+      { "who": "Ettore", "s": [
+        { "it": "E gli altri due?", "en": "And the other two?" }
+      ]},
+      { "who": "Giada", "s": [
+        { "it": "Mio marito prende la torta fritta con i salumi.", "en": "My husband will have torta fritta with cured meats." },
+        { "it": "Mia suocera dice sempre che non ha fame, ma poi prende un dolce.", "en": "My mother-in-law always says she isn't hungry, but then she has a dessert." }
+      ]},
+      { "who": "Ettore", "s": [
+        { "it": "Allora una zuppa inglese per la signora. A che nome?", "en": "So, a zuppa inglese for the lady. What name is it?" }
+      ]},
+      { "who": "Giada", "s": [
+        { "it": "Ferrari. Giada Ferrari.", "en": "Ferrari. Giada Ferrari." }
+      ]},
+      { "who": "Ettore", "s": [
+        { "it": "Ferrari, come le macchine?", "en": "Ferrari, like the cars?" }
+      ]},
+      { "who": "Giada", "s": [
+        { "it": "Sì, ma io ho una Panda.", "en": "Yes, but I drive a Panda." }
+      ]},
+      { "who": "Ettore", "s": [
+        { "it": "Benissimo, signora Ferrari. Sabato alle undici, sette persone.", "en": "Very good, Signora Ferrari. Saturday at eleven, seven people." },
+        { "it": "E all'opera, niente bis, eh!", "en": "And at the opera, no encores, eh!" }
+      ]}
+    ],
+    "questions": [
+      { "q": "Che cosa decidono, alla fine?", "o": ["Arrivano alle undici e ordinano subito al telefono", "Arrivano alle otto, prima dell'opera", "Vanno in un'altra trattoria"], "a": "Arrivano alle undici e ordinano subito al telefono" },
+      { "q": "Quante persone vanno alla trattoria?", "o": ["Sette", "Sei", "Undici"], "a": "Sette" },
+      { "q": "Perché arrivano tardi?", "o": ["Vanno all'opera", "Lavorano fino alle undici", "La suocera arriva tardi"], "a": "Vanno all'opera" },
+      { "q": "A che ora chiude la cucina?", "o": ["Alle undici", "Alle undici meno un quarto", "A mezzanotte"], "a": "Alle undici" },
+      { "q": "Che cosa mangia il marito di Giada?", "o": ["La torta fritta con i salumi", "Gli anolini in brodo", "I tortelli d'erbetta"], "a": "La torta fritta con i salumi" },
+      { "q": "Che macchina ha Giada?", "o": ["Una Panda", "Una Ferrari", "Non ha la macchina"], "a": "Una Panda" }
+    ]
+  },
+  {
+    "id": "l-a1-06",
+    "level": "A1",
+    "title": "Al banco di Efisio",
+    "en": "At Efisio's stall",
+    "topic": "food",
+    "genre": "market stall conversation",
+    "minutes": 1,
+    "situation": "Saturday morning at the San Benedetto market in Cagliari. Signora Lai buys fruit and vegetables from Efisio and his wife Bonaria.",
+    "speakers": { "Efisio": "m", "Signora Lai": "f2", "Bonaria": "f" },
+    "body": [
+      { "who": "Efisio", "s": [
+        { "it": "Signora Lai, buongiorno! Cosa le do oggi?", "en": "Signora Lai, good morning! What can I get you today?" }
+      ]},
+      { "who": "Signora Lai", "s": [
+        { "it": "Buongiorno, Efisio. Allora, un chilo di pomodori per il sugo.", "en": "Good morning, Efisio. So, a kilo of tomatoes for sauce." }
+      ]},
+      { "who": "Efisio", "s": [
+        { "it": "Questi sono buoni, vengono da Pula. Due euro al chilo.", "en": "These are good ones, they come from Pula. Two euros a kilo." }
+      ]},
+      { "who": "Signora Lai", "s": [
+        { "it": "Va bene. E i carciofi? Ci sono già?", "en": "Fine. And artichokes? Are they in yet?" }
+      ]},
+      { "who": "Efisio", "s": [
+        { "it": "Sì, sono i primi carciofi spinosi. Attenta, pungono!", "en": "Yes, they're the first spiny artichokes. Careful, they prick!" }
+      ]},
+      { "who": "Signora Lai", "s": [
+        { "it": "Quanto costano?", "en": "How much are they?" }
+      ]},
+      { "who": "Efisio", "s": [
+        { "it": "Un euro l'uno.", "en": "A euro each." }
+      ]},
+      { "who": "Signora Lai", "s": [
+        { "it": "Un euro? Sono cari. Ne prendo quattro.", "en": "A euro? That's expensive. I'll take four." },
+        { "it": "E mezzo chilo di fichi d'India per mio nipote. Li adora.", "en": "And half a kilo of prickly pears for my grandson. He loves them." }
+      ]},
+      { "who": "Efisio", "s": [
+        { "it": "Fichi d'India, mezzo chilo, un euro e cinquanta.", "en": "Prickly pears, half a kilo, one fifty." },
+        { "it": "Allora: pomodori due euro, carciofi quattro, fichi uno e cinquanta.", "en": "So: tomatoes two euros, artichokes four, prickly pears one fifty." },
+        { "it": "Sono nove euro e cinquanta.", "en": "That's nine fifty." }
+      ]},
+      { "who": "Bonaria", "s": [
+        { "it": "Efisio! Ma che conti fai?", "en": "Efisio! What kind of maths is that?" },
+        { "it": "Sono sette euro e cinquanta, signora.", "en": "It's seven fifty, signora." }
+      ]},
+      { "who": "Efisio", "s": [
+        { "it": "Ah, sì. Scusi, signora. Stanotte ho dormito poco.", "en": "Ah, yes. Sorry, signora. I didn't sleep much last night." }
+      ]},
+      { "who": "Bonaria", "s": [
+        { "it": "Ha guardato la partita del Cagliari fino a mezzanotte.", "en": "He watched the Cagliari match until midnight." }
+      ]},
+      { "who": "Signora Lai", "s": [
+        { "it": "E come è finita?", "en": "And how did it end?" }
+      ]},
+      { "who": "Efisio", "s": [
+        { "it": "Tre a zero per loro. Non parliamo di questo, per favore.", "en": "Three nil to them. Let's not talk about it, please." }
+      ]},
+      { "who": "Signora Lai", "s": [
+        { "it": "Ecco dieci euro.", "en": "Here's ten euros." }
+      ]},
+      { "who": "Bonaria", "s": [
+        { "it": "E due euro e cinquanta di resto.", "en": "And two fifty change." },
+        { "it": "Le metto anche un po' di prezzemolo, gratis.", "en": "I'll put in some parsley too, free." }
+      ]},
+      { "who": "Signora Lai", "s": [
+        { "it": "Grazie, Bonaria. Ci vediamo sabato prossimo.", "en": "Thanks, Bonaria. See you next Saturday." }
+      ]}
+    ],
+    "questions": [
+      { "q": "Che problema c'è quando la signora Lai paga?", "o": ["Efisio sbaglia il conto", "La signora non ha soldi", "I carciofi sono finiti"], "a": "Efisio sbaglia il conto" },
+      { "q": "Per che cosa sono i pomodori?", "o": ["Per il sugo", "Per l'insalata", "Per il nipote"], "a": "Per il sugo" },
+      { "q": "Quanti carciofi prende la signora Lai?", "o": ["Quattro", "Uno", "Due"], "a": "Quattro" },
+      { "q": "Per chi sono i fichi d'India?", "o": ["Per il nipote", "Per Bonaria", "Per Efisio"], "a": "Per il nipote" },
+      { "q": "Quanto paga la signora Lai, alla fine?", "o": ["Sette euro e cinquanta", "Nove euro e cinquanta", "Dieci euro"], "a": "Sette euro e cinquanta" },
+      { "q": "Perché Efisio ha dormito poco?", "o": ["Ha guardato la partita", "Ha lavorato tutta la notte", "Il nipote ha pianto"], "a": "Ha guardato la partita" }
+    ]
+  },
+  {
+    "id": "l-a1-07",
+    "level": "A1",
+    "title": "Troppo cioccolato",
+    "en": "Too much chocolate",
+    "topic": "feelings",
+    "genre": "pharmacy visit",
+    "minutes": 1,
+    "situation": "It's October in Perugia, during the big chocolate festival. Luca walks into a pharmacy in the city centre and doesn't feel well.",
+    "speakers": { "Farmacista": "f", "Luca": "m2" },
+    "body": [
+      { "who": "Farmacista", "s": [
+        { "it": "Buongiorno, mi dica.", "en": "Good morning, how can I help?" }
+      ]},
+      { "who": "Luca", "s": [
+        { "it": "Buongiorno. Ho mal di pancia da ieri sera.", "en": "Good morning. I've had a stomach ache since last night." }
+      ]},
+      { "who": "Farmacista", "s": [
+        { "it": "Ha la febbre?", "en": "Do you have a temperature?" }
+      ]},
+      { "who": "Luca", "s": [
+        { "it": "No, niente febbre. Solo mal di pancia, e un po' di mal di testa.", "en": "No, no temperature. Just a stomach ache, and a bit of a headache." }
+      ]},
+      { "who": "Farmacista", "s": [
+        { "it": "Che cosa ha mangiato ieri?", "en": "What did you eat yesterday?" }
+      ]},
+      { "who": "Luca", "s": [
+        { "it": "Eh... sono andato all'Eurochocolate.", "en": "Well... I went to Eurochocolate." }
+      ]},
+      { "who": "Farmacista", "s": [
+        { "it": "Ah. Ho capito. Quanto cioccolato ha mangiato?", "en": "Ah. I see. How much chocolate did you eat?" }
+      ]},
+      { "who": "Luca", "s": [
+        { "it": "Non lo so. Molto.", "en": "I don't know. A lot." },
+        { "it": "Ho assaggiato tutto: fondente, al latte, al peperoncino...", "en": "I tried everything: dark, milk, chilli..." }
+      ]},
+      { "who": "Farmacista", "s": [
+        { "it": "Anche al peperoncino!", "en": "Chilli as well!" },
+        { "it": "Allora, oggi niente cioccolato, niente caffè e niente vino.", "en": "Right, today no chocolate, no coffee and no wine." }
+      ]},
+      { "who": "Luca", "s": [
+        { "it": "Niente caffè? Ma io sono di Napoli!", "en": "No coffee? But I'm from Naples!" }
+      ]},
+      { "who": "Farmacista", "s": [
+        { "it": "Solo per due giorni.", "en": "Only for two days." },
+        { "it": "Beva molta acqua e mangi riso in bianco.", "en": "Drink lots of water and eat plain rice." },
+        { "it": "E prenda queste compresse: una dopo pranzo e una dopo cena.", "en": "And take these tablets: one after lunch and one after dinner." }
+      ]},
+      { "who": "Luca", "s": [
+        { "it": "Per quanti giorni?", "en": "For how many days?" }
+      ]},
+      { "who": "Farmacista", "s": [
+        { "it": "Per tre giorni. Se non passa, va dal medico.", "en": "For three days. If it doesn't go away, see a doctor." }
+      ]},
+      { "who": "Luca", "s": [
+        { "it": "Quanto costano?", "en": "How much are they?" }
+      ]},
+      { "who": "Farmacista", "s": [
+        { "it": "Otto euro e novanta.", "en": "Eight ninety." }
+      ]},
+      { "who": "Luca", "s": [
+        { "it": "Ecco. E per il mal di testa?", "en": "Here you are. And for the headache?" }
+      ]},
+      { "who": "Farmacista", "s": [
+        { "it": "Per il mal di testa, dormire. Ha dormito stanotte?", "en": "For the headache, sleep. Did you sleep last night?" }
+      ]},
+      { "who": "Luca", "s": [
+        { "it": "Poco. Ho sognato una montagna di cioccolato.", "en": "Not much. I dreamed about a mountain of chocolate." }
+      ]},
+      { "who": "Farmacista", "s": [
+        { "it": "Allora stasera a letto presto.", "en": "Then early to bed tonight." },
+        { "it": "E domani non torni alla festa, eh!", "en": "And don't go back to the festival tomorrow, eh!" }
+      ]}
+    ],
+    "questions": [
+      { "q": "Che cosa dice la farmacista a Luca?", "o": ["Niente cioccolato, caffè e vino per due giorni", "Deve andare subito dal medico", "Può mangiare solo cioccolato fondente"], "a": "Niente cioccolato, caffè e vino per due giorni" },
+      { "q": "Che problema ha Luca?", "o": ["Mal di pancia", "La febbre", "Mal di denti"], "a": "Mal di pancia" },
+      { "q": "Per quanti giorni prende le compresse?", "o": ["Tre", "Due", "Otto"], "a": "Tre" },
+      { "q": "Che cosa deve bere Luca?", "o": ["Molta acqua", "Un caffè", "Un po' di vino"], "a": "Molta acqua" },
+      { "q": "Quando prende le compresse?", "o": ["Dopo pranzo e dopo cena", "La mattina e la sera", "Prima di dormire"], "a": "Dopo pranzo e dopo cena" },
+      { "q": "Quanto costano le compresse?", "o": ["Otto euro e novanta", "Nove euro e ottanta", "Tre euro"], "a": "Otto euro e novanta" }
+    ]
+  },
+  {
+    "id": "l-a1-08",
+    "level": "A1",
+    "title": "Una camera nei Sassi",
+    "en": "A room in the Sassi",
+    "topic": "society",
+    "genre": "hotel check-in",
+    "minutes": 1,
+    "situation": "Anna and Peter arrive at a small hotel in the Sassi, the old cave district of Matera. Nicola is at reception.",
+    "speakers": { "Nicola": "m", "Anna": "f2", "Peter": "m2" },
+    "body": [
+      { "who": "Nicola", "s": [
+        { "it": "Buonasera e benvenuti! Avete una prenotazione?", "en": "Good evening and welcome! Do you have a booking?" }
+      ]},
+      { "who": "Anna", "s": [
+        { "it": "Sì, a nome Novak. Enne, o, vu, a, cappa.", "en": "Yes, under the name Novak. N, O, V, A, K." }
+      ]},
+      { "who": "Nicola", "s": [
+        { "it": "Ecco qui: Novak. Una camera doppia in grotta, per tre notti.", "en": "Here it is: Novak. A double cave room, for three nights." }
+      ]},
+      { "who": "Peter", "s": [
+        { "it": "In grotta? Una grotta vera?", "en": "In a cave? A real cave?" }
+      ]},
+      { "who": "Anna", "s": [
+        { "it": "Sì, Peter, una grotta vera. Te l'ho detto ieri.", "en": "Yes, Peter, a real cave. I told you yesterday." }
+      ]},
+      { "who": "Nicola", "s": [
+        { "it": "È una grotta antica, ma con il bagno nuovo e il wi-fi.", "en": "It's an ancient cave, but with a new bathroom and wi-fi." }
+      ]},
+      { "who": "Peter", "s": [
+        { "it": "E le finestre?", "en": "And the windows?" }
+      ]},
+      { "who": "Nicola", "s": [
+        { "it": "C'è una finestra piccola, sopra la porta.", "en": "There's one small window, above the door." },
+        { "it": "Ma la camera è fresca e molto tranquilla.", "en": "But the room is cool and very quiet." },
+        { "it": "Allora, la camera è già pagata, ma c'è la tassa di soggiorno.", "en": "Now, the room is already paid for, but there's the tourist tax." }
+      ]},
+      { "who": "Peter", "s": [
+        { "it": "Una tassa? Quanto costa?", "en": "A tax? How much is it?" }
+      ]},
+      { "who": "Nicola", "s": [
+        { "it": "Due euro a persona, per notte. Per voi sono dodici euro.", "en": "Two euros per person, per night. For you that's twelve euros." }
+      ]},
+      { "who": "Anna", "s": [
+        { "it": "Possiamo pagare con la carta?", "en": "Can we pay by card?" }
+      ]},
+      { "who": "Nicola", "s": [
+        { "it": "Sì, certo.", "en": "Yes, of course." },
+        { "it": "La colazione è dalle sette e mezza alle dieci, sulla terrazza.", "en": "Breakfast is from half past seven to ten, on the terrace." }
+      ]},
+      { "who": "Peter", "s": [
+        { "it": "E la macchina? Adesso è qui davanti, in strada.", "en": "And the car? It's right out front now, in the street." }
+      ]},
+      { "who": "Nicola", "s": [
+        { "it": "Ah, no. Qui nei Sassi le macchine non possono stare.", "en": "Ah, no. Cars can't stay here in the Sassi." },
+        { "it": "C'è un parcheggio a cinque minuti. Costa quindici euro al giorno.", "en": "There's a car park five minutes away. It costs fifteen euros a day." }
+      ]},
+      { "who": "Peter", "s": [
+        { "it": "Quindici euro! Anche la macchina dorme in una grotta?", "en": "Fifteen euros! Does the car sleep in a cave too?" }
+      ]},
+      { "who": "Nicola", "s": [
+        { "it": "No, signore. La macchina dorme sotto le stelle.", "en": "No, sir. The car sleeps under the stars." },
+        { "it": "Ecco la chiave. È grande e pesante, ma è quella originale.", "en": "Here's the key. It's big and heavy, but it's the original one." }
+      ]},
+      { "who": "Anna", "s": [
+        { "it": "Grazie mille. Buonanotte!", "en": "Thanks very much. Good night!" }
+      ]}
+    ],
+    "questions": [
+      { "q": "Che problema c'è con la macchina?", "o": ["Non può stare nei Sassi", "Non ha benzina", "È in un parcheggio chiuso"], "a": "Non può stare nei Sassi" },
+      { "q": "Quante notti restano a Matera?", "o": ["Tre", "Due", "Dodici"], "a": "Tre" },
+      { "q": "Com'è la finestra della camera?", "o": ["Piccola", "Grande", "Non c'è una finestra"], "a": "Piccola" },
+      { "q": "Quanto pagano di tassa di soggiorno?", "o": ["Dodici euro", "Due euro", "Quindici euro"], "a": "Dodici euro" },
+      { "q": "A che ora finisce la colazione?", "o": ["Alle dieci", "Alle sette e mezza", "Alle undici"], "a": "Alle dieci" },
+      { "q": "Quanto costa il parcheggio?", "o": ["Quindici euro al giorno", "Dodici euro al giorno", "Due euro al giorno"], "a": "Quindici euro al giorno" }
+    ]
+  },
+  {
+    "id": "l-a1-09",
+    "level": "A1",
+    "title": "Il meteo delle Langhe",
+    "en": "The Langhe weather",
+    "topic": "nature",
+    "genre": "weather forecast on local radio",
+    "minutes": 1,
+    "situation": "A local radio station in Piedmont, Friday morning. The presenter, Carla, hands over to Beppe for the weekend forecast in the Langhe hills.",
+    "speakers": { "Carla": "f", "Beppe": "m2" },
+    "body": [
+      { "who": "Carla", "s": [
+        { "it": "Sono le otto e dieci, e adesso c'è il meteo con Beppe. Ciao, Beppe!", "en": "It's ten past eight, and now it's the weather with Beppe. Hi, Beppe!" }
+      ]},
+      { "who": "Beppe", "s": [
+        { "it": "Ciao Carla, buongiorno a tutti.", "en": "Hi Carla, good morning, everyone." }
+      ]},
+      { "who": "Carla", "s": [
+        { "it": "Allora, Beppe, che tempo fa questo fine settimana nelle Langhe?", "en": "So, Beppe, what's the weather like this weekend in the Langhe?" }
+      ]},
+      { "who": "Beppe", "s": [
+        { "it": "Sabato mattina c'è nebbia, tanta nebbia.", "en": "On Saturday morning there's fog, lots of fog." },
+        { "it": "Ad Alba, a Barolo, a Dogliani.", "en": "In Alba, in Barolo, in Dogliani." },
+        { "it": "Attenzione in macchina, soprattutto sulle strade delle colline.", "en": "Take care in the car, especially on the hill roads." },
+        { "it": "Ma a mezzogiorno la nebbia va via e arriva il sole.", "en": "But at midday the fog lifts and the sun comes out." },
+        { "it": "Otto gradi la mattina e sedici gradi il pomeriggio.", "en": "Eight degrees in the morning and sixteen in the afternoon." }
+      ]},
+      { "who": "Carla", "s": [
+        { "it": "Bello! E domenica? Domenica c'è la Fiera del tartufo ad Alba.", "en": "Lovely! And Sunday? On Sunday there's the truffle fair in Alba." }
+      ]},
+      { "who": "Beppe", "s": [
+        { "it": "Eh, domenica non è bello. Piove, dalla mattina alla sera.", "en": "Ah, Sunday isn't nice. It rains from morning to night." }
+      ]},
+      { "who": "Carla", "s": [
+        { "it": "Tutto il giorno?", "en": "All day?" }
+      ]},
+      { "who": "Beppe", "s": [
+        { "it": "Tutto il giorno.", "en": "All day." },
+        { "it": "Ma la fiera è al coperto, quindi andate, con l'ombrello.", "en": "But the fair is indoors, so go, with an umbrella." },
+        { "it": "Lunedì torna il sole, ma fa più freddo: cinque gradi la mattina.", "en": "On Monday the sun is back, but it's colder: five degrees in the morning." }
+      ]},
+      { "who": "Carla", "s": [
+        { "it": "Grazie, Beppe. Ah, c'è una domanda di un ascoltatore.", "en": "Thanks, Beppe. Oh, there's a question from a listener." },
+        { "it": "Gianni di Neive chiede: il tempo è buono per cercare i tartufi?", "en": "Gianni from Neive asks: is the weather good for hunting truffles?" }
+      ]},
+      { "who": "Beppe", "s": [
+        { "it": "Per i tartufi la pioggia va benissimo!", "en": "For truffles, rain is perfect!" },
+        { "it": "Domenica è una giornata perfetta. Per i tartufi, non per noi.", "en": "Sunday is a perfect day. For the truffles, not for us." }
+      ]},
+      { "who": "Carla", "s": [
+        { "it": "Grazie, Beppe. Il prossimo meteo è alle nove.", "en": "Thanks, Beppe. The next forecast is at nine." }
+      ]}
+    ],
+    "questions": [
+      { "q": "Com'è il tempo nel fine settimana?", "o": ["Sabato è bello, domenica piove", "Sabato piove, domenica è bello", "Piove sabato e domenica"], "a": "Sabato è bello, domenica piove" },
+      { "q": "Che tempo fa sabato mattina?", "o": ["C'è nebbia", "Piove", "C'è il sole"], "a": "C'è nebbia" },
+      { "q": "Quanti gradi ci sono sabato pomeriggio?", "o": ["Sedici", "Otto", "Cinque"], "a": "Sedici" },
+      { "q": "Che tempo fa lunedì?", "o": ["Torna il sole, ma fa più freddo", "Piove ancora tutto il giorno", "C'è nebbia tutto il giorno"], "a": "Torna il sole, ma fa più freddo" },
+      { "q": "Che cosa c'è domenica ad Alba?", "o": ["La Fiera del tartufo", "Un concerto", "Una partita"], "a": "La Fiera del tartufo" },
+      { "q": "Per che cosa è buona la pioggia, secondo Beppe?", "o": ["Per i tartufi", "Per la fiera", "Per andare in macchina"], "a": "Per i tartufi" }
+    ]
+  },
+  {
+    "id": "l-a1-10",
+    "level": "A1",
+    "title": "Primo giorno di corso",
+    "en": "First day of the course",
+    "topic": "work",
+    "genre": "teacher's first-day introduction",
+    "minutes": 1,
+    "situation": "An evening Italian class for foreign residents in Ivrea, in Piedmont. It's the first lesson, and the teacher gives the students the practical information.",
+    "speakers": { "Ornella": "f2", "Kenji": "m" },
+    "body": [
+      { "who": "Ornella", "s": [
+        { "it": "Buonasera a tutti e benvenuti al corso di italiano!", "en": "Good evening, everyone, and welcome to the Italian course!" },
+        { "it": "Io sono Ornella e sono la vostra insegnante.", "en": "I'm Ornella and I'm your teacher." },
+        { "it": "Sono di Ivrea, ma ho abitato dieci anni a Lisbona.", "en": "I'm from Ivrea, but I lived in Lisbon for ten years." },
+        { "it": "Allora, prima le informazioni importanti.", "en": "Right, the important information first." },
+        { "it": "Le lezioni sono il martedì e il giovedì, dalle sei e mezza alle otto.", "en": "Lessons are on Tuesdays and Thursdays, from half past six to eight." },
+        { "it": "Siamo sempre qui, in aula dodici, al primo piano.", "en": "We're always here, in room twelve, on the first floor." },
+        { "it": "Il libro costa ventidue euro.", "en": "The book costs twenty-two euros." },
+        { "it": "Potete comprarlo in segreteria, al piano terra.", "en": "You can buy it at the office, on the ground floor." },
+        { "it": "Martedì otto dicembre non c'è lezione, perché è festa.", "en": "There's no lesson on Tuesday the eighth of December, because it's a holiday." },
+        { "it": "E a febbraio, il martedì di Carnevale, non c'è lezione: c'è la battaglia delle arance.", "en": "And in February, on Carnival Tuesday, there's no lesson: it's the Battle of the Oranges." }
+      ]},
+      { "who": "Kenji", "s": [
+        { "it": "Scusi, the battle of... what?", "en": "Sorry, the battle of... what?" }
+      ]},
+      { "who": "Ornella", "s": [
+        { "it": "In italiano, per favore, Kenji!", "en": "In Italian, please, Kenji!" }
+      ]},
+      { "who": "Kenji", "s": [
+        { "it": "Scusi. La battaglia delle arance... che cos'è?", "en": "Sorry. The Battle of the Oranges... what is it?" }
+      ]},
+      { "who": "Ornella", "s": [
+        { "it": "È una festa antica di Ivrea.", "en": "It's an old festival in Ivrea." },
+        { "it": "Per tre giorni le persone tirano le arance nelle piazze.", "en": "For three days people throw oranges in the squares." }
+      ]},
+      { "who": "Kenji", "s": [
+        { "it": "Tirano le arance? Ma è pericoloso!", "en": "They throw oranges? But that's dangerous!" }
+      ]},
+      { "who": "Ornella", "s": [
+        { "it": "Un po', sì. Per questo io resto a casa!", "en": "A bit, yes. That's why I stay at home!" },
+        { "it": "Ma voi andate, e portate un cappello rosso.", "en": "But you should go, and wear a red hat." },
+        { "it": "Con il cappello rosso, non tirano le arance a voi.", "en": "With a red hat on, they don't throw oranges at you." },
+        { "it": "Ultima regola: in classe parliamo solo italiano, anche quando è difficile.", "en": "Last rule: in class we only speak Italian, even when it's hard." },
+        { "it": "Va bene? Allora cominciamo. Kenji, come ti chiami?", "en": "OK? Then let's start. Kenji, what's your name?" }
+      ]},
+      { "who": "Kenji", "s": [
+        { "it": "Ma... lo sa già!", "en": "But... you already know it!" }
+      ]},
+      { "who": "Ornella", "s": [
+        { "it": "Sì, ma voglio sentire il tuo italiano!", "en": "Yes, but I want to hear your Italian!" }
+      ]}
+    ],
+    "questions": [
+      { "q": "Qual è la regola più importante in classe?", "o": ["Parlare solo italiano", "Comprare il libro", "Arrivare alle sei e mezza"], "a": "Parlare solo italiano" },
+      { "q": "Quando sono le lezioni?", "o": ["Il martedì e il giovedì", "Il lunedì e il giovedì", "Il martedì e il venerdì"], "a": "Il martedì e il giovedì" },
+      { "q": "In quale aula è il corso?", "o": ["Nell'aula dodici", "Nell'aula ventidue", "Nell'aula otto"], "a": "Nell'aula dodici" },
+      { "q": "Quanto costa il libro?", "o": ["Ventidue euro", "Dodici euro", "Otto euro"], "a": "Ventidue euro" },
+      { "q": "Perché non c'è lezione il martedì di Carnevale?", "o": ["C'è la battaglia delle arance", "Ornella è a Lisbona", "La segreteria è chiusa"], "a": "C'è la battaglia delle arance" },
+      { "q": "Che cosa devono portare gli studenti alla battaglia?", "o": ["Un cappello rosso", "Delle arance", "Il libro"], "a": "Un cappello rosso" }
+    ]
+  }
+]

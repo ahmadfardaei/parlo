@@ -3,6 +3,7 @@ const loaders = {
   course: () => import("./data/course.json"),
   grammar: () => import("./data/grammar.json"),
   reading: () => import("./data/reading.json"),
+  listening: () => import("./data/listening.json"),
   writing: () => import("./data/writing.json"),
   speaking: () => import("./data/speaking.json")
 };

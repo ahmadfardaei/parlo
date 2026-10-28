@@ -4,7 +4,7 @@ import ROADMAP from "../data/roadmap.json";
 import { pdfUrl } from "../voice.js";
 
 const TYPE = {
-  unit: { label: "Vocabulary", icon: "Aa" }, grammar: { label: "Grammar", icon: "§" }, reading: { label: "Reading", icon: "¶" },
+  unit: { label: "Vocabulary", icon: "Aa" }, grammar: { label: "Grammar", icon: "§" }, reading: { label: "Reading", icon: "¶" }, listening: { label: "Listening", icon: "♪" },
   writing: { label: "Writing", icon: "✎" }, speaking: { label: "Speaking", icon: "◌" }, checkpoint: { label: "Checkpoint", icon: "◆" }, test: { label: "Level test", icon: "★" }
 };
 const WRITE_TARGET = { A1: 60, A2: 110, B1: 180, B2: 260 };
@@ -25,13 +25,14 @@ export function stepState(L, s) {
     }
     case "grammar": { const e = S.st["g:" + s.ref]; const r = e?.best != null ? e.best / e.total : 0; return { done: r >= 0.7, stars: ratioStars(r), note: e?.best != null ? `Best ${e.best}/${e.total}` : "" }; }
     case "reading": { const e = S.st["r:" + s.ref]; if (!e?.done) return { done: false, stars: 0, note: "" }; const r = e.total ? e.score / e.total : 0; return { done: true, stars: r >= 1 ? 3 : r >= 0.6 ? 2 : 1, note: e.total ? `${e.score}/${e.total} correct` : "Read" }; }
+    case "listening": { const e = S.st["l:" + s.ref]; if (!e?.done) return { done: false, stars: 0, note: "" }; const r = e.score / e.total; return { done: true, stars: r >= 1 ? 3 : r >= 0.6 ? 2 : 1, note: `${e.score}/${e.total} correct` }; }
     case "writing": { const n = words(S.st["wr:" + s.ref]?.text); const done = n >= WRITE_TARGET[L]; return { done, stars: done ? 3 : 0, note: n ? `${n} words` : "" }; }
     case "speaking": { const done = !!S.st["sp:" + s.ref]?.done; return { done, stars: done ? 3 : 0, note: "" }; }
     default: { const e = S.st[`cp:${L}:${s.ref}`]; const r = e?.best != null ? e.best / e.total : 0; return { done: r >= 0.7, stars: ratioStars(r), note: e?.best != null ? `Best ${e.best}/${e.total}` : "" }; }
   }
 }
 export function stepHref(L, s) {
-  return { unit: `#/unit/${s.ref}/words`, grammar: `#/grammar/${s.ref}`, reading: `#/read/${s.ref}`, writing: `#/write/${s.ref}`, speaking: `#/speak/${s.ref}`, checkpoint: `#/quiz/cp/${L}/${s.ref}`, test: `#/quiz/test/${L}` }[s.type];
+  return { unit: `#/unit/${s.ref}/words`, grammar: `#/grammar/${s.ref}`, reading: `#/read/${s.ref}`, listening: `#/listen/${s.ref}`, writing: `#/write/${s.ref}`, speaking: `#/speak/${s.ref}`, checkpoint: `#/quiz/cp/${L}/${s.ref}`, test: `#/quiz/test/${L}` }[s.type];
 }
 export function pathProgress(L) {
   const steps = ROADMAP[L].steps, states = steps.map(s => stepState(L, s));
@@ -87,7 +88,7 @@ function stepSheet(L, steps, states, i, current) {
   const href = stepHref(L, s);
   const how = {
     unit: "Done when you've learned 80% of its words in practice. More stars as they stick.",
-    grammar: "Done at 70% or more in its exercises.", reading: "Done when you've read it and answered the questions.",
+    grammar: "Done at 70% or more in its exercises.", reading: "Done when you've read it and answered the questions.", listening: "Done when you've answered the questions.",
     writing: `Done when your text reaches ${WRITE_TARGET[L]} words.`, speaking: "Done when you've practised out loud.",
     checkpoint: "Pass with 7 out of 10.", test: "Pass with 70% or more."
   }[s.type];

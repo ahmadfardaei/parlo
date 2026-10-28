@@ -3,6 +3,7 @@ import fs from "fs";
 import { spoken, clipHash, voiceForName, narratorVoice } from "../../src/voice.js";
 const D = f => JSON.parse(fs.readFileSync(new URL(`../../src/data/${f}.json`, import.meta.url)));
 const course = D("course"), grammar = D("grammar"), reading = D("reading"), writing = D("writing"), speaking = D("speaking");
+const listening = fs.existsSync(new URL("../../src/data/listening.json", import.meta.url)) ? D("listening") : [];
 const jobs = new Map();
 const add = (text, v = "f") => { if (!text || text === "—") return; const t = spoken(text); if (!t) return; jobs.set(v + clipHash(text), { v, h: clipHash(text), t }); };
 const full = w => !w.art ? w.it : (w.art.endsWith("'") ? w.art + w.it : w.art + " " + w.it);
@@ -29,6 +30,7 @@ const blocks = (body, voiceOf) => body.forEach(b => b.s.forEach(s => add(s.it, v
 for (const r of reading) { blocks(r.body, b => b.who ? voiceForName(b.who) : narratorVoice(r.id)); r.glossary.forEach(g => add(g.it)); }
 const LV = { A1: "f", A2: "m", B1: "f", B2: "m" };
 for (const w of writing) { for (const [l, m] of Object.entries(w.models)) blocks(m.body, () => LV[l]); w.phrases.forEach(p => add(p.it)); }
+for (const l of listening) blocks(l.body, b => l.speakers[b.who]);
 for (const s of speaking) { for (const m of Object.values(s.models)) blocks(m.body, () => voiceForName(m.speaker)); s.phrases.forEach(p => add(p.it)); s.questions.forEach(q => add(q.it)); }
 const list = [...jobs.values()];
 fs.writeFileSync(new URL("./jobs.json", import.meta.url), JSON.stringify(list));

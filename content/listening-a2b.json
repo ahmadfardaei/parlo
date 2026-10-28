@@ -1,0 +1,3249 @@
+[
+  {
+    "id": "l-a2-06",
+    "level": "A2",
+    "title": "Il pacco fantasma",
+    "en": "The ghost parcel",
+    "topic": "daily",
+    "genre": "three phone calls",
+    "minutes": 6,
+    "situation": "Lucia lives in Cagliari and is waiting for an important parcel. One Wednesday morning she makes three phone calls about it.",
+    "speakers": {
+      "Lucia": "f",
+      "Andrea": "m2",
+      "Efisio": "m",
+      "Marisa": "f2"
+    },
+    "body": [
+      {
+        "who": "Andrea",
+        "s": [
+          {
+            "it": "Buongiorno, servizio clienti Rapido Express, sono Andrea. Come posso aiutarla?",
+            "en": "Good morning, Rapido Express customer service, this is Andrea. How can I help you?"
+          }
+        ]
+      },
+      {
+        "who": "Lucia",
+        "s": [
+          {
+            "it": "Buongiorno, Andrea. Allora, io aspetto un pacco da una settimana.",
+            "en": "Good morning, Andrea. So, I've been waiting for a parcel for a week."
+          },
+          {
+            "it": "Ieri sera ho controllato sul vostro sito e c'è scritto: consegnato.",
+            "en": "Last night I checked on your website and it says: delivered."
+          },
+          {
+            "it": "Ma io il pacco non l'ho visto.",
+            "en": "But I haven't seen the parcel."
+          }
+        ]
+      },
+      {
+        "who": "Andrea",
+        "s": [
+          {
+            "it": "Capisco. Mi può dare il codice della spedizione?",
+            "en": "I see. Can you give me the tracking code?"
+          }
+        ]
+      },
+      {
+        "who": "Lucia",
+        "s": [
+          {
+            "it": "Sì. C come Cagliari, A come Ancona, sette, quattro, due, nove, uno.",
+            "en": "Yes. C as in Cagliari, A as in Ancona, seven, four, two, nine, one."
+          }
+        ]
+      },
+      {
+        "who": "Andrea",
+        "s": [
+          {
+            "it": "Un attimo... Ecco, la vedo.",
+            "en": "One moment... Here, I can see it."
+          },
+          {
+            "it": "Il pacco è stato consegnato ieri, martedì, alle undici e quarantadue, in via Dante 48.",
+            "en": "The parcel was delivered yesterday, Tuesday, at eleven forty-two, at via Dante 48."
+          }
+        ]
+      },
+      {
+        "who": "Lucia",
+        "s": [
+          {
+            "it": "L'indirizzo è giusto. Ma ieri alle undici io ero a casa!",
+            "en": "The address is right. But yesterday at eleven I was at home!"
+          },
+          {
+            "it": "Ho lavorato al computer tutta la mattina e nessuno ha suonato.",
+            "en": "I worked at the computer all morning and nobody rang the bell."
+          }
+        ]
+      },
+      {
+        "who": "Andrea",
+        "s": [
+          {
+            "it": "Qui c'è anche una firma. Ha firmato una persona che si chiama M. Pinna.",
+            "en": "There's a signature here too. Someone called M. Pinna signed."
+          }
+        ]
+      },
+      {
+        "who": "Lucia",
+        "s": [
+          {
+            "it": "Pinna? Io mi chiamo Serra. Lucia Serra.",
+            "en": "Pinna? My name is Serra. Lucia Serra."
+          },
+          {
+            "it": "E nel mio palazzo non abita nessun Pinna.",
+            "en": "And nobody called Pinna lives in my building."
+          }
+        ]
+      },
+      {
+        "who": "Andrea",
+        "s": [
+          {
+            "it": "Forse un vicino ha preso il pacco per lei? Ha chiesto ai vicini?",
+            "en": "Maybe a neighbour took the parcel for you? Have you asked the neighbours?"
+          }
+        ]
+      },
+      {
+        "who": "Lucia",
+        "s": [
+          {
+            "it": "Sì, ieri sera ho bussato a tutte le porte.",
+            "en": "Yes, last night I knocked on every door."
+          },
+          {
+            "it": "La signora del primo piano ha novant'anni e non apre a nessuno.",
+            "en": "The lady on the first floor is ninety and doesn't open the door to anyone."
+          },
+          {
+            "it": "I ragazzi del secondo piano sono studenti e dormono fino a mezzogiorno.",
+            "en": "The guys on the second floor are students and sleep until noon."
+          },
+          {
+            "it": "Nessuno ha visto niente.",
+            "en": "Nobody saw anything."
+          }
+        ]
+      },
+      {
+        "who": "Andrea",
+        "s": [
+          {
+            "it": "Allora posso aprire un reclamo. La risposta arriva entro cinque giorni lavorativi.",
+            "en": "Then I can open a complaint. The answer will come within five working days."
+          }
+        ]
+      },
+      {
+        "who": "Lucia",
+        "s": [
+          {
+            "it": "Cinque giorni? No, guardi, è impossibile.",
+            "en": "Five days? No, look, that's impossible."
+          },
+          {
+            "it": "Dentro il pacco c'è un regalo per mio padre. Sabato compie settant'anni.",
+            "en": "Inside the parcel there's a present for my father. He turns seventy on Saturday."
+          },
+          {
+            "it": "È un giradischi vecchio, degli anni Settanta. L'ho cercato per due mesi.",
+            "en": "It's an old record player, from the seventies. I looked for it for two months."
+          }
+        ]
+      },
+      {
+        "who": "Andrea",
+        "s": [
+          {
+            "it": "Mi dispiace, signora. Le posso dare però il numero del corriere che ha fatto la consegna.",
+            "en": "I'm sorry, madam. But I can give you the number of the courier who made the delivery."
+          },
+          {
+            "it": "Si chiama Efisio. Ha una penna?",
+            "en": "His name is Efisio. Do you have a pen?"
+          }
+        ]
+      },
+      {
+        "who": "Lucia",
+        "s": [
+          {
+            "it": "Sì, dica.",
+            "en": "Yes, go ahead."
+          }
+        ]
+      },
+      {
+        "who": "Andrea",
+        "s": [
+          {
+            "it": "Tre, quattro, sette, due, due, cinque, zero, uno, otto, nove.",
+            "en": "Three, four, seven, two, two, five, zero, one, eight, nine."
+          },
+          {
+            "it": "Ma lo chiami dopo le dieci, perché la mattina presto carica il furgone.",
+            "en": "But call him after ten, because early in the morning he loads the van."
+          }
+        ]
+      },
+      {
+        "who": "Lucia",
+        "s": [
+          {
+            "it": "Va bene, lo chiamo subito. Grazie, Andrea.",
+            "en": "All right, I'll call him straight away. Thanks, Andrea."
+          }
+        ]
+      },
+      {
+        "who": "Andrea",
+        "s": [
+          {
+            "it": "Si figuri. Alla fine della telefonata può dare un voto al servizio, da uno a dieci.",
+            "en": "Not at all. At the end of the call you can rate the service, from one to ten."
+          }
+        ]
+      },
+      {
+        "who": "Lucia",
+        "s": [
+          {
+            "it": "Le do un voto quando trovo il pacco.",
+            "en": "I'll give you a rating when I find the parcel."
+          }
+        ]
+      },
+      {
+        "who": "Efisio",
+        "s": [
+          {
+            "it": "Pronto? Chi è? Sono in macchina, eh, la sento male.",
+            "en": "Hello? Who is it? I'm in the car, eh, I can hardly hear you."
+          },
+          {
+            "it": "Aspetti che metto il vivavoce. Ecco.",
+            "en": "Wait while I put you on speaker. There."
+          },
+          {
+            "it": "Oggi ho centoventi pacchi, quindi parli veloce, per favore.",
+            "en": "Today I've got a hundred and twenty parcels, so talk fast, please."
+          }
+        ]
+      },
+      {
+        "who": "Lucia",
+        "s": [
+          {
+            "it": "Buongiorno, sono Lucia Serra, di via Dante 48. È lei Efisio, il corriere?",
+            "en": "Good morning, I'm Lucia Serra, from via Dante 48. Are you Efisio, the courier?"
+          }
+        ]
+      },
+      {
+        "who": "Efisio",
+        "s": [
+          {
+            "it": "Sì, sono io. Via Dante... aspetti. Il pacco grande, pesante?",
+            "en": "Yes, that's me. Via Dante... wait. The big, heavy parcel?"
+          }
+        ]
+      },
+      {
+        "who": "Lucia",
+        "s": [
+          {
+            "it": "Sì! Il giradischi! Dov'è?",
+            "en": "Yes! The record player! Where is it?"
+          }
+        ]
+      },
+      {
+        "who": "Efisio",
+        "s": [
+          {
+            "it": "Allora, ieri sono arrivato da lei verso le undici e mezza.",
+            "en": "So, yesterday I got to your place at about half past eleven."
+          },
+          {
+            "it": "Ho suonato due volte, ma non ha risposto nessuno.",
+            "en": "I rang twice, but nobody answered."
+          },
+          {
+            "it": "Però il suo cane ha abbaiato tanto. Un cane bianco, piccolo, giusto?",
+            "en": "But your dog barked a lot. A small white dog, right?"
+          }
+        ]
+      },
+      {
+        "who": "Lucia",
+        "s": [
+          {
+            "it": "Sì, Pepe. Abbaia sempre, ma non morde.",
+            "en": "Yes, Pepe. He always barks, but he doesn't bite."
+          }
+        ]
+      },
+      {
+        "who": "Efisio",
+        "s": [
+          {
+            "it": "Ecco, lui mi ha sentito. Lei no.",
+            "en": "There you go, he heard me. You didn't."
+          }
+        ]
+      },
+      {
+        "who": "Lucia",
+        "s": [
+          {
+            "it": "Ma io ero a casa! Al terzo piano!",
+            "en": "But I was at home! On the third floor!"
+          }
+        ]
+      },
+      {
+        "who": "Efisio",
+        "s": [
+          {
+            "it": "Signora, il campanello del terzo piano non funziona. Lo so bene, perché porto pacchi in quel palazzo ogni settimana.",
+            "en": "Madam, the bell for the third floor doesn't work. I know it well, because I deliver parcels to that building every week."
+          }
+        ]
+      },
+      {
+        "who": "Lucia",
+        "s": [
+          {
+            "it": "Ah. Questo non lo sapevo.",
+            "en": "Ah. I didn't know that."
+          }
+        ]
+      },
+      {
+        "who": "Efisio",
+        "s": [
+          {
+            "it": "Allora ho lasciato il pacco in tabaccheria, quella all'angolo, in via Sonnino. Quella con il gatto rosso sulla porta.",
+            "en": "So I left the parcel at the tobacconist's, the one on the corner, in via Sonnino. The one with the red cat on the door."
+          },
+          {
+            "it": "La signora Marisa ha firmato per lei. Marisa Pinna.",
+            "en": "Signora Marisa signed for you. Marisa Pinna."
+          }
+        ]
+      },
+      {
+        "who": "Lucia",
+        "s": [
+          {
+            "it": "M. Pinna! Ecco chi è!",
+            "en": "M. Pinna! So that's who it is!"
+          }
+        ]
+      },
+      {
+        "who": "Efisio",
+        "s": [
+          {
+            "it": "Non le è arrivato un biglietto? Io l'ho messo nella cassetta delle lettere.",
+            "en": "Didn't you get a note? I put it in the letterbox."
+          }
+        ]
+      },
+      {
+        "who": "Lucia",
+        "s": [
+          {
+            "it": "Boh, forse sì. Ieri non ho controllato la posta.",
+            "en": "No idea, maybe. Yesterday I didn't check the post."
+          },
+          {
+            "it": "Grazie, Efisio, davvero. Vado subito in tabaccheria.",
+            "en": "Thanks, Efisio, really. I'm going to the tobacconist's right now."
+          }
+        ]
+      },
+      {
+        "who": "Efisio",
+        "s": [
+          {
+            "it": "Prego. E dica all'amministratore di riparare quel campanello, eh!",
+            "en": "You're welcome. And tell the building manager to fix that bell, eh!"
+          }
+        ]
+      },
+      {
+        "who": "Marisa",
+        "s": [
+          {
+            "it": "Tabaccheria Pinna, buongiorno!",
+            "en": "Pinna tobacconist's, good morning!"
+          }
+        ]
+      },
+      {
+        "who": "Lucia",
+        "s": [
+          {
+            "it": "Buongiorno, signora Marisa. Sono Lucia, abito in via Dante, compro sempre il giornale da lei.",
+            "en": "Good morning, Signora Marisa. I'm Lucia, I live in via Dante, I always buy the newspaper from you."
+          }
+        ]
+      },
+      {
+        "who": "Marisa",
+        "s": [
+          {
+            "it": "Ah, la ragazza con il cane bianco! Mi dica, cara.",
+            "en": "Ah, the girl with the white dog! Tell me, dear."
+          }
+        ]
+      },
+      {
+        "who": "Lucia",
+        "s": [
+          {
+            "it": "Il corriere mi ha detto che ieri ha lasciato da lei un pacco per me. Un pacco grande.",
+            "en": "The courier told me that yesterday he left a big parcel for me with you. A big parcel."
+          },
+          {
+            "it": "Passo tra cinque minuti, va bene?",
+            "en": "I'll come by in five minutes, is that OK?"
+          }
+        ]
+      },
+      {
+        "who": "Marisa",
+        "s": [
+          {
+            "it": "Un pacco grande... Sì, me lo ricordo. Ma, cara, il pacco non c'è più.",
+            "en": "A big parcel... Yes, I remember it. But, dear, the parcel isn't here any more."
+          }
+        ]
+      },
+      {
+        "who": "Lucia",
+        "s": [
+          {
+            "it": "Come, non c'è più?",
+            "en": "What do you mean, it isn't here any more?"
+          }
+        ]
+      },
+      {
+        "who": "Marisa",
+        "s": [
+          {
+            "it": "Ieri pomeriggio, verso le cinque, è venuto un signore e l'ha preso.",
+            "en": "Yesterday afternoon, around five, a gentleman came and took it."
+          }
+        ]
+      },
+      {
+        "who": "Lucia",
+        "s": [
+          {
+            "it": "Un signore? Quale signore? Io non ho mandato nessuno!",
+            "en": "A gentleman? Which gentleman? I didn't send anyone!"
+          }
+        ]
+      },
+      {
+        "who": "Marisa",
+        "s": [
+          {
+            "it": "Aspetti, aspetti. Ho scritto il nome sul quaderno, come sempre.",
+            "en": "Wait, wait. I wrote the name in the notebook, as always."
+          },
+          {
+            "it": "Allora... ieri... ecco qui. Ha firmato Gavino Serra.",
+            "en": "So... yesterday... here it is. Gavino Serra signed."
+          }
+        ]
+      },
+      {
+        "who": "Lucia",
+        "s": [
+          {
+            "it": "Gavino Serra? Ma è mio padre!",
+            "en": "Gavino Serra? But that's my father!"
+          }
+        ]
+      },
+      {
+        "who": "Marisa",
+        "s": [
+          {
+            "it": "Ma certo, il signor Gavino! Viene qui ogni mattina per il giornale e le sigarette.",
+            "en": "But of course, Signor Gavino! He comes here every morning for the newspaper and cigarettes."
+          },
+          {
+            "it": "Ieri è passato anche il pomeriggio, per il gratta e vinci.",
+            "en": "Yesterday he came by in the afternoon too, for the scratch card."
+          },
+          {
+            "it": "Ha visto il pacco sul banco e ha letto il suo nome.",
+            "en": "He saw the parcel on the counter and read your name."
+          },
+          {
+            "it": "Io all'inizio ho detto di no. Le regole sono le regole: ci vogliono il codice e un documento.",
+            "en": "At first I said no. Rules are rules: you need the code and an ID."
+          },
+          {
+            "it": "Ma lui ha detto: Marisa, mi conosci da trent'anni, ti ho insegnato io a giocare a scopa!",
+            "en": "But he said: Marisa, you've known me for thirty years, I'm the one who taught you to play scopa!"
+          },
+          {
+            "it": "E così gliel'ho dato.",
+            "en": "And so I gave it to him."
+          },
+          {
+            "it": "Allora ha detto: è di mia figlia, glielo porto io stasera.",
+            "en": "So he said: it's my daughter's, I'll take it to her tonight."
+          }
+        ]
+      },
+      {
+        "who": "Lucia",
+        "s": [
+          {
+            "it": "E non me l'ha portato! Ieri sera non l'ho visto.",
+            "en": "And he didn't bring it to me! I didn't see him last night."
+          }
+        ]
+      },
+      {
+        "who": "Marisa",
+        "s": [
+          {
+            "it": "Mah, forse ha dimenticato. Alla sua età succede.",
+            "en": "Well, maybe he forgot. At his age it happens."
+          },
+          {
+            "it": "Però, cara, devo dirle una cosa.",
+            "en": "But, dear, I have to tell you something."
+          },
+          {
+            "it": "Sulla scatola c'era una foto grande, un giradischi.",
+            "en": "On the box there was a big photo, a record player."
+          },
+          {
+            "it": "E suo padre l'ha guardata a lungo. Era molto contento.",
+            "en": "And your father looked at it for a long time. He was very happy."
+          }
+        ]
+      },
+      {
+        "who": "Lucia",
+        "s": [
+          {
+            "it": "Oh no. Il regalo per il suo compleanno!",
+            "en": "Oh no. The present for his birthday!"
+          }
+        ]
+      },
+      {
+        "who": "Marisa",
+        "s": [
+          {
+            "it": "Mi dispiace, cara. Io non sapevo niente.",
+            "en": "I'm sorry, dear. I didn't know anything."
+          },
+          {
+            "it": "Ha detto anche un'altra cosa, prima di uscire.",
+            "en": "He said something else too, before he left."
+          },
+          {
+            "it": "Ha detto: finalmente qualcuno in questa famiglia ascolta la musica vera.",
+            "en": "He said: at last someone in this family listens to real music."
+          }
+        ]
+      },
+      {
+        "who": "Lucia",
+        "s": [
+          {
+            "it": "Che disastro. Adesso cosa faccio? Domani gli chiedo il pacco?",
+            "en": "What a disaster. Now what do I do? Do I ask him for the parcel tomorrow?"
+          }
+        ]
+      },
+      {
+        "who": "Marisa",
+        "s": [
+          {
+            "it": "Il mio consiglio è questo: non dica niente, e sabato fa finta di niente.",
+            "en": "I'd do this: don't say anything, and on Saturday act as if nothing happened."
+          },
+          {
+            "it": "Lui fa la sorpresa a lei, e lei fa la sorpresa a lui.",
+            "en": "He surprises you, and you surprise him."
+          }
+        ]
+      },
+      {
+        "who": "Lucia",
+        "s": [
+          {
+            "it": "Va be'. Allora sabato porto la torta e i dischi. Lui ha già il giradischi!",
+            "en": "Oh well. Then on Saturday I'll bring the cake and the records. He's already got the record player!"
+          },
+          {
+            "it": "Grazie, signora Marisa. E adesso devo richiamare il servizio clienti per chiudere il reclamo.",
+            "en": "Thank you, Signora Marisa. And now I have to call customer service back to close the complaint."
+          }
+        ]
+      },
+      {
+        "who": "Marisa",
+        "s": [
+          {
+            "it": "Lasci stare, cara. Cinque giorni lavorativi: lo chiudono da soli!",
+            "en": "Don't bother, dear. Five working days: they'll close it on their own!"
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "q": "Qual è il problema di Lucia con il pacco?",
+        "o": [
+          "Il sito dice consegnato, ma il pacco non c'è",
+          "Il pacco è arrivato, ma il giradischi è rotto",
+          "Il corriere ha perso il codice della spedizione"
+        ],
+        "a": "Il sito dice consegnato, ma il pacco non c'è"
+      },
+      {
+        "q": "Secondo il sito, quando è arrivato il pacco?",
+        "o": [
+          "Lunedì alle undici e mezza",
+          "Mercoledì alle undici e quarantadue",
+          "Martedì alle undici e quarantadue"
+        ],
+        "a": "Martedì alle undici e quarantadue"
+      },
+      {
+        "q": "Che cosa c'è nel pacco?",
+        "o": [
+          "Un giradischi per il padre",
+          "Un computer per il lavoro",
+          "Dei dischi per il compleanno"
+        ],
+        "a": "Un giradischi per il padre"
+      },
+      {
+        "q": "Entro quanti giorni arriva la risposta al reclamo?",
+        "o": [
+          "Due",
+          "Cinque",
+          "Undici"
+        ],
+        "a": "Cinque"
+      },
+      {
+        "q": "Perché Lucia non ha sentito il corriere?",
+        "o": [
+          "Era dal padre per il compleanno",
+          "Dormiva fino a mezzogiorno",
+          "Il campanello non funziona"
+        ],
+        "a": "Il campanello non funziona"
+      },
+      {
+        "q": "Dove ha lasciato il pacco Efisio?",
+        "o": [
+          "Davanti alla porta di casa",
+          "In una tabaccheria",
+          "In un bar all'angolo"
+        ],
+        "a": "In una tabaccheria"
+      },
+      {
+        "q": "Chi è M. Pinna?",
+        "o": [
+          "Una vicina del primo piano",
+          "La signora della tabaccheria",
+          "La moglie del corriere Efisio"
+        ],
+        "a": "La signora della tabaccheria"
+      },
+      {
+        "q": "Chi ha preso il pacco ieri pomeriggio?",
+        "o": [
+          "Un altro corriere",
+          "Il marito di Marisa",
+          "Il padre di Lucia"
+        ],
+        "a": "Il padre di Lucia"
+      },
+      {
+        "q": "Che cosa consiglia Marisa a Lucia?",
+        "o": [
+          "Di chiedere il pacco al padre",
+          "Di non dire niente e fare finta di niente",
+          "Di comprare un altro regalo"
+        ],
+        "a": "Di non dire niente e fare finta di niente"
+      }
+    ]
+  },
+  {
+    "id": "l-a2-07",
+    "level": "A2",
+    "title": "Le mani nell'acqua",
+    "en": "Hands in the water",
+    "topic": "leisure",
+    "genre": "guided tour",
+    "minutes": 6,
+    "situation": "A small group visits the paper museum in Fabriano, in the Marche, with a guide. Two visitors in the group ask a lot of questions.",
+    "speakers": {
+      "Valerio": "m2",
+      "Nadia": "f",
+      "Brambilla": "m",
+      "Rosanna": "f2"
+    },
+    "body": [
+      {
+        "who": "Valerio",
+        "s": [
+          {
+            "it": "Buongiorno a tutti e benvenuti al Museo della Carta e della Filigrana di Fabriano!",
+            "en": "Good morning everyone and welcome to the Museum of Paper and Watermarks in Fabriano!"
+          },
+          {
+            "it": "Io sono Valerio e oggi sono la vostra guida.",
+            "en": "I'm Valerio and today I'm your guide."
+          },
+          {
+            "it": "La visita dura un'ora e mezza, e alla fine c'è una sorpresa.",
+            "en": "The visit lasts an hour and a half, and at the end there's a surprise."
+          },
+          {
+            "it": "Prima però una domanda: secondo voi, da quanto tempo si fa la carta qui a Fabriano?",
+            "en": "But first a question: how long do you think paper has been made here in Fabriano?"
+          }
+        ]
+      },
+      {
+        "who": "Nadia",
+        "s": [
+          {
+            "it": "Cento anni?",
+            "en": "A hundred years?"
+          }
+        ]
+      },
+      {
+        "who": "Brambilla",
+        "s": [
+          {
+            "it": "Ma no, signora, di più! Mille anni! La carta l'hanno inventata qui, lo sanno tutti.",
+            "en": "No, madam, more! A thousand years! Paper was invented here, everybody knows that."
+          }
+        ]
+      },
+      {
+        "who": "Valerio",
+        "s": [
+          {
+            "it": "Eh, quasi. Grazie, signor...",
+            "en": "Well, almost. Thank you, Mr..."
+          }
+        ]
+      },
+      {
+        "who": "Brambilla",
+        "s": [
+          {
+            "it": "Brambilla. Da Monza.",
+            "en": "Brambilla. From Monza."
+          }
+        ]
+      },
+      {
+        "who": "Valerio",
+        "s": [
+          {
+            "it": "Grazie, signor Brambilla. Allora, la carta non l'hanno inventata a Fabriano.",
+            "en": "Thank you, Mr Brambilla. So, paper wasn't invented in Fabriano."
+          },
+          {
+            "it": "L'hanno inventata in Cina, quasi duemila anni fa.",
+            "en": "It was invented in China, almost two thousand years ago."
+          },
+          {
+            "it": "Poi gli arabi l'hanno portata nel Mediterraneo.",
+            "en": "Then the Arabs brought it to the Mediterranean."
+          },
+          {
+            "it": "Qui a Fabriano si fa la carta da più di settecento anni, dal Duecento.",
+            "en": "Here in Fabriano paper has been made for more than seven hundred years, since the thirteenth century."
+          }
+        ]
+      },
+      {
+        "who": "Brambilla",
+        "s": [
+          {
+            "it": "Settecento. Va be', è quello che volevo dire.",
+            "en": "Seven hundred. Oh well, that's what I meant."
+          }
+        ]
+      },
+      {
+        "who": "Valerio",
+        "s": [
+          {
+            "it": "Allora, siamo nella prima sala, la sala del mulino.",
+            "en": "So, we're in the first room, the mill room."
+          },
+          {
+            "it": "Sentite questo rumore? Tum, tum, tum.",
+            "en": "Can you hear this noise? Thump, thump, thump."
+          },
+          {
+            "it": "Sono dei grandi martelli di legno. L'acqua del fiume li muove, come una volta.",
+            "en": "They're big wooden hammers. The river water moves them, like in the old days."
+          }
+        ]
+      },
+      {
+        "who": "Nadia",
+        "s": [
+          {
+            "it": "E che cosa battono, i martelli?",
+            "en": "And what do the hammers beat?"
+          }
+        ]
+      },
+      {
+        "who": "Valerio",
+        "s": [
+          {
+            "it": "Bella domanda. Battono gli stracci.",
+            "en": "Good question. They beat rags."
+          },
+          {
+            "it": "Una volta la carta non si faceva con gli alberi, ma con i vestiti vecchi, di cotone e di lino.",
+            "en": "In the past paper wasn't made from trees, but from old clothes, of cotton and linen."
+          },
+          {
+            "it": "Le persone vendevano le camicie rotte ai cartai.",
+            "en": "People sold their torn shirts to the papermakers."
+          },
+          {
+            "it": "I martelli battevano gli stracci per ore, nell'acqua, e alla fine c'era una specie di zuppa bianca.",
+            "en": "The hammers beat the rags for hours, in water, and in the end there was a kind of white soup."
+          }
+        ]
+      },
+      {
+        "who": "Brambilla",
+        "s": [
+          {
+            "it": "Una zuppa di camicie. Che schifo.",
+            "en": "A soup of shirts. Gross."
+          }
+        ]
+      },
+      {
+        "who": "Nadia",
+        "s": [
+          {
+            "it": "Io invece lo trovo bellissimo. Una camicia vecchia che diventa una lettera.",
+            "en": "I think it's beautiful, actually. An old shirt that becomes a letter."
+          }
+        ]
+      },
+      {
+        "who": "Valerio",
+        "s": [
+          {
+            "it": "Esatto, signora. Lei come si chiama?",
+            "en": "Exactly, madam. What's your name?"
+          }
+        ]
+      },
+      {
+        "who": "Nadia",
+        "s": [
+          {
+            "it": "Nadia. Faccio la maestra a Perugia. Sono venuta per preparare una gita con i miei bambini.",
+            "en": "Nadia. I'm a primary school teacher in Perugia. I came to prepare a school trip for my kids."
+          }
+        ]
+      },
+      {
+        "who": "Valerio",
+        "s": [
+          {
+            "it": "Allora ai bambini piacerà la prossima sala. Andiamo.",
+            "en": "Then the kids will like the next room. Let's go."
+          },
+          {
+            "it": "Qui parliamo della filigrana. Qualcuno sa che cos'è?",
+            "en": "Here we talk about watermarks. Does anyone know what that is?"
+          }
+        ]
+      },
+      {
+        "who": "Brambilla",
+        "s": [
+          {
+            "it": "Certo. È un tipo di colla.",
+            "en": "Of course. It's a kind of glue."
+          }
+        ]
+      },
+      {
+        "who": "Valerio",
+        "s": [
+          {
+            "it": "No, signor Brambilla.",
+            "en": "No, Mr Brambilla."
+          },
+          {
+            "it": "La filigrana è un disegno dentro la carta. Normalmente non si vede.",
+            "en": "A watermark is a design inside the paper. Normally you can't see it."
+          },
+          {
+            "it": "Ma se mettete il foglio contro la luce, il disegno appare.",
+            "en": "But if you hold the sheet up to the light, the design appears."
+          },
+          {
+            "it": "Anche le banconote hanno la filigrana, perché così è più difficile copiarle.",
+            "en": "Banknotes have watermarks too, because that way they're harder to copy."
+          },
+          {
+            "it": "Nel Medioevo ogni cartiera aveva la sua filigrana: un fiore, una stella, un animale. Era come una firma.",
+            "en": "In the Middle Ages every paper mill had its own watermark: a flower, a star, an animal. It was like a signature."
+          }
+        ]
+      },
+      {
+        "who": "Nadia",
+        "s": [
+          {
+            "it": "E le cartiere di Fabriano che disegno avevano?",
+            "en": "And what design did the Fabriano paper mills have?"
+          }
+        ]
+      },
+      {
+        "who": "Valerio",
+        "s": [
+          {
+            "it": "Tanti disegni diversi. Il mio preferito è una sirena con due code.",
+            "en": "Lots of different designs. My favourite is a mermaid with two tails."
+          },
+          {
+            "it": "Ma i cartai di Fabriano hanno fatto anche un'altra cosa importante.",
+            "en": "But the Fabriano papermakers did another important thing too."
+          },
+          {
+            "it": "Prima la carta araba era morbida, e l'inchiostro si allargava sul foglio.",
+            "en": "Before, Arab paper was soft, and the ink spread across the sheet."
+          },
+          {
+            "it": "Allora qui hanno cominciato a passare i fogli in una colla fatta con le ossa degli animali.",
+            "en": "So here they started dipping the sheets in a glue made from animal bones."
+          },
+          {
+            "it": "Con questa colla la carta diventava più forte, e l'inchiostro restava fermo.",
+            "en": "With this glue the paper became stronger, and the ink stayed put."
+          }
+        ]
+      },
+      {
+        "who": "Brambilla",
+        "s": [
+          {
+            "it": "Ecco, vedete? La colla! Io avevo ragione.",
+            "en": "There, you see? The glue! I was right."
+          }
+        ]
+      },
+      {
+        "who": "Valerio",
+        "s": [
+          {
+            "it": "Diciamo che aveva ragione a metà, signor Brambilla.",
+            "en": "Let's say you were half right, Mr Brambilla."
+          }
+        ]
+      },
+      {
+        "who": "Brambilla",
+        "s": [
+          {
+            "it": "Pronto? Ah, ciao, cara. Sì, sono al museo.",
+            "en": "Hello? Ah, hi, dear. Yes, I'm at the museum."
+          },
+          {
+            "it": "No, non ho detto niente di sbagliato. Va bene, ciao, ciao.",
+            "en": "No, I haven't said anything wrong. All right, bye, bye."
+          }
+        ]
+      },
+      {
+        "who": "Valerio",
+        "s": [
+          {
+            "it": "Signore, il telefono, per favore. Siamo in un museo.",
+            "en": "Sir, the phone, please. We're in a museum."
+          }
+        ]
+      },
+      {
+        "who": "Brambilla",
+        "s": [
+          {
+            "it": "Scusi. Era mia moglie. Mi controlla anche da lontano.",
+            "en": "Sorry. It was my wife. She keeps an eye on me even from far away."
+          }
+        ]
+      },
+      {
+        "who": "Valerio",
+        "s": [
+          {
+            "it": "Adesso saliamo al piano di sopra. Attenzione alle scale: sono vecchie e strette.",
+            "en": "Now let's go upstairs. Careful on the stairs: they're old and narrow."
+          }
+        ]
+      },
+      {
+        "who": "Brambilla",
+        "s": [
+          {
+            "it": "Si possono fare foto?",
+            "en": "Can we take photos?"
+          }
+        ]
+      },
+      {
+        "who": "Valerio",
+        "s": [
+          {
+            "it": "Sì, ma senza flash, per favore.",
+            "en": "Yes, but without flash, please."
+          }
+        ]
+      },
+      {
+        "who": "Valerio",
+        "s": [
+          {
+            "it": "Ecco, questa è la bottega, e questa è Rosanna, la nostra mastra cartaia.",
+            "en": "Here we are, this is the workshop, and this is Rosanna, our master papermaker."
+          }
+        ]
+      },
+      {
+        "who": "Rosanna",
+        "s": [
+          {
+            "it": "Buongiorno a tutti. Io faccio questo lavoro da trentadue anni.",
+            "en": "Good morning everyone. I've been doing this job for thirty-two years."
+          },
+          {
+            "it": "Ho cominciato a diciotto anni, con mio zio.",
+            "en": "I started at eighteen, with my uncle."
+          },
+          {
+            "it": "Allora, qui davanti a me c'è una grande vasca piena di acqua e di pasta di carta.",
+            "en": "So, here in front of me there's a big tub full of water and paper pulp."
+          },
+          {
+            "it": "Io prendo la forma, cioè questo telaio di legno con una rete di metallo.",
+            "en": "I take the mould, that is this wooden frame with a metal mesh."
+          },
+          {
+            "it": "La metto nell'acqua, piano, e la tiro su dritta.",
+            "en": "I put it in the water, slowly, and I lift it out straight."
+          },
+          {
+            "it": "Poi la muovo un po', a destra e a sinistra. Così.",
+            "en": "Then I move it a bit, right and left. Like this."
+          },
+          {
+            "it": "L'acqua va via, e sulla rete resta un foglio sottile.",
+            "en": "The water runs off, and a thin sheet stays on the mesh."
+          }
+        ]
+      },
+      {
+        "who": "Nadia",
+        "s": [
+          {
+            "it": "Così veloce? Quanto tempo ci vuole?",
+            "en": "That fast? How long does it take?"
+          }
+        ]
+      },
+      {
+        "who": "Rosanna",
+        "s": [
+          {
+            "it": "Per un foglio, dieci secondi. Per imparare bene, dieci anni.",
+            "en": "For one sheet, ten seconds. To learn it properly, ten years."
+          }
+        ]
+      },
+      {
+        "who": "Brambilla",
+        "s": [
+          {
+            "it": "E si guadagna bene, con questo lavoro?",
+            "en": "And do you earn well, with this job?"
+          }
+        ]
+      },
+      {
+        "who": "Rosanna",
+        "s": [
+          {
+            "it": "Si guadagna poco. E d'inverno le mani sono sempre nell'acqua fredda, diventano tutte rosse.",
+            "en": "You earn little. And in winter your hands are always in cold water, they turn all red."
+          },
+          {
+            "it": "Ma non mi annoio mai. Ogni foglio è diverso.",
+            "en": "But I'm never bored. Every sheet is different."
+          },
+          {
+            "it": "Poi metto il foglio bagnato su un panno di lana, e sopra un altro panno, e un altro foglio.",
+            "en": "Then I put the wet sheet on a wool cloth, and another cloth on top, and another sheet."
+          },
+          {
+            "it": "Alla fine una pressa toglie l'acqua che resta.",
+            "en": "At the end a press takes out the water that's left."
+          }
+        ]
+      },
+      {
+        "who": "Valerio",
+        "s": [
+          {
+            "it": "Ed ecco la sorpresa: adesso tocca a voi! Ognuno di voi farà il suo foglio.",
+            "en": "And here's the surprise: now it's your turn! Each of you will make your own sheet."
+          }
+        ]
+      },
+      {
+        "who": "Brambilla",
+        "s": [
+          {
+            "it": "Io comincio, io comincio. È facile, ho visto.",
+            "en": "I'll start, I'll start. It's easy, I watched."
+          }
+        ]
+      },
+      {
+        "who": "Rosanna",
+        "s": [
+          {
+            "it": "Piano, signore, piano! Dritto!",
+            "en": "Slowly, sir, slowly! Straight!"
+          }
+        ]
+      },
+      {
+        "who": "Brambilla",
+        "s": [
+          {
+            "it": "Ecco fatto! Ma... perché c'è un buco in mezzo?",
+            "en": "Done! But... why is there a hole in the middle?"
+          }
+        ]
+      },
+      {
+        "who": "Rosanna",
+        "s": [
+          {
+            "it": "Perché ha tirato su la forma storta. Non si preoccupi, il primo foglio va sempre male.",
+            "en": "Because you lifted the mould crooked. Don't worry, the first sheet always goes wrong."
+          },
+          {
+            "it": "Anche il mio primo foglio, trentadue anni fa, aveva un buco.",
+            "en": "My first sheet too, thirty-two years ago, had a hole."
+          }
+        ]
+      },
+      {
+        "who": "Brambilla",
+        "s": [
+          {
+            "it": "Posso riprovare?",
+            "en": "Can I try again?"
+          }
+        ]
+      },
+      {
+        "who": "Rosanna",
+        "s": [
+          {
+            "it": "Certo. Prima però la signora.",
+            "en": "Of course. But first the lady."
+          }
+        ]
+      },
+      {
+        "who": "Nadia",
+        "s": [
+          {
+            "it": "Allora... piano, dritto, a destra e a sinistra...",
+            "en": "So... slowly, straight, right and left..."
+          }
+        ]
+      },
+      {
+        "who": "Rosanna",
+        "s": [
+          {
+            "it": "Brava! Guardi che bel foglio. E c'è anche la filigrana: la sirena!",
+            "en": "Well done! What a nice sheet. And it has the watermark too: the mermaid!"
+          }
+        ]
+      },
+      {
+        "who": "Nadia",
+        "s": [
+          {
+            "it": "Che emozione! Lo mostrerò ai miei bambini.",
+            "en": "How exciting! I'll show it to my kids."
+          }
+        ]
+      },
+      {
+        "who": "Brambilla",
+        "s": [
+          {
+            "it": "Adesso io. Piano... dritto...",
+            "en": "Now me. Slowly... straight..."
+          }
+        ]
+      },
+      {
+        "who": "Rosanna",
+        "s": [
+          {
+            "it": "Ecco! Questo è perfetto, signore.",
+            "en": "There! This one's perfect, sir."
+          }
+        ]
+      },
+      {
+        "who": "Brambilla",
+        "s": [
+          {
+            "it": "Perfetto? Davvero? Lo deve sapere mia moglie.",
+            "en": "Perfect? Really? My wife has to know."
+          },
+          {
+            "it": "Lei è rimasta in albergo, perché dice che io non so fare niente con le mani.",
+            "en": "She stayed at the hotel, because she says I can't do anything with my hands."
+          }
+        ]
+      },
+      {
+        "who": "Valerio",
+        "s": [
+          {
+            "it": "Allora il foglio è un ottimo regalo per lei.",
+            "en": "Then the sheet is a great present for her."
+          },
+          {
+            "it": "Però attenzione: i fogli devono asciugare per due giorni. Oggi non potete portarli a casa.",
+            "en": "But careful: the sheets have to dry for two days. You can't take them home today."
+          }
+        ]
+      },
+      {
+        "who": "Nadia",
+        "s": [
+          {
+            "it": "E come facciamo? Io domani torno a Perugia.",
+            "en": "And what do we do? I'm going back to Perugia tomorrow."
+          }
+        ]
+      },
+      {
+        "who": "Valerio",
+        "s": [
+          {
+            "it": "Ve li spediamo per posta. Costa cinque euro. Lasciate l'indirizzo alla cassa, al piano terra.",
+            "en": "We'll send them to you by post. It costs five euros. Leave your address at the till, on the ground floor."
+          },
+          {
+            "it": "Ah, il bookshop chiude alle sei, mezz'ora prima del museo.",
+            "en": "Ah, the bookshop closes at six, half an hour before the museum."
+          }
+        ]
+      },
+      {
+        "who": "Brambilla",
+        "s": [
+          {
+            "it": "Io il mio foglio non lo spedisco a Monza.",
+            "en": "I'm not sending my sheet to Monza."
+          },
+          {
+            "it": "Lo spedisco all'albergo, qui a Fabriano. Restiamo fino a domenica.",
+            "en": "I'm sending it to the hotel, here in Fabriano. We're staying until Sunday."
+          },
+          {
+            "it": "Così mia moglie lo vede subito.",
+            "en": "That way my wife sees it straight away."
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "q": "Che cosa fa il gruppo alla fine della visita?",
+        "o": [
+          "Compra la carta nel bookshop",
+          "Ognuno fa un foglio di carta",
+          "Guarda un film sulla carta"
+        ],
+        "a": "Ognuno fa un foglio di carta"
+      },
+      {
+        "q": "Secondo la guida, dove hanno inventato la carta?",
+        "o": [
+          "A Fabriano",
+          "In Cina",
+          "Nei paesi arabi"
+        ],
+        "a": "In Cina"
+      },
+      {
+        "q": "Da quanto tempo si fa la carta a Fabriano?",
+        "o": [
+          "Da circa cento anni",
+          "Da più di settecento anni",
+          "Da circa duemila anni"
+        ],
+        "a": "Da più di settecento anni"
+      },
+      {
+        "q": "Con che cosa si faceva la carta una volta?",
+        "o": [
+          "Con il legno degli alberi",
+          "Con i vestiti vecchi",
+          "Con la colla"
+        ],
+        "a": "Con i vestiti vecchi"
+      },
+      {
+        "q": "Perché Nadia è venuta al museo?",
+        "o": [
+          "Per preparare una gita",
+          "Perché lavora in una cartiera",
+          "Per scrivere un libro sulla carta"
+        ],
+        "a": "Per preparare una gita"
+      },
+      {
+        "q": "Che cos'è la filigrana?",
+        "o": [
+          "Un tipo di colla fatta con le ossa",
+          "La rete di metallo",
+          "Un disegno dentro la carta"
+        ],
+        "a": "Un disegno dentro la carta"
+      },
+      {
+        "q": "Da quanti anni Rosanna fa la mastra cartaia?",
+        "o": [
+          "Da diciotto anni",
+          "Da trentadue anni",
+          "Da dieci anni"
+        ],
+        "a": "Da trentadue anni"
+      },
+      {
+        "q": "Perché il primo foglio di Brambilla ha un buco?",
+        "o": [
+          "Perché l'acqua della vasca era fredda",
+          "Perché ha tirato su la forma storta",
+          "Perché ha usato il flash per la foto"
+        ],
+        "a": "Perché ha tirato su la forma storta"
+      },
+      {
+        "q": "Quanto costa spedire il foglio?",
+        "o": [
+          "Cinque euro",
+          "Sei euro",
+          "Due euro"
+        ],
+        "a": "Cinque euro"
+      },
+      {
+        "q": "Dove spedirà il foglio Brambilla?",
+        "o": [
+          "A Monza, a casa sua",
+          "A Perugia",
+          "In albergo"
+        ],
+        "a": "In albergo"
+      }
+    ]
+  },
+  {
+    "id": "l-a2-08",
+    "level": "A2",
+    "title": "Buongiorno Liguria",
+    "en": "Good morning, Liguria",
+    "topic": "places",
+    "genre": "morning radio show",
+    "minutes": 6,
+    "situation": "A morning programme on a local radio station in Liguria, on the Friday before a long weekend. The host gives the news and talks to people on the phone.",
+    "speakers": {
+      "Elisa": "f2",
+      "Matteo": "m",
+      "Carla": "f",
+      "Gianni": "m2"
+    },
+    "body": [
+      {
+        "who": "Elisa",
+        "s": [
+          {
+            "it": "Buongiorno, Liguria! Sono le sette e mezza e questa è «Caffè e Focaccia», su Radio Golfo.",
+            "en": "Good morning, Liguria! It's half past seven and this is \"Coffee and Focaccia\", on Radio Golfo."
+          },
+          {
+            "it": "Io sono Elisa, e oggi è venerdì. Comincia il lungo weekend di Ognissanti.",
+            "en": "I'm Elisa, and today is Friday. The long weekend of All Saints' Day begins."
+          },
+          {
+            "it": "Molti di voi sono già in macchina, molti sono in coda, e qualcuno è ancora a letto. Beati voi.",
+            "en": "Many of you are already in the car, many are in a queue, and some of you are still in bed. Lucky you."
+          },
+          {
+            "it": "Cominciamo subito con il traffico. In linea c'è Matteo, dal Centro Informazioni Traffico. Ciao, Matteo!",
+            "en": "Let's start straight away with the traffic. On the line we have Matteo, from the Traffic Information Centre. Hi, Matteo!"
+          }
+        ]
+      },
+      {
+        "who": "Matteo",
+        "s": [
+          {
+            "it": "Ciao, Elisa, buongiorno a tutti.",
+            "en": "Hi, Elisa, good morning everyone."
+          },
+          {
+            "it": "Allora, stamattina le notizie non sono belle.",
+            "en": "So, this morning the news isn't good."
+          },
+          {
+            "it": "Sull'autostrada A10, tra Genova Pra' e Arenzano, in direzione Savona, c'è una coda di sei chilometri.",
+            "en": "On the A10 motorway, between Genova Pra' and Arenzano, towards Savona, there's a six-kilometre queue."
+          },
+          {
+            "it": "Verso le sei e mezza un camion ha perso il suo carico, e adesso una corsia è chiusa.",
+            "en": "At around half past six a lorry lost its load, and now one lane is closed."
+          }
+        ]
+      },
+      {
+        "who": "Elisa",
+        "s": [
+          {
+            "it": "Ci sono feriti?",
+            "en": "Is anyone hurt?"
+          }
+        ]
+      },
+      {
+        "who": "Matteo",
+        "s": [
+          {
+            "it": "No, per fortuna nessun ferito. Ma il consiglio è questo: chi va verso Savona può uscire a Genova Pegli e prendere l'Aurelia.",
+            "en": "No, luckily nobody's hurt. But the advice is this: if you're going towards Savona you can exit at Genova Pegli and take the Aurelia road."
+          },
+          {
+            "it": "Sull'A12, verso La Spezia, ci sono lavori tra Recco e Rapallo, e la velocità massima è sessanta all'ora.",
+            "en": "On the A12, towards La Spezia, there are roadworks between Recco and Rapallo, and the speed limit is sixty kilometres an hour."
+          },
+          {
+            "it": "Infine, per chi va in Piemonte: sull'A7 il traffico è intenso, ma per ora non ci sono code.",
+            "en": "Finally, for those going to Piedmont: on the A7 the traffic is heavy, but for now there are no queues."
+          }
+        ]
+      },
+      {
+        "who": "Elisa",
+        "s": [
+          {
+            "it": "E in città, a Genova?",
+            "en": "And in town, in Genoa?"
+          }
+        ]
+      },
+      {
+        "who": "Matteo",
+        "s": [
+          {
+            "it": "In città oggi è una giornata difficile, perché c'è lo sciopero degli autobus.",
+            "en": "In town today is a difficult day, because there's a bus strike."
+          },
+          {
+            "it": "Gli autobus si fermano dalle nove di mattina alle cinque del pomeriggio.",
+            "en": "The buses stop from nine in the morning until five in the afternoon."
+          },
+          {
+            "it": "La metropolitana e le funicolari invece funzionano regolarmente.",
+            "en": "The metro and the funiculars, on the other hand, are running normally."
+          },
+          {
+            "it": "Quindi, se potete, uscite di casa prima delle nove.",
+            "en": "So, if you can, leave home before nine."
+          }
+        ]
+      },
+      {
+        "who": "Elisa",
+        "s": [
+          {
+            "it": "Grazie, Matteo, ci risentiamo alle otto.",
+            "en": "Thanks, Matteo, we'll talk again at eight."
+          }
+        ]
+      },
+      {
+        "who": "Elisa",
+        "s": [
+          {
+            "it": "Abbiamo già una telefonata. È Carla, da Marassi. Buongiorno, Carla!",
+            "en": "We already have a call. It's Carla, from Marassi. Good morning, Carla!"
+          }
+        ]
+      },
+      {
+        "who": "Carla",
+        "s": [
+          {
+            "it": "Buongiorno, Elisa. Io la ascolto tutte le mattine, sa? Da quindici anni.",
+            "en": "Good morning, Elisa. I listen to you every morning, you know? For fifteen years."
+          }
+        ]
+      },
+      {
+        "who": "Elisa",
+        "s": [
+          {
+            "it": "Grazie, Carla! Che cosa succede?",
+            "en": "Thank you, Carla! What's happening?"
+          }
+        ]
+      },
+      {
+        "who": "Carla",
+        "s": [
+          {
+            "it": "Succede che alle dieci ho una visita all'ospedale San Martino. Dal cardiologo.",
+            "en": "What's happening is that at ten I've got an appointment at San Martino hospital. With the cardiologist."
+          },
+          {
+            "it": "Ho aspettato quattro mesi per questa visita.",
+            "en": "I waited four months for this appointment."
+          },
+          {
+            "it": "E adesso sento alla radio che gli autobus non ci sono.",
+            "en": "And now I hear on the radio that there are no buses."
+          },
+          {
+            "it": "Io la macchina non ce l'ho, e mio figlio lavora a Milano.",
+            "en": "I don't have a car, and my son works in Milan."
+          }
+        ]
+      },
+      {
+        "who": "Elisa",
+        "s": [
+          {
+            "it": "Carla, ma lei può prendere l'autobus prima delle nove. Il trentasette passa ancora.",
+            "en": "Carla, but you can take the bus before nine. The thirty-seven still runs."
+          }
+        ]
+      },
+      {
+        "who": "Carla",
+        "s": [
+          {
+            "it": "Prima delle nove? Ma la visita è alle dieci! Cosa faccio un'ora in ospedale?",
+            "en": "Before nine? But the appointment is at ten! What do I do for an hour in the hospital?"
+          }
+        ]
+      },
+      {
+        "who": "Elisa",
+        "s": [
+          {
+            "it": "Beh, prende un caffè, legge il giornale...",
+            "en": "Well, you have a coffee, read the paper..."
+          }
+        ]
+      },
+      {
+        "who": "Carla",
+        "s": [
+          {
+            "it": "Il caffè non lo posso bere, per il cuore.",
+            "en": "I can't drink coffee, because of my heart."
+          }
+        ]
+      },
+      {
+        "who": "Elisa",
+        "s": [
+          {
+            "it": "Allora facciamo una cosa. Se c'è un ascoltatore di Marassi che va verso San Martino verso le nove e mezza, ci scriva!",
+            "en": "Then let's do something. If there's a listener in Marassi going towards San Martino at about half past nine, write to us!"
+          },
+          {
+            "it": "Il numero dei messaggi è tre, tre, tre, uno, due, uno, due, uno, due, uno.",
+            "en": "The message number is three, three, three, one, two, one, two, one, two, one."
+          },
+          {
+            "it": "Carla, resti in linea con la redazione, va bene?",
+            "en": "Carla, stay on the line with our team, OK?"
+          }
+        ]
+      },
+      {
+        "who": "Carla",
+        "s": [
+          {
+            "it": "Va bene. Grazie, cara.",
+            "en": "All right. Thank you, dear."
+          }
+        ]
+      },
+      {
+        "who": "Elisa",
+        "s": [
+          {
+            "it": "E adesso torniamo sull'A10, perché abbiamo in linea un ascoltatore che è proprio in coda.",
+            "en": "And now let's go back to the A10, because we have a listener on the line who's right in the queue."
+          },
+          {
+            "it": "Gianni, camionista, buongiorno! Dove sei esattamente?",
+            "en": "Gianni, lorry driver, good morning! Where are you exactly?"
+          }
+        ]
+      },
+      {
+        "who": "Gianni",
+        "s": [
+          {
+            "it": "Buongiorno, Elisa. Sono fermo dopo l'uscita di Pra', vicino alla galleria.",
+            "en": "Good morning, Elisa. I'm stopped after the Pra' exit, near the tunnel."
+          },
+          {
+            "it": "Sono qui da quaranta minuti e abbiamo fatto forse un chilometro.",
+            "en": "I've been here for forty minutes and we've done maybe one kilometre."
+          }
+        ]
+      },
+      {
+        "who": "Elisa",
+        "s": [
+          {
+            "it": "E si vede qualcosa? Che cosa è successo?",
+            "en": "And can you see anything? What happened?"
+          }
+        ]
+      },
+      {
+        "who": "Gianni",
+        "s": [
+          {
+            "it": "Eh, si vede, si vede. E soprattutto si sente il profumo.",
+            "en": "Oh, you can see it, you can see it. And above all you can smell it."
+          },
+          {
+            "it": "Il camion ha perso tutte le sue cassette di basilico.",
+            "en": "The lorry lost all its crates of basil."
+          },
+          {
+            "it": "Centinaia di cassette. La strada è tutta verde.",
+            "en": "Hundreds of crates. The road is all green."
+          },
+          {
+            "it": "C'è un profumo di pesto incredibile, Elisa. Sembra di essere in cucina da mia nonna.",
+            "en": "There's an incredible smell of pesto, Elisa. It's like being in my grandmother's kitchen."
+          }
+        ]
+      },
+      {
+        "who": "Elisa",
+        "s": [
+          {
+            "it": "Il basilico di Pra'! Il più famoso della Liguria!",
+            "en": "Basil from Pra'! The most famous in Liguria!"
+          }
+        ]
+      },
+      {
+        "who": "Gianni",
+        "s": [
+          {
+            "it": "Esatto. Il camionista l'ho visto, è lì sul bordo della strada con la polizia.",
+            "en": "Exactly. I saw the lorry driver, he's there at the side of the road with the police."
+          },
+          {
+            "it": "Poverino, raccoglie le foglie con le mani.",
+            "en": "Poor guy, he's picking up the leaves with his hands."
+          }
+        ]
+      },
+      {
+        "who": "Elisa",
+        "s": [
+          {
+            "it": "E tu dove vai oggi, Gianni?",
+            "en": "And where are you going today, Gianni?"
+          }
+        ]
+      },
+      {
+        "who": "Gianni",
+        "s": [
+          {
+            "it": "Vado a Ventimiglia, porto frutta e verdura al mercato.",
+            "en": "I'm going to Ventimiglia, I'm taking fruit and veg to the market."
+          },
+          {
+            "it": "Ma io stamattina non ho fatto colazione, quindi questo profumo è una tortura.",
+            "en": "But I didn't have breakfast this morning, so this smell is torture."
+          },
+          {
+            "it": "Ho solo un pacco di trofie nel camion. Mi manca solo il pesto!",
+            "en": "I only have a packet of trofie in the lorry. All I need is the pesto!"
+          }
+        ]
+      },
+      {
+        "who": "Elisa",
+        "s": [
+          {
+            "it": "Il tuo consiglio per chi deve partire?",
+            "en": "Your advice for people who have to leave?"
+          }
+        ]
+      },
+      {
+        "who": "Gianni",
+        "s": [
+          {
+            "it": "Aspettate un'ora. O prendete l'Aurelia. E portate un panino!",
+            "en": "Wait an hour. Or take the Aurelia. And bring a sandwich!"
+          }
+        ]
+      },
+      {
+        "who": "Elisa",
+        "s": [
+          {
+            "it": "Grazie, Gianni, e buon viaggio!",
+            "en": "Thanks, Gianni, and have a good trip!"
+          },
+          {
+            "it": "Sono le otto, e come promesso torniamo da Matteo. Matteo, come va sull'A10?",
+            "en": "It's eight o'clock, and as promised we go back to Matteo. Matteo, how's it going on the A10?"
+          }
+        ]
+      },
+      {
+        "who": "Matteo",
+        "s": [
+          {
+            "it": "Va peggio, Elisa. Adesso la coda è di nove chilometri.",
+            "en": "It's getting worse, Elisa. Now the queue is nine kilometres long."
+          },
+          {
+            "it": "I vigili del fuoco sono arrivati e lavano la strada con l'acqua, perché le foglie sono scivolose.",
+            "en": "The fire brigade has arrived and they're washing the road with water, because the leaves are slippery."
+          },
+          {
+            "it": "La corsia resterà chiusa almeno fino alle dieci.",
+            "en": "The lane will stay closed at least until ten."
+          },
+          {
+            "it": "E c'è anche una notizia curiosa.",
+            "en": "And there's also a curious piece of news."
+          },
+          {
+            "it": "Il basilico andava a una fabbrica di pesto di Bolzaneto, qui vicino.",
+            "en": "The basil was going to a pesto factory in Bolzaneto, near here."
+          },
+          {
+            "it": "Il proprietario ha parlato con i giornalisti e ha detto: oggi niente pesto, ma domani lavoreremo il doppio.",
+            "en": "The owner spoke to journalists and said: no pesto today, but tomorrow we'll work twice as hard."
+          }
+        ]
+      },
+      {
+        "who": "Elisa",
+        "s": [
+          {
+            "it": "Un vero ligure: non si lamenta, lavora. Grazie, Matteo!",
+            "en": "A true Ligurian: he doesn't complain, he works. Thanks, Matteo!"
+          }
+        ]
+      },
+      {
+        "who": "Elisa",
+        "s": [
+          {
+            "it": "E adesso torniamo a Carla, la nostra ascoltatrice di Marassi.",
+            "en": "And now let's go back to Carla, our listener from Marassi."
+          },
+          {
+            "it": "In mezz'ora avete scritto in tantissimi, e qualcuno ha anche telefonato in redazione.",
+            "en": "In half an hour loads of you wrote in, and some people even phoned our team."
+          },
+          {
+            "it": "Grazie, davvero. A volte la radio serve anche a questo.",
+            "en": "Thank you, really. Sometimes radio is for this too."
+          },
+          {
+            "it": "Allora, sono arrivati tanti messaggi per Carla.",
+            "en": "So, lots of messages have arrived for Carla."
+          },
+          {
+            "it": "Ve ne leggo uno. Scrive Franco, di Marassi:",
+            "en": "I'll read you one. Franco, from Marassi, writes:"
+          },
+          {
+            "it": "«Io alle nove e mezza vado al lavoro al San Martino, sono infermiere. Porto io la signora Carla. Ho un'Ape, però. Non so se la signora ha paura.»",
+            "en": "\"At half past nine I go to work at San Martino, I'm a nurse. I'll take Signora Carla. I've got an Ape, though. I don't know if she's scared of that.\""
+          },
+          {
+            "it": "Carla, sei ancora in linea? Hai sentito?",
+            "en": "Carla, are you still on the line? Did you hear?"
+          }
+        ]
+      },
+      {
+        "who": "Carla",
+        "s": [
+          {
+            "it": "Ho sentito, ho sentito! Un'Ape? Quella piccola, con tre ruote?",
+            "en": "I heard, I heard! An Ape? The little one, with three wheels?"
+          }
+        ]
+      },
+      {
+        "who": "Elisa",
+        "s": [
+          {
+            "it": "Proprio quella.",
+            "en": "That's the one."
+          }
+        ]
+      },
+      {
+        "who": "Carla",
+        "s": [
+          {
+            "it": "Va be'. A ottantadue anni non sono mai salita su un'Ape. C'è sempre una prima volta.",
+            "en": "Oh well. At eighty-two I've never been in an Ape. There's always a first time."
+          },
+          {
+            "it": "E poi, se mi viene un problema al cuore, almeno l'infermiere c'è già!",
+            "en": "And anyway, if I get a heart problem, at least the nurse is already there!"
+          }
+        ]
+      },
+      {
+        "who": "Elisa",
+        "s": [
+          {
+            "it": "Brava, Carla! La redazione ti dà il numero di Franco.",
+            "en": "Well said, Carla! Our team will give you Franco's number."
+          },
+          {
+            "it": "Ultima notizia, poi la musica. Il meteo: oggi c'è il sole, ma domani, sabato, arriva la pioggia sulla Riviera di Levante.",
+            "en": "One last piece of news, then the music. The weather: today it's sunny, but tomorrow, Saturday, rain is coming to the Riviera di Levante."
+          },
+          {
+            "it": "Quindi, se andate alle Cinque Terre, portate l'ombrello.",
+            "en": "So, if you're going to the Cinque Terre, take an umbrella."
+          },
+          {
+            "it": "Il prossimo aggiornamento sul traffico è alle otto. Restate con noi!",
+            "en": "The next traffic update is at eight. Stay with us!"
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "q": "Di che cosa parla soprattutto il programma?",
+        "o": [
+          "Di ricette della cucina ligure",
+          "Di traffico e problemi per muoversi",
+          "Di musica e concerti del weekend"
+        ],
+        "a": "Di traffico e problemi per muoversi"
+      },
+      {
+        "q": "Alle sette e mezza, quanti chilometri di coda ci sono sull'A10?",
+        "o": [
+          "Sei",
+          "Nove",
+          "Sessanta"
+        ],
+        "a": "Sei"
+      },
+      {
+        "q": "Dove possono uscire le persone che vanno verso Savona?",
+        "o": [
+          "A Genova Pra'",
+          "A Genova Pegli",
+          "A Genova Bolzaneto"
+        ],
+        "a": "A Genova Pegli"
+      },
+      {
+        "q": "Quando non ci sono autobus a Genova?",
+        "o": [
+          "Dalle sette alle nove",
+          "Dalle nove alle cinque",
+          "Tutto il giorno, fino a sera"
+        ],
+        "a": "Dalle nove alle cinque"
+      },
+      {
+        "q": "Che cosa funziona regolarmente oggi a Genova?",
+        "o": [
+          "Gli autobus del pomeriggio",
+          "La metro e le funicolari",
+          "L'autostrada A10 verso Savona"
+        ],
+        "a": "La metro e le funicolari"
+      },
+      {
+        "q": "Perché Carla telefona alla radio?",
+        "o": [
+          "Perché suo figlio è in coda sull'A10",
+          "Perché vuole sapere il meteo del weekend",
+          "Perché deve andare in ospedale"
+        ],
+        "a": "Perché deve andare in ospedale"
+      },
+      {
+        "q": "Che cosa ha perso il camion sull'A10?",
+        "o": [
+          "Cassette di frutta e verdura",
+          "Pacchi di trofie",
+          "Cassette di basilico"
+        ],
+        "a": "Cassette di basilico"
+      },
+      {
+        "q": "Dove va oggi Gianni?",
+        "o": [
+          "A Savona",
+          "A Ventimiglia",
+          "Alle Cinque Terre"
+        ],
+        "a": "A Ventimiglia"
+      },
+      {
+        "q": "Chi porterà Carla all'ospedale?",
+        "o": [
+          "Suo figlio",
+          "Un infermiere",
+          "Gianni con il camion"
+        ],
+        "a": "Un infermiere"
+      },
+      {
+        "q": "Quando arriva la pioggia?",
+        "o": [
+          "Oggi pomeriggio",
+          "Domani, sabato",
+          "Domenica"
+        ],
+        "a": "Domani, sabato"
+      }
+    ]
+  },
+  {
+    "id": "l-a2-09",
+    "level": "A2",
+    "title": "Il turno di notte",
+    "en": "The night shift",
+    "topic": "work",
+    "genre": "scenes at a hotel reception",
+    "minutes": 6,
+    "situation": "Two receptionists work at a small hotel in the Sassi of Matera. First they talk at the desk one Monday morning; then the story moves to the following Saturday night.",
+    "speakers": {
+      "Rocco": "m",
+      "Salvatore": "m2",
+      "Lamacchia": "f2",
+      "Annalisa": "f"
+    },
+    "body": [
+      {
+        "who": "Rocco",
+        "s": [
+          {
+            "it": "Salvatò, hai un minuto?",
+            "en": "Salvatore, have you got a minute?"
+          }
+        ]
+      },
+      {
+        "who": "Salvatore",
+        "s": [
+          {
+            "it": "Dimmi, Rocco. Ma veloce, eh, che alle undici arriva il gruppo dalla Germania.",
+            "en": "Go on, Rocco. But quickly, eh, because the group from Germany arrives at eleven."
+          }
+        ]
+      },
+      {
+        "who": "Rocco",
+        "s": [
+          {
+            "it": "Senti, sabato prossimo io ho il turno di notte, dalle undici di sera alle sette di mattina.",
+            "en": "Listen, next Saturday I've got the night shift, from eleven at night to seven in the morning."
+          },
+          {
+            "it": "Puoi farlo tu al posto mio?",
+            "en": "Can you do it instead of me?"
+          }
+        ]
+      },
+      {
+        "who": "Salvatore",
+        "s": [
+          {
+            "it": "Sabato notte? Perché, che succede sabato?",
+            "en": "Saturday night? Why, what's happening on Saturday?"
+          }
+        ]
+      },
+      {
+        "who": "Rocco",
+        "s": [
+          {
+            "it": "Si sposa mia cugina Annalisa, qui a Matera, nella chiesa di San Pietro Caveoso.",
+            "en": "My cousin Annalisa is getting married, here in Matera, in the church of San Pietro Caveoso."
+          },
+          {
+            "it": "Lo so da tre mesi, ma ho dimenticato di chiedere il giorno libero.",
+            "en": "I've known for three months, but I forgot to ask for the day off."
+          }
+        ]
+      },
+      {
+        "who": "Salvatore",
+        "s": [
+          {
+            "it": "Tipico. E io? Sabato sera volevo andare a Bari, a un concerto.",
+            "en": "Typical. And me? On Saturday night I wanted to go to Bari, to a concert."
+          }
+        ]
+      },
+      {
+        "who": "Rocco",
+        "s": [
+          {
+            "it": "Lo so, lo so. Ma io posso fare il tuo turno di domenica mattina.",
+            "en": "I know, I know. But I can do your Sunday morning shift."
+          }
+        ]
+      },
+      {
+        "who": "Salvatore",
+        "s": [
+          {
+            "it": "Quello delle sette? Con le colazioni?",
+            "en": "The seven o'clock one? With the breakfasts?"
+          },
+          {
+            "it": "Guarda che domenica ci sono i ciclisti olandesi. Sono ventidue e vogliono la colazione alle sei e mezza.",
+            "en": "Mind you, on Sunday there are the Dutch cyclists. There are twenty-two of them and they want breakfast at half past six."
+          }
+        ]
+      },
+      {
+        "who": "Rocco",
+        "s": [
+          {
+            "it": "Va bene, faccio anche le colazioni. E ti porto i confetti del matrimonio.",
+            "en": "All right, I'll do the breakfasts too. And I'll bring you the sugared almonds from the wedding."
+          }
+        ]
+      },
+      {
+        "who": "Salvatore",
+        "s": [
+          {
+            "it": "I confetti non bastano. Voglio anche un pezzo di torta.",
+            "en": "Sugared almonds aren't enough. I want a piece of cake too."
+          }
+        ]
+      },
+      {
+        "who": "Rocco",
+        "s": [
+          {
+            "it": "Affare fatto. Sei un amico.",
+            "en": "Deal. You're a friend."
+          }
+        ]
+      },
+      {
+        "who": "Salvatore",
+        "s": [
+          {
+            "it": "Però lo dici tu alla signora Lamacchia. Lei vuole sapere i cambi di turno entro mercoledì.",
+            "en": "But you tell Signora Lamacchia. She wants to know about shift changes by Wednesday."
+          }
+        ]
+      },
+      {
+        "who": "Rocco",
+        "s": [
+          {
+            "it": "Le scrivo oggi pomeriggio.",
+            "en": "I'll write to her this afternoon."
+          },
+          {
+            "it": "Le scrivo una mail lunga e gentile. L'ultima volta mi ha detto di no perché ho chiesto con un messaggio su WhatsApp.",
+            "en": "I'll write her a long, polite email. Last time she said no because I asked with a WhatsApp message."
+          }
+        ]
+      },
+      {
+        "who": "Salvatore",
+        "s": [
+          {
+            "it": "La signora Lamacchia odia WhatsApp. E odia anche il telefono dopo le dieci di sera.",
+            "en": "Signora Lamacchia hates WhatsApp. And she hates the phone after ten at night too."
+          }
+        ]
+      },
+      {
+        "who": "Rocco",
+        "s": [
+          {
+            "it": "Ah, un'ultima cosa. Sabato notte l'albergo è pieno, tutte le camere.",
+            "en": "Ah, one last thing. On Saturday night the hotel is full, every room."
+          },
+          {
+            "it": "È libera solo la suite, la camera numero nove, quella nella grotta.",
+            "en": "Only the suite is free, room number nine, the one in the cave."
+          },
+          {
+            "it": "Ma la suite costa duecentottanta euro a notte, e per darla devi chiamare la signora Lamacchia.",
+            "en": "But the suite costs two hundred and eighty euros a night, and to give it to someone you have to call Signora Lamacchia."
+          }
+        ]
+      },
+      {
+        "who": "Salvatore",
+        "s": [
+          {
+            "it": "Tanto sabato notte non arriva nessuno. Dormirò sulla sedia.",
+            "en": "Anyway on Saturday night nobody will come. I'll sleep in the chair."
+          }
+        ]
+      },
+      {
+        "who": "Rocco",
+        "s": [
+          {
+            "it": "Pronto, Salvatò? Mi senti? C'è la musica alta, scusa!",
+            "en": "Hello, Salvatore? Can you hear me? The music's loud, sorry!"
+          }
+        ]
+      },
+      {
+        "who": "Salvatore",
+        "s": [
+          {
+            "it": "Ti sento, Rocco. Sono le undici e dieci, sono già in reception. Com'è il matrimonio?",
+            "en": "I can hear you, Rocco. It's ten past eleven, I'm already at reception. How's the wedding?"
+          }
+        ]
+      },
+      {
+        "who": "Rocco",
+        "s": [
+          {
+            "it": "Bellissimo! Siamo in una masseria in campagna, ci sono trecento invitati.",
+            "en": "Wonderful! We're at a farmhouse in the countryside, there are three hundred guests."
+          },
+          {
+            "it": "Il pranzo è cominciato alle due del pomeriggio e non è ancora finito.",
+            "en": "Lunch started at two in the afternoon and it still isn't over."
+          },
+          {
+            "it": "Ho mangiato quattordici piatti. Non mi posso muovere.",
+            "en": "I've eaten fourteen courses. I can't move."
+          }
+        ]
+      },
+      {
+        "who": "Salvatore",
+        "s": [
+          {
+            "it": "E la sposa?",
+            "en": "And the bride?"
+          }
+        ]
+      },
+      {
+        "who": "Rocco",
+        "s": [
+          {
+            "it": "Annalisa è felice, ma un po' nervosa.",
+            "en": "Annalisa is happy, but a bit nervous."
+          },
+          {
+            "it": "Gli amici di Donato, lo sposo, ridono sempre e parlano piano tra di loro. Hanno preparato qualcosa, sicuro.",
+            "en": "Donato's friends, the groom's, keep laughing and whispering among themselves. They've planned something, for sure."
+          },
+          {
+            "it": "Comunque, grazie ancora per il turno. Ci vediamo domenica alle sette.",
+            "en": "Anyway, thanks again for the shift. See you on Sunday at seven."
+          }
+        ]
+      },
+      {
+        "who": "Salvatore",
+        "s": [
+          {
+            "it": "Alle sette, Rocco. Non alle sette e venti.",
+            "en": "At seven, Rocco. Not at twenty past seven."
+          }
+        ]
+      },
+      {
+        "who": "Salvatore",
+        "s": [
+          {
+            "it": "Sono le due e venti di notte. Fuori piove.",
+            "en": "It's twenty past two at night. It's raining outside."
+          },
+          {
+            "it": "I ciclisti olandesi dormono da ore. Io leggo il giornale di ieri.",
+            "en": "The Dutch cyclists have been asleep for hours. I'm reading yesterday's paper."
+          },
+          {
+            "it": "E adesso... qualcuno suona il campanello. Alle due e venti.",
+            "en": "And now... someone's ringing the bell. At twenty past two."
+          }
+        ]
+      },
+      {
+        "who": "Annalisa",
+        "s": [
+          {
+            "it": "Buonasera! Cioè, buongiorno. Insomma, scusi.",
+            "en": "Good evening! I mean, good morning. Well, sorry."
+          }
+        ]
+      },
+      {
+        "who": "Salvatore",
+        "s": [
+          {
+            "it": "Buonasera, signora. Prego, entri, entri. Lei è tutta bagnata!",
+            "en": "Good evening, madam. Please, come in, come in. You're soaking wet!"
+          },
+          {
+            "it": "Ma... quello è un vestito da sposa?",
+            "en": "But... is that a wedding dress?"
+          }
+        ]
+      },
+      {
+        "who": "Annalisa",
+        "s": [
+          {
+            "it": "Sì. Mi sono sposata oggi. Cioè, ieri. Alle undici di mattina.",
+            "en": "Yes. I got married today. I mean, yesterday. At eleven in the morning."
+          }
+        ]
+      },
+      {
+        "who": "Salvatore",
+        "s": [
+          {
+            "it": "Lei è Annalisa? La cugina di Rocco?",
+            "en": "Are you Annalisa? Rocco's cousin?"
+          }
+        ]
+      },
+      {
+        "who": "Annalisa",
+        "s": [
+          {
+            "it": "Sì, sono io! Rocco mi ha detto che stanotte qui c'era un suo amico. Lei è Salvatore?",
+            "en": "Yes, that's me! Rocco told me a friend of his was here tonight. Are you Salvatore?"
+          }
+        ]
+      },
+      {
+        "who": "Salvatore",
+        "s": [
+          {
+            "it": "Sono io. Auguri! Ma... dov'è suo marito?",
+            "en": "That's me. Congratulations! But... where's your husband?"
+          },
+          {
+            "it": "E come è arrivata qui? Alle due di notte, con questa pioggia?",
+            "en": "And how did you get here? At two in the morning, in this rain?"
+          }
+        ]
+      },
+      {
+        "who": "Annalisa",
+        "s": [
+          {
+            "it": "A piedi. Ho chiamato tre taxi, ma a quest'ora a Matera non risponde nessuno.",
+            "en": "On foot. I called three taxis, but at this hour nobody answers in Matera."
+          },
+          {
+            "it": "E le scale dei Sassi con il vestito da sposa... non le consiglio a nessuno.",
+            "en": "And the steps of the Sassi in a wedding dress... I don't recommend them to anyone."
+          }
+        ]
+      },
+      {
+        "who": "Annalisa",
+        "s": [
+          {
+            "it": "Mio marito, Donato, è ancora alla festa, con i suoi amici.",
+            "en": "My husband, Donato, is still at the party, with his friends."
+          },
+          {
+            "it": "Allora, le spiego. Qui da noi gli amici dello sposo fanno sempre uno scherzo.",
+            "en": "So, let me explain. Here where we live the groom's friends always play a joke."
+          },
+          {
+            "it": "Quando gli sposi tornano a casa, la casa è un disastro.",
+            "en": "When the newlyweds go home, the house is a disaster."
+          },
+          {
+            "it": "Gli amici di Donato hanno preso le chiavi del nostro appartamento la settimana scorsa.",
+            "en": "Donato's friends took the keys to our flat last week."
+          },
+          {
+            "it": "Stasera sono passata a casa per prendere un vestito comodo.",
+            "en": "Tonight I stopped at home to get a comfortable dress."
+          },
+          {
+            "it": "Ho aperto la porta e c'erano trecento palloncini in camera da letto.",
+            "en": "I opened the door and there were three hundred balloons in the bedroom."
+          },
+          {
+            "it": "E il letto era pieno di sale e di riso. E nella vasca da bagno c'era una gallina. Viva!",
+            "en": "And the bed was full of salt and rice. And in the bathtub there was a hen. Alive!"
+          }
+        ]
+      },
+      {
+        "who": "Salvatore",
+        "s": [
+          {
+            "it": "Una gallina?",
+            "en": "A hen?"
+          }
+        ]
+      },
+      {
+        "who": "Annalisa",
+        "s": [
+          {
+            "it": "Una gallina. Si chiama Concetta, c'era il nome sul collo.",
+            "en": "A hen. She's called Concetta, her name was on her neck."
+          },
+          {
+            "it": "Io sono stanchissima. Ho ballato per dieci ore con queste scarpe. Voglio solo dormire.",
+            "en": "I'm exhausted. I've danced for ten hours in these shoes. I just want to sleep."
+          },
+          {
+            "it": "Avete una camera?",
+            "en": "Have you got a room?"
+          }
+        ]
+      },
+      {
+        "who": "Salvatore",
+        "s": [
+          {
+            "it": "Eh... l'albergo è pieno. È libera solo la suite.",
+            "en": "Well... the hotel is full. Only the suite is free."
+          },
+          {
+            "it": "Ma per la suite devo chiamare la direttrice. Un momento.",
+            "en": "But for the suite I have to call the manager. One moment."
+          }
+        ]
+      },
+      {
+        "who": "Lamacchia",
+        "s": [
+          {
+            "it": "Pronto? Chi è? Sono le due e mezza!",
+            "en": "Hello? Who is it? It's half past two!"
+          }
+        ]
+      },
+      {
+        "who": "Salvatore",
+        "s": [
+          {
+            "it": "Signora Lamacchia, mi scusi, sono Salvatore. C'è un'ospite senza prenotazione. Vuole la suite.",
+            "en": "Signora Lamacchia, I'm sorry, it's Salvatore. There's a guest without a booking. She wants the suite."
+          }
+        ]
+      },
+      {
+        "who": "Lamacchia",
+        "s": [
+          {
+            "it": "Alle due e mezza di notte? E lei mi sveglia per questo? Duecentottanta euro, come sempre.",
+            "en": "At half past two in the morning? And you wake me up for this? Two hundred and eighty euros, as always."
+          }
+        ]
+      },
+      {
+        "who": "Salvatore",
+        "s": [
+          {
+            "it": "È la cugina di Rocco. Si è sposata ieri. È qui con il vestito da sposa, tutta bagnata.",
+            "en": "It's Rocco's cousin. She got married yesterday. She's here in her wedding dress, soaking wet."
+          },
+          {
+            "it": "E a casa sua c'è una gallina nella vasca.",
+            "en": "And at her house there's a hen in the bathtub."
+          }
+        ]
+      },
+      {
+        "who": "Lamacchia",
+        "s": [
+          {
+            "it": "Una gallina? Va be', non voglio sapere niente.",
+            "en": "A hen? Oh well, I don't want to know anything."
+          },
+          {
+            "it": "Le dia la suite. Gratis. È il regalo di nozze dell'albergo.",
+            "en": "Give her the suite. Free. It's the hotel's wedding present."
+          },
+          {
+            "it": "Ma domani mattina Rocco deve essere qui alle sette in punto. Non alle sette e venti come l'altra volta.",
+            "en": "But tomorrow morning Rocco must be here at seven sharp. Not at twenty past seven like last time."
+          }
+        ]
+      },
+      {
+        "who": "Salvatore",
+        "s": [
+          {
+            "it": "Glielo dico. Grazie, signora. Buonanotte.",
+            "en": "I'll tell him. Thank you, madam. Good night."
+          }
+        ]
+      },
+      {
+        "who": "Salvatore",
+        "s": [
+          {
+            "it": "Allora, signora Annalisa: la suite è sua. E la direttrice dice che è gratis. È il vostro regalo di nozze.",
+            "en": "So, Signora Annalisa: the suite is yours. And the manager says it's free. It's your wedding present."
+          }
+        ]
+      },
+      {
+        "who": "Annalisa",
+        "s": [
+          {
+            "it": "Davvero? Grazie, grazie! Domani le porto i confetti.",
+            "en": "Really? Thank you, thank you! Tomorrow I'll bring you some sugared almonds."
+          }
+        ]
+      },
+      {
+        "who": "Salvatore",
+        "s": [
+          {
+            "it": "I confetti me li porta già Rocco. Io preferisco la torta.",
+            "en": "Rocco's already bringing me the sugared almonds. I prefer the cake."
+          }
+        ]
+      },
+      {
+        "who": "Annalisa",
+        "s": [
+          {
+            "it": "Allora la torta. Ah, un'altra cosa. Mio marito arriverà più tardi. Forse alle quattro.",
+            "en": "Then the cake. Ah, one more thing. My husband will come later. Maybe at four."
+          }
+        ]
+      },
+      {
+        "who": "Salvatore",
+        "s": [
+          {
+            "it": "Va bene, lo aspetto io. Come lo riconosco?",
+            "en": "All right, I'll wait for him. How will I recognise him?"
+          }
+        ]
+      },
+      {
+        "who": "Annalisa",
+        "s": [
+          {
+            "it": "Facile. È alto, ha la cravatta rossa, e probabilmente avrà la gallina in braccio.",
+            "en": "Easy. He's tall, he's got a red tie, and he'll probably have the hen in his arms."
+          },
+          {
+            "it": "Non può lasciarla da sola a casa. Donato ama gli animali.",
+            "en": "He can't leave her alone at home. Donato loves animals."
+          }
+        ]
+      },
+      {
+        "who": "Salvatore",
+        "s": [
+          {
+            "it": "In albergo gli animali non possono entrare.",
+            "en": "Animals aren't allowed in the hotel."
+          }
+        ]
+      },
+      {
+        "who": "Annalisa",
+        "s": [
+          {
+            "it": "Lo so. Ma alle quattro di notte la signora Lamacchia dorme, no?",
+            "en": "I know. But at four in the morning Signora Lamacchia is asleep, isn't she?"
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "q": "Perché Rocco non può lavorare sabato notte?",
+        "o": [
+          "Si sposa sua cugina",
+          "Va a un concerto a Bari",
+          "Arriva un gruppo dalla Germania"
+        ],
+        "a": "Si sposa sua cugina"
+      },
+      {
+        "q": "Che cosa voleva fare Salvatore sabato sera?",
+        "o": [
+          "Dormire tutta la notte",
+          "Andare a Bari a un concerto",
+          "Andare al matrimonio di Annalisa"
+        ],
+        "a": "Andare a Bari a un concerto"
+      },
+      {
+        "q": "Che cosa farà Rocco in cambio?",
+        "o": [
+          "Il turno di domenica mattina",
+          "Il turno di sabato pomeriggio",
+          "Il turno di domenica sera"
+        ],
+        "a": "Il turno di domenica mattina"
+      },
+      {
+        "q": "Quanto costa la suite a notte?",
+        "o": [
+          "Duecento euro",
+          "Duecentottanta euro",
+          "Trecentottanta euro"
+        ],
+        "a": "Duecentottanta euro"
+      },
+      {
+        "q": "Perché Annalisa arriva all'albergo di notte?",
+        "o": [
+          "Perché ha litigato con il marito alla festa",
+          "Perché la festa nella masseria è finita",
+          "Per uno scherzo degli amici dello sposo"
+        ],
+        "a": "Per uno scherzo degli amici dello sposo"
+      },
+      {
+        "q": "Che cosa c'era nella vasca da bagno?",
+        "o": [
+          "Trecento palloncini",
+          "Sale e riso",
+          "Una gallina"
+        ],
+        "a": "Una gallina"
+      },
+      {
+        "q": "Perché Salvatore telefona alla signora Lamacchia?",
+        "o": [
+          "Perché Annalisa non ha soldi per pagare",
+          "Perché Rocco è in ritardo per il turno",
+          "Perché per la suite deve chiamare lei"
+        ],
+        "a": "Perché per la suite deve chiamare lei"
+      },
+      {
+        "q": "Quanto paga Annalisa per la suite?",
+        "o": [
+          "Duecentottanta euro",
+          "La metà",
+          "Niente"
+        ],
+        "a": "Niente"
+      },
+      {
+        "q": "A che ora deve arrivare Rocco domenica mattina?",
+        "o": [
+          "Alle sei e mezza",
+          "Alle sette",
+          "Alle sette e venti"
+        ],
+        "a": "Alle sette"
+      },
+      {
+        "q": "Che cosa porterà probabilmente Donato all'albergo?",
+        "o": [
+          "La torta",
+          "La gallina",
+          "I confetti"
+        ],
+        "a": "La gallina"
+      }
+    ]
+  },
+  {
+    "id": "l-a2-10",
+    "level": "A2",
+    "title": "Un caffè, ma quale?",
+    "en": "A coffee, but which one?",
+    "topic": "food",
+    "genre": "podcast episode",
+    "minutes": 6,
+    "situation": "An episode of a travel podcast about ordering coffee in Italian cities. The host has a guest in the studio and calls two baristas on the phone.",
+    "speakers": {
+      "Petra": "f",
+      "Tommaso": "m",
+      "Bruno": "m2",
+      "Assunta": "f2"
+    },
+    "body": [
+      {
+        "who": "Petra",
+        "s": [
+          {
+            "it": "Ciao a tutti e bentornati a «Dieci minuti in città», il podcast per chi viaggia in Italia senza fretta.",
+            "en": "Hi everyone and welcome back to \"Ten Minutes in Town\", the podcast for people who travel around Italy without hurrying."
+          },
+          {
+            "it": "Io sono Petra. Oggi parliamo di una cosa che sembra facile, ma non lo è: ordinare un caffè.",
+            "en": "I'm Petra. Today we're talking about something that seems easy, but isn't: ordering a coffee."
+          },
+          {
+            "it": "Io sono tedesca, ma vivo in Italia da dodici anni.",
+            "en": "I'm German, but I've lived in Italy for twelve years."
+          },
+          {
+            "it": "Il mio primo giorno a Roma ho chiesto un latte, e il barista mi ha dato un bicchiere di latte freddo. Solo latte.",
+            "en": "My first day in Rome I asked for a latte, and the barista gave me a glass of cold milk. Just milk."
+          },
+          {
+            "it": "Da quel giorno ascolto molto prima di ordinare.",
+            "en": "Since that day I listen a lot before ordering."
+          },
+          {
+            "it": "In studio con me c'è Tommaso, che scrive di cibo su internet e ha un milione di follower.",
+            "en": "In the studio with me is Tommaso, who writes about food online and has a million followers."
+          }
+        ]
+      },
+      {
+        "who": "Tommaso",
+        "s": [
+          {
+            "it": "Un milione e duecentomila, Petra. Ciao a tutti!",
+            "en": "One million two hundred thousand, Petra. Hi everyone!"
+          }
+        ]
+      },
+      {
+        "who": "Petra",
+        "s": [
+          {
+            "it": "Scusa. Tommaso, tu sei di Milano e viaggi sempre. Il caffè per te non ha segreti, vero?",
+            "en": "Sorry. Tommaso, you're from Milan and you travel all the time. Coffee has no secrets for you, right?"
+          }
+        ]
+      },
+      {
+        "who": "Tommaso",
+        "s": [
+          {
+            "it": "Ma figurati. Io ho bevuto caffè in tutte le città d'Italia. Conosco tutte le regole.",
+            "en": "Of course not. I've drunk coffee in every city in Italy. I know all the rules."
+          }
+        ]
+      },
+      {
+        "who": "Petra",
+        "s": [
+          {
+            "it": "Perfetto. Allora cominciamo da Trieste. Il mese scorso sei andato a Trieste per lavoro. Cosa hai ordinato al bar?",
+            "en": "Perfect. Then let's start with Trieste. Last month you went to Trieste for work. What did you order at the bar?"
+          }
+        ]
+      },
+      {
+        "who": "Tommaso",
+        "s": [
+          {
+            "it": "Allora, era una mattina fredda, con un vento fortissimo.",
+            "en": "So, it was a cold morning, with a really strong wind."
+          },
+          {
+            "it": "Sono entrato in un bar vicino a Piazza Unità e ho chiesto un cappuccino, normale.",
+            "en": "I went into a bar near Piazza Unità and asked for a cappuccino, a normal one."
+          },
+          {
+            "it": "E il barista mi ha dato una tazzina piccolissima, con un caffè e un po' di schiuma.",
+            "en": "And the barista gave me a tiny little cup, with a coffee and a bit of foam."
+          },
+          {
+            "it": "Io ho detto: scusi, ma questo non è un cappuccino. E lui si è arrabbiato.",
+            "en": "I said: excuse me, but this isn't a cappuccino. And he got angry."
+          }
+        ]
+      },
+      {
+        "who": "Petra",
+        "s": [
+          {
+            "it": "Interessante. Perché oggi abbiamo al telefono proprio un barista di Trieste. Bruno, ci senti?",
+            "en": "Interesting. Because today we have a barista from Trieste on the phone. Bruno, can you hear us?"
+          }
+        ]
+      },
+      {
+        "who": "Bruno",
+        "s": [
+          {
+            "it": "Vi sento benissimo. Buongiorno!",
+            "en": "I can hear you very well. Good morning!"
+          },
+          {
+            "it": "Allora, a Trieste il caffè ha un'altra lingua.",
+            "en": "So, in Trieste coffee has a different language."
+          },
+          {
+            "it": "L'espresso si chiama nero.",
+            "en": "An espresso is called a nero."
+          },
+          {
+            "it": "Il cappuccino si chiama capo, ed è piccolo, in tazzina.",
+            "en": "A cappuccino is called a capo, and it's small, in a little cup."
+          },
+          {
+            "it": "Se lo vuoi in un bicchiere di vetro, dici capo in b. La b vuol dire bicchiere.",
+            "en": "If you want it in a glass, you say capo in b. The b means bicchiere, glass."
+          },
+          {
+            "it": "E il cappuccino grande, quello di Milano, qui si chiama caffelatte.",
+            "en": "And the big cappuccino, the Milan one, is called a caffelatte here."
+          },
+          {
+            "it": "E se lo vuoi senza caffeina, dici deca. Per esempio: un capo deca in b.",
+            "en": "And if you want it without caffeine, you say deca. For example: a capo deca in b."
+          }
+        ]
+      },
+      {
+        "who": "Tommaso",
+        "s": [
+          {
+            "it": "Ah. Quindi il barista aveva ragione.",
+            "en": "Ah. So the barista was right."
+          }
+        ]
+      },
+      {
+        "who": "Bruno",
+        "s": [
+          {
+            "it": "Il barista ha sempre ragione. Ma dimmi, quel bar... aveva un gatto nero sulla porta?",
+            "en": "The barista is always right. But tell me, that bar... did it have a black cat on the door?"
+          }
+        ]
+      },
+      {
+        "who": "Tommaso",
+        "s": [
+          {
+            "it": "Sì! Un gatto di ceramica!",
+            "en": "Yes! A ceramic cat!"
+          }
+        ]
+      },
+      {
+        "who": "Bruno",
+        "s": [
+          {
+            "it": "Allora quel barista ero io. Tu sei il signore che ha fatto la foto al cappuccino e ha detto: «Che tristezza».",
+            "en": "Then that barista was me. You're the man who took a photo of the cappuccino and said: \"How sad.\""
+          }
+        ]
+      },
+      {
+        "who": "Tommaso",
+        "s": [
+          {
+            "it": "Eh... forse.",
+            "en": "Well... maybe."
+          }
+        ]
+      },
+      {
+        "who": "Bruno",
+        "s": [
+          {
+            "it": "Ho letto il tuo post. Due stelle su cinque. Per un capo perfetto!",
+            "en": "I read your post. Two stars out of five. For a perfect capo!"
+          }
+        ]
+      },
+      {
+        "who": "Petra",
+        "s": [
+          {
+            "it": "Bruno, grazie, e scusa per il nostro ospite!",
+            "en": "Bruno, thank you, and sorry about our guest!"
+          }
+        ]
+      },
+      {
+        "who": "Petra",
+        "s": [
+          {
+            "it": "Andiamo a Napoli. Tommaso, tu a Napoli ci sei stato quest'estate, vero?",
+            "en": "Let's go to Naples. Tommaso, you were in Naples this summer, weren't you?"
+          }
+        ]
+      },
+      {
+        "who": "Tommaso",
+        "s": [
+          {
+            "it": "Sì, ad agosto. E lì è andato tutto bene, sono sicuro.",
+            "en": "Yes, in August. And there everything went well, I'm sure."
+          },
+          {
+            "it": "Sono entrato al bar, ho chiesto un caffè lungo, in una tazza grande, e ho pagato dopo, alla cassa.",
+            "en": "I went into the bar, asked for a long coffee, in a big cup, and paid afterwards, at the till."
+          },
+          {
+            "it": "Ah, e c'era un'altra cosa strana. Ho chiesto lo zucchero, e il barista ha riso.",
+            "en": "Ah, and there was another strange thing. I asked for sugar, and the barista laughed."
+          },
+          {
+            "it": "Ha detto: è già dentro, dottò.",
+            "en": "He said: it's already in there, doc."
+          }
+        ]
+      },
+      {
+        "who": "Petra",
+        "s": [
+          {
+            "it": "Mmm. Sentiamo Assunta, che ha un bar a Napoli, nel quartiere Sanità. Assunta, buongiorno!",
+            "en": "Hmm. Let's hear from Assunta, who has a bar in Naples, in the Sanità neighbourhood. Assunta, good morning!"
+          }
+        ]
+      },
+      {
+        "who": "Assunta",
+        "s": [
+          {
+            "it": "Buongiorno a voi! Allora, ho sentito tutto. Caffè lungo, a Napoli? In una tazza grande?",
+            "en": "Good morning to you! So, I heard everything. A long coffee, in Naples? In a big cup?"
+          },
+          {
+            "it": "Gesù. Nessun napoletano lo chiede.",
+            "en": "Good Lord. No Neapolitan asks for that."
+          }
+        ]
+      },
+      {
+        "who": "Tommaso",
+        "s": [
+          {
+            "it": "Perché? Cosa c'è di male?",
+            "en": "Why? What's wrong with it?"
+          }
+        ]
+      },
+      {
+        "who": "Assunta",
+        "s": [
+          {
+            "it": "Niente di male, ma il caffè a Napoli è corto, forte, e bollente. Si beve in due sorsi.",
+            "en": "Nothing wrong, but coffee in Naples is short, strong and boiling hot. You drink it in two sips."
+          },
+          {
+            "it": "E in molti bar prima paghi alla cassa, prendi lo scontrino, e poi vai al banco.",
+            "en": "And in many bars you pay at the till first, take the receipt, and then go to the counter."
+          },
+          {
+            "it": "Prima del caffè, poi, bevi un bicchiere d'acqua, per pulire la bocca.",
+            "en": "And before the coffee, you drink a glass of water, to clean your mouth."
+          },
+          {
+            "it": "E lo zucchero? In tanti bar il barista lo mette già nella tazzina, prima del caffè.",
+            "en": "And sugar? In lots of bars the barista already puts it in the cup, before the coffee."
+          },
+          {
+            "it": "Se lo vuoi senza zucchero, devi dirlo subito: un caffè amaro.",
+            "en": "If you want it without sugar, you have to say so straight away: a caffè amaro."
+          }
+        ]
+      },
+      {
+        "who": "Tommaso",
+        "s": [
+          {
+            "it": "Io infatti l'ho bevuto dolcissimo, con lo zucchero due volte.",
+            "en": "In fact I drank it really sweet, with sugar twice."
+          }
+        ]
+      },
+      {
+        "who": "Assunta",
+        "s": [
+          {
+            "it": "Lungo e dolcissimo. Povero caffè. Mia nonna, se ti sentiva, ti cacciava dal bar.",
+            "en": "Long and super sweet. Poor coffee. If my grandmother heard you, she'd throw you out of the bar."
+          }
+        ]
+      },
+      {
+        "who": "Petra",
+        "s": [
+          {
+            "it": "E il caffè sospeso? Raccontalo tu, Assunta.",
+            "en": "And the caffè sospeso? You tell it, Assunta."
+          }
+        ]
+      },
+      {
+        "who": "Assunta",
+        "s": [
+          {
+            "it": "Il caffè sospeso è una tradizione bella.",
+            "en": "The caffè sospeso is a lovely tradition."
+          },
+          {
+            "it": "Tu bevi un caffè, ma ne paghi due. Il secondo resta «sospeso».",
+            "en": "You drink one coffee, but pay for two. The second one stays \"suspended\"."
+          },
+          {
+            "it": "Più tardi arriva una persona che non ha soldi, e chiede: c'è un sospeso? E il barista le dà il caffè.",
+            "en": "Later someone who has no money comes in and asks: is there a sospeso? And the barista gives them the coffee."
+          },
+          {
+            "it": "Nel mio bar ieri ne abbiamo avuti undici.",
+            "en": "In my bar yesterday we had eleven."
+          }
+        ]
+      },
+      {
+        "who": "Tommaso",
+        "s": [
+          {
+            "it": "Bellissimo. La prossima volta lo pago anche io.",
+            "en": "Lovely. Next time I'll pay for one too."
+          }
+        ]
+      },
+      {
+        "who": "Assunta",
+        "s": [
+          {
+            "it": "Bravo. Così ti perdoniamo il caffè lungo.",
+            "en": "Good. That way we'll forgive you for the long coffee."
+          }
+        ]
+      },
+      {
+        "who": "Petra",
+        "s": [
+          {
+            "it": "E infine Milano. La tua città, Tommaso. Qui non puoi sbagliare.",
+            "en": "And finally Milan. Your city, Tommaso. Here you can't go wrong."
+          }
+        ]
+      },
+      {
+        "who": "Tommaso",
+        "s": [
+          {
+            "it": "Ovviamente no. A Milano il caffè si beve in piedi, al banco, velocissimo.",
+            "en": "Obviously not. In Milan coffee is drunk standing up, at the counter, really fast."
+          },
+          {
+            "it": "Si dice: un caffè, grazie. Due secondi, e via, al lavoro.",
+            "en": "You say: a coffee, thanks. Two seconds, and off you go, to work."
+          },
+          {
+            "it": "E a Milano c'è il marocchino: caffè, cacao e un po' di latte, in un bicchierino.",
+            "en": "And in Milan there's the marocchino: coffee, cocoa and a bit of milk, in a little glass."
+          },
+          {
+            "it": "E se vuoi un po' di latte nel caffè, chiedi un macchiato, caldo o freddo.",
+            "en": "And if you want a bit of milk in your coffee, you ask for a macchiato, hot or cold."
+          },
+          {
+            "it": "Questo lo sanno anche i bambini.",
+            "en": "Even children know this."
+          }
+        ]
+      },
+      {
+        "who": "Petra",
+        "s": [
+          {
+            "it": "Giusto. E l'ultima volta che sei andato al bar sotto casa, cosa hai ordinato?",
+            "en": "Right. And the last time you went to the bar near your home, what did you order?"
+          }
+        ]
+      },
+      {
+        "who": "Tommaso",
+        "s": [
+          {
+            "it": "Ieri? Un cappuccino e una brioche.",
+            "en": "Yesterday? A cappuccino and a croissant."
+          }
+        ]
+      },
+      {
+        "who": "Petra",
+        "s": [
+          {
+            "it": "A che ora?",
+            "en": "At what time?"
+          }
+        ]
+      },
+      {
+        "who": "Tommaso",
+        "s": [
+          {
+            "it": "Verso le quattro del pomeriggio. Perché?",
+            "en": "Around four in the afternoon. Why?"
+          }
+        ]
+      },
+      {
+        "who": "Assunta",
+        "s": [
+          {
+            "it": "Il cappuccino alle quattro del pomeriggio! Dopo pranzo!",
+            "en": "A cappuccino at four in the afternoon! After lunch!"
+          }
+        ]
+      },
+      {
+        "who": "Bruno",
+        "s": [
+          {
+            "it": "Un capo alle quattro? Neanche a Trieste!",
+            "en": "A capo at four? Not even in Trieste!"
+          }
+        ]
+      },
+      {
+        "who": "Petra",
+        "s": [
+          {
+            "it": "Sono ancora in linea tutti e due, Tommaso.",
+            "en": "They're both still on the line, Tommaso."
+          }
+        ]
+      },
+      {
+        "who": "Tommaso",
+        "s": [
+          {
+            "it": "Va be', ma a Milano lo fanno tutti! Io ero stanco, avevo lavorato tutto il giorno.",
+            "en": "Oh well, but in Milan everybody does it! I was tired, I'd worked all day."
+          }
+        ]
+      },
+      {
+        "who": "Petra",
+        "s": [
+          {
+            "it": "Ecco il nostro consiglio della settimana.",
+            "en": "Here's our tip of the week."
+          },
+          {
+            "it": "Quando arrivate in una città nuova, non entrate al bar e parlate subito.",
+            "en": "When you arrive in a new city, don't go into the bar and talk straight away."
+          },
+          {
+            "it": "Prima ascoltate cosa ordinano le persone del posto. Poi ordinate.",
+            "en": "First listen to what the locals order. Then order."
+          }
+        ]
+      },
+      {
+        "who": "Tommaso",
+        "s": [
+          {
+            "it": "Io questo consiglio lo metterò nel mio prossimo post.",
+            "en": "I'll put this tip in my next post."
+          }
+        ]
+      },
+      {
+        "who": "Bruno",
+        "s": [
+          {
+            "it": "Con cinque stelle, mi raccomando.",
+            "en": "With five stars, mind you."
+          }
+        ]
+      },
+      {
+        "who": "Petra",
+        "s": [
+          {
+            "it": "Alla prossima settimana, con un'altra città!",
+            "en": "Until next week, with another city!"
+          }
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "q": "Qual è il problema di Tommaso in questo episodio?",
+        "o": [
+          "Pensa di sapere tutto, ma sbaglia spesso",
+          "Non capisce l'italiano dei baristi",
+          "Ha perso molti follower per un post sul caffè"
+        ],
+        "a": "Pensa di sapere tutto, ma sbaglia spesso"
+      },
+      {
+        "q": "Che lavoro fa Tommaso?",
+        "o": [
+          "Fa il barista a Milano",
+          "Scrive di cibo su internet",
+          "Fa la guida turistica in Italia"
+        ],
+        "a": "Scrive di cibo su internet"
+      },
+      {
+        "q": "Che cosa ha ordinato Tommaso a Trieste?",
+        "o": [
+          "Un nero",
+          "Un cappuccino",
+          "Un caffelatte"
+        ],
+        "a": "Un cappuccino"
+      },
+      {
+        "q": "A Trieste, che cosa vuol dire capo in b?",
+        "o": [
+          "Un caffè grande in una tazza",
+          "Un cappuccino in un bicchiere",
+          "Un caffè senza caffeina in tazzina"
+        ],
+        "a": "Un cappuccino in un bicchiere"
+      },
+      {
+        "q": "Perché Bruno conosce Tommaso?",
+        "o": [
+          "Perché hanno lavorato insieme a Milano",
+          "Perché Tommaso è stato nel suo bar",
+          "Perché sono vecchi amici di scuola"
+        ],
+        "a": "Perché Tommaso è stato nel suo bar"
+      },
+      {
+        "q": "Che cosa ha chiesto Tommaso a Napoli?",
+        "o": [
+          "Un caffè sospeso",
+          "Un caffè lungo in una tazza grande",
+          "Un caffè amaro, senza zucchero"
+        ],
+        "a": "Un caffè lungo in una tazza grande"
+      },
+      {
+        "q": "Che cos'è il caffè sospeso?",
+        "o": [
+          "Un caffè che si beve dopo pranzo, in piedi",
+          "Un caffè pagato per chi non ha soldi",
+          "Un caffè che si paga alla cassa con lo scontrino"
+        ],
+        "a": "Un caffè pagato per chi non ha soldi"
+      },
+      {
+        "q": "Quanti caffè sospesi ha avuto ieri il bar di Assunta?",
+        "o": [
+          "Due",
+          "Undici",
+          "Cinque"
+        ],
+        "a": "Undici"
+      },
+      {
+        "q": "Che cosa c'è nel marocchino?",
+        "o": [
+          "Caffè, cacao e un po' di latte",
+          "Caffè, latte e una brioche",
+          "Caffè, acqua e zucchero"
+        ],
+        "a": "Caffè, cacao e un po' di latte"
+      },
+      {
+        "q": "Qual è l'errore di Tommaso a Milano?",
+        "o": [
+          "Ha bevuto il caffè in piedi al banco",
+          "Ha pagato dopo, alla cassa",
+          "Ha preso un cappuccino alle quattro"
+        ],
+        "a": "Ha preso un cappuccino alle quattro"
+      }
+    ]
+  }
+]

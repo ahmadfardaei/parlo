@@ -42,6 +42,8 @@ export const ICON = {
   review: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="14" height="14" rx="2"/><path d="M7 3h12a2 2 0 0 1 2 2v12"/></svg>',
   user: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>',
   play: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg>',
+  pause: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>',
+  replay: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.5-5.8M4 4v4h4"/></svg>',
   stop: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>',
   mic: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>',
   download: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>',
@@ -52,32 +54,32 @@ export const ICON = {
 // Recorded neural voices first (one clip per text and voice), device speech as the fallback.
 export const canSpeak = true;
 let speakQueueToken = 0, current = null;
-function deviceSpeak(text, onEnd) {
+function deviceSpeak(text, onEnd, scale = 1) {
   if (!("speechSynthesis" in window)) { onEnd && onEnd(); return; }
   try {
     const u = new SpeechSynthesisUtterance(String(text).replace(/[…—«»“”]/g, " ").replace(/\/[aie]+\b/g, ""));
-    u.lang = "it-IT"; u.rate = S.pref.rate || 0.92;
+    u.lang = "it-IT"; u.rate = (S.pref.rate || 0.92) * scale;
     const v = speechSynthesis.getVoices().find(v => /^it/i.test(v.lang)); if (v) u.voice = v;
     if (onEnd) { u.onend = onEnd; u.onerror = onEnd; }
     speechSynthesis.speak(u);
   } catch (e) { onEnd && onEnd(); }
 }
-export function speak(text, onEnd, voice = "f") {
+export function speak(text, onEnd, voice = "f", scale = 1) {
   if (!text) { onEnd && onEnd(); return; }
-  if (!AUDIO_READY) { deviceSpeak(text, onEnd); return; }
+  if (!AUDIO_READY) { deviceSpeak(text, onEnd, scale); return; }
   const a = new Audio(clipUrl(text, voice));
-  a.playbackRate = (S.pref.rate || 0.92) / 0.92;
+  a.playbackRate = (S.pref.rate || 0.92) / 0.92 * scale;
   let settled = false;
   const finish = () => { if (settled) return; settled = true; if (current === a) current = null; onEnd && onEnd(); };
-  const fallback = () => { if (settled) return; if (current === a) current = null; deviceSpeak(text, () => { settled = true; onEnd && onEnd(); }); };
+  const fallback = () => { if (settled) return; if (current === a) current = null; deviceSpeak(text, () => { settled = true; onEnd && onEnd(); }, scale); };
   a.onended = finish; a.onerror = fallback;
   current = a;
   a.play().catch(fallback);
 }
 function stopAudio() { if (current) { current.onended = current.onerror = null; current.pause(); current = null; } if ("speechSynthesis" in window) speechSynthesis.cancel(); }
 export function say(text, voice) { speakQueueToken++; stopAudio(); speak(text, null, voice); }
-// lines: strings or { t, v } objects.
-export function speakAll(lines, onProgress, onDone) {
+// lines: strings or { t, v } objects; scale slows or speeds the whole run.
+export function speakAll(lines, onProgress, onDone, scale = 1) {
   const token = ++speakQueueToken;
   stopAudio();
   let i = 0;
@@ -85,8 +87,11 @@ export function speakAll(lines, onProgress, onDone) {
     if (token !== speakQueueToken) return;
     if (i >= lines.length) { onDone && onDone(); return; }
     onProgress && onProgress(i);
+    // Fetch the next clip while this one plays, so long texts run without gaps.
+    const n = lines[i + 1];
+    if (AUDIO_READY && n) { const p = new Audio(); p.preload = "auto"; p.src = typeof n === "string" ? clipUrl(n, "f") : clipUrl(n.t, n.v); }
     const l = lines[i++];
-    typeof l === "string" ? speak(l, next) : speak(l.t, next, l.v);
+    typeof l === "string" ? speak(l, next, "f", scale) : speak(l.t, next, l.v, scale);
   };
   next();
   return () => { speakQueueToken++; stopAudio(); onDone && onDone(); };
@@ -149,12 +154,12 @@ export function indexCourse(course) {
 }
 export const unitByN = n => D.units.find(u => u.n === n);
 // Non-vocabulary progress is stored in its own sync rows, identified by id prefix.
-const PREFIX_UNIT = { "g:": 101, "s:": 102, "r:": 103, "wr:": 104, "sp:": 105, "t:": 106, "cp:": 107, "to:": 107 };
+const PREFIX_UNIT = { "g:": 101, "s:": 102, "r:": 103, "wr:": 104, "sp:": 105, "t:": 106, "cp:": 107, "to:": 107, "l:": 108 };
 export function unitOf(id) {
   for (const [p, n] of Object.entries(PREFIX_UNIT)) if (id.startsWith(p)) return n;
   return D.items[id]?.u;
 }
-const known = id => !!(D.items[id] || /^(g|s|r|wr|sp|t|cp|to):/.test(id));
+const known = id => !!(D.items[id] || /^(g|s|r|l|wr|sp|t|cp|to):/.test(id));
 export const sayOf = id => { const it = D.items[id]; if (!it) return S.st[id]?.it || ""; return it.type === "w" ? full(it.d) : it.type === "v" ? it.d.inf : it.d.it; };
 export const meaningOf = id => D.items[id]?.d.en ?? S.st[id]?.en ?? "";
 
@@ -384,7 +389,7 @@ export function pickEx(text, alt) {
 /* ---------- Study time ---------- */
 // Time is counted in 15-second ticks, only while the app is visible and the learner has interacted in the last 90 s.
 // Each device writes its own record per day ("t:2026-10-26:abc123"), so devices never overwrite each other.
-export const ACT_CATS = { vocab: "Vocabulary", grammar: "Grammar", reading: "Reading", writing: "Writing", speaking: "Speaking", review: "Review & deck" };
+export const ACT_CATS = { vocab: "Vocabulary", grammar: "Grammar", reading: "Reading", listening: "Listening", writing: "Writing", speaking: "Speaking", review: "Review & deck" };
 const DEVICE = lsGet("parlo.device", null) || (() => { const d = Math.random().toString(36).slice(2, 8); lsSet("parlo.device", d); return d; })();
 let lastInput = Date.now(), lastTimeSync = 0;
 ["pointerdown", "keydown", "wheel", "touchstart", "input"].forEach(ev => addEventListener(ev, () => { lastInput = Date.now(); }, { passive: true, capture: true }));
@@ -392,9 +397,10 @@ export const dayKey = (d = new Date()) => `${d.getFullYear()}-${String(d.getMont
 function activityCat(v) {
   switch (v.name) {
     case "unit": return "vocab";
-    case "learn": return { vocab: "vocab", grammar: "grammar", reading: "reading", writing: "writing", speaking: "speaking" }[v.section];
+    case "learn": return { vocab: "vocab", grammar: "grammar", reading: "reading", listening: "listening", writing: "writing", speaking: "speaking" }[v.section];
     case "grammar": return "grammar";
     case "reading": return "reading";
+    case "listening": return "listening";
     case "writing": return "writing";
     case "speaking": return "speaking";
     case "session": case "deck": return "review";

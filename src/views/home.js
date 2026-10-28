@@ -8,6 +8,7 @@ export const SECTIONS = [
   { key: "vocab", it: "Vocabolario", en: "Words, verbs and phrases", count: () => `${D.units.length} units` },
   { key: "grammar", it: "Grammatica", en: "How the language works", count: () => `${META.grammar.length} lessons` },
   { key: "reading", it: "Lettura", en: "Stories, chats and reportage", count: () => `${META.reading.length} texts` },
+  { key: "listening", it: "Ascolto", en: "Calls, announcements and radio", count: () => `${META.listening.length} exercises` },
   { key: "writing", it: "Scrittura", en: "Write, then compare with models", count: () => `${META.writing.length} tasks` },
   { key: "speaking", it: "Parlato", en: "Talk about real topics", count: () => `${META.speaking.length} topics` }
 ];
@@ -124,11 +125,12 @@ function drawOverview(box, lc) {
       <span class="ov-label">${label}</span>
       <span class="bar" aria-hidden="true"><span class="k" style="width:${done / Math.max(1, total) * 100}%"></span><span class="l" style="width:${part / Math.max(1, total) * 100}%"></span></span>
       <span class="ov-val">${done + part} of ${total}</span>${ICON.chev}</a>`;
-  const gl = META.grammar.filter(([, l]) => l === L), rl = META.reading.filter(([, l]) => l === L);
+  const gl = META.grammar.filter(([, l]) => l === L), rl = META.reading.filter(([, l]) => l === L), ll = META.listening.filter(([, l]) => l === L);
   box.innerHTML = [
     row("vocab", "Vocabulary", lc.known, lc.total, lc.learning),
     row("grammar", "Grammar", gl.filter(([id]) => S.st["g:" + id]?.best != null).length, gl.length),
     row("reading", "Reading", rl.filter(([id]) => S.st["r:" + id]?.done).length, rl.length),
+    row("listening", "Listening", ll.filter(([id]) => S.st["l:" + id]?.done).length, ll.length),
     row("writing", "Writing", META.writing.filter(id => (S.st["wr:" + id]?.text || "").trim()).length, META.writing.length),
     row("speaking", "Speaking", META.speaking.filter(id => S.st["sp:" + id]?.done).length, META.speaking.length)
   ].join("") + `<p class="legend small"><span><i class="lg-k"></i>Known / done</span><span><i class="lg-l"></i>Learning</span></p>`;

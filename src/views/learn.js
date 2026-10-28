@@ -24,7 +24,7 @@ export async function viewLearn(app, v, alive) {
     <div class="list-tools">
       ${modeless ? `<p class="muted small">${SECTIONS.find(s => s.key === sec).en}. Each task has examples for every level.</p>` : `<div class="seg small" role="group" aria-label="Group by">
         <button data-groupby="level" aria-pressed="${byLevel()}">By level</button><button data-groupby="topic" aria-pressed="${!byLevel()}">By topic</button></div>`}
-      ${modeless ? "" : `<button class="btn quiet small pdf-link" data-pdf>${ICON.download}<span>PDF</span></button>`}
+      ${!["vocab", "grammar", "reading"].includes(sec) ? "" : `<button class="btn quiet small pdf-link" data-pdf>${ICON.download}<span>PDF</span></button>`}
       ${sec === "vocab" ? `<input class="input search" id="vsearch" type="search" placeholder="Search words, verbs, phrases" aria-label="Search the vocabulary">` : ""}
       ${sec === "vocab" || sec === "grammar" ? `<a class="btn small" href="#/quiz/${sec}">Quiz</a>` : ""}
     </div>
@@ -67,6 +67,11 @@ export async function viewLearn(app, v, alive) {
     body.innerHTML = groupsHTML(byLevel() ? sorted : data, g => byLevel() ? g.level : g.topic, k => byLevel() ? `${k} · ${LEVEL_NAMES[k]}` : GTOPICS[k],
       g => { const s = S.st["g:" + g.id]; return `<a class="row-link" href="#/grammar/${g.id}"><span><span class="row-title it">${esc(g.title)}</span><span class="muted small">${esc(g.en)}${byLevel() ? "" : " · " + g.level}</span></span><span class="row-meta">${s && s.best != null ? `${s.best}/${s.total}` : ""}</span>${ICON.chev}</a>`; },
       list => { const done = list.filter(g => S.st["g:" + g.id]?.best != null).length; return `${list.length} lessons${done ? ` · ${done} practised` : ""}`; },
+      byLevel() ? S.pref.level : null);
+  } else if (sec === "listening") {
+    body.innerHTML = groupsHTML(data, l => byLevel() ? l.level : l.topic, k => byLevel() ? `${k} · ${LEVEL_NAMES[k]}` : TOPICS[k],
+      l => { const st = S.st["l:" + l.id]; return `<a class="row-link tall" href="#/listen/${l.id}"><span><span class="row-title it">${esc(l.title)}</span><span class="small">${esc(l.situation)}</span><span class="muted small">${byLevel() ? "" : l.level + " · "}${esc(l.genre)} · ${l.minutes} min</span></span><span class="row-meta">${st?.done ? `<span class="pill ok">${ICON.check} ${st.score}/${st.total}</span>` : ""}</span>${ICON.chev}</a>`; },
+      list => { const done = list.filter(l => S.st["l:" + l.id]?.done).length; return `${list.length} exercises${done ? ` · ${done} done` : ""}`; },
       byLevel() ? S.pref.level : null);
   } else if (sec === "reading") {
     body.innerHTML = groupsHTML(data, r => byLevel() ? r.level : r.topic, k => byLevel() ? `${k} · ${LEVEL_NAMES[k]}` : TOPICS[k],

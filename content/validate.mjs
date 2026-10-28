@@ -27,6 +27,20 @@ d.forEach((x, i) => {
       if(!e.why) errs.push(`${P} ex ${j}: needs why`);
     });
   }
+  if (type === "listening") {
+    for (const k of ["id","level","title","en","topic","genre","minutes","situation","speakers","body","questions"]) if (x[k] === undefined) errs.push(`${P}: missing ${k}`);
+    if (!LV.includes(x.level)) errs.push(`${P}: bad level`);
+    if (!TOPICS.includes(x.topic)) errs.push(`${P}: bad topic`);
+    const V = Object.values(x.speakers || {});
+    if (!V.length || V.length > 4 || V.some(v => !["f","m","f2","m2"].includes(v)) || new Set(V).size !== V.length) errs.push(`${P}: speakers need 1-4 distinct voices from f, m, f2, m2`);
+    let n = 0;
+    (x.body||[]).forEach((b,j)=>{ if(!b.who || !(x.speakers||{})[b.who]) errs.push(`${P} block ${j}: who "${b.who}" not in speakers`); if(!Array.isArray(b.s)||!b.s.length) errs.push(`${P} block ${j}: needs s[]`); (b.s||[]).forEach((s,k)=>{S(s,`${P} block ${j} s ${k}`); n+=words(s.it||"");}); });
+    x._words = n;
+    const min = {A1:600,A2:780,B1:1030,B2:1280}[x.level];
+    if (n < min) errs.push(`${P}: only ${n} Italian words, need >= ${min}`);
+    if ((x.questions||[]).length < 8) errs.push(`${P}: needs >= 8 questions`);
+    (x.questions||[]).forEach((q,j)=>{ if(!q.q||!Array.isArray(q.o)||!q.o.includes(q.a)) errs.push(`${P} question ${j}: needs q, o[], a in o`); });
+  }
   if (type === "reading") {
     for (const k of ["id","level","title","en","topic","genre","minutes","blurb","body","glossary","questions"]) if (x[k] === undefined) errs.push(`${P}: missing ${k}`);
     if (!LV.includes(x.level)) errs.push(`${P}: bad level`);
@@ -55,6 +69,6 @@ d.forEach((x, i) => {
   }
   const h = html(x); if (h.length) errs.push(`${P}: only <b>/<i> tags allowed: ${h.slice(0,3)}`);
 });
-if (type === "reading") console.log(d.map(x => `${x.id} ${x.level} ${x._words}w ~${x.minutes}min`).join("\n"));
+if (type === "reading" || type === "listening") console.log(d.map(x => `${x.id} ${x.level} ${x._words}w ~${x.minutes}min`).join("\n"));
 console.log(errs.length ? "ERRORS:\n- " + errs.join("\n- ") : `OK (${d.length} items)`);
 process.exit(errs.length ? 1 : 0);

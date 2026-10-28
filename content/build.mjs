@@ -15,6 +15,8 @@ out("grammar", grammar);
 
 const reading = ["a1", "a2", "b1a", "b1b", "b2a", "b2b"].filter(f => has(`reading-${f}.json`)).flatMap(f => C(`reading-${f}.json`)).sort((a, b) => a.id.localeCompare(b.id));
 out("reading", reading);
+const listening = fs.readdirSync(new URL(".", import.meta.url)).filter(f => /^listening-[ab][12][ab]\.json$/.test(f)).flatMap(f => C(f)).sort((a, b) => a.id.localeCompare(b.id));
+out("listening", listening);
 const writing = [1, 2].filter(i => has(`writing-${i}.json`)).flatMap(i => C(`writing-${i}.json`)).sort((a, b) => a.id.localeCompare(b.id));
 out("writing", writing);
 const speaking = [1, 2].filter(i => has(`speaking-${i}.json`)).flatMap(i => C(`speaking-${i}.json`)).sort((a, b) => a.id.localeCompare(b.id));
@@ -22,7 +24,7 @@ out("speaking", speaking);
 
 // A tiny index (ids and levels) so the home screen can show progress without loading the content itself.
 fs.writeFileSync(new URL("../src/data/meta.json", import.meta.url), JSON.stringify({
-  grammar: grammar.map(g => [g.id, g.level]), reading: reading.map(r => [r.id, r.level]),
+  grammar: grammar.map(g => [g.id, g.level]), reading: reading.map(r => [r.id, r.level]), listening: listening.map(l => [l.id, l.level]),
   writing: writing.map(w => w.id), speaking: speaking.map(s => s.id)
 }));
 
@@ -36,7 +38,7 @@ const roadmap = {};
 for (const L of LV) {
   const units = course.units.filter(u => u.level === L);
   const gram = grammar.filter(g => g.level === L);
-  const reads = reading.filter(r => r.level === L);
+  const reads = reading.filter(r => r.level === L), hears = listening.filter(l => l.level === L);
   const content = [];
   const gPerUnit = gram.length / units.length;
   let gi = 0;
@@ -46,6 +48,8 @@ for (const L of LV) {
     const until = Math.round((i + 1) * gPerUnit);
     while (gi < until) { const g = gram[gi++]; content.push({ type: "grammar", ref: g.id, title: g.title, en: g.en, min: [25, 50] }); }
     if (reads[i]) { const r = reads[i]; content.push({ type: "reading", ref: r.id, title: r.title, en: r.en, min: [Math.round(r.minutes * 2), Math.round(r.minutes * 3.5)] }); }
+    // Listening: two or three times through, plus the questions.
+    if (hears[i]) { const l = hears[i]; content.push({ type: "listening", ref: l.id, title: l.title, en: l.en, min: [l.minutes * 3 + 5, l.minutes * 5 + 10] }); }
     if (i % 3 === 2) {
       const k = (i - 2) / 3;
       if (WRITE[L][k]) { const w = writing.find(x => x.id === WRITE[L][k]); content.push({ type: "writing", ref: w.id, title: w.title, en: w.en, min: WRITE_MIN[L] }); }

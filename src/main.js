@@ -7,6 +7,7 @@ import { viewLearn } from "./views/learn.js";
 import { viewUnit } from "./views/unit.js";
 import { viewGrammar } from "./views/grammar.js";
 import { viewReading } from "./views/reading.js";
+import { viewListening } from "./views/listening.js";
 import { viewWriting } from "./views/writing.js";
 import { viewSpeaking } from "./views/speaking.js";
 import { viewDeck, viewSession } from "./views/review.js";
@@ -21,10 +22,11 @@ const app = $("#app");
 export function parseHash() {
   const p = location.hash.replace(/^#\/?/, "").split("/").filter(Boolean).map(decodeURIComponent);
   switch (p[0]) {
-    case "learn": return { name: "learn", section: ["vocab", "grammar", "reading", "writing", "speaking"].includes(p[1]) ? p[1] : "vocab" };
+    case "learn": return { name: "learn", section: ["vocab", "grammar", "reading", "listening", "writing", "speaking"].includes(p[1]) ? p[1] : "vocab" };
     case "unit": return { name: "unit", u: +p[1], tab: ["words", "verbs", "phrases", "quiz"].includes(p[2]) ? p[2] : "words" };
     case "grammar": return { name: "grammar", id: p[1], mode: ["practice", "drill"].includes(p[2]) ? p[2] : "learn", focus: ["practice", "drill"].includes(p[2]) };
     case "read": return { name: "reading", id: p[1] };
+    case "listen": return { name: "listening", id: p[1] };
     case "write": return { name: "writing", id: p[1] };
     case "speak": return { name: "speaking", id: p[1] };
     case "review": return { name: "home" }; // the review hub now lives on the home screen
@@ -36,8 +38,8 @@ export function parseHash() {
     default: return { name: "home" };
   }
 }
-const TAB_OF = { home: "home", learn: "learn", unit: "learn", grammar: "learn", reading: "learn", writing: "learn", speaking: "learn", review: "home", deck: "deck", session: "home", account: "account", quiz: "home", quizhub: "home", path: "home" };
-const VIEWS = { home: viewHome, learn: viewLearn, unit: viewUnit, grammar: viewGrammar, reading: viewReading, writing: viewWriting, speaking: viewSpeaking, deck: viewDeck, quiz: viewQuiz, quizhub: viewQuizHub, path: viewPath, session: viewSession, account: viewAccount };
+const TAB_OF = { home: "home", learn: "learn", unit: "learn", grammar: "learn", reading: "learn", listening: "learn", writing: "learn", speaking: "learn", review: "home", deck: "deck", session: "home", account: "account", quiz: "home", quizhub: "home", path: "home" };
+const VIEWS = { home: viewHome, learn: viewLearn, unit: viewUnit, grammar: viewGrammar, reading: viewReading, listening: viewListening, writing: viewWriting, speaking: viewSpeaking, deck: viewDeck, quiz: viewQuiz, quizhub: viewQuizHub, path: viewPath, session: viewSession, account: viewAccount };
 let renderToken = 0, prevPath = "";
 export async function render() {
   if (!D.units.length) return;

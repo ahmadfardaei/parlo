@@ -1,0 +1,4579 @@
+[
+ {
+  "id": "l-b2-01",
+  "level": "B2",
+  "title": "Mare mosso a Vernazza",
+  "en": "Rough seas in Vernazza",
+  "topic": "society",
+  "genre": "radio debate",
+  "minutes": 10,
+  "situation": "A morning talk show on a Ligurian local radio station. The host has invited three guests from the Cinque Terre to talk about a topic that divides their villages.",
+  "speakers": {
+   "Chiara": "f",
+   "Sindaco Cozzani": "m",
+   "Sabrina": "f2",
+   "Gino": "m2"
+  },
+  "body": [
+   {
+    "who": "Chiara",
+    "s": [
+     {
+      "it": "Buongiorno a tutti e ben ritrovati a «Mare mosso», qui su Radio Levante.",
+      "en": "Good morning everyone and welcome back to 'Rough Sea', here on Radio Levante."
+     },
+     {
+      "it": "Sono le nove e un quarto e fuori, almeno a Levanto, piove come se qualcuno ce l'avesse con noi.",
+      "en": "It's quarter past nine and outside, in Levanto at least, it's raining as if someone had it in for us."
+     },
+     {
+      "it": "Oggi parliamo di un tema che da queste parti fa litigare anche i parenti alle cene di Natale.",
+      "en": "Today we're talking about a subject that around here makes even relatives argue at Christmas dinner."
+     },
+     {
+      "it": "Il Comune di Vernazza ha proposto un ticket d'ingresso per chi arriva in giornata, cinque euro a testa, e un numero massimo di persone sul sentiero nei mesi di punta.",
+      "en": "The Vernazza town council has proposed an entry ticket for day visitors, five euros each, and a maximum number of people on the trail in the peak months."
+     },
+     {
+      "it": "In studio ho il sindaco, Renato Cozzani.",
+      "en": "In the studio I have the mayor, Renato Cozzani."
+     },
+     {
+      "it": "Buongiorno, sindaco.",
+      "en": "Good morning, Mayor."
+     }
+    ]
+   },
+   {
+    "who": "Sindaco Cozzani",
+    "s": [
+     {
+      "it": "Buongiorno a lei e a chi ci ascolta.",
+      "en": "Good morning to you and to everyone listening."
+     }
+    ]
+   },
+   {
+    "who": "Chiara",
+    "s": [
+     {
+      "it": "Poi c'è Sabrina Lagomarsino, che gestisce un bed and breakfast proprio sopra il porticciolo.",
+      "en": "Then there's Sabrina Lagomarsino, who runs a bed and breakfast right above the little harbour."
+     },
+     {
+      "it": "E infine, collegato al telefono perché, cito testualmente, «in radio ci vanno quelli che non hanno niente da fare», Gino Pasini, pescatore.",
+      "en": "And finally, on the phone because, and I quote, 'radio is for people with nothing to do', Gino Pasini, fisherman."
+     },
+     {
+      "it": "Gino, mi senti?",
+      "en": "Gino, can you hear me?"
+     }
+    ]
+   },
+   {
+    "who": "Gino",
+    "s": [
+     {
+      "it": "Ti sento, ti sento, purtroppo.",
+      "en": "I can hear you, I can hear you, unfortunately."
+     }
+    ]
+   },
+   {
+    "who": "Chiara",
+    "s": [
+     {
+      "it": "Partiamo da lei, sindaco.",
+      "en": "Let's start with you, Mayor."
+     },
+     {
+      "it": "Cinque euro per entrare in un paese: qualcuno dice che state trasformando Vernazza in un museo, o peggio, in un parco giochi.",
+      "en": "Five euros to enter a village: some people say you're turning Vernazza into a museum, or worse, into a theme park."
+     }
+    ]
+   },
+   {
+    "who": "Sindaco Cozzani",
+    "s": [
+     {
+      "it": "Guardi, capisco la provocazione, ma i numeri parlano da soli.",
+      "en": "Look, I understand the provocation, but the numbers speak for themselves."
+     },
+     {
+      "it": "L'estate scorsa, in certi giorni di agosto, sono scese dal treno più di diecimila persone in un paese che d'inverno ne conta meno di ottocento.",
+      "en": "Last summer, on certain days in August, more than ten thousand people got off the train in a village that has fewer than eight hundred in winter."
+     },
+     {
+      "it": "Il sentiero per Monterosso a un certo punto era fermo, letteralmente fermo, come la tangenziale alle sei di sera.",
+      "en": "At one point the trail to Monterosso was at a standstill, literally at a standstill, like the ring road at six in the evening."
+     },
+     {
+      "it": "Abbiamo avuto due persone soccorse per un malore, e l'ambulanza non riusciva a passare in via Roma.",
+      "en": "We had two people who needed help after feeling ill, and the ambulance couldn't get through on Via Roma."
+     },
+     {
+      "it": "Non si tratta di chiudere il paese, si tratta di renderlo vivibile.",
+      "en": "It's not about closing the village, it's about making it liveable."
+     }
+    ]
+   },
+   {
+    "who": "Chiara",
+    "s": [
+     {
+      "it": "Però, sindaco, l'esperimento di Venezia non ha convinto quasi nessuno.",
+      "en": "But, Mayor, the Venice experiment didn't convince almost anyone."
+     },
+     {
+      "it": "I turisti sono arrivati lo stesso e i veneziani hanno continuato ad andarsene.",
+      "en": "The tourists came anyway and the Venetians kept on leaving."
+     },
+     {
+      "it": "Perché da voi dovrebbe andare diversamente?",
+      "en": "Why should it go any differently for you?"
+     }
+    ]
+   },
+   {
+    "who": "Sindaco Cozzani",
+    "s": [
+     {
+      "it": "Perché Venezia ha cento ingressi e noi ne abbiamo tre: la stazione, il sentiero e il porto.",
+      "en": "Because Venice has a hundred ways in and we have three: the station, the trail and the harbour."
+     },
+     {
+      "it": "Da questo punto di vista siamo fortunati, se vogliamo chiamarla fortuna.",
+      "en": "From that point of view we're lucky, if you want to call it luck."
+     },
+     {
+      "it": "Controllare tre porte è un'altra cosa rispetto a controllare una città intera.",
+      "en": "Checking three doors is a different matter from checking a whole city."
+     }
+    ]
+   },
+   {
+    "who": "Gino",
+    "s": [
+     {
+      "it": "Quattro.",
+      "en": "Four."
+     }
+    ]
+   },
+   {
+    "who": "Sindaco Cozzani",
+    "s": [
+     {
+      "it": "Come quattro?",
+      "en": "What do you mean, four?"
+     }
+    ]
+   },
+   {
+    "who": "Gino",
+    "s": [
+     {
+      "it": "C'è anche la scaletta dietro la chiesa, quella da cui scendono i ragazzi per fare il bagno senza pagare l'ombrellone.",
+      "en": "There's also the little staircase behind the church, the one the kids come down to swim without paying for a beach umbrella."
+     },
+     {
+      "it": "Ma quella non ve la dico, sennò mettete un tornello anche lì.",
+      "en": "But I'm not telling you about that one, otherwise you'll put a turnstile there too."
+     }
+    ]
+   },
+   {
+    "who": "Chiara",
+    "s": [
+     {
+      "it": "Sabrina, lei vive di turismo.",
+      "en": "Sabrina, you make your living from tourism."
+     },
+     {
+      "it": "Immagino che questa proposta non la faccia saltare di gioia.",
+      "en": "I imagine this proposal doesn't have you jumping for joy."
+     }
+    ]
+   },
+   {
+    "who": "Sabrina",
+    "s": [
+     {
+      "it": "Ecco, invece la sorprendo.",
+      "en": "Well, actually I'll surprise you."
+     },
+     {
+      "it": "Sul principio sono d'accordo, e lo dico da persona che con i turisti ci paga il mutuo.",
+      "en": "I agree with the principle, and I say that as someone who pays her mortgage thanks to tourists."
+     },
+     {
+      "it": "Il problema non sono i miei ospiti, che dormono qui, cenano qui, magari tornano l'anno dopo.",
+      "en": "The problem isn't my guests, who sleep here, have dinner here, and maybe come back the next year."
+     },
+     {
+      "it": "Il problema sono i gruppi delle navi da crociera che arrivano da La Spezia alle dieci, fanno la foto dal castello, comprano una bottiglietta d'acqua e alle due sono già spariti.",
+      "en": "The problem is the cruise ship groups who arrive from La Spezia at ten, take the photo from the castle, buy a small bottle of water and by two o'clock they're gone."
+     },
+     {
+      "it": "A noi lasciano la coda alla fontanella e basta.",
+      "en": "All they leave us is the queue at the drinking fountain."
+     }
+    ]
+   },
+   {
+    "who": "Chiara",
+    "s": [
+     {
+      "it": "Quindi il ticket le va bene.",
+      "en": "So you're fine with the ticket."
+     }
+    ]
+   },
+   {
+    "who": "Sabrina",
+    "s": [
+     {
+      "it": "Mi va bene a una condizione: che i soldi restino qui.",
+      "en": "I'm fine with it on one condition: that the money stays here."
+     },
+     {
+      "it": "Perché ho il sospetto, e il sindaco lo sa, che alla fine finiranno nel solito calderone e qui non vedremo nemmeno un cestino in più.",
+      "en": "Because I suspect, and the mayor knows this, that in the end it'll all go into the usual big pot and here we won't see a single extra bin."
+     }
+    ]
+   },
+   {
+    "who": "Sindaco Cozzani",
+    "s": [
+     {
+      "it": "Sabrina, ne abbiamo già parlato.",
+      "en": "Sabrina, we've already talked about this."
+     },
+     {
+      "it": "Il regolamento prevede che il ricavato vada alla manutenzione dei muretti a secco e dei sentieri.",
+      "en": "The regulation says the revenue goes to maintaining the dry-stone walls and the trails."
+     }
+    ]
+   },
+   {
+    "who": "Sabrina",
+    "s": [
+     {
+      "it": "Il regolamento prevede tante cose, sindaco.",
+      "en": "The regulation says lots of things, Mayor."
+     },
+     {
+      "it": "Prevedeva anche che il bagno pubblico della stazione fosse aperto tutto l'anno.",
+      "en": "It also said the public toilet at the station would be open all year round."
+     }
+    ]
+   },
+   {
+    "who": "Chiara",
+    "s": [
+     {
+      "it": "Uno a zero, mi pare.",
+      "en": "One-nil, I'd say."
+     },
+     {
+      "it": "Gino, tu che al porto ci sei tutte le mattine, come la vedi?",
+      "en": "Gino, you're down at the harbour every morning, how do you see it?"
+     }
+    ]
+   },
+   {
+    "who": "Gino",
+    "s": [
+     {
+      "it": "Come la vedo?",
+      "en": "How do I see it?"
+     },
+     {
+      "it": "La vedo che alle cinque e mezza, quando scendo alla barca, c'è già uno col treppiede che fotografa l'alba.",
+      "en": "I see that at half past five, when I go down to the boat, there's already someone with a tripod photographing the sunrise."
+     },
+     {
+      "it": "Il mio gozzo ormai è più famoso di me.",
+      "en": "My boat is more famous than me by now."
+     },
+     {
+      "it": "Le mie reti le fotografano più di quanto le usi io, e ti assicuro che io le uso tutti i giorni.",
+      "en": "My nets get photographed more than I use them, and I can assure you I use them every day."
+     },
+     {
+      "it": "L'altra settimana una signora mi ha chiesto se ero un figurante pagato dal Comune.",
+      "en": "Last week a lady asked me if I was an extra paid by the town council."
+     }
+    ]
+   },
+   {
+    "who": "Chiara",
+    "s": [
+     {
+      "it": "Un figurante?",
+      "en": "An extra?"
+     }
+    ]
+   },
+   {
+    "who": "Gino",
+    "s": [
+     {
+      "it": "Un figurante, sì.",
+      "en": "An extra, yes."
+     },
+     {
+      "it": "Pensava che il pescatore fosse parte dell'arredamento, come le case colorate.",
+      "en": "She thought the fisherman was part of the decor, like the coloured houses."
+     },
+     {
+      "it": "Le ho detto che se il Comune mi pagasse, starei in posa e non andrei a pescare con questo mare.",
+      "en": "I told her that if the council paid me, I'd pose for photos and wouldn't go fishing in this sea."
+     }
+    ]
+   },
+   {
+    "who": "Sindaco Cozzani",
+    "s": [
+     {
+      "it": "Gino, però, scusa se ti interrompo, il problema che descrivi è proprio quello che vogliamo risolvere.",
+      "en": "Gino, though, sorry to interrupt, the problem you're describing is exactly what we want to fix."
+     }
+    ]
+   },
+   {
+    "who": "Gino",
+    "s": [
+     {
+      "it": "Sì, sì, con cinque euro.",
+      "en": "Yes, yes, with five euros."
+     },
+     {
+      "it": "Ma chi spende tremila euro per una crociera non si spaventa per cinque euro, Renato.",
+      "en": "But someone who spends three thousand euros on a cruise isn't going to be scared off by five euros, Renato."
+     },
+     {
+      "it": "Se vuoi che vengano di meno, metti cinquanta euro.",
+      "en": "If you want fewer of them to come, make it fifty euros."
+     }
+    ]
+   },
+   {
+    "who": "Sindaco Cozzani",
+    "s": [
+     {
+      "it": "Cinquanta euro sarebbe illegale, oltre che una follia.",
+      "en": "Fifty euros would be illegal, as well as insane."
+     }
+    ]
+   },
+   {
+    "who": "Gino",
+    "s": [
+     {
+      "it": "Allora è una follia anche il resto, solo più economica.",
+      "en": "Then the rest is insane too, just cheaper."
+     }
+    ]
+   },
+   {
+    "who": "Chiara",
+    "s": [
+     {
+      "it": "Ecco, questo è il punto che sollevano in molti.",
+      "en": "Well, this is the point a lot of people are raising."
+     },
+     {
+      "it": "Sindaco, il ticket serve davvero a ridurre i numeri, o serve a fare cassa?",
+      "en": "Mayor, is the ticket really meant to reduce numbers, or is it meant to raise money?"
+     }
+    ]
+   },
+   {
+    "who": "Sindaco Cozzani",
+    "s": [
+     {
+      "it": "Il ticket da solo non basta, e non l'ho mai detto.",
+      "en": "The ticket alone isn't enough, and I've never said it was."
+     },
+     {
+      "it": "La parte che conta davvero è la prenotazione obbligatoria del sentiero, con fasce orarie.",
+      "en": "The part that really matters is mandatory booking for the trail, with time slots."
+     },
+     {
+      "it": "Se la fascia delle undici è piena, è piena.",
+      "en": "If the eleven o'clock slot is full, it's full."
+     },
+     {
+      "it": "Uno si organizza, viene alle otto o viene a ottobre.",
+      "en": "People plan ahead, come at eight or come in October."
+     }
+    ]
+   },
+   {
+    "who": "Sabrina",
+    "s": [
+     {
+      "it": "A ottobre, se non piove come oggi.",
+      "en": "In October, if it doesn't rain like today."
+     }
+    ]
+   },
+   {
+    "who": "Gino",
+    "s": [
+     {
+      "it": "E io, scusate, per andare al mio orto sopra il paese dovrò prenotare la fascia oraria?",
+      "en": "And me, sorry, to get to my vegetable patch above the village will I have to book a time slot?"
+     }
+    ]
+   },
+   {
+    "who": "Sindaco Cozzani",
+    "s": [
+     {
+      "it": "No, i residenti e i proprietari dei terreni avranno una tessera.",
+      "en": "No, residents and landowners will have a card."
+     },
+     {
+      "it": "Basta passarla al tornello e si entra.",
+      "en": "You just tap it at the turnstile and you're in."
+     }
+    ]
+   },
+   {
+    "who": "Gino",
+    "s": [
+     {
+      "it": "Una tessera.",
+      "en": "A card."
+     },
+     {
+      "it": "Come quella per il parcheggio, che ho chiesto a marzo e mi è arrivata a luglio, quando ormai il parcheggio era pieno di macchine di Torino.",
+      "en": "Like the parking one, which I asked for in March and got in July, when by then the car park was full of cars from Turin."
+     }
+    ]
+   },
+   {
+    "who": "Sindaco Cozzani",
+    "s": [
+     {
+      "it": "Quella volta c'è stato un problema con la ditta, lo sai benissimo.",
+      "en": "That time there was a problem with the company, you know that perfectly well."
+     }
+    ]
+   },
+   {
+    "who": "Gino",
+    "s": [
+     {
+      "it": "C'è sempre un problema con la ditta.",
+      "en": "There's always a problem with the company."
+     }
+    ]
+   },
+   {
+    "who": "Chiara",
+    "s": [
+     {
+      "it": "Sabrina, lei voleva aggiungere qualcosa.",
+      "en": "Sabrina, you wanted to add something."
+     }
+    ]
+   },
+   {
+    "who": "Sabrina",
+    "s": [
+     {
+      "it": "Sì, perché si parla sempre di numeri, ma vorrei raccontare una cosa che è successa a luglio.",
+      "en": "Yes, because we always talk about numbers, but I'd like to tell you about something that happened in July."
+     },
+     {
+      "it": "Avevo una coppia di Osaka, due pensionati gentilissimi, che sognavano le Cinque Terre da trent'anni.",
+      "en": "I had a couple from Osaka, two lovely retired people, who'd been dreaming of the Cinque Terre for thirty years."
+     },
+     {
+      "it": "Sono arrivati alla stazione alle undici e ci hanno messo quaranta minuti a fare duecento metri fino a casa mia, con le valigie, in mezzo alla folla.",
+      "en": "They arrived at the station at eleven and it took them forty minutes to walk two hundred metres to my house, with their suitcases, through the crowd."
+     },
+     {
+      "it": "Quando sono entrati, la signora si è seduta sul letto e si è messa a piangere.",
+      "en": "When they came in, the lady sat down on the bed and started crying."
+     },
+     {
+      "it": "Non per l'emozione, eh.",
+      "en": "Not out of emotion, mind you."
+     },
+     {
+      "it": "Per la stanchezza.",
+      "en": "Out of exhaustion."
+     },
+     {
+      "it": "Mi ha detto, in inglese, che nelle foto il paese era vuoto.",
+      "en": "She told me, in English, that in the photos the village was empty."
+     },
+     {
+      "it": "E io cosa le dovevo dire, che le foto le fanno alle cinque e mezza, quando c'è solo Gino?",
+      "en": "And what was I supposed to tell her, that the photos are taken at half past five, when there's only Gino?"
+     }
+    ]
+   },
+   {
+    "who": "Gino",
+    "s": [
+     {
+      "it": "E il treppiede.",
+      "en": "And the tripod."
+     }
+    ]
+   },
+   {
+    "who": "Chiara",
+    "s": [
+     {
+      "it": "Quindi anche chi i turisti li ospita sente che si è passato il limite.",
+      "en": "So even those who host tourists feel that the limit has been crossed."
+     }
+    ]
+   },
+   {
+    "who": "Sabrina",
+    "s": [
+     {
+      "it": "Il limite l'abbiamo passato da un pezzo.",
+      "en": "We crossed the limit a long time ago."
+     },
+     {
+      "it": "La differenza è che adesso se ne accorgono anche i turisti.",
+      "en": "The difference is that now even the tourists are noticing."
+     }
+    ]
+   },
+   {
+    "who": "Chiara",
+    "s": [
+     {
+      "it": "Abbiamo un messaggio da un'ascoltatrice, Paola, di Riomaggiore.",
+      "en": "We have a message from a listener, Paola, from Riomaggiore."
+     },
+     {
+      "it": "Scrive: «Bello parlare di turisti, ma perché nessuno parla del fatto che qui un bilocale costa come a Milano e i nostri figli se ne vanno?»",
+      "en": "She writes: 'It's nice to talk about tourists, but why does no one talk about the fact that a two-room flat here costs as much as in Milan and our children are leaving?'"
+     },
+     {
+      "it": "Sabrina, questa domanda in qualche modo tocca anche lei.",
+      "en": "Sabrina, this question touches on you too, in a way."
+     }
+    ]
+   },
+   {
+    "who": "Sabrina",
+    "s": [
+     {
+      "it": "Sì, me l'aspettavo.",
+      "en": "Yes, I was expecting that."
+     },
+     {
+      "it": "Io ho trasformato la casa di mia nonna in quattro camere, è vero.",
+      "en": "I turned my grandmother's house into four rooms, it's true."
+     },
+     {
+      "it": "Ma l'alternativa era venderla a un fondo di investimento che ne avrebbe fatte otto.",
+      "en": "But the alternative was selling it to an investment fund that would have made eight."
+     },
+     {
+      "it": "Almeno io a Vernazza ci abito, la mattina apro le finestre e la sera mi lamento dei turisti come tutti.",
+      "en": "At least I live in Vernazza, I open the windows in the morning and in the evening I complain about tourists like everyone else."
+     }
+    ]
+   },
+   {
+    "who": "Chiara",
+    "s": [
+     {
+      "it": "Gino, tu hai figli?",
+      "en": "Gino, do you have children?"
+     }
+    ]
+   },
+   {
+    "who": "Gino",
+    "s": [
+     {
+      "it": "Una figlia, a Genova.",
+      "en": "A daughter, in Genoa."
+     },
+     {
+      "it": "Fa l'infermiera.",
+      "en": "She's a nurse."
+     },
+     {
+      "it": "Qui non ci poteva stare, gli affitti erano impossibili.",
+      "en": "She couldn't stay here, the rents were impossible."
+     }
+    ]
+   },
+   {
+    "who": "Chiara",
+    "s": [
+     {
+      "it": "E la tua casa, quella di famiglia, è ancora abitata?",
+      "en": "And your house, the family one, is it still lived in?"
+     }
+    ]
+   },
+   {
+    "who": "Gino",
+    "s": [
+     {
+      "it": "Eh.",
+      "en": "Well."
+     },
+     {
+      "it": "Allora.",
+      "en": "Right."
+     },
+     {
+      "it": "Quella di sopra, quella dove abitava mia moglie con sua madre, la affitta mia figlia.",
+      "en": "The upstairs one, where my wife used to live with her mother, my daughter rents it out."
+     },
+     {
+      "it": "Ai turisti.",
+      "en": "To tourists."
+     },
+     {
+      "it": "Con la cassettina delle chiavi sul portone.",
+      "en": "With the little key box on the front door."
+     }
+    ]
+   },
+   {
+    "who": "Sabrina",
+    "s": [
+     {
+      "it": "Ah, ecco!",
+      "en": "Oh, there we go!"
+     }
+    ]
+   },
+   {
+    "who": "Gino",
+    "s": [
+     {
+      "it": "Non cominciare, Sabrina.",
+      "en": "Don't start, Sabrina."
+     },
+     {
+      "it": "Ci paga l'affitto a Genova con quella casa.",
+      "en": "She pays her rent in Genoa with that house."
+     },
+     {
+      "it": "Qui ci lamentiamo tutti dei turisti, e poi tutti abbiamo una cassettina sul portone.",
+      "en": "Here we all complain about tourists, and then we all have a little key box on our front door."
+     },
+     {
+      "it": "Lo dico io prima che lo dica qualcun altro.",
+      "en": "I'll say it myself before someone else does."
+     }
+    ]
+   },
+   {
+    "who": "Chiara",
+    "s": [
+     {
+      "it": "Devo dire che è la confessione più onesta che abbiamo sentito in questo studio da mesi.",
+      "en": "I must say it's the most honest confession we've heard in this studio in months."
+     }
+    ]
+   },
+   {
+    "who": "Sindaco Cozzani",
+    "s": [
+     {
+      "it": "E secondo me è il cuore del problema.",
+      "en": "And in my opinion it's the heart of the problem."
+     },
+     {
+      "it": "Non ci sono buoni e cattivi, ci siamo dentro tutti.",
+      "en": "There are no good guys and bad guys, we're all in it together."
+     },
+     {
+      "it": "Per questo vorrei che Gino venisse al consiglio comunale aperto di giovedì.",
+      "en": "That's why I'd like Gino to come to the open council meeting on Thursday."
+     },
+     {
+      "it": "Persone come lui servono più dei consulenti.",
+      "en": "People like him are worth more than consultants."
+     }
+    ]
+   },
+   {
+    "who": "Gino",
+    "s": [
+     {
+      "it": "Al consiglio?",
+      "en": "To the council?"
+     },
+     {
+      "it": "Io?",
+      "en": "Me?"
+     }
+    ]
+   },
+   {
+    "who": "Sindaco Cozzani",
+    "s": [
+     {
+      "it": "Tu.",
+      "en": "You."
+     },
+     {
+      "it": "Giovedì alle sei.",
+      "en": "Thursday at six."
+     }
+    ]
+   },
+   {
+    "who": "Gino",
+    "s": [
+     {
+      "it": "Alle sei di sera io dormo, Renato.",
+      "en": "At six in the evening I'm asleep, Renato."
+     },
+     {
+      "it": "Se lo fate alle cinque di mattina, al porto, vengo.",
+      "en": "If you hold it at five in the morning, at the harbour, I'll come."
+     },
+     {
+      "it": "Così vedete anche quello col treppiede.",
+      "en": "That way you'll see the guy with the tripod too."
+     }
+    ]
+   },
+   {
+    "who": "Chiara",
+    "s": [
+     {
+      "it": "Sindaco, la proposta mi sembra ragionevole.",
+      "en": "Mayor, the proposal sounds reasonable to me."
+     }
+    ]
+   },
+   {
+    "who": "Sindaco Cozzani",
+    "s": [
+     {
+      "it": "Ci penso.",
+      "en": "I'll think about it."
+     },
+     {
+      "it": "Non prometto niente, ma ci penso.",
+      "en": "I'm not promising anything, but I'll think about it."
+     }
+    ]
+   },
+   {
+    "who": "Sabrina",
+    "s": [
+     {
+      "it": "Ha detto la stessa cosa del bagno della stazione.",
+      "en": "He said the same thing about the station toilet."
+     }
+    ]
+   },
+   {
+    "who": "Chiara",
+    "s": [
+     {
+      "it": "E su questa nota di fiducia nelle istituzioni ci fermiamo per una pausa.",
+      "en": "And on this note of faith in the institutions we'll stop for a break."
+     },
+     {
+      "it": "Dopo la musica sentiremo chi a Vernazza ci è arrivato da turista e non se n'è più andato.",
+      "en": "After the music we'll hear from someone who arrived in Vernazza as a tourist and never left."
+     },
+     {
+      "it": "Restate con noi.",
+      "en": "Stay with us."
+     }
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "q": "Qual è l'argomento principale del dibattito?",
+    "o": [
+     "Il divieto di fotografare le barche e le reti dei pescatori",
+     "La chiusura della stazione di Vernazza nei giorni più affollati",
+     "Una proposta per far pagare e limitare i visitatori in giornata",
+     "La costruzione di un nuovo porto per le grandi navi da crociera"
+    ],
+    "a": "Una proposta per far pagare e limitare i visitatori in giornata"
+   },
+   {
+    "q": "Perché il sindaco paragona il sentiero alla tangenziale alle sei di sera?",
+    "o": [
+     "Perché d'estate il sentiero resta aperto fino a tardi",
+     "Perché molti turisti arrivano in macchina fino al sentiero",
+     "Perché il sentiero viene chiuso alle sei di sera",
+     "Perché in certi giorni era così pieno che non ci si muoveva"
+    ],
+    "a": "Perché in certi giorni era così pieno che non ci si muoveva"
+   },
+   {
+    "q": "Qual è la posizione di Sabrina sul ticket?",
+    "o": [
+     "È favorevole, purché i soldi vengano spesi in paese",
+     "Non ha un'opinione e preferisce non esprimersi",
+     "È contraria, perché danneggia gli ospiti che dormono in paese",
+     "È favorevole solo se lo pagano anche i residenti"
+    ],
+    "a": "È favorevole, purché i soldi vengano spesi in paese"
+   },
+   {
+    "q": "Quando Sabrina cita il bagno pubblico della stazione, che cosa vuole far capire?",
+    "o": [
+     "Che i turisti delle crociere sporcano la stazione",
+     "Che il sindaco ha fatto un buon lavoro sui servizi pubblici",
+     "Che non si fida delle promesse dell'amministrazione",
+     "Che il bagno è il problema più urgente del paese"
+    ],
+    "a": "Che non si fida delle promesse dell'amministrazione"
+   },
+   {
+    "q": "Che cosa racconta Gino della signora incontrata la settimana prima?",
+    "o": [
+     "Lo aveva preso per un figurante pagato dal Comune",
+     "Gli aveva chiesto di portarla in barca all'alba",
+     "Voleva comprare le sue reti come ricordo del viaggio",
+     "Si era lamentata perché non poteva fotografare l'alba"
+    ],
+    "a": "Lo aveva preso per un figurante pagato dal Comune"
+   },
+   {
+    "q": "Secondo Gino, perché il ticket di cinque euro non funzionerà?",
+    "o": [
+     "Perché i turisti non sapranno dove pagarlo",
+     "Perché i residenti si rifiuteranno di controllarlo",
+     "Perché è illegale far pagare l'ingresso in un paese",
+     "Perché è troppo poco per chi paga una crociera"
+    ],
+    "a": "Perché è troppo poco per chi paga una crociera"
+   },
+   {
+    "q": "Per il sindaco, qual è la parte più efficace della proposta?",
+    "o": [
+     "La prenotazione obbligatoria a fasce orarie",
+     "La chiusura totale del sentiero nel mese di agosto",
+     "Il prezzo del ticket per chi arriva in giornata",
+     "La tessera per i residenti e i proprietari"
+    ],
+    "a": "La prenotazione obbligatoria a fasce orarie"
+   },
+   {
+    "q": "Che cosa ammette Gino quando la conduttrice gli chiede della casa di famiglia?",
+    "o": [
+     "Che è vuota da quando è morta sua moglie",
+     "Che ci abita ancora sua figlia, che fa l'infermiera",
+     "Che l'ha venduta a un fondo di investimento",
+     "Che sua figlia la affitta ai turisti"
+    ],
+    "a": "Che sua figlia la affitta ai turisti"
+   },
+   {
+    "q": "Con quale tono la conduttrice parla di «fiducia nelle istituzioni» alla fine?",
+    "o": [
+     "Ironico: commenta la battuta di Sabrina sul sindaco",
+     "Sincero: è convinta che il sindaco manterrà la promessa",
+     "Polemico: accusa Sabrina di essere ingiusta",
+     "Preoccupato: teme che il dibattito sia diventato troppo acceso"
+    ],
+    "a": "Ironico: commenta la battuta di Sabrina sul sindaco"
+   }
+  ]
+ },
+ {
+  "id": "l-b2-02",
+  "level": "B2",
+  "title": "Una lingua con l'esercito",
+  "en": "A language with an army",
+  "topic": "language",
+  "genre": "university lecture excerpt",
+  "minutes": 10,
+  "situation": "A recording from a first-year Italian linguistics course at the University of Padua. The professor has just started the second hour of her lesson when a student raises his hand.",
+  "speakers": {
+   "Prof.ssa Ferraris": "f",
+   "Tommaso": "m2",
+   "Ilaria": "f2"
+  },
+  "body": [
+   {
+    "who": "Prof.ssa Ferraris",
+    "s": [
+     {
+      "it": "Allora, riprendiamo da dove eravamo rimasti prima della pausa caffè, che vedo è stata lunga per qualcuno.",
+      "en": "Right, let's pick up from where we left off before the coffee break, which I see was a long one for some of you."
+     },
+     {
+      "it": "Dicevamo che nel 1861, quando nasce il Regno d'Italia, l'italiano lo parla una minoranza piccolissima della popolazione.",
+      "en": "We were saying that in 1861, when the Kingdom of Italy was born, Italian was spoken by a tiny minority of the population."
+     },
+     {
+      "it": "Tullio De Mauro stimava il due virgola cinque per cento.",
+      "en": "Tullio De Mauro estimated two point five per cent."
+     },
+     {
+      "it": "Altri studiosi, più generosi, arrivano al dieci.",
+      "en": "Other scholars, more generous ones, go as high as ten."
+     },
+     {
+      "it": "In ogni caso, parliamo di pochissime persone.",
+      "en": "Either way, we're talking about very few people."
+     },
+     {
+      "it": "Il resto del paese parla quello che noi, per comodità, chiamiamo dialetto.",
+      "en": "The rest of the country spoke what we, for convenience, call dialect."
+     },
+     {
+      "it": "Sì, prego, in fondo.",
+      "en": "Yes, go ahead, at the back."
+     }
+    ]
+   },
+   {
+    "who": "Tommaso",
+    "s": [
+     {
+      "it": "Scusi, professoressa, è proprio su questo «per comodità» che volevo intervenire.",
+      "en": "Excuse me, Professor, it's precisely this 'for convenience' that I wanted to pick up on."
+     }
+    ]
+   },
+   {
+    "who": "Prof.ssa Ferraris",
+    "s": [
+     {
+      "it": "Mi dica.",
+      "en": "Go on."
+     },
+     {
+      "it": "Come si chiama?",
+      "en": "What's your name?"
+     }
+    ]
+   },
+   {
+    "who": "Tommaso",
+    "s": [
+     {
+      "it": "Tommaso, Tommaso Greco.",
+      "en": "Tommaso, Tommaso Greco."
+     },
+     {
+      "it": "Vengo da Galatina, in provincia di Lecce.",
+      "en": "I'm from Galatina, in the province of Lecce."
+     },
+     {
+      "it": "Ecco, la settimana scorsa lei ha detto che i dialetti non derivano dall'italiano, ma direttamente dal latino.",
+      "en": "Well, last week you said that dialects don't derive from Italian, but directly from Latin."
+     },
+     {
+      "it": "Che sono, come ha detto, lingue sorelle.",
+      "en": "That they are, as you put it, sister languages."
+     }
+    ]
+   },
+   {
+    "who": "Prof.ssa Ferraris",
+    "s": [
+     {
+      "it": "Confermo.",
+      "en": "I stand by that."
+     }
+    ]
+   },
+   {
+    "who": "Tommaso",
+    "s": [
+     {
+      "it": "E allora perché continuiamo a chiamarli dialetti?",
+      "en": "Then why do we keep calling them dialects?"
+     },
+     {
+      "it": "Mi sembra un modo elegante per dire che sono lingue di serie B.",
+      "en": "It seems to me an elegant way of saying they're second-rate languages."
+     },
+     {
+      "it": "Mia nonna non parla un italiano sbagliato, parla un'altra lingua.",
+      "en": "My grandmother doesn't speak bad Italian, she speaks another language."
+     },
+     {
+      "it": "E a scuola, quando ero piccolo, mi correggevano come se fosse un errore.",
+      "en": "And at school, when I was little, they corrected me as if it were a mistake."
+     }
+    ]
+   },
+   {
+    "who": "Prof.ssa Ferraris",
+    "s": [
+     {
+      "it": "Bene.",
+      "en": "Good."
+     },
+     {
+      "it": "Anzi, benissimo, perché mi risparmia la slide che avevo preparato.",
+      "en": "In fact, very good, because you've saved me the slide I'd prepared."
+     },
+     {
+      "it": "Lei ha appena riassunto in un minuto una discussione che i linguisti fanno da un secolo e mezzo.",
+      "en": "You've just summed up in a minute a debate that linguists have been having for a century and a half."
+     },
+     {
+      "it": "C'è una frase famosa, attribuita al linguista Max Weinreich, che dice: una lingua è un dialetto con un esercito e una marina.",
+      "en": "There's a famous line, attributed to the linguist Max Weinreich, that says: a language is a dialect with an army and a navy."
+     }
+    ]
+   },
+   {
+    "who": "Tommaso",
+    "s": [
+     {
+      "it": "Appunto.",
+      "en": "Exactly."
+     },
+     {
+      "it": "Quindi è una questione politica, non linguistica.",
+      "en": "So it's a political question, not a linguistic one."
+     }
+    ]
+   },
+   {
+    "who": "Prof.ssa Ferraris",
+    "s": [
+     {
+      "it": "Piano, piano, non mi faccia dire più di quello che ho detto.",
+      "en": "Easy, easy, don't put words in my mouth."
+     },
+     {
+      "it": "Dal punto di vista della struttura, il salentino di sua nonna e il fiorentino del Trecento sono sullo stesso piano.",
+      "en": "From a structural point of view, your grandmother's Salentino and fourteenth-century Florentine are on the same level."
+     },
+     {
+      "it": "Hanno una grammatica, un lessico, una fonetica, e nessuno dei due è la versione rovinata dell'altro.",
+      "en": "They have a grammar, a vocabulary, a phonetics, and neither is the ruined version of the other."
+     },
+     {
+      "it": "Su questo ha ragione lei.",
+      "en": "On that you're right."
+     }
+    ]
+   },
+   {
+    "who": "Tommaso",
+    "s": [
+     {
+      "it": "E poi, scusi, a pochi chilometri da Galatina ci sono paesi dove gli anziani parlano griko, che è praticamente greco.",
+      "en": "And besides, sorry, a few kilometres from Galatina there are villages where old people speak Griko, which is practically Greek."
+     },
+     {
+      "it": "Quello lo chiamiamo dialetto pure?",
+      "en": "Do we call that a dialect too?"
+     }
+    ]
+   },
+   {
+    "who": "Prof.ssa Ferraris",
+    "s": [
+     {
+      "it": "No, e qui mi fa un regalo.",
+      "en": "No, and here you're doing me a favour."
+     },
+     {
+      "it": "Il griko la legge italiana lo tutela come lingua di minoranza, proprio come il ladino o l'albanese dei paesi arbëreshë.",
+      "en": "Italian law protects Griko as a minority language, just like Ladin or the Albanian of the Arbëreshë villages."
+     },
+     {
+      "it": "Quindi a dieci chilometri da casa sua c'è una lingua con la carta bollata e una senza.",
+      "en": "So ten kilometres from your home there's one language with official papers and one without."
+     },
+     {
+      "it": "Si segni questo esempio, perché le servirà all'esame.",
+      "en": "Write that example down, because you'll need it in the exam."
+     }
+    ]
+   },
+   {
+    "who": "Tommaso",
+    "s": [
+     {
+      "it": "Me lo segno, me lo segno.",
+      "en": "I'll write it down, I'll write it down."
+     }
+    ]
+   },
+   {
+    "who": "Prof.ssa Ferraris",
+    "s": [
+     {
+      "it": "Ma torniamo a noi, perché il tempo vola e io ho ancora quaranta slide.",
+      "en": "But let's get back to the point, because time flies and I still have forty slides."
+     },
+     {
+      "it": "Però il fiorentino ha avuto una cosa che il salentino non ha avuto.",
+      "en": "But Florentine had something that Salentino didn't."
+     },
+     {
+      "it": "Qualcuno mi sa dire cosa?",
+      "en": "Can anyone tell me what?"
+     }
+    ]
+   },
+   {
+    "who": "Ilaria",
+    "s": [
+     {
+      "it": "Dante?",
+      "en": "Dante?"
+     }
+    ]
+   },
+   {
+    "who": "Prof.ssa Ferraris",
+    "s": [
+     {
+      "it": "Dante, Petrarca e Boccaccio, esatto.",
+      "en": "Dante, Petrarch and Boccaccio, exactly."
+     },
+     {
+      "it": "Il fiorentino non ha vinto perché era più bello o più logico.",
+      "en": "Florentine didn't win because it was more beautiful or more logical."
+     },
+     {
+      "it": "Ha vinto perché tre scrittori lo hanno reso prestigioso, e poi nel Cinquecento Pietro Bembo lo ha proposto come modello per chi voleva scrivere bene.",
+      "en": "It won because three writers made it prestigious, and then in the sixteenth century Pietro Bembo put it forward as the model for anyone who wanted to write well."
+     },
+     {
+      "it": "Per secoli l'italiano è stato una lingua scritta, quasi solo scritta.",
+      "en": "For centuries Italian was a written language, almost exclusively written."
+     },
+     {
+      "it": "Una specie di latino più moderno, che la gente leggeva ma non usava per chiedere il pane.",
+      "en": "A sort of more modern Latin, which people read but didn't use to ask for bread."
+     },
+     {
+      "it": "Poi arriva Manzoni, che nell'Ottocento riscrive tutti i Promessi sposi perché il suo italiano, dice lui, sa troppo di Milano.",
+      "en": "Then along comes Manzoni, who in the nineteenth century rewrites the whole of The Betrothed because his Italian, he says, smacks too much of Milan."
+     },
+     {
+      "it": "Va a Firenze, come diceva lui, a risciacquare i panni in Arno.",
+      "en": "He goes to Florence, as he put it, to rinse his clothes in the Arno."
+     }
+    ]
+   },
+   {
+    "who": "Tommaso",
+    "s": [
+     {
+      "it": "Cioè a farsi lavare la lingua dai toscani.",
+      "en": "You mean to get his tongue washed by the Tuscans."
+     }
+    ]
+   },
+   {
+    "who": "Prof.ssa Ferraris",
+    "s": [
+     {
+      "it": "Se vuole metterla così, sì.",
+      "en": "If you want to put it that way, yes."
+     },
+     {
+      "it": "E le assicuro che i toscani non si sono mai offesi.",
+      "en": "And I can assure you the Tuscans have never taken offence."
+     }
+    ]
+   },
+   {
+    "who": "Tommaso",
+    "s": [
+     {
+      "it": "Quindi lei è d'accordo con me.",
+      "en": "So you agree with me."
+     }
+    ]
+   },
+   {
+    "who": "Prof.ssa Ferraris",
+    "s": [
+     {
+      "it": "In parte.",
+      "en": "Partly."
+     },
+     {
+      "it": "Lei mi parla di gerarchia, e la gerarchia c'è stata, eccome.",
+      "en": "You're talking about hierarchy, and there certainly was a hierarchy."
+     },
+     {
+      "it": "Ma il termine dialetto, in linguistica, non è un giudizio di valore.",
+      "en": "But the term dialect, in linguistics, isn't a value judgement."
+     },
+     {
+      "it": "Indica una varietà che, in un certo territorio, convive con una lingua che si usa per la scuola, per i tribunali, per i giornali.",
+      "en": "It indicates a variety that, in a certain area, coexists with a language used for school, the courts, the newspapers."
+     },
+     {
+      "it": "È una questione di funzioni, non di dignità.",
+      "en": "It's a matter of functions, not of dignity."
+     }
+    ]
+   },
+   {
+    "who": "Tommaso",
+    "s": [
+     {
+      "it": "Con tutto il rispetto, professoressa, questo lo dicono i linguisti.",
+      "en": "With all due respect, Professor, that's what linguists say."
+     },
+     {
+      "it": "Ma la maestra che mi diceva «non si dice così, si dice così» non aveva letto il manuale.",
+      "en": "But the teacher who told me 'you don't say it like that, you say it like this' hadn't read the textbook."
+     }
+    ]
+   },
+   {
+    "who": "Prof.ssa Ferraris",
+    "s": [
+     {
+      "it": "No, probabilmente no.",
+      "en": "No, probably not."
+     },
+     {
+      "it": "E qui le do ragione senza riserve.",
+      "en": "And here I agree with you without reservation."
+     },
+     {
+      "it": "Ma vorrei farle una domanda, se permette.",
+      "en": "But I'd like to ask you a question, if I may."
+     },
+     {
+      "it": "Lei, il dialetto di sua nonna, lo parla?",
+      "en": "Do you speak your grandmother's dialect?"
+     }
+    ]
+   },
+   {
+    "who": "Tommaso",
+    "s": [
+     {
+      "it": "Beh, lo capisco.",
+      "en": "Well, I understand it."
+     },
+     {
+      "it": "Lo capisco benissimo.",
+      "en": "I understand it perfectly."
+     }
+    ]
+   },
+   {
+    "who": "Prof.ssa Ferraris",
+    "s": [
+     {
+      "it": "Non le ho chiesto se lo capisce.",
+      "en": "I didn't ask you if you understand it."
+     },
+     {
+      "it": "Mi dica una frase.",
+      "en": "Say a sentence for me."
+     },
+     {
+      "it": "Una qualsiasi, tipo «andiamo a casa, che si fa tardi».",
+      "en": "Any sentence, like 'let's go home, it's getting late'."
+     }
+    ]
+   },
+   {
+    "who": "Tommaso",
+    "s": [
+     {
+      "it": "Allora... sciamu a casa, ca...",
+      "en": "Right... sciamu a casa, ca..."
+     },
+     {
+      "it": "Ca se fa tardu?",
+      "en": "Ca se fa tardu?"
+     }
+    ]
+   },
+   {
+    "who": "Prof.ssa Ferraris",
+    "s": [
+     {
+      "it": "Sciamu va benissimo.",
+      "en": "Sciamu is perfect."
+     },
+     {
+      "it": "Sul resto, non so, forse sua nonna avrebbe qualche osservazione.",
+      "en": "As for the rest, I don't know, maybe your grandmother would have a few comments."
+     }
+    ]
+   },
+   {
+    "who": "Ilaria",
+    "s": [
+     {
+      "it": "Professoressa, posso dire una cosa?",
+      "en": "Professor, can I say something?"
+     }
+    ]
+   },
+   {
+    "who": "Prof.ssa Ferraris",
+    "s": [
+     {
+      "it": "Prego.",
+      "en": "Please."
+     }
+    ]
+   },
+   {
+    "who": "Ilaria",
+    "s": [
+     {
+      "it": "Io sono di Clusone, in provincia di Bergamo.",
+      "en": "I'm from Clusone, in the province of Bergamo."
+     },
+     {
+      "it": "A casa mia il bergamasco lo parlano tutti, anche mio fratello che ha quindici anni.",
+      "en": "At home everyone speaks Bergamasco, even my brother who's fifteen."
+     },
+     {
+      "it": "Però quando sono arrivata qui a Padova, la prima settimana una ragazza della mia stanza mi ha chiesto se ero tedesca.",
+      "en": "But when I arrived here in Padua, in the first week a girl in my room asked me if I was German."
+     },
+     {
+      "it": "Solo per l'accento, non per il dialetto.",
+      "en": "Just because of my accent, not the dialect."
+     },
+     {
+      "it": "Da allora a lezione cerco di parlare come al telegiornale.",
+      "en": "Since then I try to talk like a newsreader in class."
+     },
+     {
+      "it": "Quindi il problema non è solo la scuola elementare.",
+      "en": "So the problem isn't just primary school."
+     }
+    ]
+   },
+   {
+    "who": "Tommaso",
+    "s": [
+     {
+      "it": "Ecco, vede?",
+      "en": "There, you see?"
+     }
+    ]
+   },
+   {
+    "who": "Prof.ssa Ferraris",
+    "s": [
+     {
+      "it": "Vedo, vedo.",
+      "en": "I see, I see."
+     },
+     {
+      "it": "E questo ci porta al punto successivo, che è la televisione.",
+      "en": "And this brings us to the next point, which is television."
+     },
+     {
+      "it": "Perché se l'italiano è diventato davvero una lingua parlata da tutti, non è stato merito dei ministri e nemmeno dei maestri.",
+      "en": "Because if Italian really became a language spoken by everyone, it wasn't thanks to the ministers or even the teachers."
+     },
+     {
+      "it": "È stato merito, o colpa, se preferite, della leva militare, dell'emigrazione interna e soprattutto della televisione.",
+      "en": "It was thanks to, or the fault of, if you prefer, military service, internal migration and above all television."
+     },
+     {
+      "it": "Negli anni Sessanta c'era un programma che si chiamava «Non è mai troppo tardi», in cui un maestro insegnava a leggere e scrivere agli adulti analfabeti.",
+      "en": "In the sixties there was a programme called 'It's never too late', in which a teacher taught illiterate adults to read and write."
+     },
+     {
+      "it": "Mezza Italia ha imparato l'italiano davanti a un televisore, spesso quello del bar, perché a casa non ce l'aveva nessuno.",
+      "en": "Half of Italy learned Italian in front of a television set, often the one in the bar, because no one had one at home."
+     }
+    ]
+   },
+   {
+    "who": "Tommaso",
+    "s": [
+     {
+      "it": "E nel frattempo ha smesso di parlare il dialetto.",
+      "en": "And in the meantime it stopped speaking dialect."
+     }
+    ]
+   },
+   {
+    "who": "Prof.ssa Ferraris",
+    "s": [
+     {
+      "it": "Non ha smesso.",
+      "en": "It didn't stop."
+     },
+     {
+      "it": "Ha cominciato a usarlo meno, in meno situazioni, con meno persone.",
+      "en": "It started using it less, in fewer situations, with fewer people."
+     },
+     {
+      "it": "Che è un modo più lento di smettere, se vuole.",
+      "en": "Which is a slower way of stopping, if you like."
+     }
+    ]
+   },
+   {
+    "who": "Ilaria",
+    "s": [
+     {
+      "it": "Però, scusi, mio fratello scrive in bergamasco nelle chat con gli amici.",
+      "en": "But, sorry, my brother writes in Bergamasco in chats with his friends."
+     },
+     {
+      "it": "E ascolta dei rapper che cantano in dialetto.",
+      "en": "And he listens to rappers who sing in dialect."
+     },
+     {
+      "it": "Non mi sembra una lingua che sta morendo.",
+      "en": "It doesn't seem like a dying language to me."
+     }
+    ]
+   },
+   {
+    "who": "Prof.ssa Ferraris",
+    "s": [
+     {
+      "it": "È un'ottima osservazione, e infatti negli ultimi anni c'è un ritorno del dialetto, soprattutto tra i giovani e soprattutto per scherzare, per essere espressivi.",
+      "en": "That's an excellent observation, and in fact in recent years there's been a comeback of dialect, especially among young people and especially for joking, for being expressive."
+     },
+     {
+      "it": "Ma provi a chiedere a suo fratello di spiegarle in bergamasco come funziona un contratto d'affitto.",
+      "en": "But try asking your brother to explain to you in Bergamasco how a rental contract works."
+     }
+    ]
+   },
+   {
+    "who": "Ilaria",
+    "s": [
+     {
+      "it": "Mah, in italiano non lo sa spiegare nemmeno lui.",
+      "en": "Well, he can't explain that even in Italian."
+     }
+    ]
+   },
+   {
+    "who": "Prof.ssa Ferraris",
+    "s": [
+     {
+      "it": "Allora il problema è un altro, e non è di mia competenza.",
+      "en": "Then the problem is a different one, and it's not my department."
+     },
+     {
+      "it": "Il punto è che il dialetto oggi vive bene in certi spazi, la battuta, l'insulto, l'affetto, e molto meno in altri.",
+      "en": "The point is that today dialect thrives in certain spaces, the joke, the insult, affection, and much less in others."
+     },
+     {
+      "it": "Una lingua che sa solo scherzare è viva, certo, ma ha la casa più piccola di prima.",
+      "en": "A language that can only joke is alive, of course, but it lives in a smaller house than before."
+     },
+     {
+      "it": "Ma vi racconto una cosa personale, così almeno oggi mi ricordate per qualcosa.",
+      "en": "But I'll tell you something personal, so at least you'll remember me for something today."
+     },
+     {
+      "it": "Io sono nata a Biella, in Piemonte.",
+      "en": "I was born in Biella, in Piedmont."
+     },
+     {
+      "it": "Mio padre parlava piemontese con i suoi fratelli, con il macellaio, con il prete.",
+      "en": "My father spoke Piedmontese with his brothers, with the butcher, with the priest."
+     },
+     {
+      "it": "Con me mai, nemmeno una parola.",
+      "en": "With me never, not a single word."
+     },
+     {
+      "it": "Diceva che dovevo parlare bene, per fare strada.",
+      "en": "He said I had to speak properly, to get on in life."
+     },
+     {
+      "it": "Il risultato è che oggi insegno la storia dei dialetti italiani all'università, e il piemontese l'ho imparato a trent'anni, ascoltando le registrazioni di altri anziani per la mia tesi di dottorato.",
+      "en": "The result is that today I teach the history of Italian dialects at university, and I learned Piedmontese at thirty, listening to recordings of other old people for my doctoral thesis."
+     },
+     {
+      "it": "Non quelle di mio padre, perché quando ho cominciato lui non c'era più.",
+      "en": "Not my father's, because by the time I started he was no longer around."
+     }
+    ]
+   },
+   {
+    "who": "Ilaria",
+    "s": [
+     {
+      "it": "E lui avrebbe fatto fatica a crederci, immagino.",
+      "en": "And he would have found it hard to believe, I imagine."
+     }
+    ]
+   },
+   {
+    "who": "Prof.ssa Ferraris",
+    "s": [
+     {
+      "it": "Mio padre?",
+      "en": "My father?"
+     },
+     {
+      "it": "Avrebbe detto che ho studiato vent'anni per diventare una bogia nen, come lui.",
+      "en": "He'd have said I studied for twenty years to become a 'bogia nen', like him."
+     },
+     {
+      "it": "Per chi non è piemontese, vuol dire «uno che non si muove», ed è il soprannome che ci danno da secoli.",
+      "en": "For those who aren't Piedmontese, it means 'someone who doesn't move', and it's the nickname we've had for centuries."
+     },
+     {
+      "it": "Comunque, signor Greco, la sua obiezione è sensata, e ci torneremo quando parleremo di lingue minoritarie e di tutela.",
+      "en": "Anyway, Mr Greco, your objection is sensible, and we'll come back to it when we talk about minority languages and their protection."
+     },
+     {
+      "it": "Lì vedrete che la legge italiana riconosce come lingue il sardo e il friulano, per esempio, ma non il napoletano o il siciliano, che hanno milioni di parlanti.",
+      "en": "There you'll see that Italian law recognises Sardinian and Friulian as languages, for example, but not Neapolitan or Sicilian, which have millions of speakers."
+     },
+     {
+      "it": "E lì potrà arrabbiarsi quanto vuole, con il mio pieno appoggio.",
+      "en": "And there you can get as angry as you like, with my full support."
+     }
+    ]
+   },
+   {
+    "who": "Tommaso",
+    "s": [
+     {
+      "it": "Ci conto.",
+      "en": "I'm counting on it."
+     }
+    ]
+   },
+   {
+    "who": "Prof.ssa Ferraris",
+    "s": [
+     {
+      "it": "Nel frattempo, compito per giovedì.",
+      "en": "In the meantime, homework for Thursday."
+     },
+     {
+      "it": "Ognuno di voi registra cinque minuti di conversazione con una persona anziana che parla un dialetto.",
+      "en": "Each of you records five minutes of conversation with an elderly person who speaks a dialect."
+     },
+     {
+      "it": "Nonni, vicini di casa, il signore dell'edicola, chi volete.",
+      "en": "Grandparents, neighbours, the man at the newsstand, whoever you like."
+     },
+     {
+      "it": "E poi trascrivete tutto, senza tradurre in italiano.",
+      "en": "And then you transcribe everything, without translating into Italian."
+     }
+    ]
+   },
+   {
+    "who": "Tommaso",
+    "s": [
+     {
+      "it": "Cinque minuti con mia nonna?",
+      "en": "Five minutes with my grandmother?"
+     },
+     {
+      "it": "Professoressa, guardi che mia nonna in cinque minuti mi chiede solo se mangio abbastanza.",
+      "en": "Professor, you know in five minutes my grandmother will only ask me if I'm eating enough."
+     }
+    ]
+   },
+   {
+    "who": "Prof.ssa Ferraris",
+    "s": [
+     {
+      "it": "Perfetto.",
+      "en": "Perfect."
+     },
+     {
+      "it": "È un tema di grande interesse per la lessicografia.",
+      "en": "It's a subject of great interest for lexicography."
+     },
+     {
+      "it": "Voglio sapere quante parole conosce sua nonna per dire che lei è troppo magro.",
+      "en": "I want to know how many words your grandmother has for saying you're too thin."
+     }
+    ]
+   },
+   {
+    "who": "Ilaria",
+    "s": [
+     {
+      "it": "Secondo me almeno dieci.",
+      "en": "I'd say at least ten."
+     }
+    ]
+   },
+   {
+    "who": "Prof.ssa Ferraris",
+    "s": [
+     {
+      "it": "Bene, abbiamo anche una previsione.",
+      "en": "Good, we even have a prediction."
+     },
+     {
+      "it": "Andiamo avanti.",
+      "en": "Let's move on."
+     }
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "q": "Qual è il tema centrale della discussione tra la professoressa e Tommaso?",
+    "o": [
+     "Il modo migliore per imparare l'italiano standard all'università",
+     "Il ruolo di Dante nella nascita del dialetto salentino",
+     "Se sia giusto chiamare «dialetti» le varietà regionali",
+     "La differenza tra il dialetto di Lecce e quello di Bergamo"
+    ],
+    "a": "Se sia giusto chiamare «dialetti» le varietà regionali"
+   },
+   {
+    "q": "Che cosa sostiene Tommaso quando interviene la prima volta?",
+    "o": [
+     "Che i dialetti derivano dall'italiano e non dal latino",
+     "Che sua nonna parla un italiano pieno di errori",
+     "Che la professoressa ha sbagliato i dati sulla popolazione del 1861",
+     "Che la parola «dialetto» nasconde un giudizio negativo"
+    ],
+    "a": "Che la parola «dialetto» nasconde un giudizio negativo"
+   },
+   {
+    "q": "Come reagisce la professoressa all'obiezione di Tommaso?",
+    "o": [
+     "La apprezza, ma precisa il senso tecnico del termine",
+     "Lo invita a riparlarne con calma dopo la lezione",
+     "Si irrita perché lui la interrompe a metà lezione",
+     "Gli dà ragione su tutto e passa all'argomento successivo"
+    ],
+    "a": "La apprezza, ma precisa il senso tecnico del termine"
+   },
+   {
+    "q": "Secondo la professoressa, perché il fiorentino è diventato la base dell'italiano?",
+    "o": [
+     "Perché era la varietà più logica e regolare",
+     "Perché la televisione lo ha diffuso negli anni Sessanta",
+     "Perché Firenze era la capitale del nuovo Regno",
+     "Per il prestigio datogli da tre grandi scrittori"
+    ],
+    "a": "Per il prestigio datogli da tre grandi scrittori"
+   },
+   {
+    "q": "Perché la professoressa chiede a Tommaso di dire una frase in dialetto?",
+    "o": [
+     "Per verificare se capisce il dialetto di sua nonna",
+     "Per fargli notare che difende una lingua che non sa parlare bene",
+     "Per far sentire alla classe come suona il salentino",
+     "Per prenderlo in giro davanti a tutta la classe"
+    ],
+    "a": "Per fargli notare che difende una lingua che non sa parlare bene"
+   },
+   {
+    "q": "Che cosa racconta Ilaria della sua esperienza a Padova?",
+    "o": [
+     "Una compagna l'ha creduta tedesca per l'accento",
+     "Un professore l'ha corretta durante una lezione",
+     "Ha smesso di parlare bergamasco anche a casa",
+     "I compagni di stanza non capivano il suo dialetto"
+    ],
+    "a": "Una compagna l'ha creduta tedesca per l'accento"
+   },
+   {
+    "q": "Che cosa implica la professoressa quando dice che usare meno il dialetto è «un modo più lento di smettere»?",
+    "o": [
+     "Che il dialetto tornerà di moda tra i giovani",
+     "Che la televisione ha salvato molti dialetti",
+     "Che smettere di parlare dialetto è stata una scelta giusta",
+     "Che la perdita del dialetto è reale, anche se graduale"
+    ],
+    "a": "Che la perdita del dialetto è reale, anche se graduale"
+   },
+   {
+    "q": "Che cosa c'è di ironico nella storia personale della professoressa?",
+    "o": [
+     "È diventata professoressa di italiano pur parlando solo dialetto",
+     "Ha studiato il piemontese con le registrazioni di suo padre",
+     "Suo padre insegnava il piemontese ma lei non voleva impararlo",
+     "Ha imparato da adulta, per la tesi, la lingua che il padre non le parlava"
+    ],
+    "a": "Ha imparato da adulta, per la tesi, la lingua che il padre non le parlava"
+   },
+   {
+    "q": "Come risponde la professoressa alla battuta di Tommaso sulla nonna?",
+    "o": [
+     "Gli ricorda che il compito è obbligatorio",
+     "Gli permette di registrare un'altra persona",
+     "Trasforma la lamentela in un tema di ricerca",
+     "Gli consiglia di fare domande più serie alla nonna"
+    ],
+    "a": "Trasforma la lamentela in un tema di ricerca"
+   }
+  ]
+ },
+ {
+  "id": "l-b2-03",
+  "level": "B2",
+  "title": "Lei, la Montagna",
+  "en": "Her, the Mountain",
+  "topic": "nature",
+  "genre": "podcast interview",
+  "minutes": 10,
+  "situation": "An episode of a science podcast recorded in Catania. The host is talking to a scientist in an office with a view of the mountain.",
+  "speakers": {
+   "Nicola": "m2",
+   "Rosaria": "f"
+  },
+  "body": [
+   {
+    "who": "Nicola",
+    "s": [
+     {
+      "it": "Benvenuti a una nuova puntata di «Sottosopra», il podcast che prova a capire il mondo partendo da sotto i nostri piedi.",
+      "en": "Welcome to a new episode of 'Upside Down', the podcast that tries to understand the world starting from beneath our feet."
+     },
+     {
+      "it": "Oggi siamo a Catania, in una stanza al terzo piano che, devo dire, ha la vista più inquietante che abbia mai visto da una finestra.",
+      "en": "Today we're in Catania, in a room on the third floor that, I have to say, has the most unsettling view I've ever seen from a window."
+     },
+     {
+      "it": "Con me c'è Rosaria Licciardello, vulcanologa, che da ventidue anni passa le sue giornate a sorvegliare l'Etna.",
+      "en": "With me is Rosaria Licciardello, a volcanologist, who has spent her days keeping watch over Etna for twenty-two years."
+     },
+     {
+      "it": "Rosaria, grazie di averci ricevuto.",
+      "en": "Rosaria, thanks for having us."
+     }
+    ]
+   },
+   {
+    "who": "Rosaria",
+    "s": [
+     {
+      "it": "Grazie a voi.",
+      "en": "Thank you."
+     },
+     {
+      "it": "Solo una precisazione, prima di cominciare.",
+      "en": "Just one clarification, before we start."
+     },
+     {
+      "it": "Qui a Catania nessuno dice «l'Etna».",
+      "en": "Here in Catania nobody says 'Etna'."
+     },
+     {
+      "it": "Si dice «la Montagna», o in dialetto «a Muntagna».",
+      "en": "People say 'the Mountain', or in dialect 'a Muntagna'."
+     },
+     {
+      "it": "E notate che è femminile.",
+      "en": "And notice that it's feminine."
+     }
+    ]
+   },
+   {
+    "who": "Nicola",
+    "s": [
+     {
+      "it": "Femminile perché?",
+      "en": "Feminine why?"
+     }
+    ]
+   },
+   {
+    "who": "Rosaria",
+    "s": [
+     {
+      "it": "Perché è imprevedibile, generosa e ogni tanto ti tira addosso dei sassi, dice mia madre.",
+      "en": "Because she's unpredictable, generous and every so often throws stones at you, my mother says."
+     },
+     {
+      "it": "Io da scienziata non posso confermare.",
+      "en": "As a scientist I can't confirm that."
+     },
+     {
+      "it": "Da figlia, non posso smentire.",
+      "en": "As a daughter, I can't deny it."
+     }
+    ]
+   },
+   {
+    "who": "Nicola",
+    "s": [
+     {
+      "it": "Partiamo dalla domanda che ti fanno tutti, immagino.",
+      "en": "Let's start with the question everyone asks you, I imagine."
+     },
+     {
+      "it": "L'Etna è pericoloso?",
+      "en": "Is Etna dangerous?"
+     }
+    ]
+   },
+   {
+    "who": "Rosaria",
+    "s": [
+     {
+      "it": "Ecco, la domanda che fanno tutti.",
+      "en": "There it is, the question everyone asks."
+     },
+     {
+      "it": "La risposta onesta è: dipende da cosa intendi.",
+      "en": "The honest answer is: it depends on what you mean."
+     },
+     {
+      "it": "L'Etna è uno dei vulcani più attivi del mondo, ma ha un carattere, diciamo così, più espansivo che violento.",
+      "en": "Etna is one of the most active volcanoes in the world, but it has a character that's, let's say, more outgoing than violent."
+     },
+     {
+      "it": "Le sue colate di lava sono lente, di solito si cammina più veloci.",
+      "en": "Its lava flows are slow, you can usually walk faster."
+     },
+     {
+      "it": "Il problema non è scappare, il problema è che la lava non si ferma davanti a una casa, a una vigna, a una strada.",
+      "en": "The problem isn't running away, the problem is that lava doesn't stop in front of a house, a vineyard, a road."
+     },
+     {
+      "it": "Se passa, si prende tutto, con calma.",
+      "en": "If it comes through, it takes everything, calmly."
+     }
+    ]
+   },
+   {
+    "who": "Nicola",
+    "s": [
+     {
+      "it": "Con calma.",
+      "en": "Calmly."
+     },
+     {
+      "it": "È quasi peggio.",
+      "en": "That's almost worse."
+     }
+    ]
+   },
+   {
+    "who": "Rosaria",
+    "s": [
+     {
+      "it": "Per certi versi sì.",
+      "en": "In some ways, yes."
+     },
+     {
+      "it": "Nel 1669 la lava è arrivata fino alle mura di Catania e in parte è entrata in città.",
+      "en": "In 1669 the lava reached the walls of Catania and partly got into the city."
+     },
+     {
+      "it": "Ci ha messo settimane.",
+      "en": "It took weeks."
+     },
+     {
+      "it": "La gente ha avuto il tempo di guardarla arrivare, che è una cosa che non auguro a nessuno.",
+      "en": "People had time to watch it coming, which is something I wouldn't wish on anyone."
+     }
+    ]
+   },
+   {
+    "who": "Nicola",
+    "s": [
+     {
+      "it": "Ma non si può fare niente per fermarla?",
+      "en": "But can't anything be done to stop it?"
+     },
+     {
+      "it": "Deviarla, che so, con un muro?",
+      "en": "Divert it, I don't know, with a wall?"
+     }
+    ]
+   },
+   {
+    "who": "Rosaria",
+    "s": [
+     {
+      "it": "Ci si è provato, eccome.",
+      "en": "People have tried, believe me."
+     },
+     {
+      "it": "Nel 1992 la lava scendeva verso Zafferana Etnea, e per salvare il paese si è fatto di tutto.",
+      "en": "In 1992 the lava was coming down towards Zafferana Etnea, and they tried everything to save the town."
+     },
+     {
+      "it": "Terrapieni, esplosivi, e perfino degli elicotteri che lanciavano enormi blocchi di cemento nel canale della colata, per tapparlo.",
+      "en": "Earth barriers, explosives, and even helicopters dropping huge concrete blocks into the lava channel, to plug it."
+     },
+     {
+      "it": "Alla fine la colata si è fermata a poche centinaia di metri dalle prime case.",
+      "en": "In the end the flow stopped a few hundred metres from the first houses."
+     }
+    ]
+   },
+   {
+    "who": "Nicola",
+    "s": [
+     {
+      "it": "Quindi ha funzionato.",
+      "en": "So it worked."
+     }
+    ]
+   },
+   {
+    "who": "Rosaria",
+    "s": [
+     {
+      "it": "Ha funzionato in parte.",
+      "en": "It partly worked."
+     },
+     {
+      "it": "Diciamo che ci abbiamo messo del nostro, e la Montagna ha deciso di essere clemente.",
+      "en": "Let's say we did our bit, and the Mountain decided to be merciful."
+     },
+     {
+      "it": "Se mi chiedi in che proporzione, non te lo so dire, e diffida di chi te lo sa dire.",
+      "en": "If you ask me in what proportion, I can't tell you, and be wary of anyone who can."
+     }
+    ]
+   },
+   {
+    "who": "Nicola",
+    "s": [
+     {
+      "it": "Intanto, vista da qui, sembra tranquillissima.",
+      "en": "Meanwhile, seen from here, she looks perfectly calm."
+     },
+     {
+      "it": "Fuma appena un po', come un vecchio con la pipa.",
+      "en": "She's barely smoking, like an old man with a pipe."
+     }
+    ]
+   },
+   {
+    "who": "Rosaria",
+    "s": [
+     {
+      "it": "È proprio quando sembra tranquilla che arrivano i turisti in ciabatte.",
+      "en": "It's exactly when she looks calm that the tourists turn up in flip-flops."
+     },
+     {
+      "it": "L'estate scorsa una guida mi ha raccontato di una coppia che voleva salire ai crateri sommitali con un passeggino.",
+      "en": "Last summer a guide told me about a couple who wanted to go up to the summit craters with a pushchair."
+     },
+     {
+      "it": "Dentro c'era il cane, non il bambino, ma non so se sia meglio.",
+      "en": "The dog was in it, not the baby, but I'm not sure that's any better."
+     }
+    ]
+   },
+   {
+    "who": "Nicola",
+    "s": [
+     {
+      "it": "E oggi, concretamente, il tuo lavoro in cosa consiste?",
+      "en": "And today, in practical terms, what does your job consist of?"
+     },
+     {
+      "it": "Ti immagino con la tuta argentata vicino al cratere.",
+      "en": "I picture you in a silver suit near the crater."
+     }
+    ]
+   },
+   {
+    "who": "Rosaria",
+    "s": [
+     {
+      "it": "Magari!",
+      "en": "If only!"
+     },
+     {
+      "it": "Il novanta per cento del tempo lo passo davanti a uno schermo.",
+      "en": "Ninety per cent of my time I spend in front of a screen."
+     },
+     {
+      "it": "Abbiamo centinaia di sensori sulla Montagna: sismometri, telecamere termiche, strumenti che misurano i gas e quanto si gonfia il terreno.",
+      "en": "We have hundreds of sensors on the Mountain: seismometers, thermal cameras, instruments that measure the gases and how much the ground swells."
+     },
+     {
+      "it": "Il segnale che guardiamo di più si chiama tremore vulcanico.",
+      "en": "The signal we look at most is called volcanic tremor."
+     },
+     {
+      "it": "È una specie di vibrazione continua, come il respiro del vulcano.",
+      "en": "It's a sort of continuous vibration, like the volcano's breathing."
+     },
+     {
+      "it": "Quando il respiro diventa affannoso, noi ci preoccupiamo.",
+      "en": "When the breathing becomes laboured, we start to worry."
+     }
+    ]
+   },
+   {
+    "who": "Nicola",
+    "s": [
+     {
+      "it": "E la tuta argentata?",
+      "en": "And the silver suit?"
+     }
+    ]
+   },
+   {
+    "who": "Rosaria",
+    "s": [
+     {
+      "it": "La tuta argentata è per i documentari.",
+      "en": "The silver suit is for documentaries."
+     },
+     {
+      "it": "Quando vado in cima ho gli scarponi, tre strati di pile e un panino con la mortadella.",
+      "en": "When I go up to the top I've got boots, three layers of fleece and a mortadella sandwich."
+     },
+     {
+      "it": "A tremila metri fa un freddo cane, anche ad agosto.",
+      "en": "At three thousand metres it's freezing, even in August."
+     }
+    ]
+   },
+   {
+    "who": "Nicola",
+    "s": [
+     {
+      "it": "Ma com'è nata questa passione?",
+      "en": "But how did this passion start?"
+     },
+     {
+      "it": "Si nasce vulcanologi, a Catania?",
+      "en": "Are you born a volcanologist, in Catania?"
+     }
+    ]
+   },
+   {
+    "who": "Rosaria",
+    "s": [
+     {
+      "it": "Io sono nata a Nicolosi, che è un paese proprio sul fianco della Montagna.",
+      "en": "I was born in Nicolosi, which is a village right on the side of the Mountain."
+     },
+     {
+      "it": "Mio nonno aveva una vigna sopra il paese, a mille metri.",
+      "en": "My grandfather had a vineyard above the village, at a thousand metres."
+     },
+     {
+      "it": "Nel 1983 c'è stata un'eruzione lunga, durata mesi, e una notte mi ha portata a vedere la lava.",
+      "en": "In 1983 there was a long eruption, lasting months, and one night he took me to see the lava."
+     },
+     {
+      "it": "Avevo sette anni.",
+      "en": "I was seven."
+     },
+     {
+      "it": "Mi ricordo il rumore più che il colore.",
+      "en": "I remember the sound more than the colour."
+     },
+     {
+      "it": "Un rumore di vetri rotti, di piatti che cadono, perché la crosta della colata si spacca mentre avanza.",
+      "en": "A sound of broken glass, of plates falling, because the crust of the flow cracks as it moves forward."
+     },
+     {
+      "it": "E mio nonno, invece di avere paura, mi spiegava dove sarebbe andata, quale muretto avrebbe superato, quale no.",
+      "en": "And my grandfather, instead of being afraid, was explaining to me where it would go, which wall it would get over and which one it wouldn't."
+     },
+     {
+      "it": "Ci ha preso quasi su tutto.",
+      "en": "He got almost all of it right."
+     }
+    ]
+   },
+   {
+    "who": "Nicola",
+    "s": [
+     {
+      "it": "Quindi il primo vulcanologo della famiglia era lui.",
+      "en": "So the first volcanologist in the family was him."
+     }
+    ]
+   },
+   {
+    "who": "Rosaria",
+    "s": [
+     {
+      "it": "Senza laurea e senza sensori, sì.",
+      "en": "Without a degree and without sensors, yes."
+     },
+     {
+      "it": "La vigna però se l'è presa la lava due anni dopo.",
+      "en": "The lava took the vineyard two years later, though."
+     },
+     {
+      "it": "Lui l'ha ripiantata più sopra, sulla colata nuova, appena si è raffreddata.",
+      "en": "He replanted it higher up, on the new flow, as soon as it had cooled."
+     },
+     {
+      "it": "Qui si fa così.",
+      "en": "That's how it's done here."
+     }
+    ]
+   },
+   {
+    "who": "Nicola",
+    "s": [
+     {
+      "it": "Sulla lava?",
+      "en": "On the lava?"
+     }
+    ]
+   },
+   {
+    "who": "Rosaria",
+    "s": [
+     {
+      "it": "Certo, dopo qualche anno la pietra si sgretola e diventa una terra fertilissima.",
+      "en": "Of course, after a few years the rock crumbles and becomes extremely fertile soil."
+     },
+     {
+      "it": "I pistacchi di Bronte, il vino dell'Etna che adesso costa come un Barolo, le arance rosse: è tutta roba che deve qualcosa alla Montagna.",
+      "en": "The pistachios from Bronte, Etna wine that now costs as much as a Barolo, blood oranges: it's all stuff that owes something to the Mountain."
+     },
+     {
+      "it": "Lei distrugge e poi ti paga i danni, con gli interessi.",
+      "en": "She destroys and then pays you damages, with interest."
+     }
+    ]
+   },
+   {
+    "who": "Nicola",
+    "s": [
+     {
+      "it": "Prima parlavi di tua madre.",
+      "en": "Earlier you mentioned your mother."
+     },
+     {
+      "it": "Come vive lei il fatto che la figlia passi la vita a studiare il vulcano?",
+      "en": "How does she feel about her daughter spending her life studying the volcano?"
+     }
+    ]
+   },
+   {
+    "who": "Rosaria",
+    "s": [
+     {
+      "it": "Mia madre è convinta che il mio lavoro sia inutile.",
+      "en": "My mother is convinced my job is useless."
+     }
+    ]
+   },
+   {
+    "who": "Nicola",
+    "s": [
+     {
+      "it": "Inutile?",
+      "en": "Useless?"
+     }
+    ]
+   },
+   {
+    "who": "Rosaria",
+    "s": [
+     {
+      "it": "Lei crede in Sant'Agata.",
+      "en": "She believes in Saint Agatha."
+     },
+     {
+      "it": "A Catania c'è una tradizione secondo cui, quando la lava minacciava la città, si portava in processione il velo della santa e la colata si fermava.",
+      "en": "In Catania there's a tradition that, when the lava threatened the city, the saint's veil was carried in procession and the flow stopped."
+     },
+     {
+      "it": "Quindi, quando le spiego che abbiamo installato una nuova rete di sensori da qualche milione di euro, lei mi guarda con compassione.",
+      "en": "So when I explain to her that we've installed a new network of sensors worth a few million euros, she looks at me with pity."
+     },
+     {
+      "it": "Come se avessi speso tutti quei soldi per una cosa che si risolve con un pezzo di stoffa.",
+      "en": "As if I'd spent all that money on something that can be sorted out with a piece of cloth."
+     }
+    ]
+   },
+   {
+    "who": "Nicola",
+    "s": [
+     {
+      "it": "E tu cosa le rispondi?",
+      "en": "And what do you say to her?"
+     }
+    ]
+   },
+   {
+    "who": "Rosaria",
+    "s": [
+     {
+      "it": "Niente.",
+      "en": "Nothing."
+     },
+     {
+      "it": "A febbraio, alla festa, vado con lei a vedere passare la santa.",
+      "en": "In February, at the festival, I go with her to watch the saint go by."
+     },
+     {
+      "it": "Non si sa mai.",
+      "en": "You never know."
+     }
+    ]
+   },
+   {
+    "who": "Nicola",
+    "s": [
+     {
+      "it": "Una vulcanologa che non esclude il miracolo.",
+      "en": "A volcanologist who doesn't rule out a miracle."
+     }
+    ]
+   },
+   {
+    "who": "Rosaria",
+    "s": [
+     {
+      "it": "Una vulcanologa che non vuole litigare con sua madre il giorno di Sant'Agata, che è diverso.",
+      "en": "A volcanologist who doesn't want to argue with her mother on Saint Agatha's day, which is different."
+     }
+    ]
+   },
+   {
+    "who": "Nicola",
+    "s": [
+     {
+      "it": "Parliamo degli ultimi anni.",
+      "en": "Let's talk about recent years."
+     },
+     {
+      "it": "Nel 2021 l'Etna ha fatto parlare di sé in tutto il mondo, con quelle fontane di lava altissime.",
+      "en": "In 2021 Etna got the whole world talking, with those incredibly high lava fountains."
+     }
+    ]
+   },
+   {
+    "who": "Rosaria",
+    "s": [
+     {
+      "it": "Sì, decine di parossismi in pochi mesi, alcuni con fontane di più di un chilometro.",
+      "en": "Yes, dozens of paroxysms in a few months, some with fountains over a kilometre high."
+     },
+     {
+      "it": "Per chi guardava da lontano era uno spettacolo.",
+      "en": "For people watching from far away it was a spectacle."
+     },
+     {
+      "it": "Per chi abitava sotto era una scopa in mano tutti i giorni.",
+      "en": "For people who lived beneath it, it meant a broom in your hand every day."
+     },
+     {
+      "it": "La cenere cade sui balconi, sulle macchine, nelle grondaie.",
+      "en": "The ash falls on balconies, on cars, in the gutters."
+     },
+     {
+      "it": "I comuni distribuiscono dei sacchetti appositi, e la gente li riempie e li lascia davanti al portone.",
+      "en": "The town councils hand out special bags, and people fill them and leave them in front of their doors."
+     },
+     {
+      "it": "L'aeroporto chiude, riapre, richiude.",
+      "en": "The airport closes, reopens, closes again."
+     },
+     {
+      "it": "Una volta ho trovato la cenere anche nel caffè, a casa mia, con le finestre chiuse.",
+      "en": "Once I even found ash in my coffee, at home, with the windows shut."
+     }
+    ]
+   },
+   {
+    "who": "Nicola",
+    "s": [
+     {
+      "it": "E l'hai bevuto lo stesso?",
+      "en": "And did you drink it anyway?"
+     }
+    ]
+   },
+   {
+    "who": "Rosaria",
+    "s": [
+     {
+      "it": "Era l'ultima cialda, Nicola.",
+      "en": "It was the last coffee pod, Nicola."
+     },
+     {
+      "it": "Certo che l'ho bevuto.",
+      "en": "Of course I drank it."
+     },
+     {
+      "it": "Comunque c'è chi con la cenere ci ha fatto un piccolo commercio.",
+      "en": "Anyway, some people have built a little business out of the ash."
+     },
+     {
+      "it": "In certi negozi la vendono ai turisti nei barattolini, con l'etichetta e il nastrino.",
+      "en": "In some shops they sell it to tourists in little jars, with a label and a ribbon."
+     },
+     {
+      "it": "I catanesi la pagherebbero volentieri per farsela portare via.",
+      "en": "The people of Catania would happily pay to have it taken away."
+     }
+    ]
+   },
+   {
+    "who": "Nicola",
+    "s": [
+     {
+      "it": "Hai mai avuto paura?",
+      "en": "Have you ever been scared?"
+     },
+     {
+      "it": "Paura vera, intendo.",
+      "en": "Real fear, I mean."
+     }
+    ]
+   },
+   {
+    "who": "Rosaria",
+    "s": [
+     {
+      "it": "Una volta sola.",
+      "en": "Just once."
+     },
+     {
+      "it": "E non è stato per la lava.",
+      "en": "And it wasn't because of the lava."
+     },
+     {
+      "it": "Il 26 dicembre del 2018, alle tre e mezza di notte, c'è stato un terremoto legato all'eruzione di quei giorni.",
+      "en": "On the twenty-sixth of December 2018, at half past three in the morning, there was an earthquake linked to the eruption going on at the time."
+     },
+     {
+      "it": "Epicentro vicino a Fleri, dove abitava mia zia.",
+      "en": "The epicentre was near Fleri, where my aunt lived."
+     },
+     {
+      "it": "Io ero di turno, vedevo i dati arrivare e sapevo esattamente dov'era successo, prima ancora che lo dicesse la televisione.",
+      "en": "I was on duty, I could see the data coming in and I knew exactly where it had happened, before the television even said so."
+     },
+     {
+      "it": "L'ho chiamata sei volte.",
+      "en": "I called her six times."
+     },
+     {
+      "it": "Non rispondeva.",
+      "en": "She didn't answer."
+     }
+    ]
+   },
+   {
+    "who": "Nicola",
+    "s": [
+     {
+      "it": "E poi?",
+      "en": "And then?"
+     }
+    ]
+   },
+   {
+    "who": "Rosaria",
+    "s": [
+     {
+      "it": "Al settimo tentativo ha risposto, arrabbiatissima, perché le avevo svegliato il cane.",
+      "en": "On the seventh attempt she answered, furious, because I'd woken up her dog."
+     },
+     {
+      "it": "Il terremoto non l'aveva sentito.",
+      "en": "She hadn't felt the earthquake."
+     },
+     {
+      "it": "Dormiva con i tappi nelle orecchie per via di mio zio che russa.",
+      "en": "She was sleeping with earplugs because of my uncle's snoring."
+     },
+     {
+      "it": "La casa aveva una crepa dal tetto al pavimento, e lei non se n'era accorta.",
+      "en": "The house had a crack from the roof to the floor, and she hadn't noticed."
+     }
+    ]
+   },
+   {
+    "who": "Nicola",
+    "s": [
+     {
+      "it": "Quindi la persona più tranquilla di quella notte era quella più vicina all'epicentro.",
+      "en": "So the calmest person that night was the one closest to the epicentre."
+     }
+    ]
+   },
+   {
+    "who": "Rosaria",
+    "s": [
+     {
+      "it": "Esatto.",
+      "en": "Exactly."
+     },
+     {
+      "it": "Da allora ho capito una cosa: noi misuriamo tutto, ma il rapporto della gente con la Montagna non si misura.",
+      "en": "Since then I've understood something: we measure everything, but people's relationship with the Mountain can't be measured."
+     }
+    ]
+   },
+   {
+    "who": "Nicola",
+    "s": [
+     {
+      "it": "Ultima domanda.",
+      "en": "Last question."
+     },
+     {
+      "it": "Ti hanno mai offerto di andare a lavorare altrove?",
+      "en": "Have you ever been offered work elsewhere?"
+     }
+    ]
+   },
+   {
+    "who": "Rosaria",
+    "s": [
+     {
+      "it": "Sì, alle Hawaii, qualche anno fa.",
+      "en": "Yes, in Hawaii, a few years ago."
+     },
+     {
+      "it": "Un contratto bellissimo, uno stipendio che qui me lo sogno.",
+      "en": "A wonderful contract, a salary I can only dream of here."
+     }
+    ]
+   },
+   {
+    "who": "Nicola",
+    "s": [
+     {
+      "it": "E hai detto di no?",
+      "en": "And you said no?"
+     },
+     {
+      "it": "Alle Hawaii?",
+      "en": "To Hawaii?"
+     }
+    ]
+   },
+   {
+    "who": "Rosaria",
+    "s": [
+     {
+      "it": "Ho detto che ci avrei pensato.",
+      "en": "I said I'd think about it."
+     },
+     {
+      "it": "Poi sono salita in cima a pensarci, e quel giorno la Montagna ha fatto una colata piccola, bellissima, proprio davanti a noi.",
+      "en": "Then I went up to the top to think about it, and that day the Mountain produced a small, beautiful lava flow, right in front of us."
+     },
+     {
+      "it": "Ho pensato che fosse un modo un po' melodrammatico per farmi restare.",
+      "en": "I thought it was a rather melodramatic way of getting me to stay."
+     },
+     {
+      "it": "E ha funzionato.",
+      "en": "And it worked."
+     }
+    ]
+   },
+   {
+    "who": "Nicola",
+    "s": [
+     {
+      "it": "Quindi anche tu, in fondo, le dai del lei.",
+      "en": "So you too, deep down, treat her as a person."
+     }
+    ]
+   },
+   {
+    "who": "Rosaria",
+    "s": [
+     {
+      "it": "Scusa, un attimo.",
+      "en": "Sorry, just a moment."
+     },
+     {
+      "it": "Mi è arrivato un messaggio dalla sala operativa.",
+      "en": "I've had a message from the operations room."
+     },
+     {
+      "it": "Il tremore sta salendo da mezz'ora.",
+      "en": "The tremor has been rising for half an hour."
+     },
+     {
+      "it": "Probabilmente non è niente, ma devo scendere a vedere.",
+      "en": "It's probably nothing, but I have to go down and look."
+     }
+    ]
+   },
+   {
+    "who": "Nicola",
+    "s": [
+     {
+      "it": "Vai, vai.",
+      "en": "Go, go."
+     },
+     {
+      "it": "Chiudiamo qui, allora, nel modo più adatto.",
+      "en": "We'll end here, then, in the most fitting way."
+     }
+    ]
+   },
+   {
+    "who": "Rosaria",
+    "s": [
+     {
+      "it": "Te l'avevo detto che è femminile.",
+      "en": "I told you she's feminine."
+     },
+     {
+      "it": "Decide sempre lei quando è finita la conversazione.",
+      "en": "She always decides when the conversation is over."
+     }
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "q": "Di che cosa parla principalmente la puntata?",
+    "o": [
+     "Della storia di Catania e delle sue eruzioni dal Seicento a oggi",
+     "Dei rischi del turismo di massa sui vulcani siciliani",
+     "Delle tecniche usate per fermare e deviare le colate di lava",
+     "Del lavoro di una vulcanologa e del suo legame con l'Etna"
+    ],
+    "a": "Del lavoro di una vulcanologa e del suo legame con l'Etna"
+   },
+   {
+    "q": "Come risponde Rosaria quando Nicola le chiede perché la Montagna è femminile?",
+    "o": [
+     "Cita la madre, senza confermare né smentire",
+     "Spiega l'origine scientifica del nome dialettale",
+     "Si arrabbia perché trova la domanda sessista",
+     "Dice che è un'abitudine nata tra i turisti"
+    ],
+    "a": "Cita la madre, senza confermare né smentire"
+   },
+   {
+    "q": "Secondo Rosaria, qual è il vero pericolo delle colate dell'Etna?",
+    "o": [
+     "Arrivano quasi ogni anno fino alle mura di Catania",
+     "Producono gas velenosi per chi abita sul fianco del vulcano",
+     "Sono lente, ma travolgono tutto quello che trovano",
+     "Sono così veloci che non si fa in tempo a scappare"
+    ],
+    "a": "Sono lente, ma travolgono tutto quello che trovano"
+   },
+   {
+    "q": "Come descrive Rosaria il suo lavoro quotidiano?",
+    "o": [
+     "Gira i paesi per spiegare alla gente come comportarsi",
+     "Organizza escursioni scientifiche per i turisti",
+     "Passa quasi tutto il tempo vicino al cratere con una tuta speciale",
+     "Lavora soprattutto davanti a uno schermo, analizzando dati"
+    ],
+    "a": "Lavora soprattutto davanti a uno schermo, analizzando dati"
+   },
+   {
+    "q": "Che cosa ha fatto il nonno di Rosaria dopo che la lava ha distrutto la sua vigna?",
+    "o": [
+     "Ha venduto il terreno e si è trasferito a Catania",
+     "Ha chiesto un risarcimento al Comune",
+     "Ha smesso di fare vino e ha piantato pistacchi",
+     "Ha piantato una nuova vigna sopra la colata"
+    ],
+    "a": "Ha piantato una nuova vigna sopra la colata"
+   },
+   {
+    "q": "Perché la madre di Rosaria considera inutile il lavoro della figlia?",
+    "o": [
+     "Perché vorrebbe che la figlia lavorasse alle Hawaii",
+     "Perché i sensori costano troppo e non funzionano",
+     "Perché pensa che il vulcano non sia più attivo",
+     "Perché si fida più di Sant'Agata che della scienza"
+    ],
+    "a": "Perché si fida più di Sant'Agata che della scienza"
+   },
+   {
+    "q": "Perché Rosaria va alla festa di Sant'Agata con la madre?",
+    "o": [
+     "Perché quel giorno l'osservatorio resta chiuso per la festa",
+     "Perché lo fa per lavoro, per studiare la gente",
+     "Per non litigare, ma anche perché «non si sa mai»",
+     "Perché crede davvero nel miracolo del velo"
+    ],
+    "a": "Per non litigare, ma anche perché «non si sa mai»"
+   },
+   {
+    "q": "Che cosa c'è di paradossale nella notte del terremoto del 2018?",
+    "o": [
+     "Rosaria non era di turno e l'ha saputo dalla televisione",
+     "La zia, vicinissima all'epicentro, non ha sentito nulla",
+     "Il terremoto ha svegliato tutti tranne Rosaria",
+     "La casa della zia non ha subito nessun danno, nemmeno una crepa"
+    ],
+    "a": "La zia, vicinissima all'epicentro, non ha sentito nulla"
+   },
+   {
+    "q": "Perché Rosaria non è andata a lavorare alle Hawaii?",
+    "o": [
+     "Il contratto è stato annullato all'ultimo momento",
+     "Sua madre l'ha pregata di restare a Catania",
+     "Lo stipendio era più basso che in Italia",
+     "Una piccola colata le è sembrata un segno"
+    ],
+    "a": "Una piccola colata le è sembrata un segno"
+   },
+   {
+    "q": "Perché l'intervista finisce in modo improvviso?",
+    "o": [
+     "Rosaria non vuole rispondere all'ultima domanda",
+     "Nicola ha finito il tempo a disposizione",
+     "C'è una scossa di terremoto durante la registrazione",
+     "Il tremore del vulcano sta salendo e Rosaria deve andare a controllare"
+    ],
+    "a": "Il tremore del vulcano sta salendo e Rosaria deve andare a controllare"
+   }
+  ]
+ },
+ {
+  "id": "l-b2-04",
+  "level": "B2",
+  "title": "La riga sul muro",
+  "en": "The line on the wall",
+  "topic": "nature",
+  "genre": "radio news report",
+  "minutes": 10,
+  "situation": "A radio reporter travels around the province of Ravenna in May 2024 stopping in Faenza and in the hills nearby.",
+  "speakers": {
+   "Giornalista": "f2",
+   "Ermes": "m2",
+   "Loredana": "f",
+   "Davide": "m"
+  },
+  "body": [
+   {
+    "who": "Giornalista",
+    "s": [
+     {
+      "it": "Faenza, maggio 2024.",
+      "en": "Faenza, May 2024."
+     },
+     {
+      "it": "È passato un anno da quando il Lamone ha rotto gli argini e l'acqua ha invaso interi quartieri della città.",
+      "en": "It's been a year since the Lamone burst its banks and the water flooded entire neighbourhoods of the town."
+     },
+     {
+      "it": "In quei giorni, in Romagna, sono esondati più di venti fiumi, le vittime sono state diciassette e sulle colline si sono aperte decine di migliaia di frane.",
+      "en": "In those days, in Romagna, more than twenty rivers overflowed, seventeen people died and tens of thousands of landslides opened up in the hills."
+     },
+     {
+      "it": "Oggi il sole è tornato, i turisti sono tornati sulla riviera e qualcuno, fuori di qui, pensa che sia tutto passato.",
+      "en": "Today the sun is back, the tourists are back on the coast and some people, outside of here, think it's all over."
+     },
+     {
+      "it": "Siamo andati a vedere se è davvero così.",
+      "en": "We went to see if that's really the case."
+     },
+     {
+      "it": "La prima tappa è il Borgo Durbecco, il quartiere al di là del fiume.",
+      "en": "Our first stop is Borgo Durbecco, the neighbourhood on the other side of the river."
+     },
+     {
+      "it": "Qui incontriamo Ermes, settantotto anni, ex ferroviere, che ci aspetta davanti a casa con le mani in tasca.",
+      "en": "Here we meet Ermes, seventy-eight, a retired railwayman, who is waiting for us outside his house with his hands in his pockets."
+     }
+    ]
+   },
+   {
+    "who": "Ermes",
+    "s": [
+     {
+      "it": "Venga, venga dentro, che le faccio vedere.",
+      "en": "Come in, come in, and I'll show you."
+     },
+     {
+      "it": "Anzi no, glielo dico, che tanto per la radio non serve vedere.",
+      "en": "Actually no, I'll tell you, since for the radio there's no need to see."
+     },
+     {
+      "it": "Allora, nel corridoio c'è una riga marrone sul muro, a un metro e ottanta da terra.",
+      "en": "So, in the hallway there's a brown line on the wall, one metre eighty from the floor."
+     },
+     {
+      "it": "Io sono alto un metro e settanta.",
+      "en": "I'm one metre seventy tall."
+     },
+     {
+      "it": "Fa lei il conto.",
+      "en": "You do the maths."
+     }
+    ]
+   },
+   {
+    "who": "Giornalista",
+    "s": [
+     {
+      "it": "E quella riga è ancora lì.",
+      "en": "And that line is still there."
+     }
+    ]
+   },
+   {
+    "who": "Ermes",
+    "s": [
+     {
+      "it": "È ancora lì perché ce l'ho lasciata io.",
+      "en": "It's still there because I left it there."
+     },
+     {
+      "it": "Ho ridipinto tutto, la cucina, le camere, il bagno.",
+      "en": "I repainted everything, the kitchen, the bedrooms, the bathroom."
+     },
+     {
+      "it": "Il corridoio no.",
+      "en": "Not the hallway."
+     },
+     {
+      "it": "Mia figlia dice che sono matto, che è come tenere in casa la foto di un incidente.",
+      "en": "My daughter says I'm mad, that it's like keeping a photo of an accident in the house."
+     },
+     {
+      "it": "Ma io la mattina passo di lì e mi ricordo.",
+      "en": "But in the morning I walk past it and I remember."
+     },
+     {
+      "it": "Mi ricordo che la notte del sedici io e mia moglie eravamo sul tetto, al buio, sotto la pioggia, e che i pompieri sono arrivati con il gommone alle cinque del mattino.",
+      "en": "I remember that on the night of the sixteenth my wife and I were on the roof, in the dark, in the rain, and that the firemen arrived in a dinghy at five in the morning."
+     },
+     {
+      "it": "E mi ricordo i ragazzi.",
+      "en": "And I remember the kids."
+     }
+    ]
+   },
+   {
+    "who": "Giornalista",
+    "s": [
+     {
+      "it": "I ragazzi?",
+      "en": "The kids?"
+     }
+    ]
+   },
+   {
+    "who": "Ermes",
+    "s": [
+     {
+      "it": "Quelli che chiamavano gli angeli del fango.",
+      "en": "The ones they called the mud angels."
+     },
+     {
+      "it": "Arrivavano da tutta Italia, con gli stivali e le pale, e non volevano niente.",
+      "en": "They came from all over Italy, with boots and shovels, and they didn't want anything."
+     },
+     {
+      "it": "Uno di Napoli mi ha svuotato la cantina in due giorni e non ha voluto nemmeno un caffè.",
+      "en": "One lad from Naples emptied my cellar in two days and wouldn't even accept a coffee."
+     },
+     {
+      "it": "Ha detto che il caffè fatto qui non era all'altezza.",
+      "en": "He said the coffee made here wasn't up to scratch."
+     },
+     {
+      "it": "Aveva ragione, eh, la macchinetta era piena di fango.",
+      "en": "He was right, mind you, the coffee pot was full of mud."
+     }
+    ]
+   },
+   {
+    "who": "Giornalista",
+    "s": [
+     {
+      "it": "E sua moglie, come sta?",
+      "en": "And your wife, how is she?"
+     }
+    ]
+   },
+   {
+    "who": "Ermes",
+    "s": [
+     {
+      "it": "Mia moglie sta bene, grazie.",
+      "en": "My wife's fine, thanks."
+     },
+     {
+      "it": "Però quando la Protezione civile dirama l'allerta rossa, lei prende la borsa e va a dormire da nostra figlia, a Castel Bolognese.",
+      "en": "But when Civil Protection issues a red alert, she takes her bag and goes to sleep at our daughter's, in Castel Bolognese."
+     },
+     {
+      "it": "Senza discutere, senza neanche guardare il cielo.",
+      "en": "Without arguing, without even looking at the sky."
+     },
+     {
+      "it": "Quest'inverno ci è andata quattro volte.",
+      "en": "This winter she went four times."
+     },
+     {
+      "it": "Io invece resto qui.",
+      "en": "I stay here, though."
+     }
+    ]
+   },
+   {
+    "who": "Giornalista",
+    "s": [
+     {
+      "it": "Perché?",
+      "en": "Why?"
+     }
+    ]
+   },
+   {
+    "who": "Ermes",
+    "s": [
+     {
+      "it": "Perché qualcuno deve stare con la casa.",
+      "en": "Because someone has to stay with the house."
+     },
+     {
+      "it": "Lo so che è una cosa da vecchi, che la casa non ha bisogno di compagnia.",
+      "en": "I know it's an old man's thing, that the house doesn't need company."
+     },
+     {
+      "it": "Ma l'anno scorso l'abbiamo lasciata sola una notte, e guardi com'è finita.",
+      "en": "But last year we left it alone for one night, and look how that ended."
+     }
+    ]
+   },
+   {
+    "who": "Giornalista",
+    "s": [
+     {
+      "it": "E i rimborsi?",
+      "en": "And the compensation?"
+     },
+     {
+      "it": "A che punto è?",
+      "en": "Where are you with it?"
+     }
+    ]
+   },
+   {
+    "who": "Ermes",
+    "s": [
+     {
+      "it": "Eh, i rimborsi.",
+      "en": "Ah, the compensation."
+     },
+     {
+      "it": "Allora, c'è una piattaforma online, che io da solo non avrei saputo nemmeno aprire.",
+      "en": "Right, there's an online platform, which I wouldn't even have known how to open by myself."
+     },
+     {
+      "it": "Mi ha aiutato mio nipote.",
+      "en": "My grandson helped me."
+     },
+     {
+      "it": "Ti chiedono la perizia, le fotografie, le fatture, l'elenco dei mobili.",
+      "en": "They ask you for the surveyor's report, the photographs, the invoices, the list of furniture."
+     },
+     {
+      "it": "Ti chiedono perfino lo scontrino della lavatrice.",
+      "en": "They even ask you for the receipt for the washing machine."
+     },
+     {
+      "it": "Lo scontrino della lavatrice, capisce?",
+      "en": "The receipt for the washing machine, you understand?"
+     },
+     {
+      "it": "Ce l'avevo, eh, ero uno preciso.",
+      "en": "I had it, mind you, I was a careful sort."
+     },
+     {
+      "it": "Era nel cassetto della cucina, insieme a tutto il resto, sotto un metro e ottanta d'acqua.",
+      "en": "It was in the kitchen drawer, along with everything else, under one metre eighty of water."
+     }
+    ]
+   },
+   {
+    "who": "Giornalista",
+    "s": [
+     {
+      "it": "Quindi non ha ricevuto niente?",
+      "en": "So you haven't received anything?"
+     }
+    ]
+   },
+   {
+    "who": "Ermes",
+    "s": [
+     {
+      "it": "Ho ricevuto un acconto, non dico di no.",
+      "en": "I've received a down payment, I won't deny it."
+     },
+     {
+      "it": "Il resto, mi dicono, arriva.",
+      "en": "The rest, they tell me, is on its way."
+     },
+     {
+      "it": "Arriva, arriva.",
+      "en": "It's on its way, it's on its way."
+     },
+     {
+      "it": "Anche il treno arrivava, quando lavoravo io, ma non sempre all'ora scritta sul cartello.",
+      "en": "The train used to arrive too, when I was working, but not always at the time on the board."
+     }
+    ]
+   },
+   {
+    "who": "Giornalista",
+    "s": [
+     {
+      "it": "Lasciamo Ermes alla sua riga sul muro e ci spostiamo di pochi isolati, in una delle vie delle botteghe di ceramica, quelle che hanno reso Faenza famosa nel mondo.",
+      "en": "We leave Ermes to his line on the wall and move a few blocks away, to one of the streets of ceramics workshops, the ones that made Faenza famous around the world."
+     },
+     {
+      "it": "Loredana Babini ha un laboratorio aperto da suo padre negli anni Settanta.",
+      "en": "Loredana Babini has a workshop opened by her father in the seventies."
+     }
+    ]
+   },
+   {
+    "who": "Loredana",
+    "s": [
+     {
+      "it": "Il laboratorio era al piano terra, e il forno era sotto, nel seminterrato.",
+      "en": "The workshop was on the ground floor, and the kiln was below, in the basement."
+     },
+     {
+      "it": "Il forno, per un ceramista, è tutto.",
+      "en": "The kiln, for a potter, is everything."
+     },
+     {
+      "it": "È come il cuore.",
+      "en": "It's like the heart."
+     },
+     {
+      "it": "Quando sono riuscita a entrare, tre giorni dopo, il seminterrato era una vasca di fango.",
+      "en": "When I managed to get in, three days later, the basement was a tank full of mud."
+     },
+     {
+      "it": "Ho trovato dei piatti che avevo dipinto per un ristorante di Bologna, interi, perfetti, galleggiavano.",
+      "en": "I found some plates I'd painted for a restaurant in Bologna, whole, perfect, floating."
+     },
+     {
+      "it": "E il forno da buttare.",
+      "en": "And the kiln only fit to be thrown away."
+     }
+    ]
+   },
+   {
+    "who": "Giornalista",
+    "s": [
+     {
+      "it": "Eppure oggi la bottega è aperta.",
+      "en": "And yet today the workshop is open."
+     }
+    ]
+   },
+   {
+    "who": "Loredana",
+    "s": [
+     {
+      "it": "Sì, da novembre.",
+      "en": "Yes, since November."
+     },
+     {
+      "it": "In parte con i miei risparmi, in parte con una raccolta fondi che hanno organizzato dei clienti affezionati, alcuni anche dalla Germania e dal Giappone.",
+      "en": "Partly with my savings, partly with a fundraiser organised by some loyal customers, some of them from Germany and Japan."
+     },
+     {
+      "it": "E in parte grazie a lei.",
+      "en": "And partly thanks to her."
+     }
+    ]
+   },
+   {
+    "who": "Giornalista",
+    "s": [
+     {
+      "it": "Lei chi?",
+      "en": "Her who?"
+     }
+    ]
+   },
+   {
+    "who": "Loredana",
+    "s": [
+     {
+      "it": "Lena.",
+      "en": "Lena."
+     },
+     {
+      "it": "È una ragazza di Lipsia che era venuta in Erasmus a Bologna.",
+      "en": "She's a girl from Leipzig who'd come to Bologna on Erasmus."
+     },
+     {
+      "it": "È arrivata qui con un gruppo di volontari, a spalare.",
+      "en": "She came here with a group of volunteers, to shovel mud."
+     },
+     {
+      "it": "Dopo una settimana, mentre pulivamo i cocci, mi ha chiesto come si fa a dipingere il bianco di Faenza.",
+      "en": "After a week, while we were cleaning the broken pieces, she asked me how you paint Faenza white."
+     },
+     {
+      "it": "Le ho detto che ci vogliono anni.",
+      "en": "I told her it takes years."
+     },
+     {
+      "it": "Lei ha detto: va bene.",
+      "en": "She said: fine."
+     }
+    ]
+   },
+   {
+    "who": "Giornalista",
+    "s": [
+     {
+      "it": "E non se n'è più andata.",
+      "en": "And she never left."
+     }
+    ]
+   },
+   {
+    "who": "Loredana",
+    "s": [
+     {
+      "it": "Non se n'è più andata.",
+      "en": "She never left."
+     },
+     {
+      "it": "Adesso è la mia apprendista, ha preso una stanza qui dietro e parla già con l'accento romagnolo, che a sentirlo con la sua erre tedesca fa un effetto curioso.",
+      "en": "Now she's my apprentice, she's rented a room just behind here and she already talks with a Romagna accent, which sounds rather odd with her German r."
+     },
+     {
+      "it": "Io avevo deciso di chiudere, sa?",
+      "en": "I had decided to close, you know?"
+     },
+     {
+      "it": "Avevo sessant'anni, un forno distrutto e nessuno a cui lasciare il mestiere.",
+      "en": "I was sixty, with a destroyed kiln and no one to pass the trade on to."
+     },
+     {
+      "it": "Mi sono ritrovata con un forno nuovo e un'allieva che si sveglia prima di me.",
+      "en": "I ended up with a new kiln and an apprentice who gets up before me."
+     },
+     {
+      "it": "L'alluvione mi ha tolto tutto, e poi mi ha restituito una cosa che non avevo chiesto.",
+      "en": "The flood took everything from me, and then gave me back something I hadn't asked for."
+     },
+     {
+      "it": "Non dico che ci ho guadagnato, per carità.",
+      "en": "I'm not saying I came out ahead, heaven forbid."
+     },
+     {
+      "it": "Dico che la vita è strana.",
+      "en": "I'm saying life is strange."
+     }
+    ]
+   },
+   {
+    "who": "Giornalista",
+    "s": [
+     {
+      "it": "E i clienti sono tornati?",
+      "en": "And have the customers come back?"
+     }
+    ]
+   },
+   {
+    "who": "Loredana",
+    "s": [
+     {
+      "it": "Sì, e tanti mi fanno la stessa domanda: allora è tutto a posto?",
+      "en": "Yes, and lots of them ask me the same question: so is everything fine now?"
+     },
+     {
+      "it": "Io sorrido e dico di sì, perché la gente in vacanza non vuole sentire le disgrazie.",
+      "en": "I smile and say yes, because people on holiday don't want to hear about misfortunes."
+     },
+     {
+      "it": "Ma basta fare due vie più in là per vedere le case ancora vuote, con i cartelli «vendesi» che nessuno guarda.",
+      "en": "But you only have to go two streets further to see the houses that are still empty, with 'for sale' signs that nobody looks at."
+     }
+    ]
+   },
+   {
+    "who": "Giornalista",
+    "s": [
+     {
+      "it": "Lasciamo la città e saliamo verso le colline, in direzione Brisighella.",
+      "en": "We leave the town and head up into the hills, towards Brisighella."
+     },
+     {
+      "it": "Qui l'acqua non ha allagato le case, ma ha fatto franare la terra.",
+      "en": "Here the water didn't flood the houses, but it made the ground give way."
+     },
+     {
+      "it": "Davide Fabbri ha trentaquattro anni e coltiva kiwi e albicocche su un terreno che era di suo nonno.",
+      "en": "Davide Fabbri is thirty-four and grows kiwis and apricots on land that belonged to his grandfather."
+     },
+     {
+      "it": "Per arrivare da lui, l'ultimo tratto lo facciamo a piedi, perché la strada non c'è più.",
+      "en": "To get to his place, we cover the last stretch on foot, because the road isn't there anymore."
+     }
+    ]
+   },
+   {
+    "who": "Davide",
+    "s": [
+     {
+      "it": "Ecco, le presento la mia strada.",
+      "en": "Here, let me introduce you to my road."
+     },
+     {
+      "it": "O meglio, quello che ne resta.",
+      "en": "Or rather, what's left of it."
+     },
+     {
+      "it": "In una notte è scivolata giù per duecento metri, con l'asfalto, il guardrail e il cartello con il nome della via.",
+      "en": "In one night it slid down two hundred metres, with the tarmac, the guardrail and the street sign."
+     },
+     {
+      "it": "Il cartello l'ho ritrovato in fondo al campo del vicino.",
+      "en": "I found the sign at the bottom of my neighbour's field."
+     },
+     {
+      "it": "L'ho appeso in cucina.",
+      "en": "I hung it up in the kitchen."
+     },
+     {
+      "it": "Almeno so ancora dove abito.",
+      "en": "At least I still know where I live."
+     }
+    ]
+   },
+   {
+    "who": "Giornalista",
+    "s": [
+     {
+      "it": "E come fa a lavorare, senza strada?",
+      "en": "And how do you work, without a road?"
+     }
+    ]
+   },
+   {
+    "who": "Davide",
+    "s": [
+     {
+      "it": "Passo con il trattore nei campi del vicino, che per fortuna è un santo, oltre che mio cugino.",
+      "en": "I drive the tractor through my neighbour's fields, who luckily is a saint, as well as my cousin."
+     },
+     {
+      "it": "Ma i camion per la frutta quassù non salgono.",
+      "en": "But the fruit lorries can't get up here."
+     },
+     {
+      "it": "Quindi carico le casse sul rimorchio, scendo, scarico, risalgo.",
+      "en": "So I load the crates onto the trailer, go down, unload, come back up."
+     },
+     {
+      "it": "Quattro volte al giorno, in piena stagione.",
+      "en": "Four times a day, in high season."
+     },
+     {
+      "it": "Il kiwi non sa che c'è stata l'alluvione, matura lo stesso.",
+      "en": "The kiwi doesn't know there's been a flood, it ripens all the same."
+     },
+     {
+      "it": "E i clienti nemmeno.",
+      "en": "And neither do the customers."
+     },
+     {
+      "it": "Al mercato all'ingrosso nessuno ti chiede da dove vieni con le casse.",
+      "en": "At the wholesale market nobody asks where you've come from with your crates."
+     },
+     {
+      "it": "Ti chiedono solo perché sei in ritardo.",
+      "en": "They only ask why you're late."
+     },
+     {
+      "it": "Una volta ho provato a spiegarlo a un compratore di Verona.",
+      "en": "Once I tried to explain it to a buyer from Verona."
+     },
+     {
+      "it": "Mi ha guardato come se gli stessi raccontando una favola, e poi mi ha tolto dieci centesimi al chilo.",
+      "en": "He looked at me as if I were telling him a fairy tale, and then knocked ten cents a kilo off my price."
+     }
+    ]
+   },
+   {
+    "who": "Giornalista",
+    "s": [
+     {
+      "it": "Chi dovrebbe ricostruire la strada?",
+      "en": "Who's supposed to rebuild the road?"
+     }
+    ]
+   },
+   {
+    "who": "Davide",
+    "s": [
+     {
+      "it": "Bella domanda.",
+      "en": "Good question."
+     },
+     {
+      "it": "Il Comune dice che servono i fondi della Regione.",
+      "en": "The town council says it needs the regional funds."
+     },
+     {
+      "it": "La Regione dice che i fondi sono del commissario.",
+      "en": "The Region says the funds belong to the special commissioner."
+     },
+     {
+      "it": "Il commissario dice che il progetto lo deve presentare il Comune.",
+      "en": "The commissioner says the town council has to submit the plan."
+     },
+     {
+      "it": "È un girotondo, e io sto nel mezzo con il trattore.",
+      "en": "It's like ring-a-ring-o'-roses, and I'm in the middle with my tractor."
+     },
+     {
+      "it": "Intanto ogni volta che piove forte non dormo.",
+      "en": "Meanwhile every time it rains hard, I don't sleep."
+     },
+     {
+      "it": "Mi alzo, prendo la torcia e vado a guardare se la crepa dietro il fienile si è allargata.",
+      "en": "I get up, take the torch and go and check if the crack behind the barn has got wider."
+     }
+    ]
+   },
+   {
+    "who": "Giornalista",
+    "s": [
+     {
+      "it": "Ha mai pensato di andarsene?",
+      "en": "Have you ever thought of leaving?"
+     }
+    ]
+   },
+   {
+    "who": "Davide",
+    "s": [
+     {
+      "it": "Tutti i giorni.",
+      "en": "Every day."
+     },
+     {
+      "it": "E tutti i giorni resto.",
+      "en": "And every day I stay."
+     },
+     {
+      "it": "Mia moglie dice che è testardaggine.",
+      "en": "My wife says it's stubbornness."
+     },
+     {
+      "it": "Io dico che è romagnolo, che è la stessa cosa ma suona meglio.",
+      "en": "I say it's being from Romagna, which is the same thing but sounds better."
+     },
+     {
+      "it": "E poi, se me ne vado io, chi la tiene su questa collina?",
+      "en": "And besides, if I leave, who's going to hold this hill up?"
+     },
+     {
+      "it": "Gli alberi tengono la terra, e io tengo gli alberi.",
+      "en": "The trees hold the soil, and I hold the trees."
+     }
+    ]
+   },
+   {
+    "who": "Giornalista",
+    "s": [
+     {
+      "it": "Torniamo a Faenza nel tardo pomeriggio.",
+      "en": "We return to Faenza in the late afternoon."
+     },
+     {
+      "it": "Il cielo si è coperto e comincia a cadere una pioggia sottile.",
+      "en": "The sky has clouded over and a light rain is starting to fall."
+     },
+     {
+      "it": "Davanti al fiume, appoggiato al parapetto del ponte, ritroviamo Ermes.",
+      "en": "In front of the river, leaning on the parapet of the bridge, we find Ermes again."
+     }
+    ]
+   },
+   {
+    "who": "Ermes",
+    "s": [
+     {
+      "it": "Non si preoccupi, non sono qui per paura.",
+      "en": "Don't worry, I'm not here out of fear."
+     },
+     {
+      "it": "Vengo a vedere com'è il livello, tutto qua.",
+      "en": "I come to see what the level's like, that's all."
+     },
+     {
+      "it": "Una volta il fiume era una cosa che c'era e basta, come il campanile.",
+      "en": "Once upon a time the river was just something that was there, like the bell tower."
+     },
+     {
+      "it": "Adesso, ogni volta che piove, lo guardiamo tutti come si guarda un cane che una volta ti ha morso.",
+      "en": "Now, every time it rains, we all look at it the way you look at a dog that once bit you."
+     },
+     {
+      "it": "Gli vuoi ancora bene, ma non gli giri più le spalle.",
+      "en": "You still love it, but you never turn your back on it again."
+     }
+    ]
+   },
+   {
+    "who": "Giornalista",
+    "s": [
+     {
+      "it": "E oggi com'è?",
+      "en": "And how is it today?"
+     }
+    ]
+   },
+   {
+    "who": "Ermes",
+    "s": [
+     {
+      "it": "Oggi è tranquillo.",
+      "en": "Today it's calm."
+     },
+     {
+      "it": "Ma domani, dicono, ne vengono altri trenta millimetri.",
+      "en": "But tomorrow, they say, another thirty millimetres are coming."
+     },
+     {
+      "it": "Io intanto la riga sul muro la lascio dov'è.",
+      "en": "Meanwhile, I'm leaving the line on the wall where it is."
+     }
+    ]
+   },
+   {
+    "who": "Giornalista",
+    "s": [
+     {
+      "it": "Da Faenza, per il giornale radio, è tutto.",
+      "en": "From Faenza, for the radio news, that's all."
+     }
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "q": "Qual è lo scopo principale del servizio?",
+    "o": [
+     "Spiegare le cause scientifiche delle alluvioni in Romagna",
+     "Raccontare la vita degli alluvionati un anno dopo",
+     "Promuovere il ritorno dei turisti sulla riviera romagnola",
+     "Annunciare l'arrivo dei rimborsi per tutte le famiglie"
+    ],
+    "a": "Raccontare la vita degli alluvionati un anno dopo"
+   },
+   {
+    "q": "Perché Ermes non ha ridipinto il corridoio?",
+    "o": [
+     "Perché il muro del corridoio è ancora troppo umido",
+     "Perché la riga gli ricorda quella notte",
+     "Perché sua figlia gli ha consigliato di non farlo",
+     "Perché aspetta i soldi del rimborso per farlo"
+    ],
+    "a": "Perché la riga gli ricorda quella notte"
+   },
+   {
+    "q": "Che cosa vuole sottolineare Ermes quando racconta la storia dello scontrino della lavatrice?",
+    "o": [
+     "Che lui non conserva mai scontrini e fatture",
+     "L'assurdità di chiedere documenti finiti sott'acqua",
+     "Che il nipote ha perso lo scontrino sulla piattaforma",
+     "Che la lavatrice era troppo vecchia per essere rimborsata"
+    ],
+    "a": "L'assurdità di chiedere documenti finiti sott'acqua"
+   },
+   {
+    "q": "Che cosa intende Ermes quando paragona i rimborsi ai treni di una volta?",
+    "o": [
+     "Che preferiva lavorare in ferrovia che stare in pensione",
+     "Che i soldi arriveranno con il treno da Roma",
+     "Che i soldi forse arriveranno, ma con un ritardo imprevedibile",
+     "Che ha ricevuto tutto il rimborso in orario"
+    ],
+    "a": "Che i soldi forse arriveranno, ma con un ritardo imprevedibile"
+   },
+   {
+    "q": "Perché per Loredana il danno al forno era così grave?",
+    "o": [
+     "Perché dentro c'erano i piatti per un ristorante di Bologna",
+     "Perché era un forno antico, del padre",
+     "Perché senza forno un ceramista non può lavorare",
+     "Perché non era assicurato contro gli incendi"
+    ],
+    "a": "Perché senza forno un ceramista non può lavorare"
+   },
+   {
+    "q": "Che cosa ha cambiato i piani di Loredana dopo l'alluvione?",
+    "o": [
+     "Una raccolta fondi le ha permesso di trasferirsi in Germania",
+     "Una volontaria tedesca è diventata la sua apprendista",
+     "Ha vinto un premio internazionale per la ceramica",
+     "Il Comune le ha regalato un forno nuovo"
+    ],
+    "a": "Una volontaria tedesca è diventata la sua apprendista"
+   },
+   {
+    "q": "Come arriva Davide ai suoi campi oggi?",
+    "o": [
+     "A piedi, perché ha venduto il trattore",
+     "Con il camion della frutta, lungo una strada provvisoria",
+     "Con il trattore, passando nei campi di un parente",
+     "Non ci arriva più e ha smesso di lavorare"
+    ],
+    "a": "Con il trattore, passando nei campi di un parente"
+   },
+   {
+    "q": "Che cosa critica Davide quando parla di un «girotondo»?",
+    "o": [
+     "Il prezzo troppo basso pagato per i kiwi",
+     "Il rimpallo di responsabilità tra gli enti",
+     "La lentezza dei lavori fatti dal commissario",
+     "Il fatto che i vicini non lo aiutano mai"
+    ],
+    "a": "Il rimpallo di responsabilità tra gli enti"
+   },
+   {
+    "q": "Che cosa dice Davide sul motivo per cui non se ne va?",
+    "o": [
+     "Che è testardo e che la collina ha bisogno di lui",
+     "Che aspetta la nuova strada per vendere il terreno",
+     "Che non ha abbastanza soldi per trasferirsi in città",
+     "Che è la moglie a non voler lasciare la collina"
+    ],
+    "a": "Che è testardo e che la collina ha bisogno di lui"
+   },
+   {
+    "q": "Che cosa esprime Ermes con l'immagine del cane che ti ha morso?",
+    "o": [
+     "Che il fiume oggi è più pericoloso dell'anno scorso",
+     "Che lo ama ancora, ma non si fida più",
+     "Che vorrebbe che il fiume venisse coperto",
+     "Che ha paura e non si avvicina più al fiume"
+    ],
+    "a": "Che lo ama ancora, ma non si fida più"
+   }
+  ]
+ },
+ {
+  "id": "l-b2-05",
+  "level": "B2",
+  "title": "Il cortile di via Saluzzo",
+  "en": "The courtyard in Via Saluzzo",
+  "topic": "people",
+  "genre": "residents' meeting",
+  "minutes": 10,
+  "situation": "An evening meeting of the residents of an old apartment block in the San Salvario district of Turin. The building manager has called it to discuss a single item on the agenda.",
+  "speakers": {
+   "Geometra Rinaldi": "m",
+   "Signora Bertolotti": "f2",
+   "Matteo": "m2",
+   "Lucia": "f"
+  },
+  "body": [
+   {
+    "who": "Geometra Rinaldi",
+    "s": [
+     {
+      "it": "Allora, signori, se ci sediamo tutti possiamo cominciare.",
+      "en": "Right, ladies and gentlemen, if we all sit down we can begin."
+     },
+     {
+      "it": "Sono le nove meno dieci e la sala ce l'hanno data fino alle dieci e mezza, poi arriva il corso di tango.",
+      "en": "It's ten to nine and we've got the room until half past ten, then the tango class arrives."
+     },
+     {
+      "it": "Quindi vi chiedo di essere sintetici.",
+      "en": "So I'd ask you to keep it brief."
+     },
+     {
+      "it": "Un solo punto all'ordine del giorno: la proposta di modifica del regolamento condominiale per quanto riguarda l'uso del cortile.",
+      "en": "One single item on the agenda: the proposal to amend the building regulations regarding the use of the courtyard."
+     },
+     {
+      "it": "La proposta l'ha presentata la signora Bertolotti, del terzo piano scala B.",
+      "en": "The proposal was put forward by Mrs Bertolotti, third floor, staircase B."
+     },
+     {
+      "it": "Signora, vuole illustrarla lei?",
+      "en": "Madam, would you like to present it?"
+     }
+    ]
+   },
+   {
+    "who": "Signora Bertolotti",
+    "s": [
+     {
+      "it": "Volentieri, geometra.",
+      "en": "With pleasure."
+     },
+     {
+      "it": "Io abito in questo palazzo da quarantun anni.",
+      "en": "I've lived in this building for forty-one years."
+     },
+     {
+      "it": "Quarantuno.",
+      "en": "Forty-one."
+     },
+     {
+      "it": "Quando sono arrivata, il cortile era un posto dove si stendevano le lenzuola e ci si salutava.",
+      "en": "When I arrived, the courtyard was a place where people hung out sheets and said hello to each other."
+     },
+     {
+      "it": "Adesso è uno stadio.",
+      "en": "Now it's a stadium."
+     },
+     {
+      "it": "Dalle quattro del pomeriggio alle otto di sera c'è un pallone che rimbalza contro i muri, contro le finestre, contro le biciclette.",
+      "en": "From four in the afternoon until eight in the evening there's a ball bouncing against the walls, against the windows, against the bicycles."
+     },
+     {
+      "it": "Settimana scorsa ha preso in pieno il mio vaso di gerani, quello sul davanzale.",
+      "en": "Last week it hit my pot of geraniums, the one on the windowsill, full on."
+     },
+     {
+      "it": "Il vaso era di mia madre.",
+      "en": "The pot was my mother's."
+     },
+     {
+      "it": "Quindi propongo una cosa semplice: vietare i giochi con la palla nel cortile, sempre.",
+      "en": "So I'm proposing something simple: banning ball games in the courtyard, at all times."
+     }
+    ]
+   },
+   {
+    "who": "Matteo",
+    "s": [
+     {
+      "it": "Sempre?",
+      "en": "At all times?"
+     }
+    ]
+   },
+   {
+    "who": "Signora Bertolotti",
+    "s": [
+     {
+      "it": "Sempre.",
+      "en": "At all times."
+     },
+     {
+      "it": "C'è il parco del Valentino a cinque minuti.",
+      "en": "There's Valentino Park five minutes away."
+     },
+     {
+      "it": "Ai miei tempi i bambini andavano al parco.",
+      "en": "In my day children went to the park."
+     }
+    ]
+   },
+   {
+    "who": "Matteo",
+    "s": [
+     {
+      "it": "Ai suoi tempi i bambini di sei anni andavano al parco da soli, signora.",
+      "en": "In your day six-year-olds went to the park on their own, madam."
+     },
+     {
+      "it": "Io adesso dovrei accompagnarli tutti i giorni, cioè dovrei uscire dal lavoro alle quattro.",
+      "en": "Now I'd have to take them every day, which means I'd have to leave work at four."
+     },
+     {
+      "it": "Glielo spiega lei al mio capo?",
+      "en": "Will you explain that to my boss?"
+     }
+    ]
+   },
+   {
+    "who": "Geometra Rinaldi",
+    "s": [
+     {
+      "it": "Scusate, scusate, un attimo.",
+      "en": "Sorry, sorry, just a moment."
+     },
+     {
+      "it": "Facciamo un intervento alla volta, sennò il verbale non lo scrivo.",
+      "en": "Let's have one person speaking at a time, otherwise I can't write the minutes."
+     },
+     {
+      "it": "Signor Ferrero, prego.",
+      "en": "Mr Ferrero, go ahead."
+     }
+    ]
+   },
+   {
+    "who": "Matteo",
+    "s": [
+     {
+      "it": "Grazie.",
+      "en": "Thanks."
+     },
+     {
+      "it": "Matteo Ferrero, primo piano scala A, quello dei due bambini che giocano a pallone, lo dico subito così risparmiamo tempo.",
+      "en": "Matteo Ferrero, first floor, staircase A, the one with the two kids who play football, I'll say it straight away to save time."
+     },
+     {
+      "it": "Allora, sul vaso mi dispiace, davvero.",
+      "en": "So, I'm sorry about the pot, honestly."
+     },
+     {
+      "it": "Gliel'ho già detto, glielo ripago, me ne ha chiesti quaranta euro e glieli do anche stasera.",
+      "en": "I've already told you, I'll pay for it, you asked me for forty euros and I'll give it to you tonight."
+     }
+    ]
+   },
+   {
+    "who": "Signora Bertolotti",
+    "s": [
+     {
+      "it": "Non è una questione di soldi.",
+      "en": "It's not a question of money."
+     }
+    ]
+   },
+   {
+    "who": "Matteo",
+    "s": [
+     {
+      "it": "Lo so, ma ho capito che anche i soldi c'entrano un po'.",
+      "en": "I know, but I've got the impression money comes into it a bit as well."
+     }
+    ]
+   },
+   {
+    "who": "Geometra Rinaldi",
+    "s": [
+     {
+      "it": "Signor Ferrero.",
+      "en": "Mr Ferrero."
+     }
+    ]
+   },
+   {
+    "who": "Matteo",
+    "s": [
+     {
+      "it": "Va be', ritiro.",
+      "en": "All right, I take it back."
+     },
+     {
+      "it": "Il punto è questo: in tutto il palazzo ci sono sei bambini.",
+      "en": "The point is this: in the whole building there are six children."
+     },
+     {
+      "it": "Il cortile è l'unico posto dove possono stare fuori senza che io debba guardarli ogni secondo dalla finestra.",
+      "en": "The courtyard is the only place where they can be outside without me having to watch them every second from the window."
+     },
+     {
+      "it": "Vietare la palla sempre significa dire che i bambini qui non sono graditi.",
+      "en": "Banning balls at all times means saying children aren't welcome here."
+     },
+     {
+      "it": "Ditelo, allora, almeno siamo onesti.",
+      "en": "Say so, then, at least we'll be honest."
+     }
+    ]
+   },
+   {
+    "who": "Signora Bertolotti",
+    "s": [
+     {
+      "it": "Nessuno ha detto questo.",
+      "en": "Nobody said that."
+     }
+    ]
+   },
+   {
+    "who": "Matteo",
+    "s": [
+     {
+      "it": "Non l'ha detto, ma l'ha scritto nel regolamento.",
+      "en": "You didn't say it, but you wrote it in the regulations."
+     },
+     {
+      "it": "E poi, visto che si parla di loro, mia figlia Nina ha voluto scrivere una cosa per l'assemblea.",
+      "en": "And besides, since we're talking about them, my daughter Nina wanted to write something for the meeting."
+     },
+     {
+      "it": "Ha otto anni, quindi perdonate l'ortografia.",
+      "en": "She's eight, so forgive the spelling."
+     },
+     {
+      "it": "La leggo, ci vuole un minuto.",
+      "en": "I'll read it, it takes a minute."
+     }
+    ]
+   },
+   {
+    "who": "Geometra Rinaldi",
+    "s": [
+     {
+      "it": "Signor Ferrero, i minori non hanno diritto di intervento in assemblea.",
+      "en": "Mr Ferrero, minors don't have the right to speak at the meeting."
+     }
+    ]
+   },
+   {
+    "who": "Matteo",
+    "s": [
+     {
+      "it": "Infatti la leggo io, che sono maggiorenne e pago le spese condominiali.",
+      "en": "That's why I'm reading it, since I'm an adult and I pay the service charges."
+     },
+     {
+      "it": "Allora: «Cara assemblea, noi giochiamo a palla perché in casa non si può.",
+      "en": "So: 'Dear meeting, we play ball because you can't do it indoors."
+     },
+     {
+      "it": "Il vaso della signora Bertolotti l'ha rotto Pietro ma è stato un tiro bellissimo.",
+      "en": "Pietro broke Mrs Bertolotti's pot but it was a really great shot."
+     },
+     {
+      "it": "Chiediamo scusa.",
+      "en": "We apologise."
+     },
+     {
+      "it": "Se vietate la palla possiamo giocare a nascondino, ma è più rumoroso.»",
+      "en": "If you ban the ball we can play hide and seek, but it's noisier.'"
+     }
+    ]
+   },
+   {
+    "who": "Signora Bertolotti",
+    "s": [
+     {
+      "it": "Più rumoroso?",
+      "en": "Noisier?"
+     }
+    ]
+   },
+   {
+    "who": "Matteo",
+    "s": [
+     {
+      "it": "Lei non li ha mai sentiti contare fino a cento.",
+      "en": "You've never heard them count to a hundred."
+     },
+     {
+      "it": "Urlando.",
+      "en": "Shouting."
+     }
+    ]
+   },
+   {
+    "who": "Lucia",
+    "s": [
+     {
+      "it": "Confermo.",
+      "en": "I can confirm that."
+     },
+     {
+      "it": "Ad aprile hanno fatto una settimana di nascondino e io dormivo con i tappi e il cuscino sulla testa.",
+      "en": "In April they had a week of hide and seek and I was sleeping with earplugs and the pillow over my head."
+     },
+     {
+      "it": "Il pallone, al confronto, è musica da camera.",
+      "en": "The ball, by comparison, is chamber music."
+     }
+    ]
+   },
+   {
+    "who": "Geometra Rinaldi",
+    "s": [
+     {
+      "it": "Prendo nota che la lettera è stata letta.",
+      "en": "I'm noting that the letter has been read."
+     },
+     {
+      "it": "Non so bene in quale parte del verbale metterla, ma prendo nota.",
+      "en": "I'm not quite sure which part of the minutes to put it in, but I'm noting it."
+     }
+    ]
+   },
+   {
+    "who": "Geometra Rinaldi",
+    "s": [
+     {
+      "it": "Ci sono altri interventi?",
+      "en": "Are there any other comments?"
+     },
+     {
+      "it": "Sì, la signorina Gallo, secondo piano scala B.",
+      "en": "Yes, Miss Gallo, second floor, staircase B."
+     }
+    ]
+   },
+   {
+    "who": "Lucia",
+    "s": [
+     {
+      "it": "Geometra, va bene anche solo Lucia.",
+      "en": "Just Lucia is fine."
+     },
+     {
+      "it": "Allora, io mi trovo in una posizione un po' scomoda, perché in teoria dovrei stare con la signora Bertolotti.",
+      "en": "Right, I'm in a slightly awkward position, because in theory I ought to be on Mrs Bertolotti's side."
+     },
+     {
+      "it": "Faccio l'infermiera alle Molinette, faccio le notti, e il pomeriggio dormo.",
+      "en": "I'm a nurse at the Molinette hospital, I work nights, and in the afternoon I sleep."
+     },
+     {
+      "it": "O meglio, provo a dormire.",
+      "en": "Or rather, I try to sleep."
+     },
+     {
+      "it": "La mia camera dà sul cortile, e quel pallone lo sento eccome.",
+      "en": "My bedroom looks onto the courtyard, and I can hear that ball all right."
+     },
+     {
+      "it": "Tum, tum, tum, contro il muro sotto la mia finestra.",
+      "en": "Thud, thud, thud, against the wall under my window."
+     },
+     {
+      "it": "Certi giorni lo sogno, il pallone.",
+      "en": "Some days I dream about the ball."
+     }
+    ]
+   },
+   {
+    "who": "Signora Bertolotti",
+    "s": [
+     {
+      "it": "Ecco, vede?",
+      "en": "There, you see?"
+     }
+    ]
+   },
+   {
+    "who": "Lucia",
+    "s": [
+     {
+      "it": "Aspetti, non ho finito.",
+      "en": "Wait, I haven't finished."
+     },
+     {
+      "it": "Il problema per me non sono i bambini.",
+      "en": "The problem for me isn't the children."
+     },
+     {
+      "it": "I bambini li sento ridere, litigare, inventarsi le regole, e devo dire che è un rumore che mi mette di buon umore anche quando non dormo.",
+      "en": "I hear the kids laughing, arguing, making up rules, and I have to say it's a noise that puts me in a good mood even when I'm not sleeping."
+     },
+     {
+      "it": "Il problema è il pallone contro il muro, perché il muro sotto la mia finestra è diventato la porta.",
+      "en": "The problem is the ball against the wall, because the wall under my window has become the goal."
+     },
+     {
+      "it": "Basterebbe spostare la porta.",
+      "en": "It would be enough to move the goal."
+     }
+    ]
+   },
+   {
+    "who": "Matteo",
+    "s": [
+     {
+      "it": "Spostare la porta.",
+      "en": "Move the goal."
+     },
+     {
+      "it": "Questa è una proposta concreta.",
+      "en": "That's a concrete proposal."
+     }
+    ]
+   },
+   {
+    "who": "Lucia",
+    "s": [
+     {
+      "it": "E magari fare un orario.",
+      "en": "And maybe have set hours."
+     },
+     {
+      "it": "Che so, dalle cinque alle sette, che io a quell'ora sono già sveglia.",
+      "en": "I don't know, from five to seven, since by then I'm already awake."
+     },
+     {
+      "it": "E con un pallone di spugna, non con quello di cuoio che sembra un proiettile.",
+      "en": "And with a sponge ball, not that leather one that's like a bullet."
+     }
+    ]
+   },
+   {
+    "who": "Signora Bertolotti",
+    "s": [
+     {
+      "it": "Il pallone di spugna lo bucano in due giorni.",
+      "en": "They'll have a hole in a sponge ball in two days."
+     }
+    ]
+   },
+   {
+    "who": "Matteo",
+    "s": [
+     {
+      "it": "Ne compro dieci.",
+      "en": "I'll buy ten."
+     },
+     {
+      "it": "Li tengo in cantina.",
+      "en": "I'll keep them in the cellar."
+     }
+    ]
+   },
+   {
+    "who": "Geometra Rinaldi",
+    "s": [
+     {
+      "it": "Bene, allora abbiamo una proposta alternativa: gioco consentito dalle diciassette alle diciannove, palloni morbidi, e la porta spostata contro il muro della scala A.",
+      "en": "Good, so we have an alternative proposal: games allowed from five to seven, soft balls, and the goal moved against the wall of staircase A."
+     }
+    ]
+   },
+   {
+    "who": "Matteo",
+    "s": [
+     {
+      "it": "Contro la scala A?",
+      "en": "Against staircase A?"
+     },
+     {
+      "it": "Cioè sotto casa mia?",
+      "en": "You mean under my flat?"
+     }
+    ]
+   },
+   {
+    "who": "Geometra Rinaldi",
+    "s": [
+     {
+      "it": "È l'unico muro senza finestre, signor Ferrero.",
+      "en": "It's the only wall without windows, Mr Ferrero."
+     },
+     {
+      "it": "C'è solo la sua cantina.",
+      "en": "There's only your cellar."
+     },
+     {
+      "it": "E i suoi dieci palloni.",
+      "en": "And your ten balls."
+     }
+    ]
+   },
+   {
+    "who": "Matteo",
+    "s": [
+     {
+      "it": "Va bene, va bene.",
+      "en": "Fine, fine."
+     },
+     {
+      "it": "Mi sta bene.",
+      "en": "I'm happy with that."
+     }
+    ]
+   },
+   {
+    "who": "Signora Bertolotti",
+    "s": [
+     {
+      "it": "A me no.",
+      "en": "I'm not."
+     },
+     {
+      "it": "Perché qui si parla solo del pallone, ma il cortile ha anche altri problemi.",
+      "en": "Because here we're only talking about the ball, but the courtyard has other problems too."
+     },
+     {
+      "it": "Le biciclette legate alla ringhiera.",
+      "en": "The bicycles chained to the railings."
+     },
+     {
+      "it": "Il barbecue del signor Ferrero, la domenica, che mi entra il fumo in cucina.",
+      "en": "Mr Ferrero's barbecue, on Sundays, that sends smoke into my kitchen."
+     },
+     {
+      "it": "E le feste di compleanno, con la musica.",
+      "en": "And the birthday parties, with music."
+     }
+    ]
+   },
+   {
+    "who": "Matteo",
+    "s": [
+     {
+      "it": "Ecco, lo sapevo.",
+      "en": "There, I knew it."
+     },
+     {
+      "it": "Non era il pallone.",
+      "en": "It wasn't the ball."
+     },
+     {
+      "it": "Era tutto il resto.",
+      "en": "It was everything else."
+     }
+    ]
+   },
+   {
+    "who": "Signora Bertolotti",
+    "s": [
+     {
+      "it": "Il barbecue, signor Ferrero, in un cortile condominiale, è vietato già adesso.",
+      "en": "The barbecue, Mr Ferrero, in a shared courtyard, is already banned."
+     },
+     {
+      "it": "Articolo dodici.",
+      "en": "Article twelve."
+     }
+    ]
+   },
+   {
+    "who": "Matteo",
+    "s": [
+     {
+      "it": "L'articolo dodici parla di fuochi liberi.",
+      "en": "Article twelve talks about open fires."
+     },
+     {
+      "it": "Il mio è elettrico.",
+      "en": "Mine is electric."
+     }
+    ]
+   },
+   {
+    "who": "Signora Bertolotti",
+    "s": [
+     {
+      "it": "Fa il fumo uguale.",
+      "en": "It makes the same amount of smoke."
+     }
+    ]
+   },
+   {
+    "who": "Lucia",
+    "s": [
+     {
+      "it": "Scusate, posso dire una cosa che forse non c'entra?",
+      "en": "Sorry, can I say something that might be off the point?"
+     }
+    ]
+   },
+   {
+    "who": "Geometra Rinaldi",
+    "s": [
+     {
+      "it": "Se è breve.",
+      "en": "If it's short."
+     }
+    ]
+   },
+   {
+    "who": "Lucia",
+    "s": [
+     {
+      "it": "Signora Bertolotti, lei si ricorda il compleanno di Nina, a giugno?",
+      "en": "Mrs Bertolotti, do you remember Nina's birthday, in June?"
+     },
+     {
+      "it": "Quello con la musica?",
+      "en": "The one with the music?"
+     }
+    ]
+   },
+   {
+    "who": "Signora Bertolotti",
+    "s": [
+     {
+      "it": "Me lo ricordo, sì.",
+      "en": "I remember it, yes."
+     }
+    ]
+   },
+   {
+    "who": "Lucia",
+    "s": [
+     {
+      "it": "Io me lo ricordo perché ero alla finestra, appena sveglia.",
+      "en": "I remember it because I was at the window, just after waking up."
+     },
+     {
+      "it": "E a un certo punto ho visto una persona scendere dalla scala B con un vassoio di bignè.",
+      "en": "And at a certain point I saw someone come down from staircase B with a tray of cream puffs."
+     },
+     {
+      "it": "E poi restare lì, su una sedia di plastica, fino alle dieci di sera, a insegnare ai bambini a giocare a bocce con le arance.",
+      "en": "And then stay there, on a plastic chair, until ten in the evening, teaching the kids to play bowls with oranges."
+     }
+    ]
+   },
+   {
+    "who": "Matteo",
+    "s": [
+     {
+      "it": "È vero.",
+      "en": "That's true."
+     },
+     {
+      "it": "Le arance.",
+      "en": "The oranges."
+     },
+     {
+      "it": "Mia figlia ne parla ancora.",
+      "en": "My daughter still talks about it."
+     }
+    ]
+   },
+   {
+    "who": "Signora Bertolotti",
+    "s": [
+     {
+      "it": "Erano arance che stavano andando a male.",
+      "en": "They were oranges that were going off."
+     },
+     {
+      "it": "Non avevo altro da fare.",
+      "en": "I had nothing else to do."
+     }
+    ]
+   },
+   {
+    "who": "Lucia",
+    "s": [
+     {
+      "it": "Certo, certo.",
+      "en": "Of course, of course."
+     },
+     {
+      "it": "Io dico solo che forse il cortile non è uno stadio.",
+      "en": "I'm only saying that maybe the courtyard isn't a stadium."
+     },
+     {
+      "it": "È un posto dove a volte si sta bene anche in quaranta, e a volte si litiga.",
+      "en": "It's a place where sometimes forty people get along fine, and sometimes there are arguments."
+     },
+     {
+      "it": "Come una volta, con le lenzuola.",
+      "en": "Like in the old days, with the sheets."
+     }
+    ]
+   },
+   {
+    "who": "Signora Bertolotti",
+    "s": [
+     {
+      "it": "Con le lenzuola non si litigava.",
+      "en": "People didn't argue over the sheets."
+     }
+    ]
+   },
+   {
+    "who": "Matteo",
+    "s": [
+     {
+      "it": "Ah no?",
+      "en": "Oh really?"
+     },
+     {
+      "it": "Mia nonna diceva che in questo palazzo, negli anni Sessanta, due famiglie non si sono parlate per sei anni per una molletta.",
+      "en": "My grandmother used to say that in this building, in the sixties, two families didn't speak to each other for six years over a clothes peg."
+     }
+    ]
+   },
+   {
+    "who": "Signora Bertolotti",
+    "s": [
+     {
+      "it": "Per una molletta e un lenzuolo matrimoniale, che è diverso.",
+      "en": "Over a clothes peg and a double sheet, which is different."
+     },
+     {
+      "it": "E comunque avevamo ragione noi.",
+      "en": "And anyway we were in the right."
+     }
+    ]
+   },
+   {
+    "who": "Geometra Rinaldi",
+    "s": [
+     {
+      "it": "Signora, eravate voi?",
+      "en": "Madam, was that you?"
+     }
+    ]
+   },
+   {
+    "who": "Signora Bertolotti",
+    "s": [
+     {
+      "it": "Lasciamo perdere.",
+      "en": "Let's drop it."
+     },
+     {
+      "it": "Sono passati sessant'anni.",
+      "en": "It was sixty years ago."
+     }
+    ]
+   },
+   {
+    "who": "Geometra Rinaldi",
+    "s": [
+     {
+      "it": "Bene.",
+      "en": "Good."
+     },
+     {
+      "it": "Allora, cerchiamo di chiudere, perché sento già la musica del tango dal corridoio.",
+      "en": "Right, let's try to wrap up, because I can already hear the tango music from the corridor."
+     },
+     {
+      "it": "Mettiamo ai voti la proposta della signorina Gallo, con la porta spostata e l'orario dalle diciassette alle diciannove.",
+      "en": "Let's put Miss Gallo's proposal to the vote, with the goal moved and the hours from five to seven."
+     },
+     {
+      "it": "Il barbecue lo rimandiamo alla prossima assemblea.",
+      "en": "We'll postpone the barbecue to the next meeting."
+     }
+    ]
+   },
+   {
+    "who": "Matteo",
+    "s": [
+     {
+      "it": "Grazie al cielo.",
+      "en": "Thank heavens."
+     }
+    ]
+   },
+   {
+    "who": "Geometra Rinaldi",
+    "s": [
+     {
+      "it": "Un attimo solo, che controllo le presenze e le deleghe.",
+      "en": "Just a moment, let me check attendance and the proxies."
+     },
+     {
+      "it": "Mh.",
+      "en": "Hm."
+     },
+     {
+      "it": "Mh.",
+      "en": "Hm."
+     },
+     {
+      "it": "Signori, ho un problema.",
+      "en": "Ladies and gentlemen, I have a problem."
+     }
+    ]
+   },
+   {
+    "who": "Lucia",
+    "s": [
+     {
+      "it": "Che problema?",
+      "en": "What problem?"
+     }
+    ]
+   },
+   {
+    "who": "Geometra Rinaldi",
+    "s": [
+     {
+      "it": "Per modificare il regolamento serve la maggioranza dei millesimi, e stasera tra presenti e deleghe arriviamo a quattrocentoventi.",
+      "en": "To amend the regulations we need a majority of the ownership shares, and tonight between those present and proxies we only get to four hundred and twenty."
+     },
+     {
+      "it": "Non abbiamo il numero legale.",
+      "en": "We don't have a quorum."
+     }
+    ]
+   },
+   {
+    "who": "Signora Bertolotti",
+    "s": [
+     {
+      "it": "Come è possibile?",
+      "en": "How is that possible?"
+     },
+     {
+      "it": "Siamo qui quasi tutti.",
+      "en": "Nearly all of us are here."
+     }
+    ]
+   },
+   {
+    "who": "Geometra Rinaldi",
+    "s": [
+     {
+      "it": "Quasi tutti, signora, ma manca il proprietario dei tre alloggi del quarto piano, quelli che affitta ai turisti.",
+      "en": "Nearly all, madam, but the owner of the three flats on the fourth floor is missing, the ones he rents out to tourists."
+     },
+     {
+      "it": "Da solo vale quasi duecento millesimi.",
+      "en": "On his own he accounts for nearly two hundred shares."
+     },
+     {
+      "it": "Vive a Londra e non mi ha mandato la delega.",
+      "en": "He lives in London and he hasn't sent me a proxy."
+     }
+    ]
+   },
+   {
+    "who": "Lucia",
+    "s": [
+     {
+      "it": "Quindi il destino del cortile lo decide uno che il cortile non l'ha mai visto.",
+      "en": "So the fate of the courtyard is decided by someone who has never seen it."
+     }
+    ]
+   },
+   {
+    "who": "Geometra Rinaldi",
+    "s": [
+     {
+      "it": "Benvenuta nel mondo dei condomìni, signorina.",
+      "en": "Welcome to the world of apartment blocks, Miss."
+     },
+     {
+      "it": "Tutto quello che abbiamo detto vale come una piacevole chiacchierata.",
+      "en": "Everything we've said counts as a pleasant chat."
+     }
+    ]
+   },
+   {
+    "who": "Matteo",
+    "s": [
+     {
+      "it": "Una piacevole chiacchierata?",
+      "en": "A pleasant chat?"
+     },
+     {
+      "it": "Un'ora e mezza?",
+      "en": "An hour and a half?"
+     }
+    ]
+   },
+   {
+    "who": "Geometra Rinaldi",
+    "s": [
+     {
+      "it": "Un'ora e quaranta, per la precisione.",
+      "en": "An hour and forty minutes, to be precise."
+     },
+     {
+      "it": "Riconvoco l'assemblea tra due settimane.",
+      "en": "I'll call the meeting again in two weeks."
+     },
+     {
+      "it": "Nel frattempo vale il regolamento vecchio, che sul pallone non dice niente.",
+      "en": "In the meantime the old regulations apply, which say nothing about balls."
+     }
+    ]
+   },
+   {
+    "who": "Signora Bertolotti",
+    "s": [
+     {
+      "it": "Niente?",
+      "en": "Nothing?"
+     }
+    ]
+   },
+   {
+    "who": "Geometra Rinaldi",
+    "s": [
+     {
+      "it": "Niente, signora.",
+      "en": "Nothing, madam."
+     },
+     {
+      "it": "Nel 1974 i bambini, evidentemente, giocavano al Valentino.",
+      "en": "In 1974, evidently, children played in Valentino Park."
+     }
+    ]
+   },
+   {
+    "who": "Signora Bertolotti",
+    "s": [
+     {
+      "it": "Va bene.",
+      "en": "All right."
+     },
+     {
+      "it": "Allora, signor Ferrero, fino a quel giorno dica ai suoi figli di tirare piano.",
+      "en": "Then, Mr Ferrero, until that day tell your children to kick gently."
+     },
+     {
+      "it": "E il vaso nuovo lo voglio uguale a quello vecchio.",
+      "en": "And I want the new pot to be the same as the old one."
+     },
+     {
+      "it": "Blu, con il bordo bianco.",
+      "en": "Blue, with a white rim."
+     }
+    ]
+   },
+   {
+    "who": "Matteo",
+    "s": [
+     {
+      "it": "Blu con il bordo bianco.",
+      "en": "Blue with a white rim."
+     },
+     {
+      "it": "Lo cerco domani.",
+      "en": "I'll look for one tomorrow."
+     }
+    ]
+   },
+   {
+    "who": "Lucia",
+    "s": [
+     {
+      "it": "E le arance per le bocce?",
+      "en": "And the oranges for bowls?"
+     }
+    ]
+   },
+   {
+    "who": "Signora Bertolotti",
+    "s": [
+     {
+      "it": "Quelle, se proprio insistete, le porto io.",
+      "en": "Those, if you really insist, I'll bring myself."
+     },
+     {
+      "it": "Ma che siano mature, mi raccomando, non come l'altra volta.",
+      "en": "But make sure they're ripe, mind, not like last time."
+     }
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "q": "Qual è il motivo principale della riunione?",
+    "o": [
+     "Organizzare una festa di compleanno nel cortile",
+     "Decidere se installare un barbecue comune in cortile",
+     "Una proposta per vietare il pallone in cortile",
+     "Scegliere un nuovo amministratore per il palazzo"
+    ],
+    "a": "Una proposta per vietare il pallone in cortile"
+   },
+   {
+    "q": "Che cosa vuole far capire Matteo quando dice che «anche i soldi c'entrano un po'»?",
+    "o": [
+     "Che il geometra deve occuparsi del pagamento",
+     "Che il vaso vale molto più di quaranta euro",
+     "Che lui non ha i soldi per ripagare il vaso",
+     "Che secondo lui la signora tiene anche al risarcimento"
+    ],
+    "a": "Che secondo lui la signora tiene anche al risarcimento"
+   },
+   {
+    "q": "Secondo Matteo, che cosa significherebbe in realtà la proposta della signora Bertolotti?",
+    "o": [
+     "Che il cortile verrebbe chiuso a tutti i condomini",
+     "Che i bambini dovrebbero giocare in cantina",
+     "Che i genitori dovrebbero pagare una multa",
+     "Che i bambini non sono benvenuti nel palazzo"
+    ],
+    "a": "Che i bambini non sono benvenuti nel palazzo"
+   },
+   {
+    "q": "Perché la posizione di Lucia è «scomoda»?",
+    "o": [
+     "Perché anche lei ha dei figli che giocano in cortile",
+     "Perché è amica sia di Matteo sia della signora Bertolotti",
+     "Perché lavora con il geometra e deve restare neutrale",
+     "Perché soffre il rumore, ma non ce l'ha coi bambini"
+    ],
+    "a": "Perché soffre il rumore, ma non ce l'ha coi bambini"
+   },
+   {
+    "q": "Qual è il vero problema per Lucia?",
+    "o": [
+     "Il fumo del barbecue elettrico la domenica",
+     "La musica troppo alta delle feste di compleanno",
+     "Le voci dei bambini che giocano e litigano in cortile",
+     "Il pallone che batte sotto la sua finestra"
+    ],
+    "a": "Il pallone che batte sotto la sua finestra"
+   },
+   {
+    "q": "Perché a Matteo non piace subito l'idea di spostare la porta contro la scala A?",
+    "o": [
+     "Perché lì ci sono le biciclette",
+     "Perché sua figlia preferisce giocare dall'altra parte",
+     "Perché è il muro più vicino alla finestra della signora",
+     "Perché quel muro è proprio sotto casa sua"
+    ],
+    "a": "Perché quel muro è proprio sotto casa sua"
+   },
+   {
+    "q": "Che cosa capisce Matteo quando la signora parla di biciclette, barbecue e feste?",
+    "o": [
+     "Che il geometra è d'accordo con la signora",
+     "Che il regolamento vieta già tutte queste cose",
+     "Che il pallone era solo una parte del fastidio della signora",
+     "Che la signora vuole trovare un compromesso"
+    ],
+    "a": "Che il pallone era solo una parte del fastidio della signora"
+   },
+   {
+    "q": "Perché Lucia racconta il compleanno di Nina?",
+    "o": [
+     "Per mostrare che anche la signora è stata volentieri con i bambini",
+     "Per ricordare che lei quel giorno era al lavoro",
+     "Per lamentarsi della musica troppo alta quel giorno",
+     "Per accusare la signora di aver portato dolci scaduti"
+    ],
+    "a": "Per mostrare che anche la signora è stata volentieri con i bambini"
+   },
+   {
+    "q": "Cosa lascia intendere la signora Bertolotti con «Lasciamo perdere»?",
+    "o": [
+     "Che una delle due famiglie della lite era la sua",
+     "Che la storia della nonna di Matteo è inventata",
+     "Che vuole cambiare argomento per parlare del barbecue",
+     "Che non ricorda la storia della molletta"
+    ],
+    "a": "Che una delle due famiglie della lite era la sua"
+   },
+   {
+    "q": "Come si conclude l'assemblea?",
+    "o": [
+     "Non si può votare, quindi per ora non cambia nulla",
+     "Il geometra rimanda la decisione per colpa del corso di tango",
+     "Viene approvata la proposta di Lucia",
+     "Viene approvato il divieto totale di giocare a palla"
+    ],
+    "a": "Non si può votare, quindi per ora non cambia nulla"
+   }
+  ]
+ }
+]
