@@ -22,10 +22,10 @@ let deferred = null;
 const standalone = () => matchMedia("(display-mode: standalone)").matches || navigator.standalone === true;
 const ios = /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
 window.addEventListener("beforeinstallprompt", e => { e.preventDefault(); deferred = e; if (S.view.name === "account") emit("rerender"); });
-window.addEventListener("appinstalled", () => { deferred = null; showToast("Parlo is installed."); });
+window.addEventListener("appinstalled", () => { deferred = null; showToast("Installed. Open it from your home screen."); });
 function installHTML() {
   if (standalone()) return `<p class="muted small">${ICON.check} Installed on this device.</p>`;
-  if (deferred) return `<p class="muted small">Opens like an app and works offline.</p><button class="btn" data-install>Install Parlo</button>`;
+  if (deferred) return `<p class="muted small">Opens like an app and works offline.</p><button class="btn" data-install>Install the app</button>`;
   if (ios) return `<p class="muted small">In Safari: tap Share, then <b>Add to Home Screen</b>.</p>`;
   return `<p class="muted small">Chrome or Edge: use the install icon in the address bar. Android: menu → <b>Install app</b>.</p>`;
 }
@@ -53,7 +53,7 @@ export function viewAccount(app, v = S.view) {
       ${row("Install the app", "", `<div>${installHTML()}</div>`)}
     </section>`;
   let account;
-  if (!supabase) account = `<section class="panel"><h2>Account</h2><p class="muted">Accounts aren't set up for this copy of Parlo. Progress is saved on this device.</p></section>`;
+  if (!supabase) account = `<section class="panel"><h2>Account</h2><p class="muted">Accounts aren't set up for this copy of the app. Progress is saved on this device.</p></section>`;
   else if (recovery) account = `<form class="panel form" id="recovery-form"><h2>Choose a new password</h2>
       <label class="field">New password<input class="input" id="new-pass" type="password" autocomplete="new-password" minlength="8" required></label>
       <div id="auth-msg">${msgHTML()}</div><button class="btn primary wide">Save password</button></form>`;
@@ -118,17 +118,25 @@ function statsHTML() {
   const days = activityByDay();
   const today = dayKey(), sum = o => Object.values(o || {}).reduce((a, b) => a + b, 0);
   const total = Object.values(days).reduce((a, o) => a + sum(o), 0);
+  const week = [0, 1, 2, 3, 4, 5, 6].reduce((a, i) => { const d = new Date(); d.setDate(d.getDate() - i); return a + sum(days[dayKey(d)]); }, 0);
   let streak = 0; for (let i = sum(days[today]) ? 0 : 1; ; i++) { const d = new Date(); d.setDate(d.getDate() - i); if (sum(days[dayKey(d)]) >= 60) streak++; else break; }
   const canSay = D.order.filter(learned).length, said = S.st["sp:say"]?.n || 0;
   const talks = Object.keys(S.st).filter(k => /^sp:s-/.test(k) && S.st[k]?.done).length;
   if (!total && !canSay && !said) return `<div class="empty-state"><h2>Nothing to show yet</h2><p class="muted">What you can say appears here as you learn.</p><a class="btn primary" href="#/">Start today's session</a></div>`;
-  return `<div class="kpis">
+  return `<h2 class="section-h">What you can say</h2>
+    <div class="kpis">
       <div class="panel kpi"><span class="eyebrow">Words you can say</span><span class="kpi-num">${canSay}</span></div>
       <div class="panel kpi"><span class="eyebrow">Sentences said aloud</span><span class="kpi-num">${said}</span></div>
       <div class="panel kpi"><span class="eyebrow">Talks practised</span><span class="kpi-num">${talks}</span></div>
       <div class="panel kpi"><span class="eyebrow">Streak</span><span class="kpi-num">${streak} ${streak === 1 ? "day" : "days"}</span></div>
     </div>
-    <section class="panel"><h2>Activity</h2>${heatmapHTML(days)}<p class="muted small">${fmtDur(sum(days[today]))} today · ${fmtDur(total)} in all. Time counts only while you're active.</p></section>`;
+    <h2 class="section-h">Time in the app</h2>
+    <div class="kpis three">
+      <div class="panel kpi"><span class="eyebrow">Today</span><span class="kpi-num">${fmtDur(sum(days[today]))}</span></div>
+      <div class="panel kpi"><span class="eyebrow">Last 7 days</span><span class="kpi-num">${fmtDur(week)}</span></div>
+      <div class="panel kpi"><span class="eyebrow">In all</span><span class="kpi-num">${fmtDur(total)}</span></div>
+    </div>
+    <section class="panel"><h2>Activity</h2>${heatmapHTML(days)}<p class="muted small">Time counts only while you're actively using the app.</p></section>`;
 }
 function heatmapHTML(days) {
   // As many weeks as fit on screen (a full year on laptops), so today is always visible without scrolling.
@@ -232,7 +240,7 @@ function wire(app) {
       if (j.app !== "parlo-italiano" || !j.items) throw new Error();
       const changed = mergeEntries(j.items); changed.forEach(id => markDirty(unitOf(id))); applyChanged(changed);
       showToast(`Backup restored: ${changed.length} item${changed.length === 1 ? "" : "s"} updated.`);
-    } catch (err) { showToast("That file isn't a Parlo backup."); }
+    } catch (err) { showToast("That file isn't a backup from this app."); }
   });
   $("[data-reset]")?.addEventListener("click", () => {
     if (armed !== "reset") { armed = "reset"; viewAccount(app); setTimeout(() => { if (armed === "reset") { armed = null; if (S.view.name === "account") viewAccount(app); } }, 5000); return; }

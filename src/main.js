@@ -71,7 +71,7 @@ export async function render() {
     edge(); nav.addEventListener("scroll", edge, { passive: true });
   });
   prevPath = path;
-  const h = app.querySelector("h1"); document.title = h && v.name !== "home" ? `${h.textContent} · Parlo` : "Parlo Italiano";
+  const h = app.querySelector("h1"); document.title = h && v.name !== "home" ? `${h.textContent} · i understand, but…` : "i understand, but…";
   setSync(); updateBadges();
 }
 window.addEventListener("hashchange", render);
@@ -104,8 +104,8 @@ document.addEventListener("click", e => {
 
 /* ---------- Service worker ---------- */
 const updateSW = registerSW({
-  onNeedRefresh() { showToast("A new version of Parlo is ready.", "Update", () => updateSW(true), 0); },
-  onOfflineReady() { showToast("Parlo now works offline.", null, null, 3500); }
+  onNeedRefresh() { showToast("A new version is ready.", "Update", () => updateSW(true), 0); },
+  onOfflineReady() { showToast("The app now works offline.", null, null, 3500); }
 });
 
 /* ---------- Boot ---------- */

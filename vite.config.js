@@ -10,18 +10,18 @@ export default defineConfig({
   plugins: [
     VitePWA({
       registerType: "prompt",
-      includeAssets: ["icons/apple-touch-icon.png", "icons/favicon.svg"],
+      includeAssets: ["icons/apple-touch-icon.png", "icons/favicon.svg", "brand/logo-line.svg", "brand/logo-line-dark.svg"],
       manifest: {
-        name: "Parlo Italiano",
-        short_name: "Parlo",
+        name: "i understand, but…",
+        short_name: "i understand",
         description: "Learn Italian from A1 to B2: 3,000+ words, 320 verbs and 400+ phrases with spaced repetition.",
         lang: "en",
         start_url: base,
         scope: base,
         display: "standalone",
         orientation: "portrait",
-        background_color: "#f7f8f6",
-        theme_color: "#1d6b52",
+        background_color: "#f4f0e7",
+        theme_color: "#294b3d",
         categories: ["education"],
         icons: [
           { src: "icons/icon-192.png", sizes: "192x192", type: "image/png" },

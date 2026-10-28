@@ -78,8 +78,8 @@ export function viewHome(app) {
       <p class="eyebrow">Next${plan.length > 1 ? ` · ${doneN} of ${plan.length} done today` : ""}</p>
       <p class="next-title ${next.it ? "it" : ""}">${esc(next.title)}</p>
       <p class="muted">${esc(next.sub)}</p>
-      <a class="btn primary large wide" href="${next.href}">${esc(next.cta)}</a>
-      ${later.length ? `<ul class="then">${later.map(x => `<li class="${x.done ? "done" : ""}"><a href="${x.href}">${x.done ? ICON.check : `<span class="then-dot" aria-hidden="true"></span>`}<span class="then-t ${x.it ? "it" : ""}">${esc(x.title)}</span><span class="muted small">${esc(x.time)}</span></a></li>`).join("")}</ul>` : ""}
+      <a class="btn ${next.href.startsWith("#/say") ? "speak" : "primary"} large wide" href="${next.href}">${esc(next.cta)}</a>
+      ${later.length ? `<ul class="then">${later.map(x => `<li class="${x.done ? "done" : ""}"><a href="${x.href}">${x.done ? ICON.check : `<span class="then-dot" aria-hidden="true"></span>`}<span class="then-t ${x.it ? "it" : ""}">${esc(x.title)}</span></a></li>`).join("")}</ul>` : ""}
     </section>
     ${nudge ? `<p class="signin-line small muted"><a href="#/account/data">Sign in</a> to keep your progress on every device. <button class="text-btn quiet-link" data-hide-signin>Hide</button></p>` : ""}
   `;

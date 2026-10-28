@@ -46,14 +46,14 @@ export async function viewReading(app, v, alive) {
     const wide = matchMedia("(min-width: 1024px)").matches;
     app.innerHTML = `<div class="layout">
       <div class="l-head"><a class="back-link" href="#/learn/reading">${ICON.back} Lettura</a>
-        <header class="page-head"><p class="eyebrow">${r.level} · ${esc(r.genre)} · ${r.minutes} min · ${esc(TOPICS[r.topic] || "")}</p>
+        <header class="page-head"><p class="eyebrow">${r.level} · ${esc(r.genre)} · ${esc(TOPICS[r.topic] || "")}</p>
         <h1 class="it">${esc(r.title)}</h1><p class="muted">${esc(r.blurb)}</p></header></div>
       <div class="l-main">
         <article class="reader">${blocksHTML(r.body, `#/read/${r.id}`, r.title, showEn, voiceOf)}</article>
         <section class="g-sec"><h2>Did you get it?</h2>
           <div class="panel flush" id="qs">${qs.map((q, i) => `<div class="rq" data-q="${i}"><p class="it strong">${i + 1}. ${esc(q.q)}</p><div class="opts">${q.o.map((o, j) => `<button class="opt it" data-qo="${j}">${esc(o)}</button>`).join("")}</div></div>`).join("")}</div>
           <div class="panel finish" id="finish">${st.done ? `<p class="ok-text">${ICON.check} You've read this${st.score != null ? ` · ${st.score}/${r.questions.length} correct` : ""}.</p>` : `<p class="muted small">Answer the questions, or simply mark it as read.</p>`}
-            <div class="btn-row">${st.done ? `<a class="btn primary" href="#/say/read/${r.id}">Say it: 5 sentences</a>` : `<button class="btn primary" data-done>Mark as read</button>`}<a class="btn" href="#/learn/reading">More texts</a></div></div>
+            <div class="btn-row">${st.done ? `<a class="btn speak" href="#/say/read/${r.id}">Say it: 5 sentences</a>` : `<button class="btn primary" data-done>Mark as read</button>`}<a class="btn" href="#/learn/reading">More texts</a></div></div>
         </section>
       </div>
       <aside class="l-aside">
@@ -72,7 +72,7 @@ export async function viewReading(app, v, alive) {
         div.insertAdjacentHTML("beforeend", ok ? `<p class="q-fb ok-text">${ICON.check} Right</p>` : `<p class="q-fb bad-text">Not quite. The answer: <span class="it strong">${esc(q.a)}</span></p>`);
         if (answered === qs.length) {
           setEntry("r:" + r.id, { done: 1, score: correct, total: qs.length });
-          app.querySelector("#finish").innerHTML = `<p class="ok-text">${ICON.check} ${correct}/${qs.length} correct. Marked as read.</p><p class="muted small">Now say a few of its sentences yourself, from English.</p><div class="btn-row"><a class="btn primary" href="#/say/read/${r.id}">Say it: 5 sentences</a><a class="btn" href="#/learn/reading">More texts</a></div>`;
+          app.querySelector("#finish").innerHTML = `<p class="ok-text">${ICON.check} ${correct}/${qs.length} correct. Marked as read.</p><p class="muted small">Now say a few of its sentences yourself, from English.</p><div class="btn-row"><a class="btn speak" href="#/say/read/${r.id}">Say it: 5 sentences</a><a class="btn" href="#/learn/reading">More texts</a></div>`;
         }
       });
     });

@@ -92,7 +92,7 @@ function practice(app, g, mode, fresh) {
         <p>${right === items.length ? "Perfetto!" : right >= items.length * 0.75 ? "Molto bene!" : right >= items.length / 2 ? "Bene. Keep going." : "Read the lesson again, then try once more."}</p>
         ${mode === "drill" ? `<div class="seg small" role="group" aria-label="Verbs from">${[["A1", "A1 verbs"], ["A2", "A1–A2"], ["B1", "A1–B1"], ["ALL", "All"]].map(([k, l]) => `<button data-dl="${k}" aria-pressed="${drillLevel === k}">${l}</button>`).join("")}</div>` : ""}
         ${missedHTML(items, log)}
-        <div class="btn-row center"><button class="btn primary" data-again>${mode === "drill" ? "10 more verbs" : "Try again"}</button>${mode === "practice" ? `<a class="btn" href="#/say/grammar/${g.id}">Say it: 5 sentences</a>` : ""}<a class="btn quiet" href="#/grammar/${g.id}">Back to the lesson</a></div></div>`);
+        <div class="btn-row center"><button class="btn primary" data-again>${mode === "drill" ? "10 more verbs" : "Try again"}</button>${mode === "practice" ? `<a class="btn speak" href="#/say/grammar/${g.id}">Say it: 5 sentences</a>` : ""}<a class="btn quiet" href="#/grammar/${g.id}">Back to the lesson</a></div></div>`);
       app.querySelector("[data-again]").onclick = () => practice(app, g, mode, true);
       app.querySelectorAll("[data-dl]").forEach(b => b.onclick = () => { drillLevel = b.dataset.dl; lsSet("parlo.drillLevel", drillLevel); practice(app, g, mode); });
       return;

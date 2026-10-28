@@ -26,7 +26,7 @@ export async function viewListening(app, v, alive) {
       <section class="g-sec"><h2>Questions</h2>
         <p class="muted small" id="qhint">Read them first, then listen. ${st.done || lsGet("parlo.listen." + l.id, 0) ? "You can answer while it plays." : "The answers open when you press play."}</p>
         <div class="panel flush">${qs.map((q, i) => `<div class="rq" data-q="${i}"><p class="it strong">${i + 1}. ${esc(q.q)}</p><div class="opts">${q.o.map((o, j) => `<button class="opt it" data-qo="${j}">${esc(o)}</button>`).join("")}</div></div>`).join("")}</div>
-        <div class="panel finish" id="finish">${st.done ? `<p class="ok-text">${ICON.check} Last time: ${st.score}/${st.total} correct.</p><div class="btn-row"><a class="btn" href="#/say/listen/${l.id}">Say it: 5 lines</a></div>` : `<p class="muted small">Answer every question to finish.</p>`}</div>
+        <div class="panel finish" id="finish">${st.done ? `<p class="ok-text">${ICON.check} Last time: ${st.score}/${st.total} correct.</p><div class="btn-row"><a class="btn speak" href="#/say/listen/${l.id}">Say it: 5 lines</a></div>` : `<p class="muted small">Answer every question to finish.</p>`}</div>
       </section>
       <details class="group transcript" id="tr" ${st.done ? "open" : ""}><summary><span class="group-title">Transcript</span><span class="group-meta">${st.done ? "" : "Best after you answer"}</span></summary>
         <div class="reader-tools"><div class="seg small" role="group" aria-label="Translation"><button data-en="0">Italiano</button><button data-en="1">+ English</button></div></div>
@@ -95,7 +95,7 @@ export async function viewListening(app, v, alive) {
         div.insertAdjacentHTML("beforeend", ok ? `<p class="q-fb ok-text">${ICON.check} Right</p>` : `<p class="q-fb bad-text">Not quite. The answer: <span class="it strong">${esc(q.a)}</span></p>`);
       if (answered === qs.length) {
         setEntry("l:" + l.id, { done: 1, score: correct, total: qs.length });
-        app.querySelector("#finish").innerHTML = `<p class="ok-text">${ICON.check} ${correct}/${qs.length} correct.</p><p class="muted small">Now read the transcript, then listen again with Repeat on: say each line after the speaker.</p><div class="btn-row"><a class="btn primary" href="#/say/listen/${l.id}">Say it: 5 lines</a><a class="btn" href="#/learn/listening">More listening</a></div>`;
+        app.querySelector("#finish").innerHTML = `<p class="ok-text">${ICON.check} ${correct}/${qs.length} correct.</p><p class="muted small">Now read the transcript, then listen again with Repeat on: say each line after the speaker.</p><div class="btn-row"><a class="btn speak" href="#/say/listen/${l.id}">Say it: 5 lines</a><a class="btn" href="#/learn/listening">More listening</a></div>`;
         const tr = app.querySelector("#tr"); tr.open = true; tr.querySelector(".group-meta").textContent = "";
       }
     });

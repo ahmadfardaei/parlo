@@ -49,7 +49,7 @@ export async function viewSpeaking(app, v, alive) {
       <aside class="l-aside">
         <div class="l-side"><section class="panel speak-box"><h2>Practise out loud</h2>
           <p class="timer" id="timer" aria-live="off">${mmss(left || minutes * 60)}</p>
-          <button class="btn primary" data-start>${timer ? `${ICON.stop} Stop` : canRecord ? `${ICON.mic} Start and record` : `${ICON.play} Start timer`}</button>
+          <button class="btn ${timer ? "" : "speak"}" data-start>${timer ? `${ICON.stop} Stop` : canRecord ? `${ICON.mic} Start and record` : `${ICON.play} Start timer`}</button>
           ${audioUrl ? `<p class="muted small">Listen back to yourself:</p><audio controls src="${audioUrl}"></audio>` : canRecord ? `<p class="muted small">Your recording stays on this device.</p>` : ""}
           ${done ? `<p class="ok-text">${ICON.check} Practised</p>` : `<p class="muted small">Done once you've talked for a minute.</p>`}
         </section></div>

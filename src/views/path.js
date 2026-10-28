@@ -1,11 +1,19 @@
-// Roadmap mode: a guided path per level. Steps unlock one after another; each shows 0–3 stars.
-import { S, D, esc, ICON, LEVELS, LEVEL_NAMES, statusOf, openSheet, savePref, remember, learned } from "../core.js";
+// The path: a suggested order through each level. Every step is open; each shows 0–3 stars.
+import { S, D, esc, ICON, LEVELS, LEVEL_NAMES, statusOf, openSheet, remember, learned } from "../core.js";
 import ROADMAP from "../data/roadmap.json";
 import { learnNav } from "./learn.js";
 
+// One line icon per kind of step: cards, a puzzle piece, a book, headphones, a pen, a microphone, a flag, a medal.
+const svg = d => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${d}</svg>`;
 export const TYPE = {
-  unit: { label: "Vocabolario", icon: "Aa" }, grammar: { label: "Grammatica", icon: "§" }, reading: { label: "Lettura", icon: "¶" }, listening: { label: "Ascolto", icon: "♪" },
-  writing: { label: "Scrittura", icon: "✎" }, speaking: { label: "Parlato", icon: "◌" }, checkpoint: { label: "Checkpoint", icon: "◆" }, test: { label: "Test di livello", icon: "★" }
+  unit: { label: "Vocabolario", icon: svg('<rect x="3" y="7" width="13" height="13" rx="2"/><path d="M8 4h11a2 2 0 0 1 2 2v11"/>') },
+  grammar: { label: "Grammatica", icon: svg('<path d="M10 4a2 2 0 1 1 4 0v2h4v4h-2a2 2 0 1 0 0 4h2v4h-4v-2a2 2 0 1 0-4 0v2H6v-4h2a2 2 0 1 0 0-4H6V6h4z"/>') },
+  reading: { label: "Lettura", icon: svg('<path d="M3 5.5c3-1 6-1 9 1 3-2 6-2 9-1V19c-3-1-6-1-9 1-3-2-6-2-9-1z"/><path d="M12 6.5V20"/>') },
+  listening: { label: "Ascolto", icon: svg('<path d="M4 15v-3a8 8 0 0 1 16 0v3"/><rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/>') },
+  writing: { label: "Scrittura", icon: svg('<path d="M4 20h4L19 9l-4-4L4 16z"/><path d="m13.5 6.5 4 4"/>') },
+  speaking: { label: "Parlato", icon: svg('<rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/>') },
+  checkpoint: { label: "Checkpoint", icon: svg('<path d="M5 21V4"/><path d="M5 4h12l-2.5 4L17 12H5"/>') },
+  test: { label: "Test di livello", icon: svg('<circle cx="12" cy="9" r="5"/><path d="M8.5 13 7 21l5-3 5 3-1.5-8"/>') }
 };
 const WRITE_TARGET = { A1: 60, A2: 110, B1: 180, B2: 260 };
 const words = s => (String(s || "").trim().match(/\S+/g) || []).length;
@@ -39,52 +47,38 @@ export function pathProgress(L) {
   const current = states.findIndex(x => !x.done);
   return { steps, states, done: states.filter(x => x.done).length, current: current < 0 ? steps.length : current };
 }
-// "36–71 h" → weeks/months at the learner's daily pace.
-export function paceText(L) {
-  const [lo, hi] = ROADMAP[L].hours, pace = S.pref.pace || 20;
-  const span = h => h * 60 / pace / 7; // weeks
-  const fmt = w => w < 8 ? `${Math.round(w)} weeks` : `${Math.round(w / 4.3)} months`;
-  const a = span(lo), b = span(hi);
-  return `${fmt(a)}–${fmt(b)}`.replace(/ weeks–(\d+) weeks/, "–$1 weeks").replace(/ months–(\d+) months/, "–$1 months");
-}
 const stars = n => `<span class="stars" aria-label="${n} of 3 stars">${[1, 2, 3].map(i => `<i class="${i <= n ? "on" : ""}"></i>`).join("")}</span>`;
-const mins = m => m[1] < 90 ? `${m[0]}–${m[1]} min` : `${Math.round(m[0] / 60 * 2) / 2}–${Math.round(m[1] / 60 * 2) / 2} h`;
 
 export function viewPath(app, v) {
   const L = LEVELS.includes(v.level) ? v.level : S.pref.level;
   const { steps, states, done, current } = pathProgress(L);
-  const [lo, hi] = ROADMAP[L].hours;
   remember("path", `Percorso ${L}`, `#/path/${L}`, `${done} of ${steps.length} steps`);
   // The path lives in Impara, as its first tab.
   app.innerHTML = `${learnNav("path")}<header class="path-head sub-head">
       <div class="seg small" role="group" aria-label="Level">${LEVELS.map(l => `<a href="#/path/${l}" ${l === L ? 'aria-current="page"' : ""}>${l}</a>`).join("")}</div>
       <h2 class="path-title">Percorso ${L}</h2>
-      <p class="muted">${LEVEL_NAMES[L]} · ${steps.length} steps · ${lo}–${hi} hours of study</p>
-    </header>
-    <section class="panel path-summary">
+      <p class="muted">${LEVEL_NAMES[L]} · ${steps.length} steps. Follow the order, or open any step you like.</p>
       <div class="level-prog"><span class="bar"><span class="k" style="width:${done / steps.length * 100}%"></span></span><span class="small">${done} of ${steps.length}</span></div>
-      <p class="muted small">At <select class="pace" aria-label="Minutes per day">${[10, 20, 30, 45, 60].map(m => `<option value="${m}" ${m === (S.pref.pace || 20) ? "selected" : ""}>${m} min</option>`).join("")}</select> a day, this level takes about <b>${paceText(L)}</b>.</p>
-    </section>
+    </header>
     <ol class="path">${steps.map((s, i) => {
-      const st = states[i], state = st.done ? "done" : i === current ? "current" : "locked";
+      const st = states[i], state = st.done ? "done" : i === current ? "current" : "todo";
       const wave = Math.round(Math.sin(i * 0.8) * 8);
       return `<li class="step ${state} t-${s.type}" style="--x:${wave}px">
-        <button class="node" data-step="${i}" aria-label="${esc(s.title)}, ${TYPE[s.type].label}, ${state}">${st.done ? ICON.check : `<span>${TYPE[s.type].icon}</span>`}</button>
+        <button class="node" data-step="${i}" aria-label="${esc(s.title)}, ${TYPE[s.type].label}, ${state}">${st.done ? ICON.check : TYPE[s.type].icon}</button>
         <button class="step-text" data-step="${i}">
           <span class="step-title ${s.type === "checkpoint" || s.type === "test" ? "" : "it"}">${esc(s.title)}</span>
-          <span class="step-meta">${TYPE[s.type].label} · ${mins(s.min)}${st.done ? " · " + stars(st.stars) : ""}</span>
+          <span class="step-meta">${TYPE[s.type].label}${st.done ? " · " + stars(st.stars) : ""}</span>
         </button>
         ${state === "current" ? `<a class="btn primary small" href="${stepHref(L, s)}">Start</a>` : ""}
       </li>`;
     }).join("")}</ol>`;
-  app.querySelector(".pace").onchange = e => { savePref({ pace: +e.target.value }); viewPath(app, v); };
   app.querySelectorAll("[data-step]").forEach(b => b.onclick = () => stepSheet(L, steps, states, +b.dataset.step, current));
   const cur = app.querySelector(".step.current");
   if (cur && !v.keepScroll) setTimeout(() => cur.scrollIntoView({ block: "center" }), 50);
 }
 
 function stepSheet(L, steps, states, i, current) {
-  const s = steps[i], st = states[i], locked = !st.done && i > current;
+  const s = steps[i], st = states[i];
   const href = stepHref(L, s);
   const how = {
     unit: "Done when you can say 80% of its words from English. More stars as they stick.",
@@ -95,12 +89,12 @@ function stepSheet(L, steps, states, i, current) {
   openSheet(`<div class="sheet-body">
       <p class="eyebrow">${TYPE[s.type].label} · step ${i + 1} of ${steps.length}</p>
       <p class="s-it">${esc(s.title)}</p><p class="s-en">${esc(s.en)}</p>
-      <p class="muted small">${how} About ${mins(s.min)}.${st.note ? ` <b>${esc(st.note)}</b>.` : ""}${st.done ? ` ${stars(st.stars)}` : ""}</p>
-      ${locked ? `<p class="muted small">This step opens when you finish the ones before it.</p>` : ""}
+      <p class="muted small">${how}${st.note ? ` <b>${esc(st.note)}</b>.` : ""}${st.done ? ` ${stars(st.stars)}` : ""}</p>
+      ${!st.done && i > current ? `<p class="muted small">Your path suggests ${esc(steps[current].title)} first, but you can start here.</p>` : ""}
       <div class="btn-row">
         ${s.type === "unit" && !st.done ? `<a class="btn primary" href="#/session/unit/${s.ref}">Learn the words</a>` : ""}
-        <a class="btn ${s.type === "unit" && !st.done ? "" : "primary"}" href="${href}">${st.done ? "Open again" : locked ? "Have a look" : s.type === "checkpoint" || s.type === "test" ? "Start" : "Open"}</a>
+        <a class="btn ${s.type === "unit" && !st.done ? "" : "primary"}" href="${href}">${st.done ? "Open again" : s.type === "unit" ? "See the words" : "Start"}</a>
         ${s.type === "unit" && !st.done ? `<a class="btn quiet" href="#/quiz/to/${L}/${i}">Test out</a>` : ""}
-        ${st.done && ["unit", "grammar", "reading", "listening"].includes(s.type) ? `<a class="btn quiet" href="#/say/${{ unit: "unit", grammar: "grammar", reading: "read", listening: "listen" }[s.type]}/${s.ref}">Say it: 5 sentences</a>` : ""}
+        ${st.done && ["unit", "grammar", "reading", "listening"].includes(s.type) ? `<a class="btn speak" href="#/say/${{ unit: "unit", grammar: "grammar", reading: "read", listening: "listen" }[s.type]}/${s.ref}">Say it: 5 sentences</a>` : ""}
       </div></div>`);
 }

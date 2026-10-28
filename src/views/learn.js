@@ -79,12 +79,12 @@ export async function viewLearn(app, v, alive) {
       byLevel() ? S.pref.level : null);
   } else if (sec === "listening") {
     body.innerHTML = groupsHTML(data, l => byLevel() ? l.level : l.topic, k => byLevel() ? `${k} · ${LEVEL_NAMES[k]}` : TOPICS[k],
-      l => { const st = S.st["l:" + l.id]; return `<a class="row-link tall" href="#/listen/${l.id}"><span><span class="row-title it">${esc(l.title)}</span><span class="small">${esc(l.situation)}</span><span class="muted small">${byLevel() ? "" : l.level + " · "}${esc(l.genre)} · ${l.minutes} min</span></span><span class="row-meta">${st?.done ? `<span class="pill ok">${ICON.check} ${st.score}/${st.total}</span>` : ""}</span>${ICON.chev}</a>`; },
+      l => { const st = S.st["l:" + l.id]; return `<a class="row-link tall" href="#/listen/${l.id}"><span><span class="row-title it">${esc(l.title)}</span><span class="small">${esc(l.situation)}</span><span class="muted small">${byLevel() ? "" : l.level + " · "}${esc(l.genre)}</span></span><span class="row-meta">${st?.done ? `<span class="pill ok">${ICON.check} ${st.score}/${st.total}</span>` : ""}</span>${ICON.chev}</a>`; },
       list => { const done = list.filter(l => S.st["l:" + l.id]?.done).length; return `${list.length} exercises${done ? ` · ${done} done` : ""}`; },
       byLevel() ? S.pref.level : null);
   } else if (sec === "reading") {
     body.innerHTML = groupsHTML(data, r => byLevel() ? r.level : r.topic, k => byLevel() ? `${k} · ${LEVEL_NAMES[k]}` : TOPICS[k],
-      r => { const done = S.st["r:" + r.id]?.done; return `<a class="row-link tall" href="#/read/${r.id}"><span><span class="row-title it">${esc(r.title)}</span><span class="small">${esc(r.blurb)}</span><span class="muted small">${byLevel() ? "" : r.level + " · "}${esc(r.genre)} · ${r.minutes} min</span></span><span class="row-meta">${done ? `<span class="pill ok">${ICON.check} Read</span>` : ""}</span>${ICON.chev}</a>`; },
+      r => { const done = S.st["r:" + r.id]?.done; return `<a class="row-link tall" href="#/read/${r.id}"><span><span class="row-title it">${esc(r.title)}</span><span class="small">${esc(r.blurb)}</span><span class="muted small">${byLevel() ? "" : r.level + " · "}${esc(r.genre)}</span></span><span class="row-meta">${done ? `<span class="pill ok">${ICON.check} Read</span>` : ""}</span>${ICON.chev}</a>`; },
       list => { const done = list.filter(r => S.st["r:" + r.id]?.done).length; return `${list.length} texts${done ? ` · ${done} read` : ""}`; },
       byLevel() ? S.pref.level : null);
   } else {

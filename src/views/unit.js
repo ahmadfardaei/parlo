@@ -112,7 +112,7 @@ export function viewUnit(app, v) {
   } else if (v.tab === "phrases") {
     const ph = ids.filter(id => D.items[id].type === "p");
     const groups = [...new Set(ph.map(id => D.items[id].d.fn))];
-    body.innerHTML = `<section class="panel note-card say-cta"><p><b>Your turn.</b> Use these phrases in sentences about you, out loud.</p><a class="btn primary" href="#/say/phrases/${u.n}">Use them about you</a></section>` + groups.map(g => `<section class="item-group"><h2 class="group-label">${esc(g)}</h2><div class="panel flush cols">${ph.filter(id => D.items[id].d.fn === g).map(itemHTML).join("")}</div></section>`).join("");
+    body.innerHTML = `<section class="panel note-card say-cta"><p><b>Your turn.</b> Use these phrases in sentences about you, out loud.</p><a class="btn speak" href="#/say/phrases/${u.n}">Use them about you</a></section>` + groups.map(g => `<section class="item-group"><h2 class="group-label">${esc(g)}</h2><div class="panel flush cols">${ph.filter(id => D.items[id].d.fn === g).map(itemHTML).join("")}</div></section>`).join("");
   } else startQuiz(body, u);
   // Tapping an item opens its details in a sheet, so the list itself never jumps around.
   body.addEventListener("click", e => {

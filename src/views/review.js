@@ -54,7 +54,7 @@ export function viewDeck(app) {
 function printDeck(ids) {
   const el = document.createElement("div");
   el.id = "print-root";
-  el.innerHTML = `<p class="eyebrow">Parlo Italiano · Il mio mazzo · ${new Date().toLocaleDateString("it-IT")}</p><h1>Il mio mazzo</h1>
+  el.innerHTML = `<p class="eyebrow">i understand, but… · Il mio mazzo · ${new Date().toLocaleDateString("it-IT")}</p><h1>Il mio mazzo</h1>
     ${ids.map(id => { const c = cardData(id); return `<div class="print-item"><p class="it">${c.sentIt}</p><p class="muted">${esc(c.sentEn)}${c.target ? ` · <span class="it">${esc(c.target)}</span> = ${esc(c.meaning)}` : ""}</p></div>`; }).join("")}`;
   document.body.appendChild(el);
   document.body.classList.add("printing");
@@ -168,7 +168,7 @@ function drawEnd(app, v, top) {
       <p class="big-line it">${ses.done ? "Bravo!" : "Tutto fatto"}</p>
       ${ses.done ? `<div class="end-stats">${s.learned ? `<span><b>${s.learned}</b> ${s.learned === 1 ? "word" : "words"} you can now say</span>` : ""}${s.sents ? `<span><b>${s.sents}</b> saved ${s.sents === 1 ? "sentence" : "sentences"}</span>` : ""}${ses.done - s.learned - s.known - s.sents > 0 ? `<span><b>${ses.done - s.learned - s.known - s.sents}</b> reviewed</span>` : ""}${s.known ? `<span><b>${s.known}</b> already known</span>` : ""}</div>` : ""}
       <p class="muted">${ses.done ? "" : v.src === "deck" ? "Your deck has nothing to practise yet. " : "Nothing to review right now. "}${next ? `Next review in ${fmtIn(next - Date.now())}.` : ""}</p></div>
-    <div class="card-actions">${keep ? `<a class="btn primary large wide" href="${esc(keep.href)}">${esc(keep.label)}</a><a class="btn wide" href="${exitHref(v)}">Done</a>` : `<a class="btn primary large wide" href="${exitHref(v)}">Done</a>`}</div></div>`;
+    <div class="card-actions">${keep ? `<a class="btn ${keep.href.startsWith("#/say") ? "speak" : "primary"} large wide" href="${esc(keep.href)}">${esc(keep.label)}</a><a class="btn wide" href="${exitHref(v)}">Done</a>` : `<a class="btn primary large wide" href="${exitHref(v)}">Done</a>`}</div></div>`;
   wire(app, v);
 }
 function wire(app, v) {
