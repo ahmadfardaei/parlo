@@ -3,7 +3,7 @@
 export const MEDIA_BASE = "https://ahmadfardaei.github.io/parlo-media";
 export const pdfUrl = path => `${MEDIA_BASE}/pdf/${path}.pdf`;
 // Switched on once the clips have been generated and published.
-export const AUDIO_READY = false;
+export const AUDIO_READY = true;
 
 // The text that is actually spoken: drop quote marks and dashes that make voices pause oddly.
 export const spoken = t => String(t).replace(/\/[aie]+(?![\p{L}])/gu, "").replace(/[«»“”"]/g, "").replace(/\s*[—–]\s*/g, ", ").replace(/…/g, ".").replace(/\s+/g, " ").trim();
