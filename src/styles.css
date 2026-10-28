@@ -182,6 +182,7 @@ body.focus main.wrap { padding-top: calc(12px + env(safe-area-inset-top, 0px)); 
 .list-tools { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between; margin-bottom: 14px; }
 .list-tools .search { flex: 1 1 220px; }
 .list-tools p { margin: 0; }
+.list-tools .pdf-link { margin-left: auto; }
 details.group { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); margin-bottom: 12px; box-shadow: var(--shadow); overflow: hidden; }
 details.group > summary { list-style: none; cursor: pointer; display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 16px 18px; }
 details.group > summary::-webkit-details-marker { display: none; }

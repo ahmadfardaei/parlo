@@ -3,7 +3,6 @@ import { ensure } from "../data.js";
 import { PRON, TENSES } from "./unit.js";
 import { GTOPICS } from "./learn.js";
 import { sentHTML, starHTML } from "./texts.js";
-import { pdfUrl } from "../voice.js";
 
 const ACCENTS = ["à", "è", "é", "ì", "ò", "ù"];
 const score = id => S.st["g:" + id] || null;
@@ -46,7 +45,7 @@ export async function viewGrammar(app, v, alive) {
       <p><span class="bad-text" aria-label="Wrong">✗</span> <s class="it">${esc(m.wrong)}</s></p><p><span class="ok-text" aria-label="Right">✓</span> <span class="it strong">${esc(m.right)}</span></p><p class="muted small">${rich(m.why)}</p></div>`).join("")}</div></section>
     <section class="panel g-end"><h2>Your turn</h2>${cta}</section>
     </div>
-    <aside class="l-aside"><div class="l-side"><section class="panel">${sc && sc.best != null ? `<p class="muted small">Your best: ${sc.best} of ${sc.total}</p>` : ""}${cta}<div class="pdf-row"><a class="btn quiet small pdf-link" href="${pdfUrl(`grammar/${g.id}`)}" target="_blank" rel="noopener">${ICON.download}<span>Lesson as PDF</span></a></div></section>
+    <aside class="l-aside"><div class="l-side"><section class="panel">${sc && sc.best != null ? `<p class="muted small">Your best: ${sc.best} of ${sc.total}</p>` : ""}${cta}</section>
       ${g.signals ? `<section class="panel"><h2>Clues to look for</h2><div class="chips">${g.signals.map(s => `<span class="chip it">${esc(s)}</span>`).join("")}</div></section>` : ""}</div></aside></div>
     <nav class="pager">${sorted[idx - 1] ? `<a href="#/grammar/${sorted[idx - 1].id}">${ICON.back} ${esc(sorted[idx - 1].title)}</a>` : "<span></span>"}${sorted[idx + 1] ? `<a href="#/grammar/${sorted[idx + 1].id}">${esc(sorted[idx + 1].title)} ${ICON.chev}</a>` : ""}</nav>`;
 }

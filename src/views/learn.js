@@ -1,5 +1,6 @@
-import { S, D, esc, ICON, LEVELS, LEVEL_NAMES, TOPICS, counts, pct, barHTML, savePref, full, sayOf, statusOf, statusLabel } from "../core.js";
+import { S, D, esc, ICON, LEVELS, LEVEL_NAMES, TOPICS, counts, pct, barHTML, savePref, full, sayOf, statusOf, statusLabel, openSheet } from "../core.js";
 import { ensure } from "../data.js";
+import { pdfUrl } from "../voice.js";
 import { SECTIONS } from "./home.js";
 
 export const GTOPICS = { nouns: "Nouns & articles", adjectives: "Adjectives & describing", prepositions: "Prepositions", pronouns: "Pronouns", verbtypes: "Kinds of verbs", tenses: "Verb tenses", sentences: "Building sentences", functions: "Using Italian well" };
@@ -23,11 +24,16 @@ export async function viewLearn(app, v, alive) {
     <div class="list-tools">
       ${modeless ? `<p class="muted small">${SECTIONS.find(s => s.key === sec).en}. Each task has examples for every level.</p>` : `<div class="seg small" role="group" aria-label="Group by">
         <button data-groupby="level" aria-pressed="${byLevel()}">By level</button><button data-groupby="topic" aria-pressed="${!byLevel()}">By topic</button></div>`}
-      ${sec === "vocab" ? `<input class="input search" id="vsearch" type="search" placeholder="Search words, verbs, phrases" aria-label="Search the vocabulary"><a class="btn small" href="#/quiz/vocab">Quiz</a>` : ""}
-      ${sec === "grammar" ? `<a class="btn small" href="#/quiz/grammar">Quiz</a>` : ""}
+      ${modeless ? "" : `<button class="btn quiet small pdf-link" data-pdf>${ICON.download}<span>PDF</span></button>`}
+      ${sec === "vocab" ? `<input class="input search" id="vsearch" type="search" placeholder="Search words, verbs, phrases" aria-label="Search the vocabulary">` : ""}
+      ${sec === "vocab" || sec === "grammar" ? `<a class="btn small" href="#/quiz/${sec}">Quiz</a>` : ""}
     </div>
     <div id="learn-body"><p class="muted">Loading…</p></div>`;
   app.querySelectorAll("[data-groupby]").forEach(b => b.onclick = () => { savePref({ groupBy: b.dataset.groupby }); viewLearn(app, v, alive); });
+  app.querySelector("[data-pdf]")?.addEventListener("click", () => openSheet(`<div class="sheet-body">
+      <p class="eyebrow">Download as PDF</p><p class="s-it">${SECTIONS.find(s => s.key === sec).it}</p>
+      <p class="muted small">The whole section for one level, ready to print.</p>
+      <div class="pdf-row">${LEVELS.map(l => `<a class="btn ${l === S.pref.level ? "primary" : "quiet"} small pdf-link" href="${pdfUrl(`${sec}-${l}`)}" target="_blank" rel="noopener">${ICON.download}<span>${l}</span></a>`).join("")}</div></div>`));
   const body = app.querySelector("#learn-body");
 
   if (sec === "vocab") {

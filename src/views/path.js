@@ -61,7 +61,7 @@ export function viewPath(app, v) {
     </header>
     <section class="panel path-summary">
       <div class="level-prog"><span class="bar"><span class="k" style="width:${done / steps.length * 100}%"></span></span><span class="small">${done} of ${steps.length}</span></div>
-      <div class="pdf-row"><a class="btn quiet small pdf-link" href="${pdfUrl(`level/parlo-${L}`)}" target="_blank" rel="noopener">${ICON.download}<span>Everything for ${L} (PDF)</span></a><a class="btn quiet small pdf-link" href="${pdfUrl(`grammar/handbook-${L}`)}" target="_blank" rel="noopener">${ICON.download}<span>Grammar handbook</span></a></div>
+      <div class="pdf-row">${[["vocab", "Vocabulary"], ["grammar", "Grammar"], ["reading", "Reading"]].map(([k, t]) => `<a class="btn quiet small pdf-link" href="${pdfUrl(`${k}-${L}`)}" target="_blank" rel="noopener">${ICON.download}<span>${t} PDF</span></a>`).join("")}</div>
       <p class="muted small">At <select class="pace" aria-label="Minutes per day">${[10, 20, 30, 45, 60].map(m => `<option value="${m}" ${m === (S.pref.pace || 20) ? "selected" : ""}>${m} min</option>`).join("")}</select> a day, this level takes about <b>${paceText(L)}</b>.</p>
     </section>
     <ol class="path">${steps.map((s, i) => {

@@ -7,7 +7,7 @@ import { chromium } from "playwright-core";
 const D = f => JSON.parse(fs.readFileSync(new URL(`../../src/data/${f}.json`, import.meta.url)));
 const course = D("course"), grammar = D("grammar"), reading = D("reading");
 const OUT = `${os.homedir()}/Desktop/parlo-media/pdf`;
-for (const d of ["vocab", "grammar", "reading", "level"]) fs.mkdirSync(`${OUT}/${d}`, { recursive: true });
+fs.mkdirSync(OUT, { recursive: true });
 const LV = ["A1", "A2", "B1", "B2"];
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const rich = s => esc(s).replace(/&lt;(\/?)(b|i)&gt;/g, "<$1$2>");
@@ -117,17 +117,14 @@ if (process.env.SAMPLE) {
   await pdf(`${OUT}/sample-reading.pdf`, "sample", readingHTML(reading.find(r => r.id === "r-a1-07")));
   await browser.close(); process.exit(0);
 }
-for (const u of course.units) { await pdf(`${OUT}/vocab/u${String(u.n).padStart(2, "0")}.pdf`, `Unità ${u.n} · ${u.title}`, unitHTML(u)); n++; }
-for (const g of grammar) { await pdf(`${OUT}/grammar/${g.id}.pdf`, g.title, lessonHTML(g)); n++; }
-for (const r of reading) { await pdf(`${OUT}/reading/${r.id}.pdf`, r.title, readingHTML(r)); n++; }
+// One PDF per section and level: vocab-A1, grammar-A1, reading-A1, …
+const book = (items, html) => items.map((x, i) => (i ? `<div class="break"></div>` : "") + html(x)).join("");
 for (const L of LV) {
   const units = course.units.filter(u => u.level === L), gs = grammar.filter(g => g.level === L), rs = reading.filter(r => r.level === L);
-  await pdf(`${OUT}/grammar/handbook-${L}.pdf`, `Grammatica ${L}`, cover(`Grammatica ${L}`, `${gs.length} lessons with exercises and answers`) + gs.map((g, i) => (i ? `<div class="break"></div>` : "") + lessonHTML(g)).join(""));
-  await pdf(`${OUT}/level/parlo-${L}.pdf`, `Parlo ${L}`, cover(`Parlo ${L}`, `${units.length} units · ${gs.length} grammar lessons · ${rs.length} texts`)
-    + units.map((u, i) => (i ? `<div class="break"></div>` : "") + unitHTML(u)).join("")
-    + gs.map(g => `<div class="break"></div>` + lessonHTML(g)).join("")
-    + rs.map(r => `<div class="break"></div>` + readingHTML(r)).join(""));
-  n += 2;
+  await pdf(`${OUT}/vocab-${L}.pdf`, `Vocabolario ${L}`, cover(`Vocabolario ${L}`, `${units.length} units`) + book(units, unitHTML));
+  await pdf(`${OUT}/grammar-${L}.pdf`, `Grammatica ${L}`, cover(`Grammatica ${L}`, `${gs.length} lessons with exercises and answers`) + book(gs, lessonHTML));
+  await pdf(`${OUT}/reading-${L}.pdf`, `Lettura ${L}`, cover(`Lettura ${L}`, `${rs.length} texts with translations and answers`) + book(rs, readingHTML));
+  n += 3;
 }
 await browser.close();
 console.log(`${n} PDFs written to ${OUT}`);
