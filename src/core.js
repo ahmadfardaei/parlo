@@ -58,7 +58,7 @@ function deviceSpeak(text, onEnd, scale = 1) {
   if (!("speechSynthesis" in window)) { onEnd && onEnd(); return; }
   try {
     const u = new SpeechSynthesisUtterance(String(text).replace(/[…—«»“”]/g, " ").replace(/\/[aie]+\b/g, ""));
-    u.lang = "it-IT"; u.rate = (S.pref.rate || 0.92) * scale;
+    u.lang = "it-IT"; u.rate = 0.92 * scale;
     const v = speechSynthesis.getVoices().find(v => /^it/i.test(v.lang)); if (v) u.voice = v;
     if (onEnd) { u.onend = onEnd; u.onerror = onEnd; }
     speechSynthesis.speak(u);
@@ -68,7 +68,7 @@ export function speak(text, onEnd, voice = "f", scale = 1) {
   if (!text) { onEnd && onEnd(); return; }
   if (!AUDIO_READY) { deviceSpeak(text, onEnd, scale); return; }
   const a = new Audio(clipUrl(text, voice));
-  a.playbackRate = (S.pref.rate || 0.92) / 0.92 * scale;
+  a.playbackRate = scale;
   let settled = false;
   const finish = () => { if (settled) return; settled = true; if (current === a) current = null; onEnd && onEnd(); };
   const fallback = () => { if (settled) return; if (current === a) current = null; deviceSpeak(text, () => { settled = true; onEnd && onEnd(); }, scale); };
@@ -146,7 +146,7 @@ document.addEventListener("keydown", e => { if (e.key === "Escape" && $("#sheet"
 export const S = {
   user: null, profile: null,
   st: {},                              // id -> entry
-  pref: Object.assign({ revDir: "en", quizMode: "en", newN: 10, level: "A1", groupBy: "level", size: 19, rate: 0.92 }, lsGet("parlo.pref", {})),
+  pref: Object.assign({ newN: 10, level: "A1", groupBy: "level", size: 19 }, lsGet("parlo.pref", {})),
   view: { name: "home" }
 };
 
@@ -186,8 +186,9 @@ export function savePref(patch) {
   Object.assign(S.pref, patch); lsSet("parlo.pref", S.pref);
   if (S.user && supabase && ("dir" in patch || "newN" in patch)) supabase.from("profiles").update({ direction: S.pref.dir, new_per_session: S.pref.newN, updated_at: new Date().toISOString() }).eq("id", S.user.id).then(() => {});
 }
-export const IV = { "10m": 6e5, "1d": 864e5, "3d": 2592e5, "7d": 6048e5 };
-export const IV_LABEL = { "10m": "10 min", "1d": "1 day", "3d": "3 days", "7d": "7 days" };
+export const IV = { "10m": 6e5, "1d": 864e5, "3d": 2592e5, "7d": 6048e5, "14d": 12096e5, "30d": 2592e6 };
+// "Got it": the gap grows each time you recall it.
+const NEXT_IV = { "": "1d", "10m": "1d", "1d": "3d", "3d": "7d", "7d": "14d", "14d": "30d", "30d": "30d" };
 export function statusOf(id) {
   const e = S.st[id];
   if (!e) return "new";
@@ -206,6 +207,7 @@ export function setEntry(id, patch, replace) {
 export function schedule(id, key) {
   if (key === "known") setEntry(id, { k: 1, d: 0, iv: "" });
   else if (key === "seen") setEntry(id, { k: 0, d: Date.now(), iv: "" });
+  else if (key === "got") { const iv = NEXT_IV[S.st[id]?.iv || ""] || "1d"; setEntry(id, { k: 0, d: Date.now() + IV[iv], iv }); }
   else if (key === "reset") setEntry(id, { k: 0, d: 0, iv: "" });
   else setEntry(id, { k: 0, d: Date.now() + IV[key], iv: key });
 }
@@ -250,12 +252,10 @@ export function refreshItem(id) {
   document.querySelectorAll(`[data-status="${sel}"]`).forEach(el => { el.className = "status " + statusOf(id); el.textContent = statusLabel(id); });
   document.querySelectorAll(`[data-sched-for="${sel}"]`).forEach(el => { el.outerHTML = schedHTML(id); });
 }
+// One toggle on word lists: mark a word as known (it leaves your reviews), or undo that.
 export function schedHTML(id) {
-  const e = S.st[id] || {};
-  return `<div class="sched" data-sched-for="${esc(id)}" role="group" aria-label="Review again in">
-    ${["10m", "1d", "3d", "7d"].map(k => `<button data-sched="${k}" data-id="${esc(id)}" class="${!e.k && e.iv === k && e.d ? "cur" : ""}">${IV_LABEL[k]}</button>`).join("")}
-    <button class="known ${e.k ? "cur" : ""}" data-sched="known" data-id="${esc(id)}">I know it</button>
-    ${e.k || e.d ? `<button class="reset" data-sched="reset" data-id="${esc(id)}">Reset</button>` : ""}</div>`;
+  const k = !!S.st[id]?.k;
+  return `<span data-sched-for="${esc(id)}"><button class="btn quiet small" data-sched="${k ? "reset" : "known"}" data-id="${esc(id)}" aria-pressed="${k}">${k ? "✓ Known" : "I know it"}</button></span>`;
 }
 
 /* ---------- Tiny event bus ---------- */
@@ -436,7 +436,6 @@ export function pickEx(text, alt) {
 /* ---------- Study time ---------- */
 // Time is counted in 15-second ticks, only while the app is visible and the learner has interacted in the last 90 s.
 // Each device writes its own record per day ("t:2026-10-26:abc123"), so devices never overwrite each other.
-export const ACT_CATS = { vocab: "Vocabolario", grammar: "Grammatica", reading: "Lettura", listening: "Ascolto", writing: "Scrittura", speaking: "Parlato", review: "Ripasso e mazzo" };
 const DEVICE = lsGet("parlo.device", null) || (() => { const d = Math.random().toString(36).slice(2, 8); lsSet("parlo.device", d); return d; })();
 let lastInput = Date.now(), lastTimeSync = 0;
 ["pointerdown", "keydown", "wheel", "touchstart", "input"].forEach(ev => addEventListener(ev, () => { lastInput = Date.now(); }, { passive: true, capture: true }));

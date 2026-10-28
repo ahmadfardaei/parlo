@@ -3,7 +3,7 @@
 //  use = a phrase to use in a sentence about yourself
 //  sh  = a line to hear and repeat (shadowing)
 // Sentences you couldn't say yet go to your deck, so they come back in reviews.
-import { S, D, esc, ICON, canSpeak, say, shuffle, setEntry, inDeck, deckIds, learned, saveSentence, sentenceId, pickEx, exVoice } from "../core.js";
+import { S, D, esc, ICON, canSpeak, say, shuffle, setEntry, inDeck, deckIds, learned, saveSentence, sentenceId, pickEx, exVoice, dayKey } from "../core.js";
 import { ensure } from "../data.js";
 import { cardData } from "./review.js";
 import { nextUnit } from "./home.js";
@@ -81,7 +81,7 @@ export async function viewSay(app, v, alive) {
   const next = () => { i++; shown = false; example = false; draw(); };
   const draw = () => {
     if (i >= items.length) {
-      setEntry("sp:say", { n: (S.st["sp:say"]?.n || 0) + said });
+      setEntry("sp:say", { n: (S.st["sp:say"]?.n || 0) + said, day: dayKey() });
       app.innerHTML = `${top()}<div class="card-stage"><div class="flash done-card"><p class="big-line it">Fatto!</p>
         <p class="muted">You said ${said} ${said === 1 ? "sentence" : "sentences"} out loud.${saved ? ` ${saved} ${saved === 1 ? "is" : "are"} now in your deck, to practise again.` : ""}</p></div>
         <div class="card-actions"><button class="btn primary large wide" data-more>Five more</button><a class="btn wide" href="${exit}">Done</a></div></div>`;

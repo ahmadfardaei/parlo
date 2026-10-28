@@ -1,10 +1,10 @@
-import { S, D, esc, rich, ICON, canSpeak, setEntry, shuffle, pick, say, lsGet, lsSet, remember, gf, judge } from "../core.js";
+import { S, D, esc, rich, ICON, setEntry, shuffle, pick, say, lsGet, lsSet, remember, gf } from "../core.js";
 import { ensure } from "../data.js";
 import { PRON, TENSES } from "./unit.js";
 import { GTOPICS } from "./learn.js";
 import { sentHTML, starHTML } from "./texts.js";
+import { answerHTML, wireAnswer, feedbackHTML } from "./check.js";
 
-const ACCENTS = ["à", "è", "é", "ì", "ò", "ù"];
 const score = id => S.st["g:" + id] || null;
 
 export async function viewGrammar(app, v, alive) {
@@ -51,7 +51,6 @@ export async function viewGrammar(app, v, alive) {
 }
 
 /* ---------- Exercises ---------- */
-export { judge };
 let drillLevel = lsGet("parlo.drillLevel", "A2");
 
 // What the learner got wrong, with the right answer.
@@ -79,7 +78,7 @@ function practice(app, g, mode, fresh) {
     order = resumed ? resumed.order : shuffle(g.ex.map((_, k) => k));
     items = order.map(k => g.ex[k]).map(x => ({ ...x, io: x.p === "io", hint: x.h || (x.v ? x.v + (x.p ? " · " + x.p : "") : "") }));
   }
-  let i = resumed?.i || 0, right = resumed?.right || 0, answered = false;
+  let i = resumed?.i || 0, right = resumed?.right || 0;
   const log = resumed?.log || [];
   const keep = () => { if (mode === "practice") lsSet(posKey(g.id), { order, i, right, log }); };
   const shell = inner => `<div class="focus-top"><a class="icon-btn" href="#/grammar/${g.id}" aria-label="Exit">${ICON.close}</a>
@@ -99,49 +98,19 @@ function practice(app, g, mode, fresh) {
       return;
     }
     const it = items[i];
-    answered = false;
     app.innerHTML = shell(`${resumed && i === resumed.i ? `<p class="hint-line center">Picking up where you left off. <button class="text-btn" data-restart>Start over</button></p>` : ""}<div class="panel quiz">
       <p class="q-prompt it">${esc(it.q).replace("___", '<span class="blank"></span>')}</p>
       ${it.hint ? `<p class="muted small">(${esc(it.hint)})</p>` : ""}
-      ${it.k === "mc" ? `<div class="opts">${it.o.map((o, j) => `<button class="opt it" data-o="${j}">${esc(o)}</button>`).join("")}</div>`
-        : `<form class="answer-form" autocomplete="off"><input class="input it answer" id="ans" autocapitalize="off" autocorrect="off" spellcheck="false" aria-label="Your answer" placeholder="Type your answer"><button class="btn primary" type="submit">Check</button></form>
-           <div class="accents" aria-label="Accented letters">${ACCENTS.map(a => `<button type="button" class="chip" data-acc="${a}">${a}</button>`).join("")}</div>`}
-      <div class="fb" aria-live="polite"></div></div>`);
-    const fb = app.querySelector(".fb");
-    const finish = (ok, note) => {
-      answered = true; log.push(ok); if (ok) right++;
-      fb.innerHTML = `<p class="${ok ? "ok-text" : "bad-text"}">${ok ? "Giusto!" : "Not quite."}${note ? ` <span class="warn-text">${note}</span>` : ""}</p>
-        ${!ok || note ? `<p>Answer: <span class="it strong">${esc(it.k === "mc" ? it.a : gf(it.a[0], it.io))}</span></p>` : ""}<p class="muted small">${rich(it.why)}</p>
-        <button class="btn primary" data-next>${i + 1 < items.length ? "Next" : "See score"}</button>`;
-      const nx = fb.querySelector("[data-next]"); nx.onclick = () => { i++; keep(); draw(); }; nx.focus();
-    };
+      ${answerHTML({ ...it, it: true })}<div class="fb" aria-live="polite"></div></div>`);
     app.querySelector("[data-restart]")?.addEventListener("click", () => practice(app, g, mode, true));
-    if (it.k === "mc") {
-      app.querySelectorAll("[data-o]").forEach(b => b.onclick = () => {
-        if (answered) return;
-        const ok = it.o[+b.dataset.o] === it.a;
-        app.querySelectorAll("[data-o]").forEach(x => { x.disabled = true; if (it.o[+x.dataset.o] === it.a) x.classList.add("right"); else if (x === b) x.classList.add("wrong"); });
-        finish(ok);
-      });
-    } else {
-      const inp = app.querySelector("#ans");
-      inp.focus({ preventScroll: true });
-      app.querySelector(".answer-form").onsubmit = e => {
-        e.preventDefault();
-        if (answered) { i++; keep(); draw(); return; }
-        const r = judge(inp.value, it.a);
-        if (r === "empty") { inp.focus(); return; }
-        const ok = r === "ok" || r === "accent";
-        inp.disabled = true; inp.classList.add(ok ? "right" : "wrong");
-        app.querySelectorAll(".answer-form button, [data-acc]").forEach(b => b.disabled = true);
-        if (ok) say(it.a[0]);
-        finish(ok, r === "accent" ? "Watch the accent." : "");
-      };
-      app.querySelectorAll("[data-acc]").forEach(b => b.onclick = () => {
-        const a = inp.selectionStart ?? inp.value.length, z = inp.selectionEnd ?? a;
-        inp.value = inp.value.slice(0, a) + b.dataset.acc + inp.value.slice(z); inp.focus(); inp.setSelectionRange(a + 1, a + 1);
-      });
-    }
+    wireAnswer(app, it, (ok, note) => {
+      log.push(ok); if (ok) right++;
+      const answer = it.k === "mc" ? it.a : gf(it.a[0], it.io);
+      if (ok && it.k !== "mc") say(it.a[0]);
+      const fb = app.querySelector(".fb");
+      fb.innerHTML = feedbackHTML({ ok, note, answer, why: rich(it.why), last: i + 1 >= items.length });
+      const nx = fb.querySelector("[data-next]"); nx.onclick = () => { i++; keep(); draw(); }; nx.focus();
+    });
   };
   draw();
 }

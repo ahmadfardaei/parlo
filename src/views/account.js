@@ -1,4 +1,4 @@
-import { S, D, esc, ICON, LEVELS, LEVEL_NAMES, savePref, showToast, switchUser, displayName, sync, pull, push, resetAll, mergeEntries, applyChanged, markDirty, unitOf, lsDel, emit, go, syncText, activityByDay, ACT_CATS, fmtDur, dayKey, learned, deckIds } from "../core.js";
+import { S, D, esc, ICON, LEVELS, savePref, showToast, switchUser, displayName, sync, pull, push, resetAll, mergeEntries, applyChanged, markDirty, unitOf, lsDel, emit, go, syncText, activityByDay, fmtDur, dayKey, learned } from "../core.js";
 import { supabase, appUrl } from "../supabase.js";
 
 let mode = "signin", recovery = false, msg = null, armed = null;
@@ -47,14 +47,9 @@ export function viewAccount(app, v = S.view) {
       ${row("You understand", "Reading and listening.", seg("Level you understand", "und", LEVELS.map(l => [l, l]), S.pref.understand || S.pref.level))}
       ${row("You speak", "Your path follows this level.", seg("Level you speak", "level", LEVELS.map(l => [l, l]), S.pref.level))}
     </section>
-    <section class="panel"><h2>How you practise</h2>
-      ${row("Learning mode", "A guided path, or the library in any order.", seg("Learning mode", "lmode", [["path", "Path"], ["self", "Free study"]], S.pref.mode || "self"))}
-      ${row("Review cards", "English first trains speaking. Italian first trains understanding.", seg("Review direction", "revdir", [["en", "English → Italiano"], ["it", "Italiano → English"]], S.pref.revDir || "en"))}
-      ${row("New words per session", "", seg("New words per session", "newn", [0, 10, 20, 30].map(n => [n, n]), S.pref.newN))}
-    </section>
-    <section class="panel"><h2>Voice and forms</h2>
+    <section class="panel"><h2>Practice</h2>
+      ${row("New words per session", "How many new words a unit session brings.", seg("New words per session", "newn", [5, 10, 20].map(n => [n, n]), S.pref.newN))}
       ${row("Forms about you", "Which forms you see in sentences about yourself.", seg("Gendered forms about you", "gender", [["m", "stanco"], ["f", "stanca"], ["x", "stanco/a"]], S.pref.gender || "x", "it"))}
-      ${row("Speech speed", "", seg("Speech speed", "rate", [["0.75", "Slow"], ["0.92", "Normal"]], String(S.pref.rate || 0.92)))}
       ${row("Install the app", "", `<div>${installHTML()}</div>`)}
     </section>`;
   let account;
@@ -109,7 +104,7 @@ export function viewAccount(app, v = S.view) {
   const head = `<section class="panel profile-card">
       <span class="avatar" aria-hidden="true">${name ? esc(name.trim()[0].toUpperCase()) : ICON.user}</span>
       <div class="profile-main"><p class="row-title">${name ? esc(name) : "Guest"}</p>
-        <p class="muted small">Understands ${und} · speaks ${S.pref.level} · ${S.pref.mode === "path" ? "Path" : "Free study"}</p>
+        <p class="muted small">Understands ${und} · speaks ${S.pref.level}</p>
         <p class="sync ${syncCls}" data-sync><i></i><span>${syncTxt}</span></p></div>
       ${S.user || tab === "data" ? "" : `<a class="btn small primary" href="#/account/data">Sign in</a>`}
     </section>`;
@@ -117,42 +112,23 @@ export function viewAccount(app, v = S.view) {
   wire(app);
 }
 
-/* ---------- Statistics ---------- */
-let period = "7";
+/* ---------- Progress ---------- */
+// What you can say comes first; study time shows only as a streak and the activity calendar.
 function statsHTML() {
   const days = activityByDay();
   const today = dayKey(), sum = o => Object.values(o || {}).reduce((a, b) => a + b, 0);
-  const lastN = n => { const out = []; for (let i = 0; i < n; i++) { const d = new Date(); d.setDate(d.getDate() - i); out.push(dayKey(d)); } return out; };
   const total = Object.values(days).reduce((a, o) => a + sum(o), 0);
-  const week = lastN(7).reduce((a, d) => a + sum(days[d]), 0);
   let streak = 0; for (let i = sum(days[today]) ? 0 : 1; ; i++) { const d = new Date(); d.setDate(d.getDate() - i); if (sum(days[dayKey(d)]) >= 60) streak++; else break; }
-  const range = period === "all" ? Object.keys(days) : lastN(+period);
-  const by = {}; for (const d of range) for (const [k, s] of Object.entries(days[d] || {})) by[k] = (by[k] || 0) + s;
-  const rangeTotal = sum(by), max = Math.max(1, ...Object.values(by));
-  // What you can say: the measure that matters most, before study time.
   const canSay = D.order.filter(learned).length, said = S.st["sp:say"]?.n || 0;
-  const talks = Object.keys(S.st).filter(k => /^sp:s-/.test(k) && S.st[k]?.done).length, deck = deckIds().length;
-  if (!total && !canSay && !said) return `<div class="empty-state"><h2>Nothing to show yet</h2><p class="muted">What you can say, and your study time, appear here as you learn. Time is counted only while you're actively using Parlo.</p><a class="btn primary" href="#/">Start today's session</a></div>`;
-  return `<h2 class="section-h">What you can say</h2>
-    <div class="kpis">
+  const talks = Object.keys(S.st).filter(k => /^sp:s-/.test(k) && S.st[k]?.done).length;
+  if (!total && !canSay && !said) return `<div class="empty-state"><h2>Nothing to show yet</h2><p class="muted">What you can say appears here as you learn.</p><a class="btn primary" href="#/">Start today's session</a></div>`;
+  return `<div class="kpis">
       <div class="panel kpi"><span class="eyebrow">Words you can say</span><span class="kpi-num">${canSay}</span></div>
       <div class="panel kpi"><span class="eyebrow">Sentences said aloud</span><span class="kpi-num">${said}</span></div>
       <div class="panel kpi"><span class="eyebrow">Talks practised</span><span class="kpi-num">${talks}</span></div>
-      <div class="panel kpi"><span class="eyebrow">In your deck</span><span class="kpi-num">${deck}</span></div>
-    </div>
-    <h2 class="section-h">Study time</h2>
-    <div class="kpis">
-      <div class="panel kpi"><span class="eyebrow">Today</span><span class="kpi-num">${fmtDur(sum(days[today]))}</span></div>
-      <div class="panel kpi"><span class="eyebrow">Last 7 days</span><span class="kpi-num">${fmtDur(week)}</span></div>
       <div class="panel kpi"><span class="eyebrow">Streak</span><span class="kpi-num">${streak} ${streak === 1 ? "day" : "days"}</span></div>
-      <div class="panel kpi"><span class="eyebrow">All time</span><span class="kpi-num">${fmtDur(total)}</span></div>
     </div>
-    <section class="panel"><div class="panel-head"><h2>Where your time goes</h2>
-      <div class="seg small" role="group" aria-label="Period">${[["7", "7 days"], ["30", "30 days"], ["all", "All time"]].map(([k, l]) => `<button data-period="${k}" aria-pressed="${period === k}">${l}</button>`).join("")}</div></div>
-      ${rangeTotal ? `<div class="breakdown">${Object.keys(ACT_CATS).filter(k => by[k]).sort((a, b) => by[b] - by[a]).map(k => `<div class="bd-row"><span class="bd-label">${ACT_CATS[k]}</span><span class="bd-bar"><span style="width:${by[k] / max * 100}%"></span></span><span class="bd-val">${fmtDur(by[k])}</span></div>`).join("")}</div>
-        <p class="muted small">${fmtDur(rangeTotal)} in total.</p>` : `<p class="muted small">No study time in this period.</p>`}
-    </section>
-    <section class="panel"><h2>Activity</h2>${heatmapHTML(days)}</section>`;
+    <section class="panel"><h2>Activity</h2>${heatmapHTML(days)}<p class="muted small">${fmtDur(sum(days[today]))} today · ${fmtDur(total)} in all. Time counts only while you're active.</p></section>`;
 }
 function heatmapHTML(days) {
   // As many weeks as fit on screen (a full year on laptops), so today is always visible without scrolling.
@@ -181,15 +157,10 @@ function heatmapHTML(days) {
 
 function wire(app) {
   const $ = s => app.querySelector(s);
-  app.querySelectorAll("[data-period]").forEach(b => b.onclick = () => { period = b.dataset.period; viewAccount(app); });
   app.querySelectorAll("[data-level]").forEach(b => b.onclick = () => { const l = b.dataset.level, u = S.pref.understand || S.pref.level; savePref({ level: l, understand: LEVELS.indexOf(u) < LEVELS.indexOf(l) ? l : u }); viewAccount(app); });
   app.querySelectorAll("[data-und]").forEach(b => b.onclick = () => { const u = b.dataset.und; savePref({ understand: u, level: LEVELS.indexOf(u) < LEVELS.indexOf(S.pref.level) ? u : S.pref.level }); viewAccount(app); });
-  app.querySelectorAll("[data-revdir]").forEach(b => b.onclick = () => { savePref({ revDir: b.dataset.revdir }); viewAccount(app); });
   app.querySelectorAll("[data-newn]").forEach(b => b.onclick = () => { savePref({ newN: +b.dataset.newn }); viewAccount(app); });
   app.querySelectorAll("[data-gender]").forEach(b => b.onclick = () => { savePref({ gender: b.dataset.gender }); viewAccount(app); });
-  app.querySelectorAll("[data-lmode]").forEach(b => b.onclick = () => { savePref({ mode: b.dataset.lmode }); viewAccount(app); });
-  app.querySelectorAll("[data-rate]").forEach(b => b.onclick = () => { savePref({ rate: +b.dataset.rate }); viewAccount(app); });
-  app.querySelectorAll("[data-dir]").forEach(b => b.onclick = () => { savePref({ dir: b.dataset.dir }); viewAccount(app); });
   app.querySelectorAll("[data-mode]").forEach(b => b.onclick = () => { mode = b.dataset.mode; msg = null; viewAccount(app); });
   $("[data-install]")?.addEventListener("click", async () => { if (!deferred) return; deferred.prompt(); await deferred.userChoice.catch(() => {}); deferred = null; viewAccount(app); });
   $("[data-google]")?.addEventListener("click", async () => { const { error } = await supabase.auth.signInWithOAuth({ provider: "google", options: { redirectTo: appUrl() } }); if (error) setMsg(friendly(error)); });

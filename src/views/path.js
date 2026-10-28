@@ -1,10 +1,9 @@
 // Roadmap mode: a guided path per level. Steps unlock one after another; each shows 0–3 stars.
 import { S, D, esc, ICON, LEVELS, LEVEL_NAMES, statusOf, openSheet, savePref, remember, learned } from "../core.js";
 import ROADMAP from "../data/roadmap.json";
-import { pdfUrl } from "../voice.js";
 import { learnNav } from "./learn.js";
 
-const TYPE = {
+export const TYPE = {
   unit: { label: "Vocabolario", icon: "Aa" }, grammar: { label: "Grammatica", icon: "§" }, reading: { label: "Lettura", icon: "¶" }, listening: { label: "Ascolto", icon: "♪" },
   writing: { label: "Scrittura", icon: "✎" }, speaking: { label: "Parlato", icon: "◌" }, checkpoint: { label: "Checkpoint", icon: "◆" }, test: { label: "Test di livello", icon: "★" }
 };
@@ -18,9 +17,9 @@ export function stepState(L, s) {
   switch (s.type) {
     case "unit": {
       const ids = D.unitIds[s.ref] || [], n = Math.max(1, ids.length);
-      // Learned = recalled at least once. "Solid" = known, or scheduled 3+ days ahead.
+      // Learned = recalled at least once. "Solid" = known, or recalled at least twice.
       const got = ids.filter(learned).length;
-      const solid = ids.filter(id => statusOf(id) === "known" || ["3d", "7d"].includes(S.st[id]?.iv)).length;
+      const solid = ids.filter(id => statusOf(id) === "known" || ["3d", "7d", "14d", "30d"].includes(S.st[id]?.iv)).length;
       const done = got / n >= 0.8;
       return { done, stars: done ? 1 + (solid / n >= 0.5) + (solid / n >= 0.8) : 0, note: `${got} of ${ids.length} learned` };
     }
@@ -56,16 +55,14 @@ export function viewPath(app, v) {
   const { steps, states, done, current } = pathProgress(L);
   const [lo, hi] = ROADMAP[L].hours;
   remember("path", `Percorso ${L}`, `#/path/${L}`, `${done} of ${steps.length} steps`);
-  // In Path mode the path lives in Impara, as its first tab.
-  const inLearn = S.pref.mode === "path";
-  app.innerHTML = `${inLearn ? learnNav("path") : ""}<header class="${inLearn ? "path-head sub-head" : "page-head path-head"}">
+  // The path lives in Impara, as its first tab.
+  app.innerHTML = `${learnNav("path")}<header class="path-head sub-head">
       <div class="seg small" role="group" aria-label="Level">${LEVELS.map(l => `<a href="#/path/${l}" ${l === L ? 'aria-current="page"' : ""}>${l}</a>`).join("")}</div>
-      ${inLearn ? `<h2 class="path-title">Percorso ${L}</h2>` : `<h1>Percorso ${L}</h1>`}
+      <h2 class="path-title">Percorso ${L}</h2>
       <p class="muted">${LEVEL_NAMES[L]} · ${steps.length} steps · ${lo}–${hi} hours of study</p>
     </header>
     <section class="panel path-summary">
       <div class="level-prog"><span class="bar"><span class="k" style="width:${done / steps.length * 100}%"></span></span><span class="small">${done} of ${steps.length}</span></div>
-      <div class="pdf-row"><span class="pdf-lbl small">${ICON.download} PDF</span>${[["vocab", "Vocabolario"], ["grammar", "Grammatica"], ["reading", "Lettura"]].map(([k, t]) => `<a class="btn quiet small pdf-link" href="${pdfUrl(`${k}-${L}`)}" target="_blank" rel="noopener">${t}</a>`).join("")}</div>
       <p class="muted small">At <select class="pace" aria-label="Minutes per day">${[10, 20, 30, 45, 60].map(m => `<option value="${m}" ${m === (S.pref.pace || 20) ? "selected" : ""}>${m} min</option>`).join("")}</select> a day, this level takes about <b>${paceText(L)}</b>.</p>
     </section>
     <ol class="path">${steps.map((s, i) => {

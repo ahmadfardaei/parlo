@@ -1,4 +1,4 @@
-import { S, D, esc, ICON, LEVELS, LEVEL_NAMES, TOPICS, counts, pct, barHTML, savePref, full, sayOf, statusOf, statusLabel, openSheet } from "../core.js";
+import { S, D, esc, ICON, LEVELS, LEVEL_NAMES, TOPICS, counts, pct, savePref, sayOf, statusOf, statusLabel, openSheet } from "../core.js";
 import { ensure } from "../data.js";
 import { pdfUrl } from "../voice.js";
 import { SECTIONS } from "./home.js";
@@ -15,9 +15,9 @@ function groupsHTML(items, keyOf, labelOf, rowOf, summaryOf, openKey) {
   }).join("");
 }
 const byLevel = () => S.pref.groupBy !== "topic";
-// Impara's header and section tabs. In Path mode the path itself is the first tab.
+// Impara's header and section tabs: your path first, then the library.
 export function learnNav(active) {
-  const tabs = [...(S.pref.mode === "path" ? [{ key: "path", it: "Percorso", href: `#/path/${S.pref.level}` }] : []), ...SECTIONS.map(s => ({ ...s, href: `#/learn/${s.key}` }))];
+  const tabs = [{ key: "path", it: "Percorso", href: `#/path/${S.pref.level}` }, ...SECTIONS.map(s => ({ ...s, href: `#/learn/${s.key}` }))];
   return `<header class="page-head"><h1>Impara</h1></header>
     <nav class="seg tabs-seg" aria-label="Sections">${tabs.map(s => `<a href="${s.href}" ${s.key === active ? 'aria-current="page"' : ""}>${s.it}</a>`).join("")}</nav>`;
 }
@@ -27,7 +27,7 @@ export async function viewLearn(app, v, alive) {
   const modeless = sec === "writing" || sec === "speaking";
   // One toolbar for every section: the filter on the left, actions (Quiz, then PDF) on the right, search on its own row.
   const actions = [
-    sec === "vocab" || sec === "grammar" ? `<a class="btn quiet small" href="#/quiz/${sec}">Quiz</a>` : "",
+    sec === "vocab" || sec === "grammar" ? `<a class="btn quiet small" href="#/quiz">Quiz me</a>` : "",
     ["vocab", "grammar", "reading"].includes(sec) ? `<button class="btn quiet small pdf-link" data-pdf>${ICON.download}<span>PDF</span></button>` : ""
   ].join("");
   app.innerHTML = `${learnNav(sec)}

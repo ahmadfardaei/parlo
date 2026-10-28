@@ -1,4 +1,4 @@
-import { S, esc, ICON, setEntry, remember, TOPICS, on, showToast, gq, LEVELS } from "../core.js";
+import { S, esc, ICON, setEntry, remember, TOPICS, on, showToast, gq } from "../core.js";
 import { ensure } from "../data.js";
 import { plainLines, sentHTML, starHTML } from "./texts.js";
 import { readerTools, wireReader } from "./reading.js";
@@ -7,8 +7,8 @@ import { modelsHTML, modelVoice } from "./writing.js";
 let cleanup = [];
 on("leave", () => { cleanup.forEach(f => { try { f(); } catch (e) {} }); cleanup = []; });
 const mmss = s => `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`;
-// Talk time per level: short at the start, longer as you grow. The first option is the default.
-const TALK = { A1: [1, 2, 3], A2: [2, 3, 5], B1: [3, 5, 10], B2: [5, 10] };
+// Talk time per level: short at the start, longer as you grow.
+const TALK = { A1: 2, A2: 3, B1: 5, B2: 7 };
 // Counts as practised after this much talking (or when the timer runs out).
 const ENOUGH = 60;
 
@@ -19,8 +19,7 @@ export async function viewSpeaking(app, v, alive) {
   if (!t) { location.hash = "#/learn/speaking"; return; }
   remember("speaking", t.title, `#/speak/${t.id}`, t.en);
   let level = S.pref.level, showModels = false;
-  const talk = TALK[S.pref.level] || TALK.A2;
-  let minutes = talk[0];
+  const minutes = TALK[S.pref.level] || TALK.A2;
   let rec = null, chunks = [], audioUrl = null, timer = null, left = 0, stream = null, talked = 0;
   // The task text names a length for B1–B2 talks; the timer below sets it for the learner's level instead.
   const task = t.task.replace(/\s*(Talk|Speak|Aim) for [^.]*minutes\.?/i, "");
@@ -49,7 +48,6 @@ export async function viewSpeaking(app, v, alive) {
       </div>
       <aside class="l-aside">
         <div class="l-side"><section class="panel speak-box"><h2>Practise out loud</h2>
-          <div class="seg small" role="group" aria-label="How long">${talk.map(m => `<button data-min="${m}" aria-pressed="${minutes === m}">${m} min</button>`).join("")}</div>
           <p class="timer" id="timer" aria-live="off">${mmss(left || minutes * 60)}</p>
           <button class="btn primary" data-start>${timer ? `${ICON.stop} Stop` : canRecord ? `${ICON.mic} Start and record` : `${ICON.play} Start timer`}</button>
           ${audioUrl ? `<p class="muted small">Listen back to yourself:</p><audio controls src="${audioUrl}"></audio>` : canRecord ? `<p class="muted small">Your recording stays on this device.</p>` : ""}
@@ -58,7 +56,6 @@ export async function viewSpeaking(app, v, alive) {
         <div class="l-side2"><details class="group" ${wide ? "open" : ""}><summary><span class="group-title">Useful phrases</span><span class="group-meta">${t.phrases.length}</span></summary>
           <div class="panel flush reader">${t.phrases.map(p => `<div class="gloss"><div class="gloss-main">${sentHTML(p, `#/speak/${t.id}`, t.title)}<span class="muted">${esc(p.en)}</span></div>${starHTML(p, `#/speak/${t.id}`, t.title)}</div>`).join("")}</div></details></div>
       </aside></div>`;
-    app.querySelectorAll("[data-min]").forEach(b => b.onclick = () => { if (timer) return; minutes = +b.dataset.min; left = 0; draw(); });
     app.querySelector("[data-start]").onclick = start;
     app.querySelector("[data-show-models]")?.addEventListener("click", () => { showModels = true; draw(); app.querySelector(".reader-tools")?.scrollIntoView({ block: "start", behavior: "smooth" }); });
     app.querySelectorAll("[data-model]").forEach(b => b.onclick = () => { level = b.dataset.model; draw(); });

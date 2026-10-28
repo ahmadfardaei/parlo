@@ -1,6 +1,7 @@
 import { starHTML } from "./texts.js";
+import { answerHTML, wireAnswer, feedbackHTML } from "./check.js";
 import { exVoice } from "../core.js";
-import { S, D, esc, rich, ICON, full, unitByN, counts, barHTML, statusOf, statusLabel, inDeck, schedHTML, canSpeak, TOPICS, remember, shuffle, pick, say, openSheet, gf, pickEx, judge, adjForms, schedule, learned } from "../core.js";
+import { S, D, esc, rich, ICON, full, unitByN, counts, barHTML, statusOf, statusLabel, inDeck, schedHTML, canSpeak, TOPICS, remember, shuffle, pick, say, openSheet, gf, pickEx, adjForms, schedule, learned } from "../core.js";
 
 export const PRON = ["io", "tu", "lui / lei", "noi", "voi", "loro"];
 export const TENSES = [
@@ -29,9 +30,9 @@ export function actionsHTML(id) {
   return `<div class="item-actions">
       ${canSpeak ? `<button class="btn quiet small" data-say-id="${esc(id)}">${ICON.speak}<span>Listen</span></button>` : ""}
       <button class="btn quiet small deck-btn" data-deck="${esc(id)}" aria-pressed="${inDeck(id)}">${ICON.star}<span class="lbl">${inDeck(id) ? "In deck" : "Save"}</span></button>
-      <button class="status ${statusOf(id)}" data-status="${esc(id)}" data-toggle-sched="${esc(id)}" aria-label="Review schedule">${statusLabel(id)}</button>
-    </div>
-    <div class="sched-wrap" hidden><p class="muted small">Review this again in…</p>${schedHTML(id)}</div>`;
+      <span class="status ${statusOf(id)}" data-status="${esc(id)}">${statusLabel(id)}</span>
+      ${schedHTML(id)}
+    </div>`;
 }
 function itemHTML(id) {
   const it = D.items[id], d = it.d;
@@ -128,17 +129,9 @@ document.addEventListener("click", e => {
   item.querySelectorAll("[data-tense]").forEach(b => b.setAttribute("aria-pressed", b === tb));
   item.querySelector(".conj-wrap").innerHTML = conjHTML(D.items[item.dataset.verb].d, tb.dataset.tense);
 });
-// Schedule picker toggle (shared by every item list).
-document.addEventListener("click", e => {
-  const b = e.target.closest("[data-toggle-sched]");
-  if (b) { const w = b.closest(".item-more, .card-actions, .deck-item")?.querySelector(".sched-wrap"); if (w) w.hidden = !w.hidden; return; }
-  const s = e.target.closest("[data-sched]");
-  if (s) { const w = s.closest(".sched-wrap"); if (w) setTimeout(() => { w.hidden = true; }, 250); }
-});
 
 /* ---------- Unit quiz ---------- */
 // Mostly from English: say (type) the word in Italian. Plus articles, verb forms and phrases.
-const ACCENTS = ["à", "è", "é", "ì", "ò", "ù"];
 function startQuiz(body, u, only) {
   const ids = D.unitIds[u.n];
   const wordIds = ids.filter(id => D.items[id].type === "w");
@@ -155,7 +148,7 @@ function startQuiz(body, u, only) {
     if (k === "p" && phrases.length > 3) { const p = fresh(phrases, x => x.it); return { kind: "How do you say it?", q: `“${esc(p.en)}”`, a: p.it, o: opts(p.it, phrases.map(x => x.it)), it: 1, opt: 1, why: `${esc(p.ex)} · ${esc(p.exEn)}` }; }
     const w = fresh(words, x => x.it);
     if (k === "m") { const sense = en => en.split(";")[0].trim(); const same = words.filter(x => x.c === w.c).map(x => sense(x.en)); return { kind: "What does it mean?", q: esc(full(w)), it: 1, a: sense(w.en), o: opts(sense(w.en), same.length > 3 ? same : words.map(x => sense(x.en))), why: `${esc(w.ex)} · ${esc(w.exEn)}` }; }
-    return { kind: "Say it in Italian", q: esc(w.en), k: "type", a: w.art ? [full(w), w.it] : [w.it], alt: adjForms(w), id: "w:" + w.it, why: `${esc(w.ex)} · ${esc(w.exEn)}` };
+    return { kind: "Say it in Italian", q: esc(w.en), k: "type", a: w.art ? [full(w), w.it] : [w.it], alt: adjForms(w), typo: true, id: "w:" + w.it, why: `${esc(w.ex)} · ${esc(w.exEn)}` };
   });
   let i = 0, score = 0;
   const missed = [];
@@ -172,41 +165,16 @@ function startQuiz(body, u, only) {
       body.querySelector("[data-q-retry]")?.addEventListener("click", () => startQuiz(body, u, shuffle(missed)));
       return;
     }
-    const q = quiz[i]; let answered = false, retried = false;
+    const q = quiz[i];
     body.innerHTML = `<div class="panel quiz"><div class="quiz-top"><span class="eyebrow">${esc(q.kind)}</span><span class="muted small">${i + 1} / ${quiz.length}</span></div>
-      <p class="q-prompt ${q.it && !q.opt ? "it" : ""}">${q.q}</p>
-      ${q.k === "type" ? `<form class="answer-form" autocomplete="off"><input class="input it answer" id="ans" autocapitalize="off" autocorrect="off" spellcheck="false" aria-label="Your answer" placeholder="Scrivi in italiano"><button class="btn primary" type="submit">Check</button></form>
-        <div class="accents" aria-label="Accented letters">${ACCENTS.map(a => `<button type="button" class="chip" data-acc="${a}">${a}</button>`).join("")}</div>`
-        : `<div class="opts">${q.o.map((o, j) => `<button class="opt ${q.it ? "it" : ""}" data-o="${j}">${esc(o)}</button>`).join("")}</div>`}
-      <div class="fb" aria-live="polite"></div></div>`;
-    const fb = body.querySelector(".fb");
-    const finish = (ok, note) => {
-      answered = true; if (ok) score++; else missed.push(q);
-      fb.innerHTML = `<p class="${ok ? "ok-text" : "bad-text"}">${ok ? "Giusto!" : "Not quite."}${note ? ` <span class="warn-text">${esc(note)}</span>` : ""}</p>
-        ${q.k === "type" && (!ok || note) ? `<p>Answer: <span class="it strong">${esc(answerOf(q))}</span></p>` : ""}<p class="muted small">${q.why}</p><button class="btn primary" data-q-next>${i + 1 < quiz.length ? "Next" : "See score"}</button>`;
+      <p class="q-prompt ${q.it && !q.opt ? "it" : ""}">${q.q}</p>${answerHTML(q)}<div class="fb" aria-live="polite"></div></div>`;
+    wireAnswer(body, q, (ok, note) => {
+      if (ok) score++; else missed.push(q);
+      const fb = body.querySelector(".fb");
+      fb.innerHTML = feedbackHTML({ ok, note, answer: answerOf(q), why: q.why, last: i + 1 >= quiz.length });
       if (q.it || q.k === "type") say(answerOf(q));
-      const nx = fb.querySelector("[data-q-next]"); nx.onclick = () => { i++; draw(); }; nx.focus();
-    };
-    body.querySelectorAll("[data-o]").forEach(b => b.onclick = () => {
-      if (answered) return; const ok = q.o[+b.dataset.o] === q.a;
-      body.querySelectorAll("[data-o]").forEach(x => { x.disabled = true; if (q.o[+x.dataset.o] === q.a) x.classList.add("right"); else if (x === b) x.classList.add("wrong"); });
-      finish(ok);
+      const nx = fb.querySelector("[data-next]"); nx.onclick = () => { i++; draw(); }; nx.focus();
     });
-    if (q.k === "type") {
-      const inp = body.querySelector("#ans"); inp.focus({ preventScroll: true });
-      body.querySelector(".answer-form").onsubmit = e => {
-        e.preventDefault(); if (answered) { i++; draw(); return; }
-        let r = judge(inp.value, q.a, !!q.id);
-        if (r === "empty") return inp.focus();
-        if (r === "no" && q.alt?.length && judge(inp.value, q.alt) === "ok") r = "alt";
-        if (r === "close" && !retried) { retried = true; fb.innerHTML = `<p class="warn-text">Almost: check the spelling and try again.</p>`; inp.focus(); return; }
-        const ok = ["ok", "accent", "alt"].includes(r);
-        inp.disabled = true; inp.classList.add(ok ? "right" : "wrong");
-        body.querySelectorAll(".answer-form button, [data-acc]").forEach(b => b.disabled = true);
-        finish(ok, r === "accent" ? "Watch the accent." : r === "alt" ? `Also right. The dictionary form is ${q.a[0]}.` : "");
-      };
-      body.querySelectorAll("[data-acc]").forEach(b => b.onclick = () => { const a = inp.selectionStart ?? inp.value.length; inp.value = inp.value.slice(0, a) + b.dataset.acc + inp.value.slice(inp.selectionEnd ?? a); inp.focus(); inp.setSelectionRange(a + 1, a + 1); });
-    }
   };
   draw();
 }

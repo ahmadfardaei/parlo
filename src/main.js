@@ -12,7 +12,7 @@ import { viewWriting } from "./views/writing.js";
 import { viewSpeaking } from "./views/speaking.js";
 import { viewDeck, viewSession } from "./views/review.js";
 import { viewAccount, onAuthEvent } from "./views/account.js";
-import { viewQuizHub, viewQuiz } from "./views/quiz.js";
+import { viewQuiz } from "./views/quiz.js";
 import { viewPath } from "./views/path.js";
 import { viewSay } from "./views/say.js";
 import { ensure } from "./data.js";
@@ -34,15 +34,15 @@ export function parseHash() {
     case "review": return { name: "home" }; // the review hub now lives on the home screen
     case "deck": return { name: "deck" };
     case "session": return { name: "session", src: p[1] || "due", u: p[2] ? +p[2] : undefined, focus: true };
-    case "quiz": return p[1] ? { name: "quiz", scope: p[1], a: p[2], b: p[3], focus: true } : { name: "quizhub" };
+    case "quiz": return { name: "quiz", scope: p[1] || "mix", a: p[2], b: p[3], focus: true };
     case "path": return { name: "path", level: p[1] };
     case "say": return { name: "say", src: p[1] || "daily", id: p[2], focus: true };
     case "account": return { name: "account", tab: ["stats", "settings", "data"].includes(p[1]) ? p[1] : "stats" };
     default: return { name: "home" };
   }
 }
-const TAB_OF = { home: "home", learn: "learn", unit: "learn", grammar: "learn", reading: "learn", listening: "learn", writing: "learn", speaking: "learn", review: "home", deck: "deck", session: "home", account: "account", quiz: "home", quizhub: "home", path: "learn", say: "home" };
-const VIEWS = { home: viewHome, learn: viewLearn, unit: viewUnit, grammar: viewGrammar, reading: viewReading, listening: viewListening, writing: viewWriting, speaking: viewSpeaking, deck: viewDeck, quiz: viewQuiz, quizhub: viewQuizHub, path: viewPath, say: viewSay, session: viewSession, account: viewAccount };
+const TAB_OF = { home: "home", learn: "learn", unit: "learn", grammar: "learn", reading: "learn", listening: "learn", writing: "learn", speaking: "learn", review: "home", deck: "deck", session: "home", account: "account", quiz: "home", path: "learn", say: "home" };
+const VIEWS = { home: viewHome, learn: viewLearn, unit: viewUnit, grammar: viewGrammar, reading: viewReading, listening: viewListening, writing: viewWriting, speaking: viewSpeaking, deck: viewDeck, quiz: viewQuiz, path: viewPath, say: viewSay, session: viewSession, account: viewAccount };
 let renderToken = 0, prevPath = "";
 export async function render() {
   if (!D.units.length) return;
@@ -79,8 +79,6 @@ on("rerender", () => render());
 
 /* ---------- Shell ---------- */
 function updateBadges() {
-  // In Path mode, Impara opens on the path.
-  const learnTab = $("[data-tab=learn]"); if (learnTab) learnTab.setAttribute("href", S.pref.mode === "path" ? "#/learn/path" : "#/learn/vocab");
   const due = D.units.length ? dueIds().length : 0;
   $$("[data-due-badge]").forEach(b => { b.textContent = due > 99 ? "99+" : due; b.hidden = !due; });
   if ("setAppBadge" in navigator) { try { due ? navigator.setAppBadge(due) : navigator.clearAppBadge(); } catch (e) {} }

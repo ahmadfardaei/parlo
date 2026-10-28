@@ -45,14 +45,14 @@ export async function viewWriting(app, v, alive) {
     save.flush();
     const showEn = !!S.pref.showEn;
     const text = S.st[id]?.text || "";
-    const [lo, hi] = TARGET[level];
+    // The length target follows your level; the model answers can be read at any level.
+    const [lo, hi] = TARGET[S.pref.level] || TARGET.A2;
     const wide = matchMedia("(min-width: 1024px)").matches;
     app.innerHTML = `<div class="layout">
       <div class="l-head"><a class="back-link" href="#/learn/writing">${ICON.back} Scrittura</a>
         <header class="page-head"><p class="eyebrow">${esc(w.format || "Writing")} · ${esc(TOPICS[w.topic] || "")}</p><h1 class="it">${esc(w.title)}</h1><p class="muted">${esc(w.en)}</p></header></div>
       <div class="l-main">
-        <section><div class="panel-head"><h2>Your text</h2>
-          <div class="seg small" role="group" aria-label="Your level">${LEVELS.map(l => `<button data-lvl="${l}" aria-pressed="${l === level}">${l}</button>`).join("")}</div></div>
+        <section><div class="panel-head"><h2>Your text</h2></div>
           <textarea class="input write-area it" id="draft" rows="12" placeholder="Scrivi qui…" aria-label="Your text">${esc(text)}</textarea>
           <p class="muted small" id="wc"></p>
           <div class="panel checks" id="checks" hidden></div></section>
@@ -70,7 +70,7 @@ export async function viewWriting(app, v, alive) {
     const ta = app.querySelector("#draft"), wc = app.querySelector("#wc");
     const checks = app.querySelector("#checks");
     const upd = () => {
-      const n = countWords(ta.value); wc.textContent = `${n} words · aim for ${lo}–${hi} at ${level}${n ? (n < lo ? " · keep going" : n > hi ? " · a bit long" : " · good length") : ""}. Saved automatically.`;
+      const n = countWords(ta.value); wc.textContent = `${n} words · aim for ${lo}–${hi} at ${S.pref.level}${n ? (n < lo ? " · keep going" : n > hi ? " · a bit long" : " · good length") : ""}. Saved automatically.`;
       const found = selfCheck(ta.value);
       checks.hidden = n < 15;
       checks.innerHTML = `<p class="eyebrow">Check before you compare</p>${found.length ? `<ul class="notes">${found.map(f => `<li>${f}</li>`).join("")}</ul>` : `<p class="muted small">No common slips found. Still check: accents (è, perché, più), adjective endings, and essere or avere in the past.</p>`}`;
@@ -78,7 +78,6 @@ export async function viewWriting(app, v, alive) {
     upd();
     ta.addEventListener("input", () => { upd(); pending = ta.value; save(); });
     ta.addEventListener("blur", () => save.flush());
-    app.querySelectorAll("[data-lvl]").forEach(b => b.onclick = () => { level = b.dataset.lvl; draw(); });
     app.querySelector("[data-show-models]")?.addEventListener("click", () => { showModels = true; draw(); app.querySelector(".reader-tools")?.scrollIntoView({ block: "start", behavior: "smooth" }); });
     app.querySelectorAll("[data-model]").forEach(b => b.onclick = () => { level = b.dataset.model; draw(); });
     if (showModels) wireReader(app, plainLines(w.models[level].body, () => modelVoice(w, level)), draw);

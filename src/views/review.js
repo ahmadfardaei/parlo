@@ -1,4 +1,4 @@
-import { S, D, esc, ICON, gf, pickEx, exVoice, inDeck, canSpeak, say, full, statusOf, statusLabel, setEntry, schedule, dueIds, deckIds, allReviewable, fmtIn, on, schedHTML, lsGet, learned, LEVELS, unitByN, showToast, sayOf, meaningOf } from "../core.js";
+import { S, D, esc, ICON, pickEx, exVoice, inDeck, canSpeak, say, full, statusOf, statusLabel, setEntry, schedule, dueIds, deckIds, allReviewable, fmtIn, on, lsGet, learned, LEVELS, unitByN, showToast, sayOf, meaningOf } from "../core.js";
 import { highlight } from "./unit.js";
 import { nextUnit } from "./home.js";
 
@@ -27,14 +27,14 @@ export function viewDeck(app) {
   const ids = deckIds();
   // Every word, verb and phrase you've started, newest first.
   const words = D.order.filter(id => statusOf(id) !== "new").sort((a, b) => (S.st[b].t || 0) - (S.st[a].t || 0));
-  if (deckFilter === "units") deckFilter = "all";
-  const shown = deckFilter === "words" ? [] : ids.filter(id => deckFilter === "all" || id.startsWith("s:"));
+  if (deckFilter !== "words") deckFilter = "all";
+  const shown = deckFilter === "words" ? [] : ids;
   const ready = dueIds(ids).length + ids.filter(id => statusOf(id) === "new").length;
-  const filters = [["all", `Saved · ${ids.length}`], ["texts", "From texts"], ["words", `Your words · ${words.length}`]];
+  const filters = [["all", `Saved · ${ids.length}`], ["words", `Your words · ${words.length}`]];
   app.innerHTML = `<header class="page-head"><h1>Mazzo</h1><p class="muted">Sentences you saved, and every word you've started learning. Tap ★ on any word, or tap a sentence in a text, to save it here.</p></header>
     ${ids.length ? `<section class="panel deck-head">
         <div><p class="big-line">${ids.length} saved</p><p class="muted small">${ready ? `${ready} ready to practise` : "Nothing due. You can still go through them."}</p></div>
-        <div class="btn-row"><a class="btn primary" href="#/session/deck">Practise my deck</a><a class="btn" href="#/quiz/deck">Quiz</a><button class="btn quiet" data-print-deck>${ICON.download}<span>Print / PDF</span></button></div></section>` : ""}
+        <div class="btn-row"><a class="btn primary" href="#/session/deck">Practise my deck</a><button class="btn quiet" data-print-deck>${ICON.download}<span>Print / PDF</span></button></div></section>` : ""}
     ${ids.length || words.length ? `<div class="list-tools"><div class="seg small" role="group" aria-label="Show">${filters.map(([k, l]) => `<button data-df="${k}" aria-pressed="${deckFilter === k}">${l}</button>`).join("")}</div></div>` : ""}
     ${deckFilter === "words" ? (words.length ? `<div class="link-list panel flush cols">${words.map(id => { const it = D.items[id]; return `<a class="row-link" href="#/unit/${it.u}/${it.type === "w" ? "words" : it.type === "v" ? "verbs" : "phrases"}"><span><span class="row-title it">${esc(sayOf(id))}</span><span class="muted small">${esc(meaningOf(id))}</span></span><span class="row-meta"><span class="status ${statusOf(id)}">${statusLabel(id)}</span></span>${ICON.chev}</a>`; }).join("")}</div>`
         : `<div class="empty-state"><h2>No words yet</h2><p class="muted">Words appear here once you start learning them.</p><a class="btn" href="#/">Start today's session</a></div>`)
@@ -42,9 +42,8 @@ export function viewDeck(app) {
         <p class="ex-it">${c.sentIt}</p><p class="ex-en">${esc(c.sentEn)}</p>
         <p class="muted small">${c.target ? `<span class="it">${esc(c.target)}</span> = ${esc(c.meaning)} · ` : ""}${c.fromHref ? `<a href="${esc(c.fromHref)}">${esc(c.from)}</a>` : esc(c.from)}</p>
         <div class="item-actions">${canSpeak ? `<button class="btn quiet small" data-say-text="${esc(c.say)}" data-voice="${c.sv || "f"}">${ICON.speak}<span>Listen</span></button>` : ""}
-          <button class="status ${statusOf(id)}" data-status="${esc(id)}" data-toggle-sched>${statusLabel(id)}</button>
-          <button class="btn quiet small" data-remove="${esc(id)}">Remove</button></div>
-        <div class="sched-wrap" hidden>${schedHTML(id)}</div></div>`; }).join("")}</div>`
+          <span class="status ${statusOf(id)}" data-status="${esc(id)}">${statusLabel(id)}</span>
+          <button class="btn quiet small" data-remove="${esc(id)}">Remove</button></div></div>`; }).join("")}</div>`
       : `<div class="empty-state"><h2>${ids.length ? "Nothing here" : "Nothing saved yet"}</h2><p class="muted">Save sentences while you read, or tap ★ Save on any word or phrase.</p><a class="btn" href="#/learn/reading">Find something to read</a></div>`}`;
   app.querySelectorAll("[data-df]").forEach(b => b.onclick = () => { deckFilter = b.dataset.df; viewDeck(app); });
   app.querySelectorAll("[data-remove]").forEach(b => b.onclick = () => { setEntry(b.dataset.remove, { s: 0 }); viewDeck(app); });
@@ -77,7 +76,8 @@ function build(v) {
     newPool = D.units.slice(startAt).flatMap(u => D.unitIds[u.n]);
   }
   const due = dueIds(pool);
-  const nNew = v.src === "due" ? S.pref.newN : Math.max(S.pref.newN, 10);
+  // New words come from your path (unit sessions); the daily review only brings back what's due, plus sentences you saved.
+  const nNew = v.src === "due" ? 0 : S.pref.newN || 10;
   let fresh = newPool.filter(id => statusOf(id) === "new").slice(0, nNew);
   // Sentences the learner saved themselves are introduced first in the daily session.
   if (v.src === "due") fresh = [...deckIds().filter(id => id.startsWith("s:") && statusOf(id) === "new").slice(0, 20), ...fresh];
@@ -119,7 +119,7 @@ function draw(app, v) {
     else { ses.flipped = true; ses.intro = true; setTimeout(() => { if (ses && ses.queue[0] === id) say(c.say, c.sv); }, 150); }
   }
   // Recall goes from English to Italian unless the learner chose otherwise.
-  const en = !ses.intro && (ses.check || S.pref.revDir !== "it");
+  const en = !ses.intro;
   const sentenceFirst = ses.deckMode || !c.target;
   const front = en
     ? `${c.meaning ? `<p class="card-target en">${esc(c.meaning)}</p>` : ""}<p class="card-sent en">${esc(c.sentEn)}</p>`
@@ -134,9 +134,9 @@ function draw(app, v) {
         <button class="btn primary large wide" data-rate="seen">Next</button><button class="btn rate-know" data-rate="known">I already know it</button></div>`
     : ses.check ? `<p class="muted small center">Did you know how to say it?</p><div class="rate two">
         <button class="btn" data-rate="seen">New to me</button><button class="btn primary" data-rate="3d">I knew it</button></div>`
-    : `<p class="muted small center">How well did you say it?</p><div class="rate">
-        <button class="btn rate-again" data-rate="10m">Again<small>10 min</small></button><button class="btn" data-rate="1d">Hard<small>1 day</small></button><button class="btn" data-rate="3d">Good<small>3 days</small></button><button class="btn" data-rate="7d">Easy<small>7 days</small></button>
-        <button class="btn rate-know" data-rate="known">I already know it</button></div>`;
+    : `<p class="muted small center">Did you say it?</p><div class="rate two">
+        <button class="btn rate-again" data-rate="10m">Not yet</button><button class="btn primary" data-rate="got">Got it</button>
+        <button class="btn rate-know wide" data-rate="known">I already know it</button></div>`;
   app.innerHTML = `${top}<div class="card-stage">
     <div class="flash" id="card" ${ses.flipped ? "" : 'role="button" tabindex="0" aria-label="Show the answer"'}>
       <p class="card-meta">${ses.intro || ses.check ? `<span class="pill new">New</span> ` : ""}${esc(c.kind)} · ${esc(c.from)}</p>
@@ -213,6 +213,6 @@ document.addEventListener("keydown", e => {
   const app = document.getElementById("app");
   if ((e.code === "Space" || e.key === "Enter") && !ses.flipped && !e.target.closest("a, .icon-btn")) { e.preventDefault(); flip(app, S.view); }
   else if (ses.flipped && ses.intro && e.key === "Enter") { e.preventDefault(); rate(app, S.view, "seen"); }
-  else if (ses.flipped && !ses.intro && !ses.check && /^[1-5]$/.test(e.key)) rate(app, S.view, ["10m", "1d", "3d", "7d", "known"][+e.key - 1]);
+  else if (ses.flipped && !ses.intro && !ses.check && /^[1-3]$/.test(e.key)) rate(app, S.view, ["10m", "got", "known"][+e.key - 1]);
   else if (e.key === "ArrowLeft" || e.key === "Backspace") { e.preventDefault(); undo(app, S.view); }
 });
