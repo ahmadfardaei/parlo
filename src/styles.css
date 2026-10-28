@@ -622,15 +622,14 @@ body.focus .toast { bottom: calc(16px + env(safe-area-inset-bottom, 0px)); }
 .transcript .reader-tools { margin: 12px 0; }
 @media (max-width: 1023px) { .layout .player-side { position: sticky; top: 8px; z-index: 5; margin-bottom: 8px; } .player { box-shadow: 0 4px 16px rgba(0,0,0,.08); } }
 @media (prefers-reduced-motion: reduce) { .player .bar .k { transition: none; } }
-/* Oggi: today's plan */
-.today { display: grid; gap: 12px; max-width: 720px; }
-.plan { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
-.plan a { display: flex; align-items: center; gap: 12px; padding: 10px 4px; border-radius: 10px; color: inherit; text-decoration: none; }
-.plan a > span:nth-child(2) { flex: 1; min-width: 0; display: grid; gap: 2px; }
-.plan a > svg { width: 18px; height: 18px; color: var(--muted); flex: none; }
-.plan-mark { width: 24px; height: 24px; flex: none; border-radius: 50%; border: 2px solid var(--line); display: grid; place-items: center; }
-.plan-mark svg { width: 14px; height: 14px; }
-.plan .next .plan-mark { border-color: var(--accent); }
-.plan .done .plan-mark { background: var(--accent); border-color: var(--accent); color: var(--accent-ink, #fff); }
-.plan .done .row-title { color: var(--muted); }
-.plan .row-title { font-size: 17px; font-weight: 600; }
+/* Oggi: the next thing, then the rest of today */
+.next-card { display: grid; gap: 8px; max-width: 640px; padding: 22px 20px; }
+.next-card .eyebrow, .next-card p { margin: 0; }
+.next-title { font-family: var(--read); font-size: 26px; font-weight: 600; line-height: 1.2; margin: 2px 0 0; }
+.next-card .btn { margin-top: 10px; }
+.then { list-style: none; margin: 8px 0 0; padding: 10px 0 0; border-top: 1px solid var(--line); display: grid; }
+.then a { display: flex; align-items: center; gap: 10px; min-height: 44px; color: inherit; text-decoration: none; }
+.then-t { flex: 1; min-width: 0; }
+.then svg { width: 16px; height: 16px; color: var(--accent); flex: none; }
+.then-dot { width: 8px; height: 8px; border-radius: 50%; border: 2px solid var(--line); flex: none; margin: 0 4px; }
+.then .done .then-t { color: var(--muted); text-decoration: line-through; }

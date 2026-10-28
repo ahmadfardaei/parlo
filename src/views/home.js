@@ -66,32 +66,35 @@ export function viewHome(app) {
     app.querySelector("[data-g-skip]").onclick = () => done(null);
     return;
   }
-  // Oggi: one card with today's plan (reviews, the next step, a short speaking round) and one button.
+  // Oggi: one thing to do next, big, with one button. The rest of today stays a quiet line below.
   const name = displayName().split(" ")[0];
-  const plan = todayPlan(), next = plan.find(x => !x.done);
+  const plan = todayPlan(), next = plan.find(x => !x.done), later = plan.filter(x => x !== next);
+  const doneN = plan.filter(x => x.done).length;
+  // Ask to sign in only once there's progress worth keeping.
+  const nudge = supabase && !S.user && !lsGet("parlo.hide.signin", false) && D.order.filter(learned).length >= 20;
   app.innerHTML = `
-    <header class="page-head">
-      <p class="eyebrow">${new Date().toLocaleDateString("it-IT", { weekday: "long", day: "numeric", month: "long" })}</p>
-      <h1>${greeting()}${name ? ", " + esc(name) : ""}</h1>
-    </header>
-    <section class="panel today" aria-label="Today">
-      <ol class="plan">${plan.map(x => `<li class="${x.done ? "done" : x === next ? "next" : ""}"><a href="${x.href}">
-        <span class="plan-mark" aria-hidden="true">${x.done ? ICON.check : ""}</span>
-        <span><span class="row-title ${x.it ? "it" : ""}">${esc(x.title)}</span><span class="muted small">${esc(x.sub)}</span></span>${ICON.chev}</a></li>`).join("")}</ol>
-      ${next ? `<a class="btn primary large wide" href="${next.href}">${esc(next.cta)}</a>` : `<p class="muted center">All done for today. A domani!</p>`}
+    <header class="page-head"><h1>${greeting()}${name ? ", " + esc(name) : ""}</h1></header>
+    <section class="panel next-card">
+      <p class="eyebrow">Next${plan.length > 1 ? ` · ${doneN} of ${plan.length} done today` : ""}</p>
+      <p class="next-title ${next.it ? "it" : ""}">${esc(next.title)}</p>
+      <p class="muted">${esc(next.sub)}</p>
+      <a class="btn primary large wide" href="${next.href}">${esc(next.cta)}</a>
+      ${later.length ? `<ul class="then">${later.map(x => `<li class="${x.done ? "done" : ""}"><a href="${x.href}">${x.done ? ICON.check : `<span class="then-dot" aria-hidden="true"></span>`}<span class="then-t ${x.it ? "it" : ""}">${esc(x.title)}</span><span class="muted small">${esc(x.time)}</span></a></li>`).join("")}</ul>` : ""}
     </section>
-    ${supabase && !S.user && !lsGet("parlo.hide.signin", false) ? `<p class="signin-line small muted"><a href="#/account/data">Sign in</a> to keep your progress on every device. <button class="text-btn quiet-link" data-hide-signin>Hide</button></p>` : ""}
+    ${nudge ? `<p class="signin-line small muted"><a href="#/account/data">Sign in</a> to keep your progress on every device. <button class="text-btn quiet-link" data-hide-signin>Hide</button></p>` : ""}
   `;
   app.querySelector("[data-hide-signin]")?.addEventListener("click", () => { lsSet("parlo.hide.signin", true); viewHome(app); });
 }
 
-// Today's plan, in order: reviews (when due), the next step on your path, and "Say it" once there's something to say.
+// Today's plan, in order: reviews (when due), a 3-minute "Say it" once there's something to say, then your path step.
 function todayPlan() {
   const plan = [], due = dueIds().length;
-  if (due) plan.push({ title: `Review ${due} ${due === 1 ? "card" : "cards"}`, sub: `About ${Math.max(1, Math.round(due / 4))} min. Say each one in Italian.`, href: "#/session/due", cta: "Start the review" });
-  const L = S.pref.level, { steps, states, done, current } = pathProgress(L), s = steps[current];
-  if (s) plan.push({ title: s.title, it: true, sub: `${TYPE[s.type]?.label || ""} · step ${current + 1} of ${steps.length}${states[current].note ? " · " + states[current].note : ""}`, href: s.type === "unit" && !states[current].done ? `#/session/unit/${s.ref}` : stepHref(L, s), cta: done || current ? "Continue the path" : "Start" });
-  else plan.push({ title: `Percorso ${L} complete`, sub: "Complimenti! Choose the next level in your profile.", href: `#/path/${L}`, cta: "See the path", done: true });
-  if (D.order.filter(learned).length + deckIds().length >= 5) plan.push({ title: "Say it out loud", sub: "5 sentences you've met, from English to Italian. 3 min.", href: "#/say/daily", cta: "Say it", done: S.st["sp:say"]?.day === dayKey() });
+  if (due) { const m = Math.max(1, Math.round(due / 4)); plan.push({ title: `Review ${due} ${due === 1 ? "card" : "cards"}`, sub: `About ${m} min. Say each one in Italian.`, time: `${m} min`, href: "#/session/due", cta: "Start the review" }); }
+  if (D.order.filter(learned).length + deckIds().length >= 5) plan.push({ title: "Say it out loud", sub: "5 sentences you've met, from English to Italian. About 3 min.", time: "3 min", href: "#/say/daily", cta: "Start speaking", done: S.st["sp:say"]?.day === dayKey() });
+  const L = S.pref.level, { steps, states, current } = pathProgress(L), s = steps[current];
+  if (s) {
+    const mins = s.min[1] < 90 ? `${s.min[0]}–${s.min[1]} min` : `${Math.round(s.min[0] / 60 * 2) / 2}–${Math.round(s.min[1] / 60 * 2) / 2} h`;
+    plan.push({ title: s.title, it: true, sub: `${TYPE[s.type]?.label || ""} · step ${current + 1} of ${steps.length} on your path${states[current].note ? " · " + states[current].note : ""}`, time: mins, href: s.type === "unit" && !states[current].done ? `#/session/unit/${s.ref}` : stepHref(L, s), cta: current ? "Continue the path" : "Start the path" });
+  } else plan.push({ title: `Percorso ${L} complete`, sub: "Complimenti! Choose the next level in your profile.", time: "", href: "#/account/settings", cta: "Choose the next level" });
   return plan;
 }
