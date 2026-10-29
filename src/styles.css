@@ -694,3 +694,7 @@ body.focus .toast { bottom: calc(16px + env(safe-area-inset-bottom, 0px)); }
 .btn.speak:hover { filter: brightness(1.05); }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .btn.speak { color: #1a1210; } }
 :root[data-theme="dark"] .btn.speak { color: #1a1210; }
+
+/* Feedback link: quiet, at the end of Profile and of a session. */
+.feedback-line { text-align: center; margin: 20px 0 8px; }
+.feedback-line a { color: var(--accent); font-weight: 600; }

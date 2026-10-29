@@ -52,6 +52,15 @@ export const ICON = {
   check: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>'
 };
 
+/* ---------- Feedback ---------- */
+// Feedback goes by email. The message starts with the page and level, so a report has its context.
+export const FEEDBACK_EMAIL = "ahmad.fardaei@gmail.com";
+export function feedbackHref() {
+  const ctx = `\n\n\n---\nPage: ${location.pathname}${location.hash}\nLevel: understands ${S.pref?.understand || S.pref?.level || "?"}, speaks ${S.pref?.level || "?"}\nDevice: ${navigator.userAgent}`;
+  return `mailto:${FEEDBACK_EMAIL}?subject=${encodeURIComponent("Feedback: i understand, but…")}&body=${encodeURIComponent("Write your feedback here." + ctx)}`;
+}
+export const feedbackHTML = () => `<p class="feedback-line small muted">Something to tell us? <a href="${esc(feedbackHref())}">Send feedback</a></p>`;
+
 /* ---------- Light and dark ---------- */
 // "system" follows the device. The choice is kept in the browser, and the start page uses the same key.
 const THEME_KEY = "iub.theme", BG = { light: "#f4f0e7", dark: "#151b18" };

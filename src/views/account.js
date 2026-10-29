@@ -1,4 +1,4 @@
-import { S, D, esc, ICON, LEVELS, getTheme, setTheme, savePref, showToast, switchUser, displayName, sync, pull, push, resetAll, mergeEntries, applyChanged, markDirty, unitOf, lsDel, emit, go, syncText, activityByDay, fmtDur, dayKey, learned } from "../core.js";
+import { S, D, esc, ICON, LEVELS, getTheme, setTheme, feedbackHTML, savePref, showToast, switchUser, displayName, sync, pull, push, resetAll, mergeEntries, applyChanged, markDirty, unitOf, lsDel, emit, go, syncText, activityByDay, fmtDur, dayKey, learned } from "../core.js";
 import { supabase, appUrl } from "../supabase.js";
 
 let mode = "signin", recovery = false, msg = null, armed = null;
@@ -111,7 +111,7 @@ export function viewAccount(app, v = S.view) {
         <p class="sync ${syncCls}" data-sync><i></i><span>${syncTxt}</span></p></div>
       ${S.user || tab === "data" ? "" : `<a class="btn small primary" href="#/account/data">Sign in</a>`}
     </section>`;
-  app.innerHTML = `<header class="page-head"><h1>Profilo</h1></header>${head}${tabs}${body}`;
+  app.innerHTML = `<header class="page-head"><h1>Profilo</h1></header>${head}${tabs}${body}${feedbackHTML()}`;
   wire(app);
 }
 
