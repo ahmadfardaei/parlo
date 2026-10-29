@@ -17,38 +17,45 @@ export async function viewGrammar(app, v, alive) {
   const sorted = all;
   const idx = sorted.indexOf(g);
   const sc = score(g.id);
-  const table = t => {
-    // rows: [left, right] pairs, or plain strings (one per person: io, tu, …); stem+end: endings in bold.
-    const rows = t.rows ? t.rows.map((r, i) => typeof r === "string" ? [(t.che ? "che " : "") + PRON[i], esc(gf(r, i === 0)), true] : r)
-      : t.end.map((e, i) => [(t.che ? "che " : "") + PRON[i], `${esc(t.stem)}<b>${esc(e)}</b>`, true]);
-    return `<div class="panel g-table"><p class="g-table-h">${esc(t.h)}</p><table class="conj"><tbody>${rows.map(r => `<tr><td>${r[2] ? r[0] : rich(r[0])}</td><td class="it">${r[2] ? r[1] : rich(r[1])}</td></tr>`).join("")}</tbody></table></div>`;
-  };
   const cta = `<div class="btn-row"><a class="btn primary" href="#/grammar/${g.id}/practice">Practise (${g.ex.length})</a>${g.tense ? `<a class="btn" href="#/grammar/${g.id}/drill">Verb drill</a>` : ""}</div>`;
-  app.innerHTML = `<div class="layout"><div class="l-head"><a class="back-link" href="#/learn/grammar">${ICON.back} Grammatica</a>
-    <header class="page-head"><p class="eyebrow">${g.level} · ${esc(GTOPICS[g.topic] || "")}</p><h1 class="it">${esc(g.title)}</h1><p class="muted">${esc(g.en)}. ${esc(g.summary)}</p></header></div>
+  app.innerHTML = `<div class="layout g-lesson"><div class="l-head"><a class="back-link" href="#/learn/grammar">${ICON.back} Grammatica</a>
+    <header class="page-head"><p class="eyebrow">${g.level} · ${esc(GTOPICS[g.topic] || "")}</p><h1 class="it">${esc(g.title)}</h1><p class="g-en">${esc(g.en)}</p></header>
+    <div class="panel g-idea"><p class="g-sum">${esc(g.summary)}</p><p>${rich(g.meaning)}</p>
+      <div class="g-top-cta">${sc && sc.best != null ? `<p class="muted small">Your best: ${sc.best} of ${sc.total}</p>` : ""}${cta}</div></div></div>
     <div class="l-main">
 
-    <section class="g-sec"><h2>The idea</h2><div class="panel prose"><p>${g.meaning}</p></div></section>
     <section class="g-sec"><h2>When to use it</h2><div class="panel flush">${g.uses.map(u => `<div class="use">
-      <p class="use-h">${esc(u.h)}</p><p class="small">${u.t}</p>
+      <p class="use-h">${esc(u.h)}</p><p class="use-t">${rich(u.t)}</p>
       <div class="ex-row"><p class="ex-it">${sentHTML({ it: u.ex[0], en: u.ex[1] }, `#/grammar/${g.id}`, g.title)}</p>${starHTML({ it: u.ex[0], en: u.ex[1] }, `#/grammar/${g.id}`, g.title)}</div><p class="ex-en">${esc(u.ex[1])}</p></div>`).join("")}</div>
-      <p class="muted small">Tap any example to hear it or save it to your deck.</p></section>
+      <p class="muted small">Tap an example to hear it or save it.</p>
+      ${g.signals ? `<div class="g-clues"><span class="muted small">Clues:</span>${g.signals.map(s => `<span class="chip it">${esc(s)}</span>`).join("")}</div>` : ""}</section>
     <section class="g-sec"><h2>How it works</h2>
-      <div class="panel prose"><p>${g.form.intro}</p></div>
-      ${g.form.tables ? `<div class="g-tables">${g.form.tables.map(table).join("")}</div>` : ""}
-      ${g.form.compare ? `<div class="panel flush scroll-x"><table class="g-compare"><thead><tr><th>${esc(g.form.compare[0][0])}</th><th>${esc(g.form.compare[0][1])}</th></tr></thead><tbody>${g.form.compare.slice(1).map(r => `<tr><td>${esc(r[0])}</td><td>${esc(r[1])}</td></tr>`).join("")}</tbody></table></div>` : ""}
+      ${g.form.intro ? `<p class="g-intro">${rich(g.form.intro)}</p>` : ""}
+      ${g.form.tables ? `<div class="g-tables">${g.form.tables.map(tableHTML).join("")}</div>` : ""}
+      ${g.form.compare ? `<div class="panel g-table wide">${rowsHTML(["en", "en"], g.form.compare.slice(1), g.form.compare[0])}</div>` : ""}
       ${g.form.notes ? `<ul class="notes">${g.form.notes.map(n => `<li>${rich(n)}</li>`).join("")}</ul>` : ""}
     </section>
     ${g.irregular ? `<details class="g-sec group"><summary><span class="group-title">${esc(g.irregularTitle || (g.id === "pp" ? "Irregular past participles" : "Irregular forms"))}</span><span class="group-meta">${g.irregular.length}</span></summary>
       <div class="panel flush">${g.irregular.map(([a, b]) => `<div class="irr"><span class="it">${rich(a)}</span><span>${rich(b)}</span></div>`).join("")}</div></details>` : ""}
     <section class="g-sec"><h2>Common mistakes</h2><div class="panel flush">${g.mistakes.map(m => `<div class="mistake">
       <p><span class="bad-text" aria-label="Wrong">✗</span> <s class="it">${esc(m.wrong)}</s></p><p><span class="ok-text" aria-label="Right">✓</span> <span class="it strong">${esc(m.right)}</span></p><p class="muted small">${rich(m.why)}</p></div>`).join("")}</div></section>
-    <section class="panel g-end"><h2>Your turn</h2>${cta}</section>
+    <section class="panel g-end"><h2>Your turn</h2><p class="muted small">${g.ex.length} short exercises. You can stop and come back.</p>${cta}</section>
     </div>
-    <aside class="l-aside"><div class="l-side"><section class="panel">${sc && sc.best != null ? `<p class="muted small">Your best: ${sc.best} of ${sc.total}</p>` : ""}${cta}</section>
-      ${g.signals ? `<section class="panel"><h2>Clues to look for</h2><div class="chips">${g.signals.map(s => `<span class="chip it">${esc(s)}</span>`).join("")}</div></section>` : ""}</div></aside></div>
+    <aside class="l-aside"><div class="l-side"><section class="panel">${sc && sc.best != null ? `<p class="muted small">Your best: ${sc.best} of ${sc.total}</p>` : ""}${cta}</section></div></aside></div>
     <nav class="pager">${sorted[idx - 1] ? `<a href="#/grammar/${sorted[idx - 1].id}">${ICON.back} ${esc(sorted[idx - 1].title)}</a>` : "<span></span>"}${sorted[idx + 1] ? `<a href="#/grammar/${sorted[idx + 1].id}">${esc(sorted[idx + 1].title)} ${ICON.chev}</a>` : ""}</nav>`;
 }
+
+// Tables. A person table (io, tu, …) is two short columns. Any other table has one language per column
+// (t.cols: "it" or "en"); its rows stack on a phone and line up as columns when there is room.
+function tableHTML(t) {
+  if (!t.rows || t.rows.every(r => typeof r === "string")) {
+    const rows = t.rows ? t.rows.map((r, i) => [(t.che ? "che " : "") + PRON[i], esc(gf(r, i === 0))]) : t.end.map((e, i) => [(t.che ? "che " : "") + PRON[i], `${esc(t.stem)}<b>${esc(e)}</b>`]);
+    return `<div class="panel g-table persons"><p class="g-table-h">${esc(t.h)}</p><table class="conj"><tbody>${rows.map(r => `<tr><td>${r[0]}</td><td class="it">${r[1]}</td></tr>`).join("")}</tbody></table></div>`;
+  }
+  const n = Math.max(...t.rows.map(r => r.length));
+  return `<div class="panel g-table wide"><p class="g-table-h">${esc(t.h)}</p>${rowsHTML(t.cols || ["it", "en", "it"].slice(0, n), t.rows)}</div>`;
+}
+const rowsHTML = (cols, rows, head) => `<div class="g-rows c${cols.length}">${head ? `<div class="g-row head">${head.map(c => `<span class="g-cell">${esc(c)}</span>`).join("")}</div>` : ""}${rows.map(r => `<div class="g-row">${r.map((c, j) => `<span class="g-cell ${cols[j] === "it" ? "it" : "en"}">${rich(c)}</span>`).join("")}</div>`).join("")}</div>`;
 
 /* ---------- Exercises ---------- */
 let drillLevel = lsGet("parlo.drillLevel", "A2");
@@ -92,7 +99,7 @@ function practice(app, g, mode, fresh) {
         <p>${right === items.length ? "Perfetto!" : right >= items.length * 0.75 ? "Molto bene!" : right >= items.length / 2 ? "Bene. Keep going." : "Read the lesson again, then try once more."}</p>
         ${mode === "drill" ? `<div class="seg small" role="group" aria-label="Verbs from">${[["A1", "A1 verbs"], ["A2", "A1–A2"], ["B1", "A1–B1"], ["ALL", "All"]].map(([k, l]) => `<button data-dl="${k}" aria-pressed="${drillLevel === k}">${l}</button>`).join("")}</div>` : ""}
         ${missedHTML(items, log)}
-        <div class="btn-row center"><button class="btn primary" data-again>${mode === "drill" ? "10 more verbs" : "Try again"}</button>${mode === "practice" ? `<a class="btn speak" href="#/say/grammar/${g.id}">Say it: 5 sentences</a>` : ""}<a class="btn quiet" href="#/grammar/${g.id}">Back to the lesson</a></div></div>`);
+        <div class="btn-row center"><button class="btn primary" data-again>${mode === "drill" ? "10 more verbs" : "Try again"}</button>${mode === "practice" ? `<a class="btn speak" href="#/say/grammar/${g.id}">Say the examples</a>` : ""}<a class="btn quiet" href="#/grammar/${g.id}">Back to the lesson</a></div></div>`);
       app.querySelector("[data-again]").onclick = () => practice(app, g, mode, true);
       app.querySelectorAll("[data-dl]").forEach(b => b.onclick = () => { drillLevel = b.dataset.dl; lsSet("parlo.drillLevel", drillLevel); practice(app, g, mode); });
       return;

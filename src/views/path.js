@@ -95,6 +95,6 @@ function stepSheet(L, steps, states, i, current) {
         ${s.type === "unit" && !st.done ? `<a class="btn primary" href="#/session/unit/${s.ref}">Learn the words</a>` : ""}
         <a class="btn ${s.type === "unit" && !st.done ? "" : "primary"}" href="${href}">${st.done ? "Open again" : s.type === "unit" ? "See the words" : "Start"}</a>
         ${s.type === "unit" && !st.done ? `<a class="btn quiet" href="#/quiz/to/${L}/${i}">Test out</a>` : ""}
-        ${st.done && ["unit", "grammar", "reading", "listening"].includes(s.type) ? `<a class="btn speak" href="#/say/${{ unit: "unit", grammar: "grammar", reading: "read", listening: "listen" }[s.type]}/${s.ref}">Say it: 5 sentences</a>` : ""}
+        ${st.done && ["unit", "grammar", "reading", "listening"].includes(s.type) ? `<a class="btn speak" href="#/say/${{ unit: "unit", grammar: "grammar", reading: "read", listening: "listen" }[s.type]}/${s.ref}">${s.type === "grammar" ? "Say the examples" : "Say it: 5 sentences"}</a>` : ""}
       </div></div>`);
 }

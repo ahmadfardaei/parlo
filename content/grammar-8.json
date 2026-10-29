@@ -17,7 +17,7 @@
         ]
       },
       {
-        "h": "bene / male vs buono / cattivo",
+        "h": "bene, male vs buono, cattivo",
         "t": "Use <b>buono</b> and <b>cattivo</b> with a noun. Use <b>bene</b> and <b>male</b> with a verb.",
         "ex": [
           "Mia suocera cucina bene, ma il suo tiramisù non è buono: ci mette il rum.",
@@ -39,92 +39,79 @@
           "Hai già prenotato il traghetto per Cagliari? — No, non l'ho ancora fatto.",
           "Have you already booked the ferry to Cagliari? — No, I haven't done it yet."
         ]
-      },
-      {
-        "h": "Where and when: qui, fuori, subito, presto",
-        "t": "Many common adverbs are short words without -mente.",
-        "ex": [
-          "Aspettami fuori, arrivo subito.",
-          "Wait for me outside, I'll be right there."
-        ]
-      },
-      {
-        "h": "Adverbial phrases",
-        "t": "Some adverbs are phrases: <b>di solito, all'improvviso, a poco a poco, per caso</b>.",
-        "ex": [
-          "Ho incontrato per caso la mia maestra delle elementari al mercato di Ivrea.",
-          "I bumped into my primary school teacher by chance at the market in Ivrea."
-        ]
       }
     ],
     "form": {
-      "intro": "To make an adverb, take the <b>feminine singular</b> adjective and add <b>-mente</b>: vero → <b>veramente</b>. Adjectives in -e add -mente: veloce → <b>velocemente</b>. Adjectives in <b>-le</b> or <b>-re</b> drop the final e: facile → <b>facilmente</b>.",
+      "intro": "Adjectives in <b>-le</b> and <b>-re</b> drop the final e before <b>-mente</b>: facile → <b>facilmente</b>.",
       "tables": [
         {
-          "h": "Making -mente adverbs",
+          "h": "Adjective → adverb",
+          "cols": [
+            "it",
+            "it"
+          ],
           "rows": [
             [
-              "-o → -amente",
-              "lento → lentamente, vero → veramente, tranquillo → tranquillamente"
+              "lento",
+              "lent<b>amente</b>"
             ],
             [
-              "-e → -emente",
-              "veloce → velocemente, frequente → frequentemente, recente → recentemente"
+              "vero",
+              "ver<b>amente</b>"
             ],
             [
-              "-le / -re → -lmente / -rmente",
-              "facile → facilmente, gentile → gentilmente, regolare → regolarmente, particolare → particolarmente"
+              "veloce",
+              "veloc<b>emente</b>"
             ],
             [
-              "exceptions",
-              "buono → bene, cattivo → male, leggero → leggermente"
-            ]
-          ]
-        },
-        {
-          "h": "molto, poco, troppo, tanto",
-          "rows": [
-            [
-              "adjective: + noun, agrees",
-              "Ho molti amici a Lecce. C'è poca gente. Troppe parole."
+              "facile",
+              "facil<b>mente</b>"
             ],
             [
-              "adverb: + verb, does not change",
-              "Lavora molto. Dorme poco. Parli troppo."
+              "regolare",
+              "regolar<b>mente</b>"
             ],
             [
-              "adverb: + adjective, does not change",
-              "Le ragazze sono molto stanche. Queste scarpe sono troppo care."
+              "buono",
+              "<b>bene</b>"
             ],
             [
-              "tanto: same rules",
-              "Grazie tante! (adjective) / Mi è piaciuto tanto. (adverb)"
+              "cattivo",
+              "<b>male</b>"
             ]
           ]
         },
         {
           "h": "Position of the adverb",
+          "cols": [
+            "en",
+            "it"
+          ],
           "rows": [
             [
-              "simple tenses",
-              "after the verb: Parla bene. Arriva sempre tardi."
+              "simple tenses: after the verb",
+              "Arriva <b>sempre</b> tardi."
             ],
             [
-              "compound tenses: già, ancora, sempre, mai, appena, più",
-              "between the auxiliary and the past participle: Ho già mangiato. Non sono mai stato a Matera."
+              "<i>già, ancora, sempre, mai</i>: between the auxiliary and the past participle",
+              "Ho <b>già</b> mangiato."
             ],
             [
-              "most -mente adverbs, bene, male",
-              "after the past participle: Ha risposto gentilmente. Ho dormito male."
+              "<i>bene, male</i> and most <i>-mente</i> adverbs: after the past participle",
+              "Ho dormito <b>male</b>."
             ],
             [
-              "phrases (di solito, per fortuna…)",
-              "usually at the start: Per fortuna il treno era in ritardo anche lui."
+              "phrases: usually at the start",
+              "<b>Per fortuna</b> il treno era in ritardo anche lui."
             ]
           ]
         },
         {
           "h": "Common adverbial phrases",
+          "cols": [
+            "it",
+            "en"
+          ],
           "rows": [
             [
               "di solito",
@@ -144,7 +131,7 @@
             ],
             [
               "per caso",
-              "by chance; in questions: by any chance"
+              "by chance, by any chance"
             ],
             [
               "di nuovo",
@@ -162,10 +149,8 @@
         }
       ],
       "notes": [
-        "Adverbs do not agree: <i>sono molto stanche</i>, not molte stanche.",
         "<b>ancora</b> has two meanings: still / yet (<i>Non è ancora arrivato</i>) and more / again (<i>Ancora un po' di vino?</i>).",
-        "Use <b>per caso</b> in a question to sound polite: <i>Hai per caso un caricabatterie?</i>",
-        "The comparatives of bene and male are <b>meglio</b> and <b>peggio</b>. See the comparatives lesson."
+        "Use <b>per caso</b> in a question to sound polite: <i>Hai per caso un caricabatterie?</i>"
       ]
     },
     "signals": [
@@ -189,11 +174,6 @@
         "wrong": "Si arriva facilemente.",
         "right": "Si arriva facilmente.",
         "why": "Adjectives in <b>-le</b> drop the final e: facile → facilmente."
-      },
-      {
-        "wrong": "Non ho capito ancora.",
-        "right": "Non ho ancora capito.",
-        "why": "In compound tenses, put ancora, già and mai between the auxiliary and the past participle."
       }
     ],
     "ex": [
@@ -345,7 +325,7 @@
     "title": "Gli indefiniti",
     "en": "Indefinites",
     "summary": "Indefinites talk about people and amounts without exact numbers: ogni, qualche, qualcuno, tutto.",
-    "meaning": "Indefinites refer to people and things in a general way: <i><b>qualcuno</b> ha chiamato</i>, <i><b>ogni</b> giorno</i>. Some go only before a noun (<b>ogni, qualche</b>), some stand alone (<b>qualcuno, qualcosa</b>), and some do both (<b>alcuni, tutto, altro, nessuno</b>). Use a <b>singular</b> noun after <b>ogni</b> and <b>qualche</b>.",
+    "meaning": "Indefinites refer to people and things in a general way: <i><b>qualcuno</b> ha chiamato</i>, <i><b>ogni</b> giorno</i>. Some go before a noun, some stand alone, and some do both.",
     "uses": [
       {
         "h": "ogni / ognuno: every / everyone",
@@ -357,15 +337,15 @@
       },
       {
         "h": "qualche vs alcuni: some, a few",
-        "t": "Same meaning. Use <b>qualche</b> + singular noun and <b>alcuni / alcune</b> + plural noun.",
+        "t": "Use <b>qualche</b> + singular noun and <b>alcuni</b> + plural noun; they mean the same.",
         "ex": [
           "Ci vediamo tra qualche giorno: devo sistemare alcune cose in ufficio.",
           "See you in a few days: I've got a few things to sort out at the office."
         ]
       },
       {
-        "h": "qualcuno / qualcosa",
-        "t": "Someone / something. Add <b>di</b> before an adjective and <b>da</b> before an infinitive.",
+        "h": "qualcuno, qualcosa: someone, something",
+        "t": "Add <b>di</b> before an adjective and <b>da</b> before an infinitive.",
         "ex": [
           "Hai qualcosa di caldo da prestarmi? Fuori c'è la bora.",
           "Have you got something warm to lend me? The bora's blowing outside."
@@ -378,144 +358,133 @@
           "Ha piovuto tutto il weekend e i bambini hanno visto tutti i film di Harry Potter.",
           "It rained all weekend and the kids watched all the Harry Potter films."
         ]
-      },
-      {
-        "h": "altro, certo",
-        "t": "<b>altro</b> means other, another or more. <b>certo</b> before a noun means some.",
-        "ex": [
-          "Certe persone ordinano un altro caffè alle undici di sera e poi dormono come sassi.",
-          "Some people order another coffee at eleven at night and then sleep like logs."
-        ]
-      },
-      {
-        "h": "chiunque, qualunque, qualsiasi",
-        "t": "These mean whoever, whatever, any. Use the <b>congiuntivo</b> in the clause after them.",
-        "ex": [
-          "Chiunque abbia lasciato una Panda gialla davanti al cancello è pregato di spostarla.",
-          "Whoever left a yellow Panda in front of the gate is kindly asked to move it."
-        ]
       }
     ],
     "form": {
-      "intro": "There are two groups. <b>Before a noun</b>: ogni, qualche, alcuni, tutto, altro, certo, nessuno, ciascuno, qualunque, qualsiasi. <b>Alone</b>: ognuno, ciascuno, qualcuno, qualcosa, niente, chiunque. The words in -o agree like normal adjectives. <b>ogni, qualche, qualcosa, chiunque, qualunque, qualsiasi</b> do not change.",
+      "intro": "Indefinites in -o agree like normal adjectives; <b>ogni, qualche, qualcosa, qualunque</b> and <b>qualsiasi</b> never change.",
       "tables": [
         {
           "h": "Before a noun",
+          "cols": [
+            "it",
+            "en",
+            "it"
+          ],
           "rows": [
             [
               "ogni",
-              "every · + singular, does not change: ogni giorno, ogni volta"
+              "every (+ singular)",
+              "ogni giorno"
             ],
             [
               "qualche",
-              "some, a few · + singular, does not change: qualche giorno, qualche volta"
+              "some, a few (+ singular)",
+              "qualche volta"
             ],
             [
-              "alcuni / alcune",
-              "some, a few · + plural: alcuni giorni, alcune volte"
+              "alcuni, alcune",
+              "some, a few (+ plural)",
+              "alcune volte"
             ],
             [
-              "tutto il, tutta la, tutti i, tutte le",
-              "all, the whole · article after: tutta la notte, tutti i giorni"
+              "tutto il, tutta la…",
+              "all, the whole",
+              "tutta la notte"
             ],
             [
-              "un altro, un'altra, altri, altre",
-              "another, other: un'altra birra, altri due giorni"
+              "un altro, un'altra",
+              "another",
+              "un'altra birra"
             ],
             [
-              "certo, certa, certi, certe",
-              "certain, some: certe sere, un certo Fabio"
+              "certi, certe",
+              "some, certain",
+              "certe sere"
             ],
             [
-              "nessuno, nessuna",
-              "no, not any · singular, changes like uno: nessun problema, nessuna idea"
+              "nessun, nessuna",
+              "no, not any",
+              "nessun problema"
             ],
             [
-              "ciascuno, ciascuna",
-              "each · singular, changes like uno: ciascun ospite, ciascuna camera"
-            ],
-            [
-              "qualunque / qualsiasi",
-              "any, does not change: a qualunque ora, qualsiasi cosa"
+              "qualunque, qualsiasi",
+              "any",
+              "qualsiasi cosa"
             ]
           ]
         },
         {
           "h": "Alone",
+          "cols": [
+            "it",
+            "en",
+            "it"
+          ],
           "rows": [
             [
-              "ognuno / ognuna",
-              "everyone, each one: Ognuno paga il suo."
-            ],
-            [
-              "ciascuno / ciascuna",
-              "each one: I biglietti costano dieci euro ciascuno."
+              "ognuno",
+              "everyone, each one",
+              "Ognuno paga il suo."
             ],
             [
               "qualcuno",
-              "someone; in questions, anyone: C'è qualcuno?"
+              "someone, anyone",
+              "C'è qualcuno?"
             ],
             [
               "qualcosa",
-              "something; in questions, anything: Vuoi qualcosa?"
+              "something, anything",
+              "Vuoi qualcosa?"
             ],
             [
-              "alcuni / alcune",
-              "some people, some of them: Alcuni dicono di sì."
+              "alcuni",
+              "some people",
+              "Alcuni dicono di sì."
             ],
             [
-              "tutto / tutti",
-              "everything / everyone: Ho capito tutto. Ciao a tutti!"
+              "tutto, tutti",
+              "everything, everyone",
+              "Ciao a tutti!"
             ],
             [
               "gli altri",
-              "the others, other people: Non m'importa cosa pensano gli altri."
+              "other people",
+              "Non m'importa cosa pensano gli altri."
             ],
             [
-              "nessuno / niente",
-              "nobody / nothing: Non c'è nessuno. Non ho detto niente."
+              "nessuno, niente",
+              "nobody, nothing",
+              "Non ho detto niente."
             ],
             [
               "chiunque",
-              "anyone, whoever: Chiunque può partecipare."
+              "anyone",
+              "Chiunque può partecipare."
             ]
           ]
         },
         {
           "h": "qualcosa, niente + di / da",
+          "cols": [
+            "it",
+            "en"
+          ],
           "rows": [
             [
-              "qualcosa di + adjective",
-              "something + adjective: qualcosa di nuovo, qualcosa di buono"
+              "qualcosa <b>di</b> nuovo",
+              "something new"
             ],
             [
-              "niente di + adjective",
-              "nothing + adjective: niente di grave, niente di speciale"
+              "niente <b>di</b> grave",
+              "nothing serious"
             ],
             [
-              "qualcosa / niente da + infinitive",
-              "something / nothing to…: qualcosa da bere, niente da fare"
-            ]
-          ]
-        },
-        {
-          "h": "Whoever, whatever, wherever + congiuntivo",
-          "rows": [
-            [
-              "chiunque + congiuntivo",
-              "whoever: Chiunque sia, digli che non ci sono."
+              "qualcosa <b>da</b> bere",
+              "something to drink"
             ],
             [
-              "qualunque / qualsiasi cosa + congiuntivo",
-              "whatever: Qualunque cosa tu faccia, fallo bene."
-            ],
-            [
-              "qualunque / qualsiasi + noun + congiuntivo",
-              "whichever, any: Qualsiasi decisione prendiate, vi aiuto."
-            ],
-            [
-              "dovunque / ovunque + congiuntivo",
-              "wherever: Dovunque tu vada in Italia, trovi una sagra."
+              "niente <b>da</b> fare",
+              "nothing to do"
             ]
           ]
         }
@@ -523,22 +492,15 @@
       "notes": [
         "<b>ogni</b> and <b>qualche</b> take a singular noun and a singular verb: <i>Qualche studente è arrivato in ritardo.</i>",
         "With numbers, use <b>tutti e</b> / <b>tutte e</b>: <i>tutti e due</i> (both), <i>tutte e tre le sorelle</i>.",
-        "After the verb, <b>nessuno</b> and <b>niente</b> need <b>non</b>. Before the verb, they do not: <i>Non è venuto nessuno / Nessuno è venuto.</i>",
-        "After <b>qualcosa</b> and <b>niente</b>, the adjective is masculine: <i>qualcosa di strano</i>."
+        "After the verb, <b>nessuno</b> and <b>niente</b> need <b>non</b>. Before the verb, they do not: <i>Non è venuto nessuno / Nessuno è venuto.</i>"
       ]
     },
     "signals": [
       "ogni / qualche + singular",
       "tutto + article",
-      "qualcosa di / da",
-      "chiunque, qualunque, qualsiasi + congiuntivo"
+      "qualcosa di / da"
     ],
     "mistakes": [
-      {
-        "wrong": "Ogni giorni vado in palestra.",
-        "right": "Ogni giorno vado in palestra.",
-        "why": "Use a singular noun after <b>ogni</b>."
-      },
       {
         "wrong": "Ho comprato qualche libri.",
         "right": "Ho comprato qualche libro. / Ho comprato alcuni libri.",
@@ -636,27 +598,7 @@
           "ciascuno",
           "ogni"
         ],
-        "why": "<b>ciascuno</b> changes like uno: ciascuno studente. Ogni studente is also correct."
-      },
-      {
-        "k": "type",
-        "q": "___ abbia trovato un mazzo di chiavi vicino al Duomo è pregato di portarlo in farmacia.",
-        "h": "whoever",
-        "a": [
-          "chiunque"
-        ],
-        "why": "<b>chiunque</b> means whoever. Use the congiuntivo after it: abbia."
-      },
-      {
-        "k": "mc",
-        "q": "___ cosa tu decida, io ti appoggio.",
-        "o": [
-          "Qualunque",
-          "Qualche",
-          "Ogni"
-        ],
-        "a": "Qualunque",
-        "why": "Whatever is <b>qualunque cosa</b> + congiuntivo."
+        "why": "Use <b>ogni</b> + singular noun. <i>Ciascuno studente</i> is also correct."
       },
       {
         "k": "mc",

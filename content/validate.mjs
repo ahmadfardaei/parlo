@@ -4,7 +4,7 @@ const errs = [];
 const S = (o, path) => { if (!o || typeof o.it !== "string" || !o.it.trim() || typeof o.en !== "string" || !o.en.trim()) errs.push(`${path}: sentence needs it + en`); };
 const TOPICS = ["people","daily","food","places","work","feelings","leisure","society","tech","nature","language"];
 const LV = ["A1","A2","B1","B2"];
-let d; try { d = JSON.parse(fs.readFileSync(file, "utf8")); } catch (e) { console.log("INVALID JSON:", e.message); process.exit(1); }
+let d; try { d = file.endsWith(".js") ? (await import(new URL(file, "file://" + process.cwd() + "/").href + "?" + Date.now())).GRAMMAR : JSON.parse(fs.readFileSync(file, "utf8")); } catch (e) { console.log("INVALID FILE:", e.message); process.exit(1); }
 if (!Array.isArray(d)) { console.log("Top level must be an array"); process.exit(1); }
 const words = s => s.split(/\s+/).filter(Boolean).length;
 const html = s => (JSON.stringify(s).match(/<(?!\/?(b|i)>)[^>]*>/g) || []);
@@ -17,9 +17,25 @@ d.forEach((x, i) => {
     if (!["nouns","adjectives","prepositions","pronouns","verbtypes","tenses","sentences","functions"].includes(x.topic)) errs.push(`${P}: bad topic ${x.topic}`);
     (x.uses||[]).forEach((u,j)=>{ if(!u.h||!u.t||!Array.isArray(u.ex)||u.ex.length!==2) errs.push(`${P} use ${j}: needs h,t,ex[it,en]`); });
     if (!x.form || !x.form.intro) errs.push(`${P}: form.intro missing`);
-    (x.form?.tables||[]).forEach((t,j)=>{ if(!t.h) errs.push(`${P} table ${j}: needs h`); if(!(t.rows||t.end)) errs.push(`${P} table ${j}: needs rows (array of [left,right]) or stem+end`); if(t.rows && t.rows.some(r=>!Array.isArray(r)||r.length<2)) errs.push(`${P} table ${j}: each row must be [left, right]`); });
+    (x.form?.tables||[]).forEach((t,j)=>{ if(!t.h) errs.push(`${P} table ${j}: needs h`); if(!(t.rows||t.end)) errs.push(`${P} table ${j}: needs rows (array of [left,right]) or stem+end`); if(t.rows && t.rows.some(r=>typeof r!=="string"&&(!Array.isArray(r)||r.length<2))) errs.push(`${P} table ${j}: each row must be [left, right]`); });
     (x.mistakes||[]).forEach((m,j)=>{ if(!m.wrong||!m.right||!m.why) errs.push(`${P} mistake ${j}: needs wrong,right,why`); });
     if ((x.ex||[]).length < 10) errs.push(`${P}: needs >= 10 exercises`);
+    // Short-lesson limits (GRAMMAR_SHORT.md).
+    const tw = s => String(s || "").replace(/<[^>]+>/g, "").split(/\s+/).filter(Boolean).length;
+    const sents = s => String(s || "").replace(/<[^>]+>/g, "").split(/(?<=[.?!])\s+(?=[A-Z])/).filter(Boolean);
+    if (tw(x.summary) > 14) errs.push(`${P}: summary > 14 words`);
+    if (tw(x.meaning) > 40 || sents(x.meaning).length > 3) errs.push(`${P}: meaning > 40 words or > 3 sentences`);
+    if ((x.uses||[]).length > 4 || (x.uses||[]).length < 3) errs.push(`${P}: needs 3-4 uses`);
+    (x.uses||[]).forEach((u,j)=>{ if (tw(u.t) > 16) errs.push(`${P} use ${j}: t > 16 words`); });
+    if (tw(x.form?.intro) > 20) errs.push(`${P}: form.intro > 20 words`);
+    if ((x.form?.tables||[]).length > 3) errs.push(`${P}: > 3 tables`);
+    (x.form?.tables||[]).forEach((t,j)=>{ if (t.rows && t.rows.length > 8) errs.push(`${P} table ${j}: > 8 rows`); if (t.rows && !t.rows.every(r => typeof r === "string") && !Array.isArray(t.cols)) errs.push(`${P} table ${j}: needs cols, e.g. ["it","en"]`); if (t.cols && (!t.cols.every(c => c === "it" || c === "en") || t.rows?.some(r => Array.isArray(r) && r.length !== t.cols.length))) errs.push(`${P} table ${j}: cols must be "it"/"en", one per cell`); if (t.rows?.some(r => Array.isArray(r) && r.some(c => / : /.test(c)))) errs.push(`${P} table ${j}: split "form : example" cells into their own column`); });
+    if ((x.form?.notes||[]).length > 3) errs.push(`${P}: > 3 notes`);
+    (x.form?.notes||[]).forEach((n,j)=>{ if (tw(n) > 25) errs.push(`${P} note ${j}: > 25 words`); });
+    if ((x.irregular||[]).length > 12) errs.push(`${P}: > 12 irregular rows`);
+    if ((x.mistakes||[]).length > 3 || (x.mistakes||[]).length < 2) errs.push(`${P}: needs 2-3 mistakes`);
+    (x.mistakes||[]).forEach((m,j)=>{ if (tw(m.why) > 16) errs.push(`${P} mistake ${j}: why > 16 words`); });
+    (x.ex||[]).forEach((e,j)=>{ if (tw(e.why) > 20) errs.push(`${P} ex ${j}: why > 20 words`); });
     (x.ex||[]).forEach((e,j)=>{
       if (e.k==="type") { if(!e.q.includes("___")) errs.push(`${P} ex ${j}: q needs ___`); if(!Array.isArray(e.a)||!e.a.length) errs.push(`${P} ex ${j}: a must be a non-empty array`); }
       else if (e.k==="mc") { if(!Array.isArray(e.o)||!e.o.includes(e.a)) errs.push(`${P} ex ${j}: mc answer must be one of o`); }

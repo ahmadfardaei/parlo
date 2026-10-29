@@ -1,133 +1,601 @@
 [
   {
-    "id": "g-concordanza", "level": "B2", "topic": "tenses",
-    "title": "La concordanza dei tempi", "en": "Sequence of tenses",
-    "summary": "Choose the tense of the second verb after penso che, so che, ha detto che.",
-    "meaning": "The second verb tense depends on the <b>main verb tense</b> and on <b>when the second action happens</b>. The main verb is present or past; the second action is before, at the same time or after. The indicativo and the congiuntivo use the same grid.",
+    "id": "g-concordanza",
+    "level": "B2",
+    "topic": "tenses",
+    "title": "La concordanza dei tempi",
+    "en": "Sequence of tenses",
+    "summary": "Choose the tense after penso che, so che, ha detto che.",
+    "meaning": "The tense of the second verb depends on two things: the tense of the main verb, and when the second action happens. The main verb is present or past. The second action is before, at the same time, or after.",
     "uses": [
-      { "h": "Present main verb · same time", "t": "Use the <b>presente</b>, in the indicativo or the congiuntivo.", "ex": ["Penso che Davide sia a Bergamo per lavoro.", "I think Davide is in Bergamo for work."] },
-      { "h": "Present main verb · before", "t": "Finished action: <b>congiuntivo passato</b>; past state or habit: <b>congiuntivo imperfetto</b>.", "ex": ["Mi sembra che Irene abbia già pagato il conto.", "I think Irene has already paid the bill."] },
-      { "h": "Present main verb · after", "t": "Use the <b>futuro</b> in both moods; with a time word, congiuntivo presente also works.", "ex": ["Credo che il tecnico verrà giovedì.", "I think the technician will come on Thursday."] },
-      { "h": "Past main verb · same time", "t": "Use <b>imperfetto</b> or <b>congiuntivo imperfetto</b>, also when the fact is still true.", "ex": ["Pensavo che la farmacia fosse aperta anche la domenica.", "I thought the chemist's was open on Sundays too."] },
-      { "h": "Past main verb · before", "t": "Use <b>trapassato prossimo</b> or <b>congiuntivo trapassato</b> for the past before the past.", "ex": ["Ero convinta che il treno fosse già partito.", "I was sure the train had already left."] },
-      { "h": "Past main verb · after (future in the past)", "t": "Use the <b>condizionale passato</b> in both moods: “would come” is <i>sarebbe venuto</i>.", "ex": ["Mi aveva promesso che mi avrebbe richiamato entro sera.", "He'd promised me he would call me back by evening."] }
+      {
+        "h": "Present main verb · same time",
+        "t": "Use the <b>presente</b>, in the indicativo or the congiuntivo.",
+        "ex": [
+          "Penso che Davide sia a Bergamo per lavoro.",
+          "I think Davide is in Bergamo for work."
+        ]
+      },
+      {
+        "h": "Present main verb · before",
+        "t": "Use the <b>congiuntivo passato</b> for a finished action and the <b>congiuntivo imperfetto</b> for a past state.",
+        "ex": [
+          "Mi sembra che Irene abbia già pagato il conto.",
+          "I think Irene has already paid the bill."
+        ]
+      },
+      {
+        "h": "Past main verb · same time",
+        "t": "Use <b>imperfetto</b> or <b>congiuntivo imperfetto</b>, also when the fact is still true.",
+        "ex": [
+          "Pensavo che la farmacia fosse aperta anche la domenica.",
+          "I thought the chemist's was open on Sundays too."
+        ]
+      },
+      {
+        "h": "Past main verb · after",
+        "t": "Use the <b>condizionale passato</b> in both moods: “would come” is <i>sarebbe venuto</i>.",
+        "ex": [
+          "Mi aveva promesso che mi avrebbe richiamato entro sera.",
+          "He'd promised me he would call me back by evening."
+        ]
+      }
     ],
     "form": {
-      "intro": "Check two things. First, the main verb group: present (presente, futuro, imperativo) or past (passato prossimo, imperfetto, passato remoto, trapassato). Second, the time of the second action: before, at the same time or after. The trigger decides only the mood. Use the <b>indicativo</b> after certainty: <i>so che, è chiaro che, ha detto che</i>. Use the <b>congiuntivo</b> after opinion, doubt, wish or feeling: <i>penso che, spero che, temo che</i>.",
+      "intro": "Use the indicativo after certainty (<i>so che</i>) and the congiuntivo after opinion, doubt, wish or feeling (<i>penso che</i>).",
       "tables": [
-        { "h": "The grid · indicativo / congiuntivo", "rows": [
-          ["present · before", "passato prossimo / congiuntivo passato"],
-          ["present · same time", "presente / congiuntivo presente"],
-          ["present · after", "futuro / futuro (or congiuntivo presente)"],
-          ["past · before", "trapassato prossimo / congiuntivo trapassato"],
-          ["past · same time", "imperfetto / congiuntivo imperfetto"],
-          ["past · after", "condizionale passato (both moods)"]
-        ] },
-        { "h": "Main verb in the present · Penso che… / So che…", "rows": [
-          ["before", "Penso che sia venuto. · So che è venuto."],
-          ["same time", "Penso che venga. · So che viene."],
-          ["after", "Penso che verrà. · So che verrà."]
-        ] },
-        { "h": "Main verb in the past · Pensavo che… / Sapevo che…", "rows": [
-          ["before", "Pensavo che fosse venuto. · Sapevo che era venuto."],
-          ["same time", "Pensavo che venisse. · Sapevo che veniva."],
-          ["after", "Pensavo che sarebbe venuto. · Sapevo che sarebbe venuto."]
-        ] }
+        {
+          "h": "The grid · indicativo / congiuntivo",
+          "cols": [
+            "en",
+            "it",
+            "it"
+          ],
+          "rows": [
+            [
+              "present · before",
+              "passato prossimo",
+              "congiuntivo passato"
+            ],
+            [
+              "present · same time",
+              "presente",
+              "congiuntivo presente"
+            ],
+            [
+              "present · after",
+              "futuro",
+              "futuro"
+            ],
+            [
+              "past · before",
+              "trapassato prossimo",
+              "congiuntivo trapassato"
+            ],
+            [
+              "past · same time",
+              "imperfetto",
+              "congiuntivo imperfetto"
+            ],
+            [
+              "past · after",
+              "condizionale passato",
+              "condizionale passato"
+            ]
+          ]
+        },
+        {
+          "h": "Main verb in the present · Penso che… / So che…",
+          "cols": [
+            "en",
+            "it",
+            "it"
+          ],
+          "rows": [
+            [
+              "before",
+              "Penso che sia venuto.",
+              "So che è venuto."
+            ],
+            [
+              "same time",
+              "Penso che venga.",
+              "So che viene."
+            ],
+            [
+              "after",
+              "Penso che verrà.",
+              "So che verrà."
+            ]
+          ]
+        },
+        {
+          "h": "Main verb in the past · Pensavo che… / Sapevo che…",
+          "cols": [
+            "en",
+            "it",
+            "it"
+          ],
+          "rows": [
+            [
+              "before",
+              "Pensavo che fosse venuto.",
+              "Sapevo che era venuto."
+            ],
+            [
+              "same time",
+              "Pensavo che venisse.",
+              "Sapevo che veniva."
+            ],
+            [
+              "after",
+              "Pensavo che sarebbe venuto.",
+              "Sapevo che sarebbe venuto."
+            ]
+          ]
+        }
       ],
       "notes": [
-        "For the future in the past, always use the <b>condizionale passato</b>: <i>Ha detto che sarebbe venuto</i>, not <i>che verrebbe</i>. This rule applies whether the action happened or not.",
-        "In speech, the imperfetto often replaces the condizionale passato for a planned future in the past: <i>Ha detto che veniva</i>. In writing, use <i>sarebbe venuto</i>.",
+        "In speech, people often use the imperfetto for the future in the past: <i>Ha detto che veniva</i>. In writing, use <i>sarebbe venuto</i>.",
         "Treat <b>vorrei che</b>, <b>preferirei che</b> and <b>sarebbe meglio che</b> as past main verbs: <i>Vorrei che tu venissi</i>.",
-        "For fresh news, a passato prossimo main verb can take present tenses: <i>Mi hanno detto che ti sposi!</i> In a written account, use the past grid.",
-        "Same subject in both parts: use <b>di</b> + infinitive, not a che-clause: <i>Penso di venire</i>, <i>Pensavo di aver sbagliato</i>."
+        "If both verbs have the same subject, use <b>di</b> + infinitive, not <i>che</i>: <i>Penso di venire</i>."
       ]
     },
-    "signals": ["penso che / pensavo che", "so che / sapevo che", "ha detto che", "credevo che", "ero sicuro che", "già (before)", "poi, il giorno dopo (after)"],
+    "signals": [
+      "penso che / pensavo che",
+      "so che / sapevo che",
+      "ha detto che",
+      "credevo che",
+      "ero sicuro che",
+      "già (before)",
+      "poi, il giorno dopo (after)"
+    ],
     "mistakes": [
-      { "wrong": "Pensavo che venga anche Teresa.", "right": "Pensavo che venisse anche Teresa.", "why": "Past main verb, same time: use the <b>congiuntivo imperfetto</b>." },
-      { "wrong": "Mi ha detto che verrebbe alle otto.", "right": "Mi ha detto che sarebbe venuto alle otto.", "why": "Future in the past: use the <b>condizionale passato</b>, not the condizionale presente." },
-      { "wrong": "Credo che ieri Sergio sia stanco.", "right": "Credo che ieri Sergio fosse stanco.", "why": "Past state (ieri) after a present main verb: use the <b>congiuntivo imperfetto</b>." },
-      { "wrong": "Non sapevo che Anna è incinta.", "right": "Non sapevo che Anna fosse incinta.", "why": "Past main verb: use the past grid, even if the fact is still true." }
+      {
+        "wrong": "Pensavo che venga anche Teresa.",
+        "right": "Pensavo che venisse anche Teresa.",
+        "why": "Past main verb, same time: use the <b>congiuntivo imperfetto</b>."
+      },
+      {
+        "wrong": "Mi ha detto che verrebbe alle otto.",
+        "right": "Mi ha detto che sarebbe venuto alle otto.",
+        "why": "Future in the past: use the <b>condizionale passato</b>, not the condizionale presente."
+      },
+      {
+        "wrong": "Non sapevo che Anna è incinta.",
+        "right": "Non sapevo che Anna fosse incinta.",
+        "why": "Past main verb: use the past grid, even if the fact is still true."
+      }
     ],
     "ex": [
-      { "k": "type", "q": "Spero che ieri Mattia ___ il colloquio a Bergamo senza problemi.", "h": "superare", "a": ["abbia superato"], "why": "Present main verb, earlier action (ieri): use the congiuntivo passato." },
-      { "k": "type", "q": "Pensavo che il museo ___ chiuso il lunedì, invece è aperto.", "h": "essere", "a": ["fosse"], "why": "Past main verb, same time: use the congiuntivo imperfetto." },
-      { "k": "type", "q": "Credevo che Pietro ___ la bolletta, ma è ancora sul tavolo.", "h": "pagare", "a": ["avesse pagato", "avesse già pagato"], "why": "Past main verb, earlier action: use the congiuntivo trapassato." },
-      { "k": "type", "q": "Il meteo diceva che ___ tutto il weekend, e invece c'è il sole.", "h": "piovere", "a": ["sarebbe piovuto", "avrebbe piovuto"], "why": "Future in the past: condizionale passato; weather verbs take essere or avere." },
-      { "k": "type", "q": "Credo che domani Sara ___ il treno delle sette.", "h": "prendere", "a": ["prenderà", "prenda"], "why": "Present main verb, later action: futuro, or congiuntivo presente with domani." },
-      { "k": "type", "q": "Mi sembra che da bambino Luca ___ a Ivrea.", "h": "vivere", "a": ["vivesse", "abbia vissuto"], "why": "Past state: congiuntivo imperfetto; for a closed period, abbia vissuto also works." },
-      { "k": "type", "q": "So che ieri Giorgia ___ la tesi a Padova.", "h": "discutere", "a": ["ha discusso"], "why": "Certainty (so che) and earlier action: use the passato prossimo." },
-      { "k": "type", "q": "Sapevamo che il negozio ___ a fine mese.", "h": "chiudere", "a": ["avrebbe chiuso", "chiudeva"], "why": "Future in the past: condizionale passato; in speech, the imperfetto also works." },
-      { "k": "type", "q": "Vorrei che tu ___ con noi a Cagliari ad agosto.", "h": "venire", "a": ["venissi"], "why": "Vorrei che takes the past grid: use the congiuntivo imperfetto." },
-      { "k": "type", "q": "Non immaginavo che Elena ___ così brava a cucinare.", "h": "essere", "a": ["fosse"], "why": "Past main verb, same time: use the congiuntivo imperfetto." },
-      { "k": "mc", "q": "Matteo mi ha scritto che ___ a cena, ma poi non si è visto.", "o": ["sarebbe venuto", "verrebbe", "venisse"], "a": "sarebbe venuto", "why": "Future in the past: use the condizionale passato, whether it happened or not." },
-      { "k": "mc", "q": "È probabile che ieri ___ un guasto alla linea.", "o": ["ci sia stato", "ci fosse stato", "ci sarà"], "a": "ci sia stato", "why": "Present main verb, earlier action: congiuntivo passato; ci fosse stato needs a past main verb." },
-      { "k": "mc", "q": "“I didn't know she had moved to Lecce.”", "o": ["Non sapevo che si fosse trasferita a Lecce.", "Non sapevo che si sia trasferita a Lecce.", "Non sapevo che si trasferisse a Lecce."], "a": "Non sapevo che si fosse trasferita a Lecce.", "why": "Past main verb, earlier action: use the congiuntivo trapassato." },
-      { "k": "mc", "q": "Penso che il pacco ___ domani.", "o": ["arriverà", "arriverebbe", "sarebbe arrivato"], "a": "arriverà", "why": "Present main verb, later action: use the futuro, not the condizionale." }
+      {
+        "k": "type",
+        "q": "Spero che ieri Mattia ___ il colloquio a Bergamo senza problemi.",
+        "h": "superare",
+        "a": [
+          "abbia superato"
+        ],
+        "why": "Present main verb, earlier action (ieri): use the congiuntivo passato."
+      },
+      {
+        "k": "type",
+        "q": "Pensavo che il museo ___ chiuso il lunedì, invece è aperto.",
+        "h": "essere",
+        "a": [
+          "fosse"
+        ],
+        "why": "Past main verb, same time: use the congiuntivo imperfetto."
+      },
+      {
+        "k": "type",
+        "q": "Credevo che Pietro ___ la bolletta, ma è ancora sul tavolo.",
+        "h": "pagare",
+        "a": [
+          "avesse pagato",
+          "avesse già pagato"
+        ],
+        "why": "Past main verb, earlier action: use the congiuntivo trapassato."
+      },
+      {
+        "k": "type",
+        "q": "Il meteo diceva che ___ tutto il weekend, e invece c'è il sole.",
+        "h": "piovere",
+        "a": [
+          "sarebbe piovuto",
+          "avrebbe piovuto"
+        ],
+        "why": "Future in the past: condizionale passato; weather verbs take essere or avere."
+      },
+      {
+        "k": "type",
+        "q": "Credo che domani Sara ___ il treno delle sette.",
+        "h": "prendere",
+        "a": [
+          "prenderà",
+          "prenda"
+        ],
+        "why": "Present main verb, later action: futuro, or congiuntivo presente with domani."
+      },
+      {
+        "k": "type",
+        "q": "Mi sembra che da bambino Luca ___ a Ivrea.",
+        "h": "vivere",
+        "a": [
+          "vivesse",
+          "abbia vissuto"
+        ],
+        "why": "Past state: congiuntivo imperfetto; for a closed period, abbia vissuto also works."
+      },
+      {
+        "k": "type",
+        "q": "So che ieri Giorgia ___ la tesi a Padova.",
+        "h": "discutere",
+        "a": [
+          "ha discusso"
+        ],
+        "why": "Certainty (so che) and earlier action: use the passato prossimo."
+      },
+      {
+        "k": "type",
+        "q": "Sapevamo che il negozio ___ a fine mese.",
+        "h": "chiudere",
+        "a": [
+          "avrebbe chiuso",
+          "chiudeva"
+        ],
+        "why": "Future in the past: condizionale passato; in speech, the imperfetto also works."
+      },
+      {
+        "k": "type",
+        "q": "Vorrei che tu ___ con noi a Cagliari ad agosto.",
+        "h": "venire",
+        "a": [
+          "venissi"
+        ],
+        "why": "Vorrei che takes the past grid: use the congiuntivo imperfetto."
+      },
+      {
+        "k": "type",
+        "q": "Non immaginavo che Elena ___ così brava a cucinare.",
+        "h": "essere",
+        "a": [
+          "fosse"
+        ],
+        "why": "Past main verb, same time: use the congiuntivo imperfetto."
+      },
+      {
+        "k": "mc",
+        "q": "Matteo mi ha scritto che ___ a cena, ma poi non si è visto.",
+        "o": [
+          "sarebbe venuto",
+          "verrebbe",
+          "venisse"
+        ],
+        "a": "sarebbe venuto",
+        "why": "Future in the past: use the condizionale passato, whether it happened or not."
+      },
+      {
+        "k": "mc",
+        "q": "È probabile che ieri ___ un guasto alla linea.",
+        "o": [
+          "ci sia stato",
+          "ci fosse stato",
+          "ci sarà"
+        ],
+        "a": "ci sia stato",
+        "why": "Present main verb, earlier action: congiuntivo passato; ci fosse stato needs a past main verb."
+      },
+      {
+        "k": "mc",
+        "q": "“I didn't know she had moved to Lecce.”",
+        "o": [
+          "Non sapevo che si fosse trasferita a Lecce.",
+          "Non sapevo che si sia trasferita a Lecce.",
+          "Non sapevo che si trasferisse a Lecce."
+        ],
+        "a": "Non sapevo che si fosse trasferita a Lecce.",
+        "why": "Past main verb, earlier action: use the congiuntivo trapassato."
+      },
+      {
+        "k": "mc",
+        "q": "Penso che il pacco ___ domani.",
+        "o": [
+          "arriverà",
+          "arriverebbe",
+          "sarebbe arrivato"
+        ],
+        "a": "arriverà",
+        "why": "Present main verb, later action: use the futuro, not the condizionale."
+      }
     ]
   },
   {
-    "id": "g-cong-congiunzioni", "level": "B1", "topic": "sentences",
-    "title": "Congiunzioni e frasi con il congiuntivo", "en": "Conjunctions and clauses that take the subjunctive",
+    "id": "g-cong-congiunzioni",
+    "level": "B1",
+    "topic": "sentences",
+    "title": "Congiunzioni e frasi con il congiuntivo",
+    "en": "Conjunctions and clauses that take the subjunctive",
     "summary": "Use the congiuntivo after conjunctions like prima che, senza che, purché, a meno che.",
-    "meaning": "Some conjunctions always take the congiuntivo, because what follows is not a fact. Many have an <b>infinitive</b> form for when both parts have the same subject. Relative clauses about a thing you may not find and <i>più di quanto</i> also take the congiuntivo.",
+    "meaning": "Some conjunctions always take the congiuntivo, because what follows is not a fact. Many of them change to a preposition + infinitive when both parts have the same subject.",
     "uses": [
-      { "h": "Before: prima che / prima di", "t": "Different subject: <b>prima che</b> + congiuntivo; same subject: <b>prima di</b> + infinitive.", "ex": ["Torniamo a casa prima che cominci a piovere.", "Let's go home before it starts raining."] },
-      { "h": "Without: senza che / senza", "t": "Different subject: <b>senza che</b> + congiuntivo; same subject: <b>senza</b> + infinitive.", "ex": ["È uscito senza che nessuno se ne accorgesse.", "He went out without anyone noticing."] },
-      { "h": "Purpose: affinché, perché", "t": "<b>affinché</b> and <b>perché</b> + congiuntivo mean “so that”; perché + indicativo means “because”.", "ex": ["Ti lascio le chiavi perché tu possa entrare.", "I'm leaving you the keys so that you can get in."] },
-      { "h": "Conditions and exceptions", "t": "Conditions: <b>purché</b> (as long as), <b>a meno che</b> (unless), <b>nel caso in cui</b> (in case).", "ex": ["Ti presto la bici purché me la riporti stasera.", "I'll lend you the bike as long as you bring it back tonight."] },
-      { "h": "Relative clauses: wanted, not found, the best", "t": "Use <b>che</b> + congiuntivo for a thing you may not find, or after a superlative.", "ex": ["Cerco qualcuno che sappia riparare una Vespa del '78.", "I'm looking for someone who can fix a '78 Vespa."] },
-      { "h": "Comparisons: più / meno di quanto", "t": "Use <b>di quanto</b> + congiuntivo to compare with what someone thought or expected.", "ex": ["Il viaggio è stato più lungo di quanto pensassi.", "The trip was longer than I thought."] }
+      {
+        "h": "Before: prima che / prima di",
+        "t": "Different subject: <b>prima che</b> + congiuntivo; same subject: <b>prima di</b> + infinitive.",
+        "ex": [
+          "Torniamo a casa prima che cominci a piovere.",
+          "Let's go home before it starts raining."
+        ]
+      },
+      {
+        "h": "Purpose: affinché, perché",
+        "t": "<b>affinché</b> and <b>perché</b> + congiuntivo mean “so that”; perché + indicativo means “because”.",
+        "ex": [
+          "Ti lascio le chiavi perché tu possa entrare.",
+          "I'm leaving you the keys so that you can get in."
+        ]
+      },
+      {
+        "h": "Conditions: purché, a meno che",
+        "t": "Use <b>purché</b> (as long as), <b>a meno che</b> (unless), <b>nel caso in cui</b> (in case).",
+        "ex": [
+          "Ti presto la bici purché me la riporti stasera.",
+          "I'll lend you the bike as long as you bring it back tonight."
+        ]
+      },
+      {
+        "h": "Relative clauses: wanted or best",
+        "t": "Use <b>che</b> + congiuntivo for a thing you may not find, or after a superlative.",
+        "ex": [
+          "Cerco qualcuno che sappia riparare una Vespa del '78.",
+          "I'm looking for someone who can fix a '78 Vespa."
+        ]
+      }
     ],
     "form": {
-      "intro": "Check two things. If the conjunction is in the list below, use the congiuntivo. Use the presente after a present main verb and the imperfetto after a past main verb. If both parts have the same subject, many conjunctions change to a preposition + infinitive.",
+      "intro": "Use the congiuntivo presente after a present main verb and the congiuntivo imperfetto after a past main verb.",
       "tables": [
-        { "h": "Conjunction + congiuntivo → same-subject form", "rows": [
-          ["prima che (before)", "prima di + infinitive: Ti chiamo prima che parta. · Ti chiamo prima di partire."],
-          ["senza che (without)", "senza + infinitive: Parte senza che io lo sappia. · Parte senza salutare."],
-          ["affinché, perché (so that)", "per + infinitive: Lo ripeto perché tu lo ricordi. · Lo ripeto per ricordarlo."],
-          ["purché, a condizione che, a patto che (as long as)", "a condizione di + infinitive: Accetto a condizione di lavorare da casa."],
-          ["a meno che (non) (unless)", "a meno di + infinitive: Non arriviamo in tempo, a meno di prendere un taxi."],
-          ["nel caso che, nel caso in cui, qualora (in case, if)", "in caso di + noun: in caso di pioggia"],
-          ["benché, sebbene, nonostante (although)", "pur + gerund: Pur essendo stanca, è venuta."]
-        ] },
-        { "h": "che + congiuntivo in relative clauses", "rows": [
-          ["looking for, wanting", "Cerco una casa che abbia il giardino."],
-          ["nobody, nothing", "Non c'è nessuno in ufficio che parli il sardo."],
-          ["superlative, l'unico, il primo", "È il film più bello che abbia mai visto. · Sei l'unica che mi capisca."],
-          ["più / meno di quanto", "Costa meno di quanto temessimo."],
-          ["but: a real, known thing", "Ho trovato una casa che ha il giardino. (indicativo)"]
-        ] }
+        {
+          "h": "Conjunction + congiuntivo · same-subject form",
+          "cols": [
+            "it",
+            "en",
+            "it"
+          ],
+          "rows": [
+            [
+              "prima che",
+              "before",
+              "prima di partire"
+            ],
+            [
+              "senza che",
+              "without",
+              "senza salutare"
+            ],
+            [
+              "affinché, perché",
+              "so that",
+              "per ricordarlo"
+            ],
+            [
+              "purché, a condizione che",
+              "as long as",
+              "a condizione di lavorare da casa"
+            ],
+            [
+              "a meno che (non)",
+              "unless",
+              "a meno di prendere un taxi"
+            ],
+            [
+              "nel caso in cui, qualora",
+              "in case, if",
+              "in caso di pioggia"
+            ],
+            [
+              "benché, sebbene",
+              "although",
+              "pur essendo stanca"
+            ]
+          ]
+        },
+        {
+          "h": "che + congiuntivo in relative clauses",
+          "cols": [
+            "en",
+            "it"
+          ],
+          "rows": [
+            [
+              "a thing you look for or want",
+              "Cerco una casa che abbia il giardino."
+            ],
+            [
+              "after <i>nessuno, niente</i>",
+              "Non c'è nessuno in ufficio che parli il sardo."
+            ],
+            [
+              "after a superlative, <i>l'unico, il primo</i>",
+              "È il film più bello che abbia mai visto."
+            ],
+            [
+              "after <i>più / meno di quanto</i>",
+              "Costa meno di quanto temessimo."
+            ],
+            [
+              "but a real, known thing takes the indicativo",
+              "Ho trovato una casa che ha il giardino."
+            ]
+          ]
+        }
       ],
       "notes": [
-        "After <b>a meno che</b>, Italians usually add <b>non</b>. This non does not make the sentence negative. Example: <i>Vengo, a meno che non piova</i> = I will come unless it rains.",
-        "<b>perché</b> + indicativo means “because”: <i>Te lo dico perché lo sai</i>. <b>perché</b> + congiuntivo means “so that”: <i>Te lo dico perché tu lo sappia</i>.",
-        "<b>qualora</b> is formal: contracts, notices, official emails. In conversation, use <i>se</i> or <i>nel caso in cui</i>.",
+        "After <b>a meno che</b>, add <b>non</b>. This <i>non</i> does not make the sentence negative: <i>Vengo, a meno che non piova</i>.",
         "These conjunctions take the indicativo: <b>anche se</b>, <b>dopo che</b>, <b>mentre</b>, <b>siccome</b>, <b>dato che</b>.",
-        "After a past main verb, use the congiuntivo imperfetto: <i>Sono uscito prima che arrivasse</i>."
+        "<b>qualora</b> is formal (contracts, notices). In conversation, use <i>se</i> or <i>nel caso in cui</i>."
       ]
     },
-    "signals": ["prima che", "senza che", "affinché", "purché", "a condizione che", "a patto che", "a meno che non", "nel caso in cui", "qualora", "benché", "cerco qualcuno che", "il più … che", "più di quanto"],
+    "signals": [
+      "prima che",
+      "senza che",
+      "affinché",
+      "purché",
+      "a condizione che",
+      "a patto che",
+      "a meno che non",
+      "nel caso in cui",
+      "qualora",
+      "benché",
+      "cerco qualcuno che",
+      "il più … che",
+      "più di quanto"
+    ],
     "mistakes": [
-      { "wrong": "Prima che parto, ti chiamo.", "right": "Prima di partire, ti chiamo.", "why": "Same subject (io): use <b>prima di</b> + infinitive, not prima che." },
-      { "wrong": "Esco, a meno che piove.", "right": "Esco, a meno che non piova.", "why": "<b>a meno che</b> takes the congiuntivo, usually with <i>non</i>." },
-      { "wrong": "Cerco un appartamento che ha due bagni.", "right": "Cerco un appartamento che abbia due bagni.", "why": "You have not found it yet, so use the congiuntivo." },
-      { "wrong": "È costato più di quanto pensavo.", "right": "È costato più di quanto pensassi.", "why": "Use <b>più di quanto</b> + congiuntivo; the indicativo is informal speech." }
+      {
+        "wrong": "Prima che parto, ti chiamo.",
+        "right": "Prima di partire, ti chiamo.",
+        "why": "Same subject (io): use <b>prima di</b> + infinitive, not prima che."
+      },
+      {
+        "wrong": "Esco, a meno che piove.",
+        "right": "Esco, a meno che non piova.",
+        "why": "<b>a meno che</b> takes the congiuntivo, usually with <i>non</i>."
+      },
+      {
+        "wrong": "Cerco un appartamento che ha due bagni.",
+        "right": "Cerco un appartamento che abbia due bagni.",
+        "why": "You have not found it yet, so use the congiuntivo."
+      }
     ],
     "ex": [
-      { "k": "type", "q": "Ti chiamo prima che ___ la riunione.", "h": "cominciare", "a": ["cominci"], "why": "<b>prima che</b> + congiuntivo presente: cominci." },
-      { "k": "type", "q": "Ho chiuso la porta piano, senza che i bambini mi ___.", "h": "sentire", "a": ["sentissero"], "why": "<b>senza che</b> + congiuntivo; past main verb, so imperfetto: sentissero." },
-      { "k": "type", "q": "Lo spiego un'altra volta affinché tutti ___.", "h": "capire", "a": ["capiscano"], "why": "<b>affinché</b> + congiuntivo presente: capiscano (-isc- verb)." },
-      { "k": "type", "q": "Puoi usare la mia macchina purché ___ il pieno prima di riportarla.", "h": "fare · tu", "a": ["faccia"], "why": "<b>purché</b> + congiuntivo: fare → faccia." },
-      { "k": "type", "q": "Domenica andiamo al mare, a meno che non ___ brutto tempo.", "h": "fare", "a": ["faccia"], "why": "<b>a meno che non</b> + congiuntivo; this non does not make it negative." },
-      { "k": "type", "q": "Qualora il volo ___ cancellato, la compagnia offre un rimborso completo.", "h": "essere", "a": ["fosse", "sia"], "why": "<b>qualora</b> + congiuntivo: usually imperfetto (fosse), but presente (sia) is also correct." },
-      { "k": "type", "q": "Cerchiamo un cameriere che ___ l'inglese e il tedesco.", "h": "parlare", "a": ["parli"], "why": "A person you are looking for and have not found: use the congiuntivo." },
-      { "k": "type", "q": "È la pizza più buona che io ___ a Napoli.", "h": "mangiare · passato", "a": ["abbia mangiato", "abbia mai mangiato"], "why": "Superlative + <b>che</b> + congiuntivo passato." },
-      { "k": "type", "q": "L'esame è stato più facile di quanto ___.", "h": "temere · noi", "a": ["temessimo", "avessimo temuto"], "why": "<b>più di quanto</b> + congiuntivo; past context: temessimo." },
-      { "k": "mc", "q": "Ho finito la relazione ___ il capo me la chiedesse.", "o": ["prima che", "prima di", "dopo che"], "a": "prima che", "why": "Different subjects and congiuntivo (chiedesse): use prima che; dopo che takes the indicativo." },
-      { "k": "mc", "q": "Se n'è andato ___ salutare nessuno.", "o": ["senza", "senza che", "senza di"], "a": "senza", "why": "Same subject: use <b>senza</b> + infinitive." },
-      { "k": "mc", "q": "Ti do il mio numero ___ tu mi possa chiamare.", "o": ["perché", "siccome", "dato che"], "a": "perché", "why": "<b>perché</b> + congiuntivo means “so that”; siccome and dato che take the indicativo." },
-      { "k": "mc", "q": "Conosco un idraulico che ___ anche la domenica.", "o": ["lavora", "lavori", "lavorasse"], "a": "lavora", "why": "A real person you know: use the indicativo." }
+      {
+        "k": "type",
+        "q": "Ti chiamo prima che ___ la riunione.",
+        "h": "cominciare",
+        "a": [
+          "cominci"
+        ],
+        "why": "<b>prima che</b> + congiuntivo presente: cominci."
+      },
+      {
+        "k": "type",
+        "q": "Ho chiuso la porta piano, senza che i bambini mi ___.",
+        "h": "sentire",
+        "a": [
+          "sentissero"
+        ],
+        "why": "<b>senza che</b> + congiuntivo; past main verb, so imperfetto: sentissero."
+      },
+      {
+        "k": "type",
+        "q": "Lo spiego un'altra volta affinché tutti ___.",
+        "h": "capire",
+        "a": [
+          "capiscano"
+        ],
+        "why": "<b>affinché</b> + congiuntivo presente: capiscano (-isc- verb)."
+      },
+      {
+        "k": "type",
+        "q": "Puoi usare la mia macchina purché ___ il pieno prima di riportarla.",
+        "h": "fare · tu",
+        "a": [
+          "faccia"
+        ],
+        "why": "<b>purché</b> + congiuntivo: fare → faccia."
+      },
+      {
+        "k": "type",
+        "q": "Domenica andiamo al mare, a meno che non ___ brutto tempo.",
+        "h": "fare",
+        "a": [
+          "faccia"
+        ],
+        "why": "<b>a meno che non</b> + congiuntivo; this non does not make it negative."
+      },
+      {
+        "k": "type",
+        "q": "Qualora il volo ___ cancellato, la compagnia offre un rimborso completo.",
+        "h": "essere",
+        "a": [
+          "fosse",
+          "sia"
+        ],
+        "why": "<b>qualora</b> + congiuntivo: usually imperfetto (fosse), but presente (sia) is also correct."
+      },
+      {
+        "k": "type",
+        "q": "Cerchiamo un cameriere che ___ l'inglese e il tedesco.",
+        "h": "parlare",
+        "a": [
+          "parli"
+        ],
+        "why": "A person you are looking for and have not found: use the congiuntivo."
+      },
+      {
+        "k": "type",
+        "q": "È la pizza più buona che io ___ a Napoli.",
+        "h": "mangiare · passato",
+        "a": [
+          "abbia mangiato",
+          "abbia mai mangiato"
+        ],
+        "why": "Superlative + <b>che</b> + congiuntivo passato."
+      },
+      {
+        "k": "type",
+        "q": "L'esame è stato più facile di quanto ___.",
+        "h": "temere · noi",
+        "a": [
+          "temessimo",
+          "avessimo temuto"
+        ],
+        "why": "<b>più di quanto</b> + congiuntivo; past context: temessimo."
+      },
+      {
+        "k": "mc",
+        "q": "Ho finito la relazione ___ il capo me la chiedesse.",
+        "o": [
+          "prima che",
+          "prima di",
+          "dopo che"
+        ],
+        "a": "prima che",
+        "why": "Different subjects and congiuntivo (chiedesse): use prima che; dopo che takes the indicativo."
+      },
+      {
+        "k": "mc",
+        "q": "Se n'è andato ___ salutare nessuno.",
+        "o": [
+          "senza",
+          "senza che",
+          "senza di"
+        ],
+        "a": "senza",
+        "why": "Same subject: use <b>senza</b> + infinitive."
+      },
+      {
+        "k": "mc",
+        "q": "Ti do il mio numero ___ tu mi possa chiamare.",
+        "o": [
+          "perché",
+          "siccome",
+          "dato che"
+        ],
+        "a": "perché",
+        "why": "<b>perché</b> + congiuntivo means “so that”; siccome and dato che take the indicativo."
+      },
+      {
+        "k": "mc",
+        "q": "Conosco un idraulico che ___ anche la domenica.",
+        "o": [
+          "lavora",
+          "lavori",
+          "lavorasse"
+        ],
+        "a": "lavora",
+        "why": "A real person you know: use the indicativo."
+      }
     ]
   }
 ]

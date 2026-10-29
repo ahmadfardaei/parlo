@@ -25,27 +25,11 @@
         ]
       },
       {
-        "h": "Explaining: vale a dire, ovvero",
-        "t": "Use <b>vale a dire</b> or <b>ovvero</b> to say the same thing more precisely.",
-        "ex": [
-          "La consegna è prevista entro fine mese, vale a dire tra dieci giorni.",
-          "Delivery is expected by the end of the month, that is, in ten days."
-        ]
-      },
-      {
-        "h": "Confirming and turning: in effetti, detto questo",
+        "h": "Agreeing and turning",
         "t": "Use <b>in effetti</b> to agree, and <b>detto questo</b> to accept a point, then turn.",
         "ex": [
           "«Il treno per Bari è sempre in ritardo.» «In effetti, ieri ho aspettato quaranta minuti.»",
           "“The train to Bari is always late.” “True, yesterday I waited forty minutes.”"
-        ]
-      },
-      {
-        "h": "Two things at once: nel frattempo",
-        "t": "Use <b>nel frattempo</b> or <i>intanto</i> for an action at the same time.",
-        "ex": [
-          "Io cercavo un parcheggio a Napoli; nel frattempo, mia moglie aveva già ordinato le pizze.",
-          "I was looking for a parking space in Naples; meanwhile, my wife had already ordered the pizzas."
         ]
       },
       {
@@ -58,47 +42,42 @@
       }
     ],
     "form": {
-      "intro": "Put these markers at the start of the sentence or after a semicolon. Put a comma after them. They do not change the verb: use the indicative.",
+      "intro": "A marker can also follow a semicolon, and the verb after it stays in the indicative.",
       "tables": [
         {
-          "h": "Ordering",
+          "h": "Ordering and adding",
+          "cols": [
+            "it",
+            "en"
+          ],
           "rows": [
             [
-              "innanzitutto, prima di tutto, in primo luogo",
+              "innanzitutto, prima di tutto",
               "first of all"
             ],
             [
-              "poi, in secondo luogo, inoltre",
-              "then, second, in addition"
+              "poi, in secondo luogo",
+              "then, second"
             ],
             [
               "infine, per finire",
               "finally (the last item in a list)"
             ],
             [
-              "dopodiché, a quel punto",
-              "after that, at that point (in a story)"
-            ]
-          ]
-        },
-        {
-          "h": "Adding",
-          "rows": [
-            [
-              "inoltre",
-              "moreover, in addition (neutral, common in writing)"
+              "inoltre, in più",
+              "in addition"
             ],
             [
               "peraltro, tra l'altro",
-              "what is more, incidentally (a side remark)"
+              "what is more (a side remark)"
             ],
             [
-              "per di più, in più",
+              "per di più",
               "on top of that (often in a complaint)"
             ],
             [
-              "oltre a + noun / infinitive",
-              "besides, as well as: oltre al prezzo, oltre a essere caro"
+              "oltre a",
+              "besides (+ noun or infinitive)"
             ],
             [
               "non solo… ma anche",
@@ -107,31 +86,39 @@
           ]
         },
         {
-          "h": "Explaining and specifying",
+          "h": "Explaining",
+          "cols": [
+            "it",
+            "en"
+          ],
           "rows": [
             [
-              "vale a dire, ovvero, ossia",
-              "that is, namely (more formal than cioè)"
+              "vale a dire, ovvero",
+              "that is (more formal than <i>cioè</i>)"
             ],
             [
               "in particolare",
               "in particular"
             ],
             [
-              "ad esempio, per esempio",
+              "per esempio",
               "for example"
             ]
           ]
         },
         {
-          "h": "Confirming, turning, summing up",
+          "h": "Agreeing, turning, summing up",
+          "cols": [
+            "it",
+            "en"
+          ],
           "rows": [
             [
               "in effetti",
-              "indeed, true (agrees or concedes)"
+              "true, indeed (agrees)"
             ],
             [
-              "detto questo, detto ciò",
+              "detto questo",
               "that said (accepts a point, then turns)"
             ],
             [
@@ -139,17 +126,15 @@
               "meanwhile"
             ],
             [
-              "insomma, in sintesi, in breve",
-              "in short, all in all"
+              "insomma, in breve",
+              "in short"
             ]
           ]
         }
       ],
       "notes": [
         "Use <b>infine</b> for the last item in a list. Use <b>alla fine</b> for “in the end”: <i>Alla fine il traghetto è partito.</i>",
-        "Use <b>oltre a</b> + infinitive when both parts have the same subject: <i>Oltre a essere caro, è scomodo.</i>",
-        "In <b>non solo… ma anche</b>, put <i>anche</i> before the word it adds: <i>non solo è caro, ma è anche brutto</i>.",
-        "Use one marker for each sentence. Do not put two markers together."
+        "In <b>non solo… ma anche</b>, put <i>anche</i> before the word it adds: <i>non solo è caro, ma è anche brutto</i>."
       ]
     },
     "signals": [
@@ -179,11 +164,6 @@
         "wrong": "Non solo è lontano, ma anche è caro.",
         "right": "Non solo è lontano, ma è anche caro.",
         "why": "Put <b>anche</b> after the verb, before the word it adds."
-      },
-      {
-        "wrong": "Il progetto ha dei limiti. Detto questo, non mi piace.",
-        "right": "Il progetto ha dei limiti. Detto questo, è il migliore che abbiamo.",
-        "why": "After <b>detto questo</b>, go in the opposite direction."
       }
     ],
     "ex": [
@@ -340,8 +320,8 @@
     "meaning": "The past infinitive is avere or essere + past participle: <i>aver mangiato</i>, <i>essere arrivato</i>. Use it for an action that is <b>finished before</b> the main action. Use it only when both actions have <b>the same subject</b>.",
     "uses": [
       {
-        "h": "After doing: dopo + infinito passato",
-        "t": "After <b>dopo</b>, use the past infinitive for English “after doing”.",
+        "h": "After dopo and senza",
+        "t": "Use it after <b>dopo</b> (“after doing”) and <b>senza</b> (“without having done”).",
         "ex": [
           "Dopo aver visto il mare di Polignano, non voleva più tornare a Torino.",
           "After seeing the sea at Polignano, she didn't want to go back to Turin."
@@ -356,7 +336,7 @@
         ]
       },
       {
-        "h": "With pronouns: dopo averlo visto",
+        "h": "With pronouns",
         "t": "Attach pronouns to <b>aver / essere</b>; the past participle agrees with lo, la, li, le.",
         "ex": [
           "La lettera? Dopo averla letta, l'ha strappata.",
@@ -364,47 +344,35 @@
         ]
       },
       {
-        "h": "Without having done: senza",
-        "t": "Use <b>senza</b> + past infinitive for “without having done”.",
-        "ex": [
-          "È partito per Cagliari senza aver salutato nessuno.",
-          "He left for Cagliari without saying goodbye to anyone."
-        ]
-      },
-      {
-        "h": "Because of what you did: per",
-        "t": "Use <b>per</b> + past infinitive for the reason for thanks, a reward or a punishment.",
+        "h": "After per and di verbs",
+        "t": "Use it after <b>grazie per</b>, <b>credo di</b> and <b>mi dispiace di</b>.",
         "ex": [
           "Grazie per avermi aspettato.",
           "Thanks for waiting for me."
         ]
-      },
-      {
-        "h": "After verbs with di",
-        "t": "Use the past infinitive after <b>credo di, mi dispiace di, sono contento di, ricordo di</b>.",
-        "ex": [
-          "Mi dispiace di non essere venuto alla tua laurea.",
-          "I'm sorry I didn't come to your graduation."
-        ]
       }
     ],
     "form": {
-      "intro": "Use <b>avere</b> or <b>essere</b> in the infinitive + the past participle. Choose the auxiliary as in the passato prossimo. <i>Avere</i> often drops the final -e: <b>aver</b> mangiato.",
+      "intro": "Choose <i>avere</i> or <i>essere</i> as in the passato prossimo; <i>avere</i> often drops the final -e: <b>aver</b> mangiato.",
       "tables": [
         {
           "h": "The forms",
+          "cols": [
+            "en",
+            "it"
+          ],
           "rows": [
             [
               "avere verbs",
-              "aver(e) mangiato, aver(e) finito, aver(e) visto"
+              "aver mangiato, aver visto"
             ],
             [
               "essere verbs",
-              "essere arrivato / arrivata / arrivati / arrivate"
+              "essere arrivat<b>o</b> / arrivat<b>a</b> / arrivat<b>i</b> / arrivat<b>e</b>"
             ],
             [
               "reflexive verbs",
-              "essermi alzato, esserti alzata, essersi alzato, esserci alzati, esservi alzati, essersi alzate"
+              "esser<b>mi</b> alzato, esser<b>si</b> alzato, esser<b>ci</b> alzati"
             ],
             [
               "negative",
@@ -414,26 +382,31 @@
         },
         {
           "h": "With pronouns",
+          "cols": [
+            "it",
+            "it",
+            "en"
+          ],
           "rows": [
             [
-              "lo / la",
-              "averlo visto, averla vista"
+              "lo, la",
+              "aver<b>lo</b> visto, aver<b>la</b> vista",
+              "agrees with the pronoun"
             ],
             [
-              "li / le",
-              "averli visti, averle viste"
+              "li, le",
+              "aver<b>li</b> visti, aver<b>le</b> viste",
+              "agrees with the pronoun"
             ],
             [
-              "ne",
-              "averne comprati due"
-            ],
-            [
-              "gli, mi, ti…",
-              "avergli parlato, avermi aiutato (no agreement)"
+              "mi, ti, gli…",
+              "aver<b>mi</b> aiutato, aver<b>gli</b> parlato",
+              "no agreement"
             ],
             [
               "ci (place)",
-              "esserci stati"
+              "esser<b>ci</b> stati",
+              "agrees with the subject"
             ]
           ]
         }
@@ -468,11 +441,6 @@
         "wrong": "Dopo essere uscita, Marco mi ha chiamato.",
         "right": "Dopo che sono uscita, Marco mi ha chiamato.",
         "why": "With different subjects, use <b>dopo che</b> + passato prossimo."
-      },
-      {
-        "wrong": "Le foto? Dopo aver le viste, le ho cancellate.",
-        "right": "Le foto? Dopo averle viste, le ho cancellate.",
-        "why": "Attach the pronoun to <b>aver</b> and make the past participle agree with it."
       }
     ],
     "ex": [
@@ -633,14 +601,6 @@
         ]
       },
       {
-        "h": "cavarsela: to get by",
-        "t": "Use <b>cavarsela</b> for “to get by”: <b>me la cavo</b>.",
-        "ex": [
-          "Con il dialetto barese me la cavo, ma il napoletano non lo capisco.",
-          "I get by in Bari dialect, but I don't understand Neapolitan."
-        ]
-      },
-      {
         "h": "prendersela: to take it badly",
         "t": "Use <b>prendersela</b> (con someone, per something) for “to get upset”.",
         "ex": [
@@ -649,89 +609,122 @@
         ]
       },
       {
-        "h": "metterci and volerci: how long it takes",
+        "h": "metterci, volerci: time it takes",
         "t": "Use <b>metterci</b> with a person as subject and <b>volerci</b> with the time as subject.",
         "ex": [
           "Da Ivrea a Torino ci metto quaranta minuti, ma col treno ci vuole un'ora.",
           "It takes me forty minutes from Ivrea to Turin, but by train it takes an hour."
         ]
-      },
-      {
-        "h": "fregarsene and smetterla: attitude",
-        "t": "Use <b>fregarsene</b> for “not to care” (rude) and <b>smetterla</b> for “to stop”.",
-        "ex": [
-          "Smettila di controllare il telefono: tanto lui se ne frega.",
-          "Stop checking your phone: he couldn't care less anyway."
-        ]
       }
     ],
     "form": {
-      "intro": "Before <b>la</b> and <b>ne</b>, mi, ti, si, ci, vi change to <b>me, te, se, ce, ve</b>. Put the pronouns before a conjugated verb. Attach them to an infinitive, a gerund or a tu/voi imperative.",
+      "intro": "Before <b>la</b> and <b>ne</b>, mi, ti, si, ci, vi change to <b>me, te, se, ce, ve</b>.",
       "tables": [
         {
-          "h": "Presente",
+          "h": "Present tense",
+          "cols": [
+            "it",
+            "it",
+            "en"
+          ],
           "rows": [
             [
               "farcela",
-              "ce la faccio, ce la fai, ce la fa, ce la facciamo, ce la fate, ce la fanno"
+              "ce la faccio",
+              "to manage"
             ],
             [
               "andarsene",
-              "me ne vado, te ne vai, se ne va, ce ne andiamo, ve ne andate, se ne vanno"
+              "me ne vado",
+              "to leave"
             ],
             [
               "cavarsela",
-              "me la cavo, te la cavi, se la cava, ce la caviamo, ve la cavate, se la cavano"
+              "me la cavo",
+              "to get by"
             ],
             [
               "prendersela",
-              "me la prendo, te la prendi, se la prende, ce la prendiamo, ve la prendete, se la prendono"
+              "me la prendo",
+              "to take it badly"
             ],
             [
               "fregarsene",
-              "me ne frego, te ne freghi, se ne frega…"
+              "me ne frego",
+              "not to care (rude)"
+            ],
+            [
+              "smetterla",
+              "la smetto",
+              "to stop"
+            ],
+            [
+              "metterci",
+              "ci metto",
+              "to take (time)"
+            ],
+            [
+              "volerci",
+              "ci vuole, ci vogliono",
+              "to be necessary (time)"
             ]
           ]
         },
         {
           "h": "Passato prossimo",
+          "cols": [
+            "it",
+            "it",
+            "en"
+          ],
           "rows": [
             [
               "farcela",
-              "ce l'ho fatta, ce l'hai fatta (avere; always <b>fatta</b>)"
+              "ce l'ho fatt<b>a</b>",
+              "<i>avere</i>; always <i>fatta</i>"
             ],
             [
               "cavarsela",
-              "me la sono cavata, se l'è cavata (essere; always <b>-a</b>)"
+              "me la sono cavat<b>a</b>",
+              "<i>essere</i>; always <i>-a</i>"
             ],
             [
               "prendersela",
-              "te la sei presa, se l'è presa (essere; always <b>presa</b>)"
+              "se l'è pres<b>a</b>",
+              "<i>essere</i>; always <i>presa</i>"
             ],
             [
               "andarsene",
-              "me ne sono andato/a, se n'è andata, se ne sono andati (agrees with the subject)"
+              "se n'è andat<b>o</b> / andat<b>a</b>",
+              "agrees with the subject"
             ],
             [
               "fregarsene",
-              "me ne sono fregato/a (agrees with the subject)"
+              "me ne sono fregat<b>o</b> / fregat<b>a</b>",
+              "agrees with the subject"
             ],
             [
               "metterci",
-              "ci ho messo, ci abbiamo messo (avere, no agreement)"
+              "ci ho messo",
+              "<i>avere</i>; no agreement"
             ],
             [
               "volerci",
-              "c'è voluta un'ora, ci sono voluti due giorni (essere; agrees with the time)"
+              "c'è volut<b>a</b> un'ora, ci sono volut<b>i</b> due giorni",
+              "agrees with the time"
             ]
           ]
         },
         {
           "h": "Imperative and infinitive",
+          "cols": [
+            "en",
+            "it"
+          ],
           "rows": [
             [
               "tu",
-              "vattene, smettila, cavatela, fattela passare"
+              "vattene, smettila, cavatela"
             ],
             [
               "voi",
@@ -739,18 +732,17 @@
             ],
             [
               "negative tu",
-              "non te la prendere / non prendertela, non te ne andare / non andartene"
+              "non te la prendere, non te ne andare"
             ],
             [
-              "with modal verbs",
-              "devo andarmene = me ne devo andare; non riesco a farcela"
+              "with a modal verb",
+              "me ne devo andare = devo andarmene"
             ]
           ]
         }
       ],
       "notes": [
-        "With <b>la</b>, the past participle is always feminine: <i>Paolo ce l'ha fatta</i>, <i>Paolo se l'è presa</i>.",
-        "With <b>andarsene</b> and <b>fregarsene</b>, the past participle agrees with the subject: <i>Giulia se n'è andata</i>.",
+        "Put the pronouns before a conjugated verb. Attach them to an infinitive or a tu/voi imperative.",
         "A person takes the time: use <b>metterci</b>. The time is necessary: use <b>volerci</b> (<i>ci vuole un'ora</i>, <i>ci vogliono tre ore</i>).",
         "Other common verbs: <b>avercela con</b> (to be angry with), <b>sentirsela</b> (to feel ready), <b>godersela</b> (to enjoy it)."
       ]
@@ -782,11 +774,6 @@
         "wrong": "Ci vuole tre ore per arrivare a Lecce.",
         "right": "Ci vogliono tre ore per arrivare a Lecce.",
         "why": "With <b>volerci</b>, the plural time <i>tre ore</i> is the subject: <b>vogliono</b>."
-      },
-      {
-        "wrong": "Ci ho voluto un'ora per trovare parcheggio.",
-        "right": "Ci ho messo un'ora per trovare parcheggio.",
-        "why": "A person is the subject, so use <b>metterci</b>."
       }
     ],
     "ex": [

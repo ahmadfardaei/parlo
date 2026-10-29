@@ -39,33 +39,29 @@
           "Corri, il treno sta per partire!",
           "Run, the train is about to leave!"
         ]
-      },
-      {
-        "h": "Almost happened",
-        "t": "Use <b>stavo per</b> for an action that almost happened in the past.",
-        "ex": [
-          "Stavo per chiamarti, giuro.",
-          "I was just about to call you, I swear."
-        ]
       }
     ],
     "form": {
-      "intro": "Use <b>stare</b> (sto, stai, sta, stiamo, state, stanno) + the gerund. The gerund does not change. To make the gerund, remove <b>-are</b> and add <b>-ando</b>. Remove <b>-ere</b> or <b>-ire</b> and add <b>-endo</b>.",
+      "intro": "Use <b>stare</b> + the gerund. -are verbs take <b>-ando</b>; -ere and -ire verbs take <b>-endo</b>.",
       "tables": [
         {
           "h": "How to make the gerund",
+          "cols": [
+            "it",
+            "it"
+          ],
           "rows": [
             [
               "-are → -ando",
-              "parlare → parlando, mangiare → mangiando"
+              "parlare → parl<b>ando</b>, mangiare → mangi<b>ando</b>"
             ],
             [
               "-ere → -endo",
-              "leggere → leggendo, prendere → prendendo"
+              "leggere → legg<b>endo</b>, prendere → prend<b>endo</b>"
             ],
             [
               "-ire → -endo",
-              "dormire → dormendo, finire → finendo (no -isc-)"
+              "dormire → dorm<b>endo</b>, finire → fin<b>endo</b>"
             ]
           ]
         },
@@ -96,6 +92,10 @@
               "loro",
               "stanno lavorando"
             ]
+          ],
+          "cols": [
+            "it",
+            "it"
           ]
         },
         {
@@ -113,13 +113,16 @@
               "stavamo per partire",
               "we were about to leave"
             ]
+          ],
+          "cols": [
+            "it",
+            "en"
           ]
         }
       ],
       "notes": [
-        "Use <b>stare</b>, not essere: <i>sto mangiando</i>, not <i>sono mangiando</i>.",
-        "For the past, use stare in the <b>imperfetto</b>: stavo, stavi, stava, stavamo, stavate, stavano + gerund.",
-        "Put pronouns before stare or attach them to the gerund: <i>mi sto vestendo</i> = <i>sto vestendomi</i>. The first form is more common.",
+        "For the past, use stare in the <b>imperfetto</b>: <i>stavo, stavi, stava, stavamo, stavate, stavano</i> + gerund.",
+        "Put pronouns before stare: <i>mi sto vestendo</i>. <i>Sto vestendomi</i> is also correct, but less common.",
         "Do not use it for the future or for habits: <i>domani parto</i>, not <i>domani sto partendo</i>."
       ]
     },
@@ -141,7 +144,7 @@
         "traducendo"
       ]
     ],
-    "irregularTitle": "Irregular gerunds (same stem as the imperfetto)",
+    "irregularTitle": "Irregular gerunds",
     "signals": [
       "adesso",
       "in questo momento",
@@ -160,11 +163,6 @@
         "wrong": "Sto facciendo i compiti.",
         "right": "Sto facendo i compiti.",
         "why": "The gerund of fare is <b>facendo</b>."
-      },
-      {
-        "wrong": "Stasera sto andando al cinema.",
-        "right": "Stasera vado al cinema.",
-        "why": "For plans, use the presente, not stare + gerund."
       },
       {
         "wrong": "Il film sta per cominciando.",
@@ -316,14 +314,6 @@
         ]
       },
       {
-        "h": "Advice",
-        "t": "Use it to tell a friend what to do.",
-        "ex": [
-          "Prendi l'ombrello, a Genova non si sa mai.",
-          "Take the umbrella, in Genoa you never know."
-        ]
-      },
-      {
         "h": "Invitations and offers",
         "t": "Add <b>pure</b> or <b>dai</b> to make it softer.",
         "ex": [
@@ -349,35 +339,48 @@
       }
     ],
     "form": {
-      "intro": "For <b>tu</b>, -are verbs end in <b>-a</b>. -ere and -ire verbs end in <b>-i</b>. The <b>noi</b> and <b>voi</b> forms are the same as the presente. The polite <b>Lei</b> form changes the vowel: -are → <b>-i</b>, -ere/-ire → <b>-a</b>.",
+      "intro": "For tu, -are verbs end in <b>-a</b>; -ere and -ire verbs end in <b>-i</b>. Noi and voi match the presente.",
       "tables": [
         {
-          "h": "Regular verbs",
+          "h": "Regular verbs: -are · -ere / -ire",
+          "cols": [
+            "it",
+            "it",
+            "it"
+          ],
           "rows": [
             [
               "tu",
-              "parla · prendi · senti · finisci"
+              "parl<b>a</b>",
+              "prend<b>i</b>, sent<b>i</b>"
             ],
             [
               "noi",
-              "parliamo · prendiamo · sentiamo · finiamo"
+              "parl<b>iamo</b>",
+              "prend<b>iamo</b>, sent<b>iamo</b>"
             ],
             [
               "voi",
-              "parlate · prendete · sentite · finite"
+              "parl<b>ate</b>",
+              "prend<b>ete</b>, sent<b>ite</b>"
             ],
             [
               "Lei",
-              "parli · prenda · senta · finisca"
+              "parl<b>i</b>",
+              "prend<b>a</b>, sent<b>a</b>"
             ]
           ]
         },
         {
-          "h": "Negative",
+          "h": "Negative (tu: non + infinitive)",
+          "cols": [
+            "it",
+            "it"
+          ],
           "rows": [
             [
               "tu",
-              "non + infinitive: non parlare, non toccare"
+              "non <b>parlare</b>, non <b>toccare</b>"
             ],
             [
               "noi",
@@ -395,18 +398,26 @@
         },
         {
           "h": "Pronouns",
+          "cols": [
+            "it",
+            "en",
+            "it"
+          ],
           "rows": [
             [
               "tu, noi, voi",
-              "attached to the end: dimmi, fallo, prendiamolo, sentitemi"
+              "attached to the end",
+              "dimmi, fallo, prendiamolo"
             ],
             [
               "Lei",
-              "before the verb: mi dica, si accomodi, lo prenda"
+              "before the verb",
+              "mi dica, si accomodi"
             ],
             [
-              "negative tu",
-              "before or attached: non farlo = non lo fare"
+              "non + tu",
+              "before or attached",
+              "non farlo = non lo fare"
             ]
           ]
         }
@@ -459,7 +470,7 @@
         "tu sappi · voi sappiate · Lei sappia"
       ]
     ],
-    "irregularTitle": "Irregular forms (for tu, the short form with an apostrophe and the long form are both common)",
+    "irregularTitle": "Irregular forms (for tu, <i>va'</i> and <i>vai</i> are both correct)",
     "signals": [
       "dai",
       "pure",
@@ -483,11 +494,6 @@
         "wrong": "Signore, prendi un biscotto!",
         "right": "Signore, prenda un biscotto!",
         "why": "For Lei, -ere and -ire verbs end in <b>-a</b>."
-      },
-      {
-        "wrong": "Mi dì!",
-        "right": "Dimmi! / Mi dica!",
-        "why": "With tu, attach the pronoun (dimmi); with Lei, put it before (mi dica)."
       }
     ],
     "ex": [
@@ -668,18 +674,10 @@
           "Non avevo mai visto la neve a Palermo.",
           "I had never seen snow in Palermo."
         ]
-      },
-      {
-        "h": "After dopo che / appena",
-        "t": "Use it for the action that ended before the next action.",
-        "ex": [
-          "Dopo che gli ospiti erano usciti, abbiamo lavato i piatti.",
-          "After the guests had left, we washed the dishes."
-        ]
       }
     ],
     "form": {
-      "intro": "Use <b>avere / essere</b> in the <b>imperfetto</b> + <b>past participle</b>. Choose avere or essere as in the passato prossimo. The agreement rules are the same.",
+      "intro": "Use <b>avere / essere</b> in the <b>imperfetto</b> + <b>past participle</b>. Choose the auxiliary as in the passato prossimo.",
       "tables": [
         {
           "h": "with avere · mangiare",
@@ -708,6 +706,10 @@
               "loro",
               "avevano mangiato"
             ]
+          ],
+          "cols": [
+            "it",
+            "it"
           ]
         },
         {
@@ -737,6 +739,10 @@
               "loro",
               "erano partiti/e"
             ]
+          ],
+          "cols": [
+            "it",
+            "it"
           ]
         },
         {
@@ -750,6 +756,10 @@
               "Sono arrivato e il film era già cominciato.",
               "the film started first, then I arrived"
             ]
+          ],
+          "cols": [
+            "it",
+            "en"
           ]
         }
       ],
@@ -784,11 +794,6 @@
         "wrong": "Mi ha detto che ha già mangiato.",
         "right": "Mi ha detto che aveva già mangiato.",
         "why": "In reported speech after a past verb, use the trapassato for an earlier action."
-      },
-      {
-        "wrong": "Ieri ero tornato a casa e avevo cenato.",
-        "right": "Ieri sono tornato a casa e ho cenato.",
-        "why": "Events told in order do not need the trapassato."
       }
     ],
     "ex": [
@@ -925,8 +930,8 @@
     "topic": "verbtypes",
     "title": "Il si impersonale e passivante",
     "en": "Impersonal and passive si",
-    "summary": "Use si + verb to say what people do in general, or what is done.",
-    "meaning": "Use <b>si</b> + a 3rd person verb for people in general: <i>people say</i>, <i>you cannot smoke here</i>, <i>houses are sold</i>. It does not name a person. When the verb has an object, the verb agrees with the object: <i>si vende <b>una casa</b></i>, <i>si vendono <b>case</b></i>.",
+    "summary": "Use si + verb for what people do in general, or what is done.",
+    "meaning": "Use <b>si</b> + a 3rd person verb for people in general: <i>si mangia tardi</i>. With an object, the verb agrees with the object: <i>si vende <b>una casa</b></i>, <i>si vendono <b>case</b></i>.",
     "uses": [
       {
         "h": "What people do (impersonal)",
@@ -962,7 +967,7 @@
       }
     ],
     "form": {
-      "intro": "Use <b>si + 3rd person verb</b>. Use the singular with no object or with a singular object. Use the plural with a plural object.",
+      "intro": "Put si before the verb. In compound tenses, always use <b>essere</b>: <i>si è mangiato</i>.",
       "tables": [
         {
           "h": "Which form?",
@@ -983,6 +988,10 @@
               "after a modal",
               "si può pagare con la carta / si possono pagare le multe online"
             ]
+          ],
+          "cols": [
+            "en",
+            "it"
           ]
         },
         {
@@ -1000,6 +1009,10 @@
               "abituarsi",
               "ci si abitua a tutto"
             ]
+          ],
+          "cols": [
+            "it",
+            "it"
           ]
         },
         {
@@ -1017,6 +1030,10 @@
               "plural object",
               "si sono vendute molte case"
             ]
+          ],
+          "cols": [
+            "en",
+            "it"
           ]
         }
       ],
@@ -1038,11 +1055,6 @@
         "wrong": "Si vende appartamenti.",
         "right": "Si vendono appartamenti.",
         "why": "With a plural object, use a plural verb: <b>si vendono</b>."
-      },
-      {
-        "wrong": "Si si alza presto.",
-        "right": "Ci si alza presto.",
-        "why": "Reflexive verbs need <b>ci si</b>."
       },
       {
         "wrong": "Quando si è giovane, si sbaglia.",
@@ -1190,7 +1202,7 @@
     "title": "La forma passiva",
     "en": "The passive voice",
     "summary": "Use the passive to put the focus on the thing that receives the action.",
-    "meaning": "The passive puts the focus on what receives the action, not on the doer: <i>Il Duomo è stato costruito in sei secoli</i>. Italian uses three auxiliaries: <b>essere</b> (all tenses), <b>venire</b> (an action, not a state) and <b>andare</b> (“must be done”). Use <b>da</b> to name the doer.",
+    "meaning": "The passive puts the focus on what receives the action: <i>Il Duomo è stato costruito in sei secoli</i>. Use <b>essere</b>, <b>venire</b> (an action) or <b>andare</b> (“must be done”). Use <b>da</b> to name the doer.",
     "uses": [
       {
         "h": "Focus on the result",
@@ -1209,7 +1221,7 @@
         ]
       },
       {
-        "h": "An action, not a state: venire",
+        "h": "An action: venire",
         "t": "Use <b>venire</b> to show an action, not a state; only in simple tenses.",
         "ex": [
           "Il museo viene chiuso alle sette in punto.",
@@ -1223,18 +1235,10 @@
           "Il modulo va compilato in stampatello.",
           "The form must be filled in in capital letters."
         ]
-      },
-      {
-        "h": "Lost, wasted, destroyed: andare",
-        "t": "Use <b>andare</b> with perdere, sprecare and distruggere: “got lost, wasted, destroyed”.",
-        "ex": [
-          "Durante il trasloco sono andate perse tutte le foto della nonna.",
-          "All Grandma's photos got lost during the move."
-        ]
       }
     ],
     "form": {
-      "intro": "Use the auxiliary in the tense you need + <b>past participle</b>. The past participle agrees with the subject: <i>la casa è venduta</i>, <i>le case sono vendute</i>.",
+      "intro": "Use the auxiliary in the tense you need + <b>past participle</b>. The past participle agrees with the subject.",
       "tables": [
         {
           "h": "essere · costruire",
@@ -1259,10 +1263,18 @@
               "with a modal",
               "il ponte deve essere costruito"
             ]
+          ],
+          "cols": [
+            "en",
+            "it"
           ]
         },
         {
           "h": "venire · simple tenses only",
+          "cols": [
+            "en",
+            "it"
+          ],
           "rows": [
             [
               "presente",
@@ -1275,10 +1287,6 @@
             [
               "futuro",
               "la porta verrà chiusa"
-            ],
-            [
-              "passato prossimo",
-              "not possible: use è stata chiusa"
             ]
           ]
         },
@@ -1297,27 +1305,10 @@
               "past",
               "la domanda andava presentata entro marzo"
             ]
-          ]
-        },
-        {
-          "h": "da + doer",
-          "rows": [
-            [
-              "da + il",
-              "dal direttore"
-            ],
-            [
-              "da + la",
-              "dalla polizia"
-            ],
-            [
-              "da + i",
-              "dai turisti"
-            ],
-            [
-              "da + le",
-              "dalle autorità"
-            ]
+          ],
+          "cols": [
+            "en",
+            "it"
           ]
         }
       ],
@@ -1344,11 +1335,6 @@
         "wrong": "La torta è stata preparata di mia nonna.",
         "right": "La torta è stata preparata da mia nonna.",
         "why": "Always use <b>da</b> for the doer, never di or per."
-      },
-      {
-        "wrong": "Le regole sono state approvato.",
-        "right": "Le regole sono state approvate.",
-        "why": "Both past participles agree with the subject: state, approvate."
       },
       {
         "wrong": "Questi documenti va firmati.",

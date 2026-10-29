@@ -5,8 +5,8 @@
     "topic": "tenses",
     "title": "Il congiuntivo imperfetto",
     "en": "Imperfect subjunctive",
-    "summary": "The past form of the congiuntivo; use it after past verbs, se and magari.",
-    "meaning": "The congiuntivo imperfetto has the same uses as the congiuntivo presente, but in a <b>past</b> context. Use it when the main verb is in a past tense or in the condizionale. Also use it after <b>se</b> (“if I were”), <b>magari</b> and <b>come se</b>.",
+    "summary": "Use this past congiuntivo after past verbs, vorrei che, se and magari.",
+    "meaning": "The congiuntivo imperfetto has the same uses as the congiuntivo presente, but in a <b>past</b> context. Use it when the main verb is in a past tense or in the condizionale. Also use it after <b>se</b>, <b>magari</b> and <b>come se</b>.",
     "uses": [
       {
         "h": "After a past main verb",
@@ -33,24 +33,16 @@
         ]
       },
       {
-        "h": "Magari! (if only)",
+        "h": "Magari (if only)",
         "t": "Use it after magari for a wish that probably will not come true.",
         "ex": [
           "Magari avessi vent'anni di meno!",
           "If only I were twenty years younger!"
         ]
-      },
-      {
-        "h": "come se (as if)",
-        "t": "Always use the congiuntivo imperfetto after come se.",
-        "ex": [
-          "Mi guarda come se fossi pazza.",
-          "She looks at me as if I were mad."
-        ]
       }
     ],
     "form": {
-      "intro": "Remove <b>-re</b> from the infinitive and add <b>-ssi, -ssi, -sse, -ssimo, -ste, -ssero</b>. The vowel before -re (a, e, i) does not change. The io and tu forms are the same, so use the pronoun when necessary.",
+      "intro": "Remove <b>-re</b> from the infinitive and add <b>-ssi, -ssi, -sse, -ssimo, -ste, -ssero</b>.",
       "tables": [
         {
           "h": "-are · parlare",
@@ -75,6 +67,10 @@
               "loro",
               "parlassero"
             ]
+          ],
+          "cols": [
+            "it",
+            "it"
           ]
         },
         {
@@ -100,6 +96,10 @@
               "loro",
               "prendessero"
             ]
+          ],
+          "cols": [
+            "it",
+            "it"
           ]
         },
         {
@@ -125,31 +125,17 @@
               "loro",
               "dormissero"
             ]
-          ]
-        },
-        {
-          "h": "Which congiuntivo?",
-          "rows": [
-            [
-              "main verb in the present",
-              "Penso che <b>sia</b> stanco."
-            ],
-            [
-              "main verb in the past",
-              "Pensavo che <b>fosse</b> stanco."
-            ],
-            [
-              "main verb in the condizionale",
-              "Vorrei che <b>fosse</b> qui."
-            ]
+          ],
+          "cols": [
+            "it",
+            "it"
           ]
         }
       ],
       "notes": [
+        "The io and tu forms are the same. Add the pronoun when the subject is not clear.",
         "Do not add -isc-: finire → finissi, capire → capissi.",
-        "Most irregular verbs use the stem of the <b>imperfetto</b>: facevo → facessi, dicevo → dicessi, bevevo → bevessi.",
-        "<b>avere</b> is regular: avessi, avessi, avesse, avessimo, aveste, avessero.",
-        "Never use the condizionale after <b>se</b>: “se avrei” is wrong."
+        "Most irregular verbs use the stem of the <b>imperfetto</b>: facevo → facessi, dicevo → dicessi, bevevo → bevessi."
       ]
     },
     "irregular": [
@@ -179,7 +165,7 @@
       ],
       [
         "tradurre",
-        "traducessi… (all -durre verbs: produrre → producessi)"
+        "traducessi (also produrre → producessi)"
       ]
     ],
     "irregularTitle": "Irregular verbs",
@@ -196,17 +182,12 @@
       {
         "wrong": "Se avrei tempo, verrei.",
         "right": "Se avessi tempo, verrei.",
-        "why": "After <b>se</b>, use the congiuntivo imperfetto; the condizionale goes in the result."
+        "why": "After <b>se</b>, use the congiuntivo imperfetto. Use the condizionale in the result."
       },
       {
         "wrong": "Volevo che tu vieni.",
         "right": "Volevo che tu venissi.",
-        "why": "Volere che takes the congiuntivo; a past main verb needs the imperfetto."
-      },
-      {
-        "wrong": "Vorrei che tu sia qui.",
-        "right": "Vorrei che tu fossi qui.",
-        "why": "After a condizionale (vorrei, preferirei), use the congiuntivo imperfetto."
+        "why": "Volere che takes the congiuntivo. A past main verb needs the imperfetto."
       },
       {
         "wrong": "Parla come se sa tutto.",
@@ -222,7 +203,7 @@
         "a": [
           "fossi"
         ],
-        "why": "Past main verb (pensavo) → congiuntivo imperfetto: fossi."
+        "why": "The main verb (pensavo) is past, so use the congiuntivo imperfetto: fossi."
       },
       {
         "k": "type",
@@ -231,7 +212,7 @@
         "a": [
           "avessi"
         ],
-        "why": "Se + congiuntivo imperfetto; the result takes the condizionale."
+        "why": "Use se + congiuntivo imperfetto. The result takes the condizionale."
       },
       {
         "k": "type",
@@ -240,7 +221,7 @@
         "a": [
           "facesse"
         ],
-        "why": "Magari + congiuntivo imperfetto for a wish; fare → facesse."
+        "why": "Use magari + congiuntivo imperfetto for a wish. Fare → facesse."
       },
       {
         "k": "type",
@@ -258,7 +239,7 @@
         "a": [
           "studiassi"
         ],
-        "why": "Voleva che → congiuntivo imperfetto: studiassi."
+        "why": "Voleva che is past, so use the congiuntivo imperfetto: studiassi."
       },
       {
         "k": "type",
@@ -267,7 +248,7 @@
         "a": [
           "restaste"
         ],
-        "why": "Speravamo che is past → restaste; the voi form ends in -ste."
+        "why": "Speravamo che is past → restaste. The voi form ends in -ste."
       },
       {
         "k": "type",
@@ -285,7 +266,7 @@
         "a": [
           "stessero"
         ],
-        "why": "Era meglio che → congiuntivo imperfetto; stare → stessero."
+        "why": "Era meglio che takes the congiuntivo imperfetto. Stare → stessero."
       },
       {
         "k": "type",
@@ -294,7 +275,7 @@
         "a": [
           "dicesse"
         ],
-        "why": "Fear in the past → congiuntivo imperfetto: dicesse."
+        "why": "Avevo paura che is past, so use the congiuntivo imperfetto: dicesse."
       },
       {
         "k": "type",
@@ -303,7 +284,7 @@
         "a": [
           "spendessimo"
         ],
-        "why": "-ere verb, noi form: spendessimo."
+        "why": "This is an -ere verb in the noi form: spendessimo."
       },
       {
         "k": "type",
@@ -323,7 +304,7 @@
           "sapevi"
         ],
         "a": "sapessi",
-        "why": "Volevo che shows a past wish → congiuntivo imperfetto."
+        "why": "Volevo che is a past wish, so use the congiuntivo imperfetto."
       },
       {
         "k": "mc",
@@ -334,7 +315,7 @@
           "sono"
         ],
         "a": "fossi",
-        "why": "“If I were you”: se + fossi; never the condizionale after se."
+        "why": "For “if I were you”, say se fossi. Never use the condizionale after se."
       },
       {
         "k": "mc",
@@ -345,7 +326,7 @@
           "Magari potrei restare un'altra settimana!"
         ],
         "a": "Magari potessi restare un'altra settimana!",
-        "why": "A wish with magari takes the congiuntivo imperfetto; magari + presente means “maybe”."
+        "why": "Magari + congiuntivo imperfetto is a wish. Magari + presente means “maybe”."
       }
     ]
   },
@@ -384,107 +365,92 @@
       },
       {
         "h": "Spoken type 3 with the imperfetto",
-        "t": "In speech, many people use the <b>imperfetto</b> in both parts; do not write it.",
+        "t": "In speech, many people use the <b>imperfetto</b> in both parts. Do not write it.",
         "ex": [
           "Se lo sapevo, non venivo.",
           "If I'd known, I wouldn't have come."
         ]
-      },
-      {
-        "h": "Mixed: past condition, present result",
-        "t": "A past condition with a present result: se + congiuntivo trapassato → condizionale presente.",
-        "ex": [
-          "Se avessi studiato il tedesco, adesso lavorerei a Bolzano.",
-          "If I'd studied German, I'd be working in Bolzano now."
-        ]
       }
     ],
     "form": {
-      "intro": "Choose the type, then use its tenses. The two parts can change order (<i>Verrei se potessi</i>), but the tenses do not change.",
+      "intro": "Choose the type and use its tenses; the se part can come first or second.",
       "tables": [
         {
           "h": "The three types",
+          "cols": [
+            "en",
+            "it",
+            "it"
+          ],
           "rows": [
             [
-              "1 · reale",
-              "se + presente → presente / futuro / imperativo"
+              "1 · real",
+              "se + presente",
+              "presente, futuro, imperativo"
             ],
             [
-              "2 · possibile",
-              "se + congiuntivo imperfetto → condizionale presente"
+              "2 · imagined",
+              "se + congiuntivo imperfetto",
+              "condizionale presente"
             ],
             [
-              "3 · irreale",
-              "se + congiuntivo trapassato → condizionale passato"
+              "3 · too late",
+              "se + congiuntivo trapassato",
+              "condizionale passato"
             ],
             [
               "3 · spoken",
-              "se + imperfetto → imperfetto"
+              "se + imperfetto",
+              "imperfetto"
             ]
           ]
         },
         {
-          "h": "Congiuntivo trapassato",
+          "h": "Congiuntivo trapassato: avessi / fossi + past participle",
+          "cols": [
+            "it",
+            "it",
+            "it"
+          ],
           "rows": [
             [
-              "with avere",
-              "avessi, avessi, avesse… + past participle: avessi saputo"
+              "avere",
+              "avessi, avesse, avessimo…",
+              "avessi saputo"
             ],
             [
-              "with essere",
-              "fossi, fossi, fosse… + past participle: fosse arrivata"
+              "essere",
+              "fossi, fosse, fossimo…",
+              "fosse arrivata"
             ]
           ]
         },
         {
           "h": "Examples side by side",
+          "cols": [
+            "en",
+            "it"
+          ],
           "rows": [
             [
-              "1",
+              "type 1",
               "Se ho tempo, ti chiamo."
             ],
             [
-              "2",
+              "type 2",
               "Se avessi tempo, ti chiamerei."
             ],
             [
-              "3",
+              "type 3",
               "Se avessi avuto tempo, ti avrei chiamato."
-            ]
-          ]
-        },
-        {
-          "h": "Alternatives to se",
-          "rows": [
-            [
-              "nel caso in cui / nel caso che + congiuntivo",
-              "Nel caso in cui piova, la cena si fa in cantina."
-            ],
-            [
-              "qualora + congiuntivo (formal)",
-              "Qualora il prodotto fosse difettoso, contatti l'assistenza."
-            ],
-            [
-              "a patto che / a condizione che + congiuntivo",
-              "Ti presto la Vespa a patto che tu me la riporti piena."
-            ],
-            [
-              "gerund (same subject)",
-              "Volendo, potremmo partire stasera. (= se volessimo)"
-            ],
-            [
-              "gerund (same subject)",
-              "Potendo, mi trasferirei a Lecce. (= se potessi)"
             ]
           ]
         }
       ],
       "notes": [
-        "Never use the condizionale directly after <b>se</b>: “se avrei” is wrong.",
-        "In type 1, you can use the futuro in both parts for the future: <i>Se verrai, ti divertirai.</i>",
         "With essere verbs, the past participle agrees: <i>se Giulia fosse venut<b>a</b></i>.",
-        "Other words for <b>se</b>: <b>nel caso in cui</b>, <b>qualora</b>, <b>a patto che</b>. Use the congiuntivo after them, never the condizionale.",
-        "A gerund (<b>volendo</b>, <b>potendo</b>) can replace the se part. Use it only when both parts have the same subject."
+        "You can use <b>nel caso in cui</b>, <b>qualora</b> or <b>a patto che</b> in place of se. Use the congiuntivo after them.",
+        "A gerund (<b>volendo</b>, <b>potendo</b>) can replace the se part when both parts have the same subject."
       ]
     },
     "signals": [
@@ -507,7 +473,7 @@
       {
         "wrong": "Se piove, resterei a casa.",
         "right": "Se piove, resto a casa. / Se piovesse, resterei a casa.",
-        "why": "Do not mix type 1 and type 2 tenses."
+        "why": "Do not mix the tenses of type 1 and type 2."
       }
     ],
     "ex": [
@@ -569,15 +535,6 @@
       },
       {
         "k": "type",
-        "q": "Se ___ il suo numero, la chiamerei.",
-        "h": "sapere · io",
-        "a": [
-          "sapessi"
-        ],
-        "why": "Type 2: sapere → sapessi."
-      },
-      {
-        "k": "type",
         "q": "Se me l'___ prima, ti avrei aiutato.",
         "h": "chiedere · tu",
         "a": [
@@ -612,7 +569,7 @@
           "avessi"
         ],
         "a": "avessi",
-        "why": "The result is condizionale (verrei), so it is type 2: avessi."
+        "why": "The result is condizionale (verrei), so this is type 2: avessi."
       },
       {
         "k": "mc",
@@ -643,7 +600,7 @@
         "a": [
           "volendo"
         ],
-        "why": "<b>Volendo</b> = se volessimo; use the gerund when both parts have the same subject."
+        "why": "<b>Volendo</b> = se volessimo. Use the gerund when both parts have the same subject."
       },
       {
         "k": "mc",
@@ -654,7 +611,7 @@
           "ci saranno"
         ],
         "a": "ci fossero",
-        "why": "<b>Qualora</b> works like se: congiuntivo, never condizionale."
+        "why": "<b>Qualora</b> works like se: use the congiuntivo, never the condizionale."
       }
     ]
   },
@@ -664,11 +621,11 @@
     "topic": "tenses",
     "title": "Il condizionale passato",
     "en": "Past conditional",
-    "summary": "Use the condizionale passato for “would have done”, future in the past, and unconfirmed news.",
+    "summary": "Use the condizionale passato for “would have”, future in the past and unconfirmed news.",
     "meaning": "The condizionale passato is <b>avrei / sarei</b> + past participle. Use it for an action that did not happen, and for a future seen from the past (“he said he <i>would</i> come”). Newspapers also use it for unconfirmed information.",
     "uses": [
       {
-        "h": "Would have (but didn't)",
+        "h": "Would have (but did not)",
         "t": "Use it for an action that did not happen, often with <b>ma</b>.",
         "ex": [
           "Sarei venuto volentieri, ma avevo la febbre.",
@@ -676,8 +633,8 @@
         ]
       },
       {
-        "h": "Regrets and reproaches",
-        "t": "Use avrei dovuto (should have), avrei potuto (could have), avrei voluto (would have liked).",
+        "h": "Regrets and polite wishes",
+        "t": "Use avrei dovuto (should have), avrei potuto (could have), avrei voluto (wanted to).",
         "ex": [
           "Avresti dovuto dirmelo subito.",
           "You should have told me straight away."
@@ -685,7 +642,7 @@
       },
       {
         "h": "Future in the past",
-        "t": "After a past verb, use it for a later action, also if still possible.",
+        "t": "After a past verb, use it for a later action. The action can still be possible.",
         "ex": [
           "Ha detto che sarebbe venuto alle otto.",
           "He said he would come at eight."
@@ -698,18 +655,10 @@
           "Secondo alcuni testimoni, l'auto sarebbe uscita di strada a forte velocità.",
           "According to some witnesses, the car reportedly left the road at high speed."
         ]
-      },
-      {
-        "h": "Softened past wishes",
-        "t": "Use avrei voluto or avrei preferito to say politely what you wanted.",
-        "ex": [
-          "Avrei preferito un tavolo vicino alla finestra.",
-          "I'd have preferred a table by the window."
-        ]
       }
     ],
     "form": {
-      "intro": "Use the condizionale presente of <b>avere</b> or <b>essere</b> + <b>past participle</b>. Choose the auxiliary as in the passato prossimo. With essere, the past participle agrees.",
+      "intro": "Use avrei or sarei + past participle; choose the auxiliary as in the passato prossimo.",
       "tables": [
         {
           "h": "with avere · mangiare",
@@ -738,6 +687,10 @@
               "loro",
               "avrebbero mangiato"
             ]
+          ],
+          "cols": [
+            "it",
+            "it"
           ]
         },
         {
@@ -767,6 +720,10 @@
               "loro",
               "sarebbero partiti/e"
             ]
+          ],
+          "cols": [
+            "it",
+            "it"
           ]
         },
         {
@@ -780,11 +737,14 @@
               "Ha detto che sarebbe venuto.",
               "He said he would come."
             ]
+          ],
+          "cols": [
+            "it",
+            "en"
           ]
         }
       ],
       "notes": [
-        "After a past verb, English “would” is <b>not</b> the condizionale presente: say <i>ha detto che sarebbe venuto</i>, not <i>ha detto che verrebbe</i>.",
         "With dovere, potere and volere + infinitive, avere is always correct: <i>avrei voluto venire</i>.",
         "Reflexive verbs take essere: <i>mi sarei arrabbiata</i>."
       ]
@@ -806,7 +766,7 @@
       {
         "wrong": "Dovevo dirtelo.",
         "right": "Avrei dovuto dirtelo.",
-        "why": "Dovevo is common in speech, but avrei dovuto clearly means “I should have”."
+        "why": "People say dovevo in speech, but avrei dovuto clearly means “I should have”."
       },
       {
         "wrong": "Avrei andato.",
@@ -822,7 +782,7 @@
         "a": [
           "sarebbe tornato"
         ],
-        "why": "Future in the past → condizionale passato; tornare takes essere."
+        "why": "Use the condizionale passato for a future in the past. Tornare takes essere."
       },
       {
         "k": "type",
@@ -842,7 +802,7 @@
           "sarei voluto",
           "sarei voluta"
         ],
-        "why": "Would have liked to, but did not: avrei voluto."
+        "why": "He wanted to, but did not: avrei voluto."
       },
       {
         "k": "type",
@@ -851,7 +811,7 @@
         "a": [
           "avresti dovuto"
         ],
-        "why": "Reproach: avresti dovuto means “you should have”."
+        "why": "This is a reproach: avresti dovuto means “you should have”."
       },
       {
         "k": "type",
@@ -860,7 +820,7 @@
         "a": [
           "avrebbe firmato"
         ],
-        "why": "Unconfirmed news → condizionale passato."
+        "why": "Unconfirmed news takes the condizionale passato."
       },
       {
         "k": "type",
@@ -870,7 +830,7 @@
           "sarei uscito",
           "sarei uscita"
         ],
-        "why": "Type 3 result: condizionale passato; uscire takes essere."
+        "why": "A type 3 result takes the condizionale passato. Uscire takes essere."
       },
       {
         "k": "type",
@@ -888,7 +848,7 @@
         "a": [
           "avrei accettato"
         ],
-        "why": "What I would have done in a past situation: avrei accettato."
+        "why": "Use avrei accettato for what you would have done in the past."
       },
       {
         "k": "type",
@@ -897,7 +857,7 @@
         "a": [
           "sarebbero venute"
         ],
-        "why": "Future in the past with essere; venute agrees with le ragazze."
+        "why": "This is a future in the past with essere. Venute agrees with le ragazze."
       },
       {
         "k": "type",
@@ -918,7 +878,7 @@
           "viene"
         ],
         "a": "sarebbe venuta",
-        "why": "Future seen from the past → condizionale passato, not presente."
+        "why": "For a future seen from the past, use the condizionale passato, not the presente."
       },
       {
         "k": "mc",
@@ -929,7 +889,7 @@
           "L'avevo comprato, ma costava troppo."
         ],
         "a": "L'avrei comprato, ma costava troppo.",
-        "why": "An action that did not happen in the past: avrei comprato."
+        "why": "The action did not happen in the past: avrei comprato."
       },
       {
         "k": "mc",
@@ -940,7 +900,7 @@
           "I ladri sono fuggiti dai tetti."
         ],
         "a": "I ladri sarebbero fuggiti dai tetti.",
-        "why": "The condizionale passato shows a report, not a fact; “sono fuggiti” states a fact."
+        "why": "The condizionale passato shows a report, not a fact. “Sono fuggiti” states a fact."
       }
     ]
   },
@@ -951,11 +911,11 @@
     "title": "Il passato remoto",
     "en": "Simple past (historic)",
     "summary": "Recognise the passato remoto: the past tense of books, history and southern speech.",
-    "meaning": "The passato remoto shows finished actions with no link to the present. You need to <b>recognise</b> it in books, history, biographies and fairy tales. In much of the South, people also use it in speech; elsewhere, use the passato prossimo.",
+    "meaning": "The passato remoto shows finished actions with no link to the present. You need to <b>recognise</b> it in books, history and fairy tales. In much of the South, people also use it in speech.",
     "uses": [
       {
         "h": "Literature and stories",
-        "t": "Novels and fairy tales use it for the story events, with the imperfetto.",
+        "t": "Novels and fairy tales use it for the events of the story, with the imperfetto.",
         "ex": [
           "C'era una volta un pescatore che non aveva paura del mare. Una notte uscì da solo.",
           "Once upon a time there was a fisherman who wasn't afraid of the sea. One night he went out alone."
@@ -971,7 +931,7 @@
       },
       {
         "h": "Spoken in the South",
-        "t": "Many southern speakers use it for recent events; it is not a mistake.",
+        "t": "Many southern speakers use it for recent events. It is not a mistake.",
         "ex": [
           "Ieri andai al mercato e incontrai tua zia.",
           "Yesterday I went to the market and ran into your aunt."
@@ -987,7 +947,7 @@
       }
     ],
     "form": {
-      "intro": "You need to recognise this tense, not use it. For regular verbs, remove -are, -ere or -ire and add the endings below. In reading, you see mostly the <b>lui / lei</b> forms (<b>-ò, -é, -ì</b>) and the <b>loro</b> forms (<b>-arono, -erono, -irono</b>).",
+      "intro": "Remove -are, -ere or -ire and add the endings; texts use mostly the <b>lui / lei</b> and <b>loro</b> forms.",
       "tables": [
         {
           "h": "-are · parlare",
@@ -1016,6 +976,10 @@
               "loro",
               "parlarono"
             ]
+          ],
+          "cols": [
+            "it",
+            "it"
           ]
         },
         {
@@ -1045,6 +1009,10 @@
               "loro",
               "crederono / credettero"
             ]
+          ],
+          "cols": [
+            "it",
+            "it"
           ]
         },
         {
@@ -1074,6 +1042,10 @@
               "loro",
               "dormirono"
             ]
+          ],
+          "cols": [
+            "it",
+            "it"
           ]
         }
       ],
@@ -1191,7 +1163,7 @@
           "sbarcavano"
         ],
         "a": "sono sbarcati",
-        "why": "Sbarcarono is the loro form (-arono); sbarcare takes essere."
+        "why": "Sbarcarono is the loro form (-arono). Sbarcare takes essere."
       },
       {
         "k": "mc",
@@ -1235,7 +1207,7 @@
           "si sposavano"
         ],
         "a": "si sono sposati",
-        "why": "Sposarono is the loro form; reflexive verbs take essere."
+        "why": "Sposarono is the loro form. Reflexive verbs take essere."
       },
       {
         "k": "mc",
@@ -1247,16 +1219,6 @@
         ],
         "a": "there was",
         "why": "Fu is the passato remoto of essere: ci fu = c'è stato."
-      },
-      {
-        "k": "mc",
-        "q": "Michelangelo scolpì la Pietà quando aveva poco più di vent'anni. Which verb is in the passato remoto?",
-        "o": [
-          "scolpì",
-          "aveva"
-        ],
-        "a": "scolpì",
-        "why": "Scolpì ends in -ì; aveva is imperfetto for background."
       },
       {
         "k": "mc",
@@ -1278,7 +1240,7 @@
           "capivano"
         ],
         "a": "hanno capito",
-        "why": "Capirono is the loro form (-irono); capire takes avere."
+        "why": "Capirono is the loro form (-irono). Capire takes avere."
       },
       {
         "k": "mc",
@@ -1311,7 +1273,7 @@
           "erano"
         ],
         "a": "furono",
-        "why": "Furono is passato remoto; fossero is congiuntivo and erano is imperfetto."
+        "why": "Furono is passato remoto. Fossero is congiuntivo and erano is imperfetto."
       },
       {
         "k": "mc",
@@ -1332,8 +1294,8 @@
     "topic": "tenses",
     "title": "Il congiuntivo passato",
     "en": "Perfect subjunctive",
-    "summary": "Use the congiuntivo passato after penso che, spero che and similar, for a past action.",
-    "meaning": "The congiuntivo passato is the past form of the congiuntivo presente. Use it after the same verbs and conjunctions (penso che, spero che, mi dispiace che, benché). Use it when the main verb is in the <b>present</b> and the action in the che-clause happened <b>before</b>.",
+    "summary": "Use the congiuntivo passato after penso che or spero che for a past action.",
+    "meaning": "The congiuntivo passato is the past form of the congiuntivo presente. Use it when the main verb is in the <b>present</b> and the action in the che-clause happened <b>before</b>.",
     "uses": [
       {
         "h": "Opinions about the past",
@@ -1344,24 +1306,16 @@
         ]
       },
       {
-        "h": "Feelings about what happened",
-        "t": "Use it after mi dispiace che, sono contento che, è strano che.",
+        "h": "Feelings, doubts and hopes",
+        "t": "Use it after mi dispiace che, sono contento che, dubito che, spero che.",
         "ex": [
           "Mi dispiace che tu abbia perso il treno.",
           "I'm sorry you missed the train."
         ]
       },
       {
-        "h": "Doubts and hopes",
-        "t": "Use it after non sono sicuro che, dubito che, spero che.",
-        "ex": [
-          "Spero che abbiate trovato parcheggio.",
-          "I hope you found somewhere to park."
-        ]
-      },
-      {
         "h": "After conjunctions",
-        "t": "Use it after benché, sebbene, nonostante for a finished action.",
+        "t": "Use it after benché, sebbene and nonostante for a finished action.",
         "ex": [
           "Benché abbia dormito dieci ore, sono ancora stanca.",
           "Although I slept ten hours, I'm still tired."
@@ -1369,7 +1323,7 @@
       },
       {
         "h": "Superlative + che",
-        "t": "Use il più … che + congiuntivo passato for “the best … I have ever…”.",
+        "t": "Use il più … che + congiuntivo passato for “the most … I have ever…”.",
         "ex": [
           "È il posto più strano che io abbia mai visto.",
           "It's the strangest place I've ever seen."
@@ -1377,7 +1331,7 @@
       }
     ],
     "form": {
-      "intro": "Use the congiuntivo presente of <b>avere</b> or <b>essere</b> + <b>past participle</b>. Choose the auxiliary as in the passato prossimo. With essere, the past participle agrees.",
+      "intro": "Use abbia or sia + past participle; choose the auxiliary as in the passato prossimo.",
       "tables": [
         {
           "h": "with avere · fare",
@@ -1398,6 +1352,10 @@
               "loro",
               "abbiano fatto"
             ]
+          ],
+          "cols": [
+            "it",
+            "it"
           ]
         },
         {
@@ -1419,26 +1377,36 @@
               "loro",
               "siano andati/e"
             ]
+          ],
+          "cols": [
+            "it",
+            "it"
           ]
         },
         {
           "h": "Presente or passato?",
+          "cols": [
+            "it",
+            "en",
+            "en"
+          ],
           "rows": [
             [
               "Penso che parta.",
-              "same time or later: I think he is leaving"
+              "same time or later",
+              "I think he is leaving."
             ],
             [
               "Penso che sia partito.",
-              "before: I think he has left / he left"
+              "before",
+              "I think he has left / he left."
             ]
           ]
         }
       ],
       "notes": [
-        "It translates English “has done”, “did” and sometimes “was doing”: <i>Credo che abbia vissuto a Torino</i> = I think he lived in Turin.",
         "When the main verb is in the past (pensavo che), use the <b>congiuntivo trapassato</b>: <i>Pensavo che fosse partito.</i>",
-        "With the same subject, use di + past infinitive: <i>Penso di aver sbagliato</i>, not “penso che io abbia sbagliato”."
+        "With the same subject, use di + past infinitive: <i>Penso di aver sbagliato</i>."
       ]
     },
     "signals": [
@@ -1453,12 +1421,7 @@
       {
         "wrong": "Penso che è partito.",
         "right": "Penso che sia partito.",
-        "why": "In correct Italian, use the congiuntivo after penso che."
-      },
-      {
-        "wrong": "Mi dispiace che tu sei stato male.",
-        "right": "Mi dispiace che tu sia stato male.",
-        "why": "Feelings take the congiuntivo; for a past action, use the congiuntivo passato."
+        "why": "Use the congiuntivo after penso che in correct Italian."
       },
       {
         "wrong": "Pensavo che sia partito.",
@@ -1479,7 +1442,7 @@
         "a": [
           "sia partito"
         ],
-        "why": "Opinion + past action → congiuntivo passato; partire takes essere."
+        "why": "An opinion about a past action takes the congiuntivo passato. Partire takes essere."
       },
       {
         "k": "type",
@@ -1499,7 +1462,7 @@
           "abbia mangiato",
           "io abbia mangiato"
         ],
-        "why": "Superlative + che → congiuntivo passato."
+        "why": "Use the congiuntivo passato after a superlative + che."
       },
       {
         "k": "type",
@@ -1508,7 +1471,7 @@
         "a": [
           "abbiano letto"
         ],
-        "why": "Doubt about a past action: abbiano letto."
+        "why": "This is a doubt about a past action: abbiano letto."
       },
       {
         "k": "type",
@@ -1517,7 +1480,7 @@
         "a": [
           "abbia avuto"
         ],
-        "why": "Sembra che + a past event → abbia avuto."
+        "why": "Use sembra che + congiuntivo passato for a past event: abbia avuto."
       },
       {
         "k": "type",
@@ -1527,7 +1490,7 @@
           "siate venuti",
           "siate venute"
         ],
-        "why": "Venire takes essere; voi → siate venuti/e."
+        "why": "Venire takes essere. The voi form is siate venuti/e."
       },
       {
         "k": "type",
@@ -1536,7 +1499,7 @@
         "a": [
           "abbia studiato"
         ],
-        "why": "Benché + a finished action → congiuntivo passato."
+        "why": "Use benché + congiuntivo passato for a finished action."
       },
       {
         "k": "type",
@@ -1554,7 +1517,7 @@
         "a": [
           "abbia detto"
         ],
-        "why": "Dubito che + a past action: abbia detto."
+        "why": "Use dubito che + congiuntivo passato for a past action: abbia detto."
       },
       {
         "k": "type",
@@ -1573,7 +1536,7 @@
         "a": [
           "abbia chiamato"
         ],
-        "why": "È strano che + a past event → abbia chiamato."
+        "why": "Use è strano che + congiuntivo passato for a past event: abbia chiamato."
       },
       {
         "k": "mc",
@@ -1593,7 +1556,7 @@
           "fosse"
         ],
         "a": "fosse",
-        "why": "Past main verb (pensavo) → congiuntivo trapassato: fosse partita."
+        "why": "The main verb (pensavo) is past, so use the congiuntivo trapassato: fosse partita."
       },
       {
         "k": "mc",
@@ -1604,7 +1567,7 @@
           "Sono contento che tu venissi."
         ],
         "a": "Sono contento che tu sia venuto.",
-        "why": "Present feeling about a past action → congiuntivo passato; “venga” means you are coming."
+        "why": "A present feeling about a past action takes the congiuntivo passato. “Venga” means you are coming."
       }
     ]
   }

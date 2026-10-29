@@ -25,19 +25,11 @@
         ]
       },
       {
-        "h": "No verb, or after anche / neanche",
+        "h": "No verb, or after anche",
         "t": "Say the pronoun when there is no verb, and after <b>anche</b> or <b>neanche</b>.",
         "ex": [
           "Chi ha finito il caffè? — Lui, come sempre.",
           "Who finished the coffee? — Him, as usual."
-        ]
-      },
-      {
-        "h": "tu: informal you",
-        "t": "Use tu with friends, family, children and young people.",
-        "ex": [
-          "Sara, vieni anche tu stasera?",
-          "Sara, are you coming tonight too?"
         ]
       },
       {
@@ -47,29 +39,25 @@
           "Scusi, Lei è il dottor Ferri?",
           "Excuse me, are you Dr Ferri?"
         ]
-      },
-      {
-        "h": "voi: you, plural",
-        "t": "Use voi for two or more people, formal or informal.",
-        "ex": [
-          "Ragazzi, voi cosa prendete?",
-          "Guys, what are you having?"
-        ]
       }
     ],
     "form": {
-      "intro": "Put the subject pronoun before the verb. <b>Lei</b> (formal you) takes the lui / lei verb form: <i>Lei parla</i>. In emails and letters, people often write Lei with a capital L.",
+      "intro": "Put the subject pronoun before the verb. <b>Lei</b> (formal you) takes the lui / lei verb form: <i>Lei parla</i>.",
       "tables": [
         {
           "h": "Subject pronouns",
+          "cols": [
+            "it",
+            "en"
+          ],
           "rows": [
             [
               "io",
-              "I (lowercase, except at the start of a sentence)"
+              "I"
             ],
             [
               "tu",
-              "you: one person, informal"
+              "you (one person, informal)"
             ],
             [
               "lui / lei",
@@ -77,7 +65,7 @@
             ],
             [
               "Lei",
-              "you: one person, formal (lui / lei verb form)"
+              "you (one person, formal)"
             ],
             [
               "noi",
@@ -85,7 +73,7 @@
             ],
             [
               "voi",
-              "you: more than one person"
+              "you (two or more people)"
             ],
             [
               "loro",
@@ -95,14 +83,18 @@
         },
         {
           "h": "tu, Lei or voi?",
+          "cols": [
+            "it",
+            "en"
+          ],
           "rows": [
             [
               "tu",
-              "friends, family, children, classmates, young people with each other"
+              "friends, family, children, young people"
             ],
             [
               "Lei",
-              "strangers, shop and office staff, doctors, older people, colleagues until they offer tu"
+              "strangers, shop and office staff, doctors, older people"
             ],
             [
               "voi",
@@ -114,8 +106,7 @@
       "notes": [
         "For things, drop the pronoun: <i>È rotto.</i> = It is broken.",
         "<b>dare del tu / del Lei</b> = to use tu / Lei with a person. To change to tu, ask: <i>Possiamo darci del tu?</i>",
-        "With Lei, adjectives agree with the real person: <i>Signor Bassi, Lei è stanco? Signora, Lei è stanca?</i>",
-        "You can write <b>anche io</b> or <b>anch'io</b>. Both are correct."
+        "With Lei, adjectives agree with the real person: <i>Signor Bassi, Lei è stanco? Signora, Lei è stanca?</i>"
       ]
     },
     "signals": [
@@ -139,11 +130,6 @@
         "wrong": "Vado al mare. — Anche me!",
         "right": "Vado al mare. — Anch'io!",
         "why": "You are the subject, so use <b>io</b>; use <i>me</i> after prepositions."
-      },
-      {
-        "wrong": "Professore, Lei parli inglese?",
-        "right": "Professore, Lei parla inglese?",
-        "why": "Lei always takes the lui / lei form of the verb."
       }
     ],
     "ex": [
@@ -290,27 +276,11 @@
         ]
       },
       {
-        "h": "People",
-        "t": "Use <b>lo</b> for a man, <b>la</b> for a woman, <b>li / le</b> for groups.",
-        "ex": [
-          "Chi è quella ragazza con il cane? — Non la conosco.",
-          "Who's that girl with the dog? — I don't know her."
-        ]
-      },
-      {
         "h": "Topic first",
         "t": "In speech, put the thing first, then repeat it with a pronoun.",
         "ex": [
           "Il pesto lo faccio io, con il basilico di mia zia.",
           "I'll make the pesto, with my aunt's basil."
-        ]
-      },
-      {
-        "h": "With an infinitive",
-        "t": "Attach the pronoun to the infinitive; the infinitive drops its final -e.",
-        "ex": [
-          "Questa raccomandata devo spedirla oggi.",
-          "I have to send this registered letter today."
         ]
       },
       {
@@ -331,85 +301,102 @@
       }
     ],
     "form": {
-      "intro": "Put the direct object pronoun before the conjugated verb and after <b>non</b>: <i>non la chiamo</i>. You can attach it to an infinitive: <i>chiamarla</i>. Before a vowel or h, <b>lo</b> and <b>la</b> usually become <b>l'</b>: <i>l'ho visto, l'aspetto</i>.",
+      "intro": "Put the pronoun before the conjugated verb. Before a vowel or h, <b>lo</b> and <b>la</b> become <b>l'</b>: <i>l'ho visto</i>.",
       "tables": [
         {
           "h": "Direct object pronouns",
+          "cols": [
+            "it",
+            "en",
+            "it"
+          ],
           "rows": [
             [
               "mi",
-              "me: Mi senti?"
+              "me",
+              "Mi senti?"
             ],
             [
               "ti",
-              "you: Ti accompagno io."
+              "you",
+              "Ti accompagno io."
             ],
             [
               "lo",
-              "him / it (masculine): Lo conosco."
+              "him / it (masculine)",
+              "Lo conosco."
             ],
             [
-              "la",
-              "her / it (feminine): La compro."
-            ],
-            [
-              "La",
-              "you (formal): La ringrazio."
+              "la / La",
+              "her / it (feminine) / you (formal)",
+              "La ringrazio."
             ],
             [
               "ci",
-              "us: Ci aspetti?"
+              "us",
+              "Ci aspetti?"
             ],
             [
               "vi",
-              "you (plural): Vi vedo domani."
+              "you (plural)",
+              "Vi vedo domani."
             ],
             [
               "li",
-              "them (masculine or mixed): Li invito tutti."
+              "them (masculine or mixed)",
+              "Li invito tutti."
             ],
             [
               "le",
-              "them (feminine): Le prendo io."
+              "them (feminine)",
+              "Le prendo io."
             ]
           ]
         },
         {
           "h": "Passato prossimo: agreement",
+          "cols": [
+            "it",
+            "it",
+            "en"
+          ],
           "rows": [
             [
-              "l'ho visto",
-              "il film: masculine singular"
+              "il film",
+              "l'ho <b>visto</b>",
+              "masculine singular"
             ],
             [
-              "l'ho vista",
-              "la partita: feminine singular"
+              "la partita",
+              "l'ho <b>vista</b>",
+              "feminine singular"
             ],
             [
-              "li ho visti",
-              "i ragazzi: masculine plural"
+              "i ragazzi",
+              "li ho <b>visti</b>",
+              "masculine plural"
             ],
             [
-              "le ho viste",
-              "le foto: feminine plural"
+              "le foto",
+              "le ho <b>viste</b>",
+              "feminine plural"
             ],
             [
-              "mi, ti, ci, vi",
-              "agreement is optional: Ci hanno invitato / invitati."
+              "noi",
+              "ci hanno <b>invitato / invitati</b>",
+              "with mi, ti, ci, vi: optional"
             ]
           ]
         }
       ],
       "notes": [
-        "<b>li</b> and <b>le</b> never take an apostrophe: <i>li ho comprati</i>, not l'ho comprati.",
-        "With dovere, potere, volere, put the pronoun before the modal or on the infinitive: <i>La posso chiamare</i> / <i>Posso chiamarla</i>. Never put it between them.",
-        "Attach the pronoun to <b>ecco</b>: <i>eccolo, eccola, eccoli, eccole</i>.",
-        "These verbs take a direct object, with no preposition: <i>aspettare</i> (wait for), <i>ascoltare</i> (listen to), <i>cercare</i> (look for), <i>guardare</i> (look at). <i>La aspetto</i> = I am waiting for her."
+        "<b>li</b> and <b>le</b> never become l': <i>li ho comprati</i>, not l'ho comprati.",
+        "With dovere, potere, volere, put the pronoun before the modal or on the infinitive: <i>La posso chiamare</i> / <i>Posso chiamarla</i>.",
+        "These verbs take a direct object with no preposition: <i>aspettare</i> (wait for), <i>ascoltare</i> (listen to), <i>cercare</i> (look for), <i>guardare</i> (look at)."
       ]
     },
     "signals": [
       "aspettare, cercare, ascoltare, guardare",
-      "ecco",
       "non lo so",
       "topic first: il caffè lo…"
     ],
@@ -428,11 +415,6 @@
         "wrong": "Aspetto per lui.",
         "right": "Lo aspetto.",
         "why": "Aspettare means “wait for”; it takes a direct object, with no preposition."
-      },
-      {
-        "wrong": "Voglio la comprare.",
-        "right": "Voglio comprarla. / La voglio comprare.",
-        "why": "Put the pronoun before the modal or on the infinitive, never between them."
       }
     ],
     "ex": [
@@ -519,15 +501,6 @@
       },
       {
         "k": "type",
-        "q": "Dov'è Luca? — Ecco___, sta arrivando di corsa.",
-        "h": "pronoun",
-        "a": [
-          "lo"
-        ],
-        "why": "Attach the pronoun to ecco: eccolo."
-      },
-      {
-        "k": "type",
         "q": "Signora, ___ ringrazio per la pazienza.",
         "h": "pronoun · formal",
         "a": [
@@ -604,23 +577,7 @@
         ]
       },
       {
-        "h": "Piacere and similar verbs",
-        "t": "With piacere and similar verbs, the person who likes or needs is indirect.",
-        "ex": [
-          "Le piace il mare? — No, preferisce la montagna.",
-          "Does she like the seaside? — No, she prefers the mountains."
-        ]
-      },
-      {
-        "h": "Formal Le",
-        "t": "<b>Le</b> also means “to you” when you use Lei.",
-        "ex": [
-          "Le mando il preventivo entro domani.",
-          "I'll send you the quote by tomorrow."
-        ]
-      },
-      {
-        "h": "Stressed forms for emphasis",
+        "h": "Stressed forms for contrast",
         "t": "Use <b>a me, a te, a lui…</b> for emphasis or to contrast two people.",
         "ex": [
           "A me piace la montagna, a lei il mare: ogni estate è una trattativa.",
@@ -629,63 +586,76 @@
       }
     ],
     "form": {
-      "intro": "Put indirect object pronouns before the conjugated verb, or attach them to an infinitive: <i>devo scriverle</i>. In everyday Italian, <b>gli</b> also means “to them”.",
+      "intro": "Put the pronoun before the conjugated verb, or attach it to an infinitive: <i>devo scriverle</i>.",
       "tables": [
         {
           "h": "Indirect object pronouns",
+          "cols": [
+            "it",
+            "en",
+            "it"
+          ],
           "rows": [
             [
               "mi",
-              "to me: Mi passi il sale?"
+              "to me",
+              "Mi passi il sale?"
             ],
             [
               "ti",
-              "to you: Ti scrivo dopo."
+              "to you",
+              "Ti scrivo dopo."
             ],
             [
               "gli",
-              "to him: Gli ho detto di sì."
+              "to him",
+              "Gli ho detto di sì."
             ],
             [
               "le",
-              "to her: Le porto dei fiori."
+              "to her",
+              "Le porto dei fiori."
             ],
             [
               "Le",
-              "to you (formal): Le posso offrire un caffè?"
+              "to you (formal)",
+              "Le posso offrire un caffè?"
             ],
             [
               "ci",
-              "to us: Ci hanno dato le chiavi."
+              "to us",
+              "Ci hanno dato le chiavi."
             ],
             [
               "vi",
-              "to you (plural): Vi mando l'indirizzo."
+              "to you (plural)",
+              "Vi mando l'indirizzo."
             ],
             [
               "gli",
-              "to them: Gli rispondo io."
+              "to them",
+              "Gli rispondo io."
             ]
           ]
         },
         {
           "h": "Common verbs with a + person",
+          "cols": [
+            "it",
+            "en"
+          ],
           "rows": [
             [
               "dare, regalare, prestare",
-              "give, give as a present, lend: Gli presto la bici."
+              "give, give as a present, lend"
             ],
             [
               "dire, chiedere, rispondere",
-              "say, ask, answer: Le ho chiesto l'ora."
+              "say, ask, answer"
             ],
             [
-              "scrivere, mandare, spedire",
-              "write, send"
-            ],
-            [
-              "telefonare",
-              "phone: Ti telefono domani."
+              "scrivere, mandare, telefonare",
+              "write, send, phone"
             ],
             [
               "spiegare, insegnare, mostrare",
@@ -693,77 +663,60 @@
             ],
             [
               "piacere, servire, sembrare",
-              "please, be needed, seem: Ci serve una mano."
+              "please, be necessary, seem"
             ]
           ]
         },
         {
           "h": "Stressed pronouns",
+          "cols": [
+            "it",
+            "en",
+            "it"
+          ],
           "rows": [
             [
               "a me",
-              "to me (= mi) · con me, per me, da me (at my place)"
+              "to me (= <i>mi</i>)",
+              "con me, per me"
             ],
             [
               "a te",
-              "to you (= ti) · con te, per te, secondo te"
+              "to you (= <i>ti</i>)",
+              "con te, secondo te"
             ],
             [
               "a lui / a lei",
-              "to him / to her (= gli / le) · con lui, per lei, da lei"
+              "to him / to her (= <i>gli</i> / <i>le</i>)",
+              "con lui, per lei"
             ],
             [
               "a Lei",
-              "to you, formal (= Le) · per Lei, con Lei"
+              "to you, formal (= <i>Le</i>)",
+              "per Lei, con Lei"
             ],
             [
               "a noi",
-              "to us (= ci) · da noi, tra noi"
+              "to us (= <i>ci</i>)",
+              "da noi, tra noi"
             ],
             [
               "a voi",
-              "to you all (= vi) · con voi, per voi"
+              "to you all (= <i>vi</i>)",
+              "con voi, per voi"
             ],
             [
               "a loro",
-              "to them (= gli) · con loro, da loro"
-            ]
-          ]
-        },
-        {
-          "h": "Unstressed or stressed?",
-          "rows": [
-            [
-              "Ti scrivo domani.",
-              "neutral: the normal choice"
-            ],
-            [
-              "Scrivo a te, non a Paolo.",
-              "contrast: put the stressed form after the verb"
-            ],
-            [
-              "A me piace, a te no.",
-              "contrast, frequent with piacere"
-            ],
-            [
-              "Anche a me. / Neanche a me.",
-              "short answers with no verb: use only the stressed form"
-            ],
-            [
-              "Vieni con me?",
-              "after a preposition: use only the stressed form"
+              "to them (= <i>gli</i>)",
+              "con loro, da loro"
             ]
           ]
         }
       ],
       "notes": [
         "Indirect object pronouns do not change the past participle: <i>Le ho scritto</i>, never scritta.",
-        "Do not shorten <b>gli</b> and <b>le</b> before a vowel: <i>gli ho detto, le ho detto</i>.",
         "<b>telefonare a</b> takes an indirect object pronoun: <i>gli telefono</i>. <b>chiamare</b> takes a direct object pronoun: <i>lo chiamo</i>.",
-        "For contrast, put the stressed form after the verb: <i>Lo dico a te, non a lui.</i>",
-        "After a preposition, use <b>me</b> and <b>te</b>: <i>con me, per te</i>, never con io.",
-        "Use one form, not both. <i>A me mi piace</i> is common in speech but wrong in writing.",
-        "Formal writing also uses <b>loro</b> after the verb for “to them”: <i>Rispondo loro.</i> Learn to recognise it."
+        "After a preposition, use the stressed form: <i>con me, per te</i>, never con io."
       ]
     },
     "signals": [
@@ -777,11 +730,6 @@
         "wrong": "La telefono domani.",
         "right": "Le telefono domani.",
         "why": "Telefonare takes <b>a</b>: telefono a lei → le telefono."
-      },
-      {
-        "wrong": "Ho detto lui la verità.",
-        "right": "Gli ho detto la verità.",
-        "why": "“To him” before the verb is gli; the stressed form is a lui."
       },
       {
         "wrong": "A Paolo? Le ho dato il libro.",
@@ -848,15 +796,6 @@
           "gli"
         ],
         "why": "In everyday Italian, “to them” before the verb is gli."
-      },
-      {
-        "k": "type",
-        "q": "Abbiamo ritrovato il cane della signora Bassi e lei ___ ha regalato una bottiglia di vino.",
-        "h": "pronoun · to us",
-        "a": [
-          "ci"
-        ],
-        "why": "“To us” is ci."
       },
       {
         "k": "type",
@@ -946,8 +885,8 @@
     "topic": "pronouns",
     "title": "Ci e ne",
     "en": "Ci and ne",
-    "summary": "Ci replaces a place or a + thing; ne replaces di + thing or quantities.",
-    "meaning": "<b>Ci</b> replaces a place you said before, or <b>a / su + thing</b>: <i>ci penso</i> = I am thinking about it. <b>Ne</b> replaces <b>di + thing</b> or a noun after a quantity: <i>Quante mele vuoi? — Ne voglio due.</i> English often has no word here, but Italian needs ci or ne.",
+    "summary": "Ci means “there” or “about it”; ne means “of it” or “some”.",
+    "meaning": "<b>Ci</b> replaces a place you said before, or <b>a / su + thing</b>: <i>ci penso</i>. <b>Ne</b> replaces <b>di + thing</b>, or a noun after a number: <i>Ne voglio due.</i> Italian needs ci or ne where English often has no word.",
     "uses": [
       {
         "h": "ci = there",
@@ -966,14 +905,6 @@
         ]
       },
       {
-        "h": "c'è, ci sono, ci vuole",
-        "t": "Use <b>c'è / ci sono</b> for “there is / are”, and <b>volerci</b> for “it takes”.",
-        "ex": [
-          "Per fare il ragù ci vogliono almeno tre ore.",
-          "Ragù takes at least three hours to make."
-        ]
-      },
-      {
         "h": "ne with quantities",
         "t": "Use ne when you drop the noun but keep the number or amount.",
         "ex": [
@@ -988,74 +919,85 @@
           "Cosa ne pensi del nuovo sindaco?",
           "What do you think of the new mayor?"
         ]
-      },
-      {
-        "h": "ce n'è, ce ne sono",
-        "t": "Use <b>ce n'è / ce ne sono</b> for “there is some / there are some”.",
-        "ex": [
-          "C'è ancora del caffè? — Sì, ce n'è un po'.",
-          "Is there any coffee left? — Yes, there's a bit."
-        ]
       }
     ],
     "form": {
-      "intro": "Put ci and ne before the conjugated verb, or attach them to an infinitive: <i>andarci, parlarne</i>. Before lo, la, li, le or ne, <b>ci</b> becomes <b>ce</b>: <i>ce n'è, ce ne sono, ce l'ho</i>.",
+      "intro": "Put ci and ne before the conjugated verb, or attach them to an infinitive: <i>andarci, parlarne</i>.",
       "tables": [
         {
           "h": "Ci",
+          "cols": [
+            "it",
+            "en",
+            "it"
+          ],
           "rows": [
             [
-              "ci = there",
-              "Vado a Lecce → Ci vado."
+              "ci",
+              "there",
+              "Vado a Lecce → <b>Ci</b> vado."
             ],
             [
-              "ci = a + thing",
-              "Penso al viaggio → Ci penso."
+              "ci",
+              "about it (<i>a</i> + thing)",
+              "Penso al viaggio → <b>Ci</b> penso."
             ],
             [
-              "ci = su + thing",
-              "Conto sul tuo aiuto → Ci conto."
+              "ci",
+              "on it (<i>su</i> + thing)",
+              "Conto sul tuo aiuto → <b>Ci</b> conto."
             ],
             [
               "c'è / ci sono",
-              "there is / there are"
+              "there is / there are",
+              "Ci sono due bar."
             ],
             [
               "ci vuole / ci vogliono",
-              "it takes: Ci vuole un'ora. Ci vogliono due uova."
+              "it takes",
+              "Ci vuole un'ora."
             ]
           ]
         },
         {
           "h": "Ne",
+          "cols": [
+            "it",
+            "en",
+            "it"
+          ],
           "rows": [
             [
-              "ne + number",
-              "Ho due sorelle → Ne ho due."
+              "ne",
+              "with a number",
+              "Ho due sorelle → <b>Ne</b> ho due."
             ],
             [
-              "ne + amount",
-              "Vuoi del pane? → Ne voglio un po'."
+              "ne",
+              "with an amount",
+              "Vuoi del pane? → <b>Ne</b> voglio un po'."
             ],
             [
-              "ne + negative",
-              "Hai sigarette? → No, non ne ho."
+              "ne",
+              "with a negative",
+              "Hai sigarette? → No, non <b>ne</b> ho."
             ],
             [
-              "ne = di + thing",
-              "Parliamo del problema → Ne parliamo."
+              "ne",
+              "of it, about it (<i>di</i> + thing)",
+              "Parliamo del problema → <b>Ne</b> parliamo."
             ],
             [
               "ce n'è / ce ne sono",
-              "there is some / there are some: Ce ne sono cinque."
+              "there is some / there are some",
+              "Ce ne sono cinque."
             ]
           ]
         }
       ],
       "notes": [
+        "Before lo, la, li, le or ne, <b>ci</b> becomes <b>ce</b>: <i>ce n'è, ce ne sono, ce l'ho</i>.",
         "In the passato prossimo, the past participle agrees with the noun that <b>ne</b> replaces: <i>Di pizze, ne ho mangiate due.</i>",
-        "<b>Ce l'ho</b> (I have got it) is frequent in speech: <i>Hai le chiavi? — Sì, ce l'ho.</i>",
-        "Do not use ne with <b>tutto</b>: <i>Li ho mangiati tutti</i>, not ne ho mangiati tutti.",
         "Use ci with <b>pensare a</b> (think about). Use ne with <b>pensare di</b> (have an opinion)."
       ]
     },
@@ -1076,11 +1018,6 @@
         "wrong": "Ci ne sono tre.",
         "right": "Ce ne sono tre.",
         "why": "Before ne, ci becomes ce."
-      },
-      {
-        "wrong": "Cosa ci pensi del film?",
-        "right": "Cosa ne pensi del film?",
-        "why": "An opinion is pensare <b>di</b>, so use ne."
       },
       {
         "wrong": "Bottiglie? Ne ho comprato tre.",
@@ -1231,8 +1168,8 @@
     "topic": "pronouns",
     "title": "Pronomi combinati",
     "en": "Combined pronouns",
-    "summary": "An indirect and a direct pronoun together on one verb: te lo do, glielo dico.",
-    "meaning": "When one verb has an indirect object pronoun and a direct object pronoun (or <b>ne</b>), they join: <i>Ti do il libro → Te lo do.</i> The indirect object pronoun comes first and changes to <b>-e</b>: mi → me, ti → te, ci → ce, vi → ve. Gli and le both become <b>glie-</b> and join the next pronoun in one word: <i>glielo, gliela, gliene</i>.",
+    "summary": "Two object pronouns on one verb: <i>te lo do, glielo dico</i>.",
+    "meaning": "When one verb has an indirect and a direct object pronoun, they join: <i>Te lo do.</i> The indirect pronoun comes first and changes to <b>-e</b>: me, te, ce, ve. <b>Gli</b> and <b>le</b> become <b>glie-</b> and form one word: <i>glielo</i>.",
     "uses": [
       {
         "h": "Giving and lending",
@@ -1243,7 +1180,7 @@
         ]
       },
       {
-        "h": "glielo: to him, her, them, you (formal)",
+        "h": "glielo: to him, her, them",
         "t": "Use glielo for him, her, them and formal you; context shows who.",
         "ex": [
           "Il trapano di Carlo? Gliel'ho restituito ieri.",
@@ -1259,64 +1196,63 @@
         ]
       },
       {
-        "h": "With infinitives",
-        "t": "Put the block before the modal, or attach it to the infinitive.",
-        "ex": [
-          "Le chiavi? Posso dartele domani.",
-          "The keys? I can give them to you tomorrow."
-        ]
-      },
-      {
         "h": "With imperatives",
-        "t": "Attach the block to tu, noi, voi imperatives; put it before Lei imperatives.",
+        "t": "Attach the pronouns to a tu, noi or voi imperative.",
         "ex": [
           "Il sale? Passamelo, per favore.",
           "The salt? Pass it to me, please."
         ]
-      },
-      {
-        "h": "With reflexive verbs",
-        "t": "Use the block with reflexive verbs for body parts and clothes: me le lavo.",
-        "ex": [
-          "Le scarpe nuove? Me le metto stasera.",
-          "The new shoes? I'm wearing them tonight."
-        ]
       }
     ],
     "form": {
-      "intro": "Order: <b>indirect + direct</b> (or ne). Put both before the conjugated verb. With an infinitive or a tu / noi / voi imperative, attach the block to the verb: <i>darmelo, portaglielo</i>.",
+      "intro": "Order: indirect + direct. Put them before the conjugated verb, or attach them to an infinitive or a tu imperative.",
       "tables": [
         {
           "h": "The combinations",
+          "cols": [
+            "it",
+            "it",
+            "it"
+          ],
           "rows": [
             [
-              "mi +",
-              "me lo, me la, me li, me le, me ne"
+              "mi",
+              "me lo, me la",
+              "me ne"
             ],
             [
-              "ti +",
-              "te lo, te la, te li, te le, te ne"
+              "ti",
+              "te lo, te la",
+              "te ne"
             ],
             [
-              "gli / le / Le +",
-              "glielo, gliela, glieli, gliele, gliene"
+              "gli / le / Le",
+              "glielo, gliela",
+              "gliene"
             ],
             [
-              "ci +",
-              "ce lo, ce la, ce li, ce le, ce ne"
+              "ci",
+              "ce lo, ce la",
+              "ce ne"
             ],
             [
-              "vi +",
-              "ve lo, ve la, ve li, ve le, ve ne"
+              "vi",
+              "ve lo, ve la",
+              "ve ne"
             ],
             [
-              "si +",
-              "se lo, se la, se li, se le, se ne"
+              "si",
+              "se lo, se la",
+              "se ne"
             ]
           ]
         },
         {
           "h": "Where they go",
+          "cols": [
+            "en",
+            "it"
+          ],
           "rows": [
             [
               "conjugated verb",
@@ -1339,16 +1275,16 @@
               "Non dirmelo! / Non me lo dire!"
             ],
             [
-              "imperative (Lei)",
-              "Me lo dica. (before the verb)"
+              "imperative (Lei): before the verb",
+              "Me lo dica."
             ]
           ]
         }
       ],
       "notes": [
-        "After the one-syllable imperatives da', di', fa', sta', va', double the first consonant: <i>dammelo, dimmelo, fammelo vedere</i>.",
-        "The past participle agrees with the direct object pronoun: <i>La lettera? Gliel'ho mandata.</i>",
-        "Before a vowel, lo and la become l': <i>te l'ho detto, gliel'ho dato</i>."
+        "With li and le the pattern is the same: <i>me li, te le, glieli, ve le</i>.",
+        "After da', di', fa', sta', va', double the first consonant: <i>dammelo, dimmelo</i>.",
+        "The past participle agrees with the direct object pronoun: <i>La lettera? Gliel'ho mandata.</i>"
       ]
     },
     "mistakes": [
@@ -1361,11 +1297,6 @@
         "wrong": "Gli lo dico. / Le lo dico.",
         "right": "Glielo dico.",
         "why": "Gli and le both become glie- and join lo in one word."
-      },
-      {
-        "wrong": "Lo ti presto.",
-        "right": "Te lo presto.",
-        "why": "The indirect object pronoun always comes first."
       },
       {
         "wrong": "Dami lo!",
@@ -1517,7 +1448,7 @@
     "title": "I pronomi relativi: che e cui",
     "en": "Relative pronouns: che and cui",
     "summary": "Che, cui and quello che join two sentences: who, which, that, what.",
-    "meaning": "A relative pronoun joins a sentence to a noun: <i>la ragazza <b>che</b> lavora al bar</i>. Use <b>che</b> for a subject or direct object, and <b>cui</b> after a preposition. Never leave out the relative pronoun: “the book I read” is <i>il libro che ho letto</i>.",
+    "meaning": "A relative pronoun joins a sentence to a noun: <i>la ragazza <b>che</b> lavora al bar</i>. Use <b>che</b> for a subject or direct object, and <b>cui</b> after a preposition. Never leave it out.",
     "uses": [
       {
         "h": "che as subject",
@@ -1544,15 +1475,7 @@
         ]
       },
       {
-        "h": "il cui = whose",
-        "t": "Use article + cui + noun; the article agrees with the noun after cui.",
-        "ex": [
-          "Ho una collega il cui marito fa il pompiere a Ivrea.",
-          "I have a colleague whose husband is a firefighter in Ivrea."
-        ]
-      },
-      {
-        "h": "quello che / ciò che = what",
+        "h": "quello che = what",
         "t": "Use quello che or ciò che when there is no noun before it.",
         "ex": [
           "Non capisco quello che dice quando parla in dialetto.",
@@ -1561,63 +1484,77 @@
       }
     ],
     "form": {
-      "intro": "<b>che</b> never changes and never comes after a preposition. <b>cui</b> never changes and usually comes after a preposition. In formal writing, <b>il quale, la quale, i quali, le quali</b> can replace che or cui. Learn to recognise them.",
+      "intro": "<b>che</b> and <b>cui</b> never change. Use che with no preposition, and cui after a preposition.",
       "tables": [
         {
           "h": "Which pronoun?",
+          "cols": [
+            "it",
+            "en",
+            "it"
+          ],
           "rows": [
             [
               "che",
-              "subject or direct object: il treno che parte, il treno che prendo"
+              "subject or direct object",
+              "il treno che prendo"
             ],
             [
-              "a / di / con / per… cui",
-              "after a preposition: l'amico a cui scrivo, la penna con cui scrivo"
+              "a / di / con… cui",
+              "after a preposition",
+              "l'amico a cui scrivo"
             ],
             [
               "in cui / dove",
-              "where: la casa in cui (dove) abito"
+              "where",
+              "la casa in cui abito"
             ],
             [
-              "il cui, la cui, i cui, le cui",
-              "whose: la ragazza il cui padre…, lo scrittore i cui libri…"
+              "il cui, la cui…",
+              "whose",
+              "la ragazza il cui padre…"
             ],
             [
               "il quale, la quale…",
-              "formal writing, recognise only: al quale, della quale"
+              "formal writing: recognise only",
+              "al quale, della quale"
             ],
             [
               "quello che / ciò che",
-              "what (the thing that): Dimmi quello che pensi."
+              "what (the thing that)",
+              "Dimmi quello che pensi."
             ]
           ]
         },
         {
           "h": "chi and quanto: no noun before them",
+          "cols": [
+            "it",
+            "en",
+            "it"
+          ],
           "rows": [
             [
               "chi",
-              "the person who, whoever, people who: Chi trova un amico trova un tesoro."
+              "whoever, people who",
+              "Chi trova un amico trova un tesoro."
             ],
             [
               "chi… chi…",
-              "some… others: Alla festa chi ballava, chi mangiava."
+              "some… others",
+              "Alla festa chi ballava, chi mangiava."
             ],
             [
               "quanto basta (q.b.)",
-              "as much as needed, in recipes: sale q.b."
-            ],
-            [
-              "per quanto ne so",
-              "as far as I know"
+              "as much as necessary (recipes)",
+              "sale q.b."
             ]
           ]
         }
       ],
       "notes": [
-        "<b>chi</b> means “whoever, the person who”. It has no noun before it: <i>Chi arriva tardi paga il caffè.</i>",
         "After <b>tutto</b>, use <b>quello che</b>: <i>tutto quello che vuoi</i> = everything you want.",
-        "<b>chi</b> always takes a singular verb: <i>Chi vuole il caffè alzi la mano.</i> Many proverbs start with chi: <i>Chi dorme non piglia pesci.</i>"
+        "<b>chi</b> has no noun before it and takes a singular verb: <i>Chi arriva tardi paga il caffè.</i>"
       ]
     },
     "mistakes": [
@@ -1630,11 +1567,6 @@
         "wrong": "La ragazza con che esco.",
         "right": "La ragazza con cui esco.",
         "why": "After a preposition, use <b>cui</b>, never che."
-      },
-      {
-        "wrong": "Ho comprato tutto che serve.",
-        "right": "Ho comprato tutto quello che serve.",
-        "why": "“Everything that” is tutto quello che."
       },
       {
         "wrong": "Il mio amico, chi abita a Lecce, viene domani.",
@@ -1790,8 +1722,8 @@
     "topic": "verbtypes",
     "title": "I verbi riflessivi",
     "en": "Reflexive verbs",
-    "summary": "Verbs where the action goes back to the subject: mi lavo, ti alzi, si chiama.",
-    "meaning": "A reflexive verb has a pronoun that refers to the subject: <i>lavo la macchina</i> (I wash the car), but <i>mi lavo</i> (I wash myself). In the dictionary, reflexive verbs end in <b>-si</b>: alzarsi, chiamarsi, svegliarsi. Many are daily-routine verbs where English uses “get” or no extra word.",
+    "summary": "Verbs where the action goes back to the subject: <i>mi lavo, si chiama</i>.",
+    "meaning": "A reflexive verb has a pronoun that refers to the subject: <i>lavo la macchina</i>, but <i>mi lavo</i> (I wash myself). In the dictionary, reflexive verbs end in <b>-si</b>: <i>alzarsi</i>. Many are daily-routine verbs.",
     "uses": [
       {
         "h": "Daily routine",
@@ -1810,27 +1742,11 @@
         ]
       },
       {
-        "h": "Feelings and states",
-        "t": "Use divertirsi, annoiarsi, arrabbiarsi, sentirsi for feelings and states.",
-        "ex": [
-          "Al mare i bambini si divertono, io mi annoio.",
-          "At the seaside the kids have fun, I get bored."
-        ]
-      },
-      {
         "h": "Each other",
         "t": "With noi, voi, loro, the pronoun can mean “each other”.",
         "ex": [
           "Si conoscono da trent'anni e si telefonano ogni sera.",
           "They've known each other for thirty years and phone each other every evening."
-        ]
-      },
-      {
-        "h": "Body parts",
-        "t": "Use the article with body parts, not a possessive.",
-        "ex": [
-          "Mi lavo i denti e mi pettino in due minuti.",
-          "I brush my teeth and comb my hair in two minutes."
         ]
       },
       {
@@ -1843,7 +1759,7 @@
       }
     ],
     "form": {
-      "intro": "Put the reflexive pronoun before the verb and conjugate normally: <i>alzarsi → mi alzo</i>. You can attach the pronoun to an infinitive. It changes to match the subject: <i>devo alzarmi, devi alzarti</i>.",
+      "intro": "Put the reflexive pronoun before the verb: <i>mi alzo</i>. On an infinitive, it matches the subject: <i>devo alzarmi</i>.",
       "tables": [
         {
           "h": "alzarsi · presente",
@@ -1872,6 +1788,10 @@
               "loro",
               "si alzano"
             ]
+          ],
+          "cols": [
+            "it",
+            "it"
           ]
         },
         {
@@ -1901,10 +1821,18 @@
               "loro",
               "si sono alzati/e"
             ]
+          ],
+          "cols": [
+            "it",
+            "it"
           ]
         },
         {
           "h": "Common reflexive verbs",
+          "cols": [
+            "it",
+            "en"
+          ],
           "rows": [
             [
               "svegliarsi, alzarsi",
@@ -1924,7 +1852,7 @@
             ],
             [
               "sentirsi",
-              "feel: Mi sento bene."
+              "feel"
             ],
             [
               "divertirsi, annoiarsi, arrabbiarsi",
@@ -1932,7 +1860,7 @@
             ],
             [
               "sposarsi, trasferirsi",
-              "get married, move (to a new city)"
+              "get married, move to a new place"
             ],
             [
               "addormentarsi, riposarsi",
@@ -1962,11 +1890,6 @@
         "wrong": "Sveglio alle sette.",
         "right": "Mi sveglio alle sette.",
         "why": "Without mi, it means you wake another person."
-      },
-      {
-        "wrong": "Domani devo alzarsi presto.",
-        "right": "Domani devo alzarmi presto.",
-        "why": "The pronoun on the infinitive matches the subject: io → alzarmi."
       }
     ],
     "ex": [
@@ -2113,27 +2036,11 @@
         ]
       },
       {
-        "h": "dovere: probably",
-        "t": "Use dovere for a guess about something probable.",
-        "ex": [
-          "Non risponde: deve essere ancora in palestra.",
-          "He's not answering: he must still be at the gym."
-        ]
-      },
-      {
         "h": "potere: can, may",
         "t": "Use potere for “be able to” or “be allowed to”.",
         "ex": [
           "Posso entrare? — Certo, si accomodi.",
           "May I come in? — Of course, have a seat."
-        ]
-      },
-      {
-        "h": "potere: polite requests",
-        "t": "Use potere to ask a person to do something.",
-        "ex": [
-          "Può ripetere più lentamente, per favore?",
-          "Could you repeat that more slowly, please?"
         ]
       },
       {
@@ -2154,31 +2061,54 @@
       }
     ],
     "form": {
-      "intro": "Put the infinitive directly after the modal: <i>voglio mangiare</i>, never voglio di mangiare. Put object and reflexive pronouns before the modal or on the infinitive: <i>lo devo fare / devo farlo</i>; <i>mi devo alzare / devo alzarmi</i>.",
+      "intro": "Put the infinitive directly after the modal: <i>voglio mangiare</i>, never voglio di mangiare.",
       "tables": [
         {
-          "h": "Presente",
+          "h": "Presente: dovere, potere, volere",
+          "cols": [
+            "it",
+            "it",
+            "it"
+          ],
           "rows": [
             [
-              "dovere",
-              "devo, devi, deve, dobbiamo, dovete, devono"
+              "devo",
+              "posso",
+              "voglio"
             ],
             [
-              "potere",
-              "posso, puoi, può, possiamo, potete, possono"
+              "devi",
+              "puoi",
+              "vuoi"
             ],
             [
-              "volere",
-              "voglio, vuoi, vuole, vogliamo, volete, vogliono"
+              "deve",
+              "può",
+              "vuole"
             ],
             [
-              "sapere",
-              "so, sai, sa, sappiamo, sapete, sanno"
+              "dobbiamo",
+              "possiamo",
+              "vogliamo"
+            ],
+            [
+              "dovete",
+              "potete",
+              "volete"
+            ],
+            [
+              "devono",
+              "possono",
+              "vogliono"
             ]
           ]
         },
         {
           "h": "Pronoun position",
+          "cols": [
+            "en",
+            "it"
+          ],
           "rows": [
             [
               "before the modal",
@@ -2187,31 +2117,34 @@
             [
               "attached to the infinitive",
               "Posso aiutarla? Devo prepararmi."
-            ],
-            [
-              "never between them",
-              "Posso la aiutare (wrong)"
             ]
           ]
         },
         {
           "h": "sapere or potere?",
+          "cols": [
+            "it",
+            "en",
+            "it"
+          ],
           "rows": [
             [
               "sapere + infinitive",
-              "know how to (a skill): So guidare."
+              "know how to (a skill)",
+              "So guidare."
             ],
             [
               "potere + infinitive",
-              "be able or allowed (circumstances): Non posso guidare, ho bevuto."
+              "be able or allowed (circumstances)",
+              "Non posso guidare, ho bevuto."
             ]
           ]
         }
       ],
       "notes": [
+        "<b>sapere</b> is irregular: <i>so, sai, sa, sappiamo, sapete, sanno</i>.",
         "In bars and shops, say <b>vorrei</b> (I would like), not voglio: <i>Vorrei un caffè, per favore.</i>",
-        "In the passato prossimo, the modal usually takes the auxiliary of the next verb: <i>ho dovuto lavorare</i>, <i>sono dovuta partire</i>.",
-        "Volere can also take a noun: <i>Vuoi un bicchiere d'acqua?</i>"
+        "In the passato prossimo, the modal usually takes the auxiliary of the next verb: <i>ho dovuto lavorare</i>, <i>sono dovuta partire</i>."
       ]
     },
     "mistakes": [
@@ -2229,11 +2162,6 @@
         "wrong": "Devo mi alzare presto.",
         "right": "Devo alzarmi presto. / Mi devo alzare presto.",
         "why": "Put the pronoun before the modal or on the infinitive."
-      },
-      {
-        "wrong": "Tu vuole un caffè?",
-        "right": "Vuoi un caffè?",
-        "why": "Volere is irregular: tu vuoi, lui / lei vuole."
       }
     ],
     "ex": [
@@ -2319,15 +2247,6 @@
         "why": "Pronoun before the modal: la devo spedire (or devo spedirla)."
       },
       {
-        "k": "type",
-        "q": "Marco non risponde al telefono: ___ essere ancora in palestra.",
-        "h": "dovere",
-        "a": [
-          "deve"
-        ],
-        "why": "Dovere for a probable guess: deve essere = he must be."
-      },
-      {
         "k": "mc",
         "q": "Vieni in piscina sabato? — Sì, ___ nuotare, ho imparato da bambina.",
         "o": [
@@ -2380,7 +2299,7 @@
     "title": "Piacere e verbi simili",
     "en": "Piacere and similar verbs",
     "summary": "Use piacere to say you like something; the thing you like is the subject.",
-    "meaning": "Italian says “pizza is pleasing to me”: <i>Mi piace la pizza.</i> The verb agrees with the thing liked: <b>piace</b> for one thing or an action, <b>piacciono</b> for two or more things. The person who likes takes an indirect object pronoun (mi, ti, gli, le…) or <b>a</b> + a name.",
+    "meaning": "Italian says “pizza is pleasing to me”: <i>Mi piace la pizza.</i> The verb agrees with the thing you like: <b>piace</b> for one thing or an action, <b>piacciono</b> for two or more. The person who likes takes an indirect object pronoun.",
     "uses": [
       {
         "h": "One thing or an action",
@@ -2413,29 +2332,17 @@
           "Il film ti è piaciuto? — Sì, ma la fine non mi è piaciuta per niente.",
           "Did you like the film? — Yes, but I didn't like the ending at all."
         ]
-      },
-      {
-        "h": "mancare: miss",
-        "t": "With mancare, the thing or person you miss is the subject.",
-        "ex": [
-          "Mi manca Napoli, soprattutto la domenica.",
-          "I miss Naples, especially on Sundays."
-        ]
-      },
-      {
-        "h": "servire, sembrare",
-        "t": "Same pattern: <i>mi serve</i> = I need, <i>mi sembra</i> = it seems.",
-        "ex": [
-          "Ti serve una mano? — No grazie, mi sembra tutto a posto.",
-          "Do you need a hand? — No thanks, everything seems fine."
-        ]
       }
     ],
     "form": {
-      "intro": "Pattern: <b>indirect object pronoun + piace / piacciono + thing</b>. Use <b>piace</b> with a singular noun or an infinitive. Use <b>piacciono</b> with a plural noun. For names, emphasis or contrast, use <b>a me, a te, a Marco</b> instead of mi, ti, gli.",
+      "intro": "Pattern: <b>indirect object pronoun + piace / piacciono + thing</b>.",
       "tables": [
         {
           "h": "Who likes it",
+          "cols": [
+            "it",
+            "en"
+          ],
           "rows": [
             [
               "mi piace",
@@ -2472,72 +2379,69 @@
           ]
         },
         {
-          "h": "piace or piacciono?",
-          "rows": [
-            [
-              "mi piace + singular",
-              "Mi piace il mare."
-            ],
-            [
-              "mi piace + infinitive",
-              "Mi piace ballare."
-            ],
-            [
-              "mi piacciono + plural",
-              "Mi piacciono i gialli."
-            ]
-          ]
-        },
-        {
           "h": "Passato prossimo: essere + agreement",
+          "cols": [
+            "it",
+            "it"
+          ],
           "rows": [
             [
               "il film",
-              "mi è piaciuto"
+              "mi è <b>piaciuto</b>"
             ],
             [
               "la mostra",
-              "mi è piaciuta"
+              "mi è <b>piaciuta</b>"
             ],
             [
               "i biscotti",
-              "mi sono piaciuti"
+              "mi sono <b>piaciuti</b>"
             ],
             [
               "le canzoni",
-              "mi sono piaciute"
+              "mi sono <b>piaciute</b>"
             ]
           ]
         },
         {
           "h": "Verbs with the same pattern",
+          "cols": [
+            "it",
+            "en",
+            "it"
+          ],
           "rows": [
             [
               "mancare",
-              "miss: Mi mancano i miei amici."
+              "miss",
+              "Mi mancano i miei amici."
             ],
             [
               "servire",
-              "need: Ti serve la macchina?"
+              "need",
+              "Ti serve la macchina?"
             ],
             [
               "sembrare",
-              "seem: Mi sembra strano."
+              "seem",
+              "Mi sembra strano."
             ],
             [
               "interessare",
-              "interest: Non mi interessa il calcio."
+              "interest",
+              "Non mi interessa il calcio."
             ],
             [
               "bastare",
-              "be enough: Mi basta un panino."
+              "be enough",
+              "Mi basta un panino."
             ]
           ]
         }
       ],
       "notes": [
-        "<i>Io piaccio</i> means “I am liked”: <i>Piaccio ai tuoi genitori?</i> = Do your parents like me?",
         "Put <b>non</b> before the pronoun: <i>Non mi piace.</i> For “not at all”, say <i>Non mi piace per niente.</i>",
+        "With these verbs, the thing is the subject. The verb agrees with it: <i>Mi mancano i miei amici.</i>",
         "<i>A me mi piace</i> is common in speech but wrong in writing. Use <i>a me piace</i> or <i>mi piace</i>."
       ]
     },
@@ -2546,11 +2450,6 @@
         "wrong": "Mi piace i gatti.",
         "right": "Mi piacciono i gatti.",
         "why": "The verb agrees with the thing you like: i gatti is plural."
-      },
-      {
-        "wrong": "Io piace il gelato.",
-        "right": "Mi piace il gelato.",
-        "why": "The person who likes is “to me”: mi, not io."
       },
       {
         "wrong": "Il concerto mi ha piaciuto.",
