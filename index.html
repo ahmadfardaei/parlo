@@ -3,6 +3,10 @@
 <head>
   <meta charset="utf-8">
   <script>
+  // Light or dark, as the learner chose (shared with the start page); otherwise the device decides.
+  (function () { try { var t = localStorage.getItem("iub.theme"); if (t === "light" || t === "dark") document.documentElement.dataset.theme = t; } catch (e) {} })();
+  </script>
+  <script>
   // Moving from ahmadfardaei.github.io/parlo: a guest's progress lives in that origin's storage.
   // On the first visit here, bounce once to a page on the old origin that sends it back in the URL.
   (function () {
@@ -58,6 +62,7 @@
         <a href="#/deck" data-tab="deck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2L12 17.3l-5.6 2.9 1.1-6.2L3 9.6l6.2-.9z"/></svg><span class="lbl">Mazzo</span></a>
         <a href="#/account" data-tab="account"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg><span class="lbl">Profilo</span></a>
       </nav>
+      <button class="icon-btn theme-btn" data-theme-btn aria-label="Dark mode" title="Dark mode"></button>
     </div>
   </header>
   <main class="wrap" id="app" tabindex="-1"><p class="muted loading">Caricamento…</p></main>

@@ -1,7 +1,7 @@
 import "./styles.css";
 import { registerSW } from "virtual:pwa-register";
 import { supabase } from "./supabase.js";
-import { $, $$, S, D, esc, on, emit, showToast, closeSheet, indexCourse, switchUser, setSync, displayName, dueIds, schedule, toggleDeck, say, sayOf, stopSpeaking, go } from "./core.js";
+import { $, $$, S, D, esc, on, emit, ICON, isDark, setTheme, showToast, closeSheet, indexCourse, switchUser, setSync, displayName, dueIds, schedule, toggleDeck, say, sayOf, stopSpeaking, go } from "./core.js";
 import { viewHome } from "./views/home.js";
 import { viewLearn } from "./views/learn.js";
 import { viewUnit } from "./views/unit.js";
@@ -75,6 +75,14 @@ export async function render() {
   setSync(); updateBadges();
 }
 window.addEventListener("hashchange", render);
+
+// Light or dark: one button in the top bar (wide screens); Profile → Studio also has "System".
+const themeBtn = $("[data-theme-btn]");
+const showThemeBtn = () => { const d = isDark(); themeBtn.innerHTML = d ? ICON.sun : ICON.moon; themeBtn.setAttribute("aria-label", d ? "Light mode" : "Dark mode"); themeBtn.title = d ? "Light mode" : "Dark mode"; };
+themeBtn.onclick = () => setTheme(isDark() ? "light" : "dark");
+on("theme", showThemeBtn);
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change", showThemeBtn);
+showThemeBtn();
 on("rerender", () => render());
 
 /* ---------- Shell ---------- */

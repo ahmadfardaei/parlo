@@ -1,4 +1,4 @@
-import { S, D, esc, ICON, LEVELS, savePref, showToast, switchUser, displayName, sync, pull, push, resetAll, mergeEntries, applyChanged, markDirty, unitOf, lsDel, emit, go, syncText, activityByDay, fmtDur, dayKey, learned } from "../core.js";
+import { S, D, esc, ICON, LEVELS, getTheme, setTheme, savePref, showToast, switchUser, displayName, sync, pull, push, resetAll, mergeEntries, applyChanged, markDirty, unitOf, lsDel, emit, go, syncText, activityByDay, fmtDur, dayKey, learned } from "../core.js";
 import { supabase, appUrl } from "../supabase.js";
 
 let mode = "signin", recovery = false, msg = null, armed = null;
@@ -51,6 +51,9 @@ export function viewAccount(app, v = S.view) {
       ${row("New words per session", "How many new words a unit session brings.", seg("New words per session", "newn", [5, 10, 20].map(n => [n, n]), S.pref.newN))}
       ${row("Forms about you", "Which forms you see in sentences about yourself.", seg("Gendered forms about you", "gender", [["m", "stanco"], ["f", "stanca"], ["x", "stanco/a"]], S.pref.gender || "x", "it"))}
       ${row("Install the app", "", `<div>${installHTML()}</div>`)}
+    </section>
+    <section class="panel"><h2>Appearance</h2>
+      ${row("Light or dark", "System follows the setting of your device.", seg("Light or dark", "theme", [["system", "System"], ["light", "Light"], ["dark", "Dark"]], getTheme()))}
     </section>`;
   let account;
   if (!supabase) account = `<section class="panel"><h2>Account</h2><p class="muted">Accounts aren't set up for this copy of the app. Progress is saved on this device.</p></section>`;
@@ -168,6 +171,7 @@ function wire(app) {
   app.querySelectorAll("[data-level]").forEach(b => b.onclick = () => { const l = b.dataset.level, u = S.pref.understand || S.pref.level; savePref({ level: l, understand: LEVELS.indexOf(u) < LEVELS.indexOf(l) ? l : u }); viewAccount(app); });
   app.querySelectorAll("[data-und]").forEach(b => b.onclick = () => { const u = b.dataset.und; savePref({ understand: u, level: LEVELS.indexOf(u) < LEVELS.indexOf(S.pref.level) ? u : S.pref.level }); viewAccount(app); });
   app.querySelectorAll("[data-newn]").forEach(b => b.onclick = () => { savePref({ newN: +b.dataset.newn }); viewAccount(app); });
+  app.querySelectorAll("[data-theme]").forEach(b => b.onclick = () => { setTheme(b.dataset.theme); viewAccount(app); });
   app.querySelectorAll("[data-gender]").forEach(b => b.onclick = () => { savePref({ gender: b.dataset.gender }); viewAccount(app); });
   app.querySelectorAll("[data-mode]").forEach(b => b.onclick = () => { mode = b.dataset.mode; msg = null; viewAccount(app); });
   $("[data-install]")?.addEventListener("click", async () => { if (!deferred) return; deferred.prompt(); await deferred.userChoice.catch(() => {}); deferred = null; viewAccount(app); });
