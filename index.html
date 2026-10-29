@@ -2,9 +2,35 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <script>
+  // Moving from ahmadfardaei.github.io/parlo: a guest's progress lives in that origin's storage.
+  // On the first visit here, bounce once to a page on the old origin that sends it back in the URL.
+  (function () {
+    try {
+      var OLD = "https://ahmadfardaei.github.io", h = location.hash, ls = localStorage;
+      var mine = function (k) { return k !== "parlo.moved" && (k.indexOf("parlo.") === 0 || k.indexOf("sb-") === 0); };
+      if (h.indexOf("#/moved/") === 0) {
+        var p = h.slice(8), have = Object.keys(ls).some(function (k) { return k.indexOf("parlo.items.") === 0 && ls.getItem(k).length > 2; });
+        if (p !== "none" && !have && document.referrer.indexOf(OLD) === 0) {
+          var bin = atob(p.replace(/-/g, "+").replace(/_/g, "/"));
+          var d = JSON.parse(new TextDecoder().decode(Uint8Array.from(bin, function (c) { return c.charCodeAt(0); })));
+          Object.keys(d).forEach(function (k) { if (mine(k) && typeof d[k] === "string") ls.setItem(k, d[k]); });
+        }
+        ls.setItem("parlo.moved", "1");
+        history.replaceState(null, "", location.pathname + "#/");
+        return;
+      }
+      if (/(^|\.)iunderstandbut\.com$/.test(location.hostname) && !ls.getItem("parlo.moved")) {
+        ls.setItem("parlo.moved", "1");
+        if (ls.getItem("parlo.moved") !== "1") return;
+        if (Object.keys(ls).some(mine)) return;
+        location.replace(OLD + "/parlo-media/move.html");
+      }
+    } catch (e) {}
+  })();
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>i understand, but…</title>
-  <meta name="description" content="Learn Italian from A1 to B2: 3,000+ words, 320 verbs and 400+ phrases with spaced repetition. Works offline.">
   <meta name="theme-color" content="#f4f0e7" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#151b18" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="icons/favicon.svg" type="image/svg+xml">

@@ -1,12 +1,13 @@
 import { defineConfig } from "vite";
 import { VitePWA } from "vite-plugin-pwa";
 
-// BASE_PATH is set by the GitHub Pages workflow (e.g. "/parlo-app/"); "/" locally.
+// The Italian app lives at /italian/ on iunderstandbut.com (the landing page is at /, from site/).
+// BASE_PATH and OUT_DIR are set by the GitHub Pages workflow; "/" and dist locally.
 const base = process.env.BASE_PATH || "/";
 
 export default defineConfig({
   base,
-  build: { chunkSizeWarningLimit: 1500 },
+  build: { chunkSizeWarningLimit: 1500, outDir: process.env.OUT_DIR || "dist", emptyOutDir: true },
   plugins: [
     VitePWA({
       registerType: "prompt",
@@ -16,6 +17,7 @@ export default defineConfig({
         short_name: "i understand",
         description: "Learn Italian from A1 to B2: 3,000+ words, 320 verbs and 400+ phrases with spaced repetition.",
         lang: "en",
+        id: base,
         start_url: base,
         scope: base,
         display: "standalone",

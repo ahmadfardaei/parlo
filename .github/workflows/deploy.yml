@@ -26,10 +26,12 @@ jobs:
       - run: npm ci
       - run: npm run build
         env:
-          BASE_PATH: /
+          BASE_PATH: /italian/
+          OUT_DIR: dist/italian
           VITE_SUPABASE_URL: ${{ vars.VITE_SUPABASE_URL }}
           VITE_SUPABASE_ANON_KEY: ${{ vars.VITE_SUPABASE_ANON_KEY }}
-      - run: cp dist/index.html dist/404.html
+      # The landing page, 404 and CNAME sit at the root; the Italian app at /italian/.
+      - run: cp -r site/. dist/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
