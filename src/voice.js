@@ -6,7 +6,8 @@ export const pdfUrl = path => `${MEDIA_BASE}/pdf/${path}.pdf`;
 export const AUDIO_READY = true;
 
 // The text that is actually spoken: drop quote marks and dashes that make voices pause oddly.
-export const spoken = t => String(t).replace(/\/[aie]+(?![\p{L}])/gu, "").replace(/[«»“”"]/g, "").replace(/\s*[—–]\s*/g, ", ").replace(/…/g, ".").replace(/\s+/g, " ").trim();
+// "c'è" is sent as "cè": the voices read "c'è" as "ci è".
+export const spoken = t => String(t).replace(/(^|[^\p{L}])([cC])['’]è/gu, "$1$2è").replace(/\/[aie]+(?![\p{L}])/gu, "").replace(/[«»“”"]/g, "").replace(/\s*[—–]\s*/g, ", ").replace(/…/g, ".").replace(/\s+/g, " ").trim();
 export function clipHash(t) { const s = spoken(t).toLowerCase(); let h = 5381; for (let i = 0; i < s.length; i++) h = ((h << 5) + h + s.charCodeAt(i)) >>> 0; return h.toString(36); }
 export const clipUrl = (t, v = "f") => `${MEDIA_BASE}/audio/${v}/${clipHash(t)}.mp3`;
 
