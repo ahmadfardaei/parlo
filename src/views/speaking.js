@@ -2,6 +2,7 @@ import { S, esc, ICON, setEntry, remember, TOPICS, on, showToast, gq } from "../
 import { ensure } from "../data.js";
 import { plainLines, sentHTML, starHTML } from "./texts.js";
 import { readerTools, wireReader } from "./reading.js";
+import { playerHTML, wirePlayer } from "./player.js";
 import { modelsHTML, modelVoice } from "./writing.js";
 
 let cleanup = [];
@@ -42,7 +43,7 @@ export async function viewSpeaking(app, v, alive) {
         <section class="panel prose"><p>${esc(task)} Talk for about ${minutes} minute${minutes === 1 ? "" : "s"}.</p></section>
         <section class="g-sec"><h2>Talk about…</h2><div class="panel flush reader">${t.questions.map(q => { const x = { ...q, it: gq(q.it) }; return `<div class="gloss"><div class="gloss-main">${sentHTML(x, `#/speak/${t.id}`, t.title)}<span class="muted">${esc(q.en)}</span></div>${starHTML(x, `#/speak/${t.id}`, t.title)}</div>`; }).join("")}</div></section>
         <section class="g-sec">
-          ${showModels ? `<h2>Example talks</h2>${readerTools(showEn)}${modelsHTML(t, level, showEn, `#/speak/${t.id}`)}`
+          ${showModels ? `<h2>Example talks</h2>${playerHTML("Listen to the talk")}${readerTools(showEn)}${modelsHTML(t, level, showEn, `#/speak/${t.id}`)}`
             : `<div class="panel note-card"><p>Try it yourself first. Then listen to how someone at each level talks about it.</p><button class="btn" data-show-models>Show example talks</button></div>`}
         </section>
       </div>
@@ -59,7 +60,7 @@ export async function viewSpeaking(app, v, alive) {
     app.querySelector("[data-start]").onclick = start;
     app.querySelector("[data-show-models]")?.addEventListener("click", () => { showModels = true; draw(); app.querySelector(".reader-tools")?.scrollIntoView({ block: "start", behavior: "smooth" }); });
     app.querySelectorAll("[data-model]").forEach(b => b.onclick = () => { level = b.dataset.model; draw(); });
-    if (showModels) wireReader(app, plainLines(t.models[level].body, () => modelVoice(t, level)), draw);
+    if (showModels) { wireReader(app); wirePlayer(app, plainLines(t.models[level].body, () => modelVoice(t, level)), { idle: "Listen to the talk" }); }
   };
   const tick = () => {
     left--; talked++;

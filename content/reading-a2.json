@@ -386,7 +386,8 @@
         ],
         "a": "Aldo e Chiara giocano a carte ogni sera, e Aldo continua a suonare come prima."
       }
-    ]
+    ],
+    "narrator": "f"
   },
   {
     "id": "r-a2-02",
@@ -747,7 +748,8 @@
         ],
         "a": "È generosa, ma anche molto decisa."
       }
-    ]
+    ],
+    "narrator": "m"
   },
   {
     "id": "r-a2-03",
@@ -1289,7 +1291,14 @@
         ],
         "a": "Che le regole restano, ma la carbonara di sua madre è speciale per lui."
       }
-    ]
+    ],
+    "narrator": "f",
+    "speakers": {
+      "Ilaria": "f",
+      "Davide": "m",
+      "Tommaso": "m2",
+      "Marisa": "f2"
+    }
   },
   {
     "id": "r-a2-04",
@@ -1675,7 +1684,8 @@
         ],
         "a": "Che anche Nicola viaggerà ogni giorno, in treno."
       }
-    ]
+    ],
+    "narrator": "m"
   },
   {
     "id": "r-a2-05",
@@ -2020,7 +2030,8 @@
         ],
         "a": "Finisce in pochi minuti e tutti sono d'accordo."
       }
-    ]
+    ],
+    "narrator": "f"
   },
   {
     "id": "r-a2-06",
@@ -2397,7 +2408,8 @@
         ],
         "a": "Vuole aiutare la mamma a nuotare meglio."
       }
-    ]
+    ],
+    "narrator": "m"
   },
   {
     "id": "r-a2-07",
@@ -2870,7 +2882,14 @@
         ],
         "a": "Che la moglie è lì vicino e ascolta tutto."
       }
-    ]
+    ],
+    "narrator": "f",
+    "speakers": {
+      "Fabio": "m",
+      "Graziella": "f",
+      "Emanuele": "m2",
+      "Ottavio": "m3"
+    }
   },
   {
     "id": "r-a2-08",
@@ -3291,7 +3310,12 @@
         ],
         "a": "Gabriele perde ancora l'autobus, per colpa dell'app."
       }
-    ]
+    ],
+    "narrator": "m",
+    "speakers": {
+      "Giornalista": "f",
+      "Gabriele": "m2"
+    }
   },
   {
     "id": "r-a2-09",
@@ -3636,7 +3660,8 @@
         ],
         "a": "Che la nonna lo faceva apposta, per farla tornare."
       }
-    ]
+    ],
+    "narrator": "f"
   },
   {
     "id": "r-a2-10",
@@ -3953,6 +3978,7 @@
         ],
         "a": "Perché Donato ha invitato i suoi parenti per fare bella figura con il giornale."
       }
-    ]
+    ],
+    "narrator": "m"
   }
 ]

@@ -4,6 +4,9 @@ import { $, $$, esc, ICON, canSpeak, openSheet, closeSheet, say, inDeck, sentenc
 const SENT = new Map();
 let seq = 0;
 export function resetSentences() { SENT.clear(); }
+// The page's audio player, when it has one: { playing(), index(el), from(i) }.
+let player = null;
+export function setPlayFrom(p) { player = p; }
 
 export function sentHTML(s, src, title, voice = "f") {
   const k = "s" + (++seq);
@@ -26,15 +29,17 @@ export function blocksHTML(body, src, title, showEn, voiceOf = () => "f") {
 }
 export const plainLines = (body, voiceOf = () => "f") => body.flatMap(b => b.s.map(s => ({ t: s.it, v: voiceOf(b) })));
 
-function sentenceSheet(k) {
+function sentenceSheet(k, el) {
   const x = SENT.get(k); if (!x) return;
+  const i = player && el ? player.index(el) : -1;
   const id = sentenceId(x.it), saved = inDeck(id);
   openSheet(`<div class="sheet-body">
       <p class="s-it">${esc(x.it)}</p>
       <p class="s-en">${esc(x.en)}</p>
       <div class="btn-row">
+        ${i >= 0 ? `<button class="btn primary" data-play-from="${i}">${ICON.play} Play from here</button>` : ""}
         ${canSpeak ? `<button class="btn" data-say-text="${esc(x.it)}" data-voice="${x.voice || "f"}">${ICON.speak} Listen</button>` : ""}
-        <button class="btn ${saved ? "" : "primary"}" data-sent-save="${k}">${saved ? `${ICON.check} In your deck` : `${ICON.star} Save to deck`}</button>
+        <button class="btn ${saved || i >= 0 ? "" : "primary"}" data-sent-save="${k}">${saved ? `${ICON.check} In your deck` : `${ICON.star} Save to deck`}</button>
       </div></div>`);
 }
 function markSaved() {
@@ -51,6 +56,8 @@ document.addEventListener("click", e => {
     if (inDeck(id)) setEntry(id, { s: 0 }); else saveSentence({ it: x.it, en: x.en, src: x.src, srcTitle: x.title, voice: x.voice });
     return;
   }
+  const pf = e.target.closest("[data-play-from]");
+  if (pf) { const i = +pf.dataset.playFrom; closeSheet(); player?.from(i); return; }
   const b = e.target.closest("[data-sent-save]");
   if (b) {
     const x = SENT.get(b.dataset.sentSave); if (!x) return;
@@ -62,12 +69,14 @@ document.addEventListener("click", e => {
   if (s) {
     const sel = window.getSelection();
     if (sel && sel.toString().trim().length > 1) return; // the learner is selecting text, not tapping
-    sentenceSheet(s.dataset.sent);
+    // While the audio plays, a tap on the text jumps there.
+    if (player?.playing() && player.index(s) >= 0) { player.from(player.index(s)); return; }
+    sentenceSheet(s.dataset.sent, s);
   }
 });
 document.addEventListener("keydown", e => {
   const s = e.target.closest && e.target.closest(".sent");
-  if (s && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); sentenceSheet(s.dataset.sent); }
+  if (s && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); sentenceSheet(s.dataset.sent, s); }
 });
 
 /* ---------- Saving a selection ---------- */
@@ -106,7 +115,7 @@ document.addEventListener("click", e => {
   saveSentence({ it: text, en, ctx, src: sents[0].src, srcTitle: sents[0].title, voice: sents[0].voice });
   window.getSelection().removeAllRanges(); hideSelBar();
 });
-on("leave", () => { hideSelBar(); resetSentences(); });
+on("leave", () => { hideSelBar(); resetSentences(); player = null; });
 
 /* ---------- Reader text size ---------- */
 export function sizeControlHTML() {

@@ -2,6 +2,7 @@ import { S, esc, ICON, LEVELS, setEntry, debounce, remember, TOPICS, on } from "
 import { ensure } from "../data.js";
 import { blocksHTML, plainLines, sentHTML, starHTML } from "./texts.js";
 import { readerTools, wireReader } from "./reading.js";
+import { playerHTML, wirePlayer } from "./player.js";
 import { voiceForName } from "../voice.js";
 export const MODEL_VOICE = { A1: "f", A2: "m", B1: "f", B2: "m" };
 export const modelVoice = (x, level) => x.models[level].speaker ? voiceForName(x.models[level].speaker) : MODEL_VOICE[level];
@@ -57,7 +58,7 @@ export async function viewWriting(app, v, alive) {
           <p class="muted small" id="wc"></p>
           <div class="panel checks" id="checks" hidden></div></section>
         <section class="g-sec">
-          ${showModels ? `<h2>Model answers</h2>${readerTools(showEn)}${modelsHTML(w, level, showEn, `#/write/${w.id}`)}`
+          ${showModels ? `<h2>Model answers</h2>${playerHTML("Listen to the model")}${readerTools(showEn)}${modelsHTML(w, level, showEn, `#/write/${w.id}`)}`
             : `<div class="panel note-card"><p>Write your own version first. Then compare it with a model answer for your level.</p><button class="btn primary" data-show-models>Show model answers</button></div>`}
         </section>
       </div>
@@ -80,7 +81,7 @@ export async function viewWriting(app, v, alive) {
     ta.addEventListener("blur", () => save.flush());
     app.querySelector("[data-show-models]")?.addEventListener("click", () => { showModels = true; draw(); app.querySelector(".reader-tools")?.scrollIntoView({ block: "start", behavior: "smooth" }); });
     app.querySelectorAll("[data-model]").forEach(b => b.onclick = () => { level = b.dataset.model; draw(); });
-    if (showModels) wireReader(app, plainLines(w.models[level].body, () => modelVoice(w, level)), draw);
+    if (showModels) { wireReader(app); wirePlayer(app, plainLines(w.models[level].body, () => modelVoice(w, level)), { idle: "Listen to the model" }); }
   };
   draw();
 }

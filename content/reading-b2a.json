@@ -427,7 +427,8 @@
         ],
         "a": "Che è troppo semplice: anche tornare è una forma di partenza"
       }
-    ]
+    ],
+    "narrator": "f"
   },
   {
     "id": "r-b2-02",
@@ -852,7 +853,8 @@
         ],
         "a": "Che la figlia ha imparato la parola senza la fatica e la vergogna del padre"
       }
-    ]
+    ],
+    "narrator": "m"
   },
   {
     "id": "r-b2-03",
@@ -1314,7 +1316,8 @@
         ],
         "a": "Che l'esperienza con Teresa ha lasciato un segno nel suo modo di scrivere"
       }
-    ]
+    ],
+    "narrator": "f"
   },
   {
     "id": "r-b2-04",
@@ -1748,7 +1751,8 @@
         ],
         "a": "Perché incorniciare qualcosa scritto a mano gli è sembrato un lavoro serio"
       }
-    ]
+    ],
+    "narrator": "m"
   },
   {
     "id": "r-b2-05",
@@ -2198,6 +2202,7 @@
         ],
         "a": "Che la settimana a Trieste gli è rimasta addosso, anche nel corpo"
       }
-    ]
+    ],
+    "narrator": "f"
   }
 ]

@@ -27,7 +27,7 @@ for (const g of grammar) {
   g.ex.forEach(e => { if (e.k === "type") add(e.a[0]); });
 }
 const blocks = (body, voiceOf) => body.forEach(b => b.s.forEach(s => add(s.it, voiceOf(b))));
-for (const r of reading) { blocks(r.body, b => b.who ? voiceForName(b.who) : narratorVoice(r.id)); r.glossary.forEach(g => add(g.it)); }
+for (const r of reading) { blocks(r.body, b => b.who ? r.speakers?.[b.who] || voiceForName(b.who) : r.narrator || narratorVoice(r.id)); r.glossary.forEach(g => add(g.it)); }
 const LV = { A1: "f", A2: "m", B1: "f", B2: "m" };
 for (const w of writing) { for (const [l, m] of Object.entries(w.models)) blocks(m.body, () => LV[l]); w.phrases.forEach(p => add(p.it)); }
 for (const l of listening) blocks(l.body, b => l.speakers[b.who]);

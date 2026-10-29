@@ -1,3284 +1,3343 @@
 [
- {
-  "id": "r-a1-01",
-  "level": "A1",
-  "title": "L'ultima capsula",
-  "en": "The Last Capsule",
-  "topic": "daily",
-  "genre": "WhatsApp chat",
-  "minutes": 5,
-  "blurb": "Three flatmates in Padova, one coffee capsule left, and a thief nobody can catch.",
-  "body": [
-   {
-    "who": "Bea",
-    "s": [
-     {
-      "it": "Ragazzi, una domanda.",
-      "en": "Guys, a question."
-     },
-     {
-      "it": "Ieri sera nella scatola ci sono sei capsule di caffè.",
-      "en": "Last night there are six coffee capsules in the box."
-     },
-     {
-      "it": "Stamattina ce n'è una. Una!",
-      "en": "This morning there's one. One!"
-     }
-    ]
-   },
-   {
-    "who": "Tommaso",
-    "s": [
-     {
-      "it": "Buongiorno anche a te, Bea.",
-      "en": "Good morning to you too, Bea."
-     }
-    ]
-   },
-   {
-    "who": "Bea",
-    "s": [
-     {
-      "it": "Buongiorno. Chi ha preso cinque capsule?",
-      "en": "Good morning. Who took five capsules?"
-     }
-    ]
-   },
-   {
-    "who": "Ludo",
-    "s": [
-     {
-      "it": "Io no. Io bevo solo il tè, lo sapete.",
-      "en": "Not me. I only drink tea, you know that."
-     }
-    ]
-   },
-   {
-    "who": "Tommaso",
-    "s": [
-     {
-      "it": "Io ho preso un caffè. Uno. Alle sette, prima della lezione di chimica.",
-      "en": "I had one coffee. One. At seven, before my chemistry lecture."
-     }
-    ]
-   },
-   {
-    "who": "Bea",
-    "s": [
-     {
-      "it": "E le altre quattro?",
-      "en": "And the other four?"
-     }
-    ]
-   },
-   {
-    "who": "Tommaso",
-    "s": [
-     {
-      "it": "Non lo so. Forse le capsule scappano di notte.",
-      "en": "I don't know. Maybe the capsules run away at night."
-     }
-    ]
-   },
-   {
-    "who": "Bea",
-    "s": [
-     {
-      "it": "Non è divertente.",
-      "en": "It's not funny."
-     },
-     {
-      "it": "Una capsula costa trentanove centesimi, e le compro io. Sempre io.",
-      "en": "One capsule costs thirty-nine cents, and I'm the one who buys them. Always me."
-     }
-    ]
-   },
-   {
-    "who": "Ludo",
-    "s": [
-     {
-      "it": "Calma. Facciamo un sistema.",
-      "en": "Calm down. Let's set up a system."
-     },
-     {
-      "it": "Ognuno scrive il suo nome sulle sue cose.",
-      "en": "Everyone writes their name on their own things."
-     }
-    ]
-   },
-   {
-    "who": "Tommaso",
-    "s": [
-     {
-      "it": "Sulle capsule? Sono piccolissime.",
-      "en": "On the capsules? They're tiny."
-     }
-    ]
-   },
-   {
-    "who": "Ludo",
-    "s": [
-     {
-      "it": "Con un pennarello. Io scrivo una L sul mio tè.",
-      "en": "With a marker. I write an L on my tea."
-     }
-    ]
-   },
-   {
-    "who": "Bea",
-    "s": [
-     {
-      "it": "Va bene. Stasera compro una scatola nuova e scrivo una B su tutte le capsule. Cinquanta B.",
-      "en": "Fine. Tonight I'll buy a new box and write a B on every capsule. Fifty Bs."
-     }
-    ]
-   },
-   {
-    "who": "Tommaso",
-    "s": [
-     {
-      "it": "Bea, sei un po' esagerata.",
-      "en": "Bea, you're overreacting a bit."
-     }
-    ]
-   },
-   {
-    "who": "Bea",
-    "s": [
-     {
-      "it": "No, sono una persona che beve il caffè la mattina. È diverso.",
-      "en": "No, I'm a person who drinks coffee in the morning. That's different."
-     }
-    ]
-   },
-   {
-    "who": "Bea",
-    "s": [
-     {
-      "it": "Ragazzi. È mezzogiorno e mancano tre capsule. Tre capsule con la B.",
-      "en": "Guys. It's midday and three capsules are missing. Three capsules with a B."
-     }
-    ]
-   },
-   {
-    "who": "Tommaso",
-    "s": [
-     {
-      "it": "Io sono in biblioteca dalle otto.",
-      "en": "I've been in the library since eight."
-     },
-     {
-      "it": "Ho un testimone: il bibliotecario.",
-      "en": "I have a witness: the librarian."
-     }
-    ]
-   },
-   {
-    "who": "Ludo",
-    "s": [
-     {
-      "it": "Io sono a lezione. Però sono passata a casa un minuto e c'è una cosa strana.",
-      "en": "I'm in class. But I stopped by the flat for a minute and something is strange."
-     },
-     {
-      "it": "Il frigo è pulito.",
-      "en": "The fridge is clean."
-     }
-    ]
-   },
-   {
-    "who": "Bea",
-    "s": [
-     {
-      "it": "Pulito? Il nostro frigo?",
-      "en": "Clean? Our fridge?"
-     }
-    ]
-   },
-   {
-    "who": "Ludo",
-    "s": [
-     {
-      "it": "Sì. Anche il lavandino. E sul tavolo ci sono dei fiori.",
-      "en": "Yes. The sink too. And there are flowers on the table."
-     },
-     {
-      "it": "Margherite gialle, in un barattolo di marmellata.",
-      "en": "Yellow daisies, in a jam jar."
-     }
-    ]
-   },
-   {
-    "who": "Tommaso",
-    "s": [
-     {
-      "it": "Fiori? Allora il ladro è romantico.",
-      "en": "Flowers? So the thief is a romantic."
-     }
-    ]
-   },
-   {
-    "who": "Bea",
-    "s": [
-     {
-      "it": "Aspettate. Oggi è martedì?",
-      "en": "Wait. Is today Tuesday?"
-     }
-    ]
-   },
-   {
-    "who": "Ludo",
-    "s": [
-     {
-      "it": "Sì, perché?",
-      "en": "Yes, why?"
-     }
-    ]
-   },
-   {
-    "who": "Bea",
-    "s": [
-     {
-      "it": "Oh no. Mia madre ha le chiavi di casa. Per le emergenze.",
-      "en": "Oh no. My mother has keys to the flat. For emergencies."
-     }
-    ]
-   },
-   {
-    "who": "Bea",
-    "s": [
-     {
-      "it": "Bea ha aggiunto Mamma al gruppo.",
-      "en": "Bea added Mum to the group."
-     }
-    ]
-   },
-   {
-    "who": "Mamma",
-    "s": [
-     {
-      "it": "Buongiorno, ragazzi. Sì, sono io.",
-      "en": "Good morning, kids. Yes, it's me."
-     },
-     {
-      "it": "Il martedì vengo a Padova per il mercato e passo da voi.",
-      "en": "On Tuesdays I come to Padova for the market and I drop by your place."
-     },
-     {
-      "it": "Pulisco un po' e bevo un caffè. Va bene, due caffè. Va bene, tre.",
-      "en": "I clean a bit and have a coffee. All right, two coffees. All right, three."
-     }
-    ]
-   },
-   {
-    "who": "Mamma",
-    "s": [
-     {
-      "it": "Il vostro frigo è un problema serio. C'è un formaggio di ottobre.",
-      "en": "Your fridge is a serious problem. There's a cheese from October."
-     }
-    ]
-   },
-   {
-    "who": "Ludo",
-    "s": [
-     {
-      "it": "Quello è di Tommaso.",
-      "en": "That one is Tommaso's."
-     }
-    ]
-   },
-   {
-    "who": "Tommaso",
-    "s": [
-     {
-      "it": "Signora, grazie per il frigo. Il martedì le capsule sono tutte sue.",
-      "en": "Thank you for the fridge, signora. On Tuesdays the capsules are all yours."
-     }
-    ]
-   },
-   {
-    "who": "Bea",
-    "s": [
-     {
-      "it": "Mamma, perché non mi dici niente?",
-      "en": "Mum, why don't you tell me anything?"
-     }
-    ]
-   },
-   {
-    "who": "Mamma",
-    "s": [
-     {
-      "it": "Perché quando non lo sai, la cucina è più pulita.",
-      "en": "Because when you don't know, the kitchen is cleaner."
-     },
-     {
-      "it": "Martedì prossimo porto io le capsule. Con la M.",
-      "en": "Next Tuesday I'll bring the capsules. With an M."
-     }
-    ]
-   }
-  ],
-  "glossary": [
-   {
-    "it": "la capsula",
-    "en": "the (coffee) capsule, pod"
-   },
-   {
-    "it": "ce n'è una",
-    "en": "there's one (of them)"
-   },
-   {
-    "it": "scappano",
-    "en": "they run away"
-   },
-   {
-    "it": "non è divertente",
-    "en": "it's not funny"
-   },
-   {
-    "it": "il pennarello",
-    "en": "the marker pen"
-   },
-   {
-    "it": "mancano",
-    "en": "are missing"
-   },
-   {
-    "it": "il testimone",
-    "en": "the witness"
-   },
-   {
-    "it": "sono passata a casa",
-    "en": "I stopped by the flat"
-   },
-   {
-    "it": "il lavandino",
-    "en": "the sink"
-   },
-   {
-    "it": "il ladro",
-    "en": "the thief"
-   },
-   {
-    "it": "per le emergenze",
-    "en": "for emergencies"
-   },
-   {
-    "it": "passo da voi",
-    "en": "I drop by your place"
-   },
-   {
-    "it": "le capsule sono tutte sue",
-    "en": "the capsules are all yours (formal)"
-   }
-  ],
-  "questions": [
-   {
-    "q": "Perché Bea scrive nel gruppo la prima volta?",
-    "o": [
-     "Perché mancano cinque capsule",
-     "Perché il frigo è sporco e c'è un formaggio vecchio",
-     "Perché Tommaso non dice buongiorno"
+  {
+    "id": "r-a1-01",
+    "level": "A1",
+    "title": "L'ultima capsula",
+    "en": "The Last Capsule",
+    "topic": "daily",
+    "genre": "WhatsApp chat",
+    "minutes": 5,
+    "blurb": "Three flatmates in Padova, one coffee capsule left, and a thief nobody can catch.",
+    "body": [
+      {
+        "who": "Bea",
+        "s": [
+          {
+            "it": "Ragazzi, una domanda.",
+            "en": "Guys, a question."
+          },
+          {
+            "it": "Ieri sera nella scatola ci sono sei capsule di caffè.",
+            "en": "Last night there are six coffee capsules in the box."
+          },
+          {
+            "it": "Stamattina ce n'è una. Una!",
+            "en": "This morning there's one. One!"
+          }
+        ]
+      },
+      {
+        "who": "Tommaso",
+        "s": [
+          {
+            "it": "Buongiorno anche a te, Bea.",
+            "en": "Good morning to you too, Bea."
+          }
+        ]
+      },
+      {
+        "who": "Bea",
+        "s": [
+          {
+            "it": "Buongiorno. Chi ha preso cinque capsule?",
+            "en": "Good morning. Who took five capsules?"
+          }
+        ]
+      },
+      {
+        "who": "Ludo",
+        "s": [
+          {
+            "it": "Io no. Io bevo solo il tè, lo sapete.",
+            "en": "Not me. I only drink tea, you know that."
+          }
+        ]
+      },
+      {
+        "who": "Tommaso",
+        "s": [
+          {
+            "it": "Io ho preso un caffè. Uno. Alle sette, prima della lezione di chimica.",
+            "en": "I had one coffee. One. At seven, before my chemistry lecture."
+          }
+        ]
+      },
+      {
+        "who": "Bea",
+        "s": [
+          {
+            "it": "E le altre quattro?",
+            "en": "And the other four?"
+          }
+        ]
+      },
+      {
+        "who": "Tommaso",
+        "s": [
+          {
+            "it": "Non lo so. Forse le capsule scappano di notte.",
+            "en": "I don't know. Maybe the capsules run away at night."
+          }
+        ]
+      },
+      {
+        "who": "Bea",
+        "s": [
+          {
+            "it": "Non è divertente.",
+            "en": "It's not funny."
+          },
+          {
+            "it": "Una capsula costa trentanove centesimi, e le compro io. Sempre io.",
+            "en": "One capsule costs thirty-nine cents, and I'm the one who buys them. Always me."
+          }
+        ]
+      },
+      {
+        "who": "Ludo",
+        "s": [
+          {
+            "it": "Calma. Facciamo un sistema.",
+            "en": "Calm down. Let's set up a system."
+          },
+          {
+            "it": "Ognuno scrive il suo nome sulle sue cose.",
+            "en": "Everyone writes their name on their own things."
+          }
+        ]
+      },
+      {
+        "who": "Tommaso",
+        "s": [
+          {
+            "it": "Sulle capsule? Sono piccolissime.",
+            "en": "On the capsules? They're tiny."
+          }
+        ]
+      },
+      {
+        "who": "Ludo",
+        "s": [
+          {
+            "it": "Con un pennarello. Io scrivo una L sul mio tè.",
+            "en": "With a marker. I write an L on my tea."
+          }
+        ]
+      },
+      {
+        "who": "Bea",
+        "s": [
+          {
+            "it": "Va bene. Stasera compro una scatola nuova e scrivo una B su tutte le capsule. Cinquanta B.",
+            "en": "Fine. Tonight I'll buy a new box and write a B on every capsule. Fifty Bs."
+          }
+        ]
+      },
+      {
+        "who": "Tommaso",
+        "s": [
+          {
+            "it": "Bea, sei un po' esagerata.",
+            "en": "Bea, you're overreacting a bit."
+          }
+        ]
+      },
+      {
+        "who": "Bea",
+        "s": [
+          {
+            "it": "No, sono una persona che beve il caffè la mattina. È diverso.",
+            "en": "No, I'm a person who drinks coffee in the morning. That's different."
+          }
+        ]
+      },
+      {
+        "who": "Bea",
+        "s": [
+          {
+            "it": "Ragazzi. È mezzogiorno e mancano tre capsule. Tre capsule con la B.",
+            "en": "Guys. It's midday and three capsules are missing. Three capsules with a B."
+          }
+        ]
+      },
+      {
+        "who": "Tommaso",
+        "s": [
+          {
+            "it": "Io sono in biblioteca dalle otto.",
+            "en": "I've been in the library since eight."
+          },
+          {
+            "it": "Ho un testimone: il bibliotecario.",
+            "en": "I have a witness: the librarian."
+          }
+        ]
+      },
+      {
+        "who": "Ludo",
+        "s": [
+          {
+            "it": "Io sono a lezione. Però sono passata a casa un minuto e c'è una cosa strana.",
+            "en": "I'm in class. But I stopped by the flat for a minute and something is strange."
+          },
+          {
+            "it": "Il frigo è pulito.",
+            "en": "The fridge is clean."
+          }
+        ]
+      },
+      {
+        "who": "Bea",
+        "s": [
+          {
+            "it": "Pulito? Il nostro frigo?",
+            "en": "Clean? Our fridge?"
+          }
+        ]
+      },
+      {
+        "who": "Ludo",
+        "s": [
+          {
+            "it": "Sì. Anche il lavandino. E sul tavolo ci sono dei fiori.",
+            "en": "Yes. The sink too. And there are flowers on the table."
+          },
+          {
+            "it": "Margherite gialle, in un barattolo di marmellata.",
+            "en": "Yellow daisies, in a jam jar."
+          }
+        ]
+      },
+      {
+        "who": "Tommaso",
+        "s": [
+          {
+            "it": "Fiori? Allora il ladro è romantico.",
+            "en": "Flowers? So the thief is a romantic."
+          }
+        ]
+      },
+      {
+        "who": "Bea",
+        "s": [
+          {
+            "it": "Aspettate. Oggi è martedì?",
+            "en": "Wait. Is today Tuesday?"
+          }
+        ]
+      },
+      {
+        "who": "Ludo",
+        "s": [
+          {
+            "it": "Sì, perché?",
+            "en": "Yes, why?"
+          }
+        ]
+      },
+      {
+        "who": "Bea",
+        "s": [
+          {
+            "it": "Oh no. Mia madre ha le chiavi di casa. Per le emergenze.",
+            "en": "Oh no. My mother has keys to the flat. For emergencies."
+          }
+        ]
+      },
+      {
+        "who": "Bea",
+        "s": [
+          {
+            "it": "Bea ha aggiunto Mamma al gruppo.",
+            "en": "Bea added Mum to the group."
+          }
+        ]
+      },
+      {
+        "who": "Mamma",
+        "s": [
+          {
+            "it": "Buongiorno, ragazzi. Sì, sono io.",
+            "en": "Good morning, kids. Yes, it's me."
+          },
+          {
+            "it": "Il martedì vengo a Padova per il mercato e passo da voi.",
+            "en": "On Tuesdays I come to Padova for the market and I drop by your place."
+          },
+          {
+            "it": "Pulisco un po' e bevo un caffè. Va bene, due caffè. Va bene, tre.",
+            "en": "I clean a bit and have a coffee. All right, two coffees. All right, three."
+          }
+        ]
+      },
+      {
+        "who": "Mamma",
+        "s": [
+          {
+            "it": "Il vostro frigo è un problema serio. C'è un formaggio di ottobre.",
+            "en": "Your fridge is a serious problem. There's a cheese from October."
+          }
+        ]
+      },
+      {
+        "who": "Ludo",
+        "s": [
+          {
+            "it": "Quello è di Tommaso.",
+            "en": "That one is Tommaso's."
+          }
+        ]
+      },
+      {
+        "who": "Tommaso",
+        "s": [
+          {
+            "it": "Signora, grazie per il frigo. Il martedì le capsule sono tutte sue.",
+            "en": "Thank you for the fridge, signora. On Tuesdays the capsules are all yours."
+          }
+        ]
+      },
+      {
+        "who": "Bea",
+        "s": [
+          {
+            "it": "Mamma, perché non mi dici niente?",
+            "en": "Mum, why don't you tell me anything?"
+          }
+        ]
+      },
+      {
+        "who": "Mamma",
+        "s": [
+          {
+            "it": "Perché quando non lo sai, la cucina è più pulita.",
+            "en": "Because when you don't know, the kitchen is cleaner."
+          },
+          {
+            "it": "Martedì prossimo porto io le capsule. Con la M.",
+            "en": "Next Tuesday I'll bring the capsules. With an M."
+          }
+        ]
+      }
     ],
-    "a": "Perché mancano cinque capsule"
-   },
-   {
-    "q": "Perché Ludo dice che non è stata lei?",
-    "o": [
-     "Perché non beve caffè",
-     "Perché è in biblioteca",
-     "Perché non ha le chiavi"
+    "glossary": [
+      {
+        "it": "la capsula",
+        "en": "the (coffee) capsule, pod"
+      },
+      {
+        "it": "ce n'è una",
+        "en": "there's one (of them)"
+      },
+      {
+        "it": "scappano",
+        "en": "they run away"
+      },
+      {
+        "it": "non è divertente",
+        "en": "it's not funny"
+      },
+      {
+        "it": "il pennarello",
+        "en": "the marker pen"
+      },
+      {
+        "it": "mancano",
+        "en": "are missing"
+      },
+      {
+        "it": "il testimone",
+        "en": "the witness"
+      },
+      {
+        "it": "sono passata a casa",
+        "en": "I stopped by the flat"
+      },
+      {
+        "it": "il lavandino",
+        "en": "the sink"
+      },
+      {
+        "it": "il ladro",
+        "en": "the thief"
+      },
+      {
+        "it": "per le emergenze",
+        "en": "for emergencies"
+      },
+      {
+        "it": "passo da voi",
+        "en": "I drop by your place"
+      },
+      {
+        "it": "le capsule sono tutte sue",
+        "en": "the capsules are all yours (formal)"
+      }
     ],
-    "a": "Perché non beve caffè"
-   },
-   {
-    "q": "Che cosa è diverso a casa il secondo giorno?",
-    "o": [
-     "Ci sono fiori e il frigo è pulito",
-     "Ci sono cinquanta capsule nuove",
-     "Il formaggio di ottobre non c'è più nel frigo"
+    "questions": [
+      {
+        "q": "Perché Bea scrive nel gruppo la prima volta?",
+        "o": [
+          "Perché mancano cinque capsule",
+          "Perché il frigo è sporco e c'è un formaggio vecchio",
+          "Perché Tommaso non dice buongiorno"
+        ],
+        "a": "Perché mancano cinque capsule"
+      },
+      {
+        "q": "Perché Ludo dice che non è stata lei?",
+        "o": [
+          "Perché non beve caffè",
+          "Perché è in biblioteca",
+          "Perché non ha le chiavi"
+        ],
+        "a": "Perché non beve caffè"
+      },
+      {
+        "q": "Che cosa è diverso a casa il secondo giorno?",
+        "o": [
+          "Ci sono fiori e il frigo è pulito",
+          "Ci sono cinquanta capsule nuove",
+          "Il formaggio di ottobre non c'è più nel frigo"
+        ],
+        "a": "Ci sono fiori e il frigo è pulito"
+      },
+      {
+        "q": "Come capisce Bea chi è il ladro?",
+        "o": [
+          "Pensa al giorno della settimana",
+          "Vede una M sulle capsule",
+          "Il bibliotecario le telefona"
+        ],
+        "a": "Pensa al giorno della settimana"
+      },
+      {
+        "q": "Che cosa pensa la mamma del frigo dei ragazzi?",
+        "o": [
+          "Che è un disastro",
+          "Che è troppo piccolo per tre ragazzi",
+          "Che è pieno di capsule"
+        ],
+        "a": "Che è un disastro"
+      }
     ],
-    "a": "Ci sono fiori e il frigo è pulito"
-   },
-   {
-    "q": "Come capisce Bea chi è il ladro?",
-    "o": [
-     "Pensa al giorno della settimana",
-     "Vede una M sulle capsule",
-     "Il bibliotecario le telefona"
+    "narrator": "f",
+    "speakers": {
+      "Bea": "f",
+      "Tommaso": "m",
+      "Ludo": "m2",
+      "Mamma": "f2"
+    }
+  },
+  {
+    "id": "r-a1-02",
+    "level": "A1",
+    "title": "Le orecchiette di nonna Nunzia",
+    "en": "Nonna Nunzia's Orecchiette",
+    "topic": "food",
+    "genre": "recipe told aloud",
+    "minutes": 5,
+    "blurb": "A grandmother in Bari dictates her orecchiette recipe over the phone, and she has a lot to say about the woman across the street.",
+    "body": [
+      {
+        "who": "Nonna Nunzia",
+        "s": [
+          {
+            "it": "Allora, Michele, hai la penna? Bene. Scrivi.",
+            "en": "Right, Michele, have you got a pen? Good. Write."
+          },
+          {
+            "it": "Orecchiette per quattro persone.",
+            "en": "Orecchiette for four people."
+          },
+          {
+            "it": "Quattro persone normali, non quattro persone come tuo zio Franco.",
+            "en": "Four normal people, not four people like your uncle Franco."
+          }
+        ]
+      },
+      {
+        "who": "Nonna Nunzia",
+        "s": [
+          {
+            "it": "Prendi trecento grammi di semola di grano duro rimacinata.",
+            "en": "Take three hundred grams of finely milled durum wheat semolina."
+          },
+          {
+            "it": "Rimacinata, Michele. Scrivi bene: rimacinata.",
+            "en": "Finely milled, Michele. Write it properly: rimacinata."
+          }
+        ]
+      },
+      {
+        "who": "Nonna Nunzia",
+        "s": [
+          {
+            "it": "Poi l'acqua tiepida. Quanta acqua? Quanto basta.",
+            "en": "Then lukewarm water. How much water? As much as it needs."
+          },
+          {
+            "it": "Non lo so, Michele, io non uso il bicchiere. Io uso le mani.",
+            "en": "I don't know, Michele, I don't use a measuring glass. I use my hands."
+          }
+        ]
+      },
+      {
+        "who": "Nonna Nunzia",
+        "s": [
+          {
+            "it": "La signora Lella, qui di fronte, usa una bilancia elettronica.",
+            "en": "Signora Lella, across the street, uses an electronic scale."
+          },
+          {
+            "it": "Elettronica! E le sue orecchiette sono dure come bottoni.",
+            "en": "Electronic! And her orecchiette are as hard as buttons."
+          }
+        ]
+      },
+      {
+        "who": "Nonna Nunzia",
+        "s": [
+          {
+            "it": "Metti la semola sul tavolo e fai un buco in mezzo.",
+            "en": "Put the semolina on the table and make a hole in the middle."
+          },
+          {
+            "it": "Versi l'acqua piano piano e lavori l'impasto con le mani.",
+            "en": "You pour the water in slowly and work the dough with your hands."
+          },
+          {
+            "it": "Dieci minuti. Dieci minuti veri, non cinque. Tu sei sempre di fretta.",
+            "en": "Ten minutes. Ten real minutes, not five. You're always in a hurry."
+          }
+        ]
+      },
+      {
+        "who": "Nonna Nunzia",
+        "s": [
+          {
+            "it": "Lella lavora l'impasto tre minuti e poi guarda la televisione.",
+            "en": "Lella works the dough for three minutes and then watches TV."
+          },
+          {
+            "it": "Io la vedo dalla finestra.",
+            "en": "I can see her from my window."
+          }
+        ]
+      },
+      {
+        "who": "Nonna Nunzia",
+        "s": [
+          {
+            "it": "Poi fai dei cilindri lunghi, come dei serpenti, e tagli dei pezzetti piccoli.",
+            "en": "Then you make long rolls, like snakes, and cut little pieces."
+          },
+          {
+            "it": "Adesso prendi un coltello senza punta.",
+            "en": "Now take a knife without a point."
+          },
+          {
+            "it": "Trascini ogni pezzetto sul tavolo e poi lo giri sul pollice. Così, vedi?",
+            "en": "You drag each piece across the table and then turn it over on your thumb. Like this, see?"
+          },
+          {
+            "it": "No, non vedi, sei al telefono.",
+            "en": "No, you don't see, you're on the phone."
+          }
+        ]
+      },
+      {
+        "who": "Nonna Nunzia",
+        "s": [
+          {
+            "it": "Le orecchiette sono ruvide fuori e sottili in mezzo.",
+            "en": "Orecchiette are rough on the outside and thin in the middle."
+          },
+          {
+            "it": "Quelle di Lella sono grosse. Per lei va bene, ha la dentiera nuova.",
+            "en": "Lella's are thick. That's fine for her, she has new dentures."
+          }
+        ]
+      },
+      {
+        "who": "Nonna Nunzia",
+        "s": [
+          {
+            "it": "Le cime di rapa le compri dal signor Vito al mercato, non al supermercato.",
+            "en": "You buy the turnip tops from Signor Vito at the market, not at the supermarket."
+          },
+          {
+            "it": "Cuoci le cime e le orecchiette nella stessa acqua.",
+            "en": "Cook the turnip tops and the orecchiette in the same water."
+          },
+          {
+            "it": "Poi in padella: olio, aglio, peperoncino e due acciughe.",
+            "en": "Then into the pan: oil, garlic, chilli and two anchovies."
+          }
+        ]
+      },
+      {
+        "who": "Michele",
+        "s": [
+          {
+            "it": "Nonna, una domanda. Perché non ti piace la signora Lella?",
+            "en": "Nonna, a question. Why don't you like Signora Lella?"
+          }
+        ]
+      },
+      {
+        "who": "Nonna Nunzia",
+        "s": [
+          {
+            "it": "Perché? Nel 1987 c'è una gara di orecchiette a Bari Vecchia.",
+            "en": "Why? In 1987 there's an orecchiette contest in Bari Vecchia."
+          },
+          {
+            "it": "Lella vince il primo premio.",
+            "en": "Lella wins first prize."
+          }
+        ]
+      },
+      {
+        "who": "Michele",
+        "s": [
+          {
+            "it": "E allora?",
+            "en": "So what?"
+          }
+        ]
+      },
+      {
+        "who": "Nonna Nunzia",
+        "s": [
+          {
+            "it": "E allora la ricetta è mia!",
+            "en": "So the recipe is mine!"
+          },
+          {
+            "it": "Lei è venuta a casa mia, ha guardato le mie mani e ha copiato tutto. Anche le acciughe.",
+            "en": "She came to my house, watched my hands and copied everything. Even the anchovies."
+          }
+        ]
+      },
+      {
+        "who": "Michele",
+        "s": [
+          {
+            "it": "Nonna, sono passati quasi quarant'anni.",
+            "en": "Nonna, that was almost forty years ago."
+          }
+        ]
+      },
+      {
+        "who": "Nonna Nunzia",
+        "s": [
+          {
+            "it": "Trentanove. Io ho una buona memoria. Hai scritto tutto?",
+            "en": "Thirty-nine. I have a good memory. Have you written it all down?"
+          }
+        ]
+      },
+      {
+        "who": "Michele",
+        "s": [
+          {
+            "it": "Sì, tutto.",
+            "en": "Yes, all of it."
+          }
+        ]
+      },
+      {
+        "who": "Nonna Nunzia",
+        "s": [
+          {
+            "it": "Bravo. Adesso strappa il foglio.",
+            "en": "Good boy. Now tear up the page."
+          },
+          {
+            "it": "Domenica vieni qui e le facciamo insieme.",
+            "en": "On Sunday you come here and we'll make them together."
+          },
+          {
+            "it": "Le ricette sulla carta non funzionano. Chiedi a Lella.",
+            "en": "Recipes on paper don't work. Ask Lella."
+          }
+        ]
+      }
     ],
-    "a": "Pensa al giorno della settimana"
-   },
-   {
-    "q": "Che cosa pensa la mamma del frigo dei ragazzi?",
-    "o": [
-     "Che è un disastro",
-     "Che è troppo piccolo per tre ragazzi",
-     "Che è pieno di capsule"
+    "glossary": [
+      {
+        "it": "la semola di grano duro rimacinata",
+        "en": "finely milled durum wheat semolina"
+      },
+      {
+        "it": "tiepida",
+        "en": "lukewarm"
+      },
+      {
+        "it": "quanto basta",
+        "en": "as much as needed"
+      },
+      {
+        "it": "di fronte",
+        "en": "opposite, across the street"
+      },
+      {
+        "it": "la bilancia",
+        "en": "the (kitchen) scale"
+      },
+      {
+        "it": "l'impasto",
+        "en": "the dough"
+      },
+      {
+        "it": "sei sempre di fretta",
+        "en": "you're always in a hurry"
+      },
+      {
+        "it": "il coltello senza punta",
+        "en": "a knife without a point"
+      },
+      {
+        "it": "il pollice",
+        "en": "the thumb"
+      },
+      {
+        "it": "ruvide",
+        "en": "rough"
+      },
+      {
+        "it": "la dentiera",
+        "en": "dentures, false teeth"
+      },
+      {
+        "it": "le cime di rapa",
+        "en": "turnip tops (a leafy green)"
+      },
+      {
+        "it": "la gara",
+        "en": "the contest"
+      },
+      {
+        "it": "strappa il foglio",
+        "en": "tear up the page"
+      }
     ],
-    "a": "Che è un disastro"
-   }
-  ]
- },
- {
-  "id": "r-a1-02",
-  "level": "A1",
-  "title": "Le orecchiette di nonna Nunzia",
-  "en": "Nonna Nunzia's Orecchiette",
-  "topic": "food",
-  "genre": "recipe told aloud",
-  "minutes": 5,
-  "blurb": "A grandmother in Bari dictates her orecchiette recipe over the phone, and she has a lot to say about the woman across the street.",
-  "body": [
-   {
-    "who": "Nonna Nunzia",
-    "s": [
-     {
-      "it": "Allora, Michele, hai la penna? Bene. Scrivi.",
-      "en": "Right, Michele, have you got a pen? Good. Write."
-     },
-     {
-      "it": "Orecchiette per quattro persone.",
-      "en": "Orecchiette for four people."
-     },
-     {
-      "it": "Quattro persone normali, non quattro persone come tuo zio Franco.",
-      "en": "Four normal people, not four people like your uncle Franco."
-     }
-    ]
-   },
-   {
-    "who": "Nonna Nunzia",
-    "s": [
-     {
-      "it": "Prendi trecento grammi di semola di grano duro rimacinata.",
-      "en": "Take three hundred grams of finely milled durum wheat semolina."
-     },
-     {
-      "it": "Rimacinata, Michele. Scrivi bene: rimacinata.",
-      "en": "Finely milled, Michele. Write it properly: rimacinata."
-     }
-    ]
-   },
-   {
-    "who": "Nonna Nunzia",
-    "s": [
-     {
-      "it": "Poi l'acqua tiepida. Quanta acqua? Quanto basta.",
-      "en": "Then lukewarm water. How much water? As much as it needs."
-     },
-     {
-      "it": "Non lo so, Michele, io non uso il bicchiere. Io uso le mani.",
-      "en": "I don't know, Michele, I don't use a measuring glass. I use my hands."
-     }
-    ]
-   },
-   {
-    "who": "Nonna Nunzia",
-    "s": [
-     {
-      "it": "La signora Lella, qui di fronte, usa una bilancia elettronica.",
-      "en": "Signora Lella, across the street, uses an electronic scale."
-     },
-     {
-      "it": "Elettronica! E le sue orecchiette sono dure come bottoni.",
-      "en": "Electronic! And her orecchiette are as hard as buttons."
-     }
-    ]
-   },
-   {
-    "who": "Nonna Nunzia",
-    "s": [
-     {
-      "it": "Metti la semola sul tavolo e fai un buco in mezzo.",
-      "en": "Put the semolina on the table and make a hole in the middle."
-     },
-     {
-      "it": "Versi l'acqua piano piano e lavori l'impasto con le mani.",
-      "en": "You pour the water in slowly and work the dough with your hands."
-     },
-     {
-      "it": "Dieci minuti. Dieci minuti veri, non cinque. Tu sei sempre di fretta.",
-      "en": "Ten minutes. Ten real minutes, not five. You're always in a hurry."
-     }
-    ]
-   },
-   {
-    "who": "Nonna Nunzia",
-    "s": [
-     {
-      "it": "Lella lavora l'impasto tre minuti e poi guarda la televisione.",
-      "en": "Lella works the dough for three minutes and then watches TV."
-     },
-     {
-      "it": "Io la vedo dalla finestra.",
-      "en": "I can see her from my window."
-     }
-    ]
-   },
-   {
-    "who": "Nonna Nunzia",
-    "s": [
-     {
-      "it": "Poi fai dei cilindri lunghi, come dei serpenti, e tagli dei pezzetti piccoli.",
-      "en": "Then you make long rolls, like snakes, and cut little pieces."
-     },
-     {
-      "it": "Adesso prendi un coltello senza punta.",
-      "en": "Now take a knife without a point."
-     },
-     {
-      "it": "Trascini ogni pezzetto sul tavolo e poi lo giri sul pollice. Così, vedi?",
-      "en": "You drag each piece across the table and then turn it over on your thumb. Like this, see?"
-     },
-     {
-      "it": "No, non vedi, sei al telefono.",
-      "en": "No, you don't see, you're on the phone."
-     }
-    ]
-   },
-   {
-    "who": "Nonna Nunzia",
-    "s": [
-     {
-      "it": "Le orecchiette sono ruvide fuori e sottili in mezzo.",
-      "en": "Orecchiette are rough on the outside and thin in the middle."
-     },
-     {
-      "it": "Quelle di Lella sono grosse. Per lei va bene, ha la dentiera nuova.",
-      "en": "Lella's are thick. That's fine for her, she has new dentures."
-     }
-    ]
-   },
-   {
-    "who": "Nonna Nunzia",
-    "s": [
-     {
-      "it": "Le cime di rapa le compri dal signor Vito al mercato, non al supermercato.",
-      "en": "You buy the turnip tops from Signor Vito at the market, not at the supermarket."
-     },
-     {
-      "it": "Cuoci le cime e le orecchiette nella stessa acqua.",
-      "en": "Cook the turnip tops and the orecchiette in the same water."
-     },
-     {
-      "it": "Poi in padella: olio, aglio, peperoncino e due acciughe.",
-      "en": "Then into the pan: oil, garlic, chilli and two anchovies."
-     }
-    ]
-   },
-   {
-    "who": "Michele",
-    "s": [
-     {
-      "it": "Nonna, una domanda. Perché non ti piace la signora Lella?",
-      "en": "Nonna, a question. Why don't you like Signora Lella?"
-     }
-    ]
-   },
-   {
-    "who": "Nonna Nunzia",
-    "s": [
-     {
-      "it": "Perché? Nel 1987 c'è una gara di orecchiette a Bari Vecchia.",
-      "en": "Why? In 1987 there's an orecchiette contest in Bari Vecchia."
-     },
-     {
-      "it": "Lella vince il primo premio.",
-      "en": "Lella wins first prize."
-     }
-    ]
-   },
-   {
-    "who": "Michele",
-    "s": [
-     {
-      "it": "E allora?",
-      "en": "So what?"
-     }
-    ]
-   },
-   {
-    "who": "Nonna Nunzia",
-    "s": [
-     {
-      "it": "E allora la ricetta è mia!",
-      "en": "So the recipe is mine!"
-     },
-     {
-      "it": "Lei è venuta a casa mia, ha guardato le mie mani e ha copiato tutto. Anche le acciughe.",
-      "en": "She came to my house, watched my hands and copied everything. Even the anchovies."
-     }
-    ]
-   },
-   {
-    "who": "Michele",
-    "s": [
-     {
-      "it": "Nonna, sono passati quasi quarant'anni.",
-      "en": "Nonna, that was almost forty years ago."
-     }
-    ]
-   },
-   {
-    "who": "Nonna Nunzia",
-    "s": [
-     {
-      "it": "Trentanove. Io ho una buona memoria. Hai scritto tutto?",
-      "en": "Thirty-nine. I have a good memory. Have you written it all down?"
-     }
-    ]
-   },
-   {
-    "who": "Michele",
-    "s": [
-     {
-      "it": "Sì, tutto.",
-      "en": "Yes, all of it."
-     }
-    ]
-   },
-   {
-    "who": "Nonna Nunzia",
-    "s": [
-     {
-      "it": "Bravo. Adesso strappa il foglio.",
-      "en": "Good boy. Now tear up the page."
-     },
-     {
-      "it": "Domenica vieni qui e le facciamo insieme.",
-      "en": "On Sunday you come here and we'll make them together."
-     },
-     {
-      "it": "Le ricette sulla carta non funzionano. Chiedi a Lella.",
-      "en": "Recipes on paper don't work. Ask Lella."
-     }
-    ]
-   }
-  ],
-  "glossary": [
-   {
-    "it": "la semola di grano duro rimacinata",
-    "en": "finely milled durum wheat semolina"
-   },
-   {
-    "it": "tiepida",
-    "en": "lukewarm"
-   },
-   {
-    "it": "quanto basta",
-    "en": "as much as needed"
-   },
-   {
-    "it": "di fronte",
-    "en": "opposite, across the street"
-   },
-   {
-    "it": "la bilancia",
-    "en": "the (kitchen) scale"
-   },
-   {
-    "it": "l'impasto",
-    "en": "the dough"
-   },
-   {
-    "it": "sei sempre di fretta",
-    "en": "you're always in a hurry"
-   },
-   {
-    "it": "il coltello senza punta",
-    "en": "a knife without a point"
-   },
-   {
-    "it": "il pollice",
-    "en": "the thumb"
-   },
-   {
-    "it": "ruvide",
-    "en": "rough"
-   },
-   {
-    "it": "la dentiera",
-    "en": "dentures, false teeth"
-   },
-   {
-    "it": "le cime di rapa",
-    "en": "turnip tops (a leafy green)"
-   },
-   {
-    "it": "la gara",
-    "en": "the contest"
-   },
-   {
-    "it": "strappa il foglio",
-    "en": "tear up the page"
-   }
-  ],
-  "questions": [
-   {
-    "q": "Che cosa usa nonna Nunzia per l'acqua?",
-    "o": [
-     "Le mani",
-     "Un bicchiere",
-     "Una bilancia elettronica"
+    "questions": [
+      {
+        "q": "Che cosa usa nonna Nunzia per l'acqua?",
+        "o": [
+          "Le mani",
+          "Un bicchiere",
+          "Una bilancia elettronica"
+        ],
+        "a": "Le mani"
+      },
+      {
+        "q": "Che cosa pensa la nonna delle orecchiette di Lella?",
+        "o": [
+          "Sono dure e grosse",
+          "Sono più buone delle sue",
+          "Sono troppo piccole"
+        ],
+        "a": "Sono dure e grosse"
+      },
+      {
+        "q": "Come sa la nonna che Lella guarda la televisione?",
+        "o": [
+          "La vede dalla finestra",
+          "Lella le telefona ogni sera",
+          "Michele glielo dice"
+        ],
+        "a": "La vede dalla finestra"
+      },
+      {
+        "q": "Perché la nonna è ancora arrabbiata con Lella?",
+        "o": [
+          "Lella ha vinto una gara con la sua ricetta",
+          "Lella compra le cime di rapa al supermercato",
+          "Lella non la invita a cena"
+        ],
+        "a": "Lella ha vinto una gara con la sua ricetta"
+      },
+      {
+        "q": "Perché alla fine Michele deve strappare il foglio?",
+        "o": [
+          "Le orecchiette si imparano con le mani, insieme",
+          "Perché la ricetta è sbagliata",
+          "Perché Lella può vedere il foglio e copiare la ricetta"
+        ],
+        "a": "Le orecchiette si imparano con le mani, insieme"
+      }
     ],
-    "a": "Le mani"
-   },
-   {
-    "q": "Che cosa pensa la nonna delle orecchiette di Lella?",
-    "o": [
-     "Sono dure e grosse",
-     "Sono più buone delle sue",
-     "Sono troppo piccole"
+    "narrator": "m",
+    "speakers": {
+      "Nonna Nunzia": "f",
+      "Michele": "m"
+    }
+  },
+  {
+    "id": "r-a1-03",
+    "level": "A1",
+    "title": "La bacheca di via Zamboni",
+    "en": "The Noticeboard on Via Zamboni",
+    "topic": "places",
+    "genre": "noticeboard of small ads",
+    "minutes": 5,
+    "blurb": "Rooms, a cheap bike, a missing tortoise and one strange message on a university noticeboard in Bologna that everybody wants to answer.",
+    "body": [
+      {
+        "who": "Annuncio",
+        "s": [
+          {
+            "it": "AFFITTO STANZA SINGOLA in via del Pratello.",
+            "en": "SINGLE ROOM TO RENT on Via del Pratello."
+          },
+          {
+            "it": "Quattrocentocinquanta euro al mese, spese incluse.",
+            "en": "Four hundred and fifty euros a month, bills included."
+          },
+          {
+            "it": "La casa è luminosa, la cucina è grande.",
+            "en": "The flat is bright and the kitchen is big."
+          },
+          {
+            "it": "Il coinquilino suona il violoncello, ma solo la sera.",
+            "en": "The flatmate plays the cello, but only in the evening."
+          },
+          {
+            "it": "Scrivere a Giacomo.",
+            "en": "Write to Giacomo."
+          }
+        ]
+      },
+      {
+        "who": "Annuncio",
+        "s": [
+          {
+            "it": "VENDO BICICLETTA da donna, verde, con cestino. Sessanta euro.",
+            "en": "FOR SALE: women's bike, green, with a basket. Sixty euros."
+          },
+          {
+            "it": "I freni funzionano. Il campanello no.",
+            "en": "The brakes work. The bell doesn't."
+          },
+          {
+            "it": "Telefonare a Marta dopo le sei.",
+            "en": "Call Marta after six."
+          }
+        ]
+      },
+      {
+        "who": "Annuncio",
+        "s": [
+          {
+            "it": "HO PERSO LA MIA TARTARUGA!",
+            "en": "I'VE LOST MY TORTOISE!"
+          },
+          {
+            "it": "Si chiama Gino, ha quarant'anni ed è molto tranquillo.",
+            "en": "His name is Gino, he's forty years old and very calm."
+          },
+          {
+            "it": "Mangia insalata e fragole. Non morde.",
+            "en": "He eats lettuce and strawberries. He doesn't bite."
+          },
+          {
+            "it": "Ricompensa: una cena a casa mia. Cucino bene. Samir, terzo piano, via San Vitale 22.",
+            "en": "Reward: dinner at my place. I'm a good cook. Samir, third floor, Via San Vitale 22."
+          }
+        ]
+      },
+      {
+        "who": "Annuncio",
+        "s": [
+          {
+            "it": "CERCO LA RAGAZZA DELL'AUTOBUS 13.",
+            "en": "LOOKING FOR THE GIRL ON THE NUMBER 13 BUS."
+          },
+          {
+            "it": "Ogni mattina alle otto e dieci sali in piazza Maggiore.",
+            "en": "Every morning at ten past eight you get on at Piazza Maggiore."
+          },
+          {
+            "it": "Hai un cappotto giallo e leggi sempre un libro di Calvino.",
+            "en": "You wear a yellow coat and you're always reading a book by Calvino."
+          },
+          {
+            "it": "Io sono il ragazzo con la sciarpa blu, in fondo all'autobus.",
+            "en": "I'm the guy with the blue scarf, at the back of the bus."
+          },
+          {
+            "it": "Non ho il coraggio di parlare. E scendo sempre troppo presto.",
+            "en": "I don't have the courage to talk. And I always get off too early."
+          }
+        ]
+      },
+      {
+        "who": "Post-it verde",
+        "s": [
+          {
+            "it": "Che libro legge? Io scommetto: Le città invisibili.",
+            "en": "Which book is she reading? My bet: Invisible Cities."
+          }
+        ]
+      },
+      {
+        "who": "Post-it rosa",
+        "s": [
+          {
+            "it": "Ragazzo con la sciarpa blu, coraggio! Parla con lei domani!",
+            "en": "Guy with the blue scarf, be brave! Talk to her tomorrow!"
+          }
+        ]
+      },
+      {
+        "who": "Post-it giallo",
+        "s": [
+          {
+            "it": "Io prendo il 13 tutti i giorni. Lei esiste, è vera. Il libro è Il barone rampante.",
+            "en": "I take the 13 every day. She exists, she's real. The book is The Baron in the Trees."
+          }
+        ]
+      },
+      {
+        "who": "Post-it azzurro",
+        "s": [
+          {
+            "it": "Anche io prendo il 13, alle otto e venti. Nessuno scrive annunci per me.",
+            "en": "I take the 13 too, at twenty past eight. Nobody writes ads about me."
+          }
+        ]
+      },
+      {
+        "who": "Post-it arancione",
+        "s": [
+          {
+            "it": "Il ragazzo con la sciarpa blu è mio fratello.",
+            "en": "The guy with the blue scarf is my brother."
+          },
+          {
+            "it": "È molto timido, ma è simpatico. Però cucina male.",
+            "en": "He's very shy, but he's nice. He's a terrible cook, though."
+          }
+        ]
+      },
+      {
+        "who": "Post-it di Marta",
+        "s": [
+          {
+            "it": "Se scendi troppo presto, ti serve una bici. Sessanta euro. Il campanello non suona, ma tu non parli, quindi va bene.",
+            "en": "If you get off too early, you need a bike. Sixty euros. The bell doesn't ring, but you don't talk, so that's fine."
+          }
+        ]
+      },
+      {
+        "who": "Post-it di Giacomo",
+        "s": [
+          {
+            "it": "La stanza in via del Pratello è ancora libera. È vicina alla fermata del 13.",
+            "en": "The room on Via del Pratello is still free. It's near the number 13 stop."
+          }
+        ]
+      },
+      {
+        "who": "Post-it di Samir",
+        "s": [
+          {
+            "it": "Gino è tornato! Era sotto il letto del mio coinquilino. Grazie a tutti.",
+            "en": "Gino is back! He was under my flatmate's bed. Thanks, everyone."
+          },
+          {
+            "it": "Ma la cena è ancora libera. Siete invitati tutti e due, ragazzo e ragazza del 13.",
+            "en": "But the dinner is still up for grabs. You're both invited, guy and girl from the 13."
+          }
+        ]
+      },
+      {
+        "who": "Post-it, scrittura piccola",
+        "s": [
+          {
+            "it": "Ciao, ragazzo con la sciarpa blu.",
+            "en": "Hi, guy with the blue scarf."
+          },
+          {
+            "it": "Il barone rampante è finito. Adesso comincio un libro molto, molto lungo.",
+            "en": "I've finished The Baron in the Trees. Now I'm starting a very, very long book."
+          },
+          {
+            "it": "Mercoledì, ore otto e dieci. C'è un posto libero vicino a me.",
+            "en": "Wednesday, ten past eight. There's a free seat next to me."
+          },
+          {
+            "it": "Non scendere troppo presto.",
+            "en": "Don't get off too early."
+          },
+          {
+            "it": "La ragazza con il cappotto giallo.",
+            "en": "The girl in the yellow coat."
+          }
+        ]
+      }
     ],
-    "a": "Sono dure e grosse"
-   },
-   {
-    "q": "Come sa la nonna che Lella guarda la televisione?",
-    "o": [
-     "La vede dalla finestra",
-     "Lella le telefona ogni sera",
-     "Michele glielo dice"
+    "glossary": [
+      {
+        "it": "la bacheca",
+        "en": "the noticeboard"
+      },
+      {
+        "it": "affitto",
+        "en": "I rent out, for rent"
+      },
+      {
+        "it": "spese incluse",
+        "en": "bills included"
+      },
+      {
+        "it": "il coinquilino",
+        "en": "the flatmate"
+      },
+      {
+        "it": "il cestino",
+        "en": "the (bike) basket"
+      },
+      {
+        "it": "i freni",
+        "en": "the brakes"
+      },
+      {
+        "it": "il campanello",
+        "en": "the bell"
+      },
+      {
+        "it": "non morde",
+        "en": "he doesn't bite"
+      },
+      {
+        "it": "la ricompensa",
+        "en": "the reward"
+      },
+      {
+        "it": "sali",
+        "en": "you get on"
+      },
+      {
+        "it": "in fondo all'autobus",
+        "en": "at the back of the bus"
+      },
+      {
+        "it": "il coraggio",
+        "en": "courage"
+      },
+      {
+        "it": "scendo",
+        "en": "I get off"
+      },
+      {
+        "it": "scommetto",
+        "en": "I bet"
+      },
+      {
+        "it": "un posto libero",
+        "en": "a free seat"
+      }
     ],
-    "a": "La vede dalla finestra"
-   },
-   {
-    "q": "Perché la nonna è ancora arrabbiata con Lella?",
-    "o": [
-     "Lella ha vinto una gara con la sua ricetta",
-     "Lella compra le cime di rapa al supermercato",
-     "Lella non la invita a cena"
+    "questions": [
+      {
+        "q": "Che problema ha la bicicletta di Marta?",
+        "o": [
+          "Il campanello non funziona",
+          "I freni non funzionano bene",
+          "Non ha il cestino"
+        ],
+        "a": "Il campanello non funziona"
+      },
+      {
+        "q": "Che cosa offre Samir a chi trova Gino?",
+        "o": [
+          "Una cena",
+          "Sessanta euro",
+          "Una bicicletta"
+        ],
+        "a": "Una cena"
+      },
+      {
+        "q": "Perché il ragazzo dell'autobus scrive un annuncio?",
+        "o": [
+          "Non ha il coraggio di parlarle",
+          "Ha perso il suo libro",
+          "Cerca una stanza vicino alla fermata"
+        ],
+        "a": "Non ha il coraggio di parlarle"
+      },
+      {
+        "q": "Perché Giacomo parla della fermata del 13?",
+        "o": [
+          "Vuole affittare la stanza al ragazzo",
+          "Cerca anche lui la ragazza",
+          "Vende un biglietto dell'autobus"
+        ],
+        "a": "Vuole affittare la stanza al ragazzo"
+      },
+      {
+        "q": "Che cosa significa l'ultimo post-it?",
+        "o": [
+          "La ragazza vuole conoscere il ragazzo",
+          "La ragazza non prende più il 13",
+          "La ragazza vuole comprare la bici di Marta"
+        ],
+        "a": "La ragazza vuole conoscere il ragazzo"
+      }
     ],
-    "a": "Lella ha vinto una gara con la sua ricetta"
-   },
-   {
-    "q": "Perché alla fine Michele deve strappare il foglio?",
-    "o": [
-     "Le orecchiette si imparano con le mani, insieme",
-     "Perché la ricetta è sbagliata",
-     "Perché Lella può vedere il foglio e copiare la ricetta"
+    "narrator": "f",
+    "speakers": {
+      "Annuncio": "m",
+      "Post-it verde": "f",
+      "Post-it rosa": "f2",
+      "Post-it giallo": "m2",
+      "Post-it azzurro": "m3",
+      "Post-it arancione": "f3",
+      "Post-it di Marta": "f4",
+      "Post-it di Giacomo": "m4",
+      "Post-it di Samir": "m",
+      "Post-it, scrittura piccola": "f"
+    }
+  },
+  {
+    "id": "r-a1-04",
+    "level": "A1",
+    "title": "Le regole di casa Kosovel",
+    "en": "The Rules of the Kosovel House",
+    "topic": "people",
+    "genre": "diary",
+    "minutes": 5,
+    "blurb": "An English au pair spends her first week in Trieste with a family whose house rules make no sense to her. Yet.",
+    "body": [
+      {
+        "s": [
+          {
+            "it": "Lunedì.",
+            "en": "Monday."
+          },
+          {
+            "it": "Sono a Trieste! La famiglia Kosovel abita in una casa alta e stretta, vicino al mare.",
+            "en": "I'm in Trieste! The Kosovel family lives in a tall, narrow house near the sea."
+          },
+          {
+            "it": "Ci sono Paolo, Vesna, due bambini, Ivan e Nika, e un nonno.",
+            "en": "There's Paolo, Vesna, two children, Ivan and Nika, and a grandfather."
+          },
+          {
+            "it": "Scrivo il diario in italiano perché voglio imparare. Il mio italiano è ancora piccolo.",
+            "en": "I'm writing this diary in Italian because I want to learn. My Italian is still small."
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "it": "Martedì.",
+            "en": "Tuesday."
+          },
+          {
+            "it": "Prima regola strana: in casa niente scarpe.",
+            "en": "First strange rule: no shoes in the house."
+          },
+          {
+            "it": "Vicino alla porta ci sono dieci paia di pantofole. Io ho le pantofole degli ospiti, con un gatto sopra.",
+            "en": "By the door there are ten pairs of slippers. I have the guest slippers, with a cat on them."
+          },
+          {
+            "it": "Seconda regola: al bar non dico mai cappuccino.",
+            "en": "Second rule: at the café I never say cappuccino."
+          },
+          {
+            "it": "A Trieste il cappuccino è un caffè piccolo con un po' di latte. Io voglio un cappuccino inglese, grande. Qui si chiama caffelatte.",
+            "en": "In Trieste a cappuccino is a small coffee with a little milk. I want an English cappuccino, a big one. Here it's called a caffelatte."
+          },
+          {
+            "it": "Che confusione.",
+            "en": "How confusing."
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "it": "Mercoledì.",
+            "en": "Wednesday."
+          },
+          {
+            "it": "Oggi c'è la bora. La bora è un vento fortissimo.",
+            "en": "Today the bora is blowing. The bora is a very strong wind."
+          },
+          {
+            "it": "Paolo dice: quando c'è la bora, non apriamo le finestre e non parliamo di soldi.",
+            "en": "Paolo says: when the bora blows, we don't open the windows and we don't talk about money."
+          },
+          {
+            "it": "Non capisco perché i soldi. Lui ride e non spiega.",
+            "en": "I don't understand why money. He laughs and doesn't explain."
+          },
+          {
+            "it": "Per strada ci sono corde per le persone, come in montagna.",
+            "en": "In the street there are ropes for people to hold, like in the mountains."
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "it": "Giovedì.",
+            "en": "Thursday."
+          },
+          {
+            "it": "Il nonno va al mare ogni giorno, anche a novembre.",
+            "en": "Grandad goes to the sea every day, even in November."
+          },
+          {
+            "it": "Va al Pedocin, una spiaggia con un muro in mezzo: gli uomini da una parte, le donne dall'altra.",
+            "en": "He goes to the Pedocin, a beach with a wall in the middle: men on one side, women on the other."
+          },
+          {
+            "it": "Io chiedo: perché? Il nonno dice: perché sì. Poi va a nuotare.",
+            "en": "I ask: why? Grandad says: just because. Then he goes swimming."
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "it": "Venerdì.",
+            "en": "Friday."
+          },
+          {
+            "it": "Regola numero cinque: la domenica tutti vanno all'osmiza.",
+            "en": "Rule number five: on Sundays everyone goes to the osmiza."
+          },
+          {
+            "it": "Che cos'è un'osmiza? Ivan dice che è una casa in campagna dove mangi prosciutto e bevi vino.",
+            "en": "What's an osmiza? Ivan says it's a farmhouse in the countryside where you eat ham and drink wine."
+          },
+          {
+            "it": "Nessuno sa l'indirizzo. Cerchi un ramo verde sulla strada.",
+            "en": "Nobody knows the address. You look for a green branch by the road."
+          },
+          {
+            "it": "Secondo me, Ivan scherza. Vesna dice di no.",
+            "en": "I reckon Ivan is joking. Vesna says he isn't."
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "it": "Domenica.",
+            "en": "Sunday."
+          },
+          {
+            "it": "Ivan non scherza. C'è un ramo, c'è il prosciutto, c'è il vino, e c'è il sole.",
+            "en": "Ivan wasn't joking. There's a branch, there's ham, there's wine, and there's sunshine."
+          },
+          {
+            "it": "Mangiamo su un tavolo di legno sopra il mare. È bellissimo.",
+            "en": "We eat at a wooden table above the sea. It's beautiful."
+          },
+          {
+            "it": "In macchina, Nika mi guarda e dice: «Hannah, anche tu hai una regola strana.»",
+            "en": "In the car, Nika looks at me and says: \"Hannah, you have a strange rule too.\""
+          },
+          {
+            "it": "«Io? Quale?»",
+            "en": "\"Me? Which one?\""
+          },
+          {
+            "it": "«Scrivi il diario in italiano, ma con il gatto parli in inglese.»",
+            "en": "\"You write your diary in Italian, but you speak English to the cat.\""
+          },
+          {
+            "it": "È vero. Il gatto si chiama Bepi e capisce solo il triestino.",
+            "en": "It's true. The cat is called Bepi and he only understands the Trieste dialect."
+          },
+          {
+            "it": "Domani comincio a studiare il triestino.",
+            "en": "Tomorrow I start learning the Trieste dialect."
+          }
+        ]
+      }
     ],
-    "a": "Le orecchiette si imparano con le mani, insieme"
-   }
-  ]
- },
- {
-  "id": "r-a1-03",
-  "level": "A1",
-  "title": "La bacheca di via Zamboni",
-  "en": "The Noticeboard on Via Zamboni",
-  "topic": "places",
-  "genre": "noticeboard of small ads",
-  "minutes": 5,
-  "blurb": "Rooms, a cheap bike, a missing tortoise and one strange message on a university noticeboard in Bologna that everybody wants to answer.",
-  "body": [
-   {
-    "who": "Annuncio",
-    "s": [
-     {
-      "it": "AFFITTO STANZA SINGOLA in via del Pratello.",
-      "en": "SINGLE ROOM TO RENT on Via del Pratello."
-     },
-     {
-      "it": "Quattrocentocinquanta euro al mese, spese incluse.",
-      "en": "Four hundred and fifty euros a month, bills included."
-     },
-     {
-      "it": "La casa è luminosa, la cucina è grande.",
-      "en": "The flat is bright and the kitchen is big."
-     },
-     {
-      "it": "Il coinquilino suona il violoncello, ma solo la sera.",
-      "en": "The flatmate plays the cello, but only in the evening."
-     },
-     {
-      "it": "Scrivere a Giacomo.",
-      "en": "Write to Giacomo."
-     }
-    ]
-   },
-   {
-    "who": "Annuncio",
-    "s": [
-     {
-      "it": "VENDO BICICLETTA da donna, verde, con cestino. Sessanta euro.",
-      "en": "FOR SALE: women's bike, green, with a basket. Sixty euros."
-     },
-     {
-      "it": "I freni funzionano. Il campanello no.",
-      "en": "The brakes work. The bell doesn't."
-     },
-     {
-      "it": "Telefonare a Marta dopo le sei.",
-      "en": "Call Marta after six."
-     }
-    ]
-   },
-   {
-    "who": "Annuncio",
-    "s": [
-     {
-      "it": "HO PERSO LA MIA TARTARUGA!",
-      "en": "I'VE LOST MY TORTOISE!"
-     },
-     {
-      "it": "Si chiama Gino, ha quarant'anni ed è molto tranquillo.",
-      "en": "His name is Gino, he's forty years old and very calm."
-     },
-     {
-      "it": "Mangia insalata e fragole. Non morde.",
-      "en": "He eats lettuce and strawberries. He doesn't bite."
-     },
-     {
-      "it": "Ricompensa: una cena a casa mia. Cucino bene. Samir, terzo piano, via San Vitale 22.",
-      "en": "Reward: dinner at my place. I'm a good cook. Samir, third floor, Via San Vitale 22."
-     }
-    ]
-   },
-   {
-    "who": "Annuncio",
-    "s": [
-     {
-      "it": "CERCO LA RAGAZZA DELL'AUTOBUS 13.",
-      "en": "LOOKING FOR THE GIRL ON THE NUMBER 13 BUS."
-     },
-     {
-      "it": "Ogni mattina alle otto e dieci sali in piazza Maggiore.",
-      "en": "Every morning at ten past eight you get on at Piazza Maggiore."
-     },
-     {
-      "it": "Hai un cappotto giallo e leggi sempre un libro di Calvino.",
-      "en": "You wear a yellow coat and you're always reading a book by Calvino."
-     },
-     {
-      "it": "Io sono il ragazzo con la sciarpa blu, in fondo all'autobus.",
-      "en": "I'm the guy with the blue scarf, at the back of the bus."
-     },
-     {
-      "it": "Non ho il coraggio di parlare. E scendo sempre troppo presto.",
-      "en": "I don't have the courage to talk. And I always get off too early."
-     }
-    ]
-   },
-   {
-    "who": "Post-it verde",
-    "s": [
-     {
-      "it": "Che libro legge? Io scommetto: Le città invisibili.",
-      "en": "Which book is she reading? My bet: Invisible Cities."
-     }
-    ]
-   },
-   {
-    "who": "Post-it rosa",
-    "s": [
-     {
-      "it": "Ragazzo con la sciarpa blu, coraggio! Parla con lei domani!",
-      "en": "Guy with the blue scarf, be brave! Talk to her tomorrow!"
-     }
-    ]
-   },
-   {
-    "who": "Post-it giallo",
-    "s": [
-     {
-      "it": "Io prendo il 13 tutti i giorni. Lei esiste, è vera. Il libro è Il barone rampante.",
-      "en": "I take the 13 every day. She exists, she's real. The book is The Baron in the Trees."
-     }
-    ]
-   },
-   {
-    "who": "Post-it azzurro",
-    "s": [
-     {
-      "it": "Anche io prendo il 13, alle otto e venti. Nessuno scrive annunci per me.",
-      "en": "I take the 13 too, at twenty past eight. Nobody writes ads about me."
-     }
-    ]
-   },
-   {
-    "who": "Post-it arancione",
-    "s": [
-     {
-      "it": "Il ragazzo con la sciarpa blu è mio fratello.",
-      "en": "The guy with the blue scarf is my brother."
-     },
-     {
-      "it": "È molto timido, ma è simpatico. Però cucina male.",
-      "en": "He's very shy, but he's nice. He's a terrible cook, though."
-     }
-    ]
-   },
-   {
-    "who": "Post-it di Marta",
-    "s": [
-     {
-      "it": "Se scendi troppo presto, ti serve una bici. Sessanta euro. Il campanello non suona, ma tu non parli, quindi va bene.",
-      "en": "If you get off too early, you need a bike. Sixty euros. The bell doesn't ring, but you don't talk, so that's fine."
-     }
-    ]
-   },
-   {
-    "who": "Post-it di Giacomo",
-    "s": [
-     {
-      "it": "La stanza in via del Pratello è ancora libera. È vicina alla fermata del 13.",
-      "en": "The room on Via del Pratello is still free. It's near the number 13 stop."
-     }
-    ]
-   },
-   {
-    "who": "Post-it di Samir",
-    "s": [
-     {
-      "it": "Gino è tornato! Era sotto il letto del mio coinquilino. Grazie a tutti.",
-      "en": "Gino is back! He was under my flatmate's bed. Thanks, everyone."
-     },
-     {
-      "it": "Ma la cena è ancora libera. Siete invitati tutti e due, ragazzo e ragazza del 13.",
-      "en": "But the dinner is still up for grabs. You're both invited, guy and girl from the 13."
-     }
-    ]
-   },
-   {
-    "who": "Post-it, scrittura piccola",
-    "s": [
-     {
-      "it": "Ciao, ragazzo con la sciarpa blu.",
-      "en": "Hi, guy with the blue scarf."
-     },
-     {
-      "it": "Il barone rampante è finito. Adesso comincio un libro molto, molto lungo.",
-      "en": "I've finished The Baron in the Trees. Now I'm starting a very, very long book."
-     },
-     {
-      "it": "Mercoledì, ore otto e dieci. C'è un posto libero vicino a me.",
-      "en": "Wednesday, ten past eight. There's a free seat next to me."
-     },
-     {
-      "it": "Non scendere troppo presto.",
-      "en": "Don't get off too early."
-     },
-     {
-      "it": "La ragazza con il cappotto giallo.",
-      "en": "The girl in the yellow coat."
-     }
-    ]
-   }
-  ],
-  "glossary": [
-   {
-    "it": "la bacheca",
-    "en": "the noticeboard"
-   },
-   {
-    "it": "affitto",
-    "en": "I rent out, for rent"
-   },
-   {
-    "it": "spese incluse",
-    "en": "bills included"
-   },
-   {
-    "it": "il coinquilino",
-    "en": "the flatmate"
-   },
-   {
-    "it": "il cestino",
-    "en": "the (bike) basket"
-   },
-   {
-    "it": "i freni",
-    "en": "the brakes"
-   },
-   {
-    "it": "il campanello",
-    "en": "the bell"
-   },
-   {
-    "it": "non morde",
-    "en": "he doesn't bite"
-   },
-   {
-    "it": "la ricompensa",
-    "en": "the reward"
-   },
-   {
-    "it": "sali",
-    "en": "you get on"
-   },
-   {
-    "it": "in fondo all'autobus",
-    "en": "at the back of the bus"
-   },
-   {
-    "it": "il coraggio",
-    "en": "courage"
-   },
-   {
-    "it": "scendo",
-    "en": "I get off"
-   },
-   {
-    "it": "scommetto",
-    "en": "I bet"
-   },
-   {
-    "it": "un posto libero",
-    "en": "a free seat"
-   }
-  ],
-  "questions": [
-   {
-    "q": "Che problema ha la bicicletta di Marta?",
-    "o": [
-     "Il campanello non funziona",
-     "I freni non funzionano bene",
-     "Non ha il cestino"
+    "glossary": [
+      {
+        "it": "alta e stretta",
+        "en": "tall and narrow"
+      },
+      {
+        "it": "le pantofole",
+        "en": "the slippers"
+      },
+      {
+        "it": "gli ospiti",
+        "en": "the guests"
+      },
+      {
+        "it": "il caffelatte",
+        "en": "a large milky coffee"
+      },
+      {
+        "it": "la bora",
+        "en": "the bora, a strong cold wind in Trieste"
+      },
+      {
+        "it": "i soldi",
+        "en": "money"
+      },
+      {
+        "it": "le corde",
+        "en": "the ropes"
+      },
+      {
+        "it": "il muro",
+        "en": "the wall"
+      },
+      {
+        "it": "perché sì",
+        "en": "just because"
+      },
+      {
+        "it": "l'osmiza",
+        "en": "a farm that briefly opens to sell its own wine and food"
+      },
+      {
+        "it": "il ramo",
+        "en": "the branch"
+      },
+      {
+        "it": "scherza",
+        "en": "he's joking"
+      },
+      {
+        "it": "il triestino",
+        "en": "the Trieste dialect"
+      }
     ],
-    "a": "Il campanello non funziona"
-   },
-   {
-    "q": "Che cosa offre Samir a chi trova Gino?",
-    "o": [
-     "Una cena",
-     "Sessanta euro",
-     "Una bicicletta"
+    "questions": [
+      {
+        "q": "Perché Hannah scrive il diario in italiano?",
+        "o": [
+          "Vuole imparare la lingua",
+          "La famiglia non parla inglese",
+          "È un compito per la scuola"
+        ],
+        "a": "Vuole imparare la lingua"
+      },
+      {
+        "q": "Che cosa deve ordinare Hannah per avere un cappuccino come in Inghilterra?",
+        "o": [
+          "Un caffelatte",
+          "Un cappuccino grande",
+          "Un caffè piccolo"
+        ],
+        "a": "Un caffelatte"
+      },
+      {
+        "q": "Che cosa risponde Paolo quando Hannah chiede delle regole della bora?",
+        "o": [
+          "Niente: ride",
+          "Che la bora porta via i soldi",
+          "Che è una regola del nonno"
+        ],
+        "a": "Niente: ride"
+      },
+      {
+        "q": "Come trovi un'osmiza, secondo la famiglia?",
+        "o": [
+          "Cerchi un ramo verde",
+          "Cerchi l'indirizzo su internet",
+          "Chiedi al nonno al Pedocin"
+        ],
+        "a": "Cerchi un ramo verde"
+      },
+      {
+        "q": "Perché Nika dice che anche Hannah ha una regola strana?",
+        "o": [
+          "Hannah parla inglese con il gatto",
+          "Hannah non mette le pantofole",
+          "Hannah non beve il vino"
+        ],
+        "a": "Hannah parla inglese con il gatto"
+      }
     ],
-    "a": "Una cena"
-   },
-   {
-    "q": "Perché il ragazzo dell'autobus scrive un annuncio?",
-    "o": [
-     "Non ha il coraggio di parlarle",
-     "Ha perso il suo libro",
-     "Cerca una stanza vicino alla fermata"
+    "narrator": "m"
+  },
+  {
+    "id": "r-a1-05",
+    "level": "A1",
+    "title": "Festa della Cipolla",
+    "en": "The Onion Festival",
+    "topic": "leisure",
+    "genre": "event programme + chat",
+    "minutes": 5,
+    "blurb": "Two friends, one village festival in Umbria and a very long programme: what do you do first?",
+    "body": [
+      {
+        "who": "Programma",
+        "s": [
+          {
+            "it": "FESTA DELLA CIPOLLA – Cannara (Perugia) – Sabato 6 settembre",
+            "en": "ONION FESTIVAL – Cannara (Perugia) – Saturday 6 September"
+          },
+          {
+            "it": "Ore 18:00 – Apertura delle taverne. Zuppa di cipolle, cipolle ripiene, pizza con le cipolle.",
+            "en": "6 pm – The taverns open. Onion soup, stuffed onions, onion pizza."
+          },
+          {
+            "it": "Ore 19:00 – Gara: chi mangia più cipolle crude in tre minuti? Iscrizione in piazza.",
+            "en": "7 pm – Contest: who can eat the most raw onions in three minutes? Sign up in the square."
+          },
+          {
+            "it": "Ore 20:30 – Concerto della banda di Cannara.",
+            "en": "8.30 pm – Concert by the Cannara town band."
+          },
+          {
+            "it": "Ore 22:00 – Grande tombola. Primo premio: una sorpresa.",
+            "en": "10 pm – Big tombola. First prize: a surprise."
+          },
+          {
+            "it": "Ore 23:00 – Ballo liscio in piazza fino a mezzanotte.",
+            "en": "11 pm – Ballroom dancing in the square until midnight."
+          }
+        ]
+      },
+      {
+        "who": "Irene",
+        "s": [
+          {
+            "it": "Davide, hai visto il programma? Alle sei andiamo subito alla taverna.",
+            "en": "Davide, have you seen the programme? At six we go straight to the tavern."
+          },
+          {
+            "it": "Alle sette c'è una fila lunghissima, lo so.",
+            "en": "By seven there's a really long queue, I know it."
+          }
+        ]
+      },
+      {
+        "who": "Davide",
+        "s": [
+          {
+            "it": "No, no. Alle sette c'è la gara. Io voglio fare la gara.",
+            "en": "No, no. At seven there's the contest. I want to do the contest."
+          }
+        ]
+      },
+      {
+        "who": "Irene",
+        "s": [
+          {
+            "it": "Tu? Tu non mangi neanche la cipolla nell'insalata.",
+            "en": "You? You don't even eat onion in salad."
+          }
+        ]
+      },
+      {
+        "who": "Davide",
+        "s": [
+          {
+            "it": "È vero. Ma ho un piano. Mangio molto pane prima.",
+            "en": "True. But I have a plan. I eat lots of bread first."
+          }
+        ]
+      },
+      {
+        "who": "Irene",
+        "s": [
+          {
+            "it": "Allora prima mangi alla taverna con me, poi fai la gara. Così hai lo stomaco pieno.",
+            "en": "Then first you eat at the tavern with me, then you do the contest. That way your stomach is full."
+          }
+        ]
+      },
+      {
+        "who": "Davide",
+        "s": [
+          {
+            "it": "Con lo stomaco pieno di zuppa di cipolle? E poi altre cipolle? No, grazie.",
+            "en": "With a stomach full of onion soup? And then more onions? No, thanks."
+          }
+        ]
+      },
+      {
+        "who": "Irene",
+        "s": [
+          {
+            "it": "Ok. Facciamo così: tu vai alla gara, io faccio la fila alla taverna. Poi ci vediamo.",
+            "en": "Ok. Let's do this: you go to the contest, I queue at the tavern. Then we meet up."
+          }
+        ]
+      },
+      {
+        "who": "Davide",
+        "s": [
+          {
+            "it": "E il concerto della banda? Mio zio suona la tromba.",
+            "en": "And the band concert? My uncle plays the trumpet."
+          }
+        ]
+      },
+      {
+        "who": "Irene",
+        "s": [
+          {
+            "it": "Tuo zio suona la tromba da quarant'anni, e sempre la stessa canzone.",
+            "en": "Your uncle has been playing the trumpet for forty years, and always the same song."
+          }
+        ]
+      },
+      {
+        "who": "Davide",
+        "s": [
+          {
+            "it": "Sì, ma lui guarda sempre chi c'è. Se non ci sono, lo dice a mia madre.",
+            "en": "Yes, but he always looks to see who's there. If I'm not there, he tells my mother."
+          }
+        ]
+      },
+      {
+        "who": "Irene",
+        "s": [
+          {
+            "it": "Va bene. Taverna, gara, banda. E la tombola?",
+            "en": "Fine. Tavern, contest, band. And the tombola?"
+          }
+        ]
+      },
+      {
+        "who": "Davide",
+        "s": [
+          {
+            "it": "La tombola no, è per i nonni. E il premio è una sorpresa. Sicuramente è un salame.",
+            "en": "Not the tombola, it's for grandparents. And the prize is a surprise. It's definitely a salami."
+          }
+        ]
+      },
+      {
+        "who": "Irene",
+        "s": [
+          {
+            "it": "Ho già comprato due cartelle. Una per te.",
+            "en": "I've already bought two cards. One for you."
+          }
+        ]
+      },
+      {
+        "who": "Domenica mattina",
+        "s": [
+          {
+            "it": "Domenica, ore 9:15.",
+            "en": "Sunday, 9.15 am."
+          }
+        ]
+      },
+      {
+        "who": "Davide",
+        "s": [
+          {
+            "it": "Irene, sei sveglia?",
+            "en": "Irene, are you awake?"
+          }
+        ]
+      },
+      {
+        "who": "Irene",
+        "s": [
+          {
+            "it": "Più o meno. Come va lo stomaco?",
+            "en": "More or less. How's your stomach?"
+          }
+        ]
+      },
+      {
+        "who": "Davide",
+        "s": [
+          {
+            "it": "Male. Undici cipolle crude. Sono arrivato terzo.",
+            "en": "Bad. Eleven raw onions. I came third."
+          },
+          {
+            "it": "Ma ho un problema più grande.",
+            "en": "But I have a bigger problem."
+          }
+        ]
+      },
+      {
+        "who": "Irene",
+        "s": [
+          {
+            "it": "Quale?",
+            "en": "Which one?"
+          }
+        ]
+      },
+      {
+        "who": "Davide",
+        "s": [
+          {
+            "it": "Il primo premio della tombola. Ho vinto io, con la tua cartella.",
+            "en": "The first prize at the tombola. I won it, with your card."
+          },
+          {
+            "it": "Non è un salame. È un sacco di cipolle di Cannara. Venti chili.",
+            "en": "It's not a salami. It's a sack of Cannara onions. Twenty kilos."
+          },
+          {
+            "it": "È qui, in cucina, e mi guarda.",
+            "en": "It's here, in the kitchen, staring at me."
+          }
+        ]
+      },
+      {
+        "who": "Irene",
+        "s": [
+          {
+            "it": "La cartella è mia, quindi il premio è mio. Arrivo con la macchina.",
+            "en": "The card is mine, so the prize is mine. I'm coming with the car."
+          },
+          {
+            "it": "Stasera faccio la zuppa. Sei invitato.",
+            "en": "Tonight I'm making soup. You're invited."
+          }
+        ]
+      }
     ],
-    "a": "Non ha il coraggio di parlarle"
-   },
-   {
-    "q": "Perché Giacomo parla della fermata del 13?",
-    "o": [
-     "Vuole affittare la stanza al ragazzo",
-     "Cerca anche lui la ragazza",
-     "Vende un biglietto dell'autobus"
+    "glossary": [
+      {
+        "it": "la cipolla",
+        "en": "the onion"
+      },
+      {
+        "it": "la taverna",
+        "en": "the tavern (a food stall at a village festival)"
+      },
+      {
+        "it": "ripiene",
+        "en": "stuffed"
+      },
+      {
+        "it": "crude",
+        "en": "raw"
+      },
+      {
+        "it": "l'iscrizione",
+        "en": "sign-up, registration"
+      },
+      {
+        "it": "la banda",
+        "en": "the (brass) town band"
+      },
+      {
+        "it": "la tombola",
+        "en": "a bingo-like game"
+      },
+      {
+        "it": "il ballo liscio",
+        "en": "traditional ballroom dancing"
+      },
+      {
+        "it": "la fila",
+        "en": "the queue"
+      },
+      {
+        "it": "lo stomaco pieno",
+        "en": "a full stomach"
+      },
+      {
+        "it": "la cartella",
+        "en": "the tombola card"
+      },
+      {
+        "it": "sono arrivato terzo",
+        "en": "I came third"
+      },
+      {
+        "it": "un sacco",
+        "en": "a sack"
+      }
     ],
-    "a": "Vuole affittare la stanza al ragazzo"
-   },
-   {
-    "q": "Che cosa significa l'ultimo post-it?",
-    "o": [
-     "La ragazza vuole conoscere il ragazzo",
-     "La ragazza non prende più il 13",
-     "La ragazza vuole comprare la bici di Marta"
+    "questions": [
+      {
+        "q": "Perché Irene vuole andare alla taverna alle sei?",
+        "o": [
+          "Perché dopo c'è troppa gente",
+          "Perché la taverna chiude alle sette",
+          "Perché ha molta fame dopo la gara"
+        ],
+        "a": "Perché dopo c'è troppa gente"
+      },
+      {
+        "q": "Perché Irene è sorpresa quando Davide parla della gara?",
+        "o": [
+          "Davide non mangia mai la cipolla",
+          "Davide è a dieta",
+          "La gara è solo per i bambini del paese"
+        ],
+        "a": "Davide non mangia mai la cipolla"
+      },
+      {
+        "q": "Perché Davide vuole andare al concerto?",
+        "o": [
+          "Lo zio controlla chi c'è",
+          "Ama la musica della banda",
+          "Vuole ballare"
+        ],
+        "a": "Lo zio controlla chi c'è"
+      },
+      {
+        "q": "Com'è andata la gara per Davide?",
+        "o": [
+          "Non ha vinto, e adesso sta male",
+          "Ha vinto il primo premio con undici cipolle",
+          "Non ha partecipato"
+        ],
+        "a": "Non ha vinto, e adesso sta male"
+      },
+      {
+        "q": "Perché Irene dice che il premio è suo?",
+        "o": [
+          "Lei ha comprato la cartella",
+          "Lei ha vinto la gara delle cipolle",
+          "Lei ama il salame"
+        ],
+        "a": "Lei ha comprato la cartella"
+      }
     ],
-    "a": "La ragazza vuole conoscere il ragazzo"
-   }
-  ]
- },
- {
-  "id": "r-a1-04",
-  "level": "A1",
-  "title": "Le regole di casa Kosovel",
-  "en": "The Rules of the Kosovel House",
-  "topic": "people",
-  "genre": "diary",
-  "minutes": 5,
-  "blurb": "An English au pair spends her first week in Trieste with a family whose house rules make no sense to her. Yet.",
-  "body": [
-   {
-    "s": [
-     {
-      "it": "Lunedì.",
-      "en": "Monday."
-     },
-     {
-      "it": "Sono a Trieste! La famiglia Kosovel abita in una casa alta e stretta, vicino al mare.",
-      "en": "I'm in Trieste! The Kosovel family lives in a tall, narrow house near the sea."
-     },
-     {
-      "it": "Ci sono Paolo, Vesna, due bambini, Ivan e Nika, e un nonno.",
-      "en": "There's Paolo, Vesna, two children, Ivan and Nika, and a grandfather."
-     },
-     {
-      "it": "Scrivo il diario in italiano perché voglio imparare. Il mio italiano è ancora piccolo.",
-      "en": "I'm writing this diary in Italian because I want to learn. My Italian is still small."
-     }
-    ]
-   },
-   {
-    "s": [
-     {
-      "it": "Martedì.",
-      "en": "Tuesday."
-     },
-     {
-      "it": "Prima regola strana: in casa niente scarpe.",
-      "en": "First strange rule: no shoes in the house."
-     },
-     {
-      "it": "Vicino alla porta ci sono dieci paia di pantofole. Io ho le pantofole degli ospiti, con un gatto sopra.",
-      "en": "By the door there are ten pairs of slippers. I have the guest slippers, with a cat on them."
-     },
-     {
-      "it": "Seconda regola: al bar non dico mai cappuccino.",
-      "en": "Second rule: at the café I never say cappuccino."
-     },
-     {
-      "it": "A Trieste il cappuccino è un caffè piccolo con un po' di latte. Io voglio un cappuccino inglese, grande. Qui si chiama caffelatte.",
-      "en": "In Trieste a cappuccino is a small coffee with a little milk. I want an English cappuccino, a big one. Here it's called a caffelatte."
-     },
-     {
-      "it": "Che confusione.",
-      "en": "How confusing."
-     }
-    ]
-   },
-   {
-    "s": [
-     {
-      "it": "Mercoledì.",
-      "en": "Wednesday."
-     },
-     {
-      "it": "Oggi c'è la bora. La bora è un vento fortissimo.",
-      "en": "Today the bora is blowing. The bora is a very strong wind."
-     },
-     {
-      "it": "Paolo dice: quando c'è la bora, non apriamo le finestre e non parliamo di soldi.",
-      "en": "Paolo says: when the bora blows, we don't open the windows and we don't talk about money."
-     },
-     {
-      "it": "Non capisco perché i soldi. Lui ride e non spiega.",
-      "en": "I don't understand why money. He laughs and doesn't explain."
-     },
-     {
-      "it": "Per strada ci sono corde per le persone, come in montagna.",
-      "en": "In the street there are ropes for people to hold, like in the mountains."
-     }
-    ]
-   },
-   {
-    "s": [
-     {
-      "it": "Giovedì.",
-      "en": "Thursday."
-     },
-     {
-      "it": "Il nonno va al mare ogni giorno, anche a novembre.",
-      "en": "Grandad goes to the sea every day, even in November."
-     },
-     {
-      "it": "Va al Pedocin, una spiaggia con un muro in mezzo: gli uomini da una parte, le donne dall'altra.",
-      "en": "He goes to the Pedocin, a beach with a wall in the middle: men on one side, women on the other."
-     },
-     {
-      "it": "Io chiedo: perché? Il nonno dice: perché sì. Poi va a nuotare.",
-      "en": "I ask: why? Grandad says: just because. Then he goes swimming."
-     }
-    ]
-   },
-   {
-    "s": [
-     {
-      "it": "Venerdì.",
-      "en": "Friday."
-     },
-     {
-      "it": "Regola numero cinque: la domenica tutti vanno all'osmiza.",
-      "en": "Rule number five: on Sundays everyone goes to the osmiza."
-     },
-     {
-      "it": "Che cos'è un'osmiza? Ivan dice che è una casa in campagna dove mangi prosciutto e bevi vino.",
-      "en": "What's an osmiza? Ivan says it's a farmhouse in the countryside where you eat ham and drink wine."
-     },
-     {
-      "it": "Nessuno sa l'indirizzo. Cerchi un ramo verde sulla strada.",
-      "en": "Nobody knows the address. You look for a green branch by the road."
-     },
-     {
-      "it": "Secondo me, Ivan scherza. Vesna dice di no.",
-      "en": "I reckon Ivan is joking. Vesna says he isn't."
-     }
-    ]
-   },
-   {
-    "s": [
-     {
-      "it": "Domenica.",
-      "en": "Sunday."
-     },
-     {
-      "it": "Ivan non scherza. C'è un ramo, c'è il prosciutto, c'è il vino, e c'è il sole.",
-      "en": "Ivan wasn't joking. There's a branch, there's ham, there's wine, and there's sunshine."
-     },
-     {
-      "it": "Mangiamo su un tavolo di legno sopra il mare. È bellissimo.",
-      "en": "We eat at a wooden table above the sea. It's beautiful."
-     },
-     {
-      "it": "In macchina, Nika mi guarda e dice: «Hannah, anche tu hai una regola strana.»",
-      "en": "In the car, Nika looks at me and says: \"Hannah, you have a strange rule too.\""
-     },
-     {
-      "it": "«Io? Quale?»",
-      "en": "\"Me? Which one?\""
-     },
-     {
-      "it": "«Scrivi il diario in italiano, ma con il gatto parli in inglese.»",
-      "en": "\"You write your diary in Italian, but you speak English to the cat.\""
-     },
-     {
-      "it": "È vero. Il gatto si chiama Bepi e capisce solo il triestino.",
-      "en": "It's true. The cat is called Bepi and he only understands the Trieste dialect."
-     },
-     {
-      "it": "Domani comincio a studiare il triestino.",
-      "en": "Tomorrow I start learning the Trieste dialect."
-     }
-    ]
-   }
-  ],
-  "glossary": [
-   {
-    "it": "alta e stretta",
-    "en": "tall and narrow"
-   },
-   {
-    "it": "le pantofole",
-    "en": "the slippers"
-   },
-   {
-    "it": "gli ospiti",
-    "en": "the guests"
-   },
-   {
-    "it": "il caffelatte",
-    "en": "a large milky coffee"
-   },
-   {
-    "it": "la bora",
-    "en": "the bora, a strong cold wind in Trieste"
-   },
-   {
-    "it": "i soldi",
-    "en": "money"
-   },
-   {
-    "it": "le corde",
-    "en": "the ropes"
-   },
-   {
-    "it": "il muro",
-    "en": "the wall"
-   },
-   {
-    "it": "perché sì",
-    "en": "just because"
-   },
-   {
-    "it": "l'osmiza",
-    "en": "a farm that briefly opens to sell its own wine and food"
-   },
-   {
-    "it": "il ramo",
-    "en": "the branch"
-   },
-   {
-    "it": "scherza",
-    "en": "he's joking"
-   },
-   {
-    "it": "il triestino",
-    "en": "the Trieste dialect"
-   }
-  ],
-  "questions": [
-   {
-    "q": "Perché Hannah scrive il diario in italiano?",
-    "o": [
-     "Vuole imparare la lingua",
-     "La famiglia non parla inglese",
-     "È un compito per la scuola"
+    "narrator": "f",
+    "speakers": {
+      "Programma": "f",
+      "Irene": "f2",
+      "Davide": "m",
+      "Domenica mattina": "f3"
+    }
+  },
+  {
+    "id": "r-a1-06",
+    "level": "A1",
+    "title": "Le quattro del mattino",
+    "en": "Four in the Morning",
+    "topic": "work",
+    "genre": "short story",
+    "minutes": 5,
+    "blurb": "Ilaria's first shift at a bakery in Naples starts at 4 am, and her new boss doesn't say much.",
+    "body": [
+      {
+        "s": [
+          {
+            "it": "Sono le quattro meno cinque. Il quartiere Sanità dorme.",
+            "en": "It's five to four. The Sanità neighbourhood is asleep."
+          },
+          {
+            "it": "Ilaria ha diciannove anni e oggi è il suo primo giorno di lavoro al Panificio Esposito.",
+            "en": "Ilaria is nineteen and today is her first day of work at the Esposito Bakery."
+          },
+          {
+            "it": "La strada è buia, ma la porta del forno è aperta e c'è una luce gialla.",
+            "en": "The street is dark, but the bakery door is open and there's a yellow light."
+          },
+          {
+            "it": "C'è anche un profumo di pane caldo.",
+            "en": "There's also a smell of warm bread."
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "it": "Dentro c'è don Peppe. È basso, ha le braccia bianche di farina e non sorride.",
+            "en": "Inside is Don Peppe. He's short, his arms are white with flour and he doesn't smile."
+          },
+          {
+            "it": "«Buongiorno», dice Ilaria.",
+            "en": "\"Good morning,\" says Ilaria."
+          },
+          {
+            "it": "«Sei in ritardo», dice don Peppe.",
+            "en": "\"You're late,\" says Don Peppe."
+          },
+          {
+            "it": "«Ma sono le quattro meno cinque!»",
+            "en": "\"But it's five to four!\""
+          },
+          {
+            "it": "«Appunto. Io sono qui dalle tre.»",
+            "en": "\"Exactly. I've been here since three.\""
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "it": "Il primo lavoro è facile: Ilaria mette i cornetti sulle teglie.",
+            "en": "The first job is easy: Ilaria puts the croissants on the baking trays."
+          },
+          {
+            "it": "Don Peppe guarda e dice solo: «Più spazio.»",
+            "en": "Don Peppe watches and only says: \"More space.\""
+          },
+          {
+            "it": "Poi lei taglia il pane. Don Peppe guarda e dice: «Più piano.»",
+            "en": "Then she slices the bread. Don Peppe watches and says: \"Slower.\""
+          },
+          {
+            "it": "Poi lei fa il caffè per tutti. Don Peppe lo beve e non dice niente.",
+            "en": "Then she makes coffee for everyone. Don Peppe drinks it and says nothing."
+          },
+          {
+            "it": "Ilaria pensa: forse il caffè è terribile.",
+            "en": "Ilaria thinks: maybe the coffee is awful."
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "it": "Alle cinque e mezza arrivano i primi clienti.",
+            "en": "At half past five the first customers arrive."
+          },
+          {
+            "it": "Un'infermiera dopo la notte in ospedale compra due graffe.",
+            "en": "A nurse after her night shift at the hospital buys two graffe."
+          },
+          {
+            "it": "Un tassista compra un filone di pane e racconta una storia lunga sul Napoli.",
+            "en": "A taxi driver buys a loaf of bread and tells a long story about Napoli, the football team."
+          },
+          {
+            "it": "Un prete compra sei cornetti. «Sono per i chierichetti», dice. Nessuno ci crede.",
+            "en": "A priest buys six croissants. \"They're for the altar boys,\" he says. Nobody believes him."
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "it": "Alle sei don Peppe dice: «Adesso le graffe le fai tu.»",
+            "en": "At six Don Peppe says: \"Now you make the graffe.\""
+          },
+          {
+            "it": "Le graffe sono ciambelle fritte, con patate e zucchero.",
+            "en": "Graffe are fried doughnuts, made with potato and sugar."
+          },
+          {
+            "it": "Ilaria ha paura. Le sue graffe sono un po' storte. Una sembra un cuore, un'altra sembra la Sardegna.",
+            "en": "Ilaria is scared. Her graffe are a bit crooked. One looks like a heart, another looks like Sardinia."
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "it": "Don Peppe prende una graffa e la mangia piano.",
+            "en": "Don Peppe takes a graffa and eats it slowly."
+          },
+          {
+            "it": "Ilaria aspetta. Il forno fa rumore. Fuori passa un motorino.",
+            "en": "Ilaria waits. The oven hums. Outside a scooter goes by."
+          },
+          {
+            "it": "Lui non dice niente. Va alla lavagna vicino alla cassa, prende il gesso e cancella una riga.",
+            "en": "He says nothing. He goes to the blackboard by the till, picks up the chalk and rubs out a line."
+          },
+          {
+            "it": "Prima c'è scritto: «Graffe – 1 euro».",
+            "en": "Before, it said: \"Graffe – 1 euro\"."
+          },
+          {
+            "it": "Adesso c'è scritto: «Graffe di Ilaria – 1 euro e 20».",
+            "en": "Now it says: \"Ilaria's graffe – 1 euro 20\"."
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "it": "«Perché venti centesimi in più?» chiede lei.",
+            "en": "\"Why twenty cents more?\" she asks."
+          },
+          {
+            "it": "«Perché sono storte. Le cose storte a Napoli costano di più.»",
+            "en": "\"Because they're crooked. Crooked things cost more in Naples.\""
+          },
+          {
+            "it": "Poi, per la prima volta, don Peppe sorride. Solo un po'.",
+            "en": "Then, for the first time, Don Peppe smiles. Just a little."
+          },
+          {
+            "it": "«Domani alle quattro. Non alle quattro meno cinque. Alle quattro meno un quarto.»",
+            "en": "\"Tomorrow at four. Not five to four. Quarter to four.\""
+          }
+        ]
+      }
     ],
-    "a": "Vuole imparare la lingua"
-   },
-   {
-    "q": "Che cosa deve ordinare Hannah per avere un cappuccino come in Inghilterra?",
-    "o": [
-     "Un caffelatte",
-     "Un cappuccino grande",
-     "Un caffè piccolo"
+    "glossary": [
+      {
+        "it": "il forno",
+        "en": "the bakery; the oven"
+      },
+      {
+        "it": "buia",
+        "en": "dark"
+      },
+      {
+        "it": "la farina",
+        "en": "flour"
+      },
+      {
+        "it": "sei in ritardo",
+        "en": "you're late"
+      },
+      {
+        "it": "appunto",
+        "en": "exactly, precisely"
+      },
+      {
+        "it": "le teglie",
+        "en": "the baking trays"
+      },
+      {
+        "it": "più piano",
+        "en": "slower, more gently"
+      },
+      {
+        "it": "la graffa",
+        "en": "a Neapolitan fried sugared doughnut"
+      },
+      {
+        "it": "il filone di pane",
+        "en": "a long loaf of bread"
+      },
+      {
+        "it": "i chierichetti",
+        "en": "the altar boys"
+      },
+      {
+        "it": "nessuno ci crede",
+        "en": "nobody believes it"
+      },
+      {
+        "it": "storte",
+        "en": "crooked, wonky"
+      },
+      {
+        "it": "la lavagna",
+        "en": "the blackboard"
+      },
+      {
+        "it": "cancella una riga",
+        "en": "rubs out a line"
+      }
     ],
-    "a": "Un caffelatte"
-   },
-   {
-    "q": "Che cosa risponde Paolo quando Hannah chiede delle regole della bora?",
-    "o": [
-     "Niente: ride",
-     "Che la bora porta via i soldi",
-     "Che è una regola del nonno"
+    "questions": [
+      {
+        "q": "Perché don Peppe dice che Ilaria è in ritardo?",
+        "o": [
+          "Perché lui è al lavoro da un'ora",
+          "Perché lei arriva alle cinque e mezza",
+          "Perché i clienti aspettano"
+        ],
+        "a": "Perché lui è al lavoro da un'ora"
+      },
+      {
+        "q": "Come parla don Peppe durante il turno?",
+        "o": [
+          "Dice pochissime parole",
+          "Racconta storie sul Napoli",
+          "Spiega tutto con pazienza"
+        ],
+        "a": "Dice pochissime parole"
+      },
+      {
+        "q": "Perché nessuno crede al prete?",
+        "o": [
+          "Sei cornetti sono probabilmente per lui",
+          "Il prete non conosce i chierichetti",
+          "Il prete non paga mai"
+        ],
+        "a": "Sei cornetti sono probabilmente per lui"
+      },
+      {
+        "q": "Perché Ilaria ha paura quando fa le graffe?",
+        "o": [
+          "Le graffe non sono perfette",
+          "L'olio è troppo caldo e lei si brucia",
+          "Non sa la ricetta"
+        ],
+        "a": "Le graffe non sono perfette"
+      },
+      {
+        "q": "Che cosa significa il cambiamento sulla lavagna?",
+        "o": [
+          "A don Peppe piacciono le graffe di Ilaria",
+          "Le graffe di Ilaria sono troppo piccole",
+          "Ilaria deve pagare le graffe storte"
+        ],
+        "a": "A don Peppe piacciono le graffe di Ilaria"
+      }
     ],
-    "a": "Niente: ride"
-   },
-   {
-    "q": "Come trovi un'osmiza, secondo la famiglia?",
-    "o": [
-     "Cerchi un ramo verde",
-     "Cerchi l'indirizzo su internet",
-     "Chiedi al nonno al Pedocin"
+    "narrator": "m"
+  },
+  {
+    "id": "r-a1-07",
+    "level": "A1",
+    "title": "Vorrei la Serenità",
+    "en": "I'd Like Some Serenity",
+    "topic": "feelings",
+    "genre": "emails",
+    "minutes": 5,
+    "blurb": "A man in Ivrea emails his local pharmacy to order some Serenity, and the pharmacist takes him very seriously.",
+    "body": [
+      {
+        "who": "Da: Franco Bertolino – A: Farmacia San Savino",
+        "s": [
+          {
+            "it": "Oggetto: Ordine",
+            "en": "Subject: Order"
+          },
+          {
+            "it": "Buongiorno,",
+            "en": "Good morning,"
+          },
+          {
+            "it": "vorrei ordinare la Serenità. Due confezioni, per favore.",
+            "en": "I'd like to order Serenity. Two boxes, please."
+          },
+          {
+            "it": "La compro sempre da voi.",
+            "en": "I always buy it from you."
+          },
+          {
+            "it": "In casa non c'è più. Mia moglie è molto nervosa.",
+            "en": "We've run out at home. My wife is very on edge."
+          },
+          {
+            "it": "Passo venerdì. Grazie,",
+            "en": "I'll come by on Friday. Thank you,"
+          },
+          {
+            "it": "Franco Bertolino",
+            "en": "Franco Bertolino"
+          }
+        ]
+      },
+      {
+        "who": "Da: Farmacia San Savino – A: Franco Bertolino",
+        "s": [
+          {
+            "it": "Gentile signor Bertolino,",
+            "en": "Dear Mr Bertolino,"
+          },
+          {
+            "it": "grazie per la sua email. Mi dispiace molto per sua moglie.",
+            "en": "thank you for your email. I'm very sorry about your wife."
+          },
+          {
+            "it": "Purtroppo la serenità non si vende in farmacia.",
+            "en": "Unfortunately, serenity isn't sold in pharmacies."
+          },
+          {
+            "it": "Le consiglio una passeggiata lungo la Dora, un buon libro e otto ore di sonno.",
+            "en": "I recommend a walk along the Dora river, a good book and eight hours' sleep."
+          },
+          {
+            "it": "Se sua moglie è sempre nervosa, è meglio parlare con il medico.",
+            "en": "If your wife is always on edge, it's better to talk to the doctor."
+          },
+          {
+            "it": "Cordiali saluti,",
+            "en": "Kind regards,"
+          },
+          {
+            "it": "Dottoressa Silvia Gallo",
+            "en": "Dr Silvia Gallo"
+          }
+        ]
+      },
+      {
+        "who": "Da: Franco Bertolino – A: Farmacia San Savino",
+        "s": [
+          {
+            "it": "Gentile dottoressa,",
+            "en": "Dear Doctor,"
+          },
+          {
+            "it": "grazie, ma io non parlo di sentimenti. Parlo di una tisana.",
+            "en": "thank you, but I'm not talking about feelings. I'm talking about a herbal tea."
+          },
+          {
+            "it": "Si chiama Serenità. È nella scatola verde, sullo scaffale vicino alla cassa.",
+            "en": "It's called Serenity. It's in the green box, on the shelf near the till."
+          },
+          {
+            "it": "Mia moglie la beve ogni sera alle dieci. Senza Serenità non dorme, e io neanche.",
+            "en": "My wife drinks it every night at ten. Without Serenity she doesn't sleep, and neither do I."
+          },
+          {
+            "it": "Comunque la passeggiata lungo la Dora è una buona idea.",
+            "en": "Still, the walk along the Dora is a good idea."
+          },
+          {
+            "it": "Franco Bertolino",
+            "en": "Franco Bertolino"
+          }
+        ]
+      },
+      {
+        "who": "Da: Farmacia San Savino – A: Franco Bertolino",
+        "s": [
+          {
+            "it": "Gentile signor Bertolino,",
+            "en": "Dear Mr Bertolino,"
+          },
+          {
+            "it": "ah, la tisana! Mi scusi. Ho letto la sua email alle otto di mattina, prima del caffè.",
+            "en": "ah, the herbal tea! I'm sorry. I read your email at eight in the morning, before my coffee."
+          },
+          {
+            "it": "Purtroppo la Serenità è finita. Il fornitore la porta giovedì prossimo.",
+            "en": "Unfortunately the Serenity is sold out. The supplier is bringing more next Thursday."
+          },
+          {
+            "it": "Ma della stessa marca abbiamo Calma e Buonumore. Vanno bene?",
+            "en": "But from the same brand we have Calm and Good Mood. Would those do?"
+          },
+          {
+            "it": "Cordiali saluti,",
+            "en": "Kind regards,"
+          },
+          {
+            "it": "Dottoressa Gallo",
+            "en": "Dr Gallo"
+          }
+        ]
+      },
+      {
+        "who": "Da: Franco Bertolino – A: Farmacia San Savino",
+        "s": [
+          {
+            "it": "Gentile dottoressa,",
+            "en": "Dear Doctor,"
+          },
+          {
+            "it": "ho chiesto a mia moglie.",
+            "en": "I asked my wife."
+          },
+          {
+            "it": "Calma no: mia moglie dice che quando qualcuno le dice calma, lei diventa più nervosa.",
+            "en": "Not Calm: my wife says that when someone tells her to calm down, she gets more on edge."
+          },
+          {
+            "it": "Buonumore no: ha un sapore di arancia, e lei odia l'arancia.",
+            "en": "Not Good Mood: it tastes of orange, and she hates orange."
+          },
+          {
+            "it": "Mia moglie vuole solo Serenità.",
+            "en": "My wife only wants Serenity."
+          },
+          {
+            "it": "Ieri sera ha bevuto una camomilla normale.",
+            "en": "Last night she drank an ordinary camomile tea."
+          },
+          {
+            "it": "Alle due di notte ha pulito il forno. Alle tre ha telefonato a sua sorella a Torino.",
+            "en": "At two in the morning she cleaned the oven. At three she phoned her sister in Turin."
+          },
+          {
+            "it": "Senza Serenità, in questa casa non c'è serenità.",
+            "en": "Without Serenity, there's no serenity in this house."
+          },
+          {
+            "it": "Franco",
+            "en": "Franco"
+          }
+        ]
+      },
+      {
+        "who": "Da: Farmacia San Savino – A: Franco Bertolino",
+        "s": [
+          {
+            "it": "Gentile signor Bertolino,",
+            "en": "Dear Mr Bertolino,"
+          },
+          {
+            "it": "ho capito. Ho ordinato tre confezioni di Serenità: due per lei e una per me.",
+            "en": "Understood. I've ordered three boxes of Serenity: two for you and one for me."
+          },
+          {
+            "it": "Arrivano giovedì.",
+            "en": "They arrive on Thursday."
+          },
+          {
+            "it": "Fino a giovedì, però, le consiglio un altro prodotto. Si chiama Pazienza.",
+            "en": "Until Thursday, though, I recommend another product. It's called Patience."
+          },
+          {
+            "it": "Non è una tisana e non è in farmacia. Ma è gratis.",
+            "en": "It's not a herbal tea and it's not sold in pharmacies. But it's free."
+          },
+          {
+            "it": "Cordiali saluti,",
+            "en": "Kind regards,"
+          },
+          {
+            "it": "Silvia Gallo",
+            "en": "Silvia Gallo"
+          }
+        ]
+      }
     ],
-    "a": "Cerchi un ramo verde"
-   },
-   {
-    "q": "Perché Nika dice che anche Hannah ha una regola strana?",
-    "o": [
-     "Hannah parla inglese con il gatto",
-     "Hannah non mette le pantofole",
-     "Hannah non beve il vino"
+    "glossary": [
+      {
+        "it": "l'oggetto",
+        "en": "the subject line"
+      },
+      {
+        "it": "la confezione",
+        "en": "the box, the pack"
+      },
+      {
+        "it": "nervosa",
+        "en": "on edge, irritable"
+      },
+      {
+        "it": "purtroppo",
+        "en": "unfortunately"
+      },
+      {
+        "it": "le consiglio",
+        "en": "I recommend (to you, formal)"
+      },
+      {
+        "it": "il sonno",
+        "en": "sleep"
+      },
+      {
+        "it": "la tisana",
+        "en": "the herbal tea"
+      },
+      {
+        "it": "lo scaffale",
+        "en": "the shelf"
+      },
+      {
+        "it": "la cassa",
+        "en": "the till"
+      },
+      {
+        "it": "e io neanche",
+        "en": "and neither do I"
+      },
+      {
+        "it": "il fornitore",
+        "en": "the supplier"
+      },
+      {
+        "it": "la marca",
+        "en": "the brand"
+      },
+      {
+        "it": "odia",
+        "en": "she hates"
+      },
+      {
+        "it": "la pazienza",
+        "en": "patience"
+      },
+      {
+        "it": "gratis",
+        "en": "free (of charge)"
+      }
     ],
-    "a": "Hannah parla inglese con il gatto"
-   }
-  ]
- },
- {
-  "id": "r-a1-05",
-  "level": "A1",
-  "title": "Festa della Cipolla",
-  "en": "The Onion Festival",
-  "topic": "leisure",
-  "genre": "event programme + chat",
-  "minutes": 5,
-  "blurb": "Two friends, one village festival in Umbria and a very long programme: what do you do first?",
-  "body": [
-   {
-    "who": "Programma",
-    "s": [
-     {
-      "it": "FESTA DELLA CIPOLLA – Cannara (Perugia) – Sabato 6 settembre",
-      "en": "ONION FESTIVAL – Cannara (Perugia) – Saturday 6 September"
-     },
-     {
-      "it": "Ore 18:00 – Apertura delle taverne. Zuppa di cipolle, cipolle ripiene, pizza con le cipolle.",
-      "en": "6 pm – The taverns open. Onion soup, stuffed onions, onion pizza."
-     },
-     {
-      "it": "Ore 19:00 – Gara: chi mangia più cipolle crude in tre minuti? Iscrizione in piazza.",
-      "en": "7 pm – Contest: who can eat the most raw onions in three minutes? Sign up in the square."
-     },
-     {
-      "it": "Ore 20:30 – Concerto della banda di Cannara.",
-      "en": "8.30 pm – Concert by the Cannara town band."
-     },
-     {
-      "it": "Ore 22:00 – Grande tombola. Primo premio: una sorpresa.",
-      "en": "10 pm – Big tombola. First prize: a surprise."
-     },
-     {
-      "it": "Ore 23:00 – Ballo liscio in piazza fino a mezzanotte.",
-      "en": "11 pm – Ballroom dancing in the square until midnight."
-     }
-    ]
-   },
-   {
-    "who": "Irene",
-    "s": [
-     {
-      "it": "Davide, hai visto il programma? Alle sei andiamo subito alla taverna.",
-      "en": "Davide, have you seen the programme? At six we go straight to the tavern."
-     },
-     {
-      "it": "Alle sette c'è una fila lunghissima, lo so.",
-      "en": "By seven there's a really long queue, I know it."
-     }
-    ]
-   },
-   {
-    "who": "Davide",
-    "s": [
-     {
-      "it": "No, no. Alle sette c'è la gara. Io voglio fare la gara.",
-      "en": "No, no. At seven there's the contest. I want to do the contest."
-     }
-    ]
-   },
-   {
-    "who": "Irene",
-    "s": [
-     {
-      "it": "Tu? Tu non mangi neanche la cipolla nell'insalata.",
-      "en": "You? You don't even eat onion in salad."
-     }
-    ]
-   },
-   {
-    "who": "Davide",
-    "s": [
-     {
-      "it": "È vero. Ma ho un piano. Mangio molto pane prima.",
-      "en": "True. But I have a plan. I eat lots of bread first."
-     }
-    ]
-   },
-   {
-    "who": "Irene",
-    "s": [
-     {
-      "it": "Allora prima mangi alla taverna con me, poi fai la gara. Così hai lo stomaco pieno.",
-      "en": "Then first you eat at the tavern with me, then you do the contest. That way your stomach is full."
-     }
-    ]
-   },
-   {
-    "who": "Davide",
-    "s": [
-     {
-      "it": "Con lo stomaco pieno di zuppa di cipolle? E poi altre cipolle? No, grazie.",
-      "en": "With a stomach full of onion soup? And then more onions? No, thanks."
-     }
-    ]
-   },
-   {
-    "who": "Irene",
-    "s": [
-     {
-      "it": "Ok. Facciamo così: tu vai alla gara, io faccio la fila alla taverna. Poi ci vediamo.",
-      "en": "Ok. Let's do this: you go to the contest, I queue at the tavern. Then we meet up."
-     }
-    ]
-   },
-   {
-    "who": "Davide",
-    "s": [
-     {
-      "it": "E il concerto della banda? Mio zio suona la tromba.",
-      "en": "And the band concert? My uncle plays the trumpet."
-     }
-    ]
-   },
-   {
-    "who": "Irene",
-    "s": [
-     {
-      "it": "Tuo zio suona la tromba da quarant'anni, e sempre la stessa canzone.",
-      "en": "Your uncle has been playing the trumpet for forty years, and always the same song."
-     }
-    ]
-   },
-   {
-    "who": "Davide",
-    "s": [
-     {
-      "it": "Sì, ma lui guarda sempre chi c'è. Se non ci sono, lo dice a mia madre.",
-      "en": "Yes, but he always looks to see who's there. If I'm not there, he tells my mother."
-     }
-    ]
-   },
-   {
-    "who": "Irene",
-    "s": [
-     {
-      "it": "Va bene. Taverna, gara, banda. E la tombola?",
-      "en": "Fine. Tavern, contest, band. And the tombola?"
-     }
-    ]
-   },
-   {
-    "who": "Davide",
-    "s": [
-     {
-      "it": "La tombola no, è per i nonni. E il premio è una sorpresa. Sicuramente è un salame.",
-      "en": "Not the tombola, it's for grandparents. And the prize is a surprise. It's definitely a salami."
-     }
-    ]
-   },
-   {
-    "who": "Irene",
-    "s": [
-     {
-      "it": "Ho già comprato due cartelle. Una per te.",
-      "en": "I've already bought two cards. One for you."
-     }
-    ]
-   },
-   {
-    "who": "Domenica mattina",
-    "s": [
-     {
-      "it": "Domenica, ore 9:15.",
-      "en": "Sunday, 9.15 am."
-     }
-    ]
-   },
-   {
-    "who": "Davide",
-    "s": [
-     {
-      "it": "Irene, sei sveglia?",
-      "en": "Irene, are you awake?"
-     }
-    ]
-   },
-   {
-    "who": "Irene",
-    "s": [
-     {
-      "it": "Più o meno. Come va lo stomaco?",
-      "en": "More or less. How's your stomach?"
-     }
-    ]
-   },
-   {
-    "who": "Davide",
-    "s": [
-     {
-      "it": "Male. Undici cipolle crude. Sono arrivato terzo.",
-      "en": "Bad. Eleven raw onions. I came third."
-     },
-     {
-      "it": "Ma ho un problema più grande.",
-      "en": "But I have a bigger problem."
-     }
-    ]
-   },
-   {
-    "who": "Irene",
-    "s": [
-     {
-      "it": "Quale?",
-      "en": "Which one?"
-     }
-    ]
-   },
-   {
-    "who": "Davide",
-    "s": [
-     {
-      "it": "Il primo premio della tombola. Ho vinto io, con la tua cartella.",
-      "en": "The first prize at the tombola. I won it, with your card."
-     },
-     {
-      "it": "Non è un salame. È un sacco di cipolle di Cannara. Venti chili.",
-      "en": "It's not a salami. It's a sack of Cannara onions. Twenty kilos."
-     },
-     {
-      "it": "È qui, in cucina, e mi guarda.",
-      "en": "It's here, in the kitchen, staring at me."
-     }
-    ]
-   },
-   {
-    "who": "Irene",
-    "s": [
-     {
-      "it": "La cartella è mia, quindi il premio è mio. Arrivo con la macchina.",
-      "en": "The card is mine, so the prize is mine. I'm coming with the car."
-     },
-     {
-      "it": "Stasera faccio la zuppa. Sei invitato.",
-      "en": "Tonight I'm making soup. You're invited."
-     }
-    ]
-   }
-  ],
-  "glossary": [
-   {
-    "it": "la cipolla",
-    "en": "the onion"
-   },
-   {
-    "it": "la taverna",
-    "en": "the tavern (a food stall at a village festival)"
-   },
-   {
-    "it": "ripiene",
-    "en": "stuffed"
-   },
-   {
-    "it": "crude",
-    "en": "raw"
-   },
-   {
-    "it": "l'iscrizione",
-    "en": "sign-up, registration"
-   },
-   {
-    "it": "la banda",
-    "en": "the (brass) town band"
-   },
-   {
-    "it": "la tombola",
-    "en": "a bingo-like game"
-   },
-   {
-    "it": "il ballo liscio",
-    "en": "traditional ballroom dancing"
-   },
-   {
-    "it": "la fila",
-    "en": "the queue"
-   },
-   {
-    "it": "lo stomaco pieno",
-    "en": "a full stomach"
-   },
-   {
-    "it": "la cartella",
-    "en": "the tombola card"
-   },
-   {
-    "it": "sono arrivato terzo",
-    "en": "I came third"
-   },
-   {
-    "it": "un sacco",
-    "en": "a sack"
-   }
-  ],
-  "questions": [
-   {
-    "q": "Perché Irene vuole andare alla taverna alle sei?",
-    "o": [
-     "Perché dopo c'è troppa gente",
-     "Perché la taverna chiude alle sette",
-     "Perché ha molta fame dopo la gara"
+    "questions": [
+      {
+        "q": "Che cosa capisce la dottoressa dalla prima email?",
+        "o": [
+          "Che la moglie ha un problema emotivo",
+          "Che il signore vuole un buon libro per la moglie",
+          "Che il signore cerca un medico"
+        ],
+        "a": "Che la moglie ha un problema emotivo"
+      },
+      {
+        "q": "Perché la dottoressa non capisce subito?",
+        "o": [
+          "Ha letto l'email prima del caffè",
+          "Non conosce la tisana Serenità",
+          "L'email del signore è in dialetto piemontese"
+        ],
+        "a": "Ha letto l'email prima del caffè"
+      },
+      {
+        "q": "Perché il signor Bertolino ha bisogno della tisana anche per sé?",
+        "o": [
+          "Se lei non dorme, lui non dorme",
+          "Lui beve la tisana ogni mattina prima del caffè",
+          "La vuole regalare alla dottoressa"
+        ],
+        "a": "Se lei non dorme, lui non dorme"
+      },
+      {
+        "q": "Perché la moglie non vuole la tisana Calma?",
+        "o": [
+          "Il nome la rende più nervosa",
+          "Ha un sapore di arancia, e lei la odia",
+          "Costa troppo"
+        ],
+        "a": "Il nome la rende più nervosa"
+      },
+      {
+        "q": "Che cosa vuole dire la dottoressa con Pazienza, alla fine?",
+        "o": [
+          "Il signore deve aspettare giovedì con calma",
+          "C'è una nuova tisana in offerta",
+          "La moglie deve andare dal medico"
+        ],
+        "a": "Il signore deve aspettare giovedì con calma"
+      }
     ],
-    "a": "Perché dopo c'è troppa gente"
-   },
-   {
-    "q": "Perché Irene è sorpresa quando Davide parla della gara?",
-    "o": [
-     "Davide non mangia mai la cipolla",
-     "Davide è a dieta",
-     "La gara è solo per i bambini del paese"
+    "narrator": "f",
+    "speakers": {
+      "Da: Franco Bertolino – A: Farmacia San Savino": "m",
+      "Da: Farmacia San Savino – A: Franco Bertolino": "f"
+    }
+  },
+  {
+    "id": "r-a1-08",
+    "level": "A1",
+    "title": "Saluti dalle Dolomiti",
+    "en": "Greetings from the Dolomites",
+    "topic": "nature",
+    "genre": "postcards",
+    "minutes": 5,
+    "blurb": "Six postcards from a hiking week in the Dolomites, sent to a grandmother in Ferrara, as the weather has other plans.",
+    "body": [
+      {
+        "who": "Cartolina 1 – Alpe di Siusi",
+        "s": [
+          {
+            "it": "Cara nonna,",
+            "en": "Dear Nonna,"
+          },
+          {
+            "it": "eccomi in montagna! Oggi c'è un sole incredibile e il cielo è blu, come nella foto.",
+            "en": "here I am in the mountains! Today the sun is incredible and the sky is blue, like in the picture."
+          },
+          {
+            "it": "Camminiamo sei ore tra mucche e fiori. Le mucche hanno le campane e sono molto rumorose.",
+            "en": "We walk for six hours among cows and flowers. The cows wear bells and are very noisy."
+          },
+          {
+            "it": "Sono felice e ho le gambe stanche.",
+            "en": "I'm happy and my legs are tired."
+          },
+          {
+            "it": "Un bacio, Agnese",
+            "en": "A kiss, Agnese"
+          }
+        ]
+      },
+      {
+        "who": "Cartolina 2 – Rifugio Puez",
+        "s": [
+          {
+            "it": "Cara nonna,",
+            "en": "Dear Nonna,"
+          },
+          {
+            "it": "oggi il cielo è bianco. Ci sono nuvole, ma non piove.",
+            "en": "today the sky is white. There are clouds, but it isn't raining."
+          },
+          {
+            "it": "Dormiamo in un rifugio a duemila quattrocento metri.",
+            "en": "We're sleeping in a mountain hut at two thousand four hundred metres."
+          },
+          {
+            "it": "In camera ci sono dodici persone. Un signore di Monaco russa come un trattore.",
+            "en": "There are twelve people in the room. A man from Munich snores like a tractor."
+          },
+          {
+            "it": "Per cena c'è polenta con i funghi. Il gestore dice che domani piove un po'.",
+            "en": "For dinner there's polenta with mushrooms. The hut keeper says it'll rain a little tomorrow."
+          },
+          {
+            "it": "Agnese",
+            "en": "Agnese"
+          }
+        ]
+      },
+      {
+        "who": "Cartolina 3 – Colfosco",
+        "s": [
+          {
+            "it": "Nonna,",
+            "en": "Nonna,"
+          },
+          {
+            "it": "piove. Piove da ieri sera.",
+            "en": "it's raining. It's been raining since last night."
+          },
+          {
+            "it": "Il mio impermeabile è impermeabile solo di nome.",
+            "en": "My raincoat is waterproof in name only."
+          },
+          {
+            "it": "Le scarpe fanno un rumore strano, ciac ciac, a ogni passo.",
+            "en": "My boots make a strange noise, squelch squelch, at every step."
+          },
+          {
+            "it": "Il paesaggio? Non lo so. Vedo solo la schiena di Luca, davanti a me.",
+            "en": "The scenery? No idea. All I can see is Luca's back, in front of me."
+          },
+          {
+            "it": "Agnese",
+            "en": "Agnese"
+          }
+        ]
+      },
+      {
+        "who": "Cartolina 4 – Passo Gardena",
+        "s": [
+          {
+            "it": "Nonna,",
+            "en": "Nonna,"
+          },
+          {
+            "it": "oggi nevica. Sì, nevica. Siamo a luglio.",
+            "en": "today it's snowing. Yes, snowing. It's July."
+          },
+          {
+            "it": "Il gestore del rifugio dice che è normale. Lui è calmo e mangia lo speck.",
+            "en": "The hut keeper says it's normal. He's calm and eats speck."
+          },
+          {
+            "it": "Noi non siamo calmi. Abbiamo solo magliette e pantaloncini.",
+            "en": "We are not calm. We only have T-shirts and shorts."
+          },
+          {
+            "it": "Luca ha comprato un cappello di lana con una renna sopra. Diciotto euro.",
+            "en": "Luca bought a wool hat with a reindeer on it. Eighteen euros."
+          },
+          {
+            "it": "A.",
+            "en": "A."
+          }
+        ]
+      },
+      {
+        "who": "Cartolina 5 – Ancora Passo Gardena",
+        "s": [
+          {
+            "it": "Nonna,",
+            "en": "Nonna,"
+          },
+          {
+            "it": "la strada è chiusa. Restiamo nel rifugio due giorni.",
+            "en": "The road is closed. We're staying in the hut for two days."
+          },
+          {
+            "it": "Giochiamo a carte con tre ragazzi olandesi e con il signore di Monaco. Sì, lui. Russa anche qui.",
+            "en": "We play cards with three Dutch guys and the man from Munich. Yes, him. He snores here too."
+          },
+          {
+            "it": "La moglie del gestore fa uno strudel buonissimo. Ne mangio quattro fette al giorno.",
+            "en": "The hut keeper's wife makes a wonderful strudel. I eat four slices a day."
+          },
+          {
+            "it": "Non è la vacanza del programma, ma non è male.",
+            "en": "It's not the holiday on the itinerary, but it isn't bad."
+          },
+          {
+            "it": "A.",
+            "en": "A."
+          }
+        ]
+      },
+      {
+        "who": "Cartolina 6 – Stazione di Bolzano",
+        "s": [
+          {
+            "it": "Cara nonna,",
+            "en": "Dear Nonna,"
+          },
+          {
+            "it": "oggi è l'ultimo giorno. E oggi, naturalmente, c'è il sole.",
+            "en": "today is the last day. And today, of course, the sun is out."
+          },
+          {
+            "it": "Il cielo è blu, le montagne sono bianche e bellissime. Io le guardo dal treno.",
+            "en": "The sky is blue, the mountains are white and beautiful. I'm looking at them from the train."
+          },
+          {
+            "it": "PS: Ho comprato queste cartoline il primo giorno. In tutte le foto c'è il sole.",
+            "en": "PS: I bought these postcards on the first day. The sun is shining in every photo."
+          },
+          {
+            "it": "Le cartoline sono bugiarde, ma lo strudel no. Ho la ricetta. Domenica lo facciamo insieme.",
+            "en": "The postcards are liars, but the strudel isn't. I've got the recipe. On Sunday we'll make it together."
+          },
+          {
+            "it": "Tua Agnese",
+            "en": "Your Agnese"
+          },
+          {
+            "it": "PPS: Il cappello con la renna adesso è mio. Luca dice che è un prestito. Non è vero.",
+            "en": "PPS: The reindeer hat is mine now. Luca says it's a loan. It isn't."
+          }
+        ]
+      }
     ],
-    "a": "Davide non mangia mai la cipolla"
-   },
-   {
-    "q": "Perché Davide vuole andare al concerto?",
-    "o": [
-     "Lo zio controlla chi c'è",
-     "Ama la musica della banda",
-     "Vuole ballare"
+    "glossary": [
+      {
+        "it": "eccomi",
+        "en": "here I am"
+      },
+      {
+        "it": "le campane",
+        "en": "the bells"
+      },
+      {
+        "it": "il rifugio",
+        "en": "the mountain hut"
+      },
+      {
+        "it": "russa",
+        "en": "snores"
+      },
+      {
+        "it": "l'impermeabile",
+        "en": "the raincoat; (adj.) waterproof"
+      },
+      {
+        "it": "a ogni passo",
+        "en": "at every step"
+      },
+      {
+        "it": "la schiena",
+        "en": "the back (of the body)"
+      },
+      {
+        "it": "nevica",
+        "en": "it's snowing"
+      },
+      {
+        "it": "il gestore",
+        "en": "the manager, the hut keeper"
+      },
+      {
+        "it": "i pantaloncini",
+        "en": "shorts"
+      },
+      {
+        "it": "la renna",
+        "en": "the reindeer"
+      },
+      {
+        "it": "la fetta",
+        "en": "the slice"
+      },
+      {
+        "it": "bugiarde",
+        "en": "liars, lying"
+      }
     ],
-    "a": "Lo zio controlla chi c'è"
-   },
-   {
-    "q": "Com'è andata la gara per Davide?",
-    "o": [
-     "Non ha vinto, e adesso sta male",
-     "Ha vinto il primo premio con undici cipolle",
-     "Non ha partecipato"
+    "questions": [
+      {
+        "q": "Com'è il tempo il primo giorno?",
+        "o": [
+          "C'è il sole",
+          "Nuvoloso, ma non piove",
+          "Piove tutto il giorno"
+        ],
+        "a": "C'è il sole"
+      },
+      {
+        "q": "Perché Agnese non vede il paesaggio il terzo giorno?",
+        "o": [
+          "Vede solo la schiena di Luca",
+          "È in camera a dormire",
+          "C'è troppa neve e la strada è chiusa"
+        ],
+        "a": "Vede solo la schiena di Luca"
+      },
+      {
+        "q": "Perché i ragazzi non sono calmi al Passo Gardena?",
+        "o": [
+          "Non hanno vestiti per il freddo",
+          "Il gestore non ha lo speck",
+          "Hanno perso la strada"
+        ],
+        "a": "Non hanno vestiti per il freddo"
+      },
+      {
+        "q": "Che cosa porta a casa Agnese di positivo?",
+        "o": [
+          "Una ricetta e un cappello",
+          "Delle foto con il sole",
+          "Una nuova macchina fotografica"
+        ],
+        "a": "Una ricetta e un cappello"
+      },
+      {
+        "q": "Perché Agnese dice che le cartoline sono bugiarde?",
+        "o": [
+          "In tutte le foto c'è il sole",
+          "Costano troppo al rifugio",
+          "Hanno nomi di posti sbagliati"
+        ],
+        "a": "In tutte le foto c'è il sole"
+      }
     ],
-    "a": "Non ha vinto, e adesso sta male"
-   },
-   {
-    "q": "Perché Irene dice che il premio è suo?",
-    "o": [
-     "Lei ha comprato la cartella",
-     "Lei ha vinto la gara delle cipolle",
-     "Lei ama il salame"
+    "narrator": "m",
+    "speakers": {
+      "Cartolina 1 – Alpe di Siusi": "f",
+      "Cartolina 2 – Rifugio Puez": "f",
+      "Cartolina 3 – Colfosco": "f",
+      "Cartolina 4 – Passo Gardena": "f",
+      "Cartolina 5 – Ancora Passo Gardena": "f",
+      "Cartolina 6 – Stazione di Bolzano": "f"
+    }
+  },
+  {
+    "id": "r-a1-09",
+    "level": "A1",
+    "title": "Nonno, ti vedo!",
+    "en": "Grandad, I Can See You!",
+    "topic": "tech",
+    "genre": "dialogue",
+    "minutes": 5,
+    "blurb": "In Lecce, Nonno Uccio tries his first video call to his granddaughter in Berlin. The phone has other ideas.",
+    "body": [
+      {
+        "who": "Nonno Uccio",
+        "s": [
+          {
+            "it": "Pronto? Pronto? Giulia, mi senti?",
+            "en": "Hello? Hello? Giulia, can you hear me?"
+          }
+        ]
+      },
+      {
+        "who": "Giulia",
+        "s": [
+          {
+            "it": "Sì, nonno, ti sento. Ma non ti vedo. Vedo un soffitto bianco con una lampada.",
+            "en": "Yes, Grandad, I can hear you. But I can't see you. I can see a white ceiling with a lamp."
+          }
+        ]
+      },
+      {
+        "who": "Nonno Uccio",
+        "s": [
+          {
+            "it": "Quella è la lampada della cucina. È nuova, ti piace?",
+            "en": "That's the kitchen lamp. It's new, do you like it?"
+          }
+        ]
+      },
+      {
+        "who": "Giulia",
+        "s": [
+          {
+            "it": "È bella. Ma io voglio vedere te. Gira il telefono.",
+            "en": "It's nice. But I want to see you. Turn the phone round."
+          }
+        ]
+      },
+      {
+        "who": "Nonno Uccio",
+        "s": [
+          {
+            "it": "Così?",
+            "en": "Like this?"
+          }
+        ]
+      },
+      {
+        "who": "Giulia",
+        "s": [
+          {
+            "it": "Adesso vedo un orecchio. Un orecchio enorme.",
+            "en": "Now I can see an ear. A huge ear."
+          }
+        ]
+      },
+      {
+        "who": "Nonno Uccio",
+        "s": [
+          {
+            "it": "Per forza, il telefono è sull'orecchio. Io parlo così da settant'anni.",
+            "en": "Of course, the phone is on my ear. I've been talking like this for seventy years."
+          }
+        ]
+      },
+      {
+        "who": "Giulia",
+        "s": [
+          {
+            "it": "Nonno, è una videochiamata. Il telefono va davanti alla faccia, non sull'orecchio.",
+            "en": "Grandad, it's a video call. The phone goes in front of your face, not on your ear."
+          }
+        ]
+      },
+      {
+        "who": "Nonno Uccio",
+        "s": [
+          {
+            "it": "Davanti alla faccia? E come ti sento?",
+            "en": "In front of my face? Then how do I hear you?"
+          }
+        ]
+      },
+      {
+        "who": "Giulia",
+        "s": [
+          {
+            "it": "Mi senti benissimo, fidati.",
+            "en": "You'll hear me perfectly, trust me."
+          }
+        ]
+      },
+      {
+        "who": "Nonno Uccio",
+        "s": [
+          {
+            "it": "Va bene. Ecco. Mi vedi adesso?",
+            "en": "All right. There. Can you see me now?"
+          }
+        ]
+      },
+      {
+        "who": "Giulia",
+        "s": [
+          {
+            "it": "Sì! Ma… nonno, perché hai le orecchie da coniglio?",
+            "en": "Yes! But… Grandad, why do you have bunny ears?"
+          }
+        ]
+      },
+      {
+        "who": "Nonno Uccio",
+        "s": [
+          {
+            "it": "Cosa? Io non ho le orecchie da coniglio.",
+            "en": "What? I don't have bunny ears."
+          }
+        ]
+      },
+      {
+        "who": "Giulia",
+        "s": [
+          {
+            "it": "Sullo schermo sì. E anche i baffi. È un filtro. Hai toccato qualcosa.",
+            "en": "On the screen you do. And whiskers too. It's a filter. You've touched something."
+          }
+        ]
+      },
+      {
+        "who": "Nonno Uccio",
+        "s": [
+          {
+            "it": "Addolorata! Vieni qui, presto!",
+            "en": "Addolorata! Come here, quick!"
+          }
+        ]
+      },
+      {
+        "who": "Giulia",
+        "s": [
+          {
+            "it": "Chi è Addolorata?",
+            "en": "Who's Addolorata?"
+          }
+        ]
+      },
+      {
+        "who": "Nonno Uccio",
+        "s": [
+          {
+            "it": "La vicina. Ha ottantadue anni, ma usa il telefono meglio di te.",
+            "en": "The neighbour. She's eighty-two, but she uses the phone better than you."
+          }
+        ]
+      },
+      {
+        "who": "Signora Addolorata",
+        "s": [
+          {
+            "it": "Ciao, Giulia, sono Addolorata. Un momento. Ecco fatto, niente coniglio.",
+            "en": "Hi, Giulia, I'm Addolorata. One moment. There you go, no more bunny."
+          }
+        ]
+      },
+      {
+        "who": "Giulia",
+        "s": [
+          {
+            "it": "Signora, ma lei come fa?",
+            "en": "Signora, how do you do it?"
+          }
+        ]
+      },
+      {
+        "who": "Signora Addolorata",
+        "s": [
+          {
+            "it": "Mio figlio abita in Australia. Ogni domenica facciamo una videochiamata.",
+            "en": "My son lives in Australia. Every Sunday we have a video call."
+          },
+          {
+            "it": "Io sono a pranzo, lui è a letto. Funziona benissimo.",
+            "en": "I'm having lunch, he's in bed. It works perfectly."
+          }
+        ]
+      },
+      {
+        "who": "Giulia",
+        "s": [
+          {
+            "it": "Grazie, signora! Nonno, finalmente ti vedo. Che cosa mangi?",
+            "en": "Thank you, signora! Grandad, I can finally see you. What are you eating?"
+          }
+        ]
+      },
+      {
+        "who": "Nonno Uccio",
+        "s": [
+          {
+            "it": "Un pasticciotto. Guarda: è ancora caldo.",
+            "en": "A pasticciotto. Look: it's still warm."
+          },
+          {
+            "it": "A Berlino ci sono i pasticciotti?",
+            "en": "Do they have pasticciotti in Berlin?"
+          }
+        ]
+      },
+      {
+        "who": "Giulia",
+        "s": [
+          {
+            "it": "No, nonno. Qui ci sono solo i Berliner.",
+            "en": "No, Grandad. Here they only have Berliners."
+          }
+        ]
+      },
+      {
+        "who": "Nonno Uccio",
+        "s": [
+          {
+            "it": "Poverina. Che tristezza.",
+            "en": "Poor thing. How sad."
+          },
+          {
+            "it": "Aspetta, ti faccio vedere il limone in giardino. Quest'anno ha trenta limoni.",
+            "en": "Wait, let me show you the lemon tree in the garden. This year it has thirty lemons."
+          }
+        ]
+      },
+      {
+        "who": "Giulia",
+        "s": [
+          {
+            "it": "Nonno, vedo solo il cielo. E un piccione.",
+            "en": "Grandad, I can only see the sky. And a pigeon."
+          }
+        ]
+      },
+      {
+        "who": "Nonno Uccio",
+        "s": [
+          {
+            "it": "Quello è Totò. Viene tutti i giorni a mangiare il pane.",
+            "en": "That's Totò. He comes every day to eat bread."
+          },
+          {
+            "it": "Allora, quando torni a Lecce?",
+            "en": "So, when are you coming back to Lecce?"
+          }
+        ]
+      },
+      {
+        "who": "Giulia",
+        "s": [
+          {
+            "it": "A Natale. Ti voglio bene, nonno. Adesso premi il bottone rosso.",
+            "en": "At Christmas. Love you, Grandad. Now press the red button."
+          }
+        ]
+      },
+      {
+        "s": [
+          {
+            "it": "Una settimana dopo, alle sette di mattina, a Berlino suona il telefono.",
+            "en": "A week later, at seven in the morning, the phone rings in Berlin."
+          }
+        ]
+      },
+      {
+        "who": "Giulia",
+        "s": [
+          {
+            "it": "Nonno? Sono le sette! Io dormo!",
+            "en": "Grandad? It's seven o'clock! I'm asleep!"
+          }
+        ]
+      },
+      {
+        "who": "Nonno Uccio",
+        "s": [
+          {
+            "it": "Lo so, lo so. Ma ti vedo benissimo. Niente coniglio, niente orecchio, niente lampada.",
+            "en": "I know, I know. But I can see you perfectly. No bunny, no ear, no lamp."
+          },
+          {
+            "it": "Volevo solo controllare se funziona ancora.",
+            "en": "I just wanted to check it still works."
+          },
+          {
+            "it": "Domani alle sette ti chiamo di nuovo. Anche Addolorata vuole salutare.",
+            "en": "Tomorrow at seven I'll call you again. Addolorata wants to say hello too."
+          }
+        ]
+      }
     ],
-    "a": "Lei ha comprato la cartella"
-   }
-  ]
- },
- {
-  "id": "r-a1-06",
-  "level": "A1",
-  "title": "Le quattro del mattino",
-  "en": "Four in the Morning",
-  "topic": "work",
-  "genre": "short story",
-  "minutes": 5,
-  "blurb": "Ilaria's first shift at a bakery in Naples starts at 4 am, and her new boss doesn't say much.",
-  "body": [
-   {
-    "s": [
-     {
-      "it": "Sono le quattro meno cinque. Il quartiere Sanità dorme.",
-      "en": "It's five to four. The Sanità neighbourhood is asleep."
-     },
-     {
-      "it": "Ilaria ha diciannove anni e oggi è il suo primo giorno di lavoro al Panificio Esposito.",
-      "en": "Ilaria is nineteen and today is her first day of work at the Esposito Bakery."
-     },
-     {
-      "it": "La strada è buia, ma la porta del forno è aperta e c'è una luce gialla.",
-      "en": "The street is dark, but the bakery door is open and there's a yellow light."
-     },
-     {
-      "it": "C'è anche un profumo di pane caldo.",
-      "en": "There's also a smell of warm bread."
-     }
-    ]
-   },
-   {
-    "s": [
-     {
-      "it": "Dentro c'è don Peppe. È basso, ha le braccia bianche di farina e non sorride.",
-      "en": "Inside is Don Peppe. He's short, his arms are white with flour and he doesn't smile."
-     },
-     {
-      "it": "«Buongiorno», dice Ilaria.",
-      "en": "\"Good morning,\" says Ilaria."
-     },
-     {
-      "it": "«Sei in ritardo», dice don Peppe.",
-      "en": "\"You're late,\" says Don Peppe."
-     },
-     {
-      "it": "«Ma sono le quattro meno cinque!»",
-      "en": "\"But it's five to four!\""
-     },
-     {
-      "it": "«Appunto. Io sono qui dalle tre.»",
-      "en": "\"Exactly. I've been here since three.\""
-     }
-    ]
-   },
-   {
-    "s": [
-     {
-      "it": "Il primo lavoro è facile: Ilaria mette i cornetti sulle teglie.",
-      "en": "The first job is easy: Ilaria puts the croissants on the baking trays."
-     },
-     {
-      "it": "Don Peppe guarda e dice solo: «Più spazio.»",
-      "en": "Don Peppe watches and only says: \"More space.\""
-     },
-     {
-      "it": "Poi lei taglia il pane. Don Peppe guarda e dice: «Più piano.»",
-      "en": "Then she slices the bread. Don Peppe watches and says: \"Slower.\""
-     },
-     {
-      "it": "Poi lei fa il caffè per tutti. Don Peppe lo beve e non dice niente.",
-      "en": "Then she makes coffee for everyone. Don Peppe drinks it and says nothing."
-     },
-     {
-      "it": "Ilaria pensa: forse il caffè è terribile.",
-      "en": "Ilaria thinks: maybe the coffee is awful."
-     }
-    ]
-   },
-   {
-    "s": [
-     {
-      "it": "Alle cinque e mezza arrivano i primi clienti.",
-      "en": "At half past five the first customers arrive."
-     },
-     {
-      "it": "Un'infermiera dopo la notte in ospedale compra due graffe.",
-      "en": "A nurse after her night shift at the hospital buys two graffe."
-     },
-     {
-      "it": "Un tassista compra un filone di pane e racconta una storia lunga sul Napoli.",
-      "en": "A taxi driver buys a loaf of bread and tells a long story about Napoli, the football team."
-     },
-     {
-      "it": "Un prete compra sei cornetti. «Sono per i chierichetti», dice. Nessuno ci crede.",
-      "en": "A priest buys six croissants. \"They're for the altar boys,\" he says. Nobody believes him."
-     }
-    ]
-   },
-   {
-    "s": [
-     {
-      "it": "Alle sei don Peppe dice: «Adesso le graffe le fai tu.»",
-      "en": "At six Don Peppe says: \"Now you make the graffe.\""
-     },
-     {
-      "it": "Le graffe sono ciambelle fritte, con patate e zucchero.",
-      "en": "Graffe are fried doughnuts, made with potato and sugar."
-     },
-     {
-      "it": "Ilaria ha paura. Le sue graffe sono un po' storte. Una sembra un cuore, un'altra sembra la Sardegna.",
-      "en": "Ilaria is scared. Her graffe are a bit crooked. One looks like a heart, another looks like Sardinia."
-     }
-    ]
-   },
-   {
-    "s": [
-     {
-      "it": "Don Peppe prende una graffa e la mangia piano.",
-      "en": "Don Peppe takes a graffa and eats it slowly."
-     },
-     {
-      "it": "Ilaria aspetta. Il forno fa rumore. Fuori passa un motorino.",
-      "en": "Ilaria waits. The oven hums. Outside a scooter goes by."
-     },
-     {
-      "it": "Lui non dice niente. Va alla lavagna vicino alla cassa, prende il gesso e cancella una riga.",
-      "en": "He says nothing. He goes to the blackboard by the till, picks up the chalk and rubs out a line."
-     },
-     {
-      "it": "Prima c'è scritto: «Graffe – 1 euro».",
-      "en": "Before, it said: \"Graffe – 1 euro\"."
-     },
-     {
-      "it": "Adesso c'è scritto: «Graffe di Ilaria – 1 euro e 20».",
-      "en": "Now it says: \"Ilaria's graffe – 1 euro 20\"."
-     }
-    ]
-   },
-   {
-    "s": [
-     {
-      "it": "«Perché venti centesimi in più?» chiede lei.",
-      "en": "\"Why twenty cents more?\" she asks."
-     },
-     {
-      "it": "«Perché sono storte. Le cose storte a Napoli costano di più.»",
-      "en": "\"Because they're crooked. Crooked things cost more in Naples.\""
-     },
-     {
-      "it": "Poi, per la prima volta, don Peppe sorride. Solo un po'.",
-      "en": "Then, for the first time, Don Peppe smiles. Just a little."
-     },
-     {
-      "it": "«Domani alle quattro. Non alle quattro meno cinque. Alle quattro meno un quarto.»",
-      "en": "\"Tomorrow at four. Not five to four. Quarter to four.\""
-     }
-    ]
-   }
-  ],
-  "glossary": [
-   {
-    "it": "il forno",
-    "en": "the bakery; the oven"
-   },
-   {
-    "it": "buia",
-    "en": "dark"
-   },
-   {
-    "it": "la farina",
-    "en": "flour"
-   },
-   {
-    "it": "sei in ritardo",
-    "en": "you're late"
-   },
-   {
-    "it": "appunto",
-    "en": "exactly, precisely"
-   },
-   {
-    "it": "le teglie",
-    "en": "the baking trays"
-   },
-   {
-    "it": "più piano",
-    "en": "slower, more gently"
-   },
-   {
-    "it": "la graffa",
-    "en": "a Neapolitan fried sugared doughnut"
-   },
-   {
-    "it": "il filone di pane",
-    "en": "a long loaf of bread"
-   },
-   {
-    "it": "i chierichetti",
-    "en": "the altar boys"
-   },
-   {
-    "it": "nessuno ci crede",
-    "en": "nobody believes it"
-   },
-   {
-    "it": "storte",
-    "en": "crooked, wonky"
-   },
-   {
-    "it": "la lavagna",
-    "en": "the blackboard"
-   },
-   {
-    "it": "cancella una riga",
-    "en": "rubs out a line"
-   }
-  ],
-  "questions": [
-   {
-    "q": "Perché don Peppe dice che Ilaria è in ritardo?",
-    "o": [
-     "Perché lui è al lavoro da un'ora",
-     "Perché lei arriva alle cinque e mezza",
-     "Perché i clienti aspettano"
+    "glossary": [
+      {
+        "it": "mi senti?",
+        "en": "can you hear me?"
+      },
+      {
+        "it": "il soffitto",
+        "en": "the ceiling"
+      },
+      {
+        "it": "gira il telefono",
+        "en": "turn the phone round"
+      },
+      {
+        "it": "per forza",
+        "en": "of course, obviously"
+      },
+      {
+        "it": "la videochiamata",
+        "en": "the video call"
+      },
+      {
+        "it": "fidati",
+        "en": "trust me"
+      },
+      {
+        "it": "le orecchie da coniglio",
+        "en": "bunny ears"
+      },
+      {
+        "it": "i baffi",
+        "en": "whiskers; moustache"
+      },
+      {
+        "it": "lo schermo",
+        "en": "the screen"
+      },
+      {
+        "it": "la vicina",
+        "en": "the (female) neighbour"
+      },
+      {
+        "it": "ecco fatto",
+        "en": "there you go, done"
+      },
+      {
+        "it": "il pasticciotto",
+        "en": "a custard-filled pastry from Lecce"
+      },
+      {
+        "it": "poverina",
+        "en": "poor thing"
+      },
+      {
+        "it": "premi il bottone",
+        "en": "press the button"
+      }
     ],
-    "a": "Perché lui è al lavoro da un'ora"
-   },
-   {
-    "q": "Come parla don Peppe durante il turno?",
-    "o": [
-     "Dice pochissime parole",
-     "Racconta storie sul Napoli",
-     "Spiega tutto con pazienza"
+    "questions": [
+      {
+        "q": "Perché all'inizio Giulia vede il soffitto?",
+        "o": [
+          "Il nonno tiene male il telefono",
+          "La lampada nuova della cucina è troppo forte",
+          "La connessione non funziona"
+        ],
+        "a": "Il nonno tiene male il telefono"
+      },
+      {
+        "q": "Perché il nonno mette il telefono sull'orecchio?",
+        "o": [
+          "È un'abitudine di tutta la vita",
+          "Non sente bene",
+          "Giulia gli dice di farlo"
+        ],
+        "a": "È un'abitudine di tutta la vita"
+      },
+      {
+        "q": "Che cosa pensa il nonno della signora Addolorata?",
+        "o": [
+          "Che è più brava di lui con il telefono",
+          "Che è troppo vecchia per la tecnologia",
+          "Che parla troppo"
+        ],
+        "a": "Che è più brava di lui con il telefono"
+      },
+      {
+        "q": "Che cosa pensa il nonno della vita di Giulia a Berlino?",
+        "o": [
+          "Per lui, a Berlino manca qualcosa di buono",
+          "Per lui, a Berlino si mangia meglio",
+          "Vuole andare a Berlino a Natale"
+        ],
+        "a": "Per lui, a Berlino manca qualcosa di buono"
+      },
+      {
+        "q": "Che problema nuovo c'è alla fine?",
+        "o": [
+          "Il nonno chiama troppo presto la mattina",
+          "Il nonno non sa più usare il telefono",
+          "Giulia non risponde mai alle videochiamate"
+        ],
+        "a": "Il nonno chiama troppo presto la mattina"
+      }
     ],
-    "a": "Dice pochissime parole"
-   },
-   {
-    "q": "Perché nessuno crede al prete?",
-    "o": [
-     "Sei cornetti sono probabilmente per lui",
-     "Il prete non conosce i chierichetti",
-     "Il prete non paga mai"
+    "narrator": "f",
+    "speakers": {
+      "Nonno Uccio": "m",
+      "Giulia": "f2",
+      "Signora Addolorata": "f3"
+    }
+  },
+  {
+    "id": "r-a1-10",
+    "level": "A1",
+    "title": "La voce di Ballarò",
+    "en": "The Voice of Ballarò",
+    "topic": "society",
+    "genre": "interview",
+    "minutes": 5,
+    "blurb": "A student radio interviews the loudest fishmonger at Palermo's Ballarò market, and he saves his biggest secret for last.",
+    "body": [
+      {
+        "who": "Radio Ateneo",
+        "s": [
+          {
+            "it": "Buongiorno! Siamo al mercato di Ballarò, a Palermo, con il signor Rosario Lo Bue.",
+            "en": "Good morning! We're at Ballarò market in Palermo with Mr Rosario Lo Bue."
+          },
+          {
+            "it": "Tutti qui lo chiamano Saro. Saro, che cosa vende?",
+            "en": "Everyone here calls him Saro. Saro, what do you sell?"
+          }
+        ]
+      },
+      {
+        "who": "Saro",
+        "s": [
+          {
+            "it": "Pesce. Solo pesce fresco. Sarde, polpo, pesce spada, gamberi rossi di Mazara.",
+            "en": "Fish. Only fresh fish. Sardines, octopus, swordfish, red prawns from Mazara."
+          },
+          {
+            "it": "Il pesce arriva alle cinque di mattina. Alle due di pomeriggio non c'è più.",
+            "en": "The fish arrives at five in the morning. By two in the afternoon it's gone."
+          }
+        ]
+      },
+      {
+        "who": "Radio Ateneo",
+        "s": [
+          {
+            "it": "Da quanti anni lavora qui?",
+            "en": "How many years have you worked here?"
+          }
+        ]
+      },
+      {
+        "who": "Saro",
+        "s": [
+          {
+            "it": "Da quarantadue anni. Prima di me qui ha lavorato mio padre, e prima di lui mio nonno.",
+            "en": "For forty-two years. Before me, my father worked here, and before him my grandfather."
+          },
+          {
+            "it": "Questo banco ha cento anni. Il coltello ha cinquant'anni.",
+            "en": "This stall is a hundred years old. The knife is fifty."
+          }
+        ]
+      },
+      {
+        "who": "Radio Ateneo",
+        "s": [
+          {
+            "it": "Lei grida molto. Perché?",
+            "en": "You shout a lot. Why?"
+          }
+        ]
+      },
+      {
+        "who": "Saro",
+        "s": [
+          {
+            "it": "Si chiama abbanniata. Qui al mercato non grida solo Saro: gridano tutti.",
+            "en": "It's called abbanniata. Here at the market it isn't only Saro who shouts: everyone does."
+          },
+          {
+            "it": "Io canto il mio pesce. Il cliente sente la voce e viene.",
+            "en": "I sing my fish. The customer hears the voice and comes over."
+          },
+          {
+            "it": "Una volta un turista giapponese ha registrato la mia voce. Adesso è la suoneria del suo telefono.",
+            "en": "Once a Japanese tourist recorded my voice. Now it's his phone ringtone."
+          },
+          {
+            "it": "Ogni Natale mi manda una cartolina da Osaka. Io non rispondo: non scrivo, io grido.",
+            "en": "Every Christmas he sends me a postcard from Osaka. I don't reply: I don't write, I shout."
+          }
+        ]
+      },
+      {
+        "who": "Radio Ateneo",
+        "s": [
+          {
+            "it": "Può fare un esempio per i nostri ascoltatori?",
+            "en": "Can you give an example for our listeners?"
+          }
+        ]
+      },
+      {
+        "who": "Saro",
+        "s": [
+          {
+            "it": "Certo. Sarde fresche, sarde! Vivo è il pesce, vivo! Chi non compra oggi, piange domani!",
+            "en": "Of course. Fresh sardines, sardines! Alive, this fish, alive! Whoever doesn't buy today cries tomorrow!"
+          },
+          {
+            "it": "Ecco. Tre signore sono già qui.",
+            "en": "There. Three ladies are already here."
+          }
+        ]
+      },
+      {
+        "who": "Radio Ateneo",
+        "s": [
+          {
+            "it": "Incredibile. E il suo medico che cosa dice?",
+            "en": "Incredible. And what does your doctor say?"
+          }
+        ]
+      },
+      {
+        "who": "Saro",
+        "s": [
+          {
+            "it": "Il medico dice: Saro, meno grida. Ma il medico compra il pesce da me, quindi grida anche lui.",
+            "en": "The doctor says: Saro, less shouting. But the doctor buys his fish from me, so he shouts too."
+          }
+        ]
+      },
+      {
+        "who": "Radio Ateneo",
+        "s": [
+          {
+            "it": "E i giovani? I suoi figli lavorano al mercato?",
+            "en": "And young people? Do your children work at the market?"
+          }
+        ]
+      },
+      {
+        "who": "Saro",
+        "s": [
+          {
+            "it": "Mia figlia è ingegnere a Milano. Mio figlio fa il cantante a Catania.",
+            "en": "My daughter is an engineer in Milan. My son is a singer in Catania."
+          },
+          {
+            "it": "La voce è mia, vede? Ma lui canta d'amore, non di sarde.",
+            "en": "He got the voice from me, see? But he sings about love, not about sardines."
+          }
+        ]
+      },
+      {
+        "who": "Radio Ateneo",
+        "s": [
+          {
+            "it": "Un'ultima domanda. Qual è il suo pesce preferito? Come lo cucina?",
+            "en": "One last question. What's your favourite fish? How do you cook it?"
+          }
+        ]
+      },
+      {
+        "who": "Saro",
+        "s": [
+          {
+            "it": "Ah. Questa è una domanda difficile.",
+            "en": "Ah. That's a difficult question."
+          },
+          {
+            "it": "Vuole la verità? Io il pesce non lo mangio. Non mi piace.",
+            "en": "Do you want the truth? I don't eat fish. I don't like it."
+          }
+        ]
+      },
+      {
+        "who": "Radio Ateneo",
+        "s": [
+          {
+            "it": "Cosa? Dopo quarantadue anni?",
+            "en": "What? After forty-two years?"
+          }
+        ]
+      },
+      {
+        "who": "Saro",
+        "s": [
+          {
+            "it": "Quarantadue anni di pesce tutti i giorni, alle cinque di mattina. Basta così.",
+            "en": "Forty-two years of fish every day at five in the morning. That's enough."
+          },
+          {
+            "it": "La domenica io mangio una bella bistecca. Ma non lo dica a nessuno.",
+            "en": "On Sundays I eat a nice steak. But don't tell anyone."
+          }
+        ]
+      },
+      {
+        "who": "Radio Ateneo",
+        "s": [
+          {
+            "it": "Saro, siamo alla radio.",
+            "en": "Saro, we're on the radio."
+          }
+        ]
+      },
+      {
+        "who": "Saro",
+        "s": [
+          {
+            "it": "Mamma mia. Allora gridiamo un'altra cosa. Sarde fresche, sarde!",
+            "en": "Good grief. Then let's shout something else. Fresh sardines, sardines!"
+          }
+        ]
+      }
     ],
-    "a": "Sei cornetti sono probabilmente per lui"
-   },
-   {
-    "q": "Perché Ilaria ha paura quando fa le graffe?",
-    "o": [
-     "Le graffe non sono perfette",
-     "L'olio è troppo caldo e lei si brucia",
-     "Non sa la ricetta"
+    "glossary": [
+      {
+        "it": "il pesce spada",
+        "en": "swordfish"
+      },
+      {
+        "it": "i gamberi rossi",
+        "en": "red prawns"
+      },
+      {
+        "it": "non c'è più",
+        "en": "it's gone, there's none left"
+      },
+      {
+        "it": "il banco",
+        "en": "the market stall"
+      },
+      {
+        "it": "grida",
+        "en": "you shout, he shouts"
+      },
+      {
+        "it": "l'abbanniata",
+        "en": "the traditional sung cry of Palermo market sellers"
+      },
+      {
+        "it": "ha registrato",
+        "en": "recorded"
+      },
+      {
+        "it": "la suoneria",
+        "en": "the ringtone"
+      },
+      {
+        "it": "gli ascoltatori",
+        "en": "the listeners"
+      },
+      {
+        "it": "chi non compra oggi, piange domani",
+        "en": "whoever doesn't buy today cries tomorrow"
+      },
+      {
+        "it": "l'ingegnere",
+        "en": "the engineer"
+      },
+      {
+        "it": "basta così",
+        "en": "that's enough"
+      },
+      {
+        "it": "non lo dica a nessuno",
+        "en": "don't tell anyone (formal)"
+      }
     ],
-    "a": "Le graffe non sono perfette"
-   },
-   {
-    "q": "Che cosa significa il cambiamento sulla lavagna?",
-    "o": [
-     "A don Peppe piacciono le graffe di Ilaria",
-     "Le graffe di Ilaria sono troppo piccole",
-     "Ilaria deve pagare le graffe storte"
+    "questions": [
+      {
+        "q": "Perché Saro grida al mercato?",
+        "o": [
+          "Per attirare i clienti",
+          "Perché non sente bene",
+          "Perché il medico lo consiglia"
+        ],
+        "a": "Per attirare i clienti"
+      },
+      {
+        "q": "Che cosa succede quando Saro fa l'esempio per la radio?",
+        "o": [
+          "Arrivano subito delle clienti",
+          "Il turista giapponese telefona",
+          "Il medico si arrabbia"
+        ],
+        "a": "Arrivano subito delle clienti"
+      },
+      {
+        "q": "Perché il medico, secondo Saro, non è un buon esempio?",
+        "o": [
+          "Anche lui grida al mercato",
+          "Non mangia mai pesce",
+          "Non ha una bella voce"
+        ],
+        "a": "Anche lui grida al mercato"
+      },
+      {
+        "q": "Che cosa ha preso il figlio di Saro dal padre?",
+        "o": [
+          "La voce",
+          "Il coltello",
+          "Il banco del pesce"
+        ],
+        "a": "La voce"
+      },
+      {
+        "q": "Perché Saro alla fine dice «Mamma mia»?",
+        "o": [
+          "Tutti hanno sentito il suo segreto",
+          "Ha finito le sarde",
+          "Il medico è arrivato al banco con tre signore"
+        ],
+        "a": "Tutti hanno sentito il suo segreto"
+      }
     ],
-    "a": "A don Peppe piacciono le graffe di Ilaria"
-   }
-  ]
- },
- {
-  "id": "r-a1-07",
-  "level": "A1",
-  "title": "Vorrei la Serenità",
-  "en": "I'd Like Some Serenity",
-  "topic": "feelings",
-  "genre": "emails",
-  "minutes": 5,
-  "blurb": "A man in Ivrea emails his local pharmacy to order some Serenity, and the pharmacist takes him very seriously.",
-  "body": [
-   {
-    "who": "Da: Franco Bertolino – A: Farmacia San Savino",
-    "s": [
-     {
-      "it": "Oggetto: Ordine",
-      "en": "Subject: Order"
-     },
-     {
-      "it": "Buongiorno,",
-      "en": "Good morning,"
-     },
-     {
-      "it": "vorrei ordinare la Serenità. Due confezioni, per favore.",
-      "en": "I'd like to order Serenity. Two boxes, please."
-     },
-     {
-      "it": "La compro sempre da voi.",
-      "en": "I always buy it from you."
-     },
-     {
-      "it": "In casa non c'è più. Mia moglie è molto nervosa.",
-      "en": "We've run out at home. My wife is very on edge."
-     },
-     {
-      "it": "Passo venerdì. Grazie,",
-      "en": "I'll come by on Friday. Thank you,"
-     },
-     {
-      "it": "Franco Bertolino",
-      "en": "Franco Bertolino"
-     }
-    ]
-   },
-   {
-    "who": "Da: Farmacia San Savino – A: Franco Bertolino",
-    "s": [
-     {
-      "it": "Gentile signor Bertolino,",
-      "en": "Dear Mr Bertolino,"
-     },
-     {
-      "it": "grazie per la sua email. Mi dispiace molto per sua moglie.",
-      "en": "thank you for your email. I'm very sorry about your wife."
-     },
-     {
-      "it": "Purtroppo la serenità non si vende in farmacia.",
-      "en": "Unfortunately, serenity isn't sold in pharmacies."
-     },
-     {
-      "it": "Le consiglio una passeggiata lungo la Dora, un buon libro e otto ore di sonno.",
-      "en": "I recommend a walk along the Dora river, a good book and eight hours' sleep."
-     },
-     {
-      "it": "Se sua moglie è sempre nervosa, è meglio parlare con il medico.",
-      "en": "If your wife is always on edge, it's better to talk to the doctor."
-     },
-     {
-      "it": "Cordiali saluti,",
-      "en": "Kind regards,"
-     },
-     {
-      "it": "Dottoressa Silvia Gallo",
-      "en": "Dr Silvia Gallo"
-     }
-    ]
-   },
-   {
-    "who": "Da: Franco Bertolino – A: Farmacia San Savino",
-    "s": [
-     {
-      "it": "Gentile dottoressa,",
-      "en": "Dear Doctor,"
-     },
-     {
-      "it": "grazie, ma io non parlo di sentimenti. Parlo di una tisana.",
-      "en": "thank you, but I'm not talking about feelings. I'm talking about a herbal tea."
-     },
-     {
-      "it": "Si chiama Serenità. È nella scatola verde, sullo scaffale vicino alla cassa.",
-      "en": "It's called Serenity. It's in the green box, on the shelf near the till."
-     },
-     {
-      "it": "Mia moglie la beve ogni sera alle dieci. Senza Serenità non dorme, e io neanche.",
-      "en": "My wife drinks it every night at ten. Without Serenity she doesn't sleep, and neither do I."
-     },
-     {
-      "it": "Comunque la passeggiata lungo la Dora è una buona idea.",
-      "en": "Still, the walk along the Dora is a good idea."
-     },
-     {
-      "it": "Franco Bertolino",
-      "en": "Franco Bertolino"
-     }
-    ]
-   },
-   {
-    "who": "Da: Farmacia San Savino – A: Franco Bertolino",
-    "s": [
-     {
-      "it": "Gentile signor Bertolino,",
-      "en": "Dear Mr Bertolino,"
-     },
-     {
-      "it": "ah, la tisana! Mi scusi. Ho letto la sua email alle otto di mattina, prima del caffè.",
-      "en": "ah, the herbal tea! I'm sorry. I read your email at eight in the morning, before my coffee."
-     },
-     {
-      "it": "Purtroppo la Serenità è finita. Il fornitore la porta giovedì prossimo.",
-      "en": "Unfortunately the Serenity is sold out. The supplier is bringing more next Thursday."
-     },
-     {
-      "it": "Ma della stessa marca abbiamo Calma e Buonumore. Vanno bene?",
-      "en": "But from the same brand we have Calm and Good Mood. Would those do?"
-     },
-     {
-      "it": "Cordiali saluti,",
-      "en": "Kind regards,"
-     },
-     {
-      "it": "Dottoressa Gallo",
-      "en": "Dr Gallo"
-     }
-    ]
-   },
-   {
-    "who": "Da: Franco Bertolino – A: Farmacia San Savino",
-    "s": [
-     {
-      "it": "Gentile dottoressa,",
-      "en": "Dear Doctor,"
-     },
-     {
-      "it": "ho chiesto a mia moglie.",
-      "en": "I asked my wife."
-     },
-     {
-      "it": "Calma no: mia moglie dice che quando qualcuno le dice calma, lei diventa più nervosa.",
-      "en": "Not Calm: my wife says that when someone tells her to calm down, she gets more on edge."
-     },
-     {
-      "it": "Buonumore no: ha un sapore di arancia, e lei odia l'arancia.",
-      "en": "Not Good Mood: it tastes of orange, and she hates orange."
-     },
-     {
-      "it": "Mia moglie vuole solo Serenità.",
-      "en": "My wife only wants Serenity."
-     },
-     {
-      "it": "Ieri sera ha bevuto una camomilla normale.",
-      "en": "Last night she drank an ordinary camomile tea."
-     },
-     {
-      "it": "Alle due di notte ha pulito il forno. Alle tre ha telefonato a sua sorella a Torino.",
-      "en": "At two in the morning she cleaned the oven. At three she phoned her sister in Turin."
-     },
-     {
-      "it": "Senza Serenità, in questa casa non c'è serenità.",
-      "en": "Without Serenity, there's no serenity in this house."
-     },
-     {
-      "it": "Franco",
-      "en": "Franco"
-     }
-    ]
-   },
-   {
-    "who": "Da: Farmacia San Savino – A: Franco Bertolino",
-    "s": [
-     {
-      "it": "Gentile signor Bertolino,",
-      "en": "Dear Mr Bertolino,"
-     },
-     {
-      "it": "ho capito. Ho ordinato tre confezioni di Serenità: due per lei e una per me.",
-      "en": "Understood. I've ordered three boxes of Serenity: two for you and one for me."
-     },
-     {
-      "it": "Arrivano giovedì.",
-      "en": "They arrive on Thursday."
-     },
-     {
-      "it": "Fino a giovedì, però, le consiglio un altro prodotto. Si chiama Pazienza.",
-      "en": "Until Thursday, though, I recommend another product. It's called Patience."
-     },
-     {
-      "it": "Non è una tisana e non è in farmacia. Ma è gratis.",
-      "en": "It's not a herbal tea and it's not sold in pharmacies. But it's free."
-     },
-     {
-      "it": "Cordiali saluti,",
-      "en": "Kind regards,"
-     },
-     {
-      "it": "Silvia Gallo",
-      "en": "Silvia Gallo"
-     }
-    ]
-   }
-  ],
-  "glossary": [
-   {
-    "it": "l'oggetto",
-    "en": "the subject line"
-   },
-   {
-    "it": "la confezione",
-    "en": "the box, the pack"
-   },
-   {
-    "it": "nervosa",
-    "en": "on edge, irritable"
-   },
-   {
-    "it": "purtroppo",
-    "en": "unfortunately"
-   },
-   {
-    "it": "le consiglio",
-    "en": "I recommend (to you, formal)"
-   },
-   {
-    "it": "il sonno",
-    "en": "sleep"
-   },
-   {
-    "it": "la tisana",
-    "en": "the herbal tea"
-   },
-   {
-    "it": "lo scaffale",
-    "en": "the shelf"
-   },
-   {
-    "it": "la cassa",
-    "en": "the till"
-   },
-   {
-    "it": "e io neanche",
-    "en": "and neither do I"
-   },
-   {
-    "it": "il fornitore",
-    "en": "the supplier"
-   },
-   {
-    "it": "la marca",
-    "en": "the brand"
-   },
-   {
-    "it": "odia",
-    "en": "she hates"
-   },
-   {
-    "it": "la pazienza",
-    "en": "patience"
-   },
-   {
-    "it": "gratis",
-    "en": "free (of charge)"
-   }
-  ],
-  "questions": [
-   {
-    "q": "Che cosa capisce la dottoressa dalla prima email?",
-    "o": [
-     "Che la moglie ha un problema emotivo",
-     "Che il signore vuole un buon libro per la moglie",
-     "Che il signore cerca un medico"
-    ],
-    "a": "Che la moglie ha un problema emotivo"
-   },
-   {
-    "q": "Perché la dottoressa non capisce subito?",
-    "o": [
-     "Ha letto l'email prima del caffè",
-     "Non conosce la tisana Serenità",
-     "L'email del signore è in dialetto piemontese"
-    ],
-    "a": "Ha letto l'email prima del caffè"
-   },
-   {
-    "q": "Perché il signor Bertolino ha bisogno della tisana anche per sé?",
-    "o": [
-     "Se lei non dorme, lui non dorme",
-     "Lui beve la tisana ogni mattina prima del caffè",
-     "La vuole regalare alla dottoressa"
-    ],
-    "a": "Se lei non dorme, lui non dorme"
-   },
-   {
-    "q": "Perché la moglie non vuole la tisana Calma?",
-    "o": [
-     "Il nome la rende più nervosa",
-     "Ha un sapore di arancia, e lei la odia",
-     "Costa troppo"
-    ],
-    "a": "Il nome la rende più nervosa"
-   },
-   {
-    "q": "Che cosa vuole dire la dottoressa con Pazienza, alla fine?",
-    "o": [
-     "Il signore deve aspettare giovedì con calma",
-     "C'è una nuova tisana in offerta",
-     "La moglie deve andare dal medico"
-    ],
-    "a": "Il signore deve aspettare giovedì con calma"
-   }
-  ]
- },
- {
-  "id": "r-a1-08",
-  "level": "A1",
-  "title": "Saluti dalle Dolomiti",
-  "en": "Greetings from the Dolomites",
-  "topic": "nature",
-  "genre": "postcards",
-  "minutes": 5,
-  "blurb": "Six postcards from a hiking week in the Dolomites, sent to a grandmother in Ferrara, as the weather has other plans.",
-  "body": [
-   {
-    "who": "Cartolina 1 – Alpe di Siusi",
-    "s": [
-     {
-      "it": "Cara nonna,",
-      "en": "Dear Nonna,"
-     },
-     {
-      "it": "eccomi in montagna! Oggi c'è un sole incredibile e il cielo è blu, come nella foto.",
-      "en": "here I am in the mountains! Today the sun is incredible and the sky is blue, like in the picture."
-     },
-     {
-      "it": "Camminiamo sei ore tra mucche e fiori. Le mucche hanno le campane e sono molto rumorose.",
-      "en": "We walk for six hours among cows and flowers. The cows wear bells and are very noisy."
-     },
-     {
-      "it": "Sono felice e ho le gambe stanche.",
-      "en": "I'm happy and my legs are tired."
-     },
-     {
-      "it": "Un bacio, Agnese",
-      "en": "A kiss, Agnese"
-     }
-    ]
-   },
-   {
-    "who": "Cartolina 2 – Rifugio Puez",
-    "s": [
-     {
-      "it": "Cara nonna,",
-      "en": "Dear Nonna,"
-     },
-     {
-      "it": "oggi il cielo è bianco. Ci sono nuvole, ma non piove.",
-      "en": "today the sky is white. There are clouds, but it isn't raining."
-     },
-     {
-      "it": "Dormiamo in un rifugio a duemila quattrocento metri.",
-      "en": "We're sleeping in a mountain hut at two thousand four hundred metres."
-     },
-     {
-      "it": "In camera ci sono dodici persone. Un signore di Monaco russa come un trattore.",
-      "en": "There are twelve people in the room. A man from Munich snores like a tractor."
-     },
-     {
-      "it": "Per cena c'è polenta con i funghi. Il gestore dice che domani piove un po'.",
-      "en": "For dinner there's polenta with mushrooms. The hut keeper says it'll rain a little tomorrow."
-     },
-     {
-      "it": "Agnese",
-      "en": "Agnese"
-     }
-    ]
-   },
-   {
-    "who": "Cartolina 3 – Colfosco",
-    "s": [
-     {
-      "it": "Nonna,",
-      "en": "Nonna,"
-     },
-     {
-      "it": "piove. Piove da ieri sera.",
-      "en": "it's raining. It's been raining since last night."
-     },
-     {
-      "it": "Il mio impermeabile è impermeabile solo di nome.",
-      "en": "My raincoat is waterproof in name only."
-     },
-     {
-      "it": "Le scarpe fanno un rumore strano, ciac ciac, a ogni passo.",
-      "en": "My boots make a strange noise, squelch squelch, at every step."
-     },
-     {
-      "it": "Il paesaggio? Non lo so. Vedo solo la schiena di Luca, davanti a me.",
-      "en": "The scenery? No idea. All I can see is Luca's back, in front of me."
-     },
-     {
-      "it": "Agnese",
-      "en": "Agnese"
-     }
-    ]
-   },
-   {
-    "who": "Cartolina 4 – Passo Gardena",
-    "s": [
-     {
-      "it": "Nonna,",
-      "en": "Nonna,"
-     },
-     {
-      "it": "oggi nevica. Sì, nevica. Siamo a luglio.",
-      "en": "today it's snowing. Yes, snowing. It's July."
-     },
-     {
-      "it": "Il gestore del rifugio dice che è normale. Lui è calmo e mangia lo speck.",
-      "en": "The hut keeper says it's normal. He's calm and eats speck."
-     },
-     {
-      "it": "Noi non siamo calmi. Abbiamo solo magliette e pantaloncini.",
-      "en": "We are not calm. We only have T-shirts and shorts."
-     },
-     {
-      "it": "Luca ha comprato un cappello di lana con una renna sopra. Diciotto euro.",
-      "en": "Luca bought a wool hat with a reindeer on it. Eighteen euros."
-     },
-     {
-      "it": "A.",
-      "en": "A."
-     }
-    ]
-   },
-   {
-    "who": "Cartolina 5 – Ancora Passo Gardena",
-    "s": [
-     {
-      "it": "Nonna,",
-      "en": "Nonna,"
-     },
-     {
-      "it": "la strada è chiusa. Restiamo nel rifugio due giorni.",
-      "en": "The road is closed. We're staying in the hut for two days."
-     },
-     {
-      "it": "Giochiamo a carte con tre ragazzi olandesi e con il signore di Monaco. Sì, lui. Russa anche qui.",
-      "en": "We play cards with three Dutch guys and the man from Munich. Yes, him. He snores here too."
-     },
-     {
-      "it": "La moglie del gestore fa uno strudel buonissimo. Ne mangio quattro fette al giorno.",
-      "en": "The hut keeper's wife makes a wonderful strudel. I eat four slices a day."
-     },
-     {
-      "it": "Non è la vacanza del programma, ma non è male.",
-      "en": "It's not the holiday on the itinerary, but it isn't bad."
-     },
-     {
-      "it": "A.",
-      "en": "A."
-     }
-    ]
-   },
-   {
-    "who": "Cartolina 6 – Stazione di Bolzano",
-    "s": [
-     {
-      "it": "Cara nonna,",
-      "en": "Dear Nonna,"
-     },
-     {
-      "it": "oggi è l'ultimo giorno. E oggi, naturalmente, c'è il sole.",
-      "en": "today is the last day. And today, of course, the sun is out."
-     },
-     {
-      "it": "Il cielo è blu, le montagne sono bianche e bellissime. Io le guardo dal treno.",
-      "en": "The sky is blue, the mountains are white and beautiful. I'm looking at them from the train."
-     },
-     {
-      "it": "PS: Ho comprato queste cartoline il primo giorno. In tutte le foto c'è il sole.",
-      "en": "PS: I bought these postcards on the first day. The sun is shining in every photo."
-     },
-     {
-      "it": "Le cartoline sono bugiarde, ma lo strudel no. Ho la ricetta. Domenica lo facciamo insieme.",
-      "en": "The postcards are liars, but the strudel isn't. I've got the recipe. On Sunday we'll make it together."
-     },
-     {
-      "it": "Tua Agnese",
-      "en": "Your Agnese"
-     },
-     {
-      "it": "PPS: Il cappello con la renna adesso è mio. Luca dice che è un prestito. Non è vero.",
-      "en": "PPS: The reindeer hat is mine now. Luca says it's a loan. It isn't."
-     }
-    ]
-   }
-  ],
-  "glossary": [
-   {
-    "it": "eccomi",
-    "en": "here I am"
-   },
-   {
-    "it": "le campane",
-    "en": "the bells"
-   },
-   {
-    "it": "il rifugio",
-    "en": "the mountain hut"
-   },
-   {
-    "it": "russa",
-    "en": "snores"
-   },
-   {
-    "it": "l'impermeabile",
-    "en": "the raincoat; (adj.) waterproof"
-   },
-   {
-    "it": "a ogni passo",
-    "en": "at every step"
-   },
-   {
-    "it": "la schiena",
-    "en": "the back (of the body)"
-   },
-   {
-    "it": "nevica",
-    "en": "it's snowing"
-   },
-   {
-    "it": "il gestore",
-    "en": "the manager, the hut keeper"
-   },
-   {
-    "it": "i pantaloncini",
-    "en": "shorts"
-   },
-   {
-    "it": "la renna",
-    "en": "the reindeer"
-   },
-   {
-    "it": "la fetta",
-    "en": "the slice"
-   },
-   {
-    "it": "bugiarde",
-    "en": "liars, lying"
-   }
-  ],
-  "questions": [
-   {
-    "q": "Com'è il tempo il primo giorno?",
-    "o": [
-     "C'è il sole",
-     "Nuvoloso, ma non piove",
-     "Piove tutto il giorno"
-    ],
-    "a": "C'è il sole"
-   },
-   {
-    "q": "Perché Agnese non vede il paesaggio il terzo giorno?",
-    "o": [
-     "Vede solo la schiena di Luca",
-     "È in camera a dormire",
-     "C'è troppa neve e la strada è chiusa"
-    ],
-    "a": "Vede solo la schiena di Luca"
-   },
-   {
-    "q": "Perché i ragazzi non sono calmi al Passo Gardena?",
-    "o": [
-     "Non hanno vestiti per il freddo",
-     "Il gestore non ha lo speck",
-     "Hanno perso la strada"
-    ],
-    "a": "Non hanno vestiti per il freddo"
-   },
-   {
-    "q": "Che cosa porta a casa Agnese di positivo?",
-    "o": [
-     "Una ricetta e un cappello",
-     "Delle foto con il sole",
-     "Una nuova macchina fotografica"
-    ],
-    "a": "Una ricetta e un cappello"
-   },
-   {
-    "q": "Perché Agnese dice che le cartoline sono bugiarde?",
-    "o": [
-     "In tutte le foto c'è il sole",
-     "Costano troppo al rifugio",
-     "Hanno nomi di posti sbagliati"
-    ],
-    "a": "In tutte le foto c'è il sole"
-   }
-  ]
- },
- {
-  "id": "r-a1-09",
-  "level": "A1",
-  "title": "Nonno, ti vedo!",
-  "en": "Grandad, I Can See You!",
-  "topic": "tech",
-  "genre": "dialogue",
-  "minutes": 5,
-  "blurb": "In Lecce, Nonno Uccio tries his first video call to his granddaughter in Berlin. The phone has other ideas.",
-  "body": [
-   {
-    "who": "Nonno Uccio",
-    "s": [
-     {
-      "it": "Pronto? Pronto? Giulia, mi senti?",
-      "en": "Hello? Hello? Giulia, can you hear me?"
-     }
-    ]
-   },
-   {
-    "who": "Giulia",
-    "s": [
-     {
-      "it": "Sì, nonno, ti sento. Ma non ti vedo. Vedo un soffitto bianco con una lampada.",
-      "en": "Yes, Grandad, I can hear you. But I can't see you. I can see a white ceiling with a lamp."
-     }
-    ]
-   },
-   {
-    "who": "Nonno Uccio",
-    "s": [
-     {
-      "it": "Quella è la lampada della cucina. È nuova, ti piace?",
-      "en": "That's the kitchen lamp. It's new, do you like it?"
-     }
-    ]
-   },
-   {
-    "who": "Giulia",
-    "s": [
-     {
-      "it": "È bella. Ma io voglio vedere te. Gira il telefono.",
-      "en": "It's nice. But I want to see you. Turn the phone round."
-     }
-    ]
-   },
-   {
-    "who": "Nonno Uccio",
-    "s": [
-     {
-      "it": "Così?",
-      "en": "Like this?"
-     }
-    ]
-   },
-   {
-    "who": "Giulia",
-    "s": [
-     {
-      "it": "Adesso vedo un orecchio. Un orecchio enorme.",
-      "en": "Now I can see an ear. A huge ear."
-     }
-    ]
-   },
-   {
-    "who": "Nonno Uccio",
-    "s": [
-     {
-      "it": "Per forza, il telefono è sull'orecchio. Io parlo così da settant'anni.",
-      "en": "Of course, the phone is on my ear. I've been talking like this for seventy years."
-     }
-    ]
-   },
-   {
-    "who": "Giulia",
-    "s": [
-     {
-      "it": "Nonno, è una videochiamata. Il telefono va davanti alla faccia, non sull'orecchio.",
-      "en": "Grandad, it's a video call. The phone goes in front of your face, not on your ear."
-     }
-    ]
-   },
-   {
-    "who": "Nonno Uccio",
-    "s": [
-     {
-      "it": "Davanti alla faccia? E come ti sento?",
-      "en": "In front of my face? Then how do I hear you?"
-     }
-    ]
-   },
-   {
-    "who": "Giulia",
-    "s": [
-     {
-      "it": "Mi senti benissimo, fidati.",
-      "en": "You'll hear me perfectly, trust me."
-     }
-    ]
-   },
-   {
-    "who": "Nonno Uccio",
-    "s": [
-     {
-      "it": "Va bene. Ecco. Mi vedi adesso?",
-      "en": "All right. There. Can you see me now?"
-     }
-    ]
-   },
-   {
-    "who": "Giulia",
-    "s": [
-     {
-      "it": "Sì! Ma… nonno, perché hai le orecchie da coniglio?",
-      "en": "Yes! But… Grandad, why do you have bunny ears?"
-     }
-    ]
-   },
-   {
-    "who": "Nonno Uccio",
-    "s": [
-     {
-      "it": "Cosa? Io non ho le orecchie da coniglio.",
-      "en": "What? I don't have bunny ears."
-     }
-    ]
-   },
-   {
-    "who": "Giulia",
-    "s": [
-     {
-      "it": "Sullo schermo sì. E anche i baffi. È un filtro. Hai toccato qualcosa.",
-      "en": "On the screen you do. And whiskers too. It's a filter. You've touched something."
-     }
-    ]
-   },
-   {
-    "who": "Nonno Uccio",
-    "s": [
-     {
-      "it": "Addolorata! Vieni qui, presto!",
-      "en": "Addolorata! Come here, quick!"
-     }
-    ]
-   },
-   {
-    "who": "Giulia",
-    "s": [
-     {
-      "it": "Chi è Addolorata?",
-      "en": "Who's Addolorata?"
-     }
-    ]
-   },
-   {
-    "who": "Nonno Uccio",
-    "s": [
-     {
-      "it": "La vicina. Ha ottantadue anni, ma usa il telefono meglio di te.",
-      "en": "The neighbour. She's eighty-two, but she uses the phone better than you."
-     }
-    ]
-   },
-   {
-    "who": "Signora Addolorata",
-    "s": [
-     {
-      "it": "Ciao, Giulia, sono Addolorata. Un momento. Ecco fatto, niente coniglio.",
-      "en": "Hi, Giulia, I'm Addolorata. One moment. There you go, no more bunny."
-     }
-    ]
-   },
-   {
-    "who": "Giulia",
-    "s": [
-     {
-      "it": "Signora, ma lei come fa?",
-      "en": "Signora, how do you do it?"
-     }
-    ]
-   },
-   {
-    "who": "Signora Addolorata",
-    "s": [
-     {
-      "it": "Mio figlio abita in Australia. Ogni domenica facciamo una videochiamata.",
-      "en": "My son lives in Australia. Every Sunday we have a video call."
-     },
-     {
-      "it": "Io sono a pranzo, lui è a letto. Funziona benissimo.",
-      "en": "I'm having lunch, he's in bed. It works perfectly."
-     }
-    ]
-   },
-   {
-    "who": "Giulia",
-    "s": [
-     {
-      "it": "Grazie, signora! Nonno, finalmente ti vedo. Che cosa mangi?",
-      "en": "Thank you, signora! Grandad, I can finally see you. What are you eating?"
-     }
-    ]
-   },
-   {
-    "who": "Nonno Uccio",
-    "s": [
-     {
-      "it": "Un pasticciotto. Guarda: è ancora caldo.",
-      "en": "A pasticciotto. Look: it's still warm."
-     },
-     {
-      "it": "A Berlino ci sono i pasticciotti?",
-      "en": "Do they have pasticciotti in Berlin?"
-     }
-    ]
-   },
-   {
-    "who": "Giulia",
-    "s": [
-     {
-      "it": "No, nonno. Qui ci sono solo i Berliner.",
-      "en": "No, Grandad. Here they only have Berliners."
-     }
-    ]
-   },
-   {
-    "who": "Nonno Uccio",
-    "s": [
-     {
-      "it": "Poverina. Che tristezza.",
-      "en": "Poor thing. How sad."
-     },
-     {
-      "it": "Aspetta, ti faccio vedere il limone in giardino. Quest'anno ha trenta limoni.",
-      "en": "Wait, let me show you the lemon tree in the garden. This year it has thirty lemons."
-     }
-    ]
-   },
-   {
-    "who": "Giulia",
-    "s": [
-     {
-      "it": "Nonno, vedo solo il cielo. E un piccione.",
-      "en": "Grandad, I can only see the sky. And a pigeon."
-     }
-    ]
-   },
-   {
-    "who": "Nonno Uccio",
-    "s": [
-     {
-      "it": "Quello è Totò. Viene tutti i giorni a mangiare il pane.",
-      "en": "That's Totò. He comes every day to eat bread."
-     },
-     {
-      "it": "Allora, quando torni a Lecce?",
-      "en": "So, when are you coming back to Lecce?"
-     }
-    ]
-   },
-   {
-    "who": "Giulia",
-    "s": [
-     {
-      "it": "A Natale. Ti voglio bene, nonno. Adesso premi il bottone rosso.",
-      "en": "At Christmas. Love you, Grandad. Now press the red button."
-     }
-    ]
-   },
-   {
-    "s": [
-     {
-      "it": "Una settimana dopo, alle sette di mattina, a Berlino suona il telefono.",
-      "en": "A week later, at seven in the morning, the phone rings in Berlin."
-     }
-    ]
-   },
-   {
-    "who": "Giulia",
-    "s": [
-     {
-      "it": "Nonno? Sono le sette! Io dormo!",
-      "en": "Grandad? It's seven o'clock! I'm asleep!"
-     }
-    ]
-   },
-   {
-    "who": "Nonno Uccio",
-    "s": [
-     {
-      "it": "Lo so, lo so. Ma ti vedo benissimo. Niente coniglio, niente orecchio, niente lampada.",
-      "en": "I know, I know. But I can see you perfectly. No bunny, no ear, no lamp."
-     },
-     {
-      "it": "Volevo solo controllare se funziona ancora.",
-      "en": "I just wanted to check it still works."
-     },
-     {
-      "it": "Domani alle sette ti chiamo di nuovo. Anche Addolorata vuole salutare.",
-      "en": "Tomorrow at seven I'll call you again. Addolorata wants to say hello too."
-     }
-    ]
-   }
-  ],
-  "glossary": [
-   {
-    "it": "mi senti?",
-    "en": "can you hear me?"
-   },
-   {
-    "it": "il soffitto",
-    "en": "the ceiling"
-   },
-   {
-    "it": "gira il telefono",
-    "en": "turn the phone round"
-   },
-   {
-    "it": "per forza",
-    "en": "of course, obviously"
-   },
-   {
-    "it": "la videochiamata",
-    "en": "the video call"
-   },
-   {
-    "it": "fidati",
-    "en": "trust me"
-   },
-   {
-    "it": "le orecchie da coniglio",
-    "en": "bunny ears"
-   },
-   {
-    "it": "i baffi",
-    "en": "whiskers; moustache"
-   },
-   {
-    "it": "lo schermo",
-    "en": "the screen"
-   },
-   {
-    "it": "la vicina",
-    "en": "the (female) neighbour"
-   },
-   {
-    "it": "ecco fatto",
-    "en": "there you go, done"
-   },
-   {
-    "it": "il pasticciotto",
-    "en": "a custard-filled pastry from Lecce"
-   },
-   {
-    "it": "poverina",
-    "en": "poor thing"
-   },
-   {
-    "it": "premi il bottone",
-    "en": "press the button"
-   }
-  ],
-  "questions": [
-   {
-    "q": "Perché all'inizio Giulia vede il soffitto?",
-    "o": [
-     "Il nonno tiene male il telefono",
-     "La lampada nuova della cucina è troppo forte",
-     "La connessione non funziona"
-    ],
-    "a": "Il nonno tiene male il telefono"
-   },
-   {
-    "q": "Perché il nonno mette il telefono sull'orecchio?",
-    "o": [
-     "È un'abitudine di tutta la vita",
-     "Non sente bene",
-     "Giulia gli dice di farlo"
-    ],
-    "a": "È un'abitudine di tutta la vita"
-   },
-   {
-    "q": "Che cosa pensa il nonno della signora Addolorata?",
-    "o": [
-     "Che è più brava di lui con il telefono",
-     "Che è troppo vecchia per la tecnologia",
-     "Che parla troppo"
-    ],
-    "a": "Che è più brava di lui con il telefono"
-   },
-   {
-    "q": "Che cosa pensa il nonno della vita di Giulia a Berlino?",
-    "o": [
-     "Per lui, a Berlino manca qualcosa di buono",
-     "Per lui, a Berlino si mangia meglio",
-     "Vuole andare a Berlino a Natale"
-    ],
-    "a": "Per lui, a Berlino manca qualcosa di buono"
-   },
-   {
-    "q": "Che problema nuovo c'è alla fine?",
-    "o": [
-     "Il nonno chiama troppo presto la mattina",
-     "Il nonno non sa più usare il telefono",
-     "Giulia non risponde mai alle videochiamate"
-    ],
-    "a": "Il nonno chiama troppo presto la mattina"
-   }
-  ]
- },
- {
-  "id": "r-a1-10",
-  "level": "A1",
-  "title": "La voce di Ballarò",
-  "en": "The Voice of Ballarò",
-  "topic": "society",
-  "genre": "interview",
-  "minutes": 5,
-  "blurb": "A student radio interviews the loudest fishmonger at Palermo's Ballarò market, and he saves his biggest secret for last.",
-  "body": [
-   {
-    "who": "Radio Ateneo",
-    "s": [
-     {
-      "it": "Buongiorno! Siamo al mercato di Ballarò, a Palermo, con il signor Rosario Lo Bue.",
-      "en": "Good morning! We're at Ballarò market in Palermo with Mr Rosario Lo Bue."
-     },
-     {
-      "it": "Tutti qui lo chiamano Saro. Saro, che cosa vende?",
-      "en": "Everyone here calls him Saro. Saro, what do you sell?"
-     }
-    ]
-   },
-   {
-    "who": "Saro",
-    "s": [
-     {
-      "it": "Pesce. Solo pesce fresco. Sarde, polpo, pesce spada, gamberi rossi di Mazara.",
-      "en": "Fish. Only fresh fish. Sardines, octopus, swordfish, red prawns from Mazara."
-     },
-     {
-      "it": "Il pesce arriva alle cinque di mattina. Alle due di pomeriggio non c'è più.",
-      "en": "The fish arrives at five in the morning. By two in the afternoon it's gone."
-     }
-    ]
-   },
-   {
-    "who": "Radio Ateneo",
-    "s": [
-     {
-      "it": "Da quanti anni lavora qui?",
-      "en": "How many years have you worked here?"
-     }
-    ]
-   },
-   {
-    "who": "Saro",
-    "s": [
-     {
-      "it": "Da quarantadue anni. Prima di me qui ha lavorato mio padre, e prima di lui mio nonno.",
-      "en": "For forty-two years. Before me, my father worked here, and before him my grandfather."
-     },
-     {
-      "it": "Questo banco ha cento anni. Il coltello ha cinquant'anni.",
-      "en": "This stall is a hundred years old. The knife is fifty."
-     }
-    ]
-   },
-   {
-    "who": "Radio Ateneo",
-    "s": [
-     {
-      "it": "Lei grida molto. Perché?",
-      "en": "You shout a lot. Why?"
-     }
-    ]
-   },
-   {
-    "who": "Saro",
-    "s": [
-     {
-      "it": "Si chiama abbanniata. Qui al mercato non grida solo Saro: gridano tutti.",
-      "en": "It's called abbanniata. Here at the market it isn't only Saro who shouts: everyone does."
-     },
-     {
-      "it": "Io canto il mio pesce. Il cliente sente la voce e viene.",
-      "en": "I sing my fish. The customer hears the voice and comes over."
-     },
-     {
-      "it": "Una volta un turista giapponese ha registrato la mia voce. Adesso è la suoneria del suo telefono.",
-      "en": "Once a Japanese tourist recorded my voice. Now it's his phone ringtone."
-     },
-     {
-      "it": "Ogni Natale mi manda una cartolina da Osaka. Io non rispondo: non scrivo, io grido.",
-      "en": "Every Christmas he sends me a postcard from Osaka. I don't reply: I don't write, I shout."
-     }
-    ]
-   },
-   {
-    "who": "Radio Ateneo",
-    "s": [
-     {
-      "it": "Può fare un esempio per i nostri ascoltatori?",
-      "en": "Can you give an example for our listeners?"
-     }
-    ]
-   },
-   {
-    "who": "Saro",
-    "s": [
-     {
-      "it": "Certo. Sarde fresche, sarde! Vivo è il pesce, vivo! Chi non compra oggi, piange domani!",
-      "en": "Of course. Fresh sardines, sardines! Alive, this fish, alive! Whoever doesn't buy today cries tomorrow!"
-     },
-     {
-      "it": "Ecco. Tre signore sono già qui.",
-      "en": "There. Three ladies are already here."
-     }
-    ]
-   },
-   {
-    "who": "Radio Ateneo",
-    "s": [
-     {
-      "it": "Incredibile. E il suo medico che cosa dice?",
-      "en": "Incredible. And what does your doctor say?"
-     }
-    ]
-   },
-   {
-    "who": "Saro",
-    "s": [
-     {
-      "it": "Il medico dice: Saro, meno grida. Ma il medico compra il pesce da me, quindi grida anche lui.",
-      "en": "The doctor says: Saro, less shouting. But the doctor buys his fish from me, so he shouts too."
-     }
-    ]
-   },
-   {
-    "who": "Radio Ateneo",
-    "s": [
-     {
-      "it": "E i giovani? I suoi figli lavorano al mercato?",
-      "en": "And young people? Do your children work at the market?"
-     }
-    ]
-   },
-   {
-    "who": "Saro",
-    "s": [
-     {
-      "it": "Mia figlia è ingegnere a Milano. Mio figlio fa il cantante a Catania.",
-      "en": "My daughter is an engineer in Milan. My son is a singer in Catania."
-     },
-     {
-      "it": "La voce è mia, vede? Ma lui canta d'amore, non di sarde.",
-      "en": "He got the voice from me, see? But he sings about love, not about sardines."
-     }
-    ]
-   },
-   {
-    "who": "Radio Ateneo",
-    "s": [
-     {
-      "it": "Un'ultima domanda. Qual è il suo pesce preferito? Come lo cucina?",
-      "en": "One last question. What's your favourite fish? How do you cook it?"
-     }
-    ]
-   },
-   {
-    "who": "Saro",
-    "s": [
-     {
-      "it": "Ah. Questa è una domanda difficile.",
-      "en": "Ah. That's a difficult question."
-     },
-     {
-      "it": "Vuole la verità? Io il pesce non lo mangio. Non mi piace.",
-      "en": "Do you want the truth? I don't eat fish. I don't like it."
-     }
-    ]
-   },
-   {
-    "who": "Radio Ateneo",
-    "s": [
-     {
-      "it": "Cosa? Dopo quarantadue anni?",
-      "en": "What? After forty-two years?"
-     }
-    ]
-   },
-   {
-    "who": "Saro",
-    "s": [
-     {
-      "it": "Quarantadue anni di pesce tutti i giorni, alle cinque di mattina. Basta così.",
-      "en": "Forty-two years of fish every day at five in the morning. That's enough."
-     },
-     {
-      "it": "La domenica io mangio una bella bistecca. Ma non lo dica a nessuno.",
-      "en": "On Sundays I eat a nice steak. But don't tell anyone."
-     }
-    ]
-   },
-   {
-    "who": "Radio Ateneo",
-    "s": [
-     {
-      "it": "Saro, siamo alla radio.",
-      "en": "Saro, we're on the radio."
-     }
-    ]
-   },
-   {
-    "who": "Saro",
-    "s": [
-     {
-      "it": "Mamma mia. Allora gridiamo un'altra cosa. Sarde fresche, sarde!",
-      "en": "Good grief. Then let's shout something else. Fresh sardines, sardines!"
-     }
-    ]
-   }
-  ],
-  "glossary": [
-   {
-    "it": "il pesce spada",
-    "en": "swordfish"
-   },
-   {
-    "it": "i gamberi rossi",
-    "en": "red prawns"
-   },
-   {
-    "it": "non c'è più",
-    "en": "it's gone, there's none left"
-   },
-   {
-    "it": "il banco",
-    "en": "the market stall"
-   },
-   {
-    "it": "grida",
-    "en": "you shout, he shouts"
-   },
-   {
-    "it": "l'abbanniata",
-    "en": "the traditional sung cry of Palermo market sellers"
-   },
-   {
-    "it": "ha registrato",
-    "en": "recorded"
-   },
-   {
-    "it": "la suoneria",
-    "en": "the ringtone"
-   },
-   {
-    "it": "gli ascoltatori",
-    "en": "the listeners"
-   },
-   {
-    "it": "chi non compra oggi, piange domani",
-    "en": "whoever doesn't buy today cries tomorrow"
-   },
-   {
-    "it": "l'ingegnere",
-    "en": "the engineer"
-   },
-   {
-    "it": "basta così",
-    "en": "that's enough"
-   },
-   {
-    "it": "non lo dica a nessuno",
-    "en": "don't tell anyone (formal)"
-   }
-  ],
-  "questions": [
-   {
-    "q": "Perché Saro grida al mercato?",
-    "o": [
-     "Per attirare i clienti",
-     "Perché non sente bene",
-     "Perché il medico lo consiglia"
-    ],
-    "a": "Per attirare i clienti"
-   },
-   {
-    "q": "Che cosa succede quando Saro fa l'esempio per la radio?",
-    "o": [
-     "Arrivano subito delle clienti",
-     "Il turista giapponese telefona",
-     "Il medico si arrabbia"
-    ],
-    "a": "Arrivano subito delle clienti"
-   },
-   {
-    "q": "Perché il medico, secondo Saro, non è un buon esempio?",
-    "o": [
-     "Anche lui grida al mercato",
-     "Non mangia mai pesce",
-     "Non ha una bella voce"
-    ],
-    "a": "Anche lui grida al mercato"
-   },
-   {
-    "q": "Che cosa ha preso il figlio di Saro dal padre?",
-    "o": [
-     "La voce",
-     "Il coltello",
-     "Il banco del pesce"
-    ],
-    "a": "La voce"
-   },
-   {
-    "q": "Perché Saro alla fine dice «Mamma mia»?",
-    "o": [
-     "Tutti hanno sentito il suo segreto",
-     "Ha finito le sarde",
-     "Il medico è arrivato al banco con tre signore"
-    ],
-    "a": "Tutti hanno sentito il suo segreto"
-   }
-  ]
- }
+    "narrator": "m",
+    "speakers": {
+      "Radio Ateneo": "f",
+      "Saro": "m"
+    }
+  }
 ]

@@ -650,7 +650,11 @@ body.focus .toast { bottom: calc(16px + env(safe-area-inset-bottom, 0px)); }
 }
 
 /* Listening player */
-.player { display: flex; align-items: center; gap: 12px; padding: 12px 14px; }
+.player { display: flex; flex-direction: column; gap: 10px; padding: 12px 14px; }
+.player-row { display: flex; align-items: center; gap: 12px; }
+.player-opts { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+.player-opts .seg button { min-width: 48px; }
+.player-side .reader-tools { margin-top: 10px; }
 .play-btn { width: 52px; height: 52px; flex: none; display: grid; place-items: center; border-radius: 50%; border: 0; background: var(--accent); color: var(--accent-ink); cursor: pointer; }
 .play-btn svg { width: 22px; height: 22px; }
 .play-btn:hover { filter: brightness(1.06); }

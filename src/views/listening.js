@@ -1,10 +1,9 @@
 // Listening: hear it first, answer, then read the transcript.
-import { S, esc, ICON, setEntry, remember, speakAll, stopSpeaking, TOPICS, shuffle, lsGet, lsSet } from "../core.js";
+import { S, esc, ICON, setEntry, remember, TOPICS, shuffle, lsGet } from "../core.js";
 import { ensure } from "../data.js";
 import { blocksHTML, plainLines } from "./texts.js";
 import { wireReader } from "./reading.js";
-
-const SLOW = 0.8;
+import { playerHTML, wirePlayer } from "./player.js";
 
 export async function viewListening(app, v, alive) {
   const all = await ensure("listening");
@@ -33,55 +32,15 @@ export async function viewListening(app, v, alive) {
         <article class="reader">${blocksHTML(l.body, `#/listen/${l.id}`, l.title, !!S.pref.showEn, voiceOf)}</article>
       </details>
     </div>
-    <aside class="l-aside"><div class="l-side player-side">
-      <section class="panel player" aria-label="Audio player">
-        <button class="play-btn" data-play aria-label="Play">${ICON.play}</button>
-        <div class="player-main">
-          <span class="small player-pos" data-pos aria-live="polite">${lines.length} lines · about ${l.minutes} min</span>
-          <span class="bar" aria-hidden="true"><span class="k" data-prog style="width:0"></span></span>
-        </div>
-        <button class="icon-btn" data-back aria-label="Back one line" title="Back one line">${ICON.replay}</button>
-        <button class="btn quiet small" data-slow aria-pressed="false" title="Play slower">${SLOW}×</button>
-        <button class="btn quiet small" data-shadow aria-pressed="false" title="Pause after each line so you can repeat it">Repeat</button>
-      </section>
-    </div></aside></div>`;
+    <aside class="l-aside"><div class="l-side player-side">${playerHTML(`About ${l.minutes} min`)}</div></aside></div>`;
 
-  wireReader(app, lines, () => {});
-
-  // Player: plays line by line from `at`; pausing keeps the place.
-  // The place in the audio is kept per exercise, so a long piece can be finished later.
-  const posKey = "parlo.listen." + l.id;
-  let at = Math.min(lsGet(posKey, 0) || 0, lines.length - 1), playing = false, slow = false, shadow = false, stop = null;
-  const playBtn = app.querySelector("[data-play]"), pos = app.querySelector("[data-pos]"), prog = app.querySelector("[data-prog]");
-  const sents = () => [...app.querySelectorAll(".transcript .sent")];
-  const show = () => {
-    playBtn.innerHTML = playing ? ICON.pause : ICON.play;
-    playBtn.setAttribute("aria-label", playing ? "Pause" : at ? "Resume" : "Play");
-    prog.style.width = `${at / lines.length * 100}%`;
-    if (playing || at) pos.textContent = `${Math.min(at + 1, lines.length)} of ${lines.length}${Object.keys(l.speakers).length > 1 ? " · " + whoOf[Math.min(at, lines.length - 1)] : ""}`;
-    sents().forEach((s, i) => s.classList.toggle("speaking", playing && i === at));
-    lsSet(posKey, at);
-  };
-  const halt = () => { if (stop) { const s = stop; stop = null; s(); } };
+  wireReader(app);
   // Answers open once listening has started, so a stray tap before playing can't lock in an answer.
   const unlock = () => { app.querySelectorAll(".rq [data-lock]").forEach(b => { if (b.dataset.lock) { b.disabled = false; delete b.dataset.lock; } }); const h = app.querySelector("#qhint"); if (h) h.textContent = "Read them first, then listen. You can answer while it plays."; };
-  const start = () => {
-    unlock();
-    halt(); playing = true; const from = at;
-    // Repeat mode: after each line, a pause as long as the line, for the learner to say it.
-    const gap = shadow ? (i, ms) => { pos.textContent = "Your turn: say it"; return Math.round(ms * 1.1 + 700); } : null;
-    stop = speakAll(lines.slice(from), i => { at = from + i; show(); },
-      () => { if (!stop) return; stop = null; playing = false; at = 0; show(); pos.textContent = "Finished · play again?"; }, slow ? SLOW : 1, gap);
-    show();
-  };
-  const pause = () => { playing = false; halt(); stopSpeaking(); show(); };
-  if (at) show();
-  playBtn.onclick = () => playing ? pause() : start();
-  app.querySelector("[data-back]").onclick = () => { at = Math.max(0, at - 1); playing ? start() : show(); };
-  const slowBtn = app.querySelector("[data-slow]");
-  slowBtn.onclick = () => { slow = !slow; slowBtn.setAttribute("aria-pressed", slow); if (playing) start(); };
-  const shBtn = app.querySelector("[data-shadow]");
-  shBtn.onclick = () => { shadow = !shadow; shBtn.setAttribute("aria-pressed", shadow); if (playing) start(); };
+  // The place in the audio is kept per exercise, so a long piece can be finished later.
+  const many = Object.keys(l.speakers).length > 1;
+  wirePlayer(app, lines, { key: "parlo.listen." + l.id, idle: `About ${l.minutes} min`, who: i => many ? whoOf[i] : "", onStart: unlock });
+  const at = lsGet("parlo.listen." + l.id, 0);
 
   // Questions
   if (!st.done && !at) app.querySelectorAll(".rq [data-qo]").forEach(b => { b.disabled = true; b.dataset.lock = "1"; });

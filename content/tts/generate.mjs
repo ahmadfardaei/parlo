@@ -5,8 +5,9 @@ import os from "os";
 import { key, synth } from "./lib.mjs";
 const [femaleVoice, maleVoice] = process.argv.slice(2);
 if (!femaleVoice || !maleVoice) { console.log("Usage: node generate.mjs <femaleVoice> <maleVoice>"); process.exit(1); }
-// f2 and m2 are the extra voices used in listening exercises with more than two speakers.
-const k = key(), VOICE = { f: femaleVoice, m: maleVoice, f2: "it-IT-Chirp3-HD-Kore", m2: "it-IT-Chirp3-HD-Charon" };
+// f2–f4 and m2–m4 are the extra voices for texts with more characters (listening and reading).
+const k = key(), VOICE = { f: femaleVoice, m: maleVoice, f2: "it-IT-Chirp3-HD-Kore", m2: "it-IT-Chirp3-HD-Charon",
+  f3: "it-IT-Chirp3-HD-Leda", f4: "it-IT-Chirp3-HD-Gacrux", m3: "it-IT-Chirp3-HD-Puck", m4: "it-IT-Chirp3-HD-Orus" };
 const root = `${os.homedir()}/Desktop/parlo-audio`;
 for (const v of Object.keys(VOICE)) fs.mkdirSync(`${root}/${v}`, { recursive: true });
 const jobs = JSON.parse(fs.readFileSync(new URL("./jobs.json", import.meta.url))).filter(j => !fs.existsSync(`${root}/${j.v}/${j.h}.mp3`));
