@@ -1,8 +1,9 @@
-import { S, D, esc, rich, ICON, setEntry, shuffle, pick, say, lsGet, lsSet, remember, gf } from "../core.js";
+import { markPathWork, S, D, esc, rich, ICON, setEntry, shuffle, pick, say, lsGet, lsSet, remember, gf } from "../core.js";
 import { ensure } from "../data.js";
 import { PRON, TENSES } from "./unit.js";
 import { GTOPICS } from "./learn.js";
 import { sentHTML, starHTML } from "./texts.js";
+import { continueHTML } from "./path.js";
 import { answerHTML, wireAnswer, feedbackHTML } from "./check.js";
 
 const score = id => S.st["g:" + id] || null;
@@ -64,7 +65,7 @@ let drillLevel = lsGet("parlo.drillLevel", "A2");
 function missedHTML(items, log) {
   const miss = items.filter((_, k) => log[k] === false);
   if (!miss.length) return "";
-  return `<div class="missed"><p class="eyebrow">To look at again</p><ul>${miss.map(it => `<li><span class="it">${esc(it.q).replace("___", `<b>${esc(it.k === "mc" ? it.a : gf(it.a[0], it.io))}</b>`)}</span></li>`).join("")}</ul></div>`;
+  return `<div class="missed"><p class="eyebrow">To look at again</p><ul>${miss.map(it => { const a = `<b>${esc(it.k === "mc" ? it.a : gf(it.a[0], it.io))}</b>`; return `<li><span class="it">${it.q.includes("___") ? esc(it.q).replace("___", a) : `${esc(it.q)} → ${a}`}</span></li>`; }).join("")}</ul></div>`;
 }
 // Practice keeps its place, so leaving halfway and coming back picks up where you were.
 const posKey = id => "parlo.gp." + id;
@@ -93,13 +94,14 @@ function practice(app, g, mode, fresh) {
     <p class="eyebrow center">${mode === "drill" ? "Verb drill" : "Exercises"} · ${esc(g.title)}</p>${inner}`;
   const draw = () => {
     if (i >= items.length) {
-      if (mode === "practice") lsSet(posKey(g.id), null);
+      if (mode === "practice") { lsSet(posKey(g.id), null); markPathWork(); }
       if (mode === "practice") { const prev = score(g.id); if (!prev || prev.best == null || right > prev.best) setEntry("g:" + g.id, { best: right, total: items.length }); }
       app.innerHTML = shell(`<div class="panel result"><p class="eyebrow">Your score</p><p class="score">${right}<span>/${items.length}</span></p>
         <p>${right === items.length ? "Perfetto!" : right >= items.length * 0.75 ? "Molto bene!" : right >= items.length / 2 ? "Bene. Keep going." : "Read the lesson again, then try once more."}</p>
+        ${mode === "practice" ? `<p class="muted small">${right >= Math.ceil(items.length * 0.7) ? "This step is done on your path." : `To finish this step on your path, get ${Math.ceil(items.length * 0.7)} of ${items.length}.`}</p>` : ""}
         ${mode === "drill" ? `<div class="seg small" role="group" aria-label="Verbs from">${[["A1", "A1 verbs"], ["A2", "A1–A2"], ["B1", "A1–B1"], ["ALL", "All"]].map(([k, l]) => `<button data-dl="${k}" aria-pressed="${drillLevel === k}">${l}</button>`).join("")}</div>` : ""}
         ${missedHTML(items, log)}
-        <div class="btn-row center"><button class="btn primary" data-again>${mode === "drill" ? "10 more verbs" : "Try again"}</button>${mode === "practice" ? `<a class="btn speak" href="#/say/grammar/${g.id}">Say the examples</a>` : ""}<a class="btn quiet" href="#/grammar/${g.id}">Back to the lesson</a></div></div>`);
+        <div class="btn-row center">${mode === "practice" && right >= Math.ceil(items.length * 0.7) ? continueHTML(`#/grammar/${g.id}`) : ""}<button class="btn ${mode === "practice" && right >= Math.ceil(items.length * 0.7) ? "" : "primary"}" data-again>${mode === "drill" ? "10 more verbs" : "Try again"}</button>${mode === "practice" ? `<a class="btn speak" href="#/say/grammar/${g.id}">Say the examples</a>` : ""}<a class="btn quiet" href="#/grammar/${g.id}">Back to the lesson</a></div></div>`);
       app.querySelector("[data-again]").onclick = () => practice(app, g, mode, true);
       app.querySelectorAll("[data-dl]").forEach(b => b.onclick = () => { drillLevel = b.dataset.dl; lsSet("parlo.drillLevel", drillLevel); practice(app, g, mode); });
       return;
@@ -112,6 +114,8 @@ function practice(app, g, mode, fresh) {
     app.querySelector("[data-restart]")?.addEventListener("click", () => practice(app, g, mode, true));
     wireAnswer(app, it, (ok, note) => {
       log.push(ok); if (ok) right++;
+      // Keep the place after each answer, so leaving and coming back continues with the next question.
+      if (mode === "practice" && i + 1 < items.length) lsSet(posKey(g.id), { order, i: i + 1, right, log });
       const answer = it.k === "mc" ? it.a : gf(it.a[0], it.io);
       if (ok && it.k !== "mc") say(it.a[0]);
       const fb = app.querySelector(".fb");

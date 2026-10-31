@@ -24,7 +24,7 @@ await step("session", async () => {
 });
 await step("quiz", async () => {
   await go("#/quiz");
-  for (let k = 0; k < 10; k++) { if (await page.locator("#ans").count()) { await page.fill("#ans", "xyz"); await page.press("#ans", "Enter"); } else await page.locator("[data-o]").first().click(); await page.waitForTimeout(60); await page.click("[data-next]"); await page.waitForTimeout(60); }
+  for (let k = 0; k < 20 && await page.locator("#ans, [data-o]").count(); k++) { if (await page.locator("#ans").count()) { await page.fill("#ans", "xyz"); await page.press("#ans", "Enter"); } else await page.locator("[data-o]").first().click(); await page.waitForTimeout(60); await page.click("[data-next]"); await page.waitForTimeout(60); }
   return main(80);
 });
 await step("grammar", async () => { await go("#/grammar/g-iobj"); await go("#/grammar/g-iobj/practice"); if (await page.locator("#ans").count()) { await page.fill("#ans", "gli"); await page.press("#ans", "Enter"); } else await page.locator("[data-o]").first().click(); await page.waitForTimeout(100); return (await page.locator(".fb").innerText()).replace(/\n+/g, " | ").slice(0, 80); });

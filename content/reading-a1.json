@@ -17,8 +17,8 @@
             "en": "Guys, a question."
           },
           {
-            "it": "Ieri sera nella scatola ci sono sei capsule di caffè.",
-            "en": "Last night there are six coffee capsules in the box."
+            "it": "Ieri sera nella scatola c'erano sei capsule di caffè.",
+            "en": "Last night there were six coffee capsules in the box."
           },
           {
             "it": "Stamattina ce n'è una. Una!",
@@ -245,7 +245,6 @@
         ]
       },
       {
-        "who": "Bea",
         "s": [
           {
             "it": "Bea ha aggiunto Mamma al gruppo.",
@@ -423,10 +422,10 @@
     ],
     "narrator": "f",
     "speakers": {
-      "Bea": "f",
+      "Bea": "f2",
       "Tommaso": "m",
-      "Ludo": "m2",
-      "Mamma": "f2"
+      "Ludo": "f3",
+      "Mamma": "f4"
     }
   },
   {

@@ -1,18 +1,12 @@
 // Quizzes: "Quiz me" (a mix of what you've studied) and the path's checkpoints, level tests and test-outs.
 // Words are asked from English: you say (type) the Italian. Wrong answers come back in your next review.
-import { S, D, esc, rich, ICON, full, statusOf, schedule, shuffle, pick, say, gf, adjForms, setEntry } from "../core.js";
+import { markPathWork, S, D, esc, rich, ICON, full, statusOf, schedule, shuffle, pick, say, gf, adjForms, setEntry } from "../core.js";
 import { ensure } from "../data.js";
 import { PRON, TENSES } from "./unit.js";
 import { answerHTML, wireAnswer, feedbackHTML } from "./check.js";
 import ROADMAP from "../data/roadmap.json";
 
 /* ---------- Building questions ---------- */
-const levelUnits = () => D.units.filter(u => u.level === S.pref.level);
-function vocabPool(types) {
-  const studied = D.order.filter(id => types.includes(D.items[id].type) && statusOf(id) !== "new");
-  if (studied.length >= 12) return { ids: studied, studied: true };
-  return { ids: levelUnits().flatMap(u => D.unitIds[u.n]).filter(id => types.includes(D.items[id].type)), studied: false };
-}
 const sense = en => String(en).split(";")[0].trim();
 const opts = (answer, pool) => shuffle([answer, ...shuffle([...new Set(pool)].filter(x => x && x !== answer)).slice(0, 3)]);
 // mode "it": Italian shown, choose the meaning (only in checkpoints, for half the words). "en": say it in Italian.
@@ -25,7 +19,7 @@ function vocabQ(id, mode, poolIds) {
     return { id, kind: it.type === "w" ? "Word" : "Phrase", prompt: `<span class="it">${esc(term)}</span>`, ask: "What does it mean?", k: "mc", a: sense(d.en), o: opts(sense(d.en), same.length > 3 ? same : poolIds.map(x => sense(D.items[x].d.en))), say: term, why };
   }
   // Accept the word with or without its article, and other endings of an adjective.
-  return { id, kind: it.type === "w" ? "Word" : "Phrase", prompt: esc(d.en), ask: "Say it in Italian", k: "type", a: it.type === "w" && d.art ? [full(d), d.it] : [term], alt: it.type === "w" ? adjForms(d) : [], typo: true, say: term, why, loose: it.type === "p" };
+  return { id, kind: it.type === "w" ? "Word" : "Phrase", prompt: esc(d.en), ask: "Write it in Italian", k: "type", a: it.type === "w" && d.art ? [full(d), d.it] : [term], alt: it.type === "w" ? adjForms(d) : [], typo: true, say: term, why, loose: it.type === "p" };
 }
 function verbQ(id) {
   const v = D.items[id].d, t = pick(TENSES.slice(0, 4));
@@ -37,15 +31,16 @@ const grammarQ = e => ({
   kind: "Grammar · " + e.lesson, prompt: `<span class="it">${esc(e.q).replace("___", '<span class="blank"></span>')}</span>`,
   ask: e.h || (e.v ? e.v + (e.p ? " · " + e.p : "") : ""), k: e.k, a: e.a, o: e.k === "mc" ? shuffle(e.o) : null, why: rich(e.why), it: true, io: e.p === "io"
 });
-// Quiz me: 5 words or phrases, 3 verb forms and 2 grammar items from what you've studied.
+// Quiz me: only what you've studied: up to 5 words or phrases, 3 verb forms and 2 grammar items.
+const studiedIds = types => D.order.filter(id => types.includes(D.items[id].type) && statusOf(id) !== "new");
 async function buildMix() {
-  const { ids, studied } = vocabPool(["w", "p"]);
-  const qs = shuffle(ids).slice(0, 5).map(id => vocabQ(id, "en", ids));
-  qs.push(...shuffle(vocabPool(["v"]).ids).slice(0, 3).map(verbQ));
-  const lessons = (await ensure("grammar")).filter(g => g.level === S.pref.level);
-  const practised = lessons.filter(g => S.st["g:" + g.id]?.best != null);
-  qs.push(...shuffle((practised.length >= 2 ? practised : lessons).flatMap(g => g.ex.map(e => ({ ...e, lesson: g.title })))).slice(0, 2).map(grammarQ));
-  return { qs: shuffle(qs), note: studied ? "" : `You haven't studied many words yet, so this uses ${S.pref.level} vocabulary.`, label: "Quiz me" };
+  const ids = studiedIds(["w", "p"]), verbs = studiedIds(["v"]);
+  const lessons = (await ensure("grammar")).filter(g => S.st["g:" + g.id]?.best != null);
+  if (ids.length + verbs.length < 5) return { qs: [], empty: true, label: "Quiz me" };
+  const qs = shuffle(ids).slice(0, verbs.length ? 5 : 8).map(id => vocabQ(id, "en", ids.length >= 4 ? ids : D.order));
+  qs.push(...shuffle(verbs).slice(0, 3).map(verbQ));
+  qs.push(...shuffle(lessons.flatMap(g => g.ex.map(e => ({ ...e, lesson: g.title })))).slice(0, 2).map(grammarQ));
+  return { qs: shuffle(qs), note: "", label: "Quiz me" };
 }
 // Questions for a path checkpoint, the level test, or testing out of a unit.
 async function buildPath(v) {
@@ -72,7 +67,7 @@ export async function viewQuiz(app, v, alive) {
 }
 const answerOf = q => q.k !== "type" ? q.a : gf(q.a[0], q.io);
 // What the learner missed, with the right answer.
-const missedHTML = list => !list.length ? "" : `<div class="missed"><p class="eyebrow">You missed</p><ul>${list.map(q => `<li><span>${q.prompt}</span> → <span class="it strong">${esc(answerOf(q))}</span></li>`).join("")}</ul></div>`;
+const missedHTML = list => !list.length ? "" : `<div class="missed"><p class="eyebrow">You missed</p><ul>${list.map(q => `<li><span>${q.prompt}</span>${q.kind === "Verb" ? ` <span class="muted small">(${esc(q.ask)})</span>` : ""} → <span class="it strong">${esc(answerOf(q))}</span></li>`).join("")}</ul></div>`;
 
 // retry: a second round on the questions missed, which does not change scores.
 function run(app, v, alive, built, qs, retry) {
@@ -90,13 +85,14 @@ function run(app, v, alive, built, qs, retry) {
     app.querySelector("[data-again]")?.addEventListener("click", () => viewQuiz(app, v, alive));
   };
   const draw = () => {
-    if (!qs.length) { app.innerHTML = `${top()}<div class="panel result"><p>${esc(note || "Nothing to quiz yet.")}</p><a class="btn primary" href="#/">Back to Oggi</a></div>`; return; }
+    if (!qs.length) { app.innerHTML = `${top()}<div class="panel result"><p class="big-line">Nothing to quiz yet</p><p class="muted">Quiz me asks only about words you have studied. Learn a few words first, then come back.</p><a class="btn primary" href="#/">Back to Oggi</a></div>`; return; }
     if (i >= qs.length) {
       // Missed words and verbs come back in the next review.
-      missed.forEach(id => schedule(id, "10m"));
+      missed.filter(id => statusOf(id) !== "new").forEach(id => schedule(id, "10m"));
       const back = missed.length ? `<p class="muted small">${missed.length === 1 ? "The word you missed comes" : "The words you missed come"} back in your next review.</p>` : "";
-      const score = `<p class="eyebrow">${retry ? "Second try" : esc(label)}</p><p class="score">${right}<span>/${qs.length}</span></p>`;
+      const score = `<p class="eyebrow">${retry ? "Second try" : "Your score"}</p><p class="score">${right}<span>/${qs.length}</span></p>`;
       if (built.save && !retry) {
+        markPathWork();
         const prev = S.st[built.save.key], to = built.save.key.startsWith("to:");
         if (to) { if (right / qs.length >= built.save.pass) setEntry(built.save.key, { done: 1 }); }
         else if (!prev || prev.best == null || right > prev.best) setEntry(built.save.key, { best: right, total: qs.length });

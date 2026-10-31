@@ -58,7 +58,7 @@ export const ICON = {
 const tipsSeen = () => lsGet("parlo.tips", {});
 export function tipHTML(key, html) {
   if (tipsSeen()[key]) return "";
-  return `<div class="tip" data-tip="${key}" role="note"><span class="tip-ico" aria-hidden="true">i</span><div class="tip-body">${html}</div><button class="text-btn" data-tip-ok="${key}">Got it</button></div>`;
+  return `<div class="tip" data-tip="${key}" role="note"><span class="tip-ico" aria-hidden="true">i</span><div class="tip-body">${html}</div><button class="text-btn tip-ok" data-tip-ok="${key}">OK</button></div>`;
 }
 export const resetTips = () => lsSet("parlo.tips", {});
 document.addEventListener("click", e => {
@@ -156,8 +156,11 @@ export function showToast(text, actionLabel, action, ms = 4500) {
   if (ms) { const el = root.firstChild; setTimeout(() => { if (root.firstChild === el) close(); }, ms); }
 }
 let sheetReturn = null;
+// A sheet adds one history entry, so the Back button closes the sheet and stays on the page.
 export function openSheet(html, onMount) {
-  closeSheet(true);
+  const had = !!$("#sheet");
+  closeSheet(true, true);
+  if (!had || history.state?.sheet !== 1) history.pushState({ sheet: 1 }, "");
   sheetReturn = document.activeElement;
   const el = document.createElement("div");
   el.id = "sheet";
@@ -171,14 +174,16 @@ export function openSheet(html, onMount) {
   onMount && onMount(el);
   return el;
 }
-export function closeSheet(instant) {
+export function closeSheet(instant, keepHistory) {
   const el = $("#sheet"); if (!el) return;
+  if (!keepHistory && history.state?.sheet === 1) { history.back(); return; } // popstate closes it
   if (instant) el.remove(); else { el.classList.remove("open"); setTimeout(() => el.remove(), 180); }
   if (sheetReturn && document.contains(sheetReturn)) sheetReturn.focus({ preventScroll: true });
   sheetReturn = null;
 }
 document.addEventListener("click", e => { if (e.target.closest("[data-sheet-close]")) closeSheet(); });
 document.addEventListener("keydown", e => { if (e.key === "Escape" && $("#sheet")) closeSheet(); });
+window.addEventListener("popstate", () => { if ($("#sheet")) closeSheet(false, true); });
 
 /* ---------- Shared state ---------- */
 export const S = {
@@ -475,6 +480,12 @@ export function gf(text, isIo = true) {
 // Example sentences said by "io" may have a version for the other gender: alt = { base: "m"|"f", other: "…" }.
 export function exVoice(text, alt) { return !alt ? "f" : text === alt.other ? (alt.base === "m" ? "f" : "m") : alt.base; }
 // "andato o andata" in a question to the learner → the learner's form.
+// Work on the path today (a unit session, a lesson, a text, a talk…): Oggi counts it as today's path step.
+// Kept under "sp:" so it syncs with the speaking rows.
+export const markPathWork = () => setEntry("sp:path", { day: dayKey() });
+export const pathWorkToday = () => S.st["sp:path"]?.day === dayKey();
+// Praise in the learner's chosen form: Bravo / Brava, or Ottimo when no form is chosen.
+export const bravo = () => S.pref.gender === "f" ? "Brava!" : S.pref.gender === "m" ? "Bravo!" : "Ottimo!";
 export function gq(text) {
   const g = S.pref.gender;
   if (g !== "m" && g !== "f") return text;

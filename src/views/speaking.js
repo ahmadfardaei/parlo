@@ -1,4 +1,4 @@
-import { S, esc, ICON, setEntry, remember, TOPICS, on, showToast, gq } from "../core.js";
+import { bravo, markPathWork, S, esc, ICON, setEntry, remember, TOPICS, on, showToast, gq } from "../core.js";
 import { ensure } from "../data.js";
 import { plainLines, sentHTML, starHTML } from "./texts.js";
 import { readerTools, wireReader } from "./reading.js";
@@ -64,13 +64,16 @@ export async function viewSpeaking(app, v, alive) {
   };
   const tick = () => {
     left--; talked++;
-    if (talked === ENOUGH && !S.st["sp:" + t.id]?.done) setEntry("sp:" + t.id, { done: 1 }); const el = document.getElementById("timer"); if (el) el.textContent = mmss(Math.max(0, left));
-    if (left <= 0) { stopAll(); showToast("Time's up. Bravo!"); setEntry("sp:" + t.id, { done: 1 }); }
+    if (talked === ENOUGH) { if (!S.st["sp:" + t.id]?.done) setEntry("sp:" + t.id, { done: 1 }); markPathWork(); } const el = document.getElementById("timer"); if (el) el.textContent = mmss(Math.max(0, left));
+    if (left <= 0) { stopAll(); showToast("Time's up. " + bravo()); setEntry("sp:" + t.id, { done: 1 }); }
   };
   async function start() {
     if (timer) { stopAll(); draw(); return; }
     left = minutes * 60; talked = 0;
     if (canRecord) {
+      // The browser asks for the microphone first: say so, so the button does not look broken.
+      const b = app.querySelector("[data-start]");
+      if (b) { b.disabled = true; b.textContent = "Allow the microphone in your browser…"; }
       try {
         stream = await navigator.mediaDevices.getUserMedia({ audio: true });
         chunks = []; rec = new MediaRecorder(stream);
@@ -83,7 +86,7 @@ export async function viewSpeaking(app, v, alive) {
         };
         rec.start();
       } catch (e) {
-        showToast("Microphone not available. The timer will still run.");
+        showToast(e?.name === "NotAllowedError" ? "The microphone is blocked. You can allow it in your browser settings. The timer still runs." : "Microphone not available. The timer still runs.", null, null, 6000);
       }
     }
     timer = setInterval(tick, 1000);

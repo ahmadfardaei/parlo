@@ -377,7 +377,7 @@ audio { width: 100%; max-width: 420px; }
 
 /* ---------- Review cards ---------- */
 .card-stage { display: grid; gap: 14px; }
-.flash { position: relative; background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 28px 22px 26px; min-height: 280px; display: grid; align-content: center; justify-items: center; text-align: center; gap: 6px; box-shadow: var(--shadow); }
+.flash { position: relative; background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 64px 22px 26px; min-height: 280px; display: grid; align-content: center; justify-items: center; text-align: center; gap: 6px; box-shadow: var(--shadow); }
 .flash[role="button"] { cursor: pointer; }
 .card-meta { position: absolute; top: 14px; left: 18px; right: 60px; text-align: left; font-size: 13px; color: var(--muted); }
 .card-target { font-size: clamp(28px, 7vw, 38px); font-weight: 500; line-height: 1.2; margin: 6px 0; }
@@ -597,7 +597,7 @@ body.focus .toast { bottom: calc(16px + env(safe-area-inset-bottom, 0px)); }
 .card-corner { position: absolute; top: 10px; right: 10px; display: flex; gap: 6px; }
 .star-card[aria-pressed="true"] { color: var(--due); border-color: var(--due); background: var(--due-soft); }
 .star-card[aria-pressed="true"] svg path { fill: currentColor; }
-.card-meta { right: 104px; }
+.card-meta { right: 156px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .last-line { justify-content: flex-start; }
 /* In focus mode the answer buttons live at the bottom, so messages appear at the top instead. */
 @media (max-width: 720px) { body.focus .toast { bottom: calc(190px + env(safe-area-inset-bottom, 0px)); } }
@@ -697,7 +697,7 @@ body.focus .toast { bottom: calc(16px + env(safe-area-inset-bottom, 0px)); }
 
 /* Feedback link: quiet, at the end of Profile and of a session. */
 .feedback-line { text-align: center; margin: 20px 0 8px; }
-.feedback-line a { color: var(--accent); font-weight: 600; }
+.feedback-line a { color: var(--accent); font-weight: 600; display: inline-block; padding: 12px 4px; }
 
 /* First-time tips: one quiet card, closed with "Got it". */
 .tip { display: flex; align-items: flex-start; gap: 12px; background: var(--accent-soft); border-radius: 14px; padding: 12px 14px; margin: 0 0 14px; font-size: 15px; }
@@ -707,5 +707,8 @@ body.focus .toast { bottom: calc(16px + env(safe-area-inset-bottom, 0px)); }
 .tip-body .tip-title { font-weight: 700; margin-bottom: 4px; }
 .tip-body ul { margin: 0; padding-left: 18px; display: grid; gap: 3px; }
 .tip-body svg { width: 16px; height: 16px; vertical-align: -3px; }
-.tip .text-btn { flex: none; font-weight: 700; }
+.tip .tip-ok { flex: none; font-weight: 700; min-width: 44px; min-height: 44px; margin: -10px -6px -10px 0; }
 .card-stage .tip { margin-top: 14px; }
+
+/* Answers that open only after you press play look inactive. */
+.opt[data-lock] { opacity: .5; cursor: not-allowed; }

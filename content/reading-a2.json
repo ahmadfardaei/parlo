@@ -360,7 +360,7 @@
         "a": "Che la signora Gribaudo era arrabbiata con lui."
       },
       {
-        "q": "Come si sente Chiara durante la prima settimana?",
+        "q": "Che cosa fa Chiara durante la prima settimana?",
         "o": [
           "È sempre più arrabbiata e chiama la polizia.",
           "Comincia ad aspettare il campanello delle nove.",
@@ -372,10 +372,10 @@
         "q": "Perché Aldo dice che il vermut lo porta lui?",
         "o": [
           "Perché Chiara non beve alcol.",
-          "Per scherzo: pensa che Chiara compra vermut cattivo.",
+          "Per scherzo: pensa che Chiara compri vermut cattivo.",
           "Perché è un regalo per la signora Gribaudo quando torna da Cuneo."
         ],
-        "a": "Per scherzo: pensa che Chiara compra vermut cattivo."
+        "a": "Per scherzo: pensa che Chiara compri vermut cattivo."
       },
       {
         "q": "Che cosa capiamo dalla fine della storia?",

@@ -1,4 +1,4 @@
-import { S, D, esc, ICON, LEVELS, LEVEL_NAMES, TOPICS, counts, pct, savePref, sayOf, statusOf, statusLabel, openSheet } from "../core.js";
+import { S, D, esc, ICON, LEVELS, LEVEL_NAMES, TOPICS, counts, pct, learned, savePref, sayOf, statusOf, statusLabel, openSheet } from "../core.js";
 import { ensure } from "../data.js";
 import { pdfUrl } from "../voice.js";
 import { SECTIONS } from "./home.js";
@@ -48,8 +48,8 @@ export async function viewLearn(app, v, alive) {
   if (sec === "vocab") {
     const draw = () => {
       body.innerHTML = groupsHTML(D.units, u => byLevel() ? u.level : u.topic, k => byLevel() ? `${k} · ${LEVEL_NAMES[k]}` : TOPICS[k],
-        u => { const c = counts(D.unitIds[u.n]); return `<a class="row-link" href="#/unit/${u.n}/words"><span class="num">${u.n}</span><span><span class="row-title it">${esc(u.title)}</span><span class="muted small">${esc(u.en)}${byLevel() ? "" : " · " + u.level}</span></span><span class="row-meta">${c.due ? `<span class="pill due">${c.due} due</span>` : pct(c) ? pct(c) + "%" : ""}</span>${ICON.chev}</a>`; },
-        list => { const c = counts(list.flatMap(u => D.unitIds[u.n])); return `${list.length} units · ${pct(c)}% known`; },
+        u => { const c = counts(D.unitIds[u.n]), got = D.unitIds[u.n].filter(learned).length; return `<a class="row-link" href="#/unit/${u.n}/words"><span class="num">${u.n}</span><span><span class="row-title it">${esc(u.title)}</span><span class="muted small">${esc(u.en)}${byLevel() ? "" : " · " + u.level}</span></span><span class="row-meta">${c.due ? `<span class="pill due">${c.due} due</span>` : got ? `${got}/${c.total}` : ""}</span>${ICON.chev}</a>`; },
+        list => { const ids = list.flatMap(u => D.unitIds[u.n]), got = ids.filter(learned).length; return `${list.length} units${got ? ` · ${got} of ${ids.length} learned` : ""}`; },
         byLevel() ? S.pref.level : null);
     };
     draw();

@@ -153,13 +153,13 @@ function startQuiz(body, u, only) {
   const used = new Set();
   const fresh = (pool, key) => { const left = pool.filter(x => !used.has(key(x))); const x = pick(left.length ? left : pool); used.add(key(x)); return x; };
   const quiz = only || shuffle(["s", "s", "s", "s", "m", "a", "c", "c", "p", "p"]).map(k => {
-    if (k === "a" && nouns.length > 3) { const w = fresh(nouns, x => x.it); return { kind: "Which article?", q: `<span class="blank"></span> ${esc(w.it)}`, a: w.art, o: ["il", "lo", "la", "l'"], it: 1, why: `<b>${esc(full(w))}</b> is ${w.g === "m" ? "masculine" : "feminine"}.` }; }
+    if (k === "a" && nouns.length > 3) { const w = fresh(nouns, x => x.it); return { kind: "Which article?", q: `<span class="blank"></span> ${esc(w.it)}`, a: w.art, o: ["il", "lo", "la", "l'"], it: 1, say: full(w), why: `<b>${esc(full(w))}</b> is ${w.g === "m" ? "masculine" : "feminine"}.` }; }
     if (k === "c") { const vb = pick(u.verbs), t = pick(TENSES.slice(0, 4)); const p = pick([0, 1, 2, 3, 4, 5].filter(i => vb.t[t.k][i] !== "—")); const a = vb.t[t.k][p]; return { kind: `${t.it} of ${vb.inf}`, ctx: `${vb.inf}, ${t.it.toLowerCase()}`, q: `${PRON[p]} <span class="blank"></span>`, k: "type", a: [a], io: p === 0, it: 1, why: `${esc(vb.t[t.k].filter(f => f !== "—").join(", "))}` }; }
     // Phrases: which Italian phrase says this?
     if (k === "p" && phrases.length > 3) { const p = fresh(phrases, x => x.it); return { kind: "How do you say it?", q: `“${esc(p.en)}”`, a: p.it, o: opts(p.it, phrases.map(x => x.it)), it: 1, opt: 1, why: `${esc(p.ex)} · ${esc(p.exEn)}` }; }
     const w = fresh(words, x => x.it);
-    if (k === "m") { const sense = en => en.split(";")[0].trim(); const same = words.filter(x => x.c === w.c).map(x => sense(x.en)); return { kind: "What does it mean?", q: esc(full(w)), it: 1, a: sense(w.en), o: opts(sense(w.en), same.length > 3 ? same : words.map(x => sense(x.en))), why: `${esc(w.ex)} · ${esc(w.exEn)}` }; }
-    return { kind: "Say it in Italian", q: esc(w.en), k: "type", a: w.art ? [full(w), w.it] : [w.it], alt: adjForms(w), typo: true, id: "w:" + w.it, why: `${esc(w.ex)} · ${esc(w.exEn)}` };
+    if (k === "m") { const sense = en => en.split(";")[0].trim(); const same = words.filter(x => x.c === w.c).map(x => sense(x.en)); return { kind: "What does it mean?", q: esc(full(w)), it: 1, say: full(w), a: sense(w.en), o: opts(sense(w.en), same.length > 3 ? same : words.map(x => sense(x.en))), why: `${esc(w.ex)} · ${esc(w.exEn)}` }; }
+    return { kind: "Write it in Italian", q: esc(w.en), k: "type", a: w.art ? [full(w), w.it] : [w.it], alt: adjForms(w), typo: true, id: "w:" + w.it, why: `${esc(w.ex)} · ${esc(w.exEn)}` };
   });
   let i = 0, score = 0;
   const missed = [];
@@ -183,7 +183,8 @@ function startQuiz(body, u, only) {
       if (ok) score++; else missed.push(q);
       const fb = body.querySelector(".fb");
       fb.innerHTML = feedbackHTML({ ok, note, answer: answerOf(q), why: q.why, last: i + 1 >= quiz.length });
-      if (q.it || q.k === "type") say(answerOf(q));
+      // Always the Italian: the word itself for meaning and article questions.
+      if (q.it || q.k === "type") say(q.say || answerOf(q));
       const nx = fb.querySelector("[data-next]"); nx.onclick = () => { i++; draw(); }; nx.focus();
     });
   };

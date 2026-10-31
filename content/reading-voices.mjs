@@ -6,7 +6,7 @@ import { voiceForName, narratorVoice } from "../src/voice.js";
 
 // Gender when the name does not show it, and labels that are the same person (one voice).
 const GENDER = { "Annuncio": "m", "Post-it verde": "f", "Post-it rosa": "f", "Post-it giallo": "m", "Post-it azzurro": "m", "Post-it arancione": "f", "Post-it, scrittura piccola": "f",
-  "Irene": "f", "Programma": "f", "Domenica mattina": "f", "Radio Ateneo": "f", "Giornalista": "f", "Intervistatrice": "f", "G., Ivrea": "m", "Post-it di Marta": "f", "Post-it di Giacomo": "m", "Post-it di Samir": "m" };
+  "Irene": "f", "Programma": "f", "Domenica mattina": "f", "Radio Ateneo": "f", "Giornalista": "f", "Intervistatrice": "f", "G., Ivrea": "m", "Ludo": "f", "Post-it di Marta": "f", "Post-it di Giacomo": "m", "Post-it di Samir": "m" };
 const SAME = { "Da: Farmacia San Savino – A: Franco Bertolino": "f", "Da: Franco Bertolino – A: Farmacia San Savino": "m" };
 const SLOTS = { f: ["f", "f2", "f3", "f4"], m: ["m", "m2", "m3", "m4"] };
 

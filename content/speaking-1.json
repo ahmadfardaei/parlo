@@ -2785,7 +2785,7 @@
   {
     "id": "s-04",
     "title": "Una vacanza che non dimenticherò",
-    "en": "A trip you'll never forget",
+    "en": "A holiday I will never forget",
     "topic": "places",
     "task": "Tell the story of a trip you'll never forget: where you went, who with, how you got there and what happened. Include at least one thing that went wrong or surprised you, and say why this trip has stayed with you. Talk for 5-10 minutes.",
     "questions": [
@@ -2798,7 +2798,7 @@
         "en": "Who were you with?"
       },
       {
-        "it": "Come ci sei arrivato? In treno, in macchina, in aereo?",
+        "it": "Come ci sei arrivato o arrivata? In treno, in macchina, in aereo?",
         "en": "How did you get there? By train, car, plane?"
       },
       {

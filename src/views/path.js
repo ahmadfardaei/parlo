@@ -47,6 +47,14 @@ export function pathProgress(L) {
   const current = states.findIndex(x => !x.done);
   return { steps, states, done: states.filter(x => x.done).length, current: current < 0 ? steps.length : current };
 }
+// The button on finish screens: the next step on the learner's path (not the page they are on).
+export function continueHTML(here, cls = "primary") {
+  const L = S.pref.level, { steps, states, current } = pathProgress(L), s = steps[current];
+  if (!s) return "";
+  const href = s.type === "unit" && !states[current].done ? `#/session/unit/${s.ref}` : stepHref(L, s);
+  if (here && (href === here || stepHref(L, s) === here)) return "";
+  return `<a class="btn ${cls}" href="${href}">Continue your path: <span class="it">${esc(s.title)}</span></a>`;
+}
 const stars = n => `<span class="stars" aria-label="${n} of 3 stars">${[1, 2, 3].map(i => `<i class="${i <= n ? "on" : ""}"></i>`).join("")}</span>`;
 
 export function viewPath(app, v) {
@@ -83,8 +91,8 @@ function stepSheet(L, steps, states, i, current) {
   const href = stepHref(L, s);
   const how = {
     unit: "Done when you can say 80% of its words from English. More stars as they stick.",
-    grammar: "Done at 70% or more in its exercises.", reading: "Done when you've read it and answered the questions.", listening: "Done when you've answered the questions.",
-    writing: `Done when your text reaches ${WRITE_TARGET[L]} words.`, speaking: "Done when you've practised out loud.",
+    grammar: "Done at 70% or more in its exercises.", reading: "Done when you answer the questions or mark it as read.", listening: "Done when you've answered the questions.",
+    writing: `Done when your text reaches ${WRITE_TARGET[L]} words.`, speaking: "Done when you have talked for one minute.",
     checkpoint: "Pass with 7 out of 10.", test: "Pass with 70% or more."
   }[s.type];
   openSheet(`<div class="sheet-body">

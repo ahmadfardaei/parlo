@@ -8,28 +8,20 @@
   </script>
   <script>
   // Moving from ahmadfardaei.github.io/parlo: a guest's progress lives in that origin's storage.
-  // On the first visit here, bounce once to a page on the old origin that sends it back in the URL.
+  // When the learner asks (link on the first screen), a page on the old origin sends it back here once.
   (function () {
     try {
       var OLD = "https://ahmadfardaei.github.io", h = location.hash, ls = localStorage;
       var mine = function (k) { return k !== "parlo.moved" && (k.indexOf("parlo.") === 0 || k.indexOf("sb-") === 0); };
-      if (h.indexOf("#/moved/") === 0) {
-        var p = h.slice(8), have = Object.keys(ls).some(function (k) { return k.indexOf("parlo.items.") === 0 && ls.getItem(k).length > 2; });
-        if (p !== "none" && !have && document.referrer.indexOf(OLD) === 0) {
-          var bin = atob(p.replace(/-/g, "+").replace(/_/g, "/"));
-          var d = JSON.parse(new TextDecoder().decode(Uint8Array.from(bin, function (c) { return c.charCodeAt(0); })));
-          Object.keys(d).forEach(function (k) { if (mine(k) && typeof d[k] === "string") ls.setItem(k, d[k]); });
-        }
-        ls.setItem("parlo.moved", "1");
-        history.replaceState(null, "", location.pathname + "#/");
-        return;
+      if (h.indexOf("#/moved/") !== 0) return;
+      var p = h.slice(8), have = Object.keys(ls).some(function (k) { return k.indexOf("parlo.items.") === 0 && ls.getItem(k).length > 2; });
+      if (p !== "none" && !have && document.referrer.indexOf(OLD) === 0) {
+        var bin = atob(p.replace(/-/g, "+").replace(/_/g, "/"));
+        var d = JSON.parse(new TextDecoder().decode(Uint8Array.from(bin, function (c) { return c.charCodeAt(0); })));
+        Object.keys(d).forEach(function (k) { if (mine(k) && typeof d[k] === "string") ls.setItem(k, d[k]); });
       }
-      if (/(^|\.)iunderstandbut\.com$/.test(location.hostname) && !ls.getItem("parlo.moved")) {
-        ls.setItem("parlo.moved", "1");
-        if (ls.getItem("parlo.moved") !== "1") return;
-        if (Object.keys(ls).some(mine)) return;
-        location.replace(OLD + "/parlo-media/move.html");
-      }
+      ls.setItem("parlo.moved", p === "none" ? "none" : "1");
+      history.replaceState(null, "", location.pathname + "#/");
     } catch (e) {}
   })();
   </script>
@@ -54,10 +46,10 @@
     <div class="wrap topbar-in">
       <a class="brand" href="#/" aria-label="i understand, but…, home"><img class="light" src="brand/logo-line.svg" alt="i understand, but…"><img class="dark" src="brand/logo-line-dark.svg" alt=""></a>
       <nav class="tabbar" aria-label="Main">
-        <a href="#/" data-tab="home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5V20h-5v-6H9v6H4z"/></svg><span class="lbl">Oggi</span><span class="badge" data-due-badge hidden></span></a>
-        <a href="#/learn/path" data-tab="learn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5zM4 20.5A2.5 2.5 0 0 0 6.5 21H20"/></svg><span class="lbl">Impara</span></a>
-        <a href="#/deck" data-tab="deck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2L12 17.3l-5.6 2.9 1.1-6.2L3 9.6l6.2-.9z"/></svg><span class="lbl">Mazzo</span></a>
-        <a href="#/account" data-tab="account"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg><span class="lbl">Profilo</span></a>
+        <a href="#/" data-tab="home" title="Today"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5V20h-5v-6H9v6H4z"/></svg><span class="lbl">Oggi</span><span class="badge" data-due-badge hidden></span></a>
+        <a href="#/learn/path" data-tab="learn" title="Learn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5zM4 20.5A2.5 2.5 0 0 0 6.5 21H20"/></svg><span class="lbl">Impara</span></a>
+        <a href="#/deck" data-tab="deck" title="Your deck: saved words and sentences"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2L12 17.3l-5.6 2.9 1.1-6.2L3 9.6l6.2-.9z"/></svg><span class="lbl">Mazzo</span></a>
+        <a href="#/account" data-tab="account" title="Profile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg><span class="lbl">Profilo</span></a>
       </nav>
       <button class="icon-btn theme-btn" data-theme-btn aria-label="Dark mode" title="Dark mode"></button>
     </div>

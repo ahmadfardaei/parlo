@@ -1,8 +1,9 @@
-import { tipHTML, S, esc, ICON, setEntry, savePref, remember, lsGet, lsSet, TOPICS, shuffle, openSheet } from "../core.js";
+import { markPathWork, tipHTML, S, esc, ICON, setEntry, savePref, remember, lsGet, lsSet, TOPICS, shuffle, openSheet } from "../core.js";
 import { ensure } from "../data.js";
 import { blocksHTML, plainLines, sentHTML, sizeControlHTML, starHTML } from "./texts.js";
 import { voiceForName, narratorVoice } from "../voice.js";
 import { playerHTML, wirePlayer } from "./player.js";
+import { continueHTML } from "./path.js";
 
 export function readerTools(showEn) {
   return `<div class="reader-tools">
@@ -44,7 +45,7 @@ export async function viewReading(app, v, alive) {
         <section class="g-sec"><h2>Did you get it?</h2>
           <div class="panel flush" id="qs">${qs.map((q, i) => `<div class="rq" data-q="${i}"><p class="it strong">${i + 1}. ${esc(q.q)}</p><div class="opts">${q.o.map((o, j) => `<button class="opt it" data-qo="${j}">${esc(o)}</button>`).join("")}</div></div>`).join("")}</div>
           <div class="panel finish" id="finish">${st.done ? `<p class="ok-text">${ICON.check} You've read this${st.score != null ? ` · ${st.score}/${r.questions.length} correct` : ""}.</p>` : `<p class="muted small">Answer the questions, or simply mark it as read.</p>`}
-            <div class="btn-row">${st.done ? `<a class="btn speak" href="#/say/read/${r.id}">Say it: 5 sentences</a>` : `<button class="btn primary" data-done>Mark as read</button>`}<a class="btn" href="#/learn/reading">More texts</a></div></div>
+            <div class="btn-row">${st.done ? `${continueHTML(`#/read/${r.id}`)}<a class="btn speak" href="#/say/read/${r.id}">Say it: 5 sentences</a>` : `<button class="btn primary" data-done>Mark as read</button>`}<a class="btn" href="#/learn/reading">More texts</a></div></div>
         </section>
       </div>
       <aside class="l-aside">
@@ -63,12 +64,12 @@ export async function viewReading(app, v, alive) {
         // Say the result in words too, not only in colour.
         div.insertAdjacentHTML("beforeend", ok ? `<p class="q-fb ok-text">${ICON.check} Right</p>` : `<p class="q-fb bad-text">Not quite. The answer: <span class="it strong">${esc(q.a)}</span></p>`);
         if (answered === qs.length) {
-          setEntry("r:" + r.id, { done: 1, score: correct, total: qs.length });
-          app.querySelector("#finish").innerHTML = `<p class="ok-text">${ICON.check} ${correct}/${qs.length} correct. Marked as read.</p><p class="muted small">Now say a few of its sentences yourself, from English.</p><div class="btn-row"><a class="btn speak" href="#/say/read/${r.id}">Say it: 5 sentences</a><a class="btn" href="#/learn/reading">More texts</a></div>`;
+          setEntry("r:" + r.id, { done: 1, score: correct, total: qs.length }); markPathWork();
+          app.querySelector("#finish").innerHTML = `<p class="ok-text">${ICON.check} ${correct}/${qs.length} correct. Marked as read.</p><p class="muted small">Now say a few of its sentences yourself, from English.</p><div class="btn-row">${continueHTML(`#/read/${r.id}`)}<a class="btn speak" href="#/say/read/${r.id}">Say it: 5 sentences</a><a class="btn" href="#/learn/reading">More texts</a></div>`;
         }
       });
     });
-    app.querySelector("[data-done]")?.addEventListener("click", () => { setEntry("r:" + r.id, { done: 1 }); draw(); });
+    app.querySelector("[data-done]")?.addEventListener("click", () => { setEntry("r:" + r.id, { done: 1 }); markPathWork(); draw(); });
   };
   draw();
 }

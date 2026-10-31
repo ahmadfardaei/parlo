@@ -1,5 +1,6 @@
-import { tipHTML, feedbackHTML, isHidden, hideHTML, setHidden, S, D, esc, ICON, pickEx, exVoice, inDeck, canSpeak, say, full, statusOf, statusLabel, setEntry, schedule, dueIds, deckIds, allReviewable, fmtIn, on, lsGet, learned, LEVELS, unitByN, showToast, sayOf, meaningOf } from "../core.js";
+import { markPathWork, bravo, tipHTML, feedbackHTML, isHidden, hideHTML, setHidden, S, D, esc, ICON, pickEx, exVoice, inDeck, canSpeak, say, full, statusOf, statusLabel, setEntry, schedule, dueIds, deckIds, allReviewable, fmtIn, on, lsGet, learned, LEVELS, unitByN, showToast, sayOf, meaningOf } from "../core.js";
 import { highlight } from "./unit.js";
+import { continueHTML } from "./path.js";
 import { nextUnit } from "./home.js";
 
 /* ---------- What a card shows ---------- */
@@ -14,7 +15,7 @@ export function cardData(id) {
     const e = S.st[id] || {};
     return { kind: "Saved sentence", from: e.st || "", fromHref: e.src || "", target: "", sentIt: e.ctx ? boldIn(e.ctx, e.it) : esc(e.it), sentEn: e.en || "", meaning: "", say: e.ctx || e.it, sv: e.vo || "f" };
   }
-  const d = it.d, unit = `Unità ${it.u}`;
+  const d = it.d, unit = `Unità ${it.u} · ${unitByN(it.u)?.title || ""}`;
   if (it.type === "w") { const ex = pickEx(d.ex, d.exAlt); return { kind: "Word", from: unit, fromHref: `#/unit/${it.u}/words`, target: full(d), sentIt: highlight(ex, d.it), sentEn: d.exEn, meaning: d.en, say: ex, sv: exVoice(ex, d.exAlt) }; }
   if (it.type === "v") { const ex = pickEx(d.ex[0][0], d.exAlt?.[0]); return { kind: "Verb", from: unit, fromHref: `#/unit/${it.u}/verbs`, target: d.inf, sentIt: esc(ex), sentEn: d.ex[0][1], meaning: d.en, extra: d.t.pres.join(" · "), say: ex, sv: exVoice(ex, d.exAlt?.[0]) }; }
   const ex = pickEx(d.ex, d.exAlt);
@@ -104,7 +105,7 @@ function draw(app, v) {
   const total = ses.done + ses.queue.length;
   // Top row: Previous word (top left) · progress · count · end session (top right).
   const top = `<div class="focus-top">
-      ${ses.history.length ? `<button class="btn small prev-word" data-undo>${ICON.back}<span>Previous word</span></button>` : `<span class="prev-word"></span>`}
+      ${ses.history.length ? `<button class="btn small prev-word" data-undo>${ICON.back}<span>Previous card</span></button>` : `<span class="prev-word"></span>`}
       <div class="progress-track" aria-hidden="true"><span style="width:${total ? (ses.done / total) * 100 : 100}%"></span></div>
       <span class="count small" aria-live="polite">${ses.queue.length ? `${ses.done + 1} / ${total}` : ""}</span>
       <a class="icon-btn" href="${exitHref(v)}" aria-label="End session">${ICON.close}</a>
@@ -170,15 +171,16 @@ function quickCheck(id) {
 }
 function drawEnd(app, v, top) {
   const s = ses.stats;
+  if (v.src === "unit" && ses.done) markPathWork();
   const later = allReviewable().filter(id => statusOf(id) === "later");
   const next = later.length ? Math.min(...later.map(id => S.st[id].d)) : 0;
   const last = lsGet("parlo.last", null), nu = nextUnit();
   const keep = v.src === "unit" ? { href: `#/say/unit/${v.u}`, label: "Say it: 5 sentences" } : v.src !== "due" ? null : last ? { href: last.href, label: `Continue: ${last.title}` } : nu ? { href: `#/unit/${nu.n}/words`, label: `Explore Unità ${nu.n}` } : null;
   app.innerHTML = `${top}<div class="card-stage"><div class="flash done-card">
-      <p class="big-line it">${ses.done ? "Bravo!" : "Tutto fatto"}</p>
+      <p class="big-line it">${ses.done ? bravo() : "Tutto fatto"}</p>
       ${ses.done ? `<div class="end-stats">${s.learned ? `<span><b>${s.learned}</b> ${s.learned === 1 ? "word" : "words"} you can now say</span>` : ""}${s.sents ? `<span><b>${s.sents}</b> saved ${s.sents === 1 ? "sentence" : "sentences"}</span>` : ""}${ses.done - s.learned - s.known - s.sents > 0 ? `<span><b>${ses.done - s.learned - s.known - s.sents}</b> reviewed</span>` : ""}${s.known ? `<span><b>${s.known}</b> already known</span>` : ""}</div>` : ""}
       <p class="muted">${ses.done ? "" : v.src === "deck" ? "Your deck has nothing to practise yet. " : "Nothing to review right now. "}${next ? `Next review in ${fmtIn(next - Date.now())}.` : ""}</p></div>
-    <div class="card-actions">${keep ? `<a class="btn ${keep.href.startsWith("#/say") ? "speak" : "primary"} large wide" href="${esc(keep.href)}">${esc(keep.label)}</a><a class="btn wide" href="${exitHref(v)}">Done</a>` : `<a class="btn primary large wide" href="${exitHref(v)}">Done</a>`}</div>${feedbackHTML()}</div>`;
+    <div class="card-actions">${v.src === "unit" ? continueHTML(`#/session/unit/${v.u}`, "primary large wide") : ""}${keep ? `<a class="btn ${keep.href.startsWith("#/say") ? "speak" : "primary"} ${v.src === "unit" ? "" : "large"} wide" href="${esc(keep.href)}">${esc(keep.label)}</a><a class="btn wide" href="${exitHref(v)}">Done</a>` : `<a class="btn primary large wide" href="${exitHref(v)}">Done</a>`}</div>${feedbackHTML()}</div>`;
   wire(app, v);
 }
 function wire(app, v) {

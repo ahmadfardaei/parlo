@@ -2,6 +2,7 @@
 // While it plays, a tap on a sentence jumps there. While it is paused, the sentence card offers "Play from here".
 import { ICON, speakAll, stopSpeaking, lsGet, lsSet } from "../core.js";
 import { setPlayFrom } from "./texts.js";
+import { clipUrl } from "../voice.js";
 
 const RATES = [1, 0.75, 0.5];
 const rateLabel = r => r + "×";
@@ -19,7 +20,7 @@ export function playerHTML(idle) {
     </div>
     <div class="player-opts">
       <div class="seg small" role="group" aria-label="Speed">${RATES.map(r => `<button data-rate="${r}" aria-pressed="false">${rateLabel(r)}</button>`).join("")}</div>
-      <button class="btn quiet small" data-shadow aria-pressed="false" title="Stop after each sentence so you can say it">Repeat</button>
+      <button class="btn quiet small" data-shadow aria-pressed="false" title="Stop after each sentence so you can say it">Say after me</button>
     </div>
   </section>`;
 }
@@ -50,10 +51,15 @@ export function wirePlayer(root, lines, opts = {}) {
     if (opts.key) lsSet(opts.key, at);
   };
   const halt = () => { if (stop) { const s = stop; stop = null; s(); } };
-  const start = () => {
+  const start = async () => {
+    // Offline, only clips played before are kept. Say so instead of looking as if it plays.
+    if (!navigator.onLine && "caches" in window && lines[at] && !(await caches.match(clipUrl(lines[at].t, lines[at].v)))) {
+      halt(); playing = false; show(); pos.textContent = "Audio needs a connection.";
+      return;
+    }
     opts.onStart?.();
     halt(); playing = started = true; const from = at;
-    // Repeat: after each sentence, a pause as long as the sentence, for the learner to say it.
+    // Say after me: after each sentence, a pause as long as the sentence, for the learner to say it.
     const gap = shadow ? (i, ms) => { pos.textContent = "Your turn: say it"; return Math.round(ms * 1.1 + 700); } : null;
     stop = speakAll(lines.slice(from), i => { at = from + i; show(true); },
       () => { if (!stop) return; stop = null; playing = started = false; at = 0; show(); pos.textContent = "Finished. Play again?"; }, rate, gap);

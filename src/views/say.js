@@ -66,9 +66,13 @@ async function build(v) {
   return { items: shuffle(items).slice(0, N), exit: "#/", title: "Today" };
 }
 
+// "Five more" should not start with the sentences just said.
+let lastSaid = new Set();
 export async function viewSay(app, v, alive) {
   const b = await build(v);
   if (!alive()) return;
+  if (b?.items?.length > 1) { const fresh = b.items.filter(x => !lastSaid.has(x.it)), old = b.items.filter(x => lastSaid.has(x.it)); b.items = [...fresh, ...old]; }
+  lastSaid = new Set((b?.items || []).map(x => x.it));
   if (!b || !b.items.length) { app.innerHTML = `<div class="empty-state"><h2>Nothing to say yet</h2><p class="muted">Learn a few words first, then come back.</p><a class="btn" href="#/">Back to Oggi</a></div>`; return; }
   const { items, exit, title } = b;
   let i = 0, shown = false, said = 0, saved = 0, example = false;
