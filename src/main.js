@@ -1,7 +1,12 @@
+// Fonts are served from this site, not from Google: no visitor data goes to a third party.
+import "@fontsource-variable/inter";
+import "@fontsource-variable/manrope";
+import "@fontsource-variable/literata/opsz.css";
+import "@fontsource-variable/literata/opsz-italic.css";
 import "./styles.css";
 import { registerSW } from "virtual:pwa-register";
 import { supabase } from "./supabase.js";
-import { $, $$, S, D, esc, on, emit, ICON, isDark, setTheme, showToast, closeSheet, indexCourse, switchUser, setSync, displayName, dueIds, schedule, setHidden, toggleDeck, say, sayOf, stopSpeaking, go } from "./core.js";
+import { $, $$, S, D, esc, on, emit, ICON, FEEDBACK_EMAIL, isDark, setTheme, showToast, closeSheet, indexCourse, switchUser, setSync, displayName, dueIds, schedule, setHidden, toggleDeck, say, sayOf, stopSpeaking, go } from "./core.js";
 import { viewHome } from "./views/home.js";
 import { viewLearn } from "./views/learn.js";
 import { viewUnit } from "./views/unit.js";
@@ -98,6 +103,18 @@ const offline = () => { $("#offline").hidden = navigator.onLine; };
 window.addEventListener("online", offline); window.addEventListener("offline", offline); offline();
 on("account", () => { updateBadges(); if (["account", "home"].includes(S.view.name)) render(); });
 setInterval(updateBadges, 60000);
+
+/* ---------- Errors ---------- */
+// No error service: when something breaks, the learner can send the details by email with one tap (once per visit).
+let errorShown = false;
+function onError(err) {
+  if (errorShown) return; errorShown = true;
+  const msg = String(err?.message || err || "Unknown error"), stack = String(err?.stack || "").split("\n").slice(0, 6).join("\n");
+  const body = `What were you doing when it happened?\n\n\n---\nError: ${msg}\n${stack}\nPage: ${location.pathname}${location.hash}\nDevice: ${navigator.userAgent}`;
+  showToast("Something went wrong on this page.", "Report", () => { location.href = `mailto:${FEEDBACK_EMAIL}?subject=${encodeURIComponent("Error report: i understand, but…")}&body=${encodeURIComponent(body)}`; }, 12000);
+}
+window.addEventListener("error", e => { if (e.error) onError(e.error); });
+window.addEventListener("unhandledrejection", e => { const r = e.reason; if (r && !/network|fetch|load failed|abort/i.test(String(r.message || r))) onError(r); });
 
 /* ---------- Interactions shared by every screen ---------- */
 document.addEventListener("click", e => {

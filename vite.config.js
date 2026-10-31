@@ -32,7 +32,9 @@ export default defineConfig({
         ]
       },
       workbox: {
-        globPatterns: ["**/*.{js,css,html,svg,png,woff2}"],
+        globPatterns: ["**/*.{js,css,html,svg,png,woff2,json}"],
+        // Fonts: keep only the Latin files offline; other scripts load when needed.
+        globIgnores: ["**/*-{cyrillic,cyrillic-ext,greek,greek-ext,vietnamese}-*.woff2"],
         maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
         navigateFallback: "index.html",
         runtimeCaching: [
@@ -41,11 +43,6 @@ export default defineConfig({
             urlPattern: ({ url }) => url.pathname.startsWith("/parlo-media/audio/"),
             handler: "CacheFirst",
             options: { cacheName: "parlo-audio", expiration: { maxEntries: 4000 }, cacheableResponse: { statuses: [200] }, rangeRequests: true }
-          },
-          {
-            urlPattern: ({ url }) => url.origin === "https://fonts.googleapis.com" || url.origin === "https://fonts.gstatic.com",
-            handler: "StaleWhileRevalidate",
-            options: { cacheName: "google-fonts", expiration: { maxEntries: 20 } }
           }
         ]
       }

@@ -22,9 +22,9 @@
   --m: #2f62a8;
   --f: #b03a62;
   --shadow: 0 1px 2px rgba(41, 75, 61, .05), 0 10px 28px -18px rgba(41, 75, 61, .28);
-  --head: "Manrope", "Inter", system-ui, sans-serif;
-  --ui: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  --read: "Literata", Georgia, "Times New Roman", serif;
+  --head: "Manrope Variable", "Manrope", "Inter Variable", system-ui, sans-serif;
+  --ui: "Inter Variable", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --read: "Literata Variable", "Literata", Georgia, "Times New Roman", serif;
   --reader-size: 19px;
   --r: 16px;
   --tabbar-h: 64px;

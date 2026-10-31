@@ -99,7 +99,7 @@ export function viewAccount(app, v = S.view) {
     <section class="panel"><h2>Start over</h2>
       <p class="muted small">Erases your progress, deck and drafts on every device.</p>
       <button class="btn quiet danger-text" data-reset>${armed === "reset" ? "Tap again to erase everything" : "Reset all progress"}</button>
-      <p class="muted small"><a href="privacy.html">Privacy</a></p></section>`;
+      <p class="muted small"><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms of use</a></p></section>`;
   // Three tabs: progress, how you study, and your account and data.
   const tabs = `<nav class="seg tabs-seg" aria-label="Profile sections">${[["stats", "Progressi"], ["settings", "Studio"], ["data", "Account"]].map(([k, l]) => `<a href="#/account/${k}" ${k === tab ? 'aria-current="page"' : ""}>${l}</a>`).join("")}</nav>`;
   const body = tab === "settings" ? `<div class="settings-col">${prefs}</div>` : tab === "data" ? `<div class="grid-2"><div>${account}</div><div>${data}</div></div>` : statsHTML();

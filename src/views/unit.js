@@ -37,40 +37,48 @@ export function actionsHTML(id) {
 }
 function itemHTML(id) {
   const it = D.items[id], d = it.d;
-  let term, sub = "", more = "";
-  if (it.type === "w") {
-    term = d.art ? `<span class="art ${d.g}">${esc(d.art)}</span>${d.art.endsWith("'") ? "" : " "}${esc(d.it)}` : esc(d.it);
-    sub = d.g ? `<span class="tag ${d.g}">${d.g === "m" ? "masculine" : "feminine"}${d.pl ? " · plural " + esc(d.pl) : ""}</span>` : `<span class="tag">${POS[d.pos] || esc(d.pos)}</span>`;
-    const ex = pickEx(d.ex, d.exAlt);
-    more = `<div class="ex-row"><p class="ex-it">${highlight(ex, d.it)}</p>${starHTML({ it: ex, en: d.exEn }, `#/unit/${it.u}/words`, `Unità ${it.u}`, exVoice(ex, d.exAlt))}</div><p class="ex-en">${esc(d.exEn)}</p>${d.note ? `<p class="note">${rich(d.note)}</p>` : ""}`;
-  } else {
-    term = esc(d.it);
-    sub = `<span class="tag">${esc(d.reg)}</span>`;
-    const ex = pickEx(d.ex, d.exAlt);
-    more = `<p class="muted small">Literally: “${esc(d.lit)}”</p><div class="ex-row"><p class="ex-it">${esc(ex)}</p>${starHTML({ it: ex, en: d.exEn }, `#/unit/${it.u}/phrases`, `Unità ${it.u}`, exVoice(ex, d.exAlt))}</div><p class="ex-en">${esc(d.exEn)}</p>${d.note ? `<p class="note">${rich(d.note)}</p>` : ""}`;
-  }
-  return `<div class="item">
+  const term = it.type === "w" && d.art ? `<span class="art ${d.g}">${esc(d.art)}</span>${d.art.endsWith("'") ? "" : " "}${esc(d.it)}` : esc(d.it);
+  return `<div class="item" data-item="${esc(id)}">
     <button class="item-main" data-expand aria-haspopup="dialog">
       <span class="dot ${statusOf(id)}" data-dot="${esc(id)}"></span>
       <span class="item-term it">${term}</span><span class="item-en">${esc(d.en)}</span>${ICON.chev}
     </button>
-    <div class="item-more" hidden><div class="item-tags">${sub}</div>${more}${actionsHTML(id)}</div></div>`;
+  </div>`;
+}
+// The details of a word or phrase, built only when the learner opens it (a long list stays light).
+function moreHTML(id) {
+  const it = D.items[id], d = it.d;
+  if (it.type === "v") return verbMoreHTML(id);
+  let sub, more;
+  if (it.type === "w") {
+    sub = d.g ? `<span class="tag ${d.g}">${d.g === "m" ? "masculine" : "feminine"}${d.pl ? " · plural " + esc(d.pl) : ""}</span>` : `<span class="tag">${POS[d.pos] || esc(d.pos)}</span>`;
+    const ex = pickEx(d.ex, d.exAlt);
+    more = `<div class="ex-row"><p class="ex-it">${highlight(ex, d.it)}</p>${starHTML({ it: ex, en: d.exEn }, `#/unit/${it.u}/words`, `Unità ${it.u}`, exVoice(ex, d.exAlt))}</div><p class="ex-en">${esc(d.exEn)}</p>${d.note ? `<p class="note">${rich(d.note)}</p>` : ""}`;
+  } else {
+    sub = `<span class="tag">${esc(d.reg)}</span>`;
+    const ex = pickEx(d.ex, d.exAlt);
+    more = `<p class="muted small">Literally: “${esc(d.lit)}”</p><div class="ex-row"><p class="ex-it">${esc(ex)}</p>${starHTML({ it: ex, en: d.exEn }, `#/unit/${it.u}/phrases`, `Unità ${it.u}`, exVoice(ex, d.exAlt))}</div><p class="ex-en">${esc(d.exEn)}</p>${d.note ? `<p class="note">${rich(d.note)}</p>` : ""}`;
+  }
+  return `<div class="item-tags">${sub}</div>${more}${actionsHTML(id)}`;
 }
 function verbHTML(id) {
   const v = D.items[id].d;
-  return `<div class="item" data-verb="${esc(id)}">
+  return `<div class="item" data-item="${esc(id)}" data-verb="${esc(id)}">
     <button class="item-main" data-expand aria-haspopup="dialog">
       <span class="dot ${statusOf(id)}" data-dot="${esc(id)}"></span>
       <span class="item-term it">${esc(v.inf)}</span><span class="item-en">${esc(v.en)}</span>${ICON.chev}
     </button>
-    <div class="item-more" hidden>
+  </div>`;
+}
+function verbMoreHTML(id) {
+  const v = D.items[id].d;
+  return `
       <div class="item-tags"><span class="tag">${esc(v.kind)}</span><span class="tag">past with ${esc(v.aux)}</span></div>
       <div class="seg small scroll" role="group" aria-label="Tense">${TENSES.map((t, i) => `<button data-tense="${t.k}" aria-pressed="${i === 0}">${t.it}</button>`).join("")}</div>
       <div class="conj-wrap">${conjHTML(v, "pres")}</div>
       ${v.ex.map(([a, b], i) => { const ex = pickEx(a, v.exAlt?.[i]); return `<div class="ex-row"><p class="ex-it">${esc(ex)}</p>${starHTML({ it: ex, en: b }, `#/unit/${D.items[id].u}/verbs`, `Unità ${D.items[id].u}`, exVoice(ex, v.exAlt?.[i]))}</div><p class="ex-en">${esc(b)}</p>`; }).join("")}
       <p class="note">${rich(v.note)}</p>
-      ${actionsHTML(id)}
-    </div></div>`;
+      ${actionsHTML(id)}`;
 }
 export function conjHTML(v, k) {
   const t = TENSES.find(x => x.k === k);
@@ -120,7 +128,7 @@ export function viewUnit(app, v) {
   // Tapping an item opens its details in a sheet, so the list itself never jumps around.
   body.addEventListener("click", e => {
     const ex = e.target.closest("[data-expand]"); if (!ex) return;
-    const item = ex.closest(".item"), more = item.querySelector(".item-more");
+    const item = ex.closest(".item"), more = { innerHTML: moreHTML(item.dataset.item) };
     const term = ex.querySelector(".item-term").innerHTML, en = ex.querySelector(".item-en").textContent;
     openSheet(`<div class="sheet-body item-sheet ${item.dataset.verb ? "" : ""}" ${item.dataset.verb ? `data-verb="${esc(item.dataset.verb)}"` : ""}>
       <p class="s-it item-term it">${term}</p><p class="s-en">${esc(en)}</p><div class="item-more">${more.innerHTML}</div></div>`);

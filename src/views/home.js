@@ -86,6 +86,7 @@ export function viewHome(app) {
       <a class="btn ${next.href.startsWith("#/say") ? "speak" : "primary"} large wide" href="${next.href}">${esc(next.cta)}</a>
       ${later.length ? `<ul class="then">${later.map(x => `<li class="${x.done ? "done" : ""}"><a href="${x.href}">${x.done ? ICON.check : `<span class="then-dot" aria-hidden="true"></span>`}<span class="then-t ${x.it ? "it" : ""}">${esc(x.title)}</span></a></li>`).join("")}</ul>` : ""}
     </section>
+    ${D.order.filter(learned).length >= 10 && !matchMedia("(display-mode: standalone)").matches && !navigator.standalone ? tipHTML("install", `<p class="tip-title">Put the app on your home screen</p><p>${/iphone|ipad|ipod/i.test(navigator.userAgent) ? "In Safari, tap the Share button, then <b>Add to Home Screen</b>." : "It opens like an app and works offline."} <a href="#/account/settings">How to install</a></p>`) : ""}
     ${nudge ? `<p class="signin-line small muted"><a href="#/account/data">Sign in</a> to keep your progress on every device. <button class="text-btn quiet-link" data-hide-signin>Hide</button></p>` : ""}
   `;
   app.querySelector("[data-hide-signin]")?.addEventListener("click", () => { lsSet("parlo.hide.signin", true); viewHome(app); });

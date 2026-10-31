@@ -9,8 +9,8 @@
     if (location.hash.indexOf("#/") === 0) location.replace("/italian/" + location.hash);
   </script>
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>i understand, but…</title>
-  <meta name="description" content="Understand more. Say what you mean. A language app for people who understand more than they can say.">
+  <title>i understand, but… · Learn to speak Italian, free</title>
+  <meta name="description" content="A free app for people who understand Italian but cannot speak it yet. Words, grammar, reading and listening from A1 to B2, and you say everything out loud.">
   <meta property="og:title" content="i understand, but…">
   <meta property="og:description" content="Understand more. Say what you mean.">
   <meta property="og:image" content="https://iunderstandbut.com/italian/brand/og-image.png">
@@ -20,10 +20,13 @@
   <meta name="theme-color" content="#151b18" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="/italian/icons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/italian/icons/apple-touch-icon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@700;800&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap" rel="stylesheet">
+  <link rel="preload" href="/fonts/manrope-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="canonical" href="https://iunderstandbut.com/">
   <style>
+    /* Fonts are served from this site, not from Google. */
+    @font-face { font-family: "Inter"; src: url("/fonts/inter-latin-wght-normal.woff2") format("woff2"); font-weight: 100 900; font-display: swap; }
+    @font-face { font-family: "Manrope"; src: url("/fonts/manrope-latin-wght-normal.woff2") format("woff2"); font-weight: 200 800; font-display: swap; }
+    @font-face { font-family: "Literata"; src: url("/fonts/literata-latin-opsz-normal.woff2") format("woff2"); font-weight: 200 900; font-display: swap; }
     :root {
       --bg: #f4f0e7; --surface: #fffdf8; --ink: #1c2420; --muted: #56625c; --line: #e2ddd1;
       --forest: #294b3d; --forest-ink: #ffffff; --coral: #d85c41;
@@ -102,7 +105,7 @@
     </ul>
     <p>You can sign in only to keep your progress on more than one device.</p>
   </section>
-  <footer><a href="/italian/privacy.html">Privacy</a> · <a href="mailto:ahmad.fardaei@gmail.com?subject=Feedback%3A%20i%20understand%2C%20but%E2%80%A6">Feedback</a></footer>
+  <footer><a href="/italian/privacy.html">Privacy</a> · <a href="/italian/terms.html">Terms</a> · <a href="mailto:ahmad.fardaei@gmail.com?subject=Feedback%3A%20i%20understand%2C%20but%E2%80%A6">Feedback</a></footer>
   <script>
     // Light or dark button. The app reads the same choice.
     (function () {

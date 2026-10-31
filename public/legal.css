@@ -1,0 +1,17 @@
+/* Privacy and terms pages: the brand look, without the app. */
+@font-face { font-family: "Inter"; src: url("/fonts/inter-latin-wght-normal.woff2") format("woff2"); font-weight: 100 900; font-display: swap; }
+@font-face { font-family: "Manrope"; src: url("/fonts/manrope-latin-wght-normal.woff2") format("woff2"); font-weight: 200 800; font-display: swap; }
+:root { --bg: #f4f0e7; --surface: #fffdf8; --ink: #1c2420; --muted: #56625c; --line: #e2ddd1; --forest: #294b3d; color-scheme: light; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #151b18; --surface: #1d2521; --ink: #edf0ec; --muted: #a7b2ac; --line: #2c3631; --forest: #9cc4ae; color-scheme: dark; } }
+:root[data-theme="dark"] { --bg: #151b18; --surface: #1d2521; --ink: #edf0ec; --muted: #a7b2ac; --line: #2c3631; --forest: #9cc4ae; color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.65 "Inter", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+main { max-width: 680px; margin: 0 auto; padding: 32px 16px 64px; }
+.back { display: inline-block; color: var(--muted); font-weight: 600; text-decoration: none; margin-bottom: 28px; }
+.back:hover { color: var(--ink); }
+h1 { font-family: "Manrope", system-ui, sans-serif; font-weight: 800; font-size: 34px; line-height: 1.15; color: var(--forest); margin: 0 0 6px; }
+h2 { font-family: "Manrope", system-ui, sans-serif; font-weight: 800; font-size: 19px; color: var(--forest); margin: 32px 0 8px; }
+.muted { color: var(--muted); }
+a { color: var(--forest); }
+ul { padding-left: 20px; } li { margin-bottom: 6px; }
+.box { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; }

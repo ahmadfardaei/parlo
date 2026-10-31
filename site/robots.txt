@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://iunderstandbut.com/sitemap.xml
