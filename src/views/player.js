@@ -14,7 +14,7 @@ export function playerHTML(idle) {
       <button class="play-btn" data-play aria-label="Play">${ICON.play}</button>
       <div class="player-main">
         <span class="small player-pos" data-pos aria-live="polite">${idle}</span>
-        <span class="bar" aria-hidden="true"><span class="k" data-prog style="width:0"></span></span>
+        <input type="range" class="seek" data-seek min="0" max="1" step="1" value="0" aria-label="Position in the text">
       </div>
       <button class="icon-btn" data-back aria-label="Back one sentence" title="Back one sentence">${ICON.replay}</button>
     </div>
@@ -29,7 +29,11 @@ export function playerHTML(idle) {
 // opts: key (to keep the place), who(i) (speaker of line i, or ""), idle, onStart (first play).
 export function wirePlayer(root, lines, opts = {}) {
   const el = root.querySelector(".player");
-  const playBtn = el.querySelector("[data-play]"), pos = el.querySelector("[data-pos]"), prog = el.querySelector("[data-prog]");
+  const playBtn = el.querySelector("[data-play]"), pos = el.querySelector("[data-pos]"), seek = el.querySelector("[data-seek]");
+  seek.max = Math.max(1, lines.length - 1);
+  // The bar moves sentence by sentence: the audio is one clip per sentence.
+  const setSeek = i => { seek.value = i; seek.style.setProperty("--p", `${i / Math.max(1, lines.length - 1) * 100}%`); seek.setAttribute("aria-valuetext", lines[i]?.t || ""); };
+  let dragging = false;
   const sents = () => [...root.querySelectorAll("article.reader .sent")];
   let at = opts.key ? Math.min(lsGet(opts.key, 0) || 0, lines.length - 1) : 0;
   let started = at > 0, playing = false, shadow = false, stop = null, rate = RATES.includes(lsGet("parlo.rate", 1)) ? lsGet("parlo.rate", 1) : 1;
@@ -41,7 +45,7 @@ export function wirePlayer(root, lines, opts = {}) {
   const show = (scroll) => {
     playBtn.innerHTML = playing ? ICON.pause : ICON.play;
     playBtn.setAttribute("aria-label", playing ? "Pause" : started ? "Continue" : "Play");
-    prog.style.width = `${at / lines.length * 100}%`;
+    if (!dragging) setSeek(at);
     pos.textContent = label();
     const list = sents();
     list.forEach((s, i) => s.classList.toggle("speaking", started && i === at));
@@ -68,6 +72,10 @@ export function wirePlayer(root, lines, opts = {}) {
   const pause = () => { playing = false; halt(); stopSpeaking(); show(); };
 
   playBtn.onclick = () => playing ? pause() : start();
+  // Drag the bar: show where you will land; on release, play from there (or just move there when paused).
+  seek.addEventListener("pointerdown", () => { dragging = true; });
+  seek.addEventListener("input", () => { dragging = true; const i = +seek.value; setSeek(i); const t = lines[i]?.t || ""; pos.textContent = t.length > 48 ? t.slice(0, 46) + "…" : t; });
+  seek.addEventListener("change", () => { dragging = false; at = +seek.value; started = true; playing ? start() : show(true); });
   el.querySelector("[data-back]").onclick = () => { at = Math.max(0, at - 1); playing ? start() : show(true); };
   const rateBtns = el.querySelectorAll("[data-rate]");
   const showRate = () => rateBtns.forEach(b => b.setAttribute("aria-pressed", +b.dataset.rate === rate));

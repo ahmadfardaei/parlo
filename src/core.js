@@ -109,12 +109,14 @@ export function speak(text, onEnd, voice = "f", scale = 1) {
   a.playbackRate = scale;
   let settled = false;
   const finish = () => { if (settled) return; settled = true; if (current === a) current = null; onEnd && onEnd(); };
-  const fallback = () => { if (settled) return; if (current === a) current = null; deviceSpeak(text, () => { settled = true; onEnd && onEnd(); }, scale); };
+  // The device voice is only for a clip that cannot load. A clip that was stopped (back, pause, jump) stays silent:
+  // stopping it before it starts rejects play() with an AbortError, and that must not start the device voice.
+  const fallback = e => { if (settled || a.stopped || e?.name === "AbortError") return; if (current === a) current = null; deviceSpeak(text, () => { settled = true; onEnd && onEnd(); }, scale); };
   a.onended = finish; a.onerror = fallback;
   current = a;
   a.play().catch(fallback);
 }
-function stopAudio() { if (current) { current.onended = current.onerror = null; current.pause(); current = null; } if ("speechSynthesis" in window) speechSynthesis.cancel(); }
+function stopAudio() { if (current) { current.stopped = true; current.onended = current.onerror = null; current.pause(); current = null; } if ("speechSynthesis" in window) speechSynthesis.cancel(); }
 export function say(text, voice) { speakQueueToken++; stopAudio(); speak(text, null, voice); }
 // lines: strings or { t, v } objects; scale slows or speeds the whole run.
 // gap(i, ms): pause after line i (which took ms to say) before the next one, e.g. for repeating after the speaker.

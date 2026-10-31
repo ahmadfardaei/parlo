@@ -669,9 +669,16 @@ body.focus .toast { bottom: calc(16px + env(safe-area-inset-bottom, 0px)); }
 .play-btn { width: 52px; height: 52px; flex: none; display: grid; place-items: center; border-radius: 50%; border: 0; background: var(--accent); color: var(--accent-ink); cursor: pointer; }
 .play-btn svg { width: 22px; height: 22px; }
 .play-btn:hover { filter: brightness(1.06); }
-.player-main { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 8px; }
+.player-main { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
 .player-pos { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--muted); }
 .player .bar { flex: none; min-width: 0; height: 6px; }
+/* Seek bar: a range input that looks like the progress bar, with a thumb you can drag. */
+.seek { -webkit-appearance: none; appearance: none; width: 100%; height: 24px; margin: 0; background: transparent; cursor: pointer; touch-action: none; --p: 0%; }
+.seek::-webkit-slider-runnable-track { height: 6px; border-radius: 99px; background: linear-gradient(to right, var(--accent) var(--p), var(--line) var(--p)); }
+.seek::-moz-range-track { height: 6px; border-radius: 99px; background: linear-gradient(to right, var(--accent) var(--p), var(--line) var(--p)); }
+.seek::-webkit-slider-thumb { -webkit-appearance: none; width: 18px; height: 18px; margin-top: -6px; border-radius: 50%; background: var(--accent); border: 3px solid var(--surface); box-shadow: 0 1px 3px rgba(0,0,0,.25); }
+.seek::-moz-range-thumb { width: 14px; height: 14px; border-radius: 50%; background: var(--accent); border: 3px solid var(--surface); }
+.seek:focus-visible { outline: 3px solid var(--coral); outline-offset: 2px; border-radius: 8px; }
 .player .bar .k { transition: width .3s; }
 .transcript { margin-top: 20px; }
 .transcript .reader-tools { margin: 12px 0; }
