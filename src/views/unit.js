@@ -1,7 +1,7 @@
 import { starHTML } from "./texts.js";
 import { answerHTML, wireAnswer, feedbackHTML } from "./check.js";
 import { exVoice } from "../core.js";
-import { S, D, esc, rich, ICON, full, unitByN, counts, barHTML, statusOf, statusLabel, inDeck, schedHTML, canSpeak, TOPICS, remember, shuffle, pick, say, openSheet, gf, pickEx, adjForms, schedule, learned } from "../core.js";
+import { tipHTML, S, D, esc, rich, ICON, full, unitByN, counts, barHTML, statusOf, statusLabel, inDeck, schedHTML, hideHTML, canSpeak, TOPICS, remember, shuffle, pick, say, openSheet, gf, pickEx, adjForms, schedule, learned } from "../core.js";
 
 export const PRON = ["io", "tu", "lui / lei", "noi", "voi", "loro"];
 export const TENSES = [
@@ -32,6 +32,7 @@ export function actionsHTML(id) {
       <button class="btn quiet small deck-btn" data-deck="${esc(id)}" aria-pressed="${inDeck(id)}">${ICON.star}<span class="lbl">${inDeck(id) ? "In deck" : "Save"}</span></button>
       <span class="status ${statusOf(id)}" data-status="${esc(id)}">${statusLabel(id)}</span>
       ${schedHTML(id)}
+      ${hideHTML(id)}
     </div>`;
 }
 function itemHTML(id) {
@@ -84,6 +85,7 @@ export function viewUnit(app, v) {
   const ids = D.unitIds[u.n], c = counts(ids);
   const n = { words: ids.filter(id => D.items[id].type === "w").length, verbs: u.verbs.length, phrases: ids.filter(id => D.items[id].type === "p").length };
   const fresh = ids.filter(id => statusOf(id) === "new").length;
+  const nHidden = D.allUnitIds[u.n].length - ids.length;
   app.innerHTML = `<a class="back-link" href="#/learn/vocab">${ICON.back} Vocabolario</a>
     <header class="page-head">
       <p class="eyebrow">Unità ${u.n} · ${u.level} · ${esc(TOPICS[u.topic])}</p>
@@ -97,6 +99,7 @@ export function viewUnit(app, v) {
     <nav class="seg tabs-seg" aria-label="Unit sections">
       ${[["words", "Parole", n.words], ["verbs", "Verbi", n.verbs], ["phrases", "Frasi", n.phrases], ["quiz", "Quiz", ""]].map(([k, l, x]) => `<a href="#/unit/${u.n}/${k}" ${k === v.tab ? 'aria-current="page"' : ""}>${l}${x ? ` <span class="n">${x}</span>` : ""}</a>`).join("")}
     </nav>
+    ${nHidden ? `<p class="muted small hidden-note">${nHidden} hidden ${nHidden === 1 ? "item" : "items"} not shown. <a href="#/deck/hidden">See them in Mazzo</a></p>` : ""}
     <div id="unit-body"></div>
     <nav class="pager">
       ${unitByN(u.n - 1) ? `<a href="#/unit/${u.n - 1}/words">${ICON.back} ${esc(unitByN(u.n - 1).title)}</a>` : "<span></span>"}
@@ -106,7 +109,7 @@ export function viewUnit(app, v) {
   if (v.tab === "words") {
     const words = ids.filter(id => D.items[id].type === "w");
     const cats = Object.keys(u.cats).filter(k => words.some(id => D.items[id].d.c === k));
-    body.innerHTML = `<p class="small unit-legend"><span><i class="dot"></i>New</span><span><i class="dot later"></i>Learning</span><span><i class="dot due"></i>Due</span><span><i class="dot known"></i>Known</span><span><span class="art f">la</span> feminine · <span class="art m">il</span> masculine</span></p>` + cats.map(k => `<section class="item-group"><h2 class="group-label">${esc(u.cats[k])}</h2><div class="panel flush cols">${words.filter(id => D.items[id].d.c === k).map(itemHTML).join("")}</div></section>`).join("");
+    body.innerHTML = tipHTML("words", "<p>Tap a word to hear it and see an example. Tap <b>★ Save</b> to keep it in Mazzo, or <b>Hide</b> if you do not want to learn it.</p>") + `<p class="small unit-legend"><span><i class="dot"></i>New</span><span><i class="dot later"></i>Learning</span><span><i class="dot due"></i>Due</span><span><i class="dot known"></i>Known</span><span><span class="art f">la</span> feminine · <span class="art m">il</span> masculine</span></p>` + cats.map(k => `<section class="item-group"><h2 class="group-label">${esc(u.cats[k])}</h2><div class="panel flush cols">${words.filter(id => D.items[id].d.c === k).map(itemHTML).join("")}</div></section>`).join("");
   } else if (v.tab === "verbs") {
     body.innerHTML = `<div class="panel flush cols">${ids.filter(id => D.items[id].type === "v").map(verbHTML).join("")}</div>`;
   } else if (v.tab === "phrases") {

@@ -1,5 +1,5 @@
 // The path: a suggested order through each level. Every step is open; each shows 0–3 stars.
-import { S, D, esc, ICON, LEVELS, LEVEL_NAMES, statusOf, openSheet, remember, learned } from "../core.js";
+import { tipHTML, S, D, esc, ICON, LEVELS, LEVEL_NAMES, statusOf, openSheet, remember, learned } from "../core.js";
 import ROADMAP from "../data/roadmap.json";
 import { learnNav } from "./learn.js";
 
@@ -60,6 +60,7 @@ export function viewPath(app, v) {
       <p class="muted">${LEVEL_NAMES[L]} · ${steps.length} steps. Follow the order, or open any step you like.</p>
       <div class="level-prog"><span class="bar"><span class="k" style="width:${done / steps.length * 100}%"></span></span><span class="small">${done} of ${steps.length}</span></div>
     </header>
+    ${tipHTML("path", "<p>This is your path. Tap a step to see what it is. Follow the order, or start any step you like.</p>")}
     <ol class="path">${steps.map((s, i) => {
       const st = states[i], state = st.done ? "done" : i === current ? "current" : "todo";
       const wave = Math.round(Math.sin(i * 0.8) * 8);

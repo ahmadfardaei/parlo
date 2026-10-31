@@ -1,4 +1,4 @@
-import { S, esc, ICON, setEntry, savePref, remember, lsGet, lsSet, TOPICS, shuffle, openSheet } from "../core.js";
+import { tipHTML, S, esc, ICON, setEntry, savePref, remember, lsGet, lsSet, TOPICS, shuffle, openSheet } from "../core.js";
 import { ensure } from "../data.js";
 import { blocksHTML, plainLines, sentHTML, sizeControlHTML, starHTML } from "./texts.js";
 import { voiceForName, narratorVoice } from "../voice.js";
@@ -9,14 +9,13 @@ export function readerTools(showEn) {
     <div class="seg small" role="group" aria-label="Translation"><button data-en="0" aria-pressed="${!showEn}">Italiano</button><button data-en="1" aria-pressed="${showEn}">+ English</button></div>
     <button class="icon-btn" data-textsize aria-label="Text size" title="Text size"><span class="aa">Aa</span></button>
   </div>
-  ${lsGet("parlo.hint.reader", true) ? `<p class="hint-line">Tap a sentence for its translation, to save it or to play from there. Select words to save them. <button class="text-btn" data-hide-hint>OK</button></p>` : ""}`;
+  ${tipHTML("reader", "<p>Tap a sentence to see the translation, save it, or play the audio from there. Select some words to save only them.</p>")}`;
 }
 // Wires the tools above: translation on or off, the reading hint and the text size.
 export function wireReader(root) {
   const apply = () => { root.querySelectorAll("article.reader").forEach(a => a.classList.toggle("hide-en", !S.pref.showEn)); root.querySelectorAll("[data-en]").forEach(x => x.setAttribute("aria-pressed", (x.dataset.en === "1") === !!S.pref.showEn)); };
   apply();
   root.querySelectorAll("[data-en]").forEach(b => b.onclick = () => { savePref({ showEn: b.dataset.en === "1" }); apply(); });
-  root.querySelector("[data-hide-hint]")?.addEventListener("click", e => { lsSet("parlo.hint.reader", false); e.target.closest(".hint-line").remove(); });
   root.querySelector("[data-textsize]")?.addEventListener("click", () => openSheet(`<div class="sheet-body"><h2>Text size</h2>
     <p class="it size-sample">Ogni mattina bevo un caffè al bar sotto casa.</p>${sizeControlHTML()}</div>`));
 }

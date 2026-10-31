@@ -1,4 +1,4 @@
-import { S, D, esc, lsGet, lsSet, counts, dueIds, statusOf, LEVELS, LEVEL_NAMES, pct, displayName, savePref, ICON, learned, deckIds, dayKey } from "../core.js";
+import { tipHTML, S, D, esc, lsGet, lsSet, counts, dueIds, statusOf, LEVELS, LEVEL_NAMES, pct, displayName, savePref, ICON, learned, deckIds, dayKey } from "../core.js";
 import { supabase } from "../supabase.js";
 import META from "../data/meta.json";
 import { pathProgress, stepHref, TYPE } from "./path.js";
@@ -74,6 +74,11 @@ export function viewHome(app) {
   const nudge = supabase && !S.user && !lsGet("parlo.hide.signin", false) && D.order.filter(learned).length >= 20;
   app.innerHTML = `
     <header class="page-head"><h1>${greeting()}${name ? ", " + esc(name) : ""}</h1></header>
+    ${tipHTML("welcome", `<p class="tip-title">How it works</p><ul>
+      <li>Do the next step: it is the big button below.</li>
+      <li>Say every answer out loud before you check it.</li>
+      <li>Tap ★ to save a word or a sentence. Saved items go to <b>Mazzo</b>.</li>
+      <li>Your path is in <b>Impara</b>. You can start any step.</li></ul>`)}
     <section class="panel next-card">
       <p class="eyebrow">Next${plan.length > 1 ? ` · ${doneN} of ${plan.length} done today` : ""}</p>
       <p class="next-title ${next.it ? "it" : ""}">${esc(next.title)}</p>

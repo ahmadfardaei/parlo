@@ -1,7 +1,7 @@
 import "./styles.css";
 import { registerSW } from "virtual:pwa-register";
 import { supabase } from "./supabase.js";
-import { $, $$, S, D, esc, on, emit, ICON, isDark, setTheme, showToast, closeSheet, indexCourse, switchUser, setSync, displayName, dueIds, schedule, toggleDeck, say, sayOf, stopSpeaking, go } from "./core.js";
+import { $, $$, S, D, esc, on, emit, ICON, isDark, setTheme, showToast, closeSheet, indexCourse, switchUser, setSync, displayName, dueIds, schedule, setHidden, toggleDeck, say, sayOf, stopSpeaking, go } from "./core.js";
 import { viewHome } from "./views/home.js";
 import { viewLearn } from "./views/learn.js";
 import { viewUnit } from "./views/unit.js";
@@ -32,7 +32,7 @@ export function parseHash() {
     case "write": return { name: "writing", id: p[1] };
     case "speak": return { name: "speaking", id: p[1] };
     case "review": return { name: "home" }; // the review hub now lives on the home screen
-    case "deck": return { name: "deck" };
+    case "deck": return { name: "deck", filter: p[1] };
     case "session": return { name: "session", src: p[1] || "due", u: p[2] ? +p[2] : undefined, focus: true };
     case "quiz": return { name: "quiz", scope: p[1] || "mix", a: p[2], b: p[3], focus: true };
     case "path": return { name: "path", level: p[1] };
@@ -107,6 +107,7 @@ document.addEventListener("click", e => {
   if (ds.sayId) { say(sayOf(ds.sayId)); return; }
   if (ds.deck) { e.stopPropagation(); toggleDeck(ds.deck); return; }
   if (ds.sched) { schedule(ds.id, ds.sched); return; }
+  if (ds.hide) { setHidden(ds.id, ds.hide === "1"); if (ds.hide === "1") closeSheet(); return; }
   if (ds.go) { go(ds.go); return; }
 });
 

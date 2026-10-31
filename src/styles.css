@@ -698,3 +698,14 @@ body.focus .toast { bottom: calc(16px + env(safe-area-inset-bottom, 0px)); }
 /* Feedback link: quiet, at the end of Profile and of a session. */
 .feedback-line { text-align: center; margin: 20px 0 8px; }
 .feedback-line a { color: var(--accent); font-weight: 600; }
+
+/* First-time tips: one quiet card, closed with "Got it". */
+.tip { display: flex; align-items: flex-start; gap: 12px; background: var(--accent-soft); border-radius: 14px; padding: 12px 14px; margin: 0 0 14px; font-size: 15px; }
+.tip-ico { flex: none; width: 22px; height: 22px; border-radius: 50%; background: var(--accent); color: var(--accent-ink); display: grid; place-items: center; font: 800 13px var(--head); margin-top: 1px; }
+.tip-body { flex: 1; min-width: 0; }
+.tip-body p { margin: 0; }
+.tip-body .tip-title { font-weight: 700; margin-bottom: 4px; }
+.tip-body ul { margin: 0; padding-left: 18px; display: grid; gap: 3px; }
+.tip-body svg { width: 16px; height: 16px; vertical-align: -3px; }
+.tip .text-btn { flex: none; font-weight: 700; }
+.card-stage .tip { margin-top: 14px; }

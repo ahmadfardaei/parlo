@@ -32,6 +32,7 @@ export const TOPICS = {
   tech: "Media, science & tech", nature: "Nature & environment", language: "Language & expression"
 };
 export const ICON = {
+  hide: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.6 5.1A10 10 0 0 1 12 5c5 0 9 4.5 10 7a12 12 0 0 1-2.4 3.4M6.6 6.6C4.4 8 2.8 10.2 2 12c1 2.5 5 7 10 7a9.8 9.8 0 0 0 5.4-1.6M9.9 9.9a3 3 0 0 0 4.2 4.2M3 3l18 18"/></svg>',
   sun: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>',
   moon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg>',
   speak: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg>',
@@ -51,6 +52,20 @@ export const ICON = {
   download: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>',
   check: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>'
 };
+
+/* ---------- First-time tips ---------- */
+// A short tip shows once, where the feature is. "Got it" closes it for good; Studio can show them all again.
+const tipsSeen = () => lsGet("parlo.tips", {});
+export function tipHTML(key, html) {
+  if (tipsSeen()[key]) return "";
+  return `<div class="tip" data-tip="${key}" role="note"><span class="tip-ico" aria-hidden="true">i</span><div class="tip-body">${html}</div><button class="text-btn" data-tip-ok="${key}">Got it</button></div>`;
+}
+export const resetTips = () => lsSet("parlo.tips", {});
+document.addEventListener("click", e => {
+  const b = e.target.closest("[data-tip-ok]"); if (!b) return;
+  lsSet("parlo.tips", { ...tipsSeen(), [b.dataset.tipOk]: 1 });
+  b.closest(".tip")?.remove();
+});
 
 /* ---------- Feedback ---------- */
 // Feedback goes by email. The message starts with the page and level, so a report has its context.
@@ -174,7 +189,13 @@ export const S = {
 };
 
 /* ---------- Course registry ---------- */
-export const D = { units: [], items: {}, order: [], unitIds: {}, grammar: null, reading: null, writing: null, speaking: null };
+export const D = { units: [], items: {}, grammar: null, reading: null, writing: null, speaking: null };
+// Words the learner hid are left out of D.order and D.unitIds, so sessions, quizzes, "Say it" and the path skip them.
+// D.allOrder and D.allUnitIds keep every item (search, the unit page note, the Hidden list in Mazzo).
+export const isHidden = id => !!S.st[id]?.h;
+D.allOrder = []; D.allUnitIds = {};
+D.unitIds = new Proxy(D.allUnitIds, { get: (t, k) => Array.isArray(t[k]) ? t[k].filter(id => !isHidden(id)) : t[k] });
+Object.defineProperty(D, "order", { get: () => D.allOrder.filter(id => !isHidden(id)) });
 export const pkey = s => s.toLowerCase().replace(/[!?.…¡¿]/g, "").trim();
 export const UNIT_TOPIC = { 1: "daily", 2: "people", 3: "food", 4: "daily", 5: "daily", 6: "places", 7: "daily", 8: "people", 9: "leisure", 10: "feelings", 11: "language", 12: "places", 13: "work", 14: "nature", 15: "feelings", 16: "daily", 17: "food", 18: "tech", 19: "leisure", 20: "daily", 21: "language", 22: "people", 23: "work", 24: "tech", 25: "nature", 26: "feelings", 27: "work", 28: "society", 29: "tech", 30: "language", 31: "society", 32: "society", 33: "society", 34: "leisure", 35: "tech", 36: "language", 37: "language", 38: "places", 39: "feelings", 40: "language" };
 export function indexCourse(course) {
@@ -182,7 +203,7 @@ export function indexCourse(course) {
   for (const u of D.units) {
     u.topic = UNIT_TOPIC[u.n] || "daily";
     const ids = D.unitIds[u.n] = [];
-    const add = (id, type, d) => { if (D.items[id]) return; D.items[id] = { id, type, u: u.n, d }; ids.push(id); D.order.push(id); };
+    const add = (id, type, d) => { if (D.items[id]) return; D.items[id] = { id, type, u: u.n, d }; ids.push(id); D.allOrder.push(id); };
     u.words.forEach(w => add("w:" + w.it, "w", w));
     u.verbs.forEach(v => add("v:" + v.inf, "v", v));
     u.phrases.forEach(p => add("p:" + pkey(p.it), "p", p));
@@ -215,6 +236,7 @@ const NEXT_IV = { "": "1d", "10m": "1d", "1d": "3d", "3d": "7d", "7d": "14d", "1
 export function statusOf(id) {
   const e = S.st[id];
   if (!e) return "new";
+  if (e.h) return "hidden";
   if (e.k) return "known";
   if (e.d) return e.d <= Date.now() ? "due" : "later";
   return "new";
@@ -265,7 +287,7 @@ export function applyChanged(changed) {
 /* ---------- Generic live updates for item controls ---------- */
 export function statusLabel(id) {
   const s = statusOf(id);
-  return s === "new" ? "New" : s === "due" ? "Due" : s === "known" ? "Known" : "In " + fmtIn(S.st[id].d - Date.now(), false);
+  return s === "new" ? "New" : s === "due" ? "Due" : s === "known" ? "Known" : s === "hidden" ? "Hidden" : "In " + fmtIn(S.st[id].d - Date.now(), false);
 }
 export function refreshItem(id) {
   if (!id) return;
@@ -274,12 +296,20 @@ export function refreshItem(id) {
   document.querySelectorAll(`[data-dot="${sel}"]`).forEach(el => { el.className = "dot " + statusOf(id); });
   document.querySelectorAll(`[data-status="${sel}"]`).forEach(el => { el.className = "status " + statusOf(id); el.textContent = statusLabel(id); });
   document.querySelectorAll(`[data-sched-for="${sel}"]`).forEach(el => { el.outerHTML = schedHTML(id); });
+  document.querySelectorAll(`[data-hide-for="${sel}"]`).forEach(el => { el.outerHTML = hideHTML(id); });
 }
 // One toggle on word lists: mark a word as known (it leaves your reviews), or undo that.
 export function schedHTML(id) {
   const k = !!S.st[id]?.k;
   return `<span data-sched-for="${esc(id)}"><button class="btn quiet small" data-sched="${k ? "reset" : "known"}" data-id="${esc(id)}" aria-pressed="${k}">${k ? "✓ Known" : "I know it"}</button></span>`;
 }
+
+// Hide a word you don't want to learn. It goes to Mazzo → Hidden, where you can bring it back.
+export function setHidden(id, on) {
+  setEntry(id, { h: on ? 1 : 0 });
+  if (on) showToast("Hidden. You can bring it back from Mazzo → Hidden.", "Undo", () => setEntry(id, { h: 0 }), 4500);
+}
+export const hideHTML = id => `<span data-hide-for="${esc(id)}"><button class="btn quiet small" data-hide="${isHidden(id) ? 0 : 1}" data-id="${esc(id)}">${isHidden(id) ? "Bring back" : "Hide"}</button></span>`;
 
 /* ---------- Tiny event bus ---------- */
 const handlers = {};

@@ -1,4 +1,4 @@
-import { S, D, esc, ICON, LEVELS, getTheme, setTheme, feedbackHTML, savePref, showToast, switchUser, displayName, sync, pull, push, resetAll, mergeEntries, applyChanged, markDirty, unitOf, lsDel, emit, go, syncText, activityByDay, fmtDur, dayKey, learned } from "../core.js";
+import { S, D, esc, ICON, LEVELS, resetTips, getTheme, setTheme, feedbackHTML, savePref, showToast, switchUser, displayName, sync, pull, push, resetAll, mergeEntries, applyChanged, markDirty, unitOf, lsDel, emit, go, syncText, activityByDay, fmtDur, dayKey, learned } from "../core.js";
 import { supabase, appUrl } from "../supabase.js";
 
 let mode = "signin", recovery = false, msg = null, armed = null;
@@ -54,6 +54,7 @@ export function viewAccount(app, v = S.view) {
     </section>
     <section class="panel"><h2>Appearance</h2>
       ${row("Light or dark", "System follows the setting of your device.", seg("Light or dark", "theme", [["system", "System"], ["light", "Light"], ["dark", "Dark"]], getTheme()))}
+      ${row("Tips", "The short tips that explain each part of the app.", `<div><button class="btn small" data-tips-again>Show the tips again</button></div>`)}
     </section>`;
   let account;
   if (!supabase) account = `<section class="panel"><h2>Account</h2><p class="muted">Accounts aren't set up for this copy of the app. Progress is saved on this device.</p></section>`;
@@ -171,6 +172,7 @@ function wire(app) {
   app.querySelectorAll("[data-level]").forEach(b => b.onclick = () => { const l = b.dataset.level, u = S.pref.understand || S.pref.level; savePref({ level: l, understand: LEVELS.indexOf(u) < LEVELS.indexOf(l) ? l : u }); viewAccount(app); });
   app.querySelectorAll("[data-und]").forEach(b => b.onclick = () => { const u = b.dataset.und; savePref({ understand: u, level: LEVELS.indexOf(u) < LEVELS.indexOf(S.pref.level) ? u : S.pref.level }); viewAccount(app); });
   app.querySelectorAll("[data-newn]").forEach(b => b.onclick = () => { savePref({ newN: +b.dataset.newn }); viewAccount(app); });
+  app.querySelector("[data-tips-again]")?.addEventListener("click", () => { resetTips(); showToast("The tips will show again."); });
   app.querySelectorAll("[data-theme]").forEach(b => b.onclick = () => { setTheme(b.dataset.theme); viewAccount(app); });
   app.querySelectorAll("[data-gender]").forEach(b => b.onclick = () => { savePref({ gender: b.dataset.gender }); viewAccount(app); });
   app.querySelectorAll("[data-mode]").forEach(b => b.onclick = () => { mode = b.dataset.mode; msg = null; viewAccount(app); });

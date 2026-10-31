@@ -1,4 +1,4 @@
-import { feedbackHTML, S, D, esc, ICON, pickEx, exVoice, inDeck, canSpeak, say, full, statusOf, statusLabel, setEntry, schedule, dueIds, deckIds, allReviewable, fmtIn, on, lsGet, learned, LEVELS, unitByN, showToast, sayOf, meaningOf } from "../core.js";
+import { tipHTML, feedbackHTML, isHidden, hideHTML, setHidden, S, D, esc, ICON, pickEx, exVoice, inDeck, canSpeak, say, full, statusOf, statusLabel, setEntry, schedule, dueIds, deckIds, allReviewable, fmtIn, on, lsGet, learned, LEVELS, unitByN, showToast, sayOf, meaningOf } from "../core.js";
 import { highlight } from "./unit.js";
 import { nextUnit } from "./home.js";
 
@@ -23,20 +23,26 @@ export function cardData(id) {
 
 /* ---------- Mazzo (my deck) ---------- */
 let deckFilter = "all";
-export function viewDeck(app) {
+export function viewDeck(app, v = {}) {
+  if (v.filter === "hidden") deckFilter = "hidden";
   const ids = deckIds();
+  // Words the learner hid: kept here so they can bring them back.
+  const hidden = D.allOrder.filter(isHidden);
   // Every word, verb and phrase you've started, newest first.
   const words = D.order.filter(id => statusOf(id) !== "new").sort((a, b) => (S.st[b].t || 0) - (S.st[a].t || 0));
-  if (deckFilter !== "words") deckFilter = "all";
-  const shown = deckFilter === "words" ? [] : ids;
+  if (!["words", "hidden"].includes(deckFilter) || (deckFilter === "hidden" && !hidden.length && v.filter !== "hidden")) deckFilter = "all";
+  const shown = deckFilter === "all" ? ids : [];
   const ready = dueIds(ids).length + ids.filter(id => statusOf(id) === "new").length;
-  const filters = [["all", `Saved · ${ids.length}`], ["words", `Your words · ${words.length}`]];
+  const filters = [["all", `Saved · ${ids.length}`], ["words", `Your words · ${words.length}`], ...(hidden.length || deckFilter === "hidden" ? [["hidden", `Hidden · ${hidden.length}`]] : [])];
   app.innerHTML = `<header class="page-head"><h1>Mazzo</h1><p class="muted">Sentences you saved, and every word you've started learning. Tap ★ on any word, or tap a sentence in a text, to save it here.</p></header>
     ${ids.length ? `<section class="panel deck-head">
         <div><p class="big-line">${ids.length} saved</p><p class="muted small">${ready ? `${ready} ready to practise` : "Nothing due. You can still go through them."}</p></div>
         <div class="btn-row"><a class="btn primary" href="#/session/deck">Practise my deck</a><button class="btn quiet" data-print-deck>${ICON.download}<span>Print / PDF</span></button></div></section>` : ""}
-    ${ids.length || words.length ? `<div class="list-tools"><div class="seg small" role="group" aria-label="Show">${filters.map(([k, l]) => `<button data-df="${k}" aria-pressed="${deckFilter === k}">${l}</button>`).join("")}</div></div>` : ""}
-    ${deckFilter === "words" ? (words.length ? `<div class="link-list panel flush cols">${words.map(id => { const it = D.items[id]; return `<a class="row-link" href="#/unit/${it.u}/${it.type === "w" ? "words" : it.type === "v" ? "verbs" : "phrases"}"><span><span class="row-title it">${esc(sayOf(id))}</span><span class="muted small">${esc(meaningOf(id))}</span></span><span class="row-meta"><span class="status ${statusOf(id)}">${statusLabel(id)}</span></span>${ICON.chev}</a>`; }).join("")}</div>`
+    ${ids.length || words.length || hidden.length ? `<div class="list-tools"><div class="seg small" role="group" aria-label="Show">${filters.map(([k, l]) => `<button data-df="${k}" aria-pressed="${deckFilter === k}">${l}</button>`).join("")}</div></div>` : ""}
+    ${deckFilter === "hidden" ? (hidden.length ? `<p class="muted small">You chose not to learn these. They do not come up in sessions, quizzes or your path. Bring one back to learn it again.</p>
+        <div class="panel flush cols">${hidden.map(id => { const it = D.items[id]; return `<div class="row-link hidden-row"><span><span class="row-title it">${esc(sayOf(id))}</span><span class="muted small">${esc(meaningOf(id))} · Unità ${it.u}</span></span>${hideHTML(id)}</div>`; }).join("")}</div>`
+        : `<div class="empty-state"><h2>No hidden words</h2><p class="muted">Tap a word in a unit and choose Hide to keep it out of your practice.</p></div>`)
+    : deckFilter === "words" ? (words.length ? `<div class="link-list panel flush cols">${words.map(id => { const it = D.items[id]; return `<a class="row-link" href="#/unit/${it.u}/${it.type === "w" ? "words" : it.type === "v" ? "verbs" : "phrases"}"><span><span class="row-title it">${esc(sayOf(id))}</span><span class="muted small">${esc(meaningOf(id))}</span></span><span class="row-meta"><span class="status ${statusOf(id)}">${statusLabel(id)}</span></span>${ICON.chev}</a>`; }).join("")}</div>`
         : `<div class="empty-state"><h2>No words yet</h2><p class="muted">Words appear here once you start learning them.</p><a class="btn" href="#/">Start today's session</a></div>`)
     : shown.length ? `<div class="deck-grid">${shown.map(id => { const c = cardData(id); return `<div class="panel deck-item">
         <p class="ex-it">${c.sentIt}</p><p class="ex-en">${esc(c.sentEn)}</p>
@@ -46,6 +52,8 @@ export function viewDeck(app) {
           <button class="btn quiet small" data-remove="${esc(id)}">Remove</button></div></div>`; }).join("")}</div>`
       : `<div class="empty-state"><h2>${ids.length ? "Nothing here" : "Nothing saved yet"}</h2><p class="muted">Save sentences while you read, or tap ★ Save on any word or phrase.</p><a class="btn" href="#/learn/reading">Find something to read</a></div>`}`;
   app.querySelectorAll("[data-df]").forEach(b => b.onclick = () => { deckFilter = b.dataset.df; viewDeck(app); });
+  // Bringing a word back removes it from this list at once.
+  app.querySelectorAll(".hidden-row [data-hide]").forEach(b => b.addEventListener("click", () => setTimeout(() => viewDeck(app), 0)));
   app.querySelectorAll("[data-remove]").forEach(b => b.onclick = () => { setEntry(b.dataset.remove, { s: 0 }); viewDeck(app); });
   app.querySelector("[data-print-deck]")?.addEventListener("click", () => printDeck(ids));
 }
@@ -145,9 +153,11 @@ function draw(app, v) {
       <span class="card-corner">
         <button class="icon-btn star-card" data-deck="${esc(id)}" aria-pressed="${inDeck(id)}" aria-label="${inDeck(id) ? "Remove from" : "Add to"} your deck" title="Your deck">${ICON.star}</button>
         ${ses.flipped && canSpeak ? `<button class="icon-btn" data-say-text="${esc(c.say)}" data-voice="${c.sv || "f"}" aria-label="Listen">${ICON.speak}</button>` : ""}
+        ${D.items[id] ? `<button class="icon-btn" data-hide-card aria-label="Hide this ${c.kind.toLowerCase()}: do not learn it" title="Hide: do not learn it">${ICON.hide}</button>` : ""}
       </span>
     </div>
     <div class="card-actions">${actions}</div>
+    ${D.items[id] ? tipHTML("card", `<p>The icons on the card: ★ saves it to Mazzo. ${ICON.hide} hides a word you do not want to learn.</p>`) : ""}
   </div>`;
   wire(app, v);
 }
@@ -173,6 +183,12 @@ function drawEnd(app, v, top) {
 }
 function wire(app, v) {
   app.querySelector("[data-undo]")?.addEventListener("click", () => undo(app, v));
+  // Hide: the word leaves this session and all practice; it waits in Mazzo → Hidden.
+  app.querySelector("[data-hide-card]")?.addEventListener("click", e => {
+    e.stopPropagation();
+    const id = ses.queue.shift(); ses.flipped = ses.intro = ses.check = false;
+    setHidden(id, true); draw(app, v);
+  });
   app.querySelector("[data-now]")?.addEventListener("click", () => { ses.cram = true; draw(app, v); });
   app.querySelector("[data-finish]")?.addEventListener("click", () => { ses.queue = []; draw(app, v); });
   app.querySelector("#card")?.addEventListener("click", e => { if (!e.target.closest("button")) flip(app, v); });

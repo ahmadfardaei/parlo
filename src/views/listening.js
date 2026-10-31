@@ -1,5 +1,5 @@
 // Listening: hear it first, answer, then read the transcript.
-import { S, esc, ICON, setEntry, remember, TOPICS, shuffle, lsGet } from "../core.js";
+import { tipHTML, S, esc, ICON, setEntry, remember, TOPICS, shuffle, lsGet } from "../core.js";
 import { ensure } from "../data.js";
 import { blocksHTML, plainLines } from "./texts.js";
 import { wireReader } from "./reading.js";
@@ -22,6 +22,7 @@ export async function viewListening(app, v, alive) {
       <header class="page-head"><p class="eyebrow">${l.level} · ${esc(l.genre)} · ${l.minutes} min · ${esc(TOPICS[l.topic] || "")}</p>
       <h1 class="it">${esc(l.title)}</h1><p class="muted">${esc(l.situation)}</p></header></div>
     <div class="l-main">
+      ${tipHTML("listen", "<p>Press play and listen. Choose 0.75× or 0.5× to slow it down. Turn on <b>Repeat</b> to say each sentence after the speaker. In the transcript, tap a sentence to play from there.</p>")}
       <section class="g-sec"><h2>Questions</h2>
         <p class="muted small" id="qhint">Read them first, then listen. ${st.done || lsGet("parlo.listen." + l.id, 0) ? "You can answer while it plays." : "The answers open when you press play."}</p>
         <div class="panel flush">${qs.map((q, i) => `<div class="rq" data-q="${i}"><p class="it strong">${i + 1}. ${esc(q.q)}</p><div class="opts">${q.o.map((o, j) => `<button class="opt it" data-qo="${j}">${esc(o)}</button>`).join("")}</div></div>`).join("")}</div>
