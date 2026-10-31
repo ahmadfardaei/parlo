@@ -62,7 +62,7 @@ export const GRAMMAR = [
     meaning: "The passato prossimo is the main past tense in spoken Italian. It translates both “I did” and “I have done”.",
     uses: [
       { h: "A finished action", t: "Use it for a finished action, often with a time word.", ex: ["Ieri ho mangiato al ristorante.", "Yesterday I ate at a restaurant."] },
-      { h: "A sequence of events", t: "Use it for events in a sequence, one after the other.", ex: ["Sono arrivata, ho posato la borsa e ho chiamato mia madre.", "I arrived, put down my bag and called my mother."] },
+      { h: "A sequence of events", t: "Use it for events in a sequence, one after the other.", ex: ["Sono arrivata, ho posato la borsa e ho chiamato mia madre.", "I arrived, put down my bag and called my mother."], exAlt: { base: "f", other: "Sono arrivato, ho posato la borsa e ho chiamato mia madre." } },
       { h: "Experiences and results", t: "Use it where English uses “have done”.", ex: ["Hai mai visto Venezia? — No, mai.", "Have you ever seen Venice? — No, never."] },
       { h: "A closed period", t: "Use it for a period with a clear end.", ex: ["Ho vissuto a Londra per tre anni.", "I lived in London for three years."] }
     ],
@@ -109,7 +109,7 @@ export const GRAMMAR = [
     summary: "The imperfetto: the past tense for descriptions, habits and actions in progress.",
     meaning: "The imperfetto describes the past without a clear start or end. Use it for the background of a story: descriptions, habits and actions in progress. English uses “used to”, “would”, “was doing” or the simple past.",
     uses: [
-      { h: "Past habits", t: "Use it for actions that happened regularly.", ex: ["Da bambino andavo al mare ogni estate.", "As a child I went to the seaside every summer."] },
+      { h: "Past habits", t: "Use it for actions that happened regularly.", ex: ["Da bambino andavo al mare ogni estate.", "As a child I went to the seaside every summer."], exAlt: { base: "m", other: "Da bambina andavo al mare ogni estate." } },
       { h: "Descriptions", t: "Use it to describe people, places, weather, feelings, age and time.", ex: ["Era una giornata fredda e pioveva.", "It was a cold day and it was raining."] },
       { h: "In progress, then interrupted", t: "Use the imperfetto for the background action and the passato prossimo for the interruption.", ex: ["Mentre cucinavo, è suonato il telefono.", "While I was cooking, the phone rang."] },
       { h: "Polite requests", t: "Use it to ask politely in shops and offices.", ex: ["Volevo un caffè, per favore.", "I'd like a coffee, please."] }
@@ -129,11 +129,11 @@ export const GRAMMAR = [
     ],
     signals: ["da bambino/a", "di solito", "ogni estate", "sempre", "spesso", "mentre", "c'era una volta"],
     mistakes: [
-      { wrong: "Da piccolo sono andato al mare ogni estate.", right: "Da piccolo andavo al mare ogni estate.", why: "Repeated habit: use the imperfetto." },
+      { wrong: "Da piccolo sono andato al mare ogni estate.", right: "Da piccolo andavo al mare ogni estate.", why: "Repeated habit: use the imperfetto.", alt: { base: "m", wrong: "Da piccola sono andata al mare ogni estate.", right: "Da piccola andavo al mare ogni estate." } },
       { wrong: "Mentre ho cucinato, è arrivato Marco.", right: "Mentre cucinavo, è arrivato Marco.", why: "Background action in progress: use the imperfetto." }
     ],
     ex: [
-      { k: "type", q: "Da bambino ___ molto.", v: "leggere", p: "io", a: ["leggevo"], why: "Regular verb: legge- + vo." },
+      { k: "type", q: "Da bambino ___ molto.", v: "leggere", p: "io", a: ["leggevo"], why: "Regular verb: legge- + vo.", alt: { base: "m", q: "Da bambina ___ molto." } },
       { k: "type", q: "Quando eravamo piccoli, ___ sempre in giardino.", v: "giocare", a: ["giocavamo"], why: "Past habit: use the imperfetto." },
       { k: "type", q: "Mentre tu ___, io cucinavo.", v: "dormire", a: ["dormivi"], why: "Two actions in progress at the same time: use the imperfetto for both." },
       { k: "type", q: "Mia nonna ___ una casa in campagna.", v: "avere", a: ["aveva"], why: "Description of the past: use the imperfetto." },
@@ -143,7 +143,7 @@ export const GRAMMAR = [
       { k: "type", q: "Scusi, ___ chiedere un'informazione.", v: "volere", p: "io", a: ["volevo"], why: "Polite request: use the imperfetto volevo." },
       { k: "type", q: "Loro ___ sempre la verità.", v: "dire", a: ["dicevano"], why: "Dire is irregular: dicevo, dicevi, diceva." },
       { k: "type", q: "Ieri sera ___ stanchissimi.", v: "essere", p: "noi", a: ["eravamo"], why: "State (tiredness): use the imperfetto." },
-      { k: "mc", q: "Ogni domenica ___ dai nonni.", o: ["andavamo", "siamo andati", "andremo"], a: "andavamo", why: "Ogni domenica shows a habit: use the imperfetto." },
+      { k: "mc", q: "Ogni domenica ___ dai nonni.", o: ["andavamo", "siamo andati", "andremo"], a: "andavamo", why: "Ogni domenica shows a habit: use the imperfetto.", alt: { base: "m", o: ["andavamo","siamo andate","andremo"] } },
       { k: "mc", q: "Mentre ___ la doccia, è andata via la luce.", o: ["facevo", "ho fatto", "farò"], a: "facevo", why: "Action in progress when something happened: use the imperfetto." }
     ]
   },
@@ -154,7 +154,7 @@ export const GRAMMAR = [
     uses: [
       { h: "Event vs background", t: "Use the passato prossimo for events and the imperfetto for the scene.", ex: ["Era tardi e pioveva. Ho chiamato un taxi.", "It was late and it was raining. I called a taxi."] },
       { h: "Interruption", t: "Use the imperfetto for the action in progress and the passato prossimo for the interruption.", ex: ["Leggevo quando è arrivato Marco.", "I was reading when Marco arrived."] },
-      { h: "Once vs regularly", t: "Use the passato prossimo for counted events and the imperfetto for habits.", ex: ["Sono andato in Spagna tre volte. / Andavo in Spagna ogni estate.", "I went to Spain three times. / I used to go to Spain every summer."] },
+      { h: "Once vs regularly", t: "Use the passato prossimo for counted events and the imperfetto for habits.", ex: ["Sono andato in Spagna tre volte. / Andavo in Spagna ogni estate.", "I went to Spain three times. / I used to go to Spain every summer."], exAlt: { base: "m", other: "Sono andata in Spagna tre volte. / Andavo in Spagna ogni estate." } },
       { h: "Verbs that change meaning", t: "Conoscevo means “I knew”; ho conosciuto means “I met”.", ex: ["Conoscevo Laura, ma ieri ho conosciuto suo fratello.", "I knew Laura, but yesterday I met her brother."] }
     ],
     form: {
@@ -162,20 +162,20 @@ export const GRAMMAR = [
     },
     signals: ["all'improvviso → pp", "una volta → pp", "mentre → imp", "di solito → imp", "ogni giorno → imp", "per due ore → pp"],
     mistakes: [
-      { wrong: "Ieri ero al cinema e vedevo un film.", right: "Ieri sono andato al cinema e ho visto un film.", why: "Finished events in a sequence: use the passato prossimo." },
+      { wrong: "Ieri ero al cinema e vedevo un film.", right: "Ieri sono andato al cinema e ho visto un film.", why: "Finished events in a sequence: use the passato prossimo.", alt: { base: "m", right: "Ieri sono andata al cinema e ho visto un film." } },
       { wrong: "Ho conosciuto Paolo da anni.", right: "Conosco Paolo da anni.", why: "Still true now: use presente + da." }
     ],
     ex: [
-      { k: "mc", q: "Quando ___ piccola, avevo un gatto.", o: ["ero", "sono stata"], a: "ero", why: "Description of a past period: use the imperfetto." },
+      { k: "mc", q: "Quando ___ piccola, avevo un gatto.", o: ["ero", "sono stata"], a: "ero", why: "Description of a past period: use the imperfetto.", alt: { base: "f", q: "Quando ___ piccolo, avevo un gatto.", o: ["ero","sono stato"] } },
       { k: "mc", q: "Mentre leggevo, ___ il telefono.", o: ["suonava", "è suonato"], a: "è suonato", why: "Interrupting event: use the passato prossimo." },
       { k: "mc", q: "Ieri ___ Laura a una festa: è simpaticissima!", o: ["conoscevo", "ho conosciuto"], a: "ho conosciuto", why: "First meeting with a person: use ho conosciuto." },
       { k: "mc", q: "Da giovane mio padre ___ a calcio ogni sabato.", o: ["giocava", "ha giocato"], a: "giocava", why: "Ogni sabato shows a habit: use the imperfetto." },
       { k: "mc", q: "La casa ___ grande e luminosa.", o: ["era", "è stata"], a: "era", why: "Description: use the imperfetto." },
-      { k: "mc", q: "Stamattina ___ alle sette e sono uscito subito.", o: ["mi alzavo", "mi sono alzato"], a: "mi sono alzato", why: "Single events in a sequence: use the passato prossimo." },
-      { k: "mc", q: "Non sono venuto alla festa perché ___ male.", o: ["stavo", "sono stato"], a: "stavo", why: "Background reason (a state): use the imperfetto." },
-      { k: "mc", q: "___ in Spagna tre volte.", o: ["Andavo", "Sono andato"], a: "Sono andato", why: "Counted number of times: use the passato prossimo." },
+      { k: "mc", q: "Stamattina ___ alle sette e sono uscito subito.", o: ["mi alzavo", "mi sono alzato"], a: "mi sono alzato", why: "Single events in a sequence: use the passato prossimo.", alt: { base: "m", q: "Stamattina ___ alle sette e sono uscita subito.", a: "mi sono alzata", o: ["mi alzavo","mi sono alzata"] } },
+      { k: "mc", q: "Non sono venuto alla festa perché ___ male.", o: ["stavo", "sono stato"], a: "stavo", why: "Background reason (a state): use the imperfetto.", alt: { base: "m", q: "Non sono venuta alla festa perché ___ male.", o: ["stavo","sono stata"] } },
+      { k: "mc", q: "___ in Spagna tre volte.", o: ["Andavo", "Sono andato"], a: "Sono andato", why: "Counted number of times: use the passato prossimo.", alt: { base: "m", a: "Sono andata", o: ["Andavo","Sono andata"] } },
       { k: "mc", q: "Che cosa ___ quando ti ho chiamato?", o: ["facevi", "hai fatto"], a: "facevi", why: "Action in progress at the time of the call: use the imperfetto." },
-      { k: "mc", q: "Ieri ___ a casa tutto il giorno.", o: ["sono rimasto", "rimanevo"], a: "sono rimasto", why: "Tutto il giorno is a period with a clear end: use the passato prossimo." },
+      { k: "mc", q: "Ieri ___ a casa tutto il giorno.", o: ["sono rimasto", "rimanevo"], a: "sono rimasto", why: "Tutto il giorno is a period with a clear end: use the passato prossimo.", alt: { base: "m", a: "sono rimasta", o: ["sono rimasta","rimanevo"] } },
       { k: "mc", q: "Non ___ che eri in città! Perché non mi hai chiamato?", o: ["sapevo", "ho saputo"], a: "sapevo", why: "Sapevo means “I knew” (a state); ho saputo means “I found out”." },
       { k: "mc", q: "All'improvviso ___ a piovere.", o: ["cominciava", "è cominciato"], a: "è cominciato", why: "All'improvviso shows a sudden event: use the passato prossimo." }
     ]
@@ -281,7 +281,7 @@ export const GRAMMAR = [
     uses: [
       { h: "Opinions and beliefs", t: "Use it after penso che, credo che, mi sembra che, immagino che.", ex: ["Penso che Marco abbia ragione.", "I think Marco is right."] },
       { h: "Wishes and feelings", t: "Use it after voglio che, spero che, sono contento che, ho paura che.", ex: ["Spero che tu stia bene.", "I hope you're well."] },
-      { h: "Doubt", t: "Use it after non so se, dubito che, non sono sicuro che.", ex: ["Non sono sicura che sia vero.", "I'm not sure it's true."] },
+      { h: "Doubt", t: "Use it after non so se, dubito che, non sono sicuro che.", ex: ["Non sono sicura che sia vero.", "I'm not sure it's true."], exAlt: { base: "f", other: "Non sono sicuro che sia vero." } },
       { h: "Impersonal phrases", t: "Use it after è importante che, è meglio che, bisogna che, è possibile che.", ex: ["È importante che tu dorma abbastanza.", "It's important that you sleep enough."] }
     ],
     form: {
@@ -315,7 +315,7 @@ export const GRAMMAR = [
       { k: "type", q: "È importante che voi ___ presto.", v: "arrivare", a: ["arriviate"], why: "-are verb, voi form: arriviate." },
       { k: "type", q: "Voglio che loro ___ la verità.", v: "dire", a: ["dicano"], why: "Start from the io form dico: dicano." },
       { k: "type", q: "Credo che il film ___ alle nove.", v: "cominciare", a: ["cominci"], why: "-are verbs take -i: cominci." },
-      { k: "type", q: "Sono contenta che tu ___ qui.", v: "essere", a: ["sia"], why: "A feeling takes the congiuntivo: sia." },
+      { k: "type", q: "Sono contenta che tu ___ qui.", v: "essere", a: ["sia"], why: "A feeling takes the congiuntivo: sia.", alt: { base: "f", q: "Sono contento che tu ___ qui." } },
       { k: "type", q: "Bisogna che noi ___ subito.", v: "partire", a: ["partiamo"], why: "The noi form is the same as in the presente: partiamo." },
       { k: "type", q: "Non so se Anna ___ venire.", v: "potere", a: ["possa"], why: "A doubt takes the congiuntivo: possa." },
       { k: "type", q: "Preferisco che tu ___ la macchina.", v: "prendere", a: ["prenda"], why: "-ere verbs take -a: prenda." },

@@ -1,4 +1,4 @@
-import { markPathWork, S, D, esc, rich, ICON, setEntry, shuffle, pick, say, lsGet, lsSet, remember, gf } from "../core.js";
+import { forMe, pickEx, exVoice, markPathWork, S, D, esc, rich, ICON, setEntry, shuffle, pick, say, lsGet, lsSet, remember, gf } from "../core.js";
 import { ensure } from "../data.js";
 import { PRON, TENSES } from "./unit.js";
 import { GTOPICS } from "./learn.js";
@@ -27,7 +27,7 @@ export async function viewGrammar(app, v, alive) {
 
     <section class="g-sec"><h2>When to use it</h2><div class="panel flush">${g.uses.map(u => `<div class="use">
       <p class="use-h">${esc(u.h)}</p><p class="use-t">${rich(u.t)}</p>
-      <div class="ex-row"><p class="ex-it">${sentHTML({ it: u.ex[0], en: u.ex[1] }, `#/grammar/${g.id}`, g.title)}</p>${starHTML({ it: u.ex[0], en: u.ex[1] }, `#/grammar/${g.id}`, g.title)}</div><p class="ex-en">${esc(u.ex[1])}</p></div>`).join("")}</div>
+      ${(() => { const it = pickEx(u.ex[0], u.exAlt), v = exVoice(it, u.exAlt), x = { it, en: u.ex[1] }; return `<div class="ex-row"><p class="ex-it">${sentHTML(x, `#/grammar/${g.id}`, g.title, v)}</p>${starHTML(x, `#/grammar/${g.id}`, g.title, v)}</div>`; })()}<p class="ex-en">${esc(u.ex[1])}</p></div>`).join("")}</div>
       <p class="muted small">Tap an example to hear it or save it.</p>
       ${g.signals ? `<div class="g-clues"><span class="muted small">Clues:</span>${g.signals.map(s => `<span class="chip it">${esc(s)}</span>`).join("")}</div>` : ""}</section>
     <section class="g-sec"><h2>How it works</h2>
@@ -38,7 +38,7 @@ export async function viewGrammar(app, v, alive) {
     </section>
     ${g.irregular ? `<details class="g-sec group"><summary><span class="group-title">${esc(g.irregularTitle || (g.id === "pp" ? "Irregular past participles" : "Irregular forms"))}</span><span class="group-meta">${g.irregular.length}</span></summary>
       <div class="panel flush">${g.irregular.map(([a, b]) => `<div class="irr"><span class="it">${rich(a)}</span><span>${rich(b)}</span></div>`).join("")}</div></details>` : ""}
-    <section class="g-sec"><h2>Common mistakes</h2><div class="panel flush">${g.mistakes.map(m => `<div class="mistake">
+    <section class="g-sec"><h2>Common mistakes</h2><div class="panel flush">${g.mistakes.map(m0 => forMe(m0, m0.alt)).map(m => `<div class="mistake">
       <p><span class="bad-text" aria-label="Wrong">✗</span> <s class="it">${esc(m.wrong)}</s></p><p><span class="ok-text" aria-label="Right">✓</span> <span class="it strong">${esc(m.right)}</span></p><p class="muted small">${rich(m.why)}</p></div>`).join("")}</div></section>
     <section class="panel g-end"><h2>Your turn</h2><p class="muted small">${g.ex.length} short exercises. You can stop and come back.</p>${cta}</section>
     </div>
@@ -84,7 +84,7 @@ function practice(app, g, mode, fresh) {
     const saved = !fresh && lsGet(posKey(g.id), null);
     if (saved && saved.order?.length === g.ex.length && saved.i > 0 && saved.i < g.ex.length) resumed = saved;
     order = resumed ? resumed.order : shuffle(g.ex.map((_, k) => k));
-    items = order.map(k => g.ex[k]).map(x => ({ ...x, io: x.p === "io", hint: x.h || (x.v ? x.v + (x.p ? " · " + x.p : "") : "") }));
+    items = order.map(k => forMe(g.ex[k], g.ex[k].alt)).map(x => ({ ...x, io: x.p === "io", hint: x.h || (x.v ? x.v + (x.p ? " · " + x.p : "") : "") }));
   }
   let i = resumed?.i || 0, right = resumed?.right || 0;
   const log = resumed?.log || [];

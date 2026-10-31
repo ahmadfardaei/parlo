@@ -332,7 +332,11 @@
         "ex": [
           "Il caffè mi rende nervoso, ma il tè no.",
           "Coffee makes me nervous, but tea doesn't."
-        ]
+        ],
+        "exAlt": {
+          "base": "m",
+          "other": "Il caffè mi rende nervosa, ma il tè no."
+        }
       },
       {
         "h": "Countries, regions, languages",
@@ -1026,7 +1030,11 @@
         "a": [
           "blu"
         ],
-        "why": "Blu does not change."
+        "why": "Blu does not change.",
+        "alt": {
+          "base": "f",
+          "q": "Mi sono comprato due magliette ___."
+        }
       },
       {
         "k": "type",

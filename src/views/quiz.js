@@ -1,6 +1,6 @@
 // Quizzes: "Quiz me" (a mix of what you've studied) and the path's checkpoints, level tests and test-outs.
 // Words are asked from English: you say (type) the Italian. Wrong answers come back in your next review.
-import { markPathWork, S, D, esc, rich, ICON, full, statusOf, schedule, shuffle, pick, say, gf, adjForms, setEntry } from "../core.js";
+import { forMe, markPathWork, S, D, esc, rich, ICON, full, statusOf, schedule, shuffle, pick, say, gf, adjForms, setEntry } from "../core.js";
 import { ensure } from "../data.js";
 import { PRON, TENSES } from "./unit.js";
 import { answerHTML, wireAnswer, feedbackHTML } from "./check.js";
@@ -27,10 +27,10 @@ function verbQ(id) {
   const a = v.t[t.k][p];
   return { id, kind: "Verb", prompt: `<span class="it">${PRON[p]} <span class="blank"></span></span>`, ask: `${v.inf} (${v.en.split(";")[0]}) · ${t.it}`, k: "type", a: [a], say: gf(a, p === 0), why: `${t.it}: ${v.t[t.k].filter(f => f !== "—").map(esc).join(", ")}`, io: p === 0 };
 }
-const grammarQ = e => ({
+const grammarQ = e0 => { const e = forMe(e0, e0.alt); return {
   kind: "Grammar · " + e.lesson, prompt: `<span class="it">${esc(e.q).replace("___", '<span class="blank"></span>')}</span>`,
   ask: e.h || (e.v ? e.v + (e.p ? " · " + e.p : "") : ""), k: e.k, a: e.a, o: e.k === "mc" ? shuffle(e.o) : null, why: rich(e.why), it: true, io: e.p === "io"
-});
+}; };
 // Quiz me: only what you've studied: up to 5 words or phrases, 3 verb forms and 2 grammar items.
 const studiedIds = types => D.order.filter(id => types.includes(D.items[id].type) && statusOf(id) !== "new");
 async function buildMix() {

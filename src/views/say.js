@@ -50,7 +50,7 @@ async function build(v) {
   }
   if (src === "grammar") {
     const g = (await ensure("grammar")).find(x => x.id === id); if (!g) return null;
-    const lines = g.uses.map(u => ({ it: u.ex[0], en: u.ex[1], v: "f", src: `#/grammar/${g.id}`, title: g.title })).filter(sayable);
+    const lines = g.uses.map(u => { const it = pickEx(u.ex[0], u.exAlt); return { it, en: u.ex[1], v: exVoice(it, u.exAlt), src: `#/grammar/${g.id}`, title: g.title }; }).filter(sayable);
     return { items: tr(shuffle(lines).slice(0, N)), exit: `#/grammar/${g.id}`, title: g.title };
   }
   // Daily: sentences from your deck first, then phrases and words you have learned.

@@ -23,8 +23,9 @@ for (const u of course.units) {
   }
 }
 for (const g of grammar) {
-  g.uses.forEach(u => add(u.ex[0]));
-  g.ex.forEach(e => { if (e.k === "type") add(e.a[0]); });
+  // The base sentence keeps its female-voice clip; a version for the other gender is read by the matching voice.
+  g.uses.forEach(u => { add(u.ex[0]); if (u.exAlt) { add(u.ex[0], u.exAlt.base); add(u.exAlt.other, other(u.exAlt.base)); } });
+  g.ex.forEach(e => { if (e.k === "type") { add(e.a[0]); if (Array.isArray(e.alt?.a)) add(e.alt.a[0]); } });
 }
 const blocks = (body, voiceOf) => body.forEach(b => b.s.forEach(s => add(s.it, voiceOf(b))));
 for (const r of reading) { blocks(r.body, b => b.who ? r.speakers?.[b.who] || voiceForName(b.who) : r.narrator || narratorVoice(r.id)); r.glossary.forEach(g => add(g.it)); }

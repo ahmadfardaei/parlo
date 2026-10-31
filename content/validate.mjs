@@ -20,6 +20,15 @@ d.forEach((x, i) => {
     (x.form?.tables||[]).forEach((t,j)=>{ if(!t.h) errs.push(`${P} table ${j}: needs h`); if(!(t.rows||t.end)) errs.push(`${P} table ${j}: needs rows (array of [left,right]) or stem+end`); if(t.rows && t.rows.some(r=>typeof r!=="string"&&(!Array.isArray(r)||r.length<2))) errs.push(`${P} table ${j}: each row must be [left, right]`); });
     (x.mistakes||[]).forEach((m,j)=>{ if(!m.wrong||!m.right||!m.why) errs.push(`${P} mistake ${j}: needs wrong,right,why`); });
     if ((x.ex||[]).length < 10) errs.push(`${P}: needs >= 10 exercises`);
+    // Gendered versions for sentences about the learner (GRAMMAR_GENDER.md).
+    (x.uses||[]).forEach((u,j)=>{ if (u.exAlt) { if (!["m","f"].includes(u.exAlt.base) || typeof u.exAlt.other !== "string" || !u.exAlt.other.trim()) errs.push(`${P} use ${j}: exAlt needs base m|f and other`); else if (u.exAlt.other === u.ex[0]) errs.push(`${P} use ${j}: exAlt.other is the same as ex`); } });
+    (x.ex||[]).forEach((e,j)=>{ const a = e.alt; if (!a) return;
+      if (!["m","f"].includes(a.base)) errs.push(`${P} ex ${j}: alt needs base m|f`);
+      if (!a.q && !a.a && !a.o) errs.push(`${P} ex ${j}: alt changes nothing`);
+      if (a.q && e.q.includes("___") && !a.q.includes("___")) errs.push(`${P} ex ${j}: alt.q needs ___`);
+      if (a.a !== undefined && (e.k === "type" ? !Array.isArray(a.a) || !a.a.length : typeof a.a !== "string")) errs.push(`${P} ex ${j}: alt.a has the wrong type`);
+      if (e.k === "mc" && (a.a || a.o)) { const o = a.o || e.o, ans = a.a ?? e.a; if (!o.includes(ans)) errs.push(`${P} ex ${j}: alt mc answer must be one of the options`); } });
+    (x.mistakes||[]).forEach((m,j)=>{ if (m.alt && (!["m","f"].includes(m.alt.base) || !(m.alt.wrong || m.alt.right))) errs.push(`${P} mistake ${j}: alt needs base and wrong/right`); });
     // Short-lesson limits (GRAMMAR_SHORT.md).
     const tw = s => String(s || "").replace(/<[^>]+>/g, "").split(/\s+/).filter(Boolean).length;
     const sents = s => String(s || "").replace(/<[^>]+>/g, "").split(/(?<=[.?!])\s+(?=[A-Z])/).filter(Boolean);

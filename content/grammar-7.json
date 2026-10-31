@@ -435,12 +435,21 @@
       {
         "wrong": "Dopo aver arrivato, ho chiamato mia madre.",
         "right": "Dopo essere arrivato, ho chiamato mia madre.",
-        "why": "<b>arrivare</b> takes essere in the passato prossimo, so use essere here."
+        "why": "<b>arrivare</b> takes essere in the passato prossimo, so use essere here.",
+        "alt": {
+          "base": "m",
+          "right": "Dopo essere arrivata, ho chiamato mia madre."
+        }
       },
       {
         "wrong": "Dopo essere uscita, Marco mi ha chiamato.",
         "right": "Dopo che sono uscita, Marco mi ha chiamato.",
-        "why": "With different subjects, use <b>dopo che</b> + passato prossimo."
+        "why": "With different subjects, use <b>dopo che</b> + passato prossimo.",
+        "alt": {
+          "base": "f",
+          "wrong": "Dopo essere uscito, Marco mi ha chiamato.",
+          "right": "Dopo che sono uscito, Marco mi ha chiamato."
+        }
       }
     ],
     "ex": [
@@ -479,7 +488,11 @@
         "a": [
           "averle lasciate"
         ],
-        "why": "The subject is the same, and with <b>le</b> the past participle agrees: lasciate."
+        "why": "The subject is the same, and with <b>le</b> the past participle agrees: lasciate.",
+        "alt": {
+          "base": "f",
+          "q": "Le chiavi? Sono sicuro di ___ sul tavolo dell'ingresso."
+        }
       },
       {
         "k": "type",
@@ -508,7 +521,11 @@
         "a": [
           "avermi accompagnato"
         ],
-        "why": "With <b>mi</b>, the past participle does not agree: avermi accompagnato."
+        "why": "With <b>mi</b>, the past participle does not agree: avermi accompagnato.",
+        "alt": {
+          "base": "m",
+          "q": "Grazie per ___ ieri sera: da sola non avrei mai trovato la strada."
+        }
       },
       {
         "k": "type",
@@ -550,7 +567,17 @@
           "Dopo uscire"
         ],
         "a": "Dopo che sono uscita",
-        "why": "With different subjects, use <b>dopo che</b> + passato prossimo."
+        "why": "With different subjects, use <b>dopo che</b> + passato prossimo.",
+        "alt": {
+          "base": "f",
+          "q": "Io sono uscito dall'ufficio; poi Anna mi ha chiamato. → ___, Anna mi ha chiamato.",
+          "a": "Dopo che sono uscito",
+          "o": [
+            "Dopo che sono uscito",
+            "Dopo essere uscito",
+            "Dopo uscire"
+          ]
+        }
       },
       {
         "k": "type",
@@ -889,7 +916,11 @@
           "ci metto"
         ],
         "a": "ce la faccio",
-        "why": "<b>farcela</b> means “to manage”: ce la faccio."
+        "why": "<b>farcela</b> means “to manage”: ce la faccio.",
+        "alt": {
+          "base": "f",
+          "q": "«Ti aiuto con le valigie?» «No, grazie, ___ da solo.»"
+        }
       },
       {
         "k": "mc",
@@ -909,7 +940,11 @@
         "a": [
           "ce la"
         ],
-        "why": "<b>Non ce la faccio più</b> means “I cannot take it any more”."
+        "why": "<b>Non ce la faccio più</b> means “I cannot take it any more”.",
+        "alt": {
+          "base": "f",
+          "q": "Sono stanchissimo: non ___ faccio più."
+        }
       }
     ]
   }

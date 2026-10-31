@@ -184,7 +184,11 @@
         "a": [
           "lentamente"
         ],
-        "why": "Feminine lenta + <b>-mente</b> gives lentamente."
+        "why": "Feminine lenta + <b>-mente</b> gives lentamente.",
+        "alt": {
+          "base": "f",
+          "q": "Scusi, può parlare più ___? Sono straniero."
+        }
       },
       {
         "k": "type",
@@ -238,7 +242,11 @@
         "a": [
           "mai"
         ],
-        "why": "Put <b>mai</b> between the auxiliary and the past participle."
+        "why": "Put <b>mai</b> between the auxiliary and the past participle.",
+        "alt": {
+          "base": "f",
+          "q": "Non sono ___ stato a Trieste, ma mio fratello ci vive da dieci anni."
+        }
       },
       {
         "k": "type",
@@ -561,7 +569,11 @@
         "a": [
           "nessuno"
         ],
-        "why": "After the verb, use non … <b>nessuno</b>."
+        "why": "After the verb, use non … <b>nessuno</b>.",
+        "alt": {
+          "base": "f",
+          "q": "Mi sono svegliato alle tre e in casa non c'era più ___."
+        }
       },
       {
         "k": "type",

@@ -271,7 +271,11 @@
           "a"
         ],
         "a": "da",
-        "why": "Use <b>da</b> for “from” a place; <i>arrivare a Napoli</i> means to arrive in Naples."
+        "why": "Use <b>da</b> for “from” a place; <i>arrivare a Napoli</i> means to arrive in Naples.",
+        "alt": {
+          "base": "f",
+          "q": "Sono appena arrivato ___ Napoli e sono stanco morto."
+        }
       },
       {
         "k": "mc",
@@ -699,7 +703,12 @@
       {
         "wrong": "Sono stato in Bologna.",
         "right": "Sono stato a Bologna.",
-        "why": "Use <b>a</b> for cities, not in."
+        "why": "Use <b>a</b> for cities, not in.",
+        "alt": {
+          "base": "m",
+          "wrong": "Sono stata in Bologna.",
+          "right": "Sono stata a Bologna."
+        }
       },
       {
         "wrong": "Studio italiano per due anni.",
@@ -733,7 +742,11 @@
         "a": [
           "in"
         ],
-        "why": "<b>in banca</b> is a fixed phrase without an article, like in farmacia."
+        "why": "<b>in banca</b> is a fixed phrase without an article, like in farmacia.",
+        "alt": {
+          "base": "f",
+          "q": "Devo passare ___ banca, poi sono libero."
+        }
       },
       {
         "k": "type",
@@ -995,7 +1008,11 @@
         "a": [
           "mai"
         ],
-        "why": "Never is non … <b>mai</b>."
+        "why": "Never is non … <b>mai</b>.",
+        "alt": {
+          "base": "f",
+          "q": "Sono vegetariano: non mangio ___ carne."
+        }
       },
       {
         "k": "type",
@@ -1081,7 +1098,17 @@
           "Non mai sono stato in Sardegna."
         ],
         "a": "Non sono mai stato in Sardegna.",
-        "why": "Put <b>non</b> before the verb and <b>mai</b> between sono and stato."
+        "why": "Put <b>non</b> before the verb and <b>mai</b> between sono and stato.",
+        "alt": {
+          "base": "m",
+          "a": "Non sono mai stata in Sardegna.",
+          "o": [
+            "Non sono mai stata in Sardegna.",
+            "Sono mai stata in Sardegna.",
+            "Non mai sono stata in Sardegna."
+          ],
+          "why": "Put <b>non</b> before the verb and <b>mai</b> between sono and stata."
+        }
       },
       {
         "k": "mc",
@@ -1526,7 +1553,12 @@
       {
         "wrong": "Sono nato in 1990.",
         "right": "Sono nato nel 1990.",
-        "why": "Years take the article: in + il → <b>nel</b>."
+        "why": "Years take the article: in + il → <b>nel</b>.",
+        "alt": {
+          "base": "m",
+          "wrong": "Sono nata in 1990.",
+          "right": "Sono nata nel 1990."
+        }
       },
       {
         "wrong": "Sono trent'anni.",
@@ -1684,7 +1716,11 @@
         "ex": [
           "Ero distrutto, infatti alle dieci dormivo già.",
           "I was exhausted, and in fact by ten I was already asleep."
-        ]
+        ],
+        "exAlt": {
+          "base": "m",
+          "other": "Ero distrutta, infatti alle dieci dormivo già."
+        }
       },
       {
         "h": "Result: quindi, dunque",
@@ -1796,7 +1832,11 @@
           "perché",
           "poiché"
         ],
-        "why": "For a reason after the main clause, use <b>perché</b>."
+        "why": "For a reason after the main clause, use <b>perché</b>.",
+        "alt": {
+          "base": "m",
+          "q": "Non sono venuta alla festa ___ avevo la febbre."
+        }
       },
       {
         "k": "type",

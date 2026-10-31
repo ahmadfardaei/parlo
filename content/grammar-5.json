@@ -239,7 +239,11 @@
         "a": [
           "studiassi"
         ],
-        "why": "Voleva che is past, so use the congiuntivo imperfetto: studiassi."
+        "why": "Voleva che is past, so use the congiuntivo imperfetto: studiassi.",
+        "alt": {
+          "base": "m",
+          "q": "Mia nonna voleva che io ___ medicina, io invece ho fatto la cuoca."
+        }
       },
       {
         "k": "type",
@@ -361,7 +365,11 @@
         "ex": [
           "Se fossi partito prima, avrei preso il treno.",
           "If I'd left earlier, I'd have caught the train."
-        ]
+        ],
+        "exAlt": {
+          "base": "m",
+          "other": "Se fossi partita prima, avrei preso il treno."
+        }
       },
       {
         "h": "Spoken type 3 with the imperfetto",
@@ -494,7 +502,11 @@
         "a": [
           "fossi"
         ],
-        "why": "Type 2: se + congiuntivo imperfetto → condizionale."
+        "why": "Type 2: se + congiuntivo imperfetto → condizionale.",
+        "alt": {
+          "base": "m",
+          "q": "Se ___ ricca, comprerei una casa a Procida."
+        }
       },
       {
         "k": "type",
@@ -580,7 +592,16 @@
           "Se me lo dicessi, sarei venuto."
         ],
         "a": "Se me l'avessi detto, sarei venuto.",
-        "why": "Type 3: congiuntivo trapassato + condizionale passato."
+        "why": "Type 3: congiuntivo trapassato + condizionale passato.",
+        "alt": {
+          "base": "m",
+          "a": "Se me l'avessi detto, sarei venuta.",
+          "o": [
+            "Se me l'avessi detto, sarei venuta.",
+            "Se me l'avresti detto, sarei venuta.",
+            "Se me lo dicessi, sarei venuta."
+          ]
+        }
       },
       {
         "k": "mc",
@@ -630,7 +651,11 @@
         "ex": [
           "Sarei venuto volentieri, ma avevo la febbre.",
           "I'd gladly have come, but I had a temperature."
-        ]
+        ],
+        "exAlt": {
+          "base": "m",
+          "other": "Sarei venuta volentieri, ma avevo la febbre."
+        }
       },
       {
         "h": "Regrets and polite wishes",
@@ -771,7 +796,12 @@
       {
         "wrong": "Avrei andato.",
         "right": "Sarei andato.",
-        "why": "Use the same auxiliary as the passato prossimo: andare takes essere."
+        "why": "Use the same auxiliary as the passato prossimo: andare takes essere.",
+        "alt": {
+          "base": "m",
+          "wrong": "Avrei andata.",
+          "right": "Sarei andata."
+        }
       }
     ],
     "ex": [
@@ -791,7 +821,11 @@
         "a": [
           "avrebbe detto"
         ],
-        "why": "A later action seen from the past: avrebbe detto."
+        "why": "A later action seen from the past: avrebbe detto.",
+        "alt": {
+          "base": "f",
+          "q": "Ero sicuro che Pietro non ___ niente a nessuno."
+        }
       },
       {
         "k": "type",
@@ -1319,7 +1353,11 @@
         "ex": [
           "Benché abbia dormito dieci ore, sono ancora stanca.",
           "Although I slept ten hours, I'm still tired."
-        ]
+        ],
+        "exAlt": {
+          "base": "f",
+          "other": "Benché abbia dormito dieci ore, sono ancora stanco."
+        }
       },
       {
         "h": "Superlative + che",
@@ -1490,7 +1528,11 @@
           "siate venuti",
           "siate venute"
         ],
-        "why": "Venire takes essere. The voi form is siate venuti/e."
+        "why": "Venire takes essere. The voi form is siate venuti/e.",
+        "alt": {
+          "base": "f",
+          "q": "Sono contento che ieri voi ___ a trovarmi."
+        }
       },
       {
         "k": "type",
@@ -1567,7 +1609,16 @@
           "Sono contento che tu venissi."
         ],
         "a": "Sono contento che tu sia venuto.",
-        "why": "A present feeling about a past action takes the congiuntivo passato. “Venga” means you are coming."
+        "why": "A present feeling about a past action takes the congiuntivo passato. “Venga” means you are coming.",
+        "alt": {
+          "base": "m",
+          "a": "Sono contenta che tu sia venuto.",
+          "o": [
+            "Sono contenta che tu sia venuto.",
+            "Sono contenta che tu venga.",
+            "Sono contenta che tu venissi."
+          ]
+        }
       }
     ]
   }

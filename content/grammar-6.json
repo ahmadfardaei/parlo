@@ -22,7 +22,11 @@
         "ex": [
           "Le sarei grata se potesse spedirmi la fattura anche via email.",
           "I'd be grateful if you could also send me the invoice by email."
-        ]
+        ],
+        "exAlt": {
+          "base": "f",
+          "other": "Le sarei grato se potesse spedirmi la fattura anche via email."
+        }
       },
       {
         "h": "Saying no",
@@ -153,7 +157,12 @@
       {
         "wrong": "Le sarei grato se può rispondermi entro venerdì.",
         "right": "Le sarei grato se potesse rispondermi entro venerdì.",
-        "why": "After <b>sarei grato se</b>, use the congiuntivo imperfetto (potesse, volesse, fosse)."
+        "why": "After <b>sarei grato se</b>, use the congiuntivo imperfetto (potesse, volesse, fosse).",
+        "alt": {
+          "base": "m",
+          "wrong": "Le sarei grata se può rispondermi entro venerdì.",
+          "right": "Le sarei grata se potesse rispondermi entro venerdì."
+        }
       },
       {
         "wrong": "No, non posso venire.",
@@ -187,7 +196,12 @@
         "a": [
           "potesse"
         ],
-        "why": "<b>Le sarei grata se</b> takes the congiuntivo imperfetto: <b>potesse</b>."
+        "why": "<b>Le sarei grata se</b> takes the congiuntivo imperfetto: <b>potesse</b>.",
+        "alt": {
+          "base": "f",
+          "q": "Le sarei grato se ___ rimandarmi il contratto firmato.",
+          "why": "<b>Le sarei grato se</b> takes the congiuntivo imperfetto: <b>potesse</b>."
+        }
       },
       {
         "k": "type",
@@ -261,7 +275,16 @@
           "Voglio che la caldaia sia riparata entro lunedì."
         ],
         "a": "Le sarei grato se potesse far riparare la caldaia entro lunedì.",
-        "why": "Only this option uses a formal formula with the congiuntivo."
+        "why": "Only this option uses a formal formula with the congiuntivo.",
+        "alt": {
+          "base": "m",
+          "a": "Le sarei grata se potesse far riparare la caldaia entro lunedì.",
+          "o": [
+            "Mi ripari la caldaia entro lunedì.",
+            "Le sarei grata se potesse far riparare la caldaia entro lunedì.",
+            "Voglio che la caldaia sia riparata entro lunedì."
+          ]
+        }
       },
       {
         "k": "mc",
@@ -337,7 +360,11 @@
         "ex": [
           "Non sarei così sicura che i clienti accettino l'aumento.",
           "I wouldn't be so sure the customers will accept the increase."
-        ]
+        ],
+        "exAlt": {
+          "base": "f",
+          "other": "Non sarei così sicuro che i clienti accettino l'aumento."
+        }
       }
     ],
     "form": {
@@ -537,7 +564,12 @@
         "a": [
           "sarei"
         ],
-        "why": "<b>Non sarei così sicuro che</b> + congiuntivo disagrees without a direct no."
+        "why": "<b>Non sarei così sicuro che</b> + congiuntivo disagrees without a direct no.",
+        "alt": {
+          "base": "m",
+          "q": "Non ___ così sicura che il fornitore accetti questo sconto.",
+          "why": "<b>Non sarei così sicura che</b> + congiuntivo disagrees without a direct no."
+        }
       },
       {
         "k": "type",
@@ -1178,7 +1210,16 @@
           "Siccome non avessi l'ombrello, mi sono bagnato tutto."
         ],
         "a": "Siccome non avevo l'ombrello, mi sono bagnato tutto.",
-        "why": "Use <b>siccome</b> first, with the indicative."
+        "why": "Use <b>siccome</b> first, with the indicative.",
+        "alt": {
+          "base": "m",
+          "a": "Siccome non avevo l'ombrello, mi sono bagnata tutta.",
+          "o": [
+            "Siccome non avevo l'ombrello, mi sono bagnata tutta.",
+            "Perché non avevo l'ombrello, mi sono bagnata tutta.",
+            "Siccome non avessi l'ombrello, mi sono bagnata tutta."
+          ]
+        }
       },
       {
         "k": "mc",
@@ -1768,7 +1809,16 @@
           "Potrebbe inviarmi il modulo?"
         ],
         "a": "Le sarei infinitamente grato se, con la Sua consueta gentilezza, potesse cortesemente inviarmi il modulo.",
-        "why": "It has three softeners in one sentence. That is too many."
+        "why": "It has three softeners in one sentence. That is too many.",
+        "alt": {
+          "base": "m",
+          "a": "Le sarei infinitamente grata se, con la Sua consueta gentilezza, potesse cortesemente inviarmi il modulo.",
+          "o": [
+            "Le sarei grata se potesse inviarmi il modulo.",
+            "Le sarei infinitamente grata se, con la Sua consueta gentilezza, potesse cortesemente inviarmi il modulo.",
+            "Potrebbe inviarmi il modulo?"
+          ]
+        }
       },
       {
         "k": "mc",
@@ -1827,7 +1877,11 @@
         "ex": [
           "Appena sarò arrivata a Cagliari, ti chiamerò.",
           "As soon as I've arrived in Cagliari, I'll call you."
-        ]
+        ],
+        "exAlt": {
+          "base": "f",
+          "other": "Appena sarò arrivato a Cagliari, ti chiamerò."
+        }
       },
       {
         "h": "Guessing about the past",
@@ -2249,7 +2303,12 @@
       {
         "wrong": "Sono interessato in questo corso.",
         "right": "Sono interessato a questo corso.",
-        "why": "Use <b>interessato a</b>, not “in” as in English."
+        "why": "Use <b>interessato a</b>, not “in” as in English.",
+        "alt": {
+          "base": "m",
+          "wrong": "Sono interessata in questo corso.",
+          "right": "Sono interessata a questo corso."
+        }
       },
       {
         "wrong": "Ho deciso a partire.",
@@ -2265,7 +2324,11 @@
         "a": [
           "a"
         ],
-        "why": "<b>Riuscire</b> takes <b>a</b> + infinitive."
+        "why": "<b>Riuscire</b> takes <b>a</b> + infinitive.",
+        "alt": {
+          "base": "m",
+          "q": "Finalmente sono riuscita ___ prenotare un tavolo in quella trattoria di Testaccio."
+        }
       },
       {
         "k": "type",
@@ -2366,7 +2429,16 @@
           "Sono interessata di questo corso di ceramica."
         ],
         "a": "Sono interessata a questo corso di ceramica.",
-        "why": "Use <b>interessato a</b>, not “in” as in English."
+        "why": "Use <b>interessato a</b>, not “in” as in English.",
+        "alt": {
+          "base": "f",
+          "a": "Sono interessato a questo corso di ceramica.",
+          "o": [
+            "Sono interessato a questo corso di ceramica.",
+            "Sono interessato in questo corso di ceramica.",
+            "Sono interessato di questo corso di ceramica."
+          ]
+        }
       },
       {
         "k": "mc",

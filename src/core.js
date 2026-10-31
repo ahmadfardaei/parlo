@@ -479,18 +479,20 @@ export function gf(text, isIo = true) {
 }
 // Example sentences said by "io" may have a version for the other gender: alt = { base: "m"|"f", other: "…" }.
 export function exVoice(text, alt) { return !alt ? "f" : text === alt.other ? (alt.base === "m" ? "f" : "m") : alt.base; }
-// "andato o andata" in a question to the learner → the learner's form.
 // Work on the path today (a unit session, a lesson, a text, a talk…): Oggi counts it as today's path step.
 // Kept under "sp:" so it syncs with the speaking rows.
 export const markPathWork = () => setEntry("sp:path", { day: dayKey() });
 export const pathWorkToday = () => S.st["sp:path"]?.day === dayKey();
 // Praise in the learner's chosen form: Bravo / Brava, or Ottimo when no form is chosen.
 export const bravo = () => S.pref.gender === "f" ? "Brava!" : S.pref.gender === "m" ? "Bravo!" : "Ottimo!";
+// "andato o andata" in a question to the learner → the learner's form.
 export function gq(text) {
   const g = S.pref.gender;
   if (g !== "m" && g !== "f") return text;
   return gf(String(text).replace(/(\p{L}+)o o (\p{L}+)a(?!\p{L})/gu, (m, a, b) => a === b ? a + (g === "m" ? "o" : "a") : m));
 }
+// A grammar exercise or mistake with a version for the other gender: use the learner's version.
+export const forMe = (x, alt) => { const g = S.pref.gender; return alt && (g === "m" || g === "f") && alt.base !== g ? { ...x, ...alt } : x; };
 export function pickEx(text, alt) {
   const g = S.pref.gender;
   if (alt && (g === "m" || g === "f") && alt.base !== g) return alt.other;

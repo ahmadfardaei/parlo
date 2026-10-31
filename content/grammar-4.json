@@ -649,7 +649,11 @@
         "ex": [
           "Quando sono arrivata in stazione, il treno era già partito.",
           "When I got to the station, the train had already left."
-        ]
+        ],
+        "exAlt": {
+          "base": "f",
+          "other": "Quando sono arrivato in stazione, il treno era già partito."
+        }
       },
       {
         "h": "Explaining a past situation",
@@ -657,7 +661,11 @@
         "ex": [
           "Ero distrutto perché la notte prima non avevo dormito.",
           "I was exhausted because I hadn't slept the night before."
-        ]
+        ],
+        "exAlt": {
+          "base": "m",
+          "other": "Ero distrutta perché la notte prima non avevo dormito."
+        }
       },
       {
         "h": "Reported speech",
@@ -783,12 +791,22 @@
       {
         "wrong": "Quando sono arrivato, il film è già cominciato.",
         "right": "Quando sono arrivato, il film era già cominciato.",
-        "why": "The film started before I arrived, so use the trapassato."
+        "why": "The film started before I arrived, so use the trapassato.",
+        "alt": {
+          "base": "m",
+          "wrong": "Quando sono arrivata, il film è già cominciato.",
+          "right": "Quando sono arrivata, il film era già cominciato."
+        }
       },
       {
         "wrong": "Avevo andato a Roma.",
         "right": "Ero andato a Roma.",
-        "why": "Andare takes <b>essere</b> in all compound tenses."
+        "why": "Andare takes <b>essere</b> in all compound tenses.",
+        "alt": {
+          "base": "m",
+          "wrong": "Avevo andata a Roma.",
+          "right": "Ero andata a Roma."
+        }
       },
       {
         "wrong": "Mi ha detto che ha già mangiato.",
@@ -804,7 +822,11 @@
         "a": [
           "era"
         ],
-        "why": "Partire takes essere, and the train left first: era partito."
+        "why": "Partire takes essere, and the train left first: era partito.",
+        "alt": {
+          "base": "f",
+          "q": "Quando sono arrivato in stazione, il treno ___ già partito."
+        }
       },
       {
         "k": "type",
@@ -813,7 +835,11 @@
         "a": [
           "avevo dormito"
         ],
-        "why": "The cause happened earlier: avevo + dormito."
+        "why": "The cause happened earlier: avevo + dormito.",
+        "alt": {
+          "base": "m",
+          "q": "Ero stanchissima perché la notte prima non ___."
+        }
       },
       {
         "k": "type",
@@ -898,7 +924,16 @@
           "tornavo"
         ],
         "a": "sono tornato",
-        "why": "Events told in order take the passato prossimo."
+        "why": "Events told in order take the passato prossimo.",
+        "alt": {
+          "base": "m",
+          "a": "sono tornata",
+          "o": [
+            "sono tornata",
+            "ero tornata",
+            "tornavo"
+          ]
+        }
       },
       {
         "k": "mc",

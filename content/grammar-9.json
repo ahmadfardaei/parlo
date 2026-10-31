@@ -220,7 +220,11 @@
         "a": [
           "leggendola"
         ],
-        "why": "Attach the pronoun to the end of the gerund: <b>leggendola</b>."
+        "why": "Attach the pronoun to the end of the gerund: <b>leggendola</b>.",
+        "alt": {
+          "base": "f",
+          "q": "La lettera di mio nonno? Mi sono commosso ___."
+        }
       },
       {
         "k": "type",
@@ -449,7 +453,11 @@
       {
         "wrong": "Mi ho fatto tagliare i capelli.",
         "right": "Mi sono fatto tagliare i capelli.",
-        "why": "<b>farsi</b> is reflexive, so compound tenses use <b>essere</b>."
+        "why": "<b>farsi</b> is reflexive, so compound tenses use <b>essere</b>.",
+        "alt": {
+          "base": "m",
+          "right": "Mi sono fatta tagliare i capelli."
+        }
       },
       {
         "wrong": "Lo faccio lavare la macchina.",
